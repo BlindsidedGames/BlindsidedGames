@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,500;1,500&display=swap');
+
+:root {
+    --colour-black: #1A1A1A;
+    --colour-grey: #D9D9D9;
+    --colour-white: #F2F2F2;
+    --colour-red: #E01559;
+
+    --active-fontSize: 20px;
+    --active-fontFamily: 'Red Hat Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+    color: var(--colour-black);
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-color: var(--colour-white);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--active-fontFamily);
+    font-size: var(--active-fontSize);
+}
+
+header {
+    background-color: var(--colour-black);
+    color: var(--colour-white);
+    width: 80%;
+    height: 60px;
+    /* min-height: 60px;
+    max-height: 60px; */
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: var(--colour-white);
+}
+
+h3,
+p {
+    margin: 0;
+    font-size: var(--active-fontSize);
+}
+
+.logo {
+    /* background-color: red; */
+    width: 40px;
+    height: 40px;
+}
+
+.logo > img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.tabs {
+    /* background-color: red; */
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.tab-active {
+    color: var(--colour-red);
+    font-weight: bold;
+    font-style: italic;
+}
+
+main {
+    background-color: var(--colour-white);
+    width: 80%;
+    height: 100%;
+    padding: 60px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+footer {
+    background-color: var(--colour-black);
+    color: var(--colour-white);
+    width: 80%;
+    height: 60px;
+    /* min-height: 60px;
+    max-height: 60px; */
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.games {
+    /* background-color: red; */
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, calc(calc(100% - 20px) / 3));
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.game-widget {
+    /* background-color: red; */
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.game-widget > img {
+    background-color: var(--colour-grey);
+    width: 100%;
+    aspect-ratio: 1.5;
+    border-radius: 5px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+.game-widget > h3 {
+    /* background-color: orangered; */
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-overflow: ellipsis;
+}
+
+.game-widget > p {
+    /* background-color: blue; */
+    color: var(--colour-red);
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis; */
+}
+
+.socials {
+    /* background-color: red; */
+    width: 80%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.socials > a,
+a > svg {
+    height: 40px;
+    color: var(--colour-red);
+}
+
+.text-red {
+    color: var(--colour-red);
+}
+
+.text-white {
+    color: var(--colour-white);
+}
+
+.about-me {
+    /* background-color: red; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* <-- change this to align the text to top/center/bottom flex-start/center/flex-end */
+    gap: 20px;
+}
+
+.about-portrait {
+    width: 50%;
+    aspect-ratio: 1;
+    border-radius: 5px;
+}
+
+.about-info {
+    /* background-color: green; */
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-title {
+    /* background-color: pink; */
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about-text {
+    /* background-color: yellow; */
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
