@@ -112,7 +112,17 @@ footer {
     align-items: center;
 }
 
-@media only screen {
+.games {
+    /* background-color: red; */
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, calc(calc(100% - 20px) / 2));
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 600px) {
   .games {
     /* background-color: red; */
     width: 100%;
@@ -122,17 +132,6 @@ footer {
     grid-template-rows: auto;
     gap: 10px;
   }
-}
-
-
-.games {
-    /* background-color: red; */
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, calc(calc(100% - 20px) / 2));
-    grid-template-rows: auto;
-    gap: 10px;
 }
 
 .game-widget {
