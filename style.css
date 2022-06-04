@@ -1,28 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
 
 :root {
-    --colour-black: #1A1A1A;
-    --colour-grey: #D9D9D9;
-    --colour-white: #F2F2F2;
-    --colour-red: #E01559;
+    --colour-black: #8E8E93;
+    --colour-grey: #48484A;
+    --colour-white: #F2F2F7;
+    --colour-red: #94498d;
+    --colour-text: #1C1C1E;
+    --colour-link: #272d28;
+
 
     --active-fontSize: 20px;
-    --active-fontFamily: 'Red Hat Mono', monospace;
+    --alternate-fontSize: 12px;
+    --active-fontFamily: 'Open Sans', sans-serif;
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --colour-black: #48484A;
+        --colour-grey: #8E8E93;
+        --colour-white: #1C1C1E;
+        --colour-red: #94498d;
+        --colour-text: #F2F2F7;
+        --colour-link: #def5ff;
+
+    }
+}
+
 
 a {
     text-decoration: none;
-    color: var(--colour-black);
+    color: var(--colour-text);
 }
 
 html {
     width: 100vw;
     height: 100vh;
-    max-width: 1920px;
 }
 
 body {
     background-color: var(--colour-white);
+    color: var(--colour-text);
     margin: 0;
     padding: 0;
     width: 100%;
@@ -34,6 +51,13 @@ body {
     align-items: center;
     font-family: var(--active-fontFamily);
     font-size: var(--active-fontSize);
+}
+
+@media only screen and (max-width: 620px) {
+    body {
+        margin: 0;
+        font-size: 3vw;
+    }
 }
 
 header {
@@ -50,7 +74,7 @@ header {
 }
 
 header a {
-    color: var(--colour-white);
+    color: var(--colour-text);
 }
 
 h3,
@@ -59,13 +83,20 @@ p {
     font-size: var(--active-fontSize);
 }
 
+@media only screen and (max-width: 620px) {
+    p {
+        margin: 0;
+        font-size: 3vw;
+    }
+}
+
 .logo {
     /* background-color: red; */
     width: 40px;
     height: 40px;
 }
 
-.logo > img {
+.logo>img {
     width: 40px;
     height: 40px;
     object-fit: cover;
@@ -97,12 +128,12 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    /* gap: 60px; */
 }
 
 footer {
     background-color: var(--colour-black);
-    color: var(--colour-white);
+    color: var(--colour-text);
     width: 80%;
     height: 60px;
     /* min-height: 60px;
@@ -116,6 +147,7 @@ footer {
 .games {
     /* background-color: red; */
     width: 100%;
+    max-width: 1920px;
     height: auto;
     display: grid;
     grid-template-columns: repeat(2, calc(calc(100% - 20px) / 2));
@@ -123,16 +155,16 @@ footer {
     gap: 10px;
 }
 
-@media only screen and (max-width: 600px) {
-  .games {
-    /* background-color: red; */
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(1, calc(calc(100% - 20px) / 1));
-    grid-template-rows: auto;
-    gap: 10px;
-  }
+@media only screen and (max-width: 800px) {
+    .games {
+        /* background-color: red; */
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, calc(calc(100% - 20px) / 1));
+        grid-template-rows: auto;
+        gap: 10px;
+    }
 }
 
 .game-widget {
@@ -146,7 +178,7 @@ footer {
     gap: 5px;
 }
 
-.game-widget > img {
+.game-widget>img {
     background-color: var(--colour-grey);
     width: 100%;
     aspect-ratio: 1.5;
@@ -156,7 +188,7 @@ footer {
     object-position: center;
 }
 
-.game-widget > h3 {
+.game-widget>h3 {
     /* background-color: orangered; */
     width: 100%;
     height: 30px;
@@ -166,7 +198,13 @@ footer {
     text-overflow: ellipsis;
 }
 
-.game-widget > p {
+@media only screen and (max-width: 600px) {
+    .game-widget>h3 {
+        font-size: 3vw;
+    }
+}
+
+.game-widget>p {
     /* background-color: blue; */
     color: var(--colour-red);
     width: 100%;
@@ -182,6 +220,12 @@ footer {
     -o-text-overflow: ellipsis; */
 }
 
+@media only screen and (max-width: 600px) {
+    .game-widget>p {
+        font-size: 3vw;
+    }
+}
+
 .socials {
     /* background-color: red; */
     width: 80%;
@@ -192,8 +236,8 @@ footer {
     gap: 40px;
 }
 
-.socials > a,
-a > svg {
+.socials>a,
+a>svg {
     height: 40px;
     color: var(--colour-red);
 }
@@ -203,7 +247,11 @@ a > svg {
 }
 
 .text-white {
-    color: var(--colour-white);
+    color: var(--colour-text);
+}
+
+.text-link {
+    color: var(--colour-link);
 }
 
 .about-me {
@@ -212,19 +260,20 @@ a > svg {
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* <-- change this to align the text to top/center/bottom flex-start/center/flex-end */
+    align-items: flex-start;
+    /* <-- change this to align the text to top/center/bottom flex-start/center/flex-end */
     gap: 20px;
 }
 
 .about-portrait {
-    width: 50%;
+    width: 15%;
     aspect-ratio: 1;
     border-radius: 5px;
 }
 
 .about-info {
     /* background-color: green; */
-    width: 50%;
+    width: 75%;
     height: fit-content;
     display: flex;
     flex-direction: column;
