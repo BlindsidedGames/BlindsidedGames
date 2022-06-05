@@ -238,7 +238,7 @@ footer {
 
 .socials>a,
 a>svg {
-    height: 40px;
+    height: 300px;
     color: var(--colour-red);
 }
 
