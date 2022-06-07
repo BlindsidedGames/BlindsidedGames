@@ -122,6 +122,7 @@ p {
 main {
     /* background-color: var(--colour-white); */
     width: 80%;
+    max-width: 1920px;
     height: 100%;
     padding: 60px 10%;
     display: flex;
