@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#f0f0f5" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#18181b" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="hsl(240, 5%, 20%)" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="hsl(240, 5%, 20%)" media="(prefers-color-scheme: dark)"> 
     <link rel="shortcut icon" href="./img/logo.jpg" type="image/jpg">
     <title>Contact | Blindsided Games </title>
     <link rel="stylesheet" href="./style.css">
@@ -22,20 +22,22 @@
             </div>
         </header>
         <main>
-            <form onsubmit="getData(this); return false">
-                <div>
-                    <label for="name">Name<span class="text-accent">&nbsp;*</span></label>
-                    <input type="text" name="name" placeholder="John Doe" required>
+            <form class="form-contact" onsubmit="getData(this); return false">
+                <div class="form-details">
+                    <div>
+                        <label for="name">Name<span class="text-accent">&nbsp;*</span></label>
+                        <input type="text" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div>
+                        <label for="email">Email<span class="text-accent">&nbsp;*</span></label>
+                        <input type="email" name="email" placeholder="email@address.com" required>
+                    </div>
                 </div>
-                <div>
-                    <label for="email">Email<span class="text-accent">&nbsp;*</span></label>
-                    <input type="email" name="email" placeholder="email@address.com" required>
-                </div>
-                <div>
+                <div class="form-message">
                     <label for="message">Message<span class="text-accent">&nbsp;*</span></label>
-                    <textarea type="text" name="message" placeholder="Dear Blindsided Games..." cols="auto" rows="auto" required></textarea>
+                    <textarea type="text" name="message" placeholder="Dear Blindsided Games..." required></textarea>
                 </div>
-                <input type="submit" value="Send">
+                <input class="form-button" type="submit" value="Send">
             </form>
             <section class="socials">
                 <a href="https://discord.gg/6HF6fuat4v" target="_blank">
