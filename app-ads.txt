@@ -161,3 +161,11 @@ pubmatic.com, 160113, RESELLER, 5d62403b186f2ace
 pubmatic.com, 160974, RESELLER, 5d62403b186f2ace
 
 spotxchange.com, 117872, RESELLER, 7842df1d2fe2db34
+
+pubmatic.com, 161136, RESELLER, 5d62403b186f2ace
+xandr.com, 13167, RESELLER
+meitu.com, 699, RESELLER
+algorix.co, 60016  , RESELLER
+webeyemob.com, 70104, RESELLER
+google.com, pub-9863829601893243, RESELLER
+rubiconproject.com, 24362, RESELLER, 0bfd66d529a55807
