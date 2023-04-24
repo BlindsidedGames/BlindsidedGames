@@ -118,6 +118,16 @@ p {
     gap: 40px;
 }
 
+.storeLinks {
+    /* background-color: red; */
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .tab-active {
     color: var(--colour-accent);
     font-weight: bold;
@@ -133,7 +143,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 10px;
 }
 
 footer {
