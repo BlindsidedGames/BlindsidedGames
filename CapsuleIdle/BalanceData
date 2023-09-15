@@ -1,14 +1,22 @@
 {
-    "globalBalanceData":{
-        "globalExperienceExponent":1.03,
-        "globalXpForFirstLevel":100
-        },
-    "ordinaryCapsuleBalanceData":{
-        "ordinaryCapsuleExponent":1.02,
-        "ordinaryCapsuleXpForFirstLevel":5
-        },
-    "scattershotCapsuleBalanceData":{
-        "scattershotCapsuleExponent":1.02,
-        "scattershotCapsuleXpForFirstLevel":16
-        }
+    "$id": 0,
+    "$type": "0|CapsuleIdle.CapsuleIdleDataManager+RemoteBalanceData, Assembly-CSharp",
+    "globalBalanceData": {
+        "$id": 1,
+        "$type": "1|CapsuleIdle.CapsuleIdleDataManager+GlobalBalanceData, Assembly-CSharp",
+        "globalExperienceExponent": 1.03,
+        "globalXpForFirstLevel": 100
+    },
+    "ordinaryCapsuleBalanceData": {
+        "$id": 2,
+        "$type": "2|CapsuleIdle.CapsuleIdleDataManager+OrdinaryCapsuleBalanceData, Assembly-CSharp",
+        "ordinaryCapsuleExponent": 1.02,
+        "ordinaryCapsuleXpForFirstLevel": 5
+    },
+    "scattershotCapsuleBalanceData": {
+        "$id": 3,
+        "$type": "3|CapsuleIdle.CapsuleIdleDataManager+ScattershotCapsuleBalanceData, Assembly-CSharp",
+        "scattershotCapsuleExponent": 1.02,
+        "scattershotCapsuleXpForFirstLevel": 15
+    }
 }
