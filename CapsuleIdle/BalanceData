@@ -1,11 +1,14 @@
 {
     "globalBalanceData":{
         "globalExperienceExponent":1.0299999713897706,
-        "globalXpForFirstLevel":100.0},
+        "globalXpForFirstLevel":100.0
+        },
     "ordinaryCapsuleBalanceData":{
         "ordinaryCapsuleExponent":1.0199999809265137,
-        "ordinaryCapsuleXpForFirstLevel":5.0},
+        "ordinaryCapsuleXpForFirstLevel":5.0
+        },
     "scattershotCapsuleBalanceData":{
         "scattershotCapsuleExponent":1.0199999809265137,
-        "scattershotCapsuleXpForFirstLevel":11.0}
+        "scattershotCapsuleXpForFirstLevel":11.0
+        }
 }
