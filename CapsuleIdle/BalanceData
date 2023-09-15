@@ -16,7 +16,7 @@
     "scattershotCapsuleBalanceData": {
         "$id": 3,
         "$type": "3|CapsuleIdle.CapsuleIdleDataManager+ScattershotCapsuleBalanceData, Assembly-CSharp",
-        "scattershotCapsuleExponent": 1.02,
+        "scattershotCapsuleExponent": 1.03,
         "scattershotCapsuleXpForFirstLevel": 15
     }
 }
