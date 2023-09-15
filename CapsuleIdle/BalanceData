@@ -1,14 +1,11 @@
 {
-"globalBalanceData": {
-    "globalExperienceExponent":1.05f,
-    "globalXpForFirstLevel":100f,
-    },
-"ordinaryCapsuleBalanceData": {
-    "ordinaryCapsuleExponent": "1.04f",
-    "ordinaryCapsuleXpForFirstLevel": "5f",
-    },
-"scattershotCapsuleBalanceData": {
-    "scattershotCapsuleExponent": "1.04f",
-    "scattershotCapsuleXpForFirstLevel": "11f",
-    }
+    "globalBalanceData":{
+        "globalExperienceExponent":1.0299999713897706,
+        "globalXpForFirstLevel":100.0},
+    "ordinaryCapsuleBalanceData":{
+        "ordinaryCapsuleExponent":1.0199999809265137,
+        "ordinaryCapsuleXpForFirstLevel":5.0},
+    "scattershotCapsuleBalanceData":{
+        "scattershotCapsuleExponent":1.0199999809265137,
+        "scattershotCapsuleXpForFirstLevel":10.0}
 }
