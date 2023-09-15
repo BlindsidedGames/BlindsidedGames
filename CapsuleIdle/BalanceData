@@ -6,7 +6,7 @@
 "ordinaryCapsuleBalanceData": {
     "ordinaryCapsuleExponent": "1.04f",
     "ordinaryCapsuleXpForFirstLevel": "5f"
-    }
+    },
 "scattershotCapsuleBalanceData": {
     "scattershotCapsuleExponent": "1.04f",
     "scattershotCapsuleXpForFirstLevel": "10f"
