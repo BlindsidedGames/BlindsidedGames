@@ -1,4 +1,5 @@
 {
 "globalExperienceExponent":1.05,
+"globalXpForFirstLevel":100,
 "ordinaryCapsuleExponent": "1.04f"
 }
