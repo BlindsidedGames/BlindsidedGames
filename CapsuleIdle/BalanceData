@@ -13,10 +13,10 @@
         "ordinaryCapsuleExponent": 1.02,
         "ordinaryCapsuleXpForFirstLevel": 5
     },
-    "scattershotCapsuleBalanceData": {
+    "scatterShotCapsuleBalanceData": {
         "$id": 3,
         "$type": "3|CapsuleIdle.CapsuleIdleDataManager+ScattershotCapsuleBalanceData, Assembly-CSharp",
-        "scattershotCapsuleExponent": 1.03,
-        "scattershotCapsuleXpForFirstLevel": 15
+        "scatterShotCapsuleExponent": 1.03,
+        "scatterShotCapsuleXpForFirstLevel": 10
     }
 }
