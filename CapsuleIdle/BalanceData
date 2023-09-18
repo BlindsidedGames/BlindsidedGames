@@ -48,6 +48,12 @@
         "$type": "8|CapsuleIdle.CapsuleIdleDataManager+GoldUpgradeBalanceData, Assembly-CSharp",
         "tenPercentOrdinaryGoldCostExponent": 3,
         "tenPercentOrdinaryGoldBaseCost": 30,
-        "percentTwinChanceCost": 1000
+        "percentTwinChanceCost": 1000,
+        "twentyPercentScattershotGoldCostExponent": 2.5,
+        "twentyPercentScattershotGoldBaseCost": 90,
+        "fifteenPercentTwinGoldCostExponent": 2.75,
+        "fifteenPercentTwinGoldBaseCost": 50,
+        "twentyPercentTripleGoldCostExponent": 2.5,
+        "twentyPercentTripleGoldBaseCost": 110
     }
 }
