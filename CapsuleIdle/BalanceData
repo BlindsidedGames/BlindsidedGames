@@ -16,7 +16,7 @@
     "scatterShotCapsuleBalanceData": {
         "$id": 3,
         "$type": "3|CapsuleIdle.CapsuleIdleDataManager+ScatterShotCapsuleBalanceData, Assembly-CSharp",
-        "scatterShotCapsuleExponent": 1.03,
+        "scatterShotCapsuleExponent": 1.02,
         "scatterShotCapsuleXpForFirstLevel": 10
     },
     "doubleShotCapsuleBalanceData": {
@@ -47,6 +47,7 @@
         "$id": 8,
         "$type": "8|CapsuleIdle.CapsuleIdleDataManager+GoldUpgradeBalanceData, Assembly-CSharp",
         "tenPercentOrdinaryGoldCostExponent": 3,
-        "tenPercentOrdinaryGoldBaseCost": 30
+        "tenPercentOrdinaryGoldBaseCost": 30,
+        "percentTwinChanceCost": 1000
     }
 }
