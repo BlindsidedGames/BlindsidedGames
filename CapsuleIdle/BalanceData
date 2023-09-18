@@ -15,8 +15,38 @@
     },
     "scatterShotCapsuleBalanceData": {
         "$id": 3,
-        "$type": "3|CapsuleIdle.CapsuleIdleDataManager+ScattershotCapsuleBalanceData, Assembly-CSharp",
+        "$type": "3|CapsuleIdle.CapsuleIdleDataManager+ScatterShotCapsuleBalanceData, Assembly-CSharp",
         "scatterShotCapsuleExponent": 1.03,
         "scatterShotCapsuleXpForFirstLevel": 10
+    },
+    "doubleShotCapsuleBalanceData": {
+        "$id": 4,
+        "$type": "4|CapsuleIdle.CapsuleIdleDataManager+DoubleShotCapsuleBalanceData, Assembly-CSharp",
+        "doubleShotCapsuleExponent": 1.02,
+        "doubleShotCapsuleXpForFirstLevel": 10
+    },
+    "tripleShotCapsuleBalanceData": {
+        "$id": 5,
+        "$type": "5|CapsuleIdle.CapsuleIdleDataManager+TripleShotCapsuleBalanceData, Assembly-CSharp",
+        "tripleShotCapsuleExponent": 1.02,
+        "tripleShotCapsuleXpForFirstLevel": 10
+    },
+    "duelSequenceCapsuleBalanceData": {
+        "$id": 6,
+        "$type": "6|CapsuleIdle.CapsuleIdleDataManager+DuelSequenceCapsuleBalanceData, Assembly-CSharp",
+        "duelSequenceCapsuleExponent": 1.02,
+        "duelSequenceCapsuleXpForFirstLevel": 10
+    },
+    "triSequenceCapsuleBalanceData": {
+        "$id": 7,
+        "$type": "7|CapsuleIdle.CapsuleIdleDataManager+TriSequenceCapsuleBalanceData, Assembly-CSharp",
+        "triSequenceCapsuleExponent": 1.02,
+        "triSequenceCapsuleXpForFirstLevel": 10
+    },
+    "goldUpgradeBalanceData": {
+        "$id": 8,
+        "$type": "8|CapsuleIdle.CapsuleIdleDataManager+GoldUpgradeBalanceData, Assembly-CSharp",
+        "tenPercentOrdinaryGoldCostExponent": 3,
+        "tenPercentOrdinaryGoldBaseCost": 30
     }
 }
