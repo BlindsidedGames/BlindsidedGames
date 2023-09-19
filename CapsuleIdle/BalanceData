@@ -19,33 +19,43 @@
         "scatterShotCapsuleExponent": 1.02,
         "scatterShotCapsuleXpForFirstLevel": 10
     },
-    "doubleShotCapsuleBalanceData": {
+    "twinCapsuleBalanceData": {
         "$id": 4,
-        "$type": "4|CapsuleIdle.CapsuleIdleDataManager+DoubleShotCapsuleBalanceData, Assembly-CSharp",
-        "doubleShotCapsuleExponent": 1.02,
-        "doubleShotCapsuleXpForFirstLevel": 10
+        "$type": "4|CapsuleIdle.CapsuleIdleDataManager+TwinCapsuleBalanceData, Assembly-CSharp",
+        "twinCapsuleExponent": 1.02,
+        "twinCapsuleXpForFirstLevel": 10,
+        "twinsPerDualSequence": 50
     },
-    "tripleShotCapsuleBalanceData": {
+    "tripleCapsuleBalanceData": {
         "$id": 5,
-        "$type": "5|CapsuleIdle.CapsuleIdleDataManager+TripleShotCapsuleBalanceData, Assembly-CSharp",
-        "tripleShotCapsuleExponent": 1.02,
-        "tripleShotCapsuleXpForFirstLevel": 10
+        "$type": "5|CapsuleIdle.CapsuleIdleDataManager+TripleCapsuleBalanceData, Assembly-CSharp",
+        "tripleCapsuleExponent": 1.02,
+        "tripleCapsuleXpForFirstLevel": 10,
+        "triplesPerTriSequence": 100
     },
     "duelSequenceCapsuleBalanceData": {
         "$id": 6,
         "$type": "6|CapsuleIdle.CapsuleIdleDataManager+DuelSequenceCapsuleBalanceData, Assembly-CSharp",
         "duelSequenceCapsuleExponent": 1.02,
-        "duelSequenceCapsuleXpForFirstLevel": 10
+        "duelSequenceCapsuleXpForFirstLevel": 10,
+        "timeToOpenDualSequenceCapsule": 5
     },
     "triSequenceCapsuleBalanceData": {
         "$id": 7,
         "$type": "7|CapsuleIdle.CapsuleIdleDataManager+TriSequenceCapsuleBalanceData, Assembly-CSharp",
         "triSequenceCapsuleExponent": 1.02,
-        "triSequenceCapsuleXpForFirstLevel": 10
+        "triSequenceCapsuleXpForFirstLevel": 10,
+        "timeToOpenTriSequenceCapsule": 15
+    },
+    "oddCapsuleBalanceData": {
+        "$id": 8,
+        "$type": "8|CapsuleIdle.CapsuleIdleDataManager+OddCapsuleBalanceData, Assembly-CSharp",
+        "oddCapsuleExponent": 1.05,
+        "oddCapsuleXpForFirstLevel": 25
     },
     "goldUpgradeBalanceData": {
-        "$id": 8,
-        "$type": "8|CapsuleIdle.CapsuleIdleDataManager+GoldUpgradeBalanceData, Assembly-CSharp",
+        "$id": 9,
+        "$type": "9|CapsuleIdle.CapsuleIdleDataManager+GoldUpgradeBalanceData, Assembly-CSharp",
         "tenPercentOrdinaryGoldCostExponent": 3,
         "tenPercentOrdinaryGoldBaseCost": 30,
         "percentTwinChanceCost": 1000,
