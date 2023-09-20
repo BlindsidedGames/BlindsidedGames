@@ -64,6 +64,7 @@
         "fifteenPercentTwinGoldCostExponent": 2.75,
         "fifteenPercentTwinGoldBaseCost": 50,
         "twentyPercentTripleGoldCostExponent": 2.5,
-        "twentyPercentTripleGoldBaseCost": 110
+        "twentyPercentTripleGoldBaseCost": 110,
+        "tiersCost": 10000
     }
 }
