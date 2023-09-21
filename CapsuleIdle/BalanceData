@@ -56,6 +56,7 @@
     "goldUpgradeBalanceData": {
         "$id": 9,
         "$type": "9|CapsuleIdle.CapsuleIdleDataManager+GoldUpgradeBalanceData, Assembly-CSharp",
+        "ordinaryGenerationTimeCost": 20,
         "tenPercentOrdinaryGoldCostExponent": 3,
         "tenPercentOrdinaryGoldBaseCost": 30,
         "percentTwinChanceCost": 1000,
@@ -65,6 +66,21 @@
         "fifteenPercentTwinGoldBaseCost": 50,
         "twentyPercentTripleGoldCostExponent": 2.5,
         "twentyPercentTripleGoldBaseCost": 110,
-        "tiersCost": 10000
+        "tiersCost": 10000,
+        "tierModifier1Cost": 10000,
+        "tier2PlusGoldCost": 30000,
+        "tier3PlusGoldCost": 50000,
+        "fivePercentTier1GoldAndExperienceCostExponent": 9,
+        "fivePercentTier1GoldAndExperienceBaseCost": 40000,
+        "fivePercentTier1GoldAndExperienceMaxPurchases": 10,
+        "fivePercentTier2GoldAndExperienceCostExponent": 11,
+        "fivePercentTier2GoldAndExperienceBaseCost": 70000,
+        "fivePercentTier2GoldAndExperienceMaxPurchases": 10,
+        "fivePercentTier3GoldAndExperienceCostExponent": 13,
+        "fivePercentTier3GoldAndExperienceBaseCost": 110000,
+        "fivePercentTier3GoldAndExperienceMaxPurchases": 10,
+        "fivePercentTier4GoldAndExperienceCostExponent": 15,
+        "fivePercentTier4GoldAndExperienceBaseCost": 160000,
+        "fivePercentTier4GoldAndExperienceMaxPurchases": 10
     }
 }
