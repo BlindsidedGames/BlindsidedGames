@@ -68,7 +68,7 @@
         "twentyPercentTripleGoldBaseCost": 110,
         "tiersCost": 10000,
         "tierModifier1Cost": 10000,
-        "tier2PlusGoldCost": 30000,
+        "tier2PlusXpCost": 30000,
         "tier3PlusGoldCost": 50000,
         "fivePercentTier1GoldAndExperienceCostExponent": 9,
         "fivePercentTier1GoldAndExperienceBaseCost": 40000,
