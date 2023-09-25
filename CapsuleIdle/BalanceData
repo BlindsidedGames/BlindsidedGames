@@ -53,9 +53,34 @@
         "oddCapsuleExponent": 1.05,
         "oddCapsuleXpForFirstLevel": 25
     },
-    "goldUpgradeBalanceData": {
+    "evenCapsuleBalanceData": {
         "$id": 9,
-        "$type": "9|CapsuleIdle.CapsuleIdleDataManager+GoldUpgradeBalanceData, Assembly-CSharp",
+        "$type": "9|CapsuleIdle.CapsuleIdleDataManager+EvenCapsuleBalanceData, Assembly-CSharp",
+        "evenCapsuleExponent": 1.05,
+        "evenCapsuleXpForFirstLevel": 25,
+        "tierTwoCapsulesPerEven": 20
+    },
+    "equilibriumCapsuleBalanceData": {
+        "$id": 10,
+        "$type": "10|CapsuleIdle.CapsuleIdleDataManager+EquilibriumCapsuleBalanceData, Assembly-CSharp",
+        "equilibriumCapsuleExponent": 1.1,
+        "equilibriumCapsuleXpForFirstLevel": 125
+    },
+    "extendedCapsuleBalanceData": {
+        "$id": 11,
+        "$type": "11|CapsuleIdle.CapsuleIdleDataManager+ExtendedCapsuleBalanceData, Assembly-CSharp",
+        "extendedCapsuleExponent": 1.03,
+        "extendedCapsuleXpForFirstLevel": 20
+    },
+    "twoPairCapsuleBalanceData": {
+        "$id": 12,
+        "$type": "12|CapsuleIdle.CapsuleIdleDataManager+TwoPairCapsuleBalanceData, Assembly-CSharp",
+        "twoPairCapsuleExponent": 1.03,
+        "twoPairCapsuleXpForFirstLevel": 44
+    },
+    "goldUpgradeBalanceData": {
+        "$id": 13,
+        "$type": "13|CapsuleIdle.CapsuleIdleDataManager+GoldUpgradeBalanceData, Assembly-CSharp",
         "ordinaryGenerationTimeCost": 20,
         "tenPercentOrdinaryGoldCostExponent": 3,
         "tenPercentOrdinaryGoldBaseCost": 30,
