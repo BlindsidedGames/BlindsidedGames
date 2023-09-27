@@ -22,29 +22,29 @@
     "twinCapsuleBalanceData": {
         "$id": 4,
         "$type": "4|CapsuleIdle.CapsuleIdleDataManager+TwinCapsuleBalanceData, Assembly-CSharp",
-        "twinCapsuleExponent": 1.02,
-        "twinCapsuleXpForFirstLevel": 10,
+        "twinCapsuleExponent": 1.04,
+        "twinCapsuleXpForFirstLevel": 20,
         "twinsPerDualSequence": 50
     },
     "tripleCapsuleBalanceData": {
         "$id": 5,
         "$type": "5|CapsuleIdle.CapsuleIdleDataManager+TripleCapsuleBalanceData, Assembly-CSharp",
-        "tripleCapsuleExponent": 1.02,
-        "tripleCapsuleXpForFirstLevel": 10,
+        "tripleCapsuleExponent": 1.04,
+        "tripleCapsuleXpForFirstLevel": 30,
         "triplesPerTriSequence": 100
     },
     "duelSequenceCapsuleBalanceData": {
         "$id": 6,
         "$type": "6|CapsuleIdle.CapsuleIdleDataManager+DuelSequenceCapsuleBalanceData, Assembly-CSharp",
-        "duelSequenceCapsuleExponent": 1.02,
-        "duelSequenceCapsuleXpForFirstLevel": 10,
+        "duelSequenceCapsuleExponent": 1.05,
+        "duelSequenceCapsuleXpForFirstLevel": 40,
         "timeToOpenDualSequenceCapsule": 5
     },
     "triSequenceCapsuleBalanceData": {
         "$id": 7,
         "$type": "7|CapsuleIdle.CapsuleIdleDataManager+TriSequenceCapsuleBalanceData, Assembly-CSharp",
-        "triSequenceCapsuleExponent": 1.02,
-        "triSequenceCapsuleXpForFirstLevel": 10,
+        "triSequenceCapsuleExponent": 1.05,
+        "triSequenceCapsuleXpForFirstLevel": 60,
         "timeToOpenTriSequenceCapsule": 15
     },
     "oddCapsuleBalanceData": {
@@ -58,7 +58,7 @@
         "$type": "9|CapsuleIdle.CapsuleIdleDataManager+EvenCapsuleBalanceData, Assembly-CSharp",
         "evenCapsuleExponent": 1.05,
         "evenCapsuleXpForFirstLevel": 25,
-        "tierTwoCapsulesPerEven": 20
+        "tierTwoPlusCapsulesPerEven": 20
     },
     "equilibriumCapsuleBalanceData": {
         "$id": 10,
@@ -70,13 +70,16 @@
         "$id": 11,
         "$type": "11|CapsuleIdle.CapsuleIdleDataManager+ExtendedCapsuleBalanceData, Assembly-CSharp",
         "extendedCapsuleExponent": 1.03,
-        "extendedCapsuleXpForFirstLevel": 20
+        "extendedCapsuleXpForFirstLevel": 20,
+        "tierThreePlusCapsulesPerEven": 20,
+        "extensionValue": 1
     },
     "twoPairCapsuleBalanceData": {
         "$id": 12,
         "$type": "12|CapsuleIdle.CapsuleIdleDataManager+TwoPairCapsuleBalanceData, Assembly-CSharp",
         "twoPairCapsuleExponent": 1.03,
-        "twoPairCapsuleXpForFirstLevel": 44
+        "twoPairCapsuleXpForFirstLevel": 44,
+        "tierFourPlusCapsulesPerEven": 20
     },
     "goldUpgradeBalanceData": {
         "$id": 13,
