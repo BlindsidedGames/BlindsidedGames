@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
 
 :root {
-    --colour-naf: hsl(240, 5%, 20%);
+    --colour-body: hsl(217.14, 91.3%, 4.5%);
     --colour-accent: hsl(300, 50%, 40%);
     --colour-socials: hsl(240, 5%, 40%);
     --colour-navText: hsl(240, 25%, 95%);;
@@ -13,7 +13,7 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --colour-body: hsl(240, 20%, 95%);
+        --colour-body: hsl(217.14, 91.3%, 4.5%);
         --colour-text: hsl(240, 5%, 10%);
     }
 }
