@@ -20,7 +20,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --colour-body: hsl(240, 5%, 10%);
+        --colour-body: hsl(217.14, 91.3%, 4.5%);
         --colour-text: hsl(240, 25%, 90%);
     }
 }
