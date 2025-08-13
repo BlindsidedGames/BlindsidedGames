@@ -5,66 +5,188 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="hsl(240, 5%, 20%)" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="hsl(240, 5%, 20%)" media="(prefers-color-scheme: dark)"> 
+    <meta name="theme-color" content="hsl(240, 12%, 98%)" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="hsl(217.14, 91.3%, 4.5%)" media="(prefers-color-scheme: dark)">
+    <meta name="description" content="Blindsided Games – Indie games by Blindsided Games. Play Skrimp Fall, Idle Dyson Swarm, Idle Sheep Counting, Idle Spaceflight, and Rocket Mania.">
     <link rel="shortcut icon" href="./img/logo.jpg" type="image/jpg">
-    <title>Games | Blindsided Games </title>
+    <title>Blindsided Games</title>
     <link rel="stylesheet" href="./style.css">
-    <!-- <script src="./main.js"></script> -->
 </head>
 
 <body>
     <header>
         <a class="logo" href="./index.html"><img src="./img/logo.jpg" alt="Blindsided Games"></a>
+        <button class="menu-toggle" aria-label="Open navigation" onclick="document.body.dataset.navOpen = document.body.dataset.navOpen === 'true' ? 'false' : 'true'">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
         <div class="tabs">
             <a href="./index.html" class="tab-active">Games</a>
-            <a href="https://www.patreon.com/BlindsidedGames">Patreon</a>
+            <a href="https://www.patreon.com/BlindsidedGames" target="_blank" rel="noopener noreferrer">Patreon
+                <svg class="icon-external" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M14 3h7v7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 3L10 14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14 7H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
             <a href="./about.html">About</a>
             <a href="./contact.html">Contact</a>
-            
         </div>
     </header>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="./index.html" class="tab-active">Games</a>
+        <a href="https://www.patreon.com/BlindsidedGames" target="_blank" rel="noopener noreferrer">Patreon
+            <svg class="icon-external" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M14 3h7v7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 3L10 14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14 7H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
     <main>
-        <section class="games">
-            <a href="./games/skrimpfall.html">
-                <article class="game-widget" role="article" aria-label="skrimp fall">
-                    <img src="./img/SkrimpFall.gif" alt="incremental">
-                    <h3 role="text" aria-label="game title">Skrimp Fall</h3>
-                    <p role="contentinfo" aria-label="game genre">INCREMENTAL, SIMULATION, PHYSICS</p>
-                </article>
-            </a>
-            <a href="./games/idledysonswarm.html">
-                <article class="game-widget" role="article" aria-label="idle spaceflight article">
-                    <img src="./img/IdleDysonSwarm.png" alt="incremental">
-                    <h3 role="text" aria-label="game title">Idle Dyson Swarm</h3>
-                    <p role="contentinfo" aria-label="game genre">INCREMENTAL, STRATEGY</p>
-                </article>
-            </a>
-            <a href="./games/idlesheepcounting.html">
-                <article class="game-widget" role="article" aria-label="idle sheep counting">
-                    <img src="./img/unnamed.webp" alt="incremental">
-                    <h3 role="text" aria-label="game title">Idle Sheep Counting</h3>
-                    <p role="contentinfo" aria-label="game genre">INCREMENTAL, STRATEGY</p>
-                </article>
-            </a>
-            <a href="./games/idle-spaceflight.html">
-                <article class="game-widget" role="article" aria-label="idle spaceflight article">
-                    <img src="./img/IdleSpaceflight.png" alt="incremental">
-                    <h3 role="text" aria-label="game title">Idle Space-Flight</h3>
-                    <p role="contentinfo" aria-label="game genre">INCREMENTAL, STRATEGY</p>
-                </article>
-            </a>
-            <a href="./games/rocketmania.html">
-                <article class="game-widget" role="article" aria-label="rocket mania article">
-                    <img src="./img/RocketMania.png" alt="rocket mania">
-                    <h3 role="text" aria-label="game title">Rocket Mania</h3>
-                    <p role="contentinfo" aria-label="game genre">RACING, EXPLORING, 2D PLATFORMER</p>
-                </article>
-            </a>
+        <!-- Featured / Latest Release -->
+        <section class="hero">
+            <div class="hero-card glass">
+                <div class="hero-media">
+                    <img src="./img/Echoes of Vasteria.png" alt="Echoes of Vasteria artwork">
+                </div>
+                <div class="hero-content">
+                    <span class="pill pill-new" aria-label="New release">NEW</span>
+                    <h1>Echoes of Vasteria</h1>
+                    <p>Pixel-art auto-adventure with idle depth and side-scrolling action.</p>
+                    <div class="store-links">
+                        <a class="btn btn-primary" href="https://store.steampowered.com/app/2940000/Echoes_of_Vasteria/" target="_blank" rel="noopener">Steam</a>
+                        <a class="btn btn-outline" href="https://echoesofvasteria.com/" target="_blank" rel="noopener">Official site</a>
+                        <a class="btn btn-outline" href="https://echoesofvasteria.com/wiki/index.html" target="_blank" rel="noopener">Wiki</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Games -->
+        <section aria-label="All games" class="games-grid">
+            <article class="game-card glass">
+                <a class="cover-link" href="https://apps.apple.com/au/app/eternum-inc/id6741140312" target="_blank" rel="noopener" aria-label="Eternum Inc page">
+                    <img loading="lazy" decoding="async" src="./img/EternumInc.webp" alt="Eternum Inc cover image">
+                </a>
+                <div class="game-card-content">
+                    <h3>Eternum Inc</h3>
+                    <p>Idle incremental</p>
+                    <div class="store-links">
+                        <a class="btn" href="https://apps.apple.com/au/app/eternum-inc/id6741140312" target="_blank" rel="noopener">iOS</a>
+                        <a class="btn" href="https://play.google.com/store/apps/details?id=com.blindsidedgames.idleeternum&hl=en_AU" target="_blank" rel="noopener">Google Play</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="game-card glass">
+                <a class="cover-link" href="https://apps.apple.com/au/app/nebula-navigator/id6477858262" target="_blank" rel="noopener" aria-label="Nebula Navigator page">
+                    <img loading="lazy" decoding="async" src="./img/Nebula Navigator.webp" alt="Nebula Navigator cover image">
+                </a>
+                <div class="game-card-content">
+                    <h3>Nebula Navigator</h3>
+                    <p>Incremental, space warfare</p>
+                    <div class="store-links">
+                        <a class="btn" href="https://apps.apple.com/au/app/nebula-navigator/id6477858262" target="_blank" rel="noopener">iOS</a>
+                        <a class="btn" href="https://play.google.com/store/apps/details?id=com.blindsidedgames.nebulanavigator&hl=en_AU" target="_blank" rel="noopener">Google Play</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="game-card glass">
+                <a class="cover-link" href="https://apps.apple.com/si/app/idle-dyson-swarm-nanite/id6526468962" target="_blank" rel="noopener" aria-label="Idle Dyson Swarm: Nanite page">
+                    <img loading="lazy" decoding="async" src="./img/IdsNanite.webp" alt="Idle Dyson Swarm: Nanite cover image">
+                </a>
+                <div class="game-card-content">
+                    <h3>Idle Dyson Swarm: Nanite</h3>
+                    <p>Idle, strategy</p>
+                    <div class="store-links">
+                        <a class="btn" href="https://apps.apple.com/si/app/idle-dyson-swarm-nanite/id6526468962" target="_blank" rel="noopener">iOS</a>
+                        <a class="btn" href="https://play.google.com/store/apps/details?id=com.blindsidedgames.idledysonswarmnanite&hl=en_AU" target="_blank" rel="noopener">Google Play</a>
+                    </div>
+                </div>
+            </article>
+            <article class="game-card glass">
+                <a class="cover-link" href="./games/skrimpfall.html" aria-label="Skrimp Fall page">
+                    <img loading="lazy" decoding="async" src="./img/SkrimpFall.gif" alt="Skrimp Fall cover image">
+                </a>
+                <div class="game-card-content">
+                    <h3>Skrimp Fall</h3>
+                    <p>Incremental, simulation, physics</p>
+                    <div class="store-links">
+                        <a class="btn" href="https://apps.apple.com/us/app/skrimp-fall/id6447680173" target="_blank" rel="noopener">iOS</a>
+                        <a class="btn" href="https://play.google.com/store/apps/details?id=com.blindsidedgames.skrimpdrop" target="_blank" rel="noopener">Google Play</a>
+                    </div>
+                </div>
+            </article>
+            <article class="game-card glass">
+                <a class="cover-link" href="./games/idledysonswarm.html" aria-label="Idle Dyson Swarm page">
+                    <img loading="lazy" decoding="async" src="./img/IdleDysonSwarm.png" alt="Idle Dyson Swarm cover image">
+                </a>
+                <div class="game-card-content">
+                    <h3>Idle Dyson Swarm</h3>
+                    <p>Incremental, strategy</p>
+                    <div class="store-links">
+                        <a class="btn" href="https://apps.apple.com/au/app/idle-dyson-swarm/id1631060225" target="_blank" rel="noopener">iOS</a>
+                        <a class="btn" href="https://play.google.com/store/apps/details?id=com.blindsidedgames.idledysonswarm&hl=en&gl=US" target="_blank" rel="noopener">Google Play</a>
+                        <a class="btn" href="https://apps.apple.com/au/app/idle-dyson-swarm/id1631060225" target="_blank" rel="noopener">Mac</a>
+                        <a class="btn" href="https://blindsidedgames.itch.io/idle-dyson-swarm" target="_blank" rel="noopener">itch.io</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="game-card glass">
+                <a class="cover-link" href="./games/idlesheepcounting.html" aria-label="Idle Sheep Counting page">
+                    <img loading="lazy" decoding="async" src="./img/Idle Sheep Counting.webp" alt="Idle Sheep Counting cover image">
+                </a>
+                <div class="game-card-content">
+                    <h3>Idle Sheep Counting</h3>
+                    <p>Incremental, strategy</p>
+                    <div class="store-links">
+                        <a class="btn" href="https://apps.apple.com/au/app/idle-sheep-counter/id1639432790" target="_blank" rel="noopener">iOS</a>
+                        <a class="btn" href="https://play.google.com/store/apps/details?id=com.blindsidedgames.countingsheep&hl=en_AU&gl=US" target="_blank" rel="noopener">Google Play</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="game-card glass">
+                <a class="cover-link" href="./games/idle-spaceflight.html" aria-label="Idle Spaceflight page">
+                    <img loading="lazy" decoding="async" src="./img/IdleSpaceflight.png" alt="Idle Spaceflight cover image">
+                </a>
+                <div class="game-card-content">
+                    <h3>Idle Spaceflight</h3>
+                    <p>Incremental, strategy</p>
+                    <div class="store-links">
+                        <a class="btn" href="https://apps.apple.com/au/app/idle-spaceflight/id1538856127" target="_blank" rel="noopener">iOS</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="game-card glass">
+                <a class="cover-link" href="./games/rocketmania.html" aria-label="Rocket Mania page">
+                    <img loading="lazy" decoding="async" src="./img/RocketMania.png" alt="Rocket Mania cover image">
+                </a>
+                <div class="game-card-content">
+                    <h3>Rocket Mania</h3>
+                    <p>Racing, exploring, 2D platformer</p>
+                    <div class="store-links">
+                        <a class="btn" href="https://apps.apple.com/au/app/rocketmania/id1622522530" target="_blank" rel="noopener">iOS</a>
+                        <a class="btn" href="https://play.google.com/store/apps/details?id=com.BlindsidedGames.RocketMania&hl=en&gl=US" target="_blank" rel="noopener">Google Play</a>
+                        <a class="btn" href="https://store.steampowered.com/app/1949810/Rocket_Mania/" target="_blank" rel="noopener">Steam</a>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
     <footer>
-        <p>All rights reserved &copy; Blindsided Games 2023 / <a class="link-nav" href="./games/Policy.html">Policy</a></p>
+        <p>All rights reserved &copy; Blindsided Games 2025 / <a class="link-nav" href="./policy.html">Policy</a></p>
+        <div class="footer-socials">
+            <a class="pill social-discord" href="https://discord.gg/dKaEy6MFCP" target="_blank" rel="noopener">Discord</a>
+            <a class="pill social-youtube" href="https://www.youtube.com/@blindsidedgames" target="_blank" rel="noopener">YouTube</a>
+            <a class="pill" href="https://twitter.com/BlindsidedGames" target="_blank" rel="noopener">Twitter</a>
+            <a class="pill" href="https://blindsidedgames.itch.io/" target="_blank" rel="noopener">itch.io</a>
+        </div>
     </footer>
 </body>
 
