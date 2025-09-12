@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="hsl(240, 12%, 98%)" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="hsl(217.14, 91.3%, 4.5%)" media="(prefers-color-scheme: dark)">
+    <link rel="shortcut icon" href="./img/logo.jpg" type="image/jpg">
+    <title>Quizzes | Blindsided Games</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./quizzes.js"></script>
+    <style>
+        /* Page-specific layout (kept scoped here to avoid global changes) */
+        html, body { height: 100%; overflow: hidden; }
+        .quiz-layout {
+            display: grid;
+            grid-template-columns: 340px 1fr;
+            gap: 20px;
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 12px 0; /* consistent top/bottom spacing under header/above footer */
+            height: calc(100vh - (var(--bar-height) * 2));
+            box-sizing: border-box;
+            align-items: start;
+        }
+        @media (max-width: 920px) {
+            .quiz-layout { grid-template-columns: 1fr; }
+        }
+        .quiz-scroll { height: 100%; overflow: auto; padding: 6px; }
+        /* Custom scrollbars for the quiz columns */
+        .quiz-scroll { scrollbar-width: thin; scrollbar-color: var(--glass-highlight) transparent; }
+        .quiz-scroll::-webkit-scrollbar { width: 12px; }
+        .quiz-scroll::-webkit-scrollbar-track { background: transparent; }
+        .quiz-scroll::-webkit-scrollbar-thumb {
+            background: color-mix(in hsl, var(--colour-accent), transparent 70%);
+            border: 3px solid transparent;
+            background-clip: content-box;
+            border-radius: 999px;
+        }
+        .quiz-scroll::-webkit-scrollbar-thumb:hover {
+            background: color-mix(in hsl, var(--colour-accent), transparent 55%);
+            background-clip: content-box;
+        }
+        .quiz-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .quiz-list button {
+            text-align: left;
+            border-radius: 14px;
+            border: 1px solid var(--glass-border);
+            background: var(--glass-bg);
+            color: var(--colour-text);
+            padding: 12px 14px;
+            transition: transform 120ms ease, box-shadow 180ms ease, border-color 180ms ease, background-color 180ms ease;
+        }
+        .quiz-list button:hover { transform: translateX(2px); }
+        .quiz-list button.active {
+            border-color: var(--accent-glow);
+            box-shadow: 0 6px 20px var(--shadow-colour), 0 0 12px var(--accent-glow);
+            background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+        }
+        .quiz-card {
+            border-radius: 16px;
+            border: 1px solid var(--glass-border);
+            background: var(--glass-bg);
+            padding: 16px;
+        }
+        .quiz-questions { display: grid; gap: 12px; }
+        .question-card {
+            border-radius: 16px;
+            border: 1px solid var(--glass-border);
+            background: var(--glass-bg);
+            padding: 12px;
+        }
+        .answer {
+            margin-top: 10px;
+            border-radius: 12px;
+            border: 1px solid color-mix(in hsl, var(--colour-text), transparent 80%);
+            background: color-mix(in hsl, var(--colour-text), transparent 92%);
+            padding: 10px;
+        }
+        .progress-outer { height: 10px; border-radius: 999px; background: color-mix(in hsl, var(--colour-text), transparent 92%); }
+        .progress-inner { height: 10px; border-radius: 999px; background: color-mix(in hsl, var(--colour-accent), white 10%); width: 0%; transition: width 200ms ease; }
+        .progress-outer.small { height: 8px; }
+        .progress-outer.small > .progress-inner { height: 8px; }
+        .quiz-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+        .btn-slim { height: 34px; padding: 0 12px; display: inline-flex; align-items: center; border-radius: 10px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--colour-text); transition: background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease, color 160ms ease; }
+        .btn-slim:focus-visible { outline: none; box-shadow: 0 0 0 2px var(--glass-highlight); }
+        .btn-good { /* neutral until active */ }
+        .btn-good.active { border-color: hsl(150 52% 45%); background: color-mix(in hsl, hsl(150 52% 45%), transparent 80%); color: white; box-shadow: 0 0 0 2px color-mix(in hsl, hsl(150 52% 45%), transparent 60%); }
+        .btn-bad { /* neutral until active */ }
+        .btn-bad.active { border-color: hsl(6 78% 50%); background: color-mix(in hsl, hsl(6 78% 50%), transparent 80%); color: white; box-shadow: 0 0 0 2px color-mix(in hsl, hsl(6 78% 50%), transparent 60%); }
+        .btn-toggle { border-color: var(--glass-border); background: var(--glass-bg); }
+        .btn-toggle.active { border-color: var(--colour-accent); background: color-mix(in hsl, var(--colour-accent), transparent 85%); box-shadow: 0 0 0 2px color-mix(in hsl, var(--colour-accent), transparent 70%); }
+        .pill-mono { font-size: 12px; opacity: 0.9; border: 1px solid var(--glass-border); border-radius: 8px; padding: 2px 8px; }
+        .tag-correct { color: hsl(150, 52%, 52%); background: color-mix(in hsl, hsl(150, 52%, 52%), transparent 88%); border-color: color-mix(in hsl, hsl(150,52%,52%), transparent 60%); }
+        .tag-wrong { color: hsl(6, 78%, 57%); background: color-mix(in hsl, hsl(6, 78%, 57%), transparent 88%); border-color: color-mix(in hsl, hsl(6,78%,57%), transparent 60%); }
+    </style>
+    <!-- No external libs; vanilla JS in quizzes.js -->
+    <meta name="description" content="Quizzes by Blindsided Games. Pick a quiz and track your progress.">
+    <meta name="robots" content="index,follow">
+    <link rel="preload" href="./style.css" as="style">
+    <link rel="preload" href="./img/logo.jpg" as="image">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="./index.html"><img src="./img/logo.jpg" alt="Blindsided Games"></a>
+        <button class="menu-toggle" aria-label="Open navigation" onclick="document.body.dataset.navOpen = document.body.dataset.navOpen === 'true' ? 'false' : 'true'">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <div class="tabs">
+            <a href="./index.html">Games</a>
+            <a href="https://www.patreon.com/BlindsidedGames" target="_blank" rel="noopener noreferrer">Patreon
+                <svg class="icon-external" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M14 3h7v7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 3L10 14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14 7H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./quizzes.html" class="tab-active">Quizzes</a>
+        </div>
+    </header>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="./index.html">Games</a>
+        <a href="https://www.patreon.com/BlindsidedGames" target="_blank" rel="noopener noreferrer">Patreon
+            <svg class="icon-external" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M14 3h7v7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 3L10 14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14 7H5a 2 2 0 0 0-2 2v10a 2 2 0 0 0 2 2h10a 2 2 0 0 0 2-2v-9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./quizzes.html" class="tab-active">Quizzes</a>
+    </nav>
+
+    <main>
+        <section aria-label="Quizzes" class="quiz-layout">
+            <aside class="quiz-card quiz-scroll">
+                <div id="quizList" class="quiz-list"></div>
+            </aside>
+            <section id="quizDetail" class="quiz-card quiz-scroll">
+                <h2 style="margin-top:0">Pick a quiz from the list</h2>
+                <p>Nothing is selected yet. Choose a quiz on the left to load it here.</p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>All rights reserved &copy; Blindsided Games 2025 / <a class="link-nav" href="./policy.html">Policy</a></p>
+        <div class="footer-socials">
+            <a class="pill social-discord" href="https://discord.gg/dKaEy6MFCP" target="_blank" rel="noopener">Discord</a>
+            <a class="pill social-youtube" href="https://www.youtube.com/@blindsidedgames" target="_blank" rel="noopener">YouTube</a>
+            <a class="pill" href="https://twitter.com/BlindsidedGames" target="_blank" rel="noopener">Twitter</a>
+            <a class="pill" href="https://blindsidedgames.itch.io/" target="_blank" rel="noopener">itch.io</a>
+        </div>
+    </footer>
+</body>
+
+</html>

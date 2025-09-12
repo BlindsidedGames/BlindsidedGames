@@ -1,0 +1,232 @@
+{
+  "id": "harder-gk-54",
+  "title": "Harder General Knowledge Quiz 5 (50 Questions)",
+  "description": "Challenging trivia across pop culture, history, science, geography, and technology.",
+  "sections": [
+    {
+      "title": "Pop Culture & Entertainment",
+      "items": [
+        {
+          "q": "Who created the TV series The Twilight Zone?",
+          "a": "Rod Serling"
+        },
+        {
+          "q": "What year did Disney open its first theme park?",
+          "a": "1955"
+        },
+        {
+          "q": "Which singer had a hit with 'Rolling in the Deep'?",
+          "a": "Adele"
+        },
+        {
+          "q": "What is the highest-grossing film of all time (not adjusted for inflation)?",
+          "a": "Avatar (2009)"
+        },
+        {
+          "q": "Who played Tony Stark in the Marvel Cinematic Universe?",
+          "a": "Robert Downey Jr."
+        },
+        {
+          "q": "What novel begins with the line 'Call me Ishmael'?",
+          "a": "Moby-Dick"
+        },
+        {
+          "q": "What band was Freddie Mercury the lead singer of?",
+          "a": "Queen"
+        },
+        {
+          "q": "Which Pixar film was the first to be released?",
+          "a": "Toy Story"
+        },
+        {
+          "q": "Who played the Joker in The Dark Knight (2008)?",
+          "a": "Heath Ledger"
+        },
+        {
+          "q": "Which artist painted The Persistence of Memory?",
+          "a": "Salvador Dalí"
+        }
+      ]
+    },
+    {
+      "title": "History & Politics",
+      "items": [
+        {
+          "q": "Who was the U.S. president during World War I?",
+          "a": "Woodrow Wilson"
+        },
+        {
+          "q": "Which U.S. state was the first to grant women the right to vote?",
+          "a": "Wyoming"
+        },
+        {
+          "q": "Who was the longest-serving British Prime Minister of the 20th century?",
+          "a": "Margaret Thatcher"
+        },
+        {
+          "q": "What year did India gain independence from Britain?",
+          "a": "1947"
+        },
+        {
+          "q": "The Great Fire of London occurred in what year?",
+          "a": "1666"
+        },
+        {
+          "q": "Who was the leader of the Soviet Union during World War II?",
+          "a": "Joseph Stalin"
+        },
+        {
+          "q": "What is the Magna Carta?",
+          "a": "A charter of rights agreed to by King John of England in 1215"
+        },
+        {
+          "q": "Who was the first emperor of Rome?",
+          "a": "Augustus"
+        },
+        {
+          "q": "In which U.S. city was John Lennon assassinated?",
+          "a": "New York City"
+        },
+        {
+          "q": "Who discovered America in 1492?",
+          "a": "Christopher Columbus"
+        }
+      ]
+    },
+    {
+      "title": "Science & Nature",
+      "items": [
+        {
+          "q": "What is the chemical symbol for silver?",
+          "a": "Ag"
+        },
+        {
+          "q": "What part of the brain controls balance?",
+          "a": "Cerebellum"
+        },
+        {
+          "q": "How many planets are in the Solar System?",
+          "a": "8"
+        },
+        {
+          "q": "Which organ produces insulin?",
+          "a": "Pancreas"
+        },
+        {
+          "q": "What is the most common gas in the Earth’s atmosphere?",
+          "a": "Nitrogen"
+        },
+        {
+          "q": "What causes tides on Earth?",
+          "a": "The gravitational pull of the Moon and the Sun"
+        },
+        {
+          "q": "How many legs does a lobster have?",
+          "a": "10"
+        },
+        {
+          "q": "What mineral is the hardest known substance on Earth?",
+          "a": "Diamond"
+        },
+        {
+          "q": "What’s the closest star to Earth?",
+          "a": "The Sun"
+        },
+        {
+          "q": "What blood type is known as the universal recipient?",
+          "a": "AB positive"
+        }
+      ]
+    },
+    {
+      "title": "Geography",
+      "items": [
+        {
+          "q": "What is the capital of South Korea?",
+          "a": "Seoul"
+        },
+        {
+          "q": "Which African country has the city of Timbuktu?",
+          "a": "Mali"
+        },
+        {
+          "q": "What is the capital of Switzerland?",
+          "a": "Bern"
+        },
+        {
+          "q": "Which river runs through Baghdad?",
+          "a": "Tigris"
+        },
+        {
+          "q": "Which U.S. state is Mount Rushmore located in?",
+          "a": "South Dakota"
+        },
+        {
+          "q": "What is the tallest mountain in Africa?",
+          "a": "Mount Kilimanjaro"
+        },
+        {
+          "q": "Which continent is the driest?",
+          "a": "Antarctica"
+        },
+        {
+          "q": "Which European city has the landmark Sagrada Família?",
+          "a": "Barcelona"
+        },
+        {
+          "q": "What country is both in Europe and Asia?",
+          "a": "Turkey"
+        },
+        {
+          "q": "What is the capital of Egypt?",
+          "a": "Cairo"
+        }
+      ]
+    },
+    {
+      "title": "Technology & Everyday Life",
+      "items": [
+        {
+          "q": "What does HTML stand for?",
+          "a": "HyperText Markup Language"
+        },
+        {
+          "q": "What year was YouTube founded?",
+          "a": "2005"
+        },
+        {
+          "q": "Which company made the first Macintosh computer?",
+          "a": "Apple"
+        },
+        {
+          "q": "What was the first widely used search engine before Google?",
+          "a": "Yahoo!"
+        },
+        {
+          "q": "What is the name of Microsoft’s cloud service?",
+          "a": "Azure"
+        },
+        {
+          "q": "What company owns Instagram?",
+          "a": "Meta (formerly Facebook)"
+        },
+        {
+          "q": "What programming language was created by Guido van Rossum?",
+          "a": "Python"
+        },
+        {
+          "q": "What is the world’s most-used cryptocurrency?",
+          "a": "Bitcoin"
+        },
+        {
+          "q": "What was the first video game console released by Nintendo?",
+          "a": "Color TV-Game"
+        },
+        {
+          "q": "What year was Wikipedia launched?",
+          "a": "2001"
+        }
+      ]
+    }
+  ]
+}
