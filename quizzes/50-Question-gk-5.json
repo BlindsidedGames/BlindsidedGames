@@ -1,0 +1,232 @@
+{
+  "id": "50-Question-gk-5",
+  "title": "Harder General Knowledge Quiz V (50 Questions)",
+  "description": "Challenging but fair across pop culture, history, science, geography, and tech. No sports content.",
+  "sections": [
+    {
+      "title": "Pop Culture & Entertainment",
+      "items": [
+        {
+          "q": "Which novel opens with the line “Call me Ishmael.”?",
+          "a": "<em>Moby‑Dick</em> by Herman Melville"
+        },
+        {
+          "q": "Who played the title role in <em>Edward Scissorhands</em>?",
+          "a": "Johnny Depp"
+        },
+        {
+          "q": "Which artist co‑founded Cubism along with Georges Braque?",
+          "a": "Pablo Picasso"
+        },
+        {
+          "q": "Which TV series features the spaceship Serenity?",
+          "a": "Firefly"
+        },
+        {
+          "q": "Who directed <em>The Good, the Bad and the Ugly</em>?",
+          "a": "Sergio Leone"
+        },
+        {
+          "q": "Who wrote <em>The Chronicles of Narnia</em>?",
+          "a": "C.S. Lewis"
+        },
+        {
+          "q": "Which film features the courtroom line “You can’t handle the truth!”?",
+          "a": "<em>A Few Good Men</em>"
+        },
+        {
+          "q": "Who composed the opera <em>The Magic Flute</em>?",
+          "a": "Wolfgang Amadeus Mozart"
+        },
+        {
+          "q": "Which manga/anime features brothers Edward and Alphonse Elric?",
+          "a": "<em>Fullmetal Alchemist</em>"
+        },
+        {
+          "q": "What is the codename number of British secret agent James Bond?",
+          "a": "007"
+        }
+      ]
+    },
+    {
+      "title": "History & Politics",
+      "items": [
+        {
+          "q": "Who was the first person to set foot on the Moon?",
+          "a": "Neil Armstrong"
+        },
+        {
+          "q": "Which ancient civilization built the pyramids at Giza?",
+          "a": "The ancient Egyptians"
+        },
+        {
+          "q": "Who co‑authored <em>The Communist Manifesto</em> with Friedrich Engels?",
+          "a": "Karl Marx"
+        },
+        {
+          "q": "Which 1215 charter limited the English king’s power?",
+          "a": "Magna Carta"
+        },
+        {
+          "q": "What was the capital of the Byzantine Empire?",
+          "a": "Constantinople"
+        },
+        {
+          "q": "Which U.S. state was the first to ratify the Constitution?",
+          "a": "Delaware"
+        },
+        {
+          "q": "The Meiji Restoration began in which country?",
+          "a": "Japan"
+        },
+        {
+          "q": "Which global conflict was sparked by the assassination of Archduke Franz Ferdinand?",
+          "a": "World War I"
+        },
+        {
+          "q": "What was the code name for the Allied invasion of Normandy in 1944?",
+          "a": "Operation Overlord"
+        },
+        {
+          "q": "Who led the Soviet Union during the Cuban Missile Crisis?",
+          "a": "Nikita Khrushchev"
+        }
+      ]
+    },
+    {
+      "title": "Science & Nature",
+      "items": [
+        {
+          "q": "What is the smallest unit of life?",
+          "a": "The cell"
+        },
+        {
+          "q": "What is the common medical term for a sterile sodium chloride solution?",
+          "a": "Saline"
+        },
+        {
+          "q": "Which nonmetal element is liquid at room temperature?",
+          "a": "Bromine"
+        },
+        {
+          "q": "What is the largest living species of lizard?",
+          "a": "The Komodo dragon"
+        },
+        {
+          "q": "What term describes animals that are primarily active at night?",
+          "a": "Nocturnal"
+        },
+        {
+          "q": "Which cell structures assemble proteins?",
+          "a": "Ribosomes"
+        },
+        {
+          "q": "What is the process by which green plants synthesize food from sunlight?",
+          "a": "Photosynthesis"
+        },
+        {
+          "q": "Which organ pumps blood throughout the body?",
+          "a": "The heart"
+        },
+        {
+          "q": "What is the heaviest naturally occurring noble gas?",
+          "a": "Radon"
+        },
+        {
+          "q": "What do we call a star that explodes and suddenly becomes extremely bright?",
+          "a": "A supernova"
+        }
+      ]
+    },
+    {
+      "title": "Geography",
+      "items": [
+        {
+          "q": "Which country’s capital is Reykjavík?",
+          "a": "Iceland"
+        },
+        {
+          "q": "What is the largest ocean on Earth?",
+          "a": "The Pacific Ocean"
+        },
+        {
+          "q": "Which river flows through Cairo?",
+          "a": "The Nile"
+        },
+        {
+          "q": "Which country has the most pyramids in the world?",
+          "a": "Sudan"
+        },
+        {
+          "q": "Which capital city stands on the River Thames?",
+          "a": "London"
+        },
+        {
+          "q": "Which European country is home to the region of Transylvania?",
+          "a": "Romania"
+        },
+        {
+          "q": "What is the capital of New Zealand?",
+          "a": "Wellington"
+        },
+        {
+          "q": "Which country spans Europe and Asia and includes the city of Istanbul?",
+          "a": "Turkey"
+        },
+        {
+          "q": "Which Caribbean island nation is largest by area?",
+          "a": "Cuba"
+        },
+        {
+          "q": "What is the term for a narrow strip of land connecting two larger land areas?",
+          "a": "An isthmus"
+        }
+      ]
+    },
+    {
+      "title": "Technology & Everyday Life",
+      "items": [
+        {
+          "q": "What does GPU stand for?",
+          "a": "Graphics Processing Unit"
+        },
+        {
+          "q": "In two‑factor authentication, what does OTP stand for?",
+          "a": "One‑Time Password"
+        },
+        {
+          "q": "Which company manufactures the PlayStation game consoles?",
+          "a": "Sony"
+        },
+        {
+          "q": "What does CSS stand for?",
+          "a": "Cascading Style Sheets"
+        },
+        {
+          "q": "What do we call a self‑contained block of code designed to perform a task?",
+          "a": "A function"
+        },
+        {
+          "q": "What is the SI unit of electrical resistance?",
+          "a": "The ohm"
+        },
+        {
+          "q": "Which wireless technology is named after a 10th‑century Scandinavian king?",
+          "a": "Bluetooth"
+        },
+        {
+          "q": "What term describes malicious software that can replicate itself and spread without a host program?",
+          "a": "A computer worm"
+        },
+        {
+          "q": "What does IoT stand for?",
+          "a": "Internet of Things"
+        },
+        {
+          "q": "What kind of lens is used in a magnifying glass?",
+          "a": "A convex lens"
+        }
+      ]
+    }
+  ]
+}

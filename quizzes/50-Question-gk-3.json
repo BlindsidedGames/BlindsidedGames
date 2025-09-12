@@ -1,0 +1,232 @@
+{
+  "id": "50-Question-gk-3",
+  "title": "Harder General Knowledge Quiz III (50 Questions)",
+  "description": "Challenging but fair across pop culture, history, science, geography, and tech. No sports content.",
+  "sections": [
+    {
+      "title": "Pop Culture & Entertainment",
+      "items": [
+        {
+          "q": "Who wrote the play <em>Romeo and Juliet</em>?",
+          "a": "William Shakespeare"
+        },
+        {
+          "q": "Which animated film features a talking snowman named Olaf?",
+          "a": "Frozen"
+        },
+        {
+          "q": "What is the name of the wizarding school in <em>Harry Potter</em>?",
+          "a": "Hogwarts School of Witchcraft and Wizardry"
+        },
+        {
+          "q": "Which composer wrote the <em>Moonlight Sonata</em>?",
+          "a": "Ludwig van Beethoven"
+        },
+        {
+          "q": "Which 1982 film features the line “Phone home”?",
+          "a": "<em>E.T. the Extra‑Terrestrial</em>"
+        },
+        {
+          "q": "Who wrote <em>The Hobbit</em>?",
+          "a": "J.R.R. Tolkien"
+        },
+        {
+          "q": "What is the stage name of the singer Stefani Germanotta?",
+          "a": "Lady Gaga"
+        },
+        {
+          "q": "Which video game franchise features the supersoldier Master Chief?",
+          "a": "Halo"
+        },
+        {
+          "q": "In <em>Friends</em>, what is the name of Ross’s sister?",
+          "a": "Monica Geller"
+        },
+        {
+          "q": "Who directed <em>Pulp Fiction</em>?",
+          "a": "Quentin Tarantino"
+        }
+      ]
+    },
+    {
+      "title": "History & Politics",
+      "items": [
+        {
+          "q": "Which city was the RMS <em>Titanic</em> built in?",
+          "a": "Belfast"
+        },
+        {
+          "q": "Who became the first female Prime Minister of the United Kingdom?",
+          "a": "Margaret Thatcher"
+        },
+        {
+          "q": "The ancient city of Carthage lay in the territory of which modern country?",
+          "a": "Tunisia"
+        },
+        {
+          "q": "What event on July 14, 1789, is often taken as the start of the French Revolution?",
+          "a": "The Storming of the Bastille"
+        },
+        {
+          "q": "Who led India’s independence movement using nonviolent resistance?",
+          "a": "Mahatma Gandhi"
+        },
+        {
+          "q": "Which U.S. president issued the Emancipation Proclamation?",
+          "a": "Abraham Lincoln"
+        },
+        {
+          "q": "The Rosetta Stone enabled scholars to decipher which writing system?",
+          "a": "Ancient Egyptian hieroglyphs"
+        },
+        {
+          "q": "Which empire built the ancient ‘Royal Road’ for swift communication?",
+          "a": "The Achaemenid (Persian) Empire"
+        },
+        {
+          "q": "Who was the last queen of France before the Revolution?",
+          "a": "Marie Antoinette"
+        },
+        {
+          "q": "Which founding document of the United States begins with “We the People”?",
+          "a": "The U.S. Constitution"
+        }
+      ]
+    },
+    {
+      "title": "Science & Nature",
+      "items": [
+        {
+          "q": "What is the scientific study of earthquakes called?",
+          "a": "Seismology"
+        },
+        {
+          "q": "Which vitamin is synthesized in human skin when exposed to sunlight?",
+          "a": "Vitamin D"
+        },
+        {
+          "q": "What is the hardest natural substance on Earth?",
+          "a": "Diamond"
+        },
+        {
+          "q": "Which organs filter blood and produce urine?",
+          "a": "The kidneys"
+        },
+        {
+          "q": "What is the most abundant element in the Sun?",
+          "a": "Hydrogen"
+        },
+        {
+          "q": "Which cell structures contain chlorophyll and carry out photosynthesis?",
+          "a": "Chloroplasts"
+        },
+        {
+          "q": "What is the speed of light in vacuum (km/s, to the nearest thousand)?",
+          "a": "≈299,792 km/s"
+        },
+        {
+          "q": "Which subatomic particles carry a negative charge?",
+          "a": "Electrons"
+        },
+        {
+          "q": "What is the chemical formula for table salt?",
+          "a": "NaCl"
+        },
+        {
+          "q": "What do we call an animal that eats both plants and animals?",
+          "a": "An omnivore"
+        }
+      ]
+    },
+    {
+      "title": "Geography",
+      "items": [
+        {
+          "q": "What is the capital of Japan?",
+          "a": "Tokyo"
+        },
+        {
+          "q": "Which is the longest river in Europe?",
+          "a": "The Volga"
+        },
+        {
+          "q": "Dubrovnik is a city in which country?",
+          "a": "Croatia"
+        },
+        {
+          "q": "What is the largest country in South America?",
+          "a": "Brazil"
+        },
+        {
+          "q": "Which African lake is commonly cited as a source of the White Nile?",
+          "a": "Lake Victoria"
+        },
+        {
+          "q": "Which European country is famous for fjords and uses the krone?",
+          "a": "Norway"
+        },
+        {
+          "q": "What is the capital of Egypt?",
+          "a": "Cairo"
+        },
+        {
+          "q": "Which U.S. city is nicknamed the “Windy City”?",
+          "a": "Chicago"
+        },
+        {
+          "q": "What is the name of the strait between Spain and Morocco?",
+          "a": "The Strait of Gibraltar"
+        },
+        {
+          "q": "Which island nation lies just southeast of India?",
+          "a": "Sri Lanka"
+        }
+      ]
+    },
+    {
+      "title": "Technology & Everyday Life",
+      "items": [
+        {
+          "q": "What does URL stand for?",
+          "a": "Uniform Resource Locator"
+        },
+        {
+          "q": "Who co‑founded Microsoft with Bill Gates?",
+          "a": "Paul Allen"
+        },
+        {
+          "q": "Which language introduced by Apple in 2014 is widely used for iOS development?",
+          "a": "Swift"
+        },
+        {
+          "q": "What does HTML stand for?",
+          "a": "HyperText Markup Language"
+        },
+        {
+          "q": "What general name is given to always‑listening, voice‑controlled home devices like Alexa?",
+          "a": "Smart speakers"
+        },
+        {
+          "q": "What does VPN stand for?",
+          "a": "Virtual Private Network"
+        },
+        {
+          "q": "What kind of battery is commonly used in smartphones?",
+          "a": "Lithium‑ion"
+        },
+        {
+          "q": "Which cloud storage service is integrated with Gmail?",
+          "a": "Google Drive"
+        },
+        {
+          "q": "What is the term for unsolicited bulk email?",
+          "a": "Spam"
+        },
+        {
+          "q": "What does the “QR” in QR code stand for?",
+          "a": "Quick Response"
+        }
+      ]
+    }
+  ]
+}

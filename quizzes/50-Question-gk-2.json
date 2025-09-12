@@ -1,0 +1,232 @@
+{
+  "id": "50-Question-gk-2",
+  "title": "Harder General Knowledge Quiz II (50 Questions)",
+  "description": "Challenging but fair across pop culture, history, science, geography, and tech. No sports content.",
+  "sections": [
+    {
+      "title": "Pop Culture & Entertainment",
+      "items": [
+        {
+          "q": "Which film features the line “Here’s looking at you, kid”?",
+          "a": "Casablanca"
+        },
+        {
+          "q": "In <em>The Lord of the Rings</em>, what is the Elvish name for Rivendell?",
+          "a": "Imladris"
+        },
+        {
+          "q": "Who wrote the novel <em>Nineteen Eighty-Four</em>?",
+          "a": "George Orwell"
+        },
+        {
+          "q": "Which director is nicknamed the “Master of Suspense”?",
+          "a": "Alfred Hitchcock"
+        },
+        {
+          "q": "Which TV series features the character Walter White?",
+          "a": "Breaking Bad"
+        },
+        {
+          "q": "Which video game series tasks the hero with defeating Ganon?",
+          "a": "The Legend of Zelda"
+        },
+        {
+          "q": "Who composed <em>The Four Seasons</em>?",
+          "a": "Antonio Vivaldi"
+        },
+        {
+          "q": "Which artist created the pop‑art work <em>Campbell’s Soup Cans</em>?",
+          "a": "Andy Warhol"
+        },
+        {
+          "q": "Which author created the detective Sherlock Holmes?",
+          "a": "Arthur Conan Doyle"
+        },
+        {
+          "q": "In <em>Star Wars</em>, what is the name of Han Solo’s ship?",
+          "a": "The Millennium Falcon"
+        }
+      ]
+    },
+    {
+      "title": "History & Politics",
+      "items": [
+        {
+          "q": "Which ancient civilization built Machu Picchu?",
+          "a": "The Inca"
+        },
+        {
+          "q": "Who was the first Emperor of Rome?",
+          "a": "Augustus"
+        },
+        {
+          "q": "In which year did the Berlin Wall fall?",
+          "a": "1989"
+        },
+        {
+          "q": "Who was known as the “Maid of Orléans”?",
+          "a": "Joan of Arc"
+        },
+        {
+          "q": "What was the name of the ship that carried the Pilgrims to North America in 1620?",
+          "a": "The Mayflower"
+        },
+        {
+          "q": "Which war ended with the Treaty of Versailles?",
+          "a": "World War I"
+        },
+        {
+          "q": "Who became South Africa’s first Black president in 1994?",
+          "a": "Nelson Mandela"
+        },
+        {
+          "q": "Which ancient civilization is credited with inventing cuneiform writing?",
+          "a": "The Sumerians"
+        },
+        {
+          "q": "Who was the longest‑reigning British monarch?",
+          "a": "Queen Elizabeth II"
+        },
+        {
+          "q": "Which revolution began in 1789?",
+          "a": "The French Revolution"
+        }
+      ]
+    },
+    {
+      "title": "Science & Nature",
+      "items": [
+        {
+          "q": "Which planet has the Great Red Spot?",
+          "a": "Jupiter"
+        },
+        {
+          "q": "What is the chemical symbol for gold?",
+          "a": "Au"
+        },
+        {
+          "q": "What force keeps planets in orbit around the Sun?",
+          "a": "Gravity"
+        },
+        {
+          "q": "Which gas do plants absorb from the atmosphere for photosynthesis?",
+          "a": "Carbon dioxide"
+        },
+        {
+          "q": "Which part of the human eye controls the amount of light entering?",
+          "a": "The iris"
+        },
+        {
+          "q": "What is the most abundant metal in Earth’s crust?",
+          "a": "Aluminium"
+        },
+        {
+          "q": "What is the freezing point of water in Fahrenheit?",
+          "a": "32°F"
+        },
+        {
+          "q": "What is the largest internal organ in the human body?",
+          "a": "The liver"
+        },
+        {
+          "q": "What is the process by which plants lose water through their leaves called?",
+          "a": "Transpiration"
+        },
+        {
+          "q": "What is the nearest star to Earth after the Sun?",
+          "a": "Proxima Centauri"
+        }
+      ]
+    },
+    {
+      "title": "Geography",
+      "items": [
+        {
+          "q": "What is the capital of Australia?",
+          "a": "Canberra"
+        },
+        {
+          "q": "Which country is home to the ancient city of Petra?",
+          "a": "Jordan"
+        },
+        {
+          "q": "What is the largest hot desert in the world?",
+          "a": "The Sahara"
+        },
+        {
+          "q": "Which city is famous for its canals and gondolas?",
+          "a": "Venice"
+        },
+        {
+          "q": "What is the smallest country in the world by area?",
+          "a": "Vatican City"
+        },
+        {
+          "q": "In which country is Mount Kilimanjaro located?",
+          "a": "Tanzania"
+        },
+        {
+          "q": "What is the official language of Brazil?",
+          "a": "Portuguese"
+        },
+        {
+          "q": "Which Asian country was formerly known as Siam?",
+          "a": "Thailand"
+        },
+        {
+          "q": "The Grand Canyon is in which U.S. state?",
+          "a": "Arizona"
+        },
+        {
+          "q": "Which ocean lies along the east coast of the United States?",
+          "a": "The Atlantic Ocean"
+        }
+      ]
+    },
+    {
+      "title": "Technology & Everyday Life",
+      "items": [
+        {
+          "q": "What does CPU stand for?",
+          "a": "Central Processing Unit"
+        },
+        {
+          "q": "What was the name of the IBM computer that beat Garry Kasparov in 1997?",
+          "a": "Deep Blue"
+        },
+        {
+          "q": "What does USB stand for?",
+          "a": "Universal Serial Bus"
+        },
+        {
+          "q": "Who acquired Android Inc. in 2005?",
+          "a": "Google"
+        },
+        {
+          "q": "In printing, what does DPI stand for?",
+          "a": "Dots per inch"
+        },
+        {
+          "q": "In computing, what does AI stand for?",
+          "a": "Artificial intelligence"
+        },
+        {
+          "q": "What is the common keyboard shortcut for Undo on Windows?",
+          "a": "Ctrl+Z"
+        },
+        {
+          "q": "Who is credited with inventing the World Wide Web?",
+          "a": "Tim Berners‑Lee"
+        },
+        {
+          "q": "What is the term for malicious software that demands payment?",
+          "a": "Ransomware"
+        },
+        {
+          "q": "What does SSD stand for?",
+          "a": "Solid‑State Drive"
+        }
+      ]
+    }
+  ]
+}

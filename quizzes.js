@@ -4,14 +4,18 @@
   const FALLBACK_MANIFEST = {
     version: 1,
     quizzes: [
-      { id: 'harder-gk-50', title: 'Harder General Knowledge (50)', description: 'Challenging mix across 5 sections.', file: 'harder-gk-50.json' }
+      { id: '50-Question-gk-1', title: 'Harder General Knowledge (50)', description: 'Challenging mix across 5 sections.', file: '50-Question-gk-1.json' },
+      { id: '50-Question-gk-2', title: 'Harder General Knowledge Quiz 2 (50 Questions)', description: 'Challenging but fair mix of pop culture, history, science, geography, and technology.', file: '50-Question-gk-2.json' },
+      { id: '50-Question-gk-3', title: 'Harder General Knowledge Quiz 3 (50 Questions)', description: 'Challenging trivia across pop culture, history, science, geography, and technology.', file: '50-Question-gk-3.json' },
+      { id: '50-Question-gk-4', title: 'Harder General Knowledge Quiz 4 (50 Questions)', description: 'Challenging trivia across pop culture, history, science, geography, and technology.', file: '50-Question-gk-4.json' },
+      { id: '50-Question-gk-5', title: 'Harder General Knowledge Quiz 5 (50 Questions)', description: 'Challenging trivia across pop culture, history, science, geography, and technology.', file: '50-Question-gk-5.json' }
     ]
   };
 
   // Embedded fallback quiz data for local-file usage or offline
   const FALLBACK_QUIZ_DATA = {
-    'harder-gk-50.json': {
-      id: 'harder-gk-50',
+    '50-Question-gk-1.json': {
+      id: '50-Question-gk-1',
       title: 'Harder General Knowledge Quiz (50 Questions)',
       description: 'Challenging but fair across pop culture, history, science, geography, and tech.',
       sections: [
@@ -255,7 +259,8 @@
       for (const it of s.items || []) items.push({ ...it, section: s.title || '' });
     }
 
-    const storageKey = `quiz.state.${quiz.id}`;
+    const storageId = (active && active.id) || quiz.id;
+    const storageKey = `quiz.state.${storageId}`;
     /** @type {{ revealed: boolean, result: 'correct'|'wrong'|null }[]} */
     let perQ = [];
     try {

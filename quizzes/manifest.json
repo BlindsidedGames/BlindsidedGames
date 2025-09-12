@@ -2,34 +2,34 @@
   "version": 1,
   "quizzes": [
     {
-      "id": "harder-gk-50",
+      "id": "50-Question-gk-1",
       "title": "Harder General Knowledge (50)",
       "description": "Challenging mix across 5 sections.",
-      "file": "harder-gk-50.json"
+      "file": "50-Question-gk-1.json"
     },
     {
-      "id": "harder-gk-51",
+      "id": "50-Question-gk-2",
       "title": "Harder General Knowledge Quiz 2 (50 Questions)",
       "description": "Challenging but fair mix of pop culture, history, science, geography, and technology.",
-      "file": "harder-gk-51.json"
+      "file": "50-Question-gk-2.json"
     },
     {
-      "id": "harder-gk-52",
+      "id": "50-Question-gk-3",
       "title": "Harder General Knowledge Quiz 3 (50 Questions)",
       "description": "Challenging trivia across pop culture, history, science, geography, and technology.",
-      "file": "harder-gk-52.json"
+      "file": "50-Question-gk-3.json"
     },
     {
-      "id": "harder-gk-53",
+      "id": "50-Question-gk-4",
       "title": "Harder General Knowledge Quiz 4 (50 Questions)",
       "description": "Challenging trivia across pop culture, history, science, geography, and technology.",
-      "file": "harder-gk-53.json"
+      "file": "50-Question-gk-4.json"
     },
     {
-      "id": "harder-gk-54",
+      "id": "50-Question-gk-5",
       "title": "Harder General Knowledge Quiz 5 (50 Questions)",
       "description": "Challenging trivia across pop culture, history, science, geography, and technology.",
-      "file": "harder-gk-54.json"
+      "file": "50-Question-gk-5.json"
     }
   ]
 }
