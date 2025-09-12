@@ -4,7 +4,7 @@
   const FALLBACK_MANIFEST = {
     version: 1,
     quizzes: [
-      { id: '50-Question-gk-1', title: 'General Knowledge (50)', description: 'Challenging mix across 5 sections.', file: '50-Question-gk-1.json' },
+      { id: '50-Question-gk-1', title: 'General Knowledge Quiz 1 (50 Questions)', description: 'Challenging mix across 5 sections.', file: '50-Question-gk-1.json' },
       { id: '50-Question-gk-2', title: 'General Knowledge Quiz 2 (50 Questions)', description: 'Challenging but fair mix of pop culture, history, science, geography, and technology.', file: '50-Question-gk-2.json' },
       { id: '50-Question-gk-3', title: 'General Knowledge Quiz 3 (50 Questions)', description: 'Challenging trivia across pop culture, history, science, geography, and technology.', file: '50-Question-gk-3.json' },
       { id: '50-Question-gk-4', title: 'General Knowledge Quiz 4 (50 Questions)', description: 'Challenging trivia across pop culture, history, science, geography, and technology.', file: '50-Question-gk-4.json' },
