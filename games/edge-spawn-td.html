@@ -94,11 +94,24 @@
       </div>
 
       <div class="section">
+        <div class="row" style="margin-bottom:6px"><strong>Utilities</strong></div>
+        <div class="row" style="gap:6px">
+          <button id="toggleSnap" style="flex:1">Grid Snap: Off</button>
+        </div>
+        <div class="row" style="gap:6px; align-items:center">
+          <button id="btnSaboteur" style="flex:1">Deploy Saboteur</button>
+          <div class="muted mono" id="saboteurCost">Cost: 10 XP</div>
+        </div>
+        <div class="muted" style="margin-top:6px">Saboteur drones bump tech levels but shave 10% tower HP.</div>
+      </div>
+
+      <div class="section">
         <strong>Controls</strong>
         <div class="muted" style="line-height:1.6">
           Select: <span class="kbd">1</span> Rapid, <span class="kbd">2</span> Beam &bull; Click to place<br/>
           First placement starts Wave 1<br/>
-          <span class="kbd">R</span> Restart &bull; <span class="kbd">Space</span> Pause &bull; <span class="kbd">N</span> Next Wave (after clear)
+          <span class="kbd">R</span> Restart &bull; <span class="kbd">Space</span> Pause &bull; <span class="kbd">N</span> Next Wave (tap anytime)<br/>
+          <span class="kbd">G</span> Toggle Grid Snap &bull; Saboteur via Utilities
         </div>
       </div>
 
@@ -149,6 +162,9 @@
     const btnRestart = document.getElementById('btnRestart');
     const buyRapidBtn = document.getElementById('buyRapid');
     const buyBeamBtn = document.getElementById('buyBeam');
+    const toggleSnapBtn = document.getElementById('toggleSnap');
+    const saboteurBtn = document.getElementById('btnSaboteur');
+    const saboteurCostEl = document.getElementById('saboteurCost');
 
     const itmCritEl = document.getElementById('itmCrit');
     const itmBncEl = document.getElementById('itmBounce');
@@ -156,6 +172,8 @@
     const itmLSEl = document.getElementById('itmLS');
 
     const UI_RIGHT_PAD = 340; // matches sidebar width
+    const GRID_SIZE = 40;
+    const SABOTEUR_COST = 10;
 
     const state = {
       width: 1280,
@@ -180,6 +198,7 @@
       xp: 0,
       dropChance: 0.10,
       selected: 'rapid',
+      gridSnap: false,
       firstPlaced: false,
       nextWaveQueued: false,
       tech: { rapid: 1, beam: 1 }, // Tech levels (affect future placements)
@@ -676,6 +695,7 @@
         if (this.exploded) return;
         this.exploded = true;
         this.alive = false;
+        this.hp = 0;
         addRing(this.x, this.y, this.explodeRadius);
         for (const tw of state.towers) {
           if (!tw.isAlive()) continue;
@@ -920,14 +940,15 @@
 
     // Waves and spawning
     function startWave() {
-      state.wave += 1;
+      const nextWave = state.wave + 1;
+      const count = Math.floor(6 + nextWave * 4 + Math.pow(nextWave, 1.35));
+      state.wave = nextWave;
       state.spawning = true;
       state.spawnCooldown = 0;
       state.spawnedThisWave = 0;
       state.bossSpawned = false;
       state.nextWaveQueued = false;
-      const count = Math.floor(6 + state.wave * 4 + Math.pow(state.wave, 1.35));
-      state.enemiesToSpawn = count;
+      state.enemiesToSpawn += count;
       if (state.wave % 5 === 0) spawnBoss();
     }
 
@@ -989,20 +1010,62 @@
       else if (side === 1) { x = state.width + m; y = rand(-m, state.height + m); }
       else if (side === 2) { x = rand(-m, state.width + m); y = state.height + m; }
       else { x = -m; y = rand(-m, state.height + m); }
-      const allowSpecial = state.spawnedThisWave > 5;
-      if (allowSpecial && Math.random() < 1 / 50) state.enemies.push(new SpecialEnemy(x, y, state.wave));
-      else state.enemies.push(new Enemy(x, y, state.wave));
+      state.enemies.push(new Enemy(x, y, state.wave));
     }
 
-    function tryPlace(kind, x, y) {
+    function deploySaboteur() {
+      const aliveTowers = state.towers.filter((t) => t.isAlive());
+      if (aliveTowers.length === 0) return false;
+      const m = 24;
+      const side = Math.floor(Math.random() * 4);
+      let x;
+      let y;
+      if (side === 0) { x = rand(-m, state.width + m); y = -m; }
+      else if (side === 1) { x = state.width + m; y = rand(-m, state.height + m); }
+      else if (side === 2) { x = rand(-m, state.width + m); y = state.height + m; }
+      else { x = -m; y = rand(-m, state.height + m); }
+      const waveLevel = Math.max(1, state.wave || 1);
+      const saboteur = new SpecialEnemy(x, y, waveLevel);
+      saboteur.playerSummoned = true;
+      state.enemies.push(saboteur);
+      pushToast('Saboteur inbound', state.width / 2, 60);
+      return true;
+    }
+
+    function getPlacementInfo(kind, rawX, rawY) {
+      const radius = kind === 'rapid' ? 16 : 18;
+      let x = rawX;
+      let y = rawY;
+      if (state.gridSnap) {
+        const snap = (v) => Math.round(v / GRID_SIZE) * GRID_SIZE;
+        x = snap(x);
+        y = snap(y);
+        const pad = radius + 6;
+        x = clamp(x, pad, state.width - pad);
+        y = clamp(y, pad, state.height - pad);
+      }
+      let blocked = false;
       for (const t of state.towers) {
-        const minDist = t.radius + (kind === 'rapid' ? 16 : 18) + 6;
-        if (Math.hypot(x - t.x, y - t.y) < minDist) return false;
+        const minDist = t.radius + radius + 6;
+        if (Math.hypot(x - t.x, y - t.y) < minDist) {
+          blocked = true;
+          break;
+        }
       }
       const cost = state.costs[kind];
-      if (state.firstPlaced && state.xp < cost) return false;
+      const hasCost = typeof cost === 'number' && Number.isFinite(cost);
+      const affordable = hasCost && (!state.firstPlaced || state.xp >= cost);
+      const placeable = affordable && !blocked;
+      return { x, y, radius, blocked, affordable, placeable };
+    }
+
+    function tryPlace(kind, rawX, rawY) {
+      const info = getPlacementInfo(kind, rawX, rawY);
+      if (!info.placeable) return false;
+      const cost = state.costs[kind];
+      if (typeof cost !== 'number') return false;
       const snapshot = kind === 'rapid' ? computeRapidStats(state.tech.rapid) : computeBeamStats(state.tech.beam);
-      const t = new Tower(x, y, kind, snapshot);
+      const t = new Tower(info.x, info.y, kind, snapshot);
       state.towers.push(t);
       if (state.firstPlaced) state.xp -= cost;
       else state.firstPlaced = true;
@@ -1025,11 +1088,15 @@
     });
     document.addEventListener('keydown', (e) => {
       if (e.key === '1') state.selected = 'rapid';
-      if (e.key === '2') state.selected = 'beam';
-      if (e.key === ' ') state.running = !state.running;
-      if (e.key === 'r' || e.key === 'R') reset(true);
-      if (e.key === 'n' || e.key === 'N') {
-        if (!state.spawning && state.enemies.length === 0) startWave();
+      else if (e.key === '2') state.selected = 'beam';
+      else if (e.key === ' ') state.running = !state.running;
+      else if (e.key === 'r' || e.key === 'R') reset(true);
+      else if (e.key === 'g' || e.key === 'G') state.gridSnap = !state.gridSnap;
+      else if (e.key === 'n' || e.key === 'N') {
+        if (!state.running) return;
+        if (!state.firstPlaced) return;
+        if (!state.towers.some((t) => t.isAlive())) return;
+        startWave();
       }
     });
     btnRapid.addEventListener('click', () => { state.selected = 'rapid'; });
@@ -1051,6 +1118,23 @@
         state.tech.beam += 1;
       }
     });
+
+    if (toggleSnapBtn) {
+      toggleSnapBtn.addEventListener('click', () => {
+        state.gridSnap = !state.gridSnap;
+      });
+    }
+
+    if (saboteurBtn) {
+      saboteurBtn.addEventListener('click', () => {
+        if (!state.running || !state.firstPlaced) return;
+        if (state.xp < SABOTEUR_COST) return;
+        if (!state.towers.some((t) => t.isAlive())) return;
+        if (deploySaboteur()) {
+          state.xp -= SABOTEUR_COST;
+        }
+      });
+    }
 
     function techCost(kind) {
       return kind === 'rapid'
@@ -1126,19 +1210,29 @@
       itmLSEl.textContent = `x${state.items.lifesteal}`;
       btnRapid.style.opacity = (!state.firstPlaced || state.xp >= state.costs.rapid) ? 1 : 0.5;
       btnBeam.style.opacity = (!state.firstPlaced || state.xp >= state.costs.beam) ? 1 : 0.5;
+      if (toggleSnapBtn) {
+        toggleSnapBtn.textContent = state.gridSnap ? 'Grid Snap: On' : 'Grid Snap: Off';
+        toggleSnapBtn.classList.toggle('can-upgrade', state.gridSnap);
+      }
+      if (saboteurCostEl) saboteurCostEl.textContent = `Cost: ${SABOTEUR_COST} XP`;
+      if (saboteurBtn) {
+        const canSaboteur = state.firstPlaced && state.xp >= SABOTEUR_COST && livingTowers.length > 0;
+        saboteurBtn.disabled = !canSaboteur;
+        saboteurBtn.classList.toggle('can-upgrade', canSaboteur);
+      }
     }
 
     function drawGrid(g) {
       g.save();
       g.strokeStyle = 'rgba(255,255,255,0.05)';
       g.lineWidth = 1;
-      for (let x = 0; x < state.width; x += 40) {
+      for (let x = 0; x < state.width; x += GRID_SIZE) {
         g.beginPath();
         g.moveTo(x, 0);
         g.lineTo(x, state.height);
         g.stroke();
       }
-      for (let y = 0; y < state.height; y += 40) {
+      for (let y = 0; y < state.height; y += GRID_SIZE) {
         g.beginPath();
         g.moveTo(0, y);
         g.lineTo(state.width, y);
@@ -1187,14 +1281,21 @@
     }
 
     function drawGhost() {
-      const r = state.selected === 'rapid' ? 16 : 18;
+      const kind = state.selected;
+      const info = getPlacementInfo(kind, mouse.x, mouse.y);
       ctx.save();
-      ctx.globalAlpha = 0.5;
-      ctx.fillStyle = state.selected === 'rapid' ? '#4ea1ff' : '#ffb44e';
+      if (info.placeable) {
+        ctx.globalAlpha = 0.8;
+        ctx.fillStyle = kind === 'rapid' ? '#63b4ff' : '#ffc976';
+        ctx.shadowColor = ctx.fillStyle;
+        ctx.shadowBlur = 14;
+      } else {
+        ctx.globalAlpha = 0.45;
+        ctx.fillStyle = 'rgba(148, 163, 184, 0.85)';
+      }
       ctx.beginPath();
-      ctx.arc(mouse.x, mouse.y, r, 0, Math.PI * 2);
+      ctx.arc(info.x, info.y, info.radius, 0, Math.PI * 2);
       ctx.fill();
-      ctx.globalAlpha = 1;
       ctx.restore();
     }
 
@@ -1232,18 +1333,18 @@
         if (Math.abs(tw.hp - expectedHP) > 0.001) errors.push('Explosion should reduce tower HP by 10%');
         state.wave = 2;
         state.spawning = true;
-        state.enemiesToSpawn = 10;
+        state.enemiesToSpawn = 1;
         state.spawnedThisWave = 0;
-        const oldRand = Math.random;
-        Math.random = () => 0;
         spawnEnemy();
-        const isSpecialEarly = state.enemies[state.enemies.length - 1] instanceof SpecialEnemy;
-        if (isSpecialEarly) errors.push('Special enemy should not spawn at start of wave');
-        state.spawnedThisWave = 6;
-        spawnEnemy();
-        const isSpecialLate = state.enemies[state.enemies.length - 1] instanceof SpecialEnemy;
-        if (!isSpecialLate) errors.push('Special enemy should spawn after gating allows it');
-        Math.random = oldRand;
+        if (!(state.enemies[state.enemies.length - 1] instanceof Enemy)) errors.push('spawnEnemy should enqueue standard enemies');
+        state.enemies = [];
+        state.towers = [];
+        if (deploySaboteur()) errors.push('deploySaboteur should fail without towers');
+        state.towers = [tw];
+        state.wave = 3;
+        const sabSpawned = deploySaboteur();
+        if (!sabSpawned) errors.push('deploySaboteur should spawn when towers exist');
+        else if (!(state.enemies[state.enemies.length - 1] instanceof SpecialEnemy)) errors.push('deploySaboteur should spawn a SpecialEnemy');
         state.enemies = [];
         state.wave = 4;
         startWave();
