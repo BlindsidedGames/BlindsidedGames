@@ -840,6 +840,14 @@
           } else if (tw.kind === 'beam') {
             const targetLvl = state.tech.beam + 1;
             if (tw.snapshot.level < targetLvl) tw.snapshot = computeBeamStats(targetLvl);
+          } else if (tw.kind === 'wall') {
+            const targetLvl = state.tech.wall + 1;
+            if ((tw.snapshot.level || 1) < targetLvl) {
+              const upgraded = computeWallStats(targetLvl);
+              tw.snapshot = upgraded;
+              tw.baseHpMax = upgraded.hpMax;
+              tw.hpMax = tw.baseHpMax * (1 + 0.10 * state.items.hp);
+            }
           }
           tw.hp = Math.min(tw.hpMax, tw.hp + tw.hpMax * 0.4);
           tw.cool = 0;
@@ -1237,7 +1245,8 @@
     }
 
     function computeBeamStats(level) {
-      return { level, beamDPS: 42 + (level - 1) * 10, beamWidth: 6 + (level - 1) * 0.7 };
+      const baseWidth = 6 + (level - 1) * 0.7;
+      return { level, beamDPS: 42 + (level - 1) * 10, beamWidth: Math.min(25, baseWidth) };
     }
 
     function computeWallStats(level) {
