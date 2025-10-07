@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+</html>
+</body>
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+</html>
+</html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -91,7 +100,7 @@
         <div class="dropLine"><div class="dropName"><span class="dot bnc"></span>Bounce</div><div class="mono" id="itmBounce">x0</div></div>
         <div class="dropLine"><div class="dropName"><span class="dot hp"></span>Tower HP</div><div class="mono" id="itmHP">x0</div></div>
         <div class="dropLine"><div class="dropName"><span class="dot ls"></span>Life Steal</div><div class="mono" id="itmLS">x0</div></div>
-        <div class="muted" style="margin-top:6px">10% drop chance on kill. Boss spawns every 5 waves.</div>
+        <div class="muted" style="margin-top:6px">10% drop chance on kill. Worm boss spawns every 5 waves.</div>
       </div>
 
       <div class="section">
@@ -326,14 +335,17 @@
       g.closePath();
     }
 
-    function drawHpBar(g, x, y, hp, hpMax) {
-      const w = 40;
-      const h = 5;
-      g.fillStyle = 'rgba(255,255,255,0.08)';
+    function drawHpBar(g, x, y, hp, hpMax, style = {}) {
+      const w = style.width || 40;
+      const h = style.height || 5;
+      const bg = style.background || 'rgba(255,255,255,0.08)';
+      const fill = style.fill || '#7ee787';
+      g.fillStyle = bg;
       roundedRect(g, x - w / 2, y, w, h, 3);
       g.fill();
       const frac = clamp(hp / hpMax, 0, 1);
-      g.fillStyle = '#7ee787';
+      if (frac <= 0) return;
+      g.fillStyle = fill;
       roundedRect(g, x - w / 2, y, w * frac, h, 3);
       g.fill();
     }
@@ -481,10 +493,10 @@
         this.kind = kind;
         this.snapshot = snapshot; // { level, stats }
         if (this.kind === 'rapid') {
-          this.radius = 16;
+          this.radius = 14;
           this.baseHpMax = 160;
         } else if (this.kind === 'beam') {
-          this.radius = 15;
+          this.radius = 13;
           this.baseHpMax = 210;
         } else if (this.kind === 'wall') {
           this.radius = 16;
@@ -594,16 +606,16 @@
         g.rotate(this.angle);
         if (this.kind === 'rapid') {
           g.fillStyle = deleting ? '#dc2626' : '#4ea1ff';
-          roundedRect(g, -16, -16, 32, 32, 8);
+          roundedRect(g, -14, -14, 28, 28, 8);
           g.fill();
           g.fillStyle = deleting ? '#fecaca' : '#cfe8ff';
-          g.fillRect(10, -4, 16, 8);
+          g.fillRect(8, -4, 14, 8);
         } else if (this.kind === 'beam') {
           g.fillStyle = deleting ? '#dc2626' : '#ffb44e';
-          roundedRect(g, -15, -15, 30, 30, 9);
+          roundedRect(g, -13, -13, 26, 26, 8);
           g.fill();
           g.fillStyle = deleting ? '#fecaca' : '#ffe0b2';
-          g.fillRect(8, -5, 16, 10);
+          g.fillRect(7, -5, 14, 10);
         } else {
           g.fillStyle = deleting ? '#dc2626' : '#a1a1aa';
           roundedRect(g, -16, -16, 32, 32, 6);
@@ -652,6 +664,7 @@
 
       update(dt) {
         if (!this.alive) return;
+        if (this.head && !this.head.alive) return;
         const t = nearestTower(this.x, this.y);
         if (!t) {
           this.vx = 0;
@@ -690,6 +703,10 @@
         onEnemyKilled(this, by);
       }
 
+      getHpBarStyle() {
+        return null;
+      }
+
       draw(g) {
         g.save();
         g.translate(this.x, this.y);
@@ -698,31 +715,7 @@
         g.arc(0, 0, this.radius, 0, Math.PI * 2);
         g.fill();
         g.restore();
-        drawHpBar(g, this.x, this.y - (this.radius + 10), this.hp, this.hpMax);
-      }
-    }
-
-    class Boss extends Enemy {
-      constructor(x, y, wave) {
-        super(x, y, wave);
-        this.radius = 24;
-        this.color = '#a855f7';
-        this.speed = 46;
-        this.hpMax = this.hpMax * 12;
-        this.hp = this.hpMax;
-        this.dps *= 1.8;
-      }
-
-      draw(g) {
-        super.draw(g);
-        g.save();
-        g.globalAlpha = 0.15;
-        g.strokeStyle = '#a78bfa';
-        g.lineWidth = 6;
-        g.beginPath();
-        g.arc(this.x, this.y, this.radius + 10, 0, Math.PI * 2);
-        g.stroke();
-        g.restore();
+        drawHpBar(g, this.x, this.y - (this.radius + 10), this.hp, this.hpMax, this.getHpBarStyle() || undefined);
       }
     }
 
@@ -870,7 +863,7 @@
       constructor(x, y, wave, segmentCount) {
         super(x, y, wave);
         this.radius = 18;
-        this.color = '#22d3ee';
+        this.color = '#dc2626';
         this.speed = 52 + Math.min(60, wave * 2.2);
         this.hpMax = this.hpMax * 10;
         this.hp = this.hpMax;
@@ -880,6 +873,7 @@
         this.trail = [];
         this.maxTrail = Math.max(220, (segmentCount + 6) * this.segmentSpacing);
         this.segments = [];
+        this.contacting = false;
       }
 
       attachSegments(segments) {
@@ -897,6 +891,15 @@
         super.update(dt);
         this.trail.unshift({ x: this.x, y: this.y });
         if (this.trail.length > this.maxTrail) this.trail.pop();
+        const tower = nearestTower(this.x, this.y);
+        const contact = tower && Math.hypot(tower.x - this.x, tower.y - this.y) <= (this.radius + tower.radius + 0.5);
+        this.contacting = !!contact;
+        if (this.contacting) {
+          for (const entry of this.trail) {
+            entry.x = this.x;
+            entry.y = this.y;
+          }
+        }
       }
 
       getTrailPoint(distance) {
@@ -930,12 +933,16 @@
         super.hit(dmg, by);
       }
 
+      getHpBarStyle() {
+        return { background: 'rgba(248,113,113,0.35)', fill: '#7ee787', width: 48, height: 6 };
+      }
+
       draw(g) {
         super.draw(g);
         if (this.segments.some((seg) => seg.alive)) {
           g.save();
           g.globalAlpha = 0.25;
-          g.strokeStyle = '#0ea5e9';
+          g.strokeStyle = '#f87171';
           g.lineWidth = 3;
           g.beginPath();
           g.arc(this.x, this.y, this.radius + 12, 0, Math.PI * 2);
@@ -952,17 +959,29 @@
         this.index = index;
         this.followDistance = (index + 1) * head.segmentSpacing;
         this.radius = 14;
-        this.color = '#0ea5e9';
+        this.color = '#f97316';
         this.speed = head.speed * 0.9;
         this.dps *= 0.9;
         this.hpMax = this.hpMax * 0.8;
         this.hp = this.hpMax;
+        this.frozenOffset = null;
       }
 
       update(dt) {
         if (!this.alive) return;
         const prevX = this.x;
         const prevY = this.y;
+        if (this.head && this.head.contacting) {
+          if (!this.frozenOffset) {
+            this.frozenOffset = { dx: this.x - this.head.x, dy: this.y - this.head.y };
+          }
+          this.x = this.head.x + this.frozenOffset.dx;
+          this.y = this.head.y + this.frozenOffset.dy;
+          this.vx = 0;
+          this.vy = 0;
+          return;
+        }
+        this.frozenOffset = null;
         const targetPos = this.head.getTrailPoint(this.followDistance);
         this.x = targetPos.x;
         this.y = targetPos.y;
@@ -970,7 +989,7 @@
           this.vx = (this.x - prevX) / dt;
           this.vy = (this.y - prevY) / dt;
         }
-        const t = nearestTower(this.x, this.y);
+        const t = (this.head && this.head.contacting) ? null : nearestTower(this.x, this.y);
         if (!t) return;
         const dxT = t.x - this.x;
         const dyT = t.y - this.y;
@@ -985,10 +1004,14 @@
         if (!this.alive) return;
         super.hit(dmg, by);
         if (!this.alive) {
-          for (let i = 0; i < 6; i += 1) addParticle(this.x, this.y, '#38bdf8');
+          for (let i = 0; i < 6; i += 1) addParticle(this.x, this.y, '#fb7185');
           addRing(this.x, this.y, 22);
           this.head.onSegmentDestroyed(this);
         }
+      }
+
+      getHpBarStyle() {
+        return { background: 'rgba(248,113,113,0.45)', fill: '#90f0a5', width: 48, height: 6 };
       }
 
       draw(g) {
@@ -1357,8 +1380,8 @@
     }
 
     function towerRadius(kind) {
-      if (kind === 'rapid') return 16;
-      if (kind === 'beam') return 15;
+      if (kind === 'rapid') return 14;
+      if (kind === 'beam') return 13;
       if (kind === 'wall') return 16;
       return 16;
     }
@@ -1377,6 +1400,7 @@
       }
       let blocked = false;
       for (const t of state.towers) {
+        if (!t.isAlive()) continue;
         const minDist = t.radius + radius + 6;
         if (Math.hypot(x - t.x, y - t.y) < minDist) {
           blocked = true;
@@ -1769,6 +1793,15 @@
         if (!hasHead || !hasSegment) errors.push('Worm boss should spawn head and segments on boss wave');
         const head = state.enemies.find((e) => e instanceof WormHead);
         if (head) {
+          const testSeg = head.segments.find((seg) => seg && seg.alive && seg.hp > 1);
+          if (testSeg) {
+            const hpBefore = testSeg.hp;
+            const dmgSample = Math.min(Math.max(1, hpBefore * 0.1), hpBefore - 1);
+            testSeg.hit(dmgSample, null);
+            if (!(testSeg.hp < hpBefore)) errors.push('Worm segment should lose HP when damaged');
+            testSeg.hp = hpBefore;
+            testSeg.alive = true;
+          }
           const originalCount = head.segments.length;
           if (originalCount > 1) {
             const mid = head.segments[Math.floor(originalCount / 2)];
