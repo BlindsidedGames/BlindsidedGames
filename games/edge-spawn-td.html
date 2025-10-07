@@ -236,7 +236,7 @@
       xp: 0,
       dropChance: 0.10,
       selected: 'rapid',
-      gridSnap: false,
+      gridSnap: true,
       ctrlDown: false,
       hoverTower: null,
       firstPlaced: false,
@@ -650,6 +650,7 @@
         this.x = x;
         this.y = y;
         this.radius = 12;
+        this.wave = wave;
         const baseHP = 40 + wave * 26 + Math.pow(wave, 1.65) * 8;
         this.hpMax = baseHP;
         this.hp = this.hpMax;
@@ -869,9 +870,10 @@
         this.hp = this.hpMax;
         this.dps *= 1.4;
         this.segmentCount = segmentCount;
-        this.segmentSpacing = 20;
+        this.leadingSpacing = 60;
+        this.segmentSpacing = 40;
         this.trail = [];
-        this.maxTrail = Math.max(220, (segmentCount + 6) * this.segmentSpacing);
+        this.maxTrail = Math.max(220, this.leadingSpacing + (segmentCount + 6) * this.segmentSpacing);
         this.segments = [];
         this.contacting = false;
       }
@@ -913,7 +915,7 @@
           const seg = this.segments[i];
           if (!seg.alive) continue;
           seg.index = i;
-          seg.followDistance = (i + 1) * this.segmentSpacing;
+          seg.followDistance = this.leadingSpacing + i * this.segmentSpacing;
           const pos = this.getTrailPoint(seg.followDistance);
           if (pos) {
             seg.x = pos.x;
@@ -957,7 +959,8 @@
         super(head.x, head.y, head.wave);
         this.head = head;
         this.index = index;
-        this.followDistance = (index + 1) * head.segmentSpacing;
+        const leading = head.leadingSpacing || head.segmentSpacing;
+        this.followDistance = leading + index * head.segmentSpacing;
         this.radius = 14;
         this.color = '#f97316';
         this.speed = head.speed * 0.9;
