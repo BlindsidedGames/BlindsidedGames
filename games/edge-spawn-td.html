@@ -86,7 +86,6 @@
 
       <div class="section">
         <strong>Items (global, stack)</strong>
-        <div class="dropLine"><div class="dropName"><span class="dot ms"></span>Multi-Shot</div><div class="mono" id="itmMS">x0</div></div>
         <div class="dropLine"><div class="dropName"><span class="dot crit"></span>Crit Chance</div><div class="mono" id="itmCrit">x0</div></div>
         <div class="dropLine"><div class="dropName"><span class="dot bnc"></span>Bounce</div><div class="mono" id="itmBounce">x0</div></div>
         <div class="dropLine"><div class="dropName"><span class="dot hp"></span>Tower HP</div><div class="mono" id="itmHP">x0</div></div>
@@ -151,7 +150,6 @@
     const buyRapidBtn = document.getElementById('buyRapid');
     const buyBeamBtn = document.getElementById('buyBeam');
 
-    const itmMSEl = document.getElementById('itmMS');
     const itmCritEl = document.getElementById('itmCrit');
     const itmBncEl = document.getElementById('itmBounce');
     const itmHPEl = document.getElementById('itmHP');
@@ -185,7 +183,7 @@
       firstPlaced: false,
       nextWaveQueued: false,
       tech: { rapid: 1, beam: 1 }, // Tech levels (affect future placements)
-      items: { multishot: 0, crit: 0, bounce: 0, hp: 0, lifesteal: 0 }, // Global items
+      items: { crit: 0, bounce: 0, hp: 0, lifesteal: 0 }, // Global items
       costs: { rapid: 5, beam: 15 },
     };
 
@@ -285,18 +283,16 @@
       g.fill();
     }
 
-    const MAX_MULTISHOT = 3;
-
     const dropConfig = {
-      multishot: { color: '#60a5fa', label: 'MS', toast: '+MS' },
       crit: { color: '#f87171', label: 'C', toast: '+Crit' },
       bounce: { color: '#a78bfa', label: 'B', toast: '+Bounce' },
       hp: { color: '#22c55e', label: 'HP', toast: '+HP' },
       lifesteal: { color: '#f59e0b', label: 'LS', toast: '+LS' },
+      default: { color: '#94a3b8', label: '?', toast: '+Item' },
     };
 
     function spawnDrop(key, x, y) {
-      const cfg = dropConfig[key] || dropConfig.multishot;
+      const cfg = dropConfig[key] || dropConfig.default;
       state.drops.push({
         key,
         x,
@@ -313,7 +309,7 @@
     function collectDrop(drop) {
       if (drop.collected) return;
       drop.collected = true;
-      const cfg = dropConfig[drop.key] || dropConfig.multishot;
+      const cfg = dropConfig[drop.key] || dropConfig.default;
       const applied = onItemGained(drop.key);
       addParticle(drop.x, drop.y, cfg.color);
       const toastText = applied ? cfg.toast : `${cfg.label} MAX`;
@@ -354,7 +350,7 @@
 
     function drawDrops(g) {
       for (const drop of state.drops) {
-        const cfg = dropConfig[drop.key] || dropConfig.multishot;
+        const cfg = dropConfig[drop.key] || dropConfig.default;
         g.save();
         g.translate(drop.x, drop.y);
         g.fillStyle = 'rgba(11,15,20,0.9)';
@@ -414,8 +410,8 @@
     const critMult = 2.0;
     function getCritChance() { return state.items.crit * 0.05; } // 5% per stack
     function getLifeSteal() { return state.items.lifesteal * 0.02; } // 2% per stack
-    function getBeamWidthBonus() { return state.items.multishot * 0.6; }
-    function getBeamDpsMult() { return 1 + state.items.multishot * 0.15; }
+    function getBeamWidthBonus() { return 0; }
+    function getBeamDpsMult() { return 1; }
     function applyHealFromDamage(tower, rawDmg) {
       const ls = getLifeSteal();
       if (ls <= 0) return;
@@ -435,6 +431,13 @@
         this.cool = 0;
         this.angle = 0;
         this.id = Math.random().toString(36).slice(2, 9);
+        if (this.kind === 'beam') {
+          this.beamTarget = null;
+          this.hasLockedDirection = false;
+          this.lastAngle = 0;
+          this.beamSegments = [];
+          this.lastBeamEnemy = null;
+        }
       }
 
       isAlive() { return this.hp > 0; }
@@ -455,45 +458,59 @@
         if (this.cool > 0) return;
         const rof = s.fireRate;
         this.cool += 1 / rof;
-        const extra = state.items.multishot; // extra bullets
-        const total = 1 + extra;
-        const spread = Math.PI / 36; // approx 5 deg
-        for (let i = 0; i < total; i += 1) {
-          let off = 0;
-          if (total > 1) {
-            const t = i / (total - 1);
-            off = (t - 0.5) * spread * (total - 1);
-          }
-          const ang = this.angle + off;
-          const speed = 420 + s.level * 8;
-          shootBulletAngle(this, ang, s.damage, speed, state.items.bounce);
-        }
+        const ang = this.angle;
+        const speed = 420 + s.level * 8;
+        shootBulletAngle(this, ang, s.damage, speed, state.items.bounce);
       }
 
       updateBeam(dt) {
         const s = this.snapshot;
-        const target = nearestEnemy(this.x, this.y);
-        if (!target) return;
-        const dx = target.x - this.x;
-        const dy = target.y - this.y;
-        const ang = Math.atan2(dy, dx);
-        const angDiff = Math.atan2(Math.sin(ang - this.angle), Math.cos(ang - this.angle));
-        const turn = 4.0;
-        this.angle += clamp(angDiff, -turn * dt, turn * dt);
-        const L = 3000;
-        const x2 = this.x + Math.cos(this.angle) * L;
-        const y2 = this.y + Math.sin(this.angle) * L;
-        for (const e of state.enemies) {
-          if (!e.alive) continue;
-          const d = distPointToSeg(e.x, e.y, this.x, this.y, x2, y2);
-          if (d > (s.beamWidth + getBeamWidthBonus()) + e.radius) continue;
+        this.beamSegments = [];
+        const bounceStacks = state.items.bounce;
+        const maxTargets = Math.min(1 + bounceStacks, state.enemies.length);
+        const visited = new Set();
+        let target = nearestEnemy(this.x, this.y, visited);
+        if (!target) {
+          this.beamTarget = null;
+          this.angle = this.lastAngle;
+          this.lastBeamEnemy = null;
+          return;
+        }
+        let originX = this.x;
+        let originY = this.y;
+        for (let idx = 0; idx < maxTargets && target; idx += 1) {
+          visited.add(target);
+          const seg = { sx: originX, sy: originY, ex: target.x, ey: target.y, enemy: target };
+          this.beamSegments.push(seg);
+          if (idx === 0) {
+            const dx = target.x - this.x;
+            const dy = target.y - this.y;
+            const ang = Math.atan2(dy, dx);
+            const angDiff = Math.atan2(Math.sin(ang - this.angle), Math.cos(ang - this.angle));
+            const turn = 4.0;
+            this.angle += clamp(angDiff, -turn * dt, turn * dt);
+            this.lastAngle = this.angle;
+          }
           let dmg = s.beamDPS * getBeamDpsMult() * dt;
           if (Math.random() < getCritChance()) dmg *= critMult;
-          if (!e.untargetable) e.hit(dmg, this);
+          if (!target.untargetable) target.hit(dmg, this);
           applyHealFromDamage(this, dmg);
+          originX = target.x;
+          originY = target.y;
+          target = (idx < maxTargets - 1) ? nearestEnemyTo(target, visited) : null;
         }
+        if (this.beamSegments.length === 0) {
+          this.beamTarget = null;
+          this.angle = this.lastAngle;
+          this.lastBeamEnemy = null;
+          return;
+        }
+        this.beamTarget = this.beamSegments[0].enemy;
+        this.lastBeamEnemy = this.beamSegments[this.beamSegments.length - 1].enemy;
+        if (!bounceStacks) this.hasLockedDirection = true;
         if (Math.random() < 6 * dt) {
-          addParticle(this.x + Math.cos(this.angle) * 20, this.y + Math.sin(this.angle) * 20, '#f59e0b');
+          const endSeg = this.beamSegments[this.beamSegments.length - 1];
+          addParticle(endSeg.ex, endSeg.ey, '#f59e0b');
         }
       }
 
@@ -714,18 +731,21 @@
           e.hit(dmg, this.owner);
           applyHealFromDamage(this.owner, dmg);
           if (this.bounces > 0) {
+            const speed = Math.hypot(this.vx, this.vy) || 0.01;
             const target = nearestEnemyExcept(e, this.x, this.y);
+            let ang;
             if (target) {
-              const speed = Math.hypot(this.vx, this.vy);
               const lead = computeLeadPoint(this.x, this.y, speed, target);
-              const ang = Math.atan2(lead.y - this.y, lead.x - this.x);
-              this.vx = Math.cos(ang) * speed;
-              this.vy = Math.sin(ang) * speed;
-              this.bounces -= 1;
-              this.dmg *= 0.7;
-              this.lastHit = e;
-              continue;
+              ang = Math.atan2(lead.y - this.y, lead.x - this.x);
+            } else {
+              ang = Math.random() * Math.PI * 2;
             }
+            this.vx = Math.cos(ang) * speed;
+            this.vy = Math.sin(ang) * speed;
+            this.bounces -= 1;
+            this.dmg *= 0.7;
+            this.lastHit = e;
+            continue;
           }
           this.alive = false;
           break;
@@ -751,11 +771,12 @@
       state.projectiles.push(p);
     }
 
-    function nearestEnemy(x, y) {
+    function nearestEnemy(x, y, skipSet) {
       let best = null;
       let bd = Infinity;
       for (const e of state.enemies) {
         if (!e.alive || e.untargetable) continue;
+        if (skipSet && skipSet.has(e)) continue;
         const d = dist2({ x, y }, e);
         if (d < bd) {
           bd = d;
@@ -775,6 +796,19 @@
           bd = d;
           best = e;
         }
+      }
+      return best;
+    }
+
+    function nearestEnemyTo(ref, visitedSet) {
+      if (!ref) return null;
+      let best = null;
+      let bd = Infinity;
+      for (const e of state.enemies) {
+        if (!e.alive || e.untargetable || e === ref) continue;
+        if (visitedSet && visitedSet.has(e)) continue;
+        const d = dist2(ref, e);
+        if (d < bd) { bd = d; best = e; }
       }
       return best;
     }
@@ -857,16 +891,11 @@
     }
 
     // Items
-    const itemKeys = ['multishot', 'crit', 'bounce', 'hp', 'lifesteal'];
+    const itemKeys = ['crit', 'bounce', 'hp', 'lifesteal'];
 
     function onItemGained(key) {
       if (!(key in state.items)) return false;
-      if (key === 'multishot') {
-        if (state.items.multishot >= MAX_MULTISHOT) return false;
-        state.items.multishot = Math.min(MAX_MULTISHOT, state.items.multishot + 1);
-      } else {
-        state.items[key] += 1;
-      }
+      state.items[key] += 1;
       if (key === 'hp') {
         for (const t of state.towers) {
           const oldMax = t.hpMax;
@@ -943,7 +972,7 @@
       state.bossSpawned = false;
       if (full) {
         state.xp = 0;
-        state.items = { multishot: 0, crit: 0, bounce: 0, hp: 0, lifesteal: 0 };
+        state.items = { crit: 0, bounce: 0, hp: 0, lifesteal: 0 };
       }
       state.running = true;
       overlay.hidden = true;
@@ -1091,7 +1120,6 @@
       const sb = computeBeamStats(state.tech.beam);
       if (statsRapidEl) statsRapidEl.textContent = `DMG ${sr.damage} - ROF ${sr.fireRate.toFixed(1)}/s`;
       if (statsBeamEl) statsBeamEl.textContent = `DPS ${sb.beamDPS} - Width ${(sb.beamWidth + getBeamWidthBonus()).toFixed(1)}`;
-      itmMSEl.textContent = `x${state.items.multishot}`;
       itmCritEl.textContent = `x${state.items.crit}`;
       itmBncEl.textContent = `x${state.items.bounce}`;
       itmHPEl.textContent = `x${state.items.hp}`;
@@ -1134,22 +1162,26 @@
     }
 
     function drawBeamPath(t) {
+      if (!t.beamSegments || t.beamSegments.length === 0) return;
       const s = t.snapshot;
-      const L = 1400;
-      const x2 = t.x + Math.cos(t.angle) * L;
-      const y2 = t.y + Math.sin(t.angle) * L;
+      const widthOuter = Math.max(2, (s.beamWidth + getBeamWidthBonus()) * 0.8);
+      const widthInner = Math.max(1, (s.beamWidth + getBeamWidthBonus()) * 0.45);
       ctx.save();
       ctx.strokeStyle = 'rgba(255,200,120,0.35)';
-      ctx.lineWidth = Math.max(2, (s.beamWidth + getBeamWidthBonus()) * 0.8);
+      ctx.lineWidth = widthOuter;
       ctx.beginPath();
-      ctx.moveTo(t.x, t.y);
-      ctx.lineTo(x2, y2);
+      ctx.moveTo(t.beamSegments[0].sx, t.beamSegments[0].sy);
+      for (const seg of t.beamSegments) {
+        ctx.lineTo(seg.ex, seg.ey);
+      }
       ctx.stroke();
       ctx.strokeStyle = 'rgba(255,170,80,0.75)';
-      ctx.lineWidth = Math.max(1, (s.beamWidth + getBeamWidthBonus()) * 0.45);
+      ctx.lineWidth = widthInner;
       ctx.beginPath();
-      ctx.moveTo(t.x, t.y);
-      ctx.lineTo(x2, y2);
+      ctx.moveTo(t.beamSegments[0].sx, t.beamSegments[0].sy);
+      for (const seg of t.beamSegments) {
+        ctx.lineTo(seg.ex, seg.ey);
+      }
       ctx.stroke();
       ctx.restore();
     }
