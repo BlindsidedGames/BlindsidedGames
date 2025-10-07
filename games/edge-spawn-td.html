@@ -6,8 +6,9 @@
   <title>Edge-Spawn TD - Prototype</title>
   <style>
     html, body { height: 100%; margin: 0; background: #0b0f14; color: #e6edf3; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans"; user-select: none; overflow: hidden; }
-    #wrap { display: grid; grid-template-columns: 1fr 340px; grid-template-rows: 1fr; height: 100%; }
-    #gameCanvas { display: block; width: 100%; height: 100vh; background: radial-gradient(1200px 800px at 40% 60%, #0f1520 0%, #0c121a 55%, #0b0f14 100%); outline: 1px solid rgba(255,255,255,0.04); }
+    body { display: flex; flex-direction: column; height: 100%; }
+    #wrap { display: grid; grid-template-columns: 1fr 340px; grid-template-rows: 1fr; flex: 1; min-height: 0; width: 100%; }
+    #gameCanvas { display: block; width: 100%; height: 100%; background: radial-gradient(1200px 800px at 40% 60%, #0f1520 0%, #0c121a 55%, #0b0f14 100%); outline: 1px solid rgba(255,255,255,0.04); }
     #ui { background: linear-gradient(180deg, rgba(20,26,36,.9), rgba(12,18,26,.9)); border-left: 1px solid rgba(255,255,255,0.06); padding: 14px 14px 24px 14px; display: flex; flex-direction: column; gap: 10px; }
     .section { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 10px; }
     .row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
@@ -18,9 +19,10 @@
     button.can-upgrade { background: #2563eb; border-color: rgba(255,255,255,0.35); color: #f8fafc; box-shadow: 0 0 12px rgba(37,99,235,0.35); }
     button:disabled { opacity: .4; cursor: not-allowed; background: #111827; border-color: rgba(255,255,255,0.08); box-shadow: none; }
     .kbd { border: 1px solid rgba(255,255,255,0.24); padding: 2px 6px; border-radius: 6px; font-size: 12px; background: #0d1420; margin: 0 2px; }
-    #buildBar { display:flex; gap:8px; }
+    #buildBar { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:12px; width:100%; }
     .towerBtn { flex:1; display:flex; flex-direction:column; gap:6px; align-items:flex-start; padding:10px; background:#0e1522; border:1px solid rgba(255,255,255,0.08); border-radius: 10px; }
     .muted { color: #9fb1c1; font-size: 12px; }
+    .towerStats { white-space: pre-line; }
     #overlay { position: absolute; inset: 0 340px 0 0; pointer-events: none; display:flex; align-items:center; justify-content:center; font-weight:800; letter-spacing:.4px; }
     .overlayCard { pointer-events: all; background: rgba(10,14,20,0.88); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 18px 22px; display:flex; flex-direction:column; gap:10px; align-items: center; text-align:center; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
     .inlineBadges { display:flex; gap:8px; flex-wrap:wrap; justify-content:center; }
@@ -31,7 +33,17 @@
     .dropName { display:flex; align-items:center; gap:6px; }
     .dot { width:10px; height:10px; border-radius:999px; display:inline-block; }
     .dot.ms { background:#60a5fa; } .dot.crit { background:#f87171; } .dot.bnc { background:#a78bfa; } .dot.hp { background:#22c55e; } .dot.ls { background:#f59e0b; }
-    @media (max-width: 980px) { #wrap { grid-template-columns: 1fr; } #overlay { inset: 0; } #ui { position: absolute; inset: auto 0 0 0; height: fit-content; max-height: 48vh; overflow: auto; } }
+    #controlBar { background: linear-gradient(180deg, rgba(12,18,26,0.95), rgba(9,12,20,0.95)); border-top: 1px solid rgba(255,255,255,0.06); padding: 14px 18px; }
+    #controlBarInner { max-width: 1120px; margin: 0 auto; }
+    .towerBtn.utility { justify-content: space-between; }
+    .utilityActions { display:flex; flex-direction:column; gap:8px; width:100%; }
+    .utilityActions button { width:100%; }
+    @media (max-width: 980px) {
+      #wrap { grid-template-columns: 1fr; }
+      #overlay { inset: 0; }
+      #ui { position: absolute; inset: auto 0 0 0; height: fit-content; max-height: 48vh; overflow: auto; }
+      #controlBar { padding: 12px; }
+    }
   </style>
 </head>
 <body>
@@ -45,24 +57,6 @@
         <div class="row"><div>XP</div><div class="mono" id="xp">0</div></div>
         <div class="row"><div>Towers</div><div class="mono" id="towerCount">0</div></div>
         <div class="row"><div>Enemies</div><div class="mono" id="enemyCount">0</div></div>
-      </div>
-
-      <div class="section">
-        <div class="row" style="margin-bottom:6px"><strong>Build</strong><span class="muted">Place to start Round 1</span></div>
-        <div id="buildBar">
-          <div class="towerBtn" id="btnRapid">
-            <div class="row" style="width:100%"><div><strong>Rapid</strong></div><div class="pill mono">1</div></div>
-            <div class="muted">Fast, low damage bullets. Unlimited range.</div>
-            <div class="muted mono" id="statsRapid">-</div>
-            <div class="row" style="width:100%; margin-top:6px"><div class="muted">Cost</div><div class="mono" id="costRapid">5 XP</div></div>
-          </div>
-          <div class="towerBtn" id="btnBeam">
-            <div class="row" style="width:100%"><div><strong>Beam</strong></div><div class="pill mono">2</div></div>
-            <div class="muted">Continuous beam damages along its path.</div>
-            <div class="muted mono" id="statsBeam">-</div>
-            <div class="row" style="width:100%; margin-top:6px"><div class="muted">Cost</div><div class="mono" id="costBeam">15 XP</div></div>
-          </div>
-        </div>
       </div>
 
       <div class="section">
@@ -81,7 +75,14 @@
             <div class="muted mono" id="beamCost">Cost: 10 XP</div>
           </div>
         </div>
-        <div class="muted" style="margin-top:6px">Existing towers do not change; new towers inherit current Tech (Saboteur explosion can bump levels).</div>
+        <div class="row">
+          <div>Wall Tech <span class="mono" id="wallLvl">Lv.1</span></div>
+          <div class="row" style="gap:6px">
+            <button id="buyWall">Upgrade</button>
+            <div class="muted mono" id="wallCost">Cost: 8 XP</div>
+          </div>
+        </div>
+        <div class="muted" style="margin-top:6px">Existing towers do not change; new towers inherit current Tech (Spirit infusion can bump levels).</div>
       </div>
 
       <div class="section">
@@ -94,29 +95,51 @@
       </div>
 
       <div class="section">
-        <div class="row" style="margin-bottom:6px"><strong>Utilities</strong></div>
-        <div class="row" style="gap:6px">
-          <button id="toggleSnap" style="flex:1">Grid Snap: Off</button>
-        </div>
-        <div class="row" style="gap:6px; align-items:center">
-          <button id="btnSaboteur" style="flex:1">Deploy Saboteur</button>
-          <div class="muted mono" id="saboteurCost">Cost: 10 XP</div>
-        </div>
-        <div class="muted" style="margin-top:6px">Saboteur drones bump tech levels but shave 10% tower HP.</div>
-      </div>
-
-      <div class="section">
         <strong>Controls</strong>
         <div class="muted" style="line-height:1.6">
-          Select: <span class="kbd">1</span> Rapid, <span class="kbd">2</span> Beam &bull; Click to place<br/>
+          Select: <span class="kbd">1</span> Rapid, <span class="kbd">2</span> Beam, <span class="kbd">3</span> Wall &bull; Click to place<br/>
           First placement starts Wave 1<br/>
           <span class="kbd">R</span> Restart &bull; <span class="kbd">Space</span> Pause &bull; <span class="kbd">N</span> Next Wave (tap anytime)<br/>
-          <span class="kbd">G</span> Toggle Grid Snap &bull; Saboteur via Utilities
+          <span class="kbd">G</span> Toggle Grid Snap &bull; <span class="kbd">Ctrl</span>+Click Remove &bull; Build controls below
         </div>
       </div>
 
       <div class="row" style="justify-content:center; margin-top:4px; color:#9fb1c1; font-size:12px;">&copy; Prototype for design exploration</div>
     </aside>
+  </div>
+
+  <div id="controlBar">
+    <div id="controlBarInner">
+      <div id="buildBar">
+        <div class="towerBtn" id="btnRapid">
+          <div class="row" style="width:100%"><div><strong>Rapid</strong></div><div class="pill mono">1</div></div>
+          <div class="muted">Fast, low damage bullets. Unlimited range.</div>
+          <div class="muted mono towerStats" id="statsRapid">-</div>
+          <div class="row" style="width:100%; margin-top:6px"><div class="muted">Cost</div><div class="mono" id="costRapid">5 XP</div></div>
+        </div>
+        <div class="towerBtn" id="btnBeam">
+          <div class="row" style="width:100%"><div><strong>Beam</strong></div><div class="pill mono">2</div></div>
+          <div class="muted">Continuous beam damages along its path.</div>
+          <div class="muted mono towerStats" id="statsBeam">-</div>
+          <div class="row" style="width:100%; margin-top:6px"><div class="muted">Cost</div><div class="mono" id="costBeam">15 XP</div></div>
+        </div>
+        <div class="towerBtn" id="btnWall">
+          <div class="row" style="width:100%"><div><strong>Wall</strong></div><div class="pill mono">3</div></div>
+          <div class="muted">Stationary barrier that reflects damage and self-repairs.</div>
+          <div class="muted mono towerStats" id="statsWall">-</div>
+          <div class="row" style="width:100%; margin-top:6px"><div class="muted">Cost</div><div class="mono" id="costWall">8 XP</div></div>
+        </div>
+        <div class="towerBtn utility">
+          <div class="row" style="width:100%"><div><strong>Utility</strong></div></div>
+          <div class="muted">Helpers for placement and summoning support.</div>
+          <div class="utilityActions">
+            <button id="toggleSnap">Grid Snap: Off</button>
+            <button id="btnSpirit">Summon Spirit</button>
+          </div>
+          <div class="muted mono" id="spiritCost">Cost: 10 XP</div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div id="overlay" hidden>
@@ -145,10 +168,13 @@
     const enemyCountEl = document.getElementById('enemyCount');
     const rapidLvlEl = document.getElementById('rapidLvl');
     const beamLvlEl = document.getElementById('beamLvl');
+    const wallLvlEl = document.getElementById('wallLvl');
     const rapidCostEl = document.getElementById('rapidCost');
     const beamCostEl = document.getElementById('beamCost');
+    const wallCostEl = document.getElementById('wallCost');
     const costRapidEl = document.getElementById('costRapid');
     const costBeamEl = document.getElementById('costBeam');
+    const costWallEl = document.getElementById('costWall');
     const overlay = document.getElementById('overlay'); overlay.hidden = true;
     const overlayTitle = document.getElementById('overlayTitle');
     const overlayBody = document.getElementById('overlayBody');
@@ -158,13 +184,16 @@
     const btnRapid = document.getElementById('btnRapid');
     const statsRapidEl = document.getElementById('statsRapid');
     const statsBeamEl = document.getElementById('statsBeam');
+    const statsWallEl = document.getElementById('statsWall');
     const btnBeam = document.getElementById('btnBeam');
+    const buyWallBtn = document.getElementById('buyWall');
+    const btnWall = document.getElementById('btnWall');
     const btnRestart = document.getElementById('btnRestart');
     const buyRapidBtn = document.getElementById('buyRapid');
     const buyBeamBtn = document.getElementById('buyBeam');
     const toggleSnapBtn = document.getElementById('toggleSnap');
-    const saboteurBtn = document.getElementById('btnSaboteur');
-    const saboteurCostEl = document.getElementById('saboteurCost');
+    const spiritBtn = document.getElementById('btnSpirit');
+    const spiritCostEl = document.getElementById('spiritCost');
 
     const itmCritEl = document.getElementById('itmCrit');
     const itmBncEl = document.getElementById('itmBounce');
@@ -173,7 +202,7 @@
 
     const UI_RIGHT_PAD = 340; // matches sidebar width
     const GRID_SIZE = 40;
-    const SABOTEUR_COST = 10;
+    const SPIRIT_COST = 10;
 
     const state = {
       width: 1280,
@@ -199,18 +228,23 @@
       dropChance: 0.10,
       selected: 'rapid',
       gridSnap: false,
+      ctrlDown: false,
+      hoverTower: null,
       firstPlaced: false,
       nextWaveQueued: false,
-      tech: { rapid: 1, beam: 1 }, // Tech levels (affect future placements)
+      tech: { rapid: 1, beam: 1, wall: 1 }, // Tech levels (affect future placements)
       items: { crit: 0, bounce: 0, hp: 0, lifesteal: 0 }, // Global items
-      costs: { rapid: 5, beam: 15 },
+      costs: { rapid: 5, beam: 15, wall: 8 },
     };
 
     function resize() {
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
       const leftWidth = Math.max(340, window.innerWidth - UI_RIGHT_PAD);
+      const controlBar = document.getElementById('controlBar');
+      const barHeight = controlBar ? controlBar.getBoundingClientRect().height : 0;
+      const availableHeight = Math.max(1, window.innerHeight - barHeight);
       const w = leftWidth;
-      const h = window.innerHeight;
+      const h = availableHeight;
       const targetAspect = state.width / state.height;
       let drawW = w;
       let drawH = Math.floor(w / targetAspect);
@@ -223,6 +257,8 @@
       canvas.width = Math.floor(drawW * dpr);
       canvas.height = Math.floor(drawH * dpr);
       ctx.setTransform(canvas.width / state.width, 0, 0, canvas.height / state.height, 0, 0);
+      const overlayEl = document.getElementById('overlay');
+      if (overlayEl) overlayEl.style.bottom = `${barHeight}px`;
     }
 
     window.addEventListener('resize', resize);
@@ -432,6 +468,7 @@
     function getBeamWidthBonus() { return 0; }
     function getBeamDpsMult() { return 1; }
     function applyHealFromDamage(tower, rawDmg) {
+      if (!tower || tower.kind === 'wall') return;
       const ls = getLifeSteal();
       if (ls <= 0) return;
       tower.hp = Math.min(tower.hpMax, tower.hp + rawDmg * ls);
@@ -443,8 +480,19 @@
         this.y = y;
         this.kind = kind;
         this.snapshot = snapshot; // { level, stats }
-        this.radius = kind === 'rapid' ? 16 : 18;
-        this.baseHpMax = kind === 'rapid' ? 160 : 210;
+        if (this.kind === 'rapid') {
+          this.radius = 16;
+          this.baseHpMax = 160;
+        } else if (this.kind === 'beam') {
+          this.radius = 15;
+          this.baseHpMax = 210;
+        } else if (this.kind === 'wall') {
+          this.radius = 16;
+          this.baseHpMax = snapshot.hpMax;
+        } else {
+          this.radius = 16;
+          this.baseHpMax = 160;
+        }
         this.hpMax = this.baseHpMax * (1 + 0.10 * state.items.hp);
         this.hp = this.hpMax;
         this.cool = 0;
@@ -463,7 +511,8 @@
 
       update(dt) {
         if (this.kind === 'rapid') this.updateRapid(dt);
-        else this.updateBeam(dt);
+        else if (this.kind === 'beam') this.updateBeam(dt);
+        else if (this.kind === 'wall') this.updateWall(dt);
       }
 
       updateRapid(dt) {
@@ -505,10 +554,8 @@
             const dx = target.x - this.x;
             const dy = target.y - this.y;
             const ang = Math.atan2(dy, dx);
-            const angDiff = Math.atan2(Math.sin(ang - this.angle), Math.cos(ang - this.angle));
-            const turn = 4.0;
-            this.angle += clamp(angDiff, -turn * dt, turn * dt);
-            this.lastAngle = this.angle;
+            this.angle = ang;
+            this.lastAngle = ang;
           }
           let dmg = s.beamDPS * getBeamDpsMult() * dt;
           if (Math.random() < getCritChance()) dmg *= critMult;
@@ -533,29 +580,56 @@
         }
       }
 
+      updateWall(dt) {
+        if (!this.isAlive()) return;
+        const regen = this.snapshot.regen || 0;
+        if (regen <= 0) return;
+        this.hp = Math.min(this.hpMax, this.hp + regen * dt);
+      }
+
       draw(g) {
+        const deleting = state.ctrlDown && state.hoverTower === this;
         g.save();
         g.translate(this.x, this.y);
         g.rotate(this.angle);
         if (this.kind === 'rapid') {
-          g.fillStyle = '#4ea1ff';
+          g.fillStyle = deleting ? '#dc2626' : '#4ea1ff';
           roundedRect(g, -16, -16, 32, 32, 8);
           g.fill();
-          g.fillStyle = '#cfe8ff';
+          g.fillStyle = deleting ? '#fecaca' : '#cfe8ff';
           g.fillRect(10, -4, 16, 8);
-        } else {
-          g.fillStyle = '#ffb44e';
-          roundedRect(g, -18, -18, 36, 36, 10);
+        } else if (this.kind === 'beam') {
+          g.fillStyle = deleting ? '#dc2626' : '#ffb44e';
+          roundedRect(g, -15, -15, 30, 30, 9);
           g.fill();
-          g.fillStyle = '#ffe0b2';
-          g.fillRect(8, -6, 20, 12);
+          g.fillStyle = deleting ? '#fecaca' : '#ffe0b2';
+          g.fillRect(8, -5, 16, 10);
+        } else {
+          g.fillStyle = deleting ? '#dc2626' : '#a1a1aa';
+          roundedRect(g, -16, -16, 32, 32, 6);
+          g.fill();
+          g.fillStyle = deleting ? '#fecaca' : '#d4d4d8';
+          g.fillRect(-6, -6, 12, 12);
         }
         g.restore();
+        if (deleting) {
+          g.save();
+          g.strokeStyle = 'rgba(248,113,113,0.75)';
+          g.lineWidth = 4;
+          g.beginPath();
+          g.arc(this.x, this.y, this.radius + 6, 0, Math.PI * 2);
+          g.stroke();
+          g.restore();
+        }
         drawHpBar(g, this.x, this.y - (this.radius + 12), this.hp, this.hpMax);
         g.fillStyle = 'rgba(255,255,255,0.8)';
         g.font = '12px sans-serif';
         g.textAlign = 'center';
-        g.fillText(this.kind === 'rapid' ? `R L${this.snapshot.level}` : `B L${this.snapshot.level}`, this.x, this.y + this.radius + 12);
+        let label = '';
+        if (this.kind === 'rapid') label = `R L${this.snapshot.level}`;
+        else if (this.kind === 'beam') label = `B L${this.snapshot.level}`;
+        else label = `W L${this.snapshot.level}`;
+        g.fillText(label, this.x, this.y + this.radius + 12);
       }
     }
 
@@ -596,6 +670,9 @@
           this.x += nx * this.speed * dt;
           this.y += ny * this.speed * dt;
         } else {
+          if (t.kind === 'wall' && t.snapshot.thorns > 0) {
+            this.hit(t.snapshot.thorns * dt, t);
+          }
           t.hp -= this.dps * dt;
           if (t.hp <= 0) t.hp = 0;
         }
@@ -649,23 +726,80 @@
       }
     }
 
-    class SpecialEnemy extends Enemy {
+    class FastTriangle extends Enemy {
       constructor(x, y, wave) {
         super(x, y, wave);
-        this.color = '#facc15';
         this.radius = 10;
-        this.speed = 82 + Math.min(100, wave * 3.5);
+        this.color = '#fb923c';
+        this.speed = 120 + Math.min(140, wave * 4.2);
+        this.dps *= 0.8;
+        this.hpMax = this.hpMax * 0.7;
+        this.hp = this.hpMax;
+      }
+
+      draw(g) {
+        g.save();
+        g.translate(this.x, this.y);
+        const ang = Math.atan2(this.vy, this.vx);
+        g.rotate(ang);
+        g.fillStyle = this.color;
+        g.beginPath();
+        g.moveTo(14, 0);
+        g.lineTo(-10, 8);
+        g.lineTo(-10, -8);
+        g.closePath();
+        g.fill();
+        g.restore();
+        drawHpBar(g, this.x, this.y - (this.radius + 10), this.hp, this.hpMax);
+      }
+    }
+
+    function towerNeedsUpgrade(tower) {
+      if (!tower || !tower.isAlive()) return false;
+      if (tower.kind === 'rapid') return tower.snapshot.level < (state.tech.rapid + 1);
+      if (tower.kind === 'beam') return tower.snapshot.level < (state.tech.beam + 1);
+      return false;
+    }
+
+    function pickSpiritTarget(x, y) {
+      let needsUpgrade = null;
+      let needsDist = Infinity;
+      let fallback = null;
+      let fallbackDist = Infinity;
+      for (const tower of state.towers) {
+        if (!tower.isAlive()) continue;
+        const d = Math.hypot(tower.x - x, tower.y - y);
+        if (towerNeedsUpgrade(tower)) {
+          if (d < needsDist) {
+            needsDist = d;
+            needsUpgrade = tower;
+          }
+        } else if (d < fallbackDist) {
+          fallbackDist = d;
+          fallback = tower;
+        }
+      }
+      return needsUpgrade || fallback;
+    }
+
+    class Spirit extends Enemy {
+      constructor(x, y, wave) {
+        super(x, y, wave);
+        this.color = '#38bdf8';
+        this.radius = 10;
+        this.speed = 82 + Math.min(120, wave * 3.8);
         this.untargetable = true;
         this.invulnerable = true;
-        this.exploded = false;
-        this.explodeRadius = 150;
+        this.infused = false;
+        this.targetTower = null;
       }
 
       hit(dmg, by) { /* ignore damage */ }
 
       update(dt) {
-        if (!this.alive || this.exploded) return;
-        const t = nearestTower(this.x, this.y);
+        if (!this.alive || this.infused) return;
+        const t = pickSpiritTarget(this.x, this.y);
+        this.targetTower = t;
         if (!t) {
           this.vx = 0;
           this.vy = 0;
@@ -683,7 +817,7 @@
           this.x += nx * this.speed * dt;
           this.y += ny * this.speed * dt;
         } else {
-          this.explode();
+          this.infuse(t);
         }
         if (dt > 0) {
           this.vx = (this.x - prevX) / dt;
@@ -691,36 +825,174 @@
         }
       }
 
-      explode() {
-        if (this.exploded) return;
-        this.exploded = true;
+      infuse(primary) {
+        if (this.infused) return;
+        this.infused = true;
         this.alive = false;
         this.hp = 0;
-        addRing(this.x, this.y, this.explodeRadius);
+        const radius = 120;
+        const cx = primary ? primary.x : this.x;
+        const cy = primary ? primary.y : this.y;
+        addRing(cx, cy, radius);
+        let affected = 0;
         for (const tw of state.towers) {
           if (!tw.isAlive()) continue;
-          const d = Math.hypot(tw.x - this.x, tw.y - this.y);
-          if (d > this.explodeRadius) continue;
-          tw.hp -= tw.hpMax * 0.10;
-          if (tw.hp < 0) tw.hp = 0;
-          const kind = tw.kind;
-          const targetLvl = (kind === 'rapid' ? state.tech.rapid : state.tech.beam) + 1;
-          if (tw.snapshot.level < targetLvl) {
-            tw.snapshot = kind === 'rapid' ? computeRapidStats(targetLvl) : computeBeamStats(targetLvl);
+          const dist = Math.hypot(tw.x - cx, tw.y - cy);
+          if (dist > radius) continue;
+          affected += 1;
+          if (tw.kind === 'rapid') {
+            const targetLvl = state.tech.rapid + 1;
+            if (tw.snapshot.level < targetLvl) tw.snapshot = computeRapidStats(targetLvl);
+          } else if (tw.kind === 'beam') {
+            const targetLvl = state.tech.beam + 1;
+            if (tw.snapshot.level < targetLvl) tw.snapshot = computeBeamStats(targetLvl);
           }
+          tw.hp = Math.min(tw.hpMax, tw.hp + tw.hpMax * 0.4);
+          tw.cool = 0;
         }
+        if (affected > 0) pushToast('Spirit infusion!', cx, cy - 40);
       }
 
       draw(g) {
         super.draw(g);
         g.save();
-        g.globalAlpha = 0.25;
-        g.strokeStyle = '#facc15';
+        g.globalAlpha = 0.35;
+        g.strokeStyle = '#38bdf8';
         g.lineWidth = 2;
         g.beginPath();
         g.arc(this.x, this.y, this.radius + 6, 0, Math.PI * 2);
         g.stroke();
         g.restore();
+      }
+    }
+
+    class WormHead extends Enemy {
+      constructor(x, y, wave, segmentCount) {
+        super(x, y, wave);
+        this.radius = 18;
+        this.color = '#22d3ee';
+        this.speed = 52 + Math.min(60, wave * 2.2);
+        this.hpMax = this.hpMax * 10;
+        this.hp = this.hpMax;
+        this.dps *= 1.4;
+        this.segmentCount = segmentCount;
+        this.segmentSpacing = 20;
+        this.trail = [];
+        this.maxTrail = Math.max(220, (segmentCount + 6) * this.segmentSpacing);
+        this.segments = [];
+      }
+
+      attachSegments(segments) {
+        this.segments = segments;
+        this.trail = [];
+        const seedLength = this.maxTrail;
+        for (let i = 0; i < seedLength; i += 1) {
+          this.trail.push({ x: this.x - i * 2, y: this.y });
+        }
+        this.compactSegments();
+      }
+
+      update(dt) {
+        if (!this.alive) return;
+        super.update(dt);
+        this.trail.unshift({ x: this.x, y: this.y });
+        if (this.trail.length > this.maxTrail) this.trail.pop();
+      }
+
+      getTrailPoint(distance) {
+        if (this.trail.length === 0) return { x: this.x, y: this.y };
+        const idx = clamp(Math.round(distance), 0, this.trail.length - 1);
+        return this.trail[idx];
+      }
+
+      compactSegments() {
+        for (let i = 0; i < this.segments.length; i += 1) {
+          const seg = this.segments[i];
+          if (!seg.alive) continue;
+          seg.index = i;
+          seg.followDistance = (i + 1) * this.segmentSpacing;
+          const pos = this.getTrailPoint(seg.followDistance);
+          if (pos) {
+            seg.x = pos.x;
+            seg.y = pos.y;
+          }
+        }
+      }
+
+      onSegmentDestroyed(seg) {
+        const idx = this.segments.indexOf(seg);
+        if (idx !== -1) this.segments.splice(idx, 1);
+        this.compactSegments();
+      }
+
+      hit(dmg, by) {
+        if (this.segments.some((seg) => seg.alive)) return;
+        super.hit(dmg, by);
+      }
+
+      draw(g) {
+        super.draw(g);
+        if (this.segments.some((seg) => seg.alive)) {
+          g.save();
+          g.globalAlpha = 0.25;
+          g.strokeStyle = '#0ea5e9';
+          g.lineWidth = 3;
+          g.beginPath();
+          g.arc(this.x, this.y, this.radius + 12, 0, Math.PI * 2);
+          g.stroke();
+          g.restore();
+        }
+      }
+    }
+
+    class WormSegment extends Enemy {
+      constructor(head, index) {
+        super(head.x, head.y, head.wave);
+        this.head = head;
+        this.index = index;
+        this.followDistance = (index + 1) * head.segmentSpacing;
+        this.radius = 14;
+        this.color = '#0ea5e9';
+        this.speed = head.speed * 0.9;
+        this.dps *= 0.9;
+        this.hpMax = this.hpMax * 0.8;
+        this.hp = this.hpMax;
+      }
+
+      update(dt) {
+        if (!this.alive) return;
+        const prevX = this.x;
+        const prevY = this.y;
+        const targetPos = this.head.getTrailPoint(this.followDistance);
+        this.x = targetPos.x;
+        this.y = targetPos.y;
+        if (dt > 0) {
+          this.vx = (this.x - prevX) / dt;
+          this.vy = (this.y - prevY) / dt;
+        }
+        const t = nearestTower(this.x, this.y);
+        if (!t) return;
+        const dxT = t.x - this.x;
+        const dyT = t.y - this.y;
+        const dT = Math.hypot(dxT, dyT) || 1;
+        if (dT <= (this.radius + t.radius)) {
+          t.hp -= this.dps * dt;
+          if (t.hp <= 0) t.hp = 0;
+        }
+      }
+
+      hit(dmg, by) {
+        if (!this.alive) return;
+        super.hit(dmg, by);
+        if (!this.alive) {
+          for (let i = 0; i < 6; i += 1) addParticle(this.x, this.y, '#38bdf8');
+          addRing(this.x, this.y, 22);
+          this.head.onSegmentDestroyed(this);
+        }
+      }
+
+      draw(g) {
+        super.draw(g);
       }
     }
 
@@ -791,14 +1063,23 @@
       state.projectiles.push(p);
     }
 
+    function enemyPriority(entity) {
+      if (entity instanceof WormSegment) return 0;
+      if (entity instanceof WormHead) return 1;
+      return 2;
+    }
+
     function nearestEnemy(x, y, skipSet) {
       let best = null;
+      let bestPriority = Infinity;
       let bd = Infinity;
       for (const e of state.enemies) {
         if (!e.alive || e.untargetable) continue;
         if (skipSet && skipSet.has(e)) continue;
+        const pri = enemyPriority(e);
         const d = dist2({ x, y }, e);
-        if (d < bd) {
+        if (pri < bestPriority || (pri === bestPriority && d < bd)) {
+          bestPriority = pri;
           bd = d;
           best = e;
         }
@@ -808,11 +1089,14 @@
 
     function nearestEnemyExcept(ex, x, y) {
       let best = null;
+      let bestPriority = Infinity;
       let bd = Infinity;
       for (const e of state.enemies) {
         if (e === ex || !e.alive || e.untargetable) continue;
+        const pri = enemyPriority(e);
         const d = dist2({ x, y }, e);
-        if (d < bd) {
+        if (pri < bestPriority || (pri === bestPriority && d < bd)) {
+          bestPriority = pri;
           bd = d;
           best = e;
         }
@@ -823,12 +1107,18 @@
     function nearestEnemyTo(ref, visitedSet) {
       if (!ref) return null;
       let best = null;
+      let bestPriority = Infinity;
       let bd = Infinity;
       for (const e of state.enemies) {
         if (!e.alive || e.untargetable || e === ref) continue;
         if (visitedSet && visitedSet.has(e)) continue;
+        const pri = enemyPriority(e);
         const d = dist2(ref, e);
-        if (d < bd) { bd = d; best = e; }
+        if (pri < bestPriority || (pri === bestPriority && d < bd)) {
+          bestPriority = pri;
+          bd = d;
+          best = e;
+        }
       }
       return best;
     }
@@ -842,6 +1132,20 @@
         if (d < bd) {
           bd = d;
           best = t;
+        }
+      }
+      return best;
+    }
+
+    function towerUnderPoint(x, y) {
+      let best = null;
+      let bestDist = Infinity;
+      for (const t of state.towers) {
+        if (!t.isAlive()) continue;
+        const d = Math.hypot(t.x - x, t.y - y);
+        if (d <= t.radius + 4 && d < bestDist) {
+          best = t;
+          bestDist = d;
         }
       }
       return best;
@@ -910,6 +1214,14 @@
       return { level, beamDPS: 42 + (level - 1) * 10, beamWidth: 6 + (level - 1) * 0.7 };
     }
 
+    function computeWallStats(level) {
+      const lvl = Math.max(1, level || 1);
+      const hpMax = Math.floor(520 + (lvl - 1) * 90);
+      const thorns = 4 + (lvl - 1) * 1.6;
+      const regen = 6 + (lvl - 1) * 1.4;
+      return { level: lvl, hpMax, thorns, regen };
+    }
+
     // Items
     const itemKeys = ['crit', 'bounce', 'hp', 'lifesteal'];
 
@@ -961,7 +1273,16 @@
       else if (side === 1) { x = state.width + m; y = rand(-m, state.height + m); }
       else if (side === 2) { x = rand(-m, state.width + m); y = state.height + m; }
       else { x = -m; y = rand(-m, state.height + m); }
-      state.enemies.push(new Boss(x, y, state.wave));
+      const segmentCount = Math.min(6, 3 + Math.floor(state.wave / 5));
+      const head = new WormHead(x, y, state.wave, segmentCount);
+      state.enemies.push(head);
+      const segments = [];
+      for (let i = 0; i < segmentCount; i += 1) {
+        const seg = new WormSegment(head, i);
+        segments.push(seg);
+        state.enemies.push(seg);
+      }
+      head.attachSegments(segments);
       state.bossSpawned = true;
     }
 
@@ -997,6 +1318,8 @@
       }
       state.running = true;
       overlay.hidden = true;
+      state.hoverTower = null;
+      state.ctrlDown = false;
     }
 
     function spawnEnemy() {
@@ -1010,10 +1333,11 @@
       else if (side === 1) { x = state.width + m; y = rand(-m, state.height + m); }
       else if (side === 2) { x = rand(-m, state.width + m); y = state.height + m; }
       else { x = -m; y = rand(-m, state.height + m); }
-      state.enemies.push(new Enemy(x, y, state.wave));
+      if (Math.random() < 0.2) state.enemies.push(new FastTriangle(x, y, state.wave));
+      else state.enemies.push(new Enemy(x, y, state.wave));
     }
 
-    function deploySaboteur() {
+    function summonSpirit() {
       const aliveTowers = state.towers.filter((t) => t.isAlive());
       if (aliveTowers.length === 0) return false;
       const m = 24;
@@ -1025,15 +1349,22 @@
       else if (side === 2) { x = rand(-m, state.width + m); y = state.height + m; }
       else { x = -m; y = rand(-m, state.height + m); }
       const waveLevel = Math.max(1, state.wave || 1);
-      const saboteur = new SpecialEnemy(x, y, waveLevel);
-      saboteur.playerSummoned = true;
-      state.enemies.push(saboteur);
-      pushToast('Saboteur inbound', state.width / 2, 60);
+      const spirit = new Spirit(x, y, waveLevel);
+      spirit.playerSummoned = true;
+      state.enemies.push(spirit);
+      pushToast('Spirit summoned', state.width / 2, 60);
       return true;
     }
 
+    function towerRadius(kind) {
+      if (kind === 'rapid') return 16;
+      if (kind === 'beam') return 15;
+      if (kind === 'wall') return 16;
+      return 16;
+    }
+
     function getPlacementInfo(kind, rawX, rawY) {
-      const radius = kind === 'rapid' ? 16 : 18;
+      const radius = towerRadius(kind);
       let x = rawX;
       let y = rawY;
       if (state.gridSnap) {
@@ -1064,7 +1395,10 @@
       if (!info.placeable) return false;
       const cost = state.costs[kind];
       if (typeof cost !== 'number') return false;
-      const snapshot = kind === 'rapid' ? computeRapidStats(state.tech.rapid) : computeBeamStats(state.tech.beam);
+      let snapshot;
+      if (kind === 'rapid') snapshot = computeRapidStats(state.tech.rapid);
+      else if (kind === 'beam') snapshot = computeBeamStats(state.tech.beam);
+      else snapshot = computeWallStats(state.tech.wall);
       const t = new Tower(info.x, info.y, kind, snapshot);
       state.towers.push(t);
       if (state.firstPlaced) state.xp -= cost;
@@ -1081,14 +1415,32 @@
       const scaleY = state.height / canvas.clientHeight;
       mouse.x = (e.clientX - rect.left) * scaleX;
       mouse.y = (e.clientY - rect.top) * scaleY;
+      state.hoverTower = towerUnderPoint(mouse.x, mouse.y);
+      state.ctrlDown = e.ctrlKey;
     });
-    canvas.addEventListener('click', () => {
+    function deleteTowerUnderCursor() {
+      const target = towerUnderPoint(mouse.x, mouse.y);
+      if (!target) return false;
+      const idx = state.towers.indexOf(target);
+      if (idx !== -1) state.towers.splice(idx, 1);
+      target.hp = 0;
+      state.hoverTower = towerUnderPoint(mouse.x, mouse.y);
+      return true;
+    }
+
+    canvas.addEventListener('click', (e) => {
+      const ctrl = e.ctrlKey || state.ctrlDown;
+      if (ctrl) {
+        deleteTowerUnderCursor();
+        return;
+      }
       if (!state.running) return;
       tryPlace(state.selected, mouse.x, mouse.y);
     });
     document.addEventListener('keydown', (e) => {
       if (e.key === '1') state.selected = 'rapid';
       else if (e.key === '2') state.selected = 'beam';
+      else if (e.key === '3') state.selected = 'wall';
       else if (e.key === ' ') state.running = !state.running;
       else if (e.key === 'r' || e.key === 'R') reset(true);
       else if (e.key === 'g' || e.key === 'G') state.gridSnap = !state.gridSnap;
@@ -1096,12 +1448,24 @@
         if (!state.running) return;
         if (!state.firstPlaced) return;
         if (!state.towers.some((t) => t.isAlive())) return;
+        if (state.spawning && state.enemiesToSpawn > 0) {
+          while (state.enemiesToSpawn > 0) {
+            spawnEnemy();
+            state.enemiesToSpawn -= 1;
+          }
+          state.spawning = false;
+        }
         startWave();
       }
+      state.ctrlDown = e.ctrlKey;
     });
     btnRapid.addEventListener('click', () => { state.selected = 'rapid'; });
     btnBeam.addEventListener('click', () => { state.selected = 'beam'; });
+    if (btnWall) btnWall.addEventListener('click', () => { state.selected = 'wall'; });
     btnRestart.addEventListener('click', () => reset(true));
+    document.addEventListener('keyup', (e) => {
+      if (!e.ctrlKey) state.ctrlDown = false;
+    });
 
     buyRapidBtn.addEventListener('click', () => {
       const cost = techCost('rapid');
@@ -1119,27 +1483,38 @@
       }
     });
 
+    if (buyWallBtn) {
+      buyWallBtn.addEventListener('click', () => {
+        const cost = techCost('wall');
+        if (state.xp >= cost) {
+          state.xp -= cost;
+          state.tech.wall += 1;
+        }
+      });
+    }
+
     if (toggleSnapBtn) {
       toggleSnapBtn.addEventListener('click', () => {
         state.gridSnap = !state.gridSnap;
       });
     }
 
-    if (saboteurBtn) {
-      saboteurBtn.addEventListener('click', () => {
+    if (spiritBtn) {
+      spiritBtn.addEventListener('click', () => {
         if (!state.running || !state.firstPlaced) return;
-        if (state.xp < SABOTEUR_COST) return;
+        if (state.xp < SPIRIT_COST) return;
         if (!state.towers.some((t) => t.isAlive())) return;
-        if (deploySaboteur()) {
-          state.xp -= SABOTEUR_COST;
+        if (summonSpirit()) {
+          state.xp -= SPIRIT_COST;
         }
       });
     }
 
     function techCost(kind) {
-      return kind === 'rapid'
-        ? Math.floor(6 + (state.tech.rapid - 1) * 4)
-        : Math.floor(10 + (state.tech.beam - 1) * 6);
+      if (kind === 'rapid') return Math.floor(6 + (state.tech.rapid - 1) * 4);
+      if (kind === 'beam') return Math.floor(10 + (state.tech.beam - 1) * 6);
+      if (kind === 'wall') return Math.floor(8 + (state.tech.wall - 1) * 5);
+      return Infinity;
     }
 
     // Main loop
@@ -1190,35 +1565,49 @@
       enemyCountEl.textContent = state.enemies.filter((e) => e.alive).length.toString();
       rapidLvlEl.textContent = `Lv.${state.tech.rapid}`;
       beamLvlEl.textContent = `Lv.${state.tech.beam}`;
+      if (wallLvlEl) wallLvlEl.textContent = `Lv.${state.tech.wall}`;
       rapidCostEl.textContent = `Cost: ${techCost('rapid')} XP`;
       beamCostEl.textContent = `Cost: ${techCost('beam')} XP`;
+      if (wallCostEl) wallCostEl.textContent = `Cost: ${techCost('wall')} XP`;
       costRapidEl.textContent = `${state.costs.rapid} XP`;
       costBeamEl.textContent = `${state.costs.beam} XP`;
+      if (costWallEl) costWallEl.textContent = `${state.costs.wall} XP`;
       const canRapidUpgrade = state.xp >= techCost('rapid');
       const canBeamUpgrade = state.xp >= techCost('beam');
+      const canWallUpgrade = state.xp >= techCost('wall');
       buyRapidBtn.disabled = !canRapidUpgrade;
       buyRapidBtn.classList.toggle('can-upgrade', canRapidUpgrade);
       buyBeamBtn.disabled = !canBeamUpgrade;
       buyBeamBtn.classList.toggle('can-upgrade', canBeamUpgrade);
+      if (buyWallBtn) {
+        buyWallBtn.disabled = !canWallUpgrade;
+        buyWallBtn.classList.toggle('can-upgrade', canWallUpgrade);
+      }
       const sr = computeRapidStats(state.tech.rapid);
       const sb = computeBeamStats(state.tech.beam);
-      if (statsRapidEl) statsRapidEl.textContent = `DMG ${sr.damage} - ROF ${sr.fireRate.toFixed(1)}/s`;
-      if (statsBeamEl) statsBeamEl.textContent = `DPS ${sb.beamDPS} - Width ${(sb.beamWidth + getBeamWidthBonus()).toFixed(1)}`;
+      const sw = computeWallStats(state.tech.wall);
+      if (statsRapidEl) statsRapidEl.textContent = `DMG ${sr.damage}\nROF ${sr.fireRate.toFixed(1)}/s`;
+      if (statsBeamEl) statsBeamEl.textContent = `DPS ${sb.beamDPS}\nWidth ${(sb.beamWidth + getBeamWidthBonus()).toFixed(1)}`;
+      if (statsWallEl) {
+        const wallHp = Math.round(sw.hpMax * (1 + 0.10 * state.items.hp));
+        statsWallEl.textContent = `HP ${wallHp}\nThorns ${sw.thorns.toFixed(1)}/s\nRegen ${sw.regen.toFixed(1)}/s`;
+      }
       itmCritEl.textContent = `x${state.items.crit}`;
       itmBncEl.textContent = `x${state.items.bounce}`;
       itmHPEl.textContent = `x${state.items.hp}`;
       itmLSEl.textContent = `x${state.items.lifesteal}`;
       btnRapid.style.opacity = (!state.firstPlaced || state.xp >= state.costs.rapid) ? 1 : 0.5;
       btnBeam.style.opacity = (!state.firstPlaced || state.xp >= state.costs.beam) ? 1 : 0.5;
+      if (btnWall) btnWall.style.opacity = (!state.firstPlaced || state.xp >= state.costs.wall) ? 1 : 0.5;
       if (toggleSnapBtn) {
         toggleSnapBtn.textContent = state.gridSnap ? 'Grid Snap: On' : 'Grid Snap: Off';
         toggleSnapBtn.classList.toggle('can-upgrade', state.gridSnap);
       }
-      if (saboteurCostEl) saboteurCostEl.textContent = `Cost: ${SABOTEUR_COST} XP`;
-      if (saboteurBtn) {
-        const canSaboteur = state.firstPlaced && state.xp >= SABOTEUR_COST && livingTowers.length > 0;
-        saboteurBtn.disabled = !canSaboteur;
-        saboteurBtn.classList.toggle('can-upgrade', canSaboteur);
+      if (spiritCostEl) spiritCostEl.textContent = `Cost: ${SPIRIT_COST} XP`;
+      if (spiritBtn) {
+        const canSpirit = state.firstPlaced && state.xp >= SPIRIT_COST && livingTowers.length > 0;
+        spiritBtn.disabled = !canSpirit;
+        spiritBtn.classList.toggle('can-upgrade', canSpirit);
       }
     }
 
@@ -1242,6 +1631,7 @@
     }
 
     function draw() {
+      state.hoverTower = towerUnderPoint(mouse.x, mouse.y);
       ctx.clearRect(0, 0, state.width, state.height);
       drawGrid(ctx);
       for (const t of state.towers) if (t.kind === 'beam' && t.isAlive()) drawBeamPath(t);
@@ -1286,7 +1676,7 @@
       ctx.save();
       if (info.placeable) {
         ctx.globalAlpha = 0.8;
-        ctx.fillStyle = kind === 'rapid' ? '#63b4ff' : '#ffc976';
+        ctx.fillStyle = kind === 'rapid' ? '#63b4ff' : (kind === 'beam' ? '#ffc976' : '#b0b5bf');
         ctx.shadowColor = ctx.fillStyle;
         ctx.shadowBlur = 14;
       } else {
@@ -1323,37 +1713,85 @@
         if (nearestEnemy(0, 0) !== eFar) errors.push('nearestEnemy must ignore untargetable enemies');
         state.tech.rapid = 3;
         const tw = new Tower(0, 0, 'rapid', computeRapidStats(1));
-        state.towers = [tw];
-        const se = new SpecialEnemy(0, 0, 1);
-        se.explodeRadius = 200;
-        se.explode();
-        const expectedLvl = 4;
-        const expectedHP = tw.hpMax * (1 - 0.10);
-        if (tw.snapshot.level !== expectedLvl) errors.push('Explosion should set tower level to tech+1');
-        if (Math.abs(tw.hp - expectedHP) > 0.001) errors.push('Explosion should reduce tower HP by 10%');
+        const twBeam = new Tower(40, 0, 'beam', computeBeamStats(1));
+        state.towers = [tw, twBeam];
+        state.tech.wall = 2;
+        const wallStats1 = computeWallStats(1);
+        const wallStats2 = computeWallStats(state.tech.wall);
+        if (wallStats2.hpMax <= wallStats1.hpMax) errors.push('Wall HP should scale with tech level');
+        if (wallStats1.thorns <= 0 || wallStats2.thorns <= wallStats1.thorns) errors.push('Wall thorns should increase with tech');
+        const wallTower = new Tower(0, 0, 'wall', computeWallStats(1));
+        wallTower.hp = wallTower.hpMax * 0.5;
+        wallTower.update(1);
+        if (wallTower.hp <= wallTower.hpMax * 0.5) errors.push('Wall regen should restore HP over time');
+        const lifestealBackup = state.items.lifesteal;
+        state.items.lifesteal = 5;
+        const wallHealTest = new Tower(0, 0, 'wall', computeWallStats(1));
+        const wallHealBaseline = wallHealTest.hp = wallHealTest.hpMax * 0.4;
+        applyHealFromDamage(wallHealTest, 200);
+        if (Math.abs(wallHealTest.hp - wallHealBaseline) > 0.001) errors.push('Lifesteal should not affect walls');
+        state.items.lifesteal = lifestealBackup;
+        tw.hp = tw.hpMax * 0.3;
+        twBeam.hp = twBeam.hpMax * 0.2;
+        const spirit = new Spirit(0, 0, 1);
+        spirit.infuse(tw);
+        const expectedLvl = state.tech.rapid + 1;
+        if (tw.snapshot.level !== expectedLvl) errors.push('Spirit infusion should set tower level to tech+1');
+        if (twBeam.snapshot.level <= state.tech.beam) errors.push('Spirit infusion should upgrade nearby beam towers');
+        if (tw.hp <= tw.hpMax * 0.3 || twBeam.hp <= twBeam.hpMax * 0.2) errors.push('Spirit infusion should restore tower HP');
+        if (spirit.alive) errors.push('Spirit should vanish after infusing');
         state.wave = 2;
         state.spawning = true;
         state.enemiesToSpawn = 1;
         state.spawnedThisWave = 0;
+        const oldRand = Math.random;
+        Math.random = () => 0;
         spawnEnemy();
-        if (!(state.enemies[state.enemies.length - 1] instanceof Enemy)) errors.push('spawnEnemy should enqueue standard enemies');
+        if (!(state.enemies[state.enemies.length - 1] instanceof FastTriangle)) errors.push('spawnEnemy should enqueue FastTriangle on low roll');
+        state.enemies = [];
+        Math.random = () => 0.99;
+        spawnEnemy();
+        if (!(state.enemies[state.enemies.length - 1] instanceof Enemy)) errors.push('spawnEnemy should enqueue standard enemy on high roll');
+        Math.random = oldRand;
         state.enemies = [];
         state.towers = [];
-        if (deploySaboteur()) errors.push('deploySaboteur should fail without towers');
+        if (summonSpirit()) errors.push('summonSpirit should fail without towers');
         state.towers = [tw];
         state.wave = 3;
-        const sabSpawned = deploySaboteur();
-        if (!sabSpawned) errors.push('deploySaboteur should spawn when towers exist');
-        else if (!(state.enemies[state.enemies.length - 1] instanceof SpecialEnemy)) errors.push('deploySaboteur should spawn a SpecialEnemy');
+        const spiritSpawned = summonSpirit();
+        if (!spiritSpawned) errors.push('summonSpirit should spawn when towers exist');
+        else if (!(state.enemies[state.enemies.length - 1] instanceof Spirit)) errors.push('summonSpirit should spawn a Spirit');
         state.enemies = [];
         state.wave = 4;
         startWave();
-        const hasBoss = state.enemies.some((e) => e instanceof Boss);
-        if (!hasBoss) errors.push('Boss should spawn on wave 5 start');
-        const b = new Boss(0, 0, 5);
-        if (!Number.isFinite(b.hpMax) || Number.isNaN(b.hpMax)) errors.push('Boss hpMax should be a finite number');
-        b.hit(b.hpMax + 1, null);
-        if (b.alive) errors.push('Boss should die when HP <= 0');
+        const hasHead = state.enemies.some((e) => e instanceof WormHead);
+        const hasSegment = state.enemies.some((e) => e instanceof WormSegment);
+        if (!hasHead || !hasSegment) errors.push('Worm boss should spawn head and segments on boss wave');
+        const head = state.enemies.find((e) => e instanceof WormHead);
+        if (head) {
+          const originalCount = head.segments.length;
+          if (originalCount > 1) {
+            const mid = head.segments[Math.floor(originalCount / 2)];
+            const prevPos = { x: mid.x, y: mid.y };
+            mid.hit(mid.hpMax + 1, null);
+            if (head.segments.length !== originalCount - 1) errors.push('Segment removal should compact worm body');
+            const nextSeg = head.segments[Math.min(Math.floor(originalCount / 2), head.segments.length - 1)];
+            if (nextSeg && Math.hypot(nextSeg.x - prevPos.x, nextSeg.y - prevPos.y) > 24) {
+              errors.push('Worm segments should snap into place after a segment is destroyed');
+            }
+          }
+          head.hit(head.hpMax * 2, null);
+          if (!head.alive && head.segments.some((seg) => seg.alive)) errors.push('Worm head should withstand damage while segments live');
+          head.segments.slice().forEach((seg) => seg.hit(seg.hpMax + 1, null));
+          head.hit(head.hpMax * 2, null);
+          if (head.alive) errors.push('Worm head should fall once segments are gone');
+        }
+        const headPriority = new WormHead(0, 0, 5, 1);
+        const segPriority = new WormSegment(headPriority, 0);
+        headPriority.attachSegments([segPriority]);
+        state.enemies = [headPriority, segPriority];
+        const preferSeg = nearestEnemy(10, 0);
+        if (!(preferSeg instanceof WormSegment)) errors.push('Targeting should prioritise worm body segments over head');
       } catch (err) {
         console.error('Sanity test runtime error:', err);
         errors.push('Runtime error during tests.');
