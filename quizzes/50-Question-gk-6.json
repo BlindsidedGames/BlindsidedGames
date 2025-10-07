@@ -1,0 +1,232 @@
+{
+  "id": "50-Question-gk-6",
+  "title": "General Knowledge Quiz VI (50 Questions)",
+  "description": "Challenging but fair. New categories: Literature & Myth, Art & Architecture, Music & Performing Arts, Mathematics & Physics, Ancient Civilizations.",
+  "sections": [
+    {
+      "title": "Literature & Mythology",
+      "items": [
+        {
+          "q": "Which epic poem recounts Odysseus’s journey home after the Trojan War?",
+          "a": "The Odyssey - epic attributed to Homer, sequel to the Iliad"
+        },
+        {
+          "q": "In Greek tragedy, who unknowingly kills his father and marries his mother?",
+          "a": "Oedipus - tragic king in Sophocles’ Oedipus Rex"
+        },
+        {
+          "q": "Which medieval work follows Dante through Hell, Purgatory, and Paradise?",
+          "a": "The Divine Comedy - epic poem by Dante Alighieri"
+        },
+        {
+          "q": "In Norse myth, what is the name of the world tree connecting the nine realms?",
+          "a": "Yggdrasil - the cosmic ash tree of Norse cosmology"
+        },
+        {
+          "q": "Which Spanish novel features a knight who tilts at windmills?",
+          "a": "Don Quixote - satirical novel by Miguel de Cervantes"
+        },
+        {
+          "q": "Who is the trickster god of Norse mythology, often a shapeshifter?",
+          "a": "Loki - a complex figure associated with mischief and chaos"
+        },
+        {
+          "q": "Which ancient Mesopotamian epic features a quest for immortality?",
+          "a": "The Epic of Gilgamesh - one of the earliest known literary works"
+        },
+        {
+          "q": "Who wrote the dystopian novel Brave New World?",
+          "a": "Aldous Huxley - 1932 novel about a technologically controlled society"
+        },
+        {
+          "q": "Which Greek poet is famed for lyrical poems addressed to love and beauty?",
+          "a": "Sappho - poet from the island of Lesbos"
+        },
+        {
+          "q": "What is the name of the Japanese poetic form consisting of 5-7-5 syllables?",
+          "a": "Haiku - concise poetry form emphasizing nature and insight"
+        }
+      ]
+    },
+    {
+      "title": "Art & Architecture",
+      "items": [
+        {
+          "q": "Which architectural style is characterized by pointed arches and flying buttresses?",
+          "a": "Gothic - exemplified by cathedrals like Chartres and Notre-Dame"
+        },
+        {
+          "q": "Who designed the house known as Fallingwater in Pennsylvania?",
+          "a": "Frank Lloyd Wright - icon of organic architecture built over a waterfall"
+        },
+        {
+          "q": "Which art movement was founded by Walter Gropius in 1919 Germany?",
+          "a": "Bauhaus - a school integrating art, craft, and industry"
+        },
+        {
+          "q": "What is the name of the marble statue of David completed in 1504?",
+          "a": "David - masterpiece by Michelangelo now in Florence’s Accademia"
+        },
+        {
+          "q": "Which Dutch artist painted Girl with a Pearl Earring?",
+          "a": "Johannes Vermeer - c. 1665 oil painting noted for light and stillness"
+        },
+        {
+          "q": "The Parthenon on the Acropolis exemplifies which column order?",
+          "a": "Doric - simplest of the three classical Greek orders"
+        },
+        {
+          "q": "Who is the Spanish surrealist known for melting clocks in The Persistence of Memory?",
+          "a": "Salvador Dalí - 1931 painting exploring dreamlike imagery"
+        },
+        {
+          "q": "Which architect coined the phrase 'Less is more'?",
+          "a": "Ludwig Mies van der Rohe - modernist architect of minimalism"
+        },
+        {
+          "q": "What is the art technique of painting on fresh wet plaster called?",
+          "a": "Fresco - pigments chemically bond as the plaster dries"
+        },
+        {
+          "q": "Which movement featured artists like Claude Monet focusing on light and momentary effects?",
+          "a": "Impressionism - late 19th‑century art movement in France"
+        }
+      ]
+    },
+    {
+      "title": "Music & Performing Arts",
+      "items": [
+        {
+          "q": "Which composer wrote Symphony No. 9 featuring the 'Ode to Joy' chorus?",
+          "a": "Ludwig van Beethoven - landmark choral symphony in D minor"
+        },
+        {
+          "q": "Which Italian opera by Verdi tells the story of Violetta and Alfredo?",
+          "a": "La Traviata - debuted in 1853 at La Fenice in Venice"
+        },
+        {
+          "q": "What is the name of Shakespeare’s theater on London’s South Bank (modern reconstruction)?",
+          "a": "The Globe Theatre - open‑air playhouse associated with Shakespeare"
+        },
+        {
+          "q": "Which Russian composer wrote The Nutcracker ballet?",
+          "a": "Pyotr Ilyich Tchaikovsky - Christmas‑season ballet premiered in 1892"
+        },
+        {
+          "q": "Which instrument family includes the oboe, clarinet, and bassoon?",
+          "a": "Woodwinds - produce sound via air vibrating within the instrument"
+        },
+        {
+          "q": "What is the musical term for a tempo that gradually slows down?",
+          "a": "Ritardando - an instruction to decrease the tempo"
+        },
+        {
+          "q": "Which American composer wrote the opera Porgy and Bess?",
+          "a": "George Gershwin - 1935 folk opera with jazz and classical elements"
+        },
+        {
+          "q": "Which voice type is higher: tenor or baritone?",
+          "a": "Tenor - sits above baritone in the male vocal range"
+        },
+        {
+          "q": "What is the term for a recurring musical theme associated with a character or idea?",
+          "a": "Leitmotif - technique famously used by Richard Wagner"
+        },
+        {
+          "q": "Which jazz trumpeter is nicknamed 'Satchmo'?",
+          "a": "Louis Armstrong - pioneering figure in early jazz and scat singing"
+        }
+      ]
+    },
+    {
+      "title": "Mathematics & Physics",
+      "items": [
+        {
+          "q": "What mathematical constant is approximately 3.14159?",
+          "a": "Pi (π) - ratio of a circle’s circumference to its diameter"
+        },
+        {
+          "q": "What is the SI unit of force?",
+          "a": "Newton (N) - equals 1 kg·m·s⁻² by definition"
+        },
+        {
+          "q": "What temperature corresponds to absolute zero on the Kelvin scale?",
+          "a": "0 K - equivalent to −273.15 °C, the lowest thermodynamic limit"
+        },
+        {
+          "q": "What principle states E = mc²?",
+          "a": "Mass–energy equivalence - Einstein’s relation linking mass and energy"
+        },
+        {
+          "q": "Numbers divisible only by 1 and themselves are called what?",
+          "a": "Primes - building blocks of integers via unique factorization"
+        },
+        {
+          "q": "What is Avogadro’s constant (nearest 3 s.f.)?",
+          "a": "6.02×10^23 mol⁻¹ - number of particles per mole (exact: 6.02214076×10^23)"
+        },
+        {
+          "q": "Which gas makes up ~21% of Earth’s atmosphere?",
+          "a": "Oxygen - second most abundant gas after nitrogen"
+        },
+        {
+          "q": "Which thought experiment involves a paradoxical alive‑and‑dead cat?",
+          "a": "Schrödinger’s cat - highlights quantum superposition"
+        },
+        {
+          "q": "Light in vacuum travels fastest at about how many km/s?",
+          "a": "≈300,000 km/s - the constant c (exactly 299,792.458 km/s)"
+        },
+        {
+          "q": "What is the name for the study of shapes, sizes, and properties of space?",
+          "a": "Geometry - branch of mathematics dating back to Euclid"
+        }
+      ]
+    },
+    {
+      "title": "Ancient & Classical Civilizations",
+      "items": [
+        {
+          "q": "Which ancient city was buried by the eruption of Mount Vesuvius in 79 CE?",
+          "a": "Pompeii - Roman city preserved under volcanic ash"
+        },
+        {
+          "q": "Which civilization built the ziggurat of Ur?",
+          "a": "Sumerians - early Mesopotamian civilization"
+        },
+        {
+          "q": "Which ancient empire built the Royal Road across western Asia?",
+          "a": "Achaemenid (Persian) Empire - facilitated trade and communication"
+        },
+        {
+          "q": "What was the primary language of the Roman Empire’s administration?",
+          "a": "Latin - official language of law and governance"
+        },
+        {
+          "q": "Which Egyptian pharaoh is associated with the monotheistic Aten cult?",
+          "a": "Akhenaten - promoted worship of Aten in the Amarna period"
+        },
+        {
+          "q": "Which ancient Greek city‑state was famed for military discipline?",
+          "a": "Sparta - society organized around a warrior ethos"
+        },
+        {
+          "q": "Which Carthaginian general crossed the Alps to fight Rome?",
+          "a": "Hannibal Barca - key commander in the Second Punic War"
+        },
+        {
+          "q": "Which writing system did the Phoenicians popularize across the Mediterranean?",
+          "a": "Alphabetic script - an abjad influencing Greek and Latin"
+        },
+        {
+          "q": "Which Mesoamerican civilization built the city of Chichén Itzá?",
+          "a": "The Maya - known for stepped pyramids and astronomy"
+        },
+        {
+          "q": "Who was the Athenian statesman who led during the city’s Golden Age?",
+          "a": "Pericles - championed democracy and sponsored the Parthenon"
+        }
+      ]
+    }
+  ]
+}

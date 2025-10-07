@@ -34,7 +34,7 @@
         return r.json();
       })
       .then(data => {
-        quizzes = Array.isArray(data?.quizzes) ? data.quizzes : [];
+        quizzes = Array.isArray(data?.quizzes) ? [...data.quizzes].reverse() : [];
         renderList();
       })
       .catch(err => {
@@ -271,4 +271,3 @@
     loadManifest();
   });
 })();
-

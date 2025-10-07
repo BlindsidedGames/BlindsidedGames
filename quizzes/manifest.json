@@ -30,6 +30,24 @@
       "title": "General Knowledge Quiz 5 (50 Questions)",
       "description": "Challenging mix across 5 sections.",
       "file": "50-Question-gk-5.json"
+    },
+    {
+      "id": "50-Question-gk-6",
+      "title": "General Knowledge Quiz VI (50 Questions)",
+      "description": "Challenging but fair. New categories: Literature & Myth, Art & Architecture, Music & Performing Arts, Mathematics & Physics, Ancient Civilizations.",
+      "file": "50-Question-gk-6.json"
+    },
+    {
+      "id": "50-Question-gk-7",
+      "title": "General Knowledge Quiz VII (50 Questions)",
+      "description": "Challenging but fair. New categories: Sports & Games, Food & Drink, Business & Economics, Medicine & Human Body, Space & Astronomy.",
+      "file": "50-Question-gk-7.json"
+    },
+    {
+      "id": "50-Question-gk-8",
+      "title": "General Knowledge Quiz VIII (50 Questions)",
+      "description": "Challenging but fair. New categories: Language & Etymology, Inventions & Discoveries, Philosophy & Religion, Environment & Ecology, Exploration & Cartography.",
+      "file": "50-Question-gk-8.json"
     }
   ]
 }

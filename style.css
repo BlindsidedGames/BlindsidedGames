@@ -366,6 +366,30 @@ main {
 /* outline style reserved for future variants */
 .btn-outline { border: 1px solid var(--glass-border); background: transparent; }
 
+/* Quiz Night CTA */
+.home-cta {
+    width: 100%;
+    max-width: 1280px;
+    margin-top: 32px;
+}
+
+.cta-card {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cta-card h2 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.cta-card p {
+    color: var(--colour-socials);
+    max-width: 70ch;
+}
+
 /* Games grid */
 .games-grid {
     width: 100%;
