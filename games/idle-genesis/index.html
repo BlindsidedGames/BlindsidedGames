@@ -27,8 +27,67 @@
         <section class="idle-card glass">
             <div class="counter-display" aria-live="polite" aria-atomic="true">
                 <span class="counter-value" id="counterValue">0</span>
+                <div class="counter-supplement">
+                    <div class="supplement-row">
+                        <span class="supplement-label">Clicks</span>
+                        <span class="supplement-value" id="clickBalanceValue">0</span>
+                    </div>
+                    <div class="supplement-row">
+                        <span class="supplement-label">Per Click</span>
+                        <span class="supplement-value" id="perClickValue">+1</span>
+                    </div>
+                </div>
             </div>
-            <button class="btn btn-primary counter-button" type="button" id="chargeButton" aria-label="Increase your Idle Genesis score">Click</button>
+            <button class="btn btn-primary counter-button" type="button" id="chargeButton"
+                aria-label="Increase your Idle Genesis score">Click</button>
+        </section>
+        <section class="idle-shop glass" aria-label="Idle Genesis Shop">
+            <div class="shop-header">
+                <h2 class="shop-title">Workshop</h2>
+                <p class="shop-description">Spend your currencies to unlock permanent boosts.</p>
+            </div>
+            <nav class="shop-tablist" role="tablist" aria-label="Shop categories">
+                <button class="shop-tab shop-tab--active" type="button" id="clickShopTab" role="tab" tabindex="0"
+                    aria-selected="true" aria-controls="clickShopPanel" data-shop-tab="clicks">
+                    Click Shop
+                </button>
+                <button class="shop-tab" type="button" id="energyShopTab" role="tab" tabindex="-1"
+                    aria-selected="false" aria-controls="energyShopPanel" data-shop-tab="energy">
+                    Energy Shop
+                </button>
+            </nav>
+            <div class="shop-content">
+                <div class="shop-panel" id="clickShopPanel" role="tabpanel" aria-labelledby="clickShopTab"
+                    data-shop-panel="clicks">
+                    <article class="shop-offer">
+                        <div class="shop-offer__header">
+                            <h3 class="shop-offer__title">Click Amplifier</h3>
+                            <p class="shop-offer__subtitle">Increase the click currency earned per manual or automated press.</p>
+                        </div>
+                        <div class="shop-offer__details">
+                            <p class="shop-offer__status" id="clickUpgradeStatus">Level 0/5 - 1 per click</p>
+                            <button class="btn btn-secondary shop-offer__action" type="button" id="clickUpgradeButton">
+                                Increase Click Yield (+1) - Cost: 10 Clicks
+                            </button>
+                        </div>
+                    </article>
+                </div>
+                <div class="shop-panel" id="energyShopPanel" role="tabpanel" aria-labelledby="energyShopTab"
+                    data-shop-panel="energy" hidden>
+                    <article class="shop-offer">
+                        <div class="shop-offer__header">
+                            <h3 class="shop-offer__title">Auto Clicker</h3>
+                            <p class="shop-offer__subtitle">Automates one button press per second.</p>
+                        </div>
+                        <div class="shop-offer__details">
+                            <p class="shop-offer__status" id="autoClickerStatus">Clicks once per second when purchased.</p>
+                            <button class="btn btn-secondary shop-offer__action" type="button" id="autoClickerButton">
+                                Buy Auto Clicker - Cost: 50,000 Energy
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -38,3 +97,4 @@
 </body>
 
 </html>
+
