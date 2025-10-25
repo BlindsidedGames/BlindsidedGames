@@ -1,5 +1,7 @@
 (function bootstrapIdleGenesis() {
     const SAVE_VERSION = 2;
+    // Surface build version alongside save versioning so UI badges stay in sync.
+    const BUILD_VERSION = 'v0.3.0';
     const STORAGE_KEY = 'idleGenesis:save';
     // Cost progression for the click-yield upgrade; BigInt keeps arithmetic consistent with stored values.
     const CLICK_UPGRADE_COSTS = Object.freeze([10n, 100n, 1000n, 10000n, 100000n]);
@@ -37,6 +39,7 @@
     const clickUpgradeStatusElement = document.getElementById('clickUpgradeStatus');
     const autoClickerButton = document.getElementById('autoClickerButton');
     const autoClickerStatusElement = document.getElementById('autoClickerStatus');
+    const buildVersionElement = document.getElementById('buildVersion');
     const shopTabButtons = {
         clicks: document.querySelector('[data-shop-tab="clicks"]'),
         energy: document.querySelector('[data-shop-tab="energy"]'),
@@ -55,6 +58,7 @@
         !clickUpgradeStatusElement ||
         !autoClickerButton ||
         !autoClickerStatusElement ||
+        !buildVersionElement ||
         !shopTabButtons.clicks ||
         !shopTabButtons.energy ||
         !shopPanels.clicks ||
@@ -220,6 +224,7 @@
         });
     });
 
+    buildVersionElement.textContent = `Idle Genesis ${BUILD_VERSION}`;
     syncShopTabUI();
     render(gameState);
 
