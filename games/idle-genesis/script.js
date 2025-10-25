@@ -175,7 +175,16 @@
         armActivation('pointer');
     });
     chargeButton.addEventListener('pointercancel', disarmActivation);
-    chargeButton.addEventListener('pointerleave', disarmActivation);
+    chargeButton.addEventListener('pointerleave', (event) => {
+        // Touch pointers fire pointerleave after pointerup, so only disarm when input is still active.
+        if (event.pointerType === 'mouse') {
+            disarmActivation();
+            return;
+        }
+        if (event.buttons > 0) {
+            disarmActivation();
+        }
+    });
     chargeButton.addEventListener('blur', disarmActivation);
 
     chargeButton.addEventListener('keydown', (event) => {
