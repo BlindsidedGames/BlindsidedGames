@@ -80,6 +80,7 @@ body {
     padding: 0 60px;
     margin: 0 auto;
     transition: transform 80ms ease, box-shadow 120ms ease;
+    touch-action: manipulation; /* Prevents iOS double-tap zoom on the primary action */
 }
 
 .counter-button--pulse {
