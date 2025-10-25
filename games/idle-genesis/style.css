@@ -21,7 +21,7 @@ body {
 .idle-card {
     width: 100%;
     max-width: 360px;
-    padding: 36px 32px 32px;
+    padding: 25px 22px 22px;
     display: flex;
     flex-direction: column;
     gap: 28px;
@@ -31,7 +31,7 @@ body {
 .idle-shop {
     width: 100%;
     max-width: 420px;
-    padding: 36px 32px;
+    padding: 25px 22px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -235,7 +235,7 @@ body {
     .idle-shop {
         width: 100%;
         max-width: none;
-        padding: 28px 24px 24px;
+        padding: 20px 17px 17px;
     }
 }
 
