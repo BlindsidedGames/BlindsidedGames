@@ -24,7 +24,7 @@ body {
     padding: 25px 22px 22px;
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 0;
     text-align: center;
 }
 
@@ -37,17 +37,34 @@ body {
     gap: 24px;
 }
 
- .counter-display {
-     display: flex;
-     flex-direction: column;
-     gap: 6px;
-     align-items: center;
- }
+.counter-display {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+}
 
 .counter-value {
-    font-size: clamp(48px, 8vw, 72px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 clamp(26px, 4vw, 38px) 0 clamp(8px, 2vw, 16px);
+    font-size: clamp(36px, 5.5vw, 50px);
     font-weight: 700;
     color: var(--colour-navText);
+    white-space: nowrap;
+}
+
+.counter-value__icon {
+    font-size: clamp(28px, 5vw, 40px);
+    margin-right: clamp(1px, 0.4vw, 4px);
+}
+
+.counter-value__amount {
+    font-variant-numeric: tabular-nums;
 }
 
 .counter-supplement {
@@ -77,16 +94,28 @@ body {
 .counter-button {
     height: 72px;
     font-size: 24px;
-    padding: 0 60px;
+    padding: 0 54px;
     margin: 0 auto;
     width: 100%;
     transition: transform 80ms ease, box-shadow 120ms ease;
     touch-action: manipulation; /* Prevents iOS double-tap zoom on the primary action */
 }
 
+.counter-display + .counter-button {
+    margin-top: clamp(18px, 5vw, 26px);
+}
+
 .counter-button--pulse {
     transform: scale(1.05);
     box-shadow: 0 0 18px color-mix(in hsl, var(--colour-accent), transparent 35%);
+}
+
+.counter-boost-button {
+    margin-top: 0;
+}
+
+.counter-button + .counter-button {
+    margin-top: 6px;
 }
 
 .counter-version {

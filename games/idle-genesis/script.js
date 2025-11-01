@@ -1,11 +1,17 @@
 (function bootstrapIdleGenesis() {
-    const SAVE_VERSION = 2;
+    const SAVE_VERSION = 4;
     // Surface build version alongside save versioning so UI badges stay in sync.
     const BUILD_VERSION = 'v0.3.0';
     const STORAGE_KEY = 'idleGenesis:save';
+    const ENERGY_SCALING_FACTOR = 100n; // Store energy in hundredths to support partial yields.
+    const BASE_ENERGY_PER_CLICK = 100n; // 1.00 energy when scaled by ENERGY_SCALING_FACTOR.
+    const ENERGY_PER_CLICK_INCREMENT = 1n; // Represents +0.01 energy.
+    const ENERGY_BOOST_UNLOCK_CLICKS = 100n; // Unlock the energy boost button after 100 manual activations.
+    const ENERGY_ICON = '\u26A1';
     // Cost progression for the click-yield upgrade; BigInt keeps arithmetic consistent with stored values.
     const CLICK_UPGRADE_COSTS = Object.freeze([10n, 100n, 1000n, 10000n, 100000n]);
-    const AUTO_CLICKER_COST = 50000n;
+    const AUTO_CLICKER_COST_BASE = 50000n;
+    const AUTO_CLICKER_COST = AUTO_CLICKER_COST_BASE * ENERGY_SCALING_FACTOR;
     // Manual input must complete within this window to be considered trusted.
     const ACTIVATION_WINDOW_MS = 1200;
     const SHOP_TABS = Object.freeze({
@@ -17,7 +23,10 @@
         version: SAVE_VERSION,
         systems: {
             core: {
-                storedEnergy: '0', // Stored as string for safe BigInt serialisation.
+                // Stored as a stringified BigInt scaled by ENERGY_SCALING_FACTOR.
+                storedEnergy: '0',
+                energyPerClick: BASE_ENERGY_PER_CLICK.toString(),
+                energyYieldUpgradesPurchased: 0,
             },
             clicks: {
                 balance: '0',
@@ -27,6 +36,9 @@
                 autoClicker: {
                     owned: false,
                 },
+            },
+            stats: {
+                manualClicks: '0',
             },
         },
     });
@@ -39,6 +51,7 @@
     const clickUpgradeStatusElement = document.getElementById('clickUpgradeStatus');
     const autoClickerButton = document.getElementById('autoClickerButton');
     const autoClickerStatusElement = document.getElementById('autoClickerStatus');
+    const energyBoostButton = document.getElementById('energyBoostButton');
     const buildVersionElement = document.getElementById('buildVersion');
     const shopTabButtons = {
         clicks: document.querySelector('[data-shop-tab="clicks"]'),
@@ -58,6 +71,7 @@
         !clickUpgradeStatusElement ||
         !autoClickerButton ||
         !autoClickerStatusElement ||
+        !energyBoostButton ||
         !buildVersionElement ||
         !shopTabButtons.clicks ||
         !shopTabButtons.energy ||
@@ -112,8 +126,14 @@
 
     function normaliseState(candidate) {
         const safeState = deepClone(DEFAULT_STATE);
-        const storedEnergy = coerceToBigIntString(candidate?.systems?.core?.storedEnergy);
-        safeState.systems.core.storedEnergy = storedEnergy;
+        const candidateVersion = Number(candidate?.version ?? 0);
+
+        const storedEnergy = normaliseEnergyValue(candidate?.systems?.core?.storedEnergy, candidateVersion);
+        safeState.systems.core.storedEnergy = storedEnergy.toString();
+
+        const yieldData = normaliseEnergyYieldData(candidate?.systems?.core, candidateVersion);
+        safeState.systems.core.energyPerClick = yieldData.energyPerClick.toString();
+        safeState.systems.core.energyYieldUpgradesPurchased = yieldData.energyYieldUpgradesPurchased;
 
         const clickBalance = coerceToBigIntString(candidate?.systems?.clicks?.balance);
         safeState.systems.clicks.balance = clickBalance;
@@ -125,8 +145,78 @@
         const autoOwned = candidate?.systems?.automation?.autoClicker?.owned === true;
         safeState.systems.automation.autoClicker.owned = autoOwned;
 
+        const manualClicks = normaliseManualClicks(candidate?.systems?.stats?.manualClicks, candidateVersion);
+        safeState.systems.stats.manualClicks = manualClicks.toString();
+
         safeState.version = SAVE_VERSION;
         return safeState;
+    }
+
+    function normaliseEnergyValue(candidateEnergy, candidateVersion) {
+        const coerced = coerceToBigIntString(candidateEnergy);
+        let scaledEnergy = BigInt(coerced);
+        if (candidateVersion < 3) {
+            scaledEnergy *= ENERGY_SCALING_FACTOR;
+        }
+        return scaledEnergy < 0n ? 0n : scaledEnergy;
+    }
+
+    function normaliseEnergyYieldData(coreCandidate, candidateVersion) {
+        const energyPerClickValue = normaliseEnergyPerClick(coreCandidate?.energyPerClick, candidateVersion);
+        let upgradesPurchased;
+        if (candidateVersion >= 4) {
+            upgradesPurchased = normaliseEnergyYieldUpgradeCount(coreCandidate?.energyYieldUpgradesPurchased);
+        } else {
+            upgradesPurchased = deriveEnergyYieldUpgradeCount(energyPerClickValue);
+        }
+        const normalisedEnergyPerClick =
+            BASE_ENERGY_PER_CLICK + BigInt(upgradesPurchased) * ENERGY_PER_CLICK_INCREMENT;
+        return {
+            energyPerClick: normalisedEnergyPerClick,
+            energyYieldUpgradesPurchased: upgradesPurchased,
+        };
+    }
+
+    function normaliseEnergyPerClick(candidateEnergyPerClick, candidateVersion) {
+        const coerced = coerceToBigIntString(candidateEnergyPerClick);
+        let energyPerClick = BigInt(coerced);
+        if (candidateVersion < 3 || energyPerClick === 0n) {
+            energyPerClick = BASE_ENERGY_PER_CLICK;
+        }
+        return energyPerClick < BASE_ENERGY_PER_CLICK ? BASE_ENERGY_PER_CLICK : energyPerClick;
+    }
+
+    function normaliseEnergyYieldUpgradeCount(candidate) {
+        const raw = Number(candidate);
+        if (!Number.isFinite(raw) || raw < 0) {
+            return 0;
+        }
+        return Math.trunc(raw);
+    }
+
+    function deriveEnergyYieldUpgradeCount(energyPerClickValue) {
+        if (energyPerClickValue <= BASE_ENERGY_PER_CLICK) {
+            return 0;
+        }
+        const delta = energyPerClickValue - BASE_ENERGY_PER_CLICK;
+        if (delta <= 0n) {
+            return 0;
+        }
+        const upgrades = delta / ENERGY_PER_CLICK_INCREMENT;
+        const asNumber = Number(upgrades);
+        if (!Number.isFinite(asNumber) || asNumber < 0) {
+            return 0;
+        }
+        return Math.trunc(asNumber);
+    }
+
+    function normaliseManualClicks(candidateManualClicks, candidateVersion) {
+        if (candidateVersion < 3) {
+            return 0n;
+        }
+        const coerced = coerceToBigIntString(candidateManualClicks);
+        const manualClicks = BigInt(coerced);
+        return manualClicks < 0n ? 0n : manualClicks;
     }
 
     function coerceToBigIntString(value) {
@@ -213,6 +303,7 @@
 
     clickUpgradeButton.addEventListener('click', purchaseClickUpgrade);
     autoClickerButton.addEventListener('click', purchaseAutoClicker);
+    energyBoostButton.addEventListener('click', increaseEnergyYield);
 
     Object.entries(shopTabButtons).forEach(([tabKey, button]) => {
         button.addEventListener('click', () => {
@@ -229,16 +320,16 @@
     render(gameState);
 
     function processManualClick() {
-        applyClick({ animate: true });
+        applyClick({ animate: true, source: 'manual' });
     }
 
     function processAutoClick() {
-        applyClick({ animate: false });
+        applyClick({ animate: false, source: 'auto' });
     }
 
-    function applyClick({ animate }) {
+    function applyClick({ animate, source = 'manual' }) {
         gameState = storageManager.update((draft) => {
-            applyClickToDraft(draft);
+            applyClickToDraft(draft, source);
         });
         render(gameState);
         if (animate) {
@@ -246,10 +337,15 @@
         }
     }
 
-    function applyClickToDraft(draft) {
-        // Every click awards one energy plus whatever the click currency yield currently is.
+    function applyClickToDraft(draft, source) {
+        // Every click awards the configured energy yield, with manual inputs tracked for unlock logic.
         const currentEnergy = asBigInt(draft.systems.core.storedEnergy);
-        draft.systems.core.storedEnergy = (currentEnergy + 1n).toString();
+        draft.systems.core.storedEnergy = (currentEnergy + getEnergyPerClickValue(draft)).toString();
+
+        if (source === 'manual') {
+            const manualClicks = asBigInt(draft.systems.stats.manualClicks);
+            draft.systems.stats.manualClicks = (manualClicks + 1n).toString();
+        }
 
         const currentClicks = asBigInt(draft.systems.clicks.balance);
         draft.systems.clicks.balance = (currentClicks + getClicksPerPress(draft)).toString();
@@ -312,15 +408,40 @@
         render(gameState);
     }
 
+    function increaseEnergyYield() {
+        const manualClicks = getManualClickCount(gameState);
+        if (manualClicks < ENERGY_BOOST_UNLOCK_CLICKS) {
+            return;
+        }
+
+        gameState = storageManager.update((draft) => {
+            const draftManualClicks = getManualClickCount(draft);
+            if (draftManualClicks < ENERGY_BOOST_UNLOCK_CLICKS) {
+                return;
+            }
+
+            const currentYield = getEnergyPerClickValue(draft);
+            const nextYield = currentYield + ENERGY_PER_CLICK_INCREMENT;
+            draft.systems.core.energyPerClick = nextYield.toString();
+            const currentUpgrades = getEnergyYieldUpgradeCount(draft);
+            draft.systems.core.energyYieldUpgradesPurchased = currentUpgrades + 1;
+        });
+        render(gameState);
+    }
+
     function render(state) {
         const energyValue = getEnergy(state);
         const clickBalance = getClickBalance(state);
         const clicksPerPress = getClicksPerPress(state);
+        const energyPerPress = getEnergyPerClickValue(state);
+        const actionTerm = resolvePrimaryActionTerm();
 
-        counterValueElement.textContent = formatBigValue(energyValue);
+        counterValueElement.textContent = formatEnergyValue(energyValue);
         clickBalanceElement.textContent = formatBigValue(clickBalance);
         perClickValueElement.textContent = `+${formatBigValue(clicksPerPress)}`;
 
+        updateChargeButtonLabel(energyPerPress, actionTerm);
+        updateEnergyBoostButton(state, actionTerm, energyPerPress);
         updateClickShop(state, clickBalance, clicksPerPress);
         updateEnergyShop(state, energyValue);
 
@@ -357,13 +478,54 @@
         if (owned) {
             autoClickerButton.textContent = 'Auto Clicker Purchased';
             autoClickerButton.disabled = true;
-            autoClickerStatusElement.textContent = 'Active - Adds one energy and click every second.';
+            autoClickerStatusElement.textContent = 'Active - Adds your energy yield and one click every second.';
             return;
         }
 
-        autoClickerButton.textContent = `Buy Auto Clicker - Cost: ${formatBigValue(AUTO_CLICKER_COST)} Energy`;
+        autoClickerButton.textContent = `Buy Auto Clicker - Cost: ${formatBigValue(AUTO_CLICKER_COST_BASE)} Energy`;
         autoClickerButton.disabled = energyValue < AUTO_CLICKER_COST;
-        autoClickerStatusElement.textContent = 'Clicks once per second when purchased.';
+        autoClickerStatusElement.textContent = 'Generates one automatic activation per second.';
+    }
+
+    function updateChargeButtonLabel(energyPerPress, actionTerm) {
+        const energyLabel = formatEnergyValue(energyPerPress, {
+            minimumFractionDigits: 2,
+            trimTrailingZeros: false,
+        });
+        chargeButton.textContent = `+${ENERGY_ICON}${energyLabel}`;
+        const ariaLabel = `Gain ${energyLabel} energy every ${actionTerm}.`;
+        chargeButton.setAttribute('aria-label', ariaLabel);
+        chargeButton.title = `Gain ${ENERGY_ICON}${energyLabel} energy every ${actionTerm}.`;
+    }
+
+    function updateEnergyBoostButton(state, actionTerm, currentYieldValue) {
+        const manualClicks = getManualClickCount(state);
+        const unlocked = manualClicks >= ENERGY_BOOST_UNLOCK_CLICKS;
+        if (unlocked) {
+            energyBoostButton.removeAttribute('hidden');
+        } else {
+            energyBoostButton.setAttribute('hidden', 'hidden');
+            return;
+        }
+
+        const incrementLabel = formatEnergyValue(ENERGY_PER_CLICK_INCREMENT, {
+            minimumFractionDigits: 2,
+            trimTrailingZeros: false,
+        });
+        const currentYieldLabel = formatEnergyValue(currentYieldValue, {
+            minimumFractionDigits: 2,
+            trimTrailingZeros: false,
+        });
+        const nextYieldValue = currentYieldValue + ENERGY_PER_CLICK_INCREMENT;
+        const nextYieldLabel = formatEnergyValue(nextYieldValue, {
+            minimumFractionDigits: 2,
+            trimTrailingZeros: false,
+        });
+        energyBoostButton.textContent = `+${ENERGY_ICON}${incrementLabel} Yield`;
+        energyBoostButton.disabled = false;
+        const ariaLabel = `Increase the energy gained per ${actionTerm} from ${currentYieldLabel} to ${nextYieldLabel} (+${incrementLabel}).`;
+        energyBoostButton.setAttribute('aria-label', ariaLabel);
+        energyBoostButton.title = `Adds ${ENERGY_ICON}${incrementLabel} per ${actionTerm}. Current yield ${ENERGY_ICON}${currentYieldLabel}.`;
     }
 
     function ensureAutoClickerLoop(state) {
@@ -374,6 +536,29 @@
             window.clearInterval(autoClickerIntervalId);
             autoClickerIntervalId = null;
         }
+    }
+
+    function resolvePrimaryActionTerm() {
+        if (typeof window !== 'undefined' && typeof window.matchMedia === 'function') {
+            try {
+                if (window.matchMedia('(pointer: coarse)').matches) {
+                    return 'tap';
+                }
+            } catch (error) {
+                // Older browsers can throw if the query is unsupported; fall back to other heuristics.
+            }
+        }
+
+        if (typeof navigator !== 'undefined') {
+            if (Number.isFinite(navigator.maxTouchPoints) && navigator.maxTouchPoints > 0) {
+                return 'tap';
+            }
+            if (navigator.userAgentData?.mobile === true) {
+                return 'tap';
+            }
+        }
+
+        return 'click';
     }
 
     function armActivation(type) {
@@ -402,12 +587,30 @@
         return code === 'Space' || code === 'Enter';
     }
 
+    function getEnergyPerClickValue(state) {
+        const value = state?.systems?.core?.energyPerClick ?? BASE_ENERGY_PER_CLICK.toString();
+        return asBigInt(value);
+    }
+
+    function getEnergyYieldUpgradeCount(state) {
+        const raw = Number(state?.systems?.core?.energyYieldUpgradesPurchased ?? 0);
+        if (!Number.isFinite(raw) || raw < 0) {
+            return 0;
+        }
+        return Math.trunc(raw);
+    }
+
     function getEnergy(state) {
         return asBigInt(state.systems.core.storedEnergy);
     }
 
     function getClickBalance(state) {
         return asBigInt(state.systems.clicks.balance);
+    }
+
+    function getManualClickCount(state) {
+        const value = state?.systems?.stats?.manualClicks ?? '0';
+        return asBigInt(value);
     }
 
     function getClicksPerPress(state) {
@@ -425,6 +628,29 @@
 
     function asBigInt(value) {
         return BigInt(coerceToBigIntString(value));
+    }
+
+    function formatEnergyValue(value, { minimumFractionDigits = 2, trimTrailingZeros = true } = {}) {
+        // Energy values are persisted as scaled integers; normalise them into human-readable strings here.
+        const scaleDigits = ENERGY_SCALING_FACTOR.toString().length - 1;
+        const safeMinimum = Math.max(0, Math.min(scaleDigits, minimumFractionDigits));
+        const divisor = ENERGY_SCALING_FACTOR;
+        const isNegative = value < 0n;
+        const absoluteValue = isNegative ? -value : value;
+        const integerPart = absoluteValue / divisor;
+        let fractionalString = (absoluteValue % divisor).toString().padStart(scaleDigits, '0');
+
+        if (trimTrailingZeros) {
+            fractionalString = fractionalString.replace(/0+$/, '');
+        }
+        if (fractionalString.length < safeMinimum) {
+            fractionalString = fractionalString.padEnd(safeMinimum, '0');
+        }
+        const integerString = formatBigValue(integerPart);
+        if (fractionalString.length === 0) {
+            return `${isNegative ? '-' : ''}${integerString}`;
+        }
+        return `${isNegative ? '-' : ''}${integerString}.${fractionalString}`;
     }
 
     function formatBigValue(value) {
