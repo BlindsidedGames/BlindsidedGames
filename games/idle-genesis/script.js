@@ -6,7 +6,7 @@
     const ENERGY_SCALING_FACTOR = 100n; // Store energy in hundredths to support partial yields.
     const BASE_ENERGY_PER_CLICK = 100n; // 1.00 energy when scaled by ENERGY_SCALING_FACTOR.
     const ENERGY_PER_CLICK_INCREMENT = 1n; // Represents +0.01 energy.
-    const ENERGY_BOOST_UNLOCK_CLICKS = 100n; // Unlock the energy boost button after 100 manual activations.
+    const ENERGY_BOOST_UNLOCK_CLICKS = 0n; // Yield boosts are available immediately; raise to reintroduce a manual-activation gate.
     const ENERGY_ICON = '\u26A1';
     // Cost progression for the click-yield upgrade; BigInt keeps arithmetic consistent with stored values.
     const CLICK_UPGRADE_COSTS = Object.freeze([10n, 100n, 1000n, 10000n, 100000n]);
@@ -333,7 +333,7 @@
         });
         render(gameState);
         if (animate) {
-            animateButton();
+            animateCounterButton(chargeButton);
         }
     }
 
@@ -427,6 +427,7 @@
             draft.systems.core.energyYieldUpgradesPurchased = currentUpgrades + 1;
         });
         render(gameState);
+        animateCounterButton(energyBoostButton);
     }
 
     function render(state) {
@@ -449,10 +450,11 @@
         ensureAutoClickerLoop(state);
     }
 
-    function animateButton() {
-        chargeButton.classList.add('counter-button--pulse');
+    // Shared pulse effect so primary and boost actions respond consistently to manual activation.
+    function animateCounterButton(target = chargeButton) {
+        target.classList.add('counter-button--pulse');
         window.setTimeout(() => {
-            chargeButton.classList.remove('counter-button--pulse');
+            target.classList.remove('counter-button--pulse');
         }, 150);
     }
 
