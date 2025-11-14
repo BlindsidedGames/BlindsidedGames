@@ -1,0 +1,232 @@
+{
+  "id": "50-Question-gk-13",
+  "title": "General Knowledge Quiz XIII (50 Questions)",
+  "description": "Challenging but fair across internet tech, literature, earth science, mythology, and economics. No sports content.",
+  "sections": [
+    {
+      "title": "Technology: Internet & Protocols II",
+      "items": [
+        {
+          "q": "What does DNS stand for on the internet?",
+          "a": "Domain Name System - translates human‑readable names to IP addresses"
+        },
+        {
+          "q": "Which protocol is used to send email from a client to a server?",
+          "a": "SMTP - Simple Mail Transfer Protocol (submission typically via port 587)"
+        },
+        {
+          "q": "What technology creates isolated containers at the OS level on Linux?",
+          "a": "Linux containers (namespaces/cgroups) - popularized by Docker"
+        },
+        {
+          "q": "What does REST stand for in web API design?",
+          "a": "Representational State Transfer - architectural style using stateless operations"
+        },
+        {
+          "q": "Which version of Internet Protocol offers a 128‑bit address space?",
+          "a": "IPv6 - successor to IPv4 with vastly more addresses"
+        },
+        {
+          "q": "Which cryptographic protocol secures web traffic with certificates and symmetric keys?",
+          "a": "TLS - Transport Layer Security, successor to SSL"
+        },
+        {
+          "q": "What is the term for a network of infected machines controlled by an attacker?",
+          "a": "Botnet - can be used for DDoS or spam campaigns"
+        },
+        {
+          "q": "Which HTTP method is typically used to retrieve a resource without side effects?",
+          "a": "GET - should be idempotent and safe"
+        },
+        {
+          "q": "What does CDN stand for in content delivery?",
+          "a": "Content Delivery Network - geographically distributed caching system"
+        },
+        {
+          "q": "Which system maps names to phone numbers for SMS/voice, analogous to DNS for the web?",
+          "a": "ENUM - uses DNS to map E.164 numbers to internet addresses"
+        }
+      ]
+    },
+    {
+      "title": "Literature: Poetry & Drama II",
+      "items": [
+        {
+          "q": "Who wrote the play Waiting for Godot?",
+          "a": "Samuel Beckett - seminal absurdist drama first performed in 1953"
+        },
+        {
+          "q": "Which poet authored The Waste Land (1922)?",
+          "a": "T. S. Eliot - modernist poem with multilingual allusions"
+        },
+        {
+          "q": "Who wrote the verse epic Paradise Lost?",
+          "a": "John Milton - 17th‑century poem about the Fall of Man"
+        },
+        {
+          "q": "Which playwright penned A Streetcar Named Desire?",
+          "a": "Tennessee Williams - play set in New Orleans, premiered 1947"
+        },
+        {
+          "q": "Who authored the poem Ozymandias?",
+          "a": "Percy Bysshe Shelley - sonnet about impermanence of power"
+        },
+        {
+          "q": "Which Norwegian playwright wrote A Doll’s House?",
+          "a": "Henrik Ibsen - groundbreaking drama on gender and society (1879)"
+        },
+        {
+          "q": "Which American poet is known for terse, dashed verse and lived in Amherst?",
+          "a": "Emily Dickinson - 19th‑century poet whose work was largely posthumous"
+        },
+        {
+          "q": "Who wrote the Spanish play Life Is a Dream (La vida es sueño)?",
+          "a": "Pedro Calderón de la Barca - Baroque masterpiece (1635)"
+        },
+        {
+          "q": "Which poet coined the term ‘confessional poetry’ through works like Ariel?",
+          "a": "Sylvia Plath - mid‑20th‑century American poet"
+        },
+        {
+          "q": "Who is the author of the play Death of a Salesman?",
+          "a": "Arthur Miller - 1949 Pulitzer‑winning critique of the American Dream"
+        }
+      ]
+    },
+    {
+      "title": "Earth Science & Weather",
+      "items": [
+        {
+          "q": "What scale measures the magnitude of earthquakes logarithmically?",
+          "a": "Moment magnitude scale (Mw) - superseded the older Richter scale for large quakes"
+        },
+        {
+          "q": "What is the term for a rotating column of air extending from a thunderstorm to the ground?",
+          "a": "Tornado - violently rotating vortex beneath a cumulonimbus cloud"
+        },
+        {
+          "q": "Which layer of the atmosphere contains the ozone layer?",
+          "a": "Stratosphere - ozone absorbs harmful UV radiation"
+        },
+        {
+          "q": "What is the boundary between two air masses of different temperatures called?",
+          "a": "Front - warm fronts, cold fronts, and occluded fronts"
+        },
+        {
+          "q": "Which volcanic rock is full of gas bubbles and can float on water?",
+          "a": "Pumice - vesicular volcanic glass"
+        },
+        {
+          "q": "What type of rock forms from the alteration of existing rock by heat and pressure?",
+          "a": "Metamorphic rock - e.g., schist, gneiss, marble"
+        },
+        {
+          "q": "What is the term for the point on Earth’s surface directly above an earthquake’s focus?",
+          "a": "Epicenter - surface projection of the hypocenter"
+        },
+        {
+          "q": "Which scale rates tropical cyclones in the Atlantic by sustained wind speed?",
+          "a": "Saffir–Simpson scale - categories 1 through 5"
+        },
+        {
+          "q": "What phenomenon causes coastal water levels to rise due to onshore winds and low pressure?",
+          "a": "Storm surge - major component of hurricane damage"
+        },
+        {
+          "q": "What is the name for seasonal reversing winds bringing wet and dry seasons in South Asia?",
+          "a": "Monsoon - driven by land‑sea temperature contrasts"
+        }
+      ]
+    },
+    {
+      "title": "Mythology: Greek, Norse, Egyptian II",
+      "items": [
+        {
+          "q": "Who is the Greek goddess of wisdom and warfare, born from Zeus’s head?",
+          "a": "Athena - patron of Athens, associated with the owl and olive"
+        },
+        {
+          "q": "Which Norse hammer‑wielding god is associated with thunder?",
+          "a": "Thor - wielder of Mjölnir, protector of Midgard"
+        },
+        {
+          "q": "Who is the Egyptian god of the afterlife and judge of the dead?",
+          "a": "Osiris - resurrected ruler of the underworld"
+        },
+        {
+          "q": "Which Greek hero performed twelve labors as penance?",
+          "a": "Heracles (Hercules) - son of Zeus, famed for strength"
+        },
+        {
+          "q": "Which Norse trickster god is a shape‑shifter and instigator of chaos?",
+          "a": "Loki - complex figure whose actions precipitate Ragnarök"
+        },
+        {
+          "q": "Who is the Egyptian sun god often depicted with a falcon head?",
+          "a": "Ra (Re) - solar deity sailing across the sky"
+        },
+        {
+          "q": "Which Greek underworld is ruled by Hades and inhabited by shades?",
+          "a": "Hades (the Underworld) - includes Elysium and Tartarus"
+        },
+        {
+          "q": "Which Norse world tree connects the Nine Realms?",
+          "a": "Yggdrasil - immense ash linking the cosmos"
+        },
+        {
+          "q": "Which Egyptian goddess embodies truth, balance, and cosmic order?",
+          "a": "Ma’at - represented by a feather used in the weighing of the heart"
+        },
+        {
+          "q": "Which Greek sea god wields a trident and causes earthquakes?",
+          "a": "Poseidon - brother of Zeus and Hades"
+        }
+      ]
+    },
+    {
+      "title": "Business & Economics II",
+      "items": [
+        {
+          "q": "What is the term for a persistent rise in the general price level?",
+          "a": "Inflation - erodes purchasing power over time"
+        },
+        {
+          "q": "Which market structure features many sellers offering identical products?",
+          "a": "Perfect competition - firms are price takers"
+        },
+        {
+          "q": "What does IPO stand for in finance?",
+          "a": "Initial Public Offering - when a company first sells shares to the public"
+        },
+        {
+          "q": "Which economist wrote Capital in the Twenty‑First Century (2013) analyzing wealth inequality?",
+          "a": "Thomas Piketty - influential empirical study of capital and income"
+        },
+        {
+          "q": "What is the formula for compound interest ( annually ) on principal P at rate r for t years?",
+          "a": "A = P(1 + r)^t - growth with reinvested interest"
+        },
+        {
+          "q": "What is a ‘bear market’ commonly defined as?",
+          "a": "A decline of 20% or more from recent highs - sustained downward trend"
+        },
+        {
+          "q": "Which ratio measures a firm’s debt relative to shareholders’ equity?",
+          "a": "Debt‑to‑equity ratio - leverage indicator"
+        },
+        {
+          "q": "What does ROI stand for in evaluating investments?",
+          "a": "Return on Investment - gain relative to cost"
+        },
+        {
+          "q": "Which institution is the U.S. central bank?",
+          "a": "The Federal Reserve - conducts monetary policy and regulates banks"
+        },
+        {
+          "q": "What is the unemployment rate measuring?",
+          "a": "Share of the labor force without jobs but actively seeking work"
+        }
+      ]
+    }
+  ]
+}

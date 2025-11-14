@@ -1,0 +1,232 @@
+{
+  "id": "50-Question-gk-9",
+  "title": "General Knowledge Quiz IX (50 Questions)",
+  "description": "Challenging but fair across literature, history, science, geography, and tech. No sports content.",
+  "sections": [
+    {
+      "title": "Literature & Books II",
+      "items": [
+        {
+          "q": "Which novel begins with the line “It was the best of times, it was the worst of times.”?",
+          "a": "A Tale of Two Cities - Charles Dickens’s 1859 historical novel set in London and Paris"
+        },
+        {
+          "q": "Who wrote the Southern Gothic novel To Kill a Mockingbird?",
+          "a": "Harper Lee - 1960 Pulitzer Prize–winning novel about justice in the American South"
+        },
+        {
+          "q": "Which Argentinian writer crafted the labyrinthine story collection Ficciones?",
+          "a": "Jorge Luis Borges - influential 1944/1956 collection exploring infinity and metafiction"
+        },
+        {
+          "q": "Who is the author of One Hundred Years of Solitude?",
+          "a": "Gabriel García Márquez - 1967 landmark of magical realism set in Macondo"
+        },
+        {
+          "q": "Which epic Old English poem features the hero who defeats Grendel?",
+          "a": "Beowulf - the oldest surviving long poem in Old English literature"
+        },
+        {
+          "q": "Who wrote The Picture of Dorian Gray?",
+          "a": "Oscar Wilde - 1890/1891 novel about youth, vanity, and a cursed portrait"
+        },
+        {
+          "q": "Which American poet penned the 1855 collection Leaves of Grass?",
+          "a": "Walt Whitman - expansive poetry celebrating the self and democracy"
+        },
+        {
+          "q": "Who created the detective Hercule Poirot?",
+          "a": "Agatha Christie - prolific mystery writer whose Belgian sleuth debuted in 1920"
+        },
+        {
+          "q": "Which Japanese author wrote Norwegian Wood?",
+          "a": "Haruki Murakami - 1987 coming‑of‑age novel that became his breakout hit"
+        },
+        {
+          "q": "What 1938 novel by Daphne du Maurier opens with “Last night I dreamt I went to Manderley again.”?",
+          "a": "Rebecca - a gothic tale of memory, jealousy, and identity"
+        }
+      ]
+    },
+    {
+      "title": "World History II",
+      "items": [
+        {
+          "q": "Which ancient city’s law code is famously inscribed on a black diorite stele?",
+          "a": "Babylon - the Code of Hammurabi (c. 18th century BCE) carved in Akkadian cuneiform"
+        },
+        {
+          "q": "Who united the Mongol tribes and founded the Mongol Empire in the early 13th century?",
+          "a": "Genghis Khan - Temüjin (c. 1162–1227) established a vast trans‑Eurasian empire"
+        },
+        {
+          "q": "Which 16th‑century seafarer led the first English circumnavigation of the globe?",
+          "a": "Sir Francis Drake - completed his voyage 1577–1580 aboard the Golden Hind"
+        },
+        {
+          "q": "What 1648 treaties ended the Thirty Years’ War in Europe?",
+          "a": "The Peace of Westphalia - a diplomatic settlement reshaping sovereignty in Europe"
+        },
+        {
+          "q": "Which revolution began in Saint‑Domingue in 1791 and led to the first Black republic?",
+          "a": "The Haitian Revolution - culminated in Haiti’s independence in 1804"
+        },
+        {
+          "q": "Who was the first emperor of a unified Japan in the Meiji era’s new political order (1868)?",
+          "a": "Emperor Meiji - symbol of modernization during the Meiji Restoration"
+        },
+        {
+          "q": "Which 19th‑century conflict saw the Charge of the Light Brigade?",
+          "a": "The Crimean War - 1854 cavalry action memorialized by Tennyson"
+        },
+        {
+          "q": "What 1911–1912 expedition reached the South Pole second but perished on return?",
+          "a": "Scott’s Terra Nova Expedition - led by Robert Falcon Scott of Britain"
+        },
+        {
+          "q": "Which 1919 pandemic is often called the Spanish flu?",
+          "a": "Influenza pandemic of 1918–1919 - H1N1 virus causing tens of millions of deaths"
+        },
+        {
+          "q": "Which 20th‑century leader launched China’s Cultural Revolution in 1966?",
+          "a": "Mao Zedong - political campaign profoundly affecting Chinese society"
+        }
+      ]
+    },
+    {
+      "title": "Science & Nature II",
+      "items": [
+        {
+          "q": "Which branch of biology studies heredity and variation in organisms?",
+          "a": "Genetics - from Mendelian inheritance to modern genomics"
+        },
+        {
+          "q": "What is the term for water changing directly from solid to gas?",
+          "a": "Sublimation - phase transition skipping the liquid state"
+        },
+        {
+          "q": "Which vitamin deficiency causes scurvy?",
+          "a": "Vitamin C - ascorbic acid deficiency impairs collagen synthesis"
+        },
+        {
+          "q": "What is the largest land biome by area?",
+          "a": "Taiga (Boreal forest) - vast coniferous forests across high northern latitudes"
+        },
+        {
+          "q": "Which particle carries the strong nuclear force between quarks?",
+          "a": "Gluon - the gauge boson of quantum chromodynamics"
+        },
+        {
+          "q": "What is the most abundant mineral in Earth’s upper mantle?",
+          "a": "Olivine - magnesium‑iron silicate common in peridotite"
+        },
+        {
+          "q": "Which organ primarily detoxifies chemicals and metabolizes drugs in humans?",
+          "a": "The liver - key roles include bile production and metabolism"
+        },
+        {
+          "q": "What is the common term for dihydrogen monoxide?",
+          "a": "Water - H₂O, essential solvent for life"
+        },
+        {
+          "q": "Which scientist proposed the heliocentric model placing the Sun at the center?",
+          "a": "Nicolaus Copernicus - 1543 work De revolutionibus orbium coelestium"
+        },
+        {
+          "q": "What is the pH of gastric acid in the human stomach (approximate)?",
+          "a": "Around 1–3 - highly acidic due to hydrochloric acid"
+        }
+      ]
+    },
+    {
+      "title": "Geography II",
+      "items": [
+        {
+          "q": "What is the capital of Bhutan?",
+          "a": "Thimphu - located in the western central part of the country"
+        },
+        {
+          "q": "Which African country has its capital at Addis Ababa?",
+          "a": "Ethiopia - seat of the African Union as well"
+        },
+        {
+          "q": "Which strait separates Sicily from mainland Italy?",
+          "a": "Strait of Messina - narrow passage between Sicily and Calabria"
+        },
+        {
+          "q": "What landlocked European country uses Bern as its de facto capital?",
+          "a": "Switzerland - Bern is the federal city"
+        },
+        {
+          "q": "Which river forms much of the border between Texas and Mexico?",
+          "a": "The Rio Grande - known as Río Bravo in Mexico"
+        },
+        {
+          "q": "What is the largest lake in Africa by area?",
+          "a": "Lake Victoria - shared by Tanzania, Uganda, and Kenya"
+        },
+        {
+          "q": "Which Southeast Asian country was formerly known as Burma?",
+          "a": "Myanmar - official name adopted in 1989 by the ruling junta"
+        },
+        {
+          "q": "Which country contains the Atacama Desert?",
+          "a": "Chile - one of the driest places on Earth"
+        },
+        {
+          "q": "What is the capital city of Uruguay?",
+          "a": "Montevideo - on the northern bank of the Río de la Plata"
+        },
+        {
+          "q": "Which Asian capital is known historically as Edo?",
+          "a": "Tokyo - renamed in 1868 when the imperial capital moved from Kyoto"
+        }
+      ]
+    },
+    {
+      "title": "Technology & Computing II",
+      "items": [
+        {
+          "q": "Which pioneer wrote the 1843 notes describing a general‑purpose computing machine?",
+          "a": "Ada Lovelace - notes on Babbage’s Analytical Engine, often called the first algorithm"
+        },
+        {
+          "q": "Which 1976 paper introduced public‑key cryptography via “New Directions in Cryptography”?",
+          "a": "Diffie and Hellman - 1976 paper laying foundations for secure key exchange"
+        },
+        {
+          "q": "What does the acronym ASIC stand for in hardware design?",
+          "a": "Application‑Specific Integrated Circuit - customized silicon for a task"
+        },
+        {
+          "q": "Which company created the Macintosh computer in 1984?",
+          "a": "Apple - introduced the GUI‑driven Macintosh on January 24, 1984"
+        },
+        {
+          "q": "What open‑source operating system did Linus Torvalds announce in 1991?",
+          "a": "Linux - a Unix‑like kernel that underpins many systems today"
+        },
+        {
+          "q": "What database language is primarily used to query relational data?",
+          "a": "SQL - Structured Query Language for managing RDBMS data"
+        },
+        {
+          "q": "Which protocol secures web traffic by encrypting HTTP?",
+          "a": "HTTPS - HTTP over TLS/SSL providing confidentiality and integrity"
+        },
+        {
+          "q": "What does the ‘P’ stand for in the programming language PHP (recursive acronym)?",
+          "a": "PHP: Hypertext Preprocessor - server‑side scripting language"
+        },
+        {
+          "q": "Which 1995 language introduced ‘write once, run anywhere’ for the JVM?",
+          "a": "Java - compiled to bytecode executed by the Java Virtual Machine"
+        },
+        {
+          "q": "What technique compresses images by discarding some data to reduce size?",
+          "a": "Lossy compression - e.g., JPEG for photographs"
+        }
+      ]
+    }
+  ]
+}

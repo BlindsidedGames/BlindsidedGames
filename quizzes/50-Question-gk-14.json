@@ -1,0 +1,232 @@
+{
+  "id": "50-Question-gk-14",
+  "title": "General Knowledge Quiz XIV (50 Questions)",
+  "description": "Challenging but fair across medicine, music, grammar, exploration, and AI history. No sports content.",
+  "sections": [
+    {
+      "title": "Medicine & Health II",
+      "items": [
+        {
+          "q": "Which organ filters blood to produce urine and regulate electrolytes?",
+          "a": "Kidneys - paired organs essential for homeostasis"
+        },
+        {
+          "q": "What is the medical term for a heart attack?",
+          "a": "Myocardial infarction - interruption of blood flow to heart muscle"
+        },
+        {
+          "q": "Which vitamin deficiency leads to rickets in children?",
+          "a": "Vitamin D deficiency - impaired bone mineralization"
+        },
+        {
+          "q": "What is hypertension commonly defined as (mmHg) for adults?",
+          "a": "Consistently ≥130/80 or ≥140/90 depending on guideline - elevated arterial pressure"
+        },
+        {
+          "q": "Which type of blood vessel carries blood away from the heart?",
+          "a": "Arteries - thick‑walled vessels under higher pressure"
+        },
+        {
+          "q": "What does MRI stand for in medical imaging?",
+          "a": "Magnetic Resonance Imaging - uses strong magnets and radio waves"
+        },
+        {
+          "q": "Which pathogen causes tuberculosis?",
+          "a": "Mycobacterium tuberculosis - acid‑fast bacillus affecting lungs"
+        },
+        {
+          "q": "What is the body’s first line of defense against pathogens?",
+          "a": "Innate immune system - barriers like skin, mucosa, and nonspecific responses"
+        },
+        {
+          "q": "Which hormone regulates basal metabolic rate and is produced by the thyroid gland?",
+          "a": "Thyroxine (T4) - converted to the more active T3 in tissues"
+        },
+        {
+          "q": "What is the term for surgical removal of the appendix?",
+          "a": "Appendectomy - treatment for appendicitis"
+        }
+      ]
+    },
+    {
+      "title": "Music Theory & History II",
+      "items": [
+        {
+          "q": "How many semitones are in a Western octave?",
+          "a": "Twelve - forms the chromatic scale"
+        },
+        {
+          "q": "Which composer wrote the opera The Marriage of Figaro?",
+          "a": "Wolfgang Amadeus Mozart - premiered in 1786"
+        },
+        {
+          "q": "What is the term for gradually getting louder in music notation?",
+          "a": "Crescendo - the opposite is diminuendo"
+        },
+        {
+          "q": "Which Baroque composer wrote The Four Seasons?",
+          "a": "Antonio Vivaldi - a set of violin concertos (c. 1725)"
+        },
+        {
+          "q": "What is the highest standard female voice type?",
+          "a": "Soprano - above mezzo‑soprano and contralto"
+        },
+        {
+          "q": "Which German composer wrote the Brandenburg Concertos?",
+          "a": "Johann Sebastian Bach - six concertos dedicated to Christian Ludwig"
+        },
+        {
+          "q": "What do we call a short musical idea recurring throughout a composition?",
+          "a": "Motif - fundamental building block of themes"
+        },
+        {
+          "q": "Which 20th‑century composer pioneered minimalism with works like Einstein on the Beach?",
+          "a": "Philip Glass - repetitive structures and additive processes"
+        },
+        {
+          "q": "What is the Italian term for ‘at first sight’ used for reading music?",
+          "a": "A prima vista - sight‑reading"
+        },
+        {
+          "q": "Which Romantic composer wrote the symphonic poem Also sprach Zarathustra famously used in 2001: A Space Odyssey?",
+          "a": "Richard Strauss - tone poem from 1896"
+        }
+      ]
+    },
+    {
+      "title": "Language: Grammar & Punctuation II",
+      "items": [
+        {
+          "q": "What punctuation marks set off a nonessential clause within a sentence?",
+          "a": "Commas (or em dashes/parentheses) - indicate nonrestrictive information"
+        },
+        {
+          "q": "Which term describes a word that modifies a verb, adjective, or another adverb?",
+          "a": "Adverb - often ends in ‑ly in English"
+        },
+        {
+          "q": "What is the proper term for the ‘to’ form of a verb (e.g., to run)?",
+          "a": "Infinitive - base form preceded by ‘to’ in English"
+        },
+        {
+          "q": "Which mood expresses wishes, demands, or hypotheticals (e.g., “If I were…”)",
+          "a": "Subjunctive mood - distinct forms in certain verbs"
+        },
+        {
+          "q": "What is the difference between ‘its’ and ‘it’s’?",
+          "a": "‘Its’ is possessive; ‘it’s’ is a contraction of ‘it is’ or ‘it has’"
+        },
+        {
+          "q": "What do we call a word spelled the same but with different meanings (e.g., bat the animal vs. bat for baseball)?",
+          "a": "Homonym - context clarifies meaning"
+        },
+        {
+          "q": "Which punctuation mark indicates omitted material in a quotation?",
+          "a": "Ellipsis (…) - also suggests trailing off in informal writing"
+        },
+        {
+          "q": "What is a sentence lacking a main clause called?",
+          "a": "Fragment - missing subject, predicate, or complete thought"
+        },
+        {
+          "q": "What is the Oxford (serial) comma used for?",
+          "a": "To clarify lists of three or more items by adding a comma before ‘and’ or ‘or’"
+        },
+        {
+          "q": "Which punctuation mark joins two independent clauses more strongly than a comma but less finally than a period?",
+          "a": "Semicolon - links closely related clauses"
+        }
+      ]
+    },
+    {
+      "title": "Exploration & Navigation II",
+      "items": [
+        {
+          "q": "Who completed the first solo nonstop transatlantic flight in 1927?",
+          "a": "Charles Lindbergh - flew the Spirit of St. Louis from New York to Paris"
+        },
+        {
+          "q": "Which Portuguese navigator rounded the Cape of Good Hope in 1488?",
+          "a": "Bartolomeu Dias - opened a sea route to the Indian Ocean"
+        },
+        {
+          "q": "Which expedition first reached the geographic South Pole in 1911?",
+          "a": "Roald Amundsen’s team - beat Scott by about a month"
+        },
+        {
+          "q": "Which instrument measures a ship’s latitude by the Sun or stars?",
+          "a": "Sextant - angle‑measuring tool for celestial navigation"
+        },
+        {
+          "q": "Which 15th‑century prince sponsored voyages along Africa’s coast?",
+          "a": "Prince Henry the Navigator - Portuguese patron of exploration"
+        },
+        {
+          "q": "Which Chinese admiral led early 15th‑century treasure voyages in the Indian Ocean?",
+          "a": "Zheng He - eunuch admiral of the Ming dynasty"
+        },
+        {
+          "q": "What line at 0° latitude circles the Earth midway between the poles?",
+          "a": "The Equator - defines northern and southern hemispheres"
+        },
+        {
+          "q": "Which cartographer introduced a cylindrical map projection useful for navigation in 1569?",
+          "a": "Gerardus Mercator - preserves rhumb lines as straight"
+        },
+        {
+          "q": "Which Norwegian explorer crossed Greenland’s ice sheet in 1888?",
+          "a": "Fridtjof Nansen - pioneering polar scientist and humanitarian"
+        },
+        {
+          "q": "Which Spanish explorer reached the Pacific across Panama in 1513?",
+          "a": "Vasco Núñez de Balboa - first European to see the Pacific from the New World"
+        }
+      ]
+    },
+    {
+      "title": "Technology: AI & Computing History II",
+      "items": [
+        {
+          "q": "Who proposed the ‘imitation game’ as a test for machine intelligence in 1950?",
+          "a": "Alan Turing - suggested an operational test of indistinguishability in conversation"
+        },
+        {
+          "q": "Which 1956 summer workshop is often cited as the birth of AI as a field?",
+          "a": "The Dartmouth Conference - organized by McCarthy, Minsky, Rochester, and Shannon"
+        },
+        {
+          "q": "Which computer defeated world chess champion Garry Kasparov in 1997?",
+          "a": "IBM’s Deep Blue - milestone in game‑playing AI"
+        },
+        {
+          "q": "Which algorithm, introduced by Rumelhart, Hinton, and Williams (1986), trains multi‑layer neural nets?",
+          "a": "Backpropagation - gradient‑based learning via chain rule"
+        },
+        {
+          "q": "What is the term for training a model on labeled examples?",
+          "a": "Supervised learning - mapping inputs to outputs"
+        },
+        {
+          "q": "Which 2012 breakthrough used deep convolutional nets to win ImageNet?",
+          "a": "AlexNet - by Krizhevsky, Sutskever, and Hinton"
+        },
+        {
+          "q": "Which 2016 system defeated Go champion Lee Sedol?",
+          "a": "DeepMind’s AlphaGo - combined deep learning with Monte Carlo tree search"
+        },
+        {
+          "q": "What does NLP stand for in computer science?",
+          "a": "Natural Language Processing - enabling computers to understand human language"
+        },
+        {
+          "q": "What architecture introduced ‘self‑attention’ and the slogan ‘Attention Is All You Need’ (2017)?",
+          "a": "The Transformer - Vaswani et al., core of modern language models"
+        },
+        {
+          "q": "Which open‑source library from Google popularized tensor computation for ML?",
+          "a": "TensorFlow - widely used framework for building and training models"
+        }
+      ]
+    }
+  ]
+}

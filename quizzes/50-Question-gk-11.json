@@ -1,0 +1,232 @@
+{
+  "id": "50-Question-gk-11",
+  "title": "General Knowledge Quiz XI (50 Questions)",
+  "description": "Challenging but fair across ancient/modern history, biology, math/physics, and culture. No sports content.",
+  "sections": [
+    {
+      "title": "Ancient History & Archaeology II",
+      "items": [
+        {
+          "q": "Which ancient Anatolian empire had its capital at Hattusa?",
+          "a": "The Hittite Empire - Bronze Age power known from cuneiform archives"
+        },
+        {
+          "q": "What script used on Crete remains undeciphered as of today (distinct from Linear B)?",
+          "a": "Linear A - used by the Minoan civilization"
+        },
+        {
+          "q": "Which pharaoh’s intact tomb was discovered by Howard Carter in 1922?",
+          "a": "Tutankhamun - KV62 in the Valley of the Kings, rich grave goods"
+        },
+        {
+          "q": "Which pre‑Columbian civilization built Machu Picchu?",
+          "a": "The Inca - 15th‑century Andean empire; site near Cusco, Peru"
+        },
+        {
+          "q": "What is the Rosetta Stone inscribed in besides hieroglyphs?",
+          "a": "Demotic and Ancient Greek - key to deciphering hieroglyphic script"
+        },
+        {
+          "q": "Which Near Eastern civilization used monumental lamassu sculptures?",
+          "a": "Assyrians - winged human‑headed bulls guarding palace gates"
+        },
+        {
+          "q": "Which writing medium made from clay tablets was typical in Mesopotamia?",
+          "a": "Cuneiform tablets - wedge‑shaped impressions from reed styluses"
+        },
+        {
+          "q": "What monumental stones on Salisbury Plain date to the Neolithic/Bronze Age?",
+          "a": "Stonehenge - prehistoric ring of standing stones in England"
+        },
+        {
+          "q": "Which ancient city was destroyed by Vesuvius alongside Pompeii in 79 CE?",
+          "a": "Herculaneum - smaller Roman town buried by pyroclastic flows"
+        },
+        {
+          "q": "Which civilization’s stepped pyramids include El Castillo at Chichén Itzá?",
+          "a": "The Maya - advanced astronomy and calendar systems"
+        }
+      ]
+    },
+    {
+      "title": "Modern History & Politics II",
+      "items": [
+        {
+          "q": "Which 1776 document announced the American colonies’ separation from Britain?",
+          "a": "The Declaration of Independence - adopted July 4, 1776"
+        },
+        {
+          "q": "Who led the nonviolent movement for India’s independence and was assassinated in 1948?",
+          "a": "Mahatma Gandhi - advocate of satyagraha and civil disobedience"
+        },
+        {
+          "q": "Which revolution in 1917 overthrew Russia’s Provisional Government?",
+          "a": "The October Revolution - Bolshevik seizure of power"
+        },
+        {
+          "q": "Which 1919 treaty imposed punitive terms on Germany after World War I?",
+          "a": "Treaty of Versailles - redrew borders and mandated reparations"
+        },
+        {
+          "q": "Which 20th‑century movement led to the end of apartheid in South Africa?",
+          "a": "The anti‑apartheid movement - culminating in 1994 elections"
+        },
+        {
+          "q": "What 1948–49 event saw a massive Allied airlift to a blockaded city?",
+          "a": "The Berlin Airlift - supplied West Berlin during the Soviet blockade"
+        },
+        {
+          "q": "Which 1949 military alliance formed a collective defense in North America and Europe?",
+          "a": "NATO - North Atlantic Treaty Organization"
+        },
+        {
+          "q": "Which 1950–53 conflict began when North Korea invaded the South?",
+          "a": "The Korean War - armistice signed in 1953, not a peace treaty"
+        },
+        {
+          "q": "Which 1960s U.S. legislative acts outlawed segregation and protected voting rights?",
+          "a": "Civil Rights Act (1964) and Voting Rights Act (1965) - landmark laws"
+        },
+        {
+          "q": "Which 1989 event symbolically ended the Cold War divide in Europe?",
+          "a": "The fall of the Berlin Wall - opened on November 9, 1989"
+        }
+      ]
+    },
+    {
+      "title": "Biology & Ecology II",
+      "items": [
+        {
+          "q": "What is the term for mutually beneficial interaction between species?",
+          "a": "Mutualism - both organisms gain fitness benefits"
+        },
+        {
+          "q": "Which kingdom includes mushrooms, yeasts, and molds?",
+          "a": "Fungi - eukaryotes distinct from plants and animals"
+        },
+        {
+          "q": "What is the primary photosynthetic pigment in plants?",
+          "a": "Chlorophyll a - absorbs light for photosynthesis"
+        },
+        {
+          "q": "Which biome is dominated by grasses and experiences seasonal drought?",
+          "a": "Savanna - tropical/subtropical grasslands with scattered trees"
+        },
+        {
+          "q": "What is the molecule that carries genetic information in most organisms?",
+          "a": "DNA - deoxyribonucleic acid arranged in a double helix"
+        },
+        {
+          "q": "Which organelle contains digestive enzymes for breaking down waste?",
+          "a": "Lysosome - cellular recycling center in many eukaryotes"
+        },
+        {
+          "q": "What term describes an organism’s role and position in its environment?",
+          "a": "Ecological niche - includes habitat, diet, and interactions"
+        },
+        {
+          "q": "Which gas do animals exhale as a waste product of respiration?",
+          "a": "Carbon dioxide - byproduct of cellular respiration"
+        },
+        {
+          "q": "What is the symbiotic relationship where one benefits and the other is harmed?",
+          "a": "Parasitism - unlike commensalism or mutualism"
+        },
+        {
+          "q": "Which process converts atmospheric nitrogen to ammonia via bacteria?",
+          "a": "Biological nitrogen fixation - mainly by Rhizobia and cyanobacteria"
+        }
+      ]
+    },
+    {
+      "title": "Mathematics & Physics II",
+      "items": [
+        {
+          "q": "What is the derivative of sin(x)?",
+          "a": "cos(x) - the rate of change of the sine function"
+        },
+        {
+          "q": "Which mathematician proved Fermat’s Last Theorem in the 1990s?",
+          "a": "Andrew Wiles - with contributions by Richard Taylor"
+        },
+        {
+          "q": "What principle limits the precision of simultaneous position and momentum measurements?",
+          "a": "Heisenberg uncertainty principle - Δx·Δp ≥ ħ/2"
+        },
+        {
+          "q": "What is the SI unit of energy?",
+          "a": "Joule (J) - equivalent to N·m or kg·m²·s⁻²"
+        },
+        {
+          "q": "Which numbers are the roots of x² + 1 = 0?",
+          "a": "The imaginary units ±i - solutions in the complex plane"
+        },
+        {
+          "q": "What is the name of the set of counting numbers including zero?",
+          "a": "Natural numbers (often defined as {0,1,2,…}) - convention varies"
+        },
+        {
+          "q": "What equation describes the relationship among voltage, current, and resistance?",
+          "a": "Ohm’s law - V = I·R"
+        },
+        {
+          "q": "What is the base of the natural logarithm approximately equal to 2.71828?",
+          "a": "e - Euler’s number, limit of (1+1/n)^n as n→∞"
+        },
+        {
+          "q": "What phenomenon splits white light into its component colors through a prism?",
+          "a": "Dispersion - wavelength‑dependent refractive index"
+        },
+        {
+          "q": "Which theory explains gravity as the curvature of spacetime?",
+          "a": "General relativity - Einstein’s 1915 field equations"
+        }
+      ]
+    },
+    {
+      "title": "Culture & Religion II",
+      "items": [
+        {
+          "q": "Which religion venerates the Torah as its foundational text?",
+          "a": "Judaism - the first five books of the Hebrew Bible"
+        },
+        {
+          "q": "Which pillar of Islam requires almsgiving to the poor?",
+          "a": "Zakat - obligatory charity in Islamic practice"
+        },
+        {
+          "q": "What festival celebrates the Jewish New Year?",
+          "a": "Rosh Hashanah - followed by the High Holy Days and Yom Kippur"
+        },
+        {
+          "q": "Which Christian council (325 CE) produced a creed affirming Christ’s divinity?",
+          "a": "First Council of Nicaea - resulted in the Nicene Creed"
+        },
+        {
+          "q": "Which Hindu festival of lights symbolizes the victory of light over darkness?",
+          "a": "Diwali (Deepavali) - celebrated across India and the diaspora"
+        },
+        {
+          "q": "Which East Asian philosophy emphasizes filial piety and ritual propriety (li)?",
+          "a": "Confucianism - ethical and social philosophy rooted in Confucius’s teachings"
+        },
+        {
+          "q": "Which Buddhist path outlines right view, action, and meditation practices?",
+          "a": "The Noble Eightfold Path - route to end suffering"
+        },
+        {
+          "q": "Which holy city is sacred to Judaism, Christianity, and Islam?",
+          "a": "Jerusalem - site of the Western Wall, Church of the Holy Sepulchre, Dome of the Rock"
+        },
+        {
+          "q": "Which scripture is central to Zoroastrianism?",
+          "a": "The Avesta - includes the Gathas attributed to Zoroaster"
+        },
+        {
+          "q": "What is the Sikh place of worship called?",
+          "a": "Gurdwara - a gateway to the Guru; houses the Guru Granth Sahib"
+        }
+      ]
+    }
+  ]
+}
