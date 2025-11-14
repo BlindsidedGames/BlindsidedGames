@@ -471,7 +471,8 @@
         }
 
         const cost = CLICK_UPGRADE_COSTS[level];
-        clickUpgradeButton.textContent = `Increase Click Yield (+1) - Cost: ${formatBigValue(cost)} Clicks`;
+        const nextClickValue = getClickValueForLevel(level + 1);
+        clickUpgradeButton.textContent = `Increase Click Yield (+${formatBigValue(nextClickValue)}) - Cost: ${formatBigValue(cost)} Clicks`;
         clickUpgradeButton.disabled = clickBalance < cost;
     }
 
@@ -617,7 +618,14 @@
 
     function getClicksPerPress(state) {
         const level = getClickUpgradeLevel(state);
-        return 1n + BigInt(level);
+        return getClickValueForLevel(level);
+    }
+
+    function getClickValueForLevel(level) {
+        // Map each upgrade level to its triangular reward so future tiers inherit the progression automatically.
+        const safeLevel = Number.isFinite(level) ? Math.max(0, Math.trunc(level)) : 0;
+        const ordinal = BigInt(safeLevel + 1);
+        return (ordinal * (ordinal + 1n)) / 2n;
     }
 
     function getClickUpgradeLevel(state) {
