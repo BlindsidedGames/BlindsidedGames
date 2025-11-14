@@ -48,6 +48,54 @@
       "title": "General Knowledge Quiz VIII (50 Questions)",
       "description": "Challenging but fair. New categories: Language & Etymology, Inventions & Discoveries, Philosophy & Religion, Environment & Ecology, Exploration & Cartography.",
       "file": "50-Question-gk-8.json"
+    },
+    {
+      "id": "50-Question-gk-9",
+      "title": "General Knowledge Quiz IX (50 Questions)",
+      "description": "Challenging but fair across literature, history, science, geography, and tech. No sports content.",
+      "file": "50-Question-gk-9.json"
+    },
+    {
+      "id": "50-Question-gk-10",
+      "title": "General Knowledge Quiz X (50 Questions)",
+      "description": "Challenging but fair across space, ideas, language, inventions, and cultural trivia.",
+      "file": "50-Question-gk-10.json"
+    },
+    {
+      "id": "50-Question-gk-11",
+      "title": "General Knowledge Quiz XI (50 Questions)",
+      "description": "Challenging but fair across ancient/modern history, biology, geopolitics, and exploration.",
+      "file": "50-Question-gk-11.json"
+    },
+    {
+      "id": "50-Question-gk-12",
+      "title": "General Knowledge Quiz XII (50 Questions)",
+      "description": "Challenging but fair across film/TV, games, architecture, economy, and natural wonders.",
+      "file": "50-Question-gk-12.json"
+    },
+    {
+      "id": "50-Question-gk-13",
+      "title": "General Knowledge Quiz XIII (50 Questions)",
+      "description": "Challenging but fair across internet tech, literature, aviation, food, and culture.",
+      "file": "50-Question-gk-13.json"
+    },
+    {
+      "id": "50-Question-gk-14",
+      "title": "General Knowledge Quiz XIV (50 Questions)",
+      "description": "Challenging but fair across medicine, music, grammar, engineering, and environmental themes.",
+      "file": "50-Question-gk-14.json"
+    },
+    {
+      "id": "50-Question-gk-15",
+      "title": "General Knowledge Quiz XV (50 Questions)",
+      "description": "Challenging but fair across art, history, astronomy, cinema, and global customs.",
+      "file": "50-Question-gk-15.json"
+    },
+    {
+      "id": "50-Question-gk-16",
+      "title": "General Knowledge Quiz XVI (50 Questions)",
+      "description": "Challenging but fair across logic, cultural traditions, engineering, and natural sciences.",
+      "file": "50-Question-gk-16.json"
     }
   ]
 }
