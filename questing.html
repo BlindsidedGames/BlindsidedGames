@@ -1,0 +1,802 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="./icons/quest.png">
+  <title>Quest Step Runner (Static)</title>
+  <style>
+    :root {
+      --bg: radial-gradient(circle at 18% 18%, #0d0a0c, #070506 64%);
+      --panel: #261911;
+      --panel-2: #1b120e;
+      --border: #d8b45a;
+      --overlay-border: #d8b45a;
+      --text: #f5ecda;
+      --muted: #e0d3b9;
+      --accent: #d8b45a;
+      --chip-active-bg: rgba(216, 180, 90, 0.14);
+      --chip-active-border: #d8b45a;
+      --chip-active-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+      --shadow: 0 28px 68px rgba(0, 0, 0, 0.55);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    .frame { max-width: 1280px; margin: 0 auto; padding: 26px; }
+    header.hero { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 18px; margin-bottom: 14px; }
+    .eyebrow { margin: 0; text-transform: uppercase; letter-spacing: 0.3px; font-size: 11px; color: var(--muted); }
+    h1 { margin: 6px 0 4px; font-size: 28px; }
+    .subtitle { margin: 0; color: var(--muted); font-size: 14px; max-width: 720px; line-height: 1.4; }
+    .status { display: inline-flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.04); border: 1px solid var(--border); padding: 10px 12px; border-radius: 999px; min-width: 200px; box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25); }
+    .dot { width: 12px; height: 12px; border-radius: 50%; background: #f59e0b; box-shadow: 0 0 0 6px rgba(245, 158, 11, 0.12); flex-shrink: 0; }
+    .status-text { display: flex; flex-direction: column; gap: 2px; }
+    .status-label { font-weight: 600; }
+    .status-sub { color: var(--muted); font-size: 12px; }
+    .layout { display: grid; grid-template-columns: 1.15fr 1.5fr; gap: 14px; align-items: start; }
+    .card { background: var(--panel-2); border: 1px solid var(--border); border-radius: 16px; padding: 16px; box-shadow: var(--shadow); }
+    .card-header { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 12px; }
+    .pill { display: inline-flex; align-items: center; gap: 6px; padding: 7px 11px; background: rgba(216, 180, 90, 0.14); border: 1px solid var(--chip-active-border); border-radius: 14px; font-size: 12px; color: var(--text); font-weight: 600; }
+    .pill-stack { flex-direction: column; align-items: flex-start; border-radius: 14px; }
+    .pill-sub { font-size: 11px; color: var(--muted); font-weight: 500; }
+    label { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; color: var(--muted); margin-bottom: 6px; }
+    input[type="text"], input[type="color"] { width: 100%; border: 1px solid var(--border); border-radius: 12px; background: rgba(255, 255, 255, 0.04); color: var(--text); padding: 11px 12px; font-size: 15px; outline: none; transition: border 0.2s ease, transform 0.1s ease; }
+    input[type="text"]:focus, input[type="color"]:focus { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(216, 180, 90, 0.18); }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+    button { border: none; border-radius: 12px; padding: 11px 14px; font-size: 14px; cursor: pointer; transition: transform 0.1s ease, box-shadow 0.2s ease, background 0.2s ease; font-weight: 600; color: #0b1020; background: var(--accent); box-shadow: 0 6px 14px rgba(216, 180, 90, 0.18); }
+    button:hover { transform: translateY(-1px); }
+    button:active { transform: translateY(0); }
+    .ghost { background: rgba(255, 255, 255, 0.06); color: var(--text); box-shadow: none; border: 1px solid var(--border); }
+    .lookup-status { border-radius: 10px; padding: 8px 10px; font-size: 13px; display: inline-flex; gap: 8px; align-items: center; border: 1px solid var(--border); background: rgba(255,255,255,0.04); }
+    .section-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+    .section-btn { width: 100%; text-align: left; padding: 12px; border: 1px solid var(--border); background: rgba(255, 255, 255, 0.03); border-radius: 14px; color: var(--text); box-shadow: none; }
+    .section-btn .name { font-weight: 600; }
+    .section-btn .meta { color: var(--muted); font-size: 13px; margin-top: 2px; }
+    .section-btn.active { border-color: var(--chip-active-border); box-shadow: none; background: var(--chip-active-bg); }
+    .note { margin-top: 8px; color: var(--muted); font-size: 13px; line-height: 1.4; }
+    .step-track { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .chip { border: 1px solid var(--border); border-radius: 10px; padding: 6px 10px; background: rgba(0, 0, 0, 0.18); color: var(--muted); font-size: 12px; box-shadow: none; }
+    .chip.active { border-color: var(--chip-active-border); color: var(--text); background: var(--chip-active-bg); box-shadow: none; }
+    .list { margin: 6px 0 0; padding-left: 16px; color: var(--muted); line-height: 1.45; font-size: 14px; }
+    .overlay-shell { border: 1px solid var(--overlay-border); border-radius: 14px; background: linear-gradient(145deg, rgba(255,255,255,0.02), rgba(255,255,255,0.015)); overflow: hidden; box-shadow: var(--shadow); padding: 12px; }
+    .overlay-header { padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; border: 1px solid var(--overlay-border); border-radius: 12px; background: var(--panel); margin: 0 0 12px 0; box-shadow: 0 18px 36px rgba(0,0,0,0.35); }
+    .overlay-title { font-size: 20px; margin: 0; color: var(--text); }
+    .overlay-sub { margin: 0; color: var(--muted); font-size: 13px; }
+    .overlay-body { padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .overlay-box { border: 1px solid var(--overlay-border); border-radius: 12px; padding: 12px; background: var(--panel); box-shadow: 0 18px 36px rgba(0,0,0,0.35); }
+    .overlay-box h4 { margin: 0 0 8px; font-size: 15px; letter-spacing: 0.2px; text-transform: uppercase; color: var(--muted); }
+    .overlay-box ul { margin: 0; padding-left: 16px; color: var(--text); line-height: 1.5; }
+    .overlay-box .muted { color: var(--muted); }
+    .step-panel { grid-column: 1 / -1; border: 1px solid var(--overlay-border); border-radius: 12px; padding: 12px; background: var(--panel); box-shadow: 0 18px 36px rgba(0,0,0,0.35); }
+    .step-panel h3 { margin: 0 0 6px; font-size: 17px; }
+    .step-panel p { margin: 0 0 8px; line-height: 1.5; }
+    .skill-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+    .skill-item { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--border); border-radius: 12px; padding: 6px 9px; background: rgba(0,0,0,0.3); }
+    .skill-icon { width: 18px; height: 18px; object-fit: contain; }
+    .skill-level { font-weight: 700; color: var(--accent); margin-right: 4px; }
+    @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">RS3 streaming tools</p>
+        <h1>Quest Step Runner</h1>
+        <p class="subtitle">Single-page, client-only. Fetches quick guides from runescape.wiki (CORS-friendly) and shows the overlay view on the right. No server or WebSocket needed.</p>
+      </div>
+      <div class="status">
+        <div class="dot" id="state-dot"></div>
+        <div class="status-text">
+          <div class="status-label" id="state-label">Idle</div>
+          <div class="status-sub" id="state-sub">Waiting for quest</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <section class="card">
+        <div class="card-header">
+          <div>
+            <div class="pill">Quick guide lookup</div>
+            <h3 style="margin:6px 0 0;">Pull from runescape.wiki</h3>
+          </div>
+          <div class="lookup-status" id="lookup-status">Waiting for quest name</div>
+        </div>
+        <form id="lookup-form">
+          <label for="quest-input">Quest name</label>
+          <input id="quest-input" type="text" placeholder="e.g., Broken Home" autocomplete="off" />
+          <label for="accent-input" style="margin-top:12px;">Accent color</label>
+          <input id="accent-input" type="color" value="#d8b45a" />
+          <div class="actions">
+            <button type="submit">Lookup quick guide</button>
+            <button type="button" class="ghost" id="prev-step">Prev</button>
+            <button type="button" id="next-step">Next</button>
+          </div>
+          <p class="note" id="lookup-note">Adds origin=* when calling the wiki. Copy public/icons/skills into quest-helper-static/icons/skills for skill icons.</p>
+        </form>
+
+        <div class="card-header" style="margin-top:12px;">
+          <div>
+            <div class="pill">Sections</div>
+            <h3 style="margin:6px 0 0;">Choose active section</h3>
+          </div>
+          <div class="muted" id="section-count">0 sections</div>
+        </div>
+        <div class="section-list" id="section-list"></div>
+      </section>
+      <section class="card overlay-shell">
+        <div class="overlay-header">
+          <div>
+            <h2 class="overlay-title" id="overlay-title">No quest loaded</h2>
+            <p class="overlay-sub" id="overlay-sub">Use lookup on the left to load a quick guide.</p>
+          </div>
+          <div class="pill pill-stack" id="overlay-step-pill">
+            <span id="overlay-step-main">Idle</span>
+            <span class="pill-sub" id="overlay-total-pill"></span>
+          </div>
+        </div>
+        <div class="overlay-body">
+          <div class="step-panel">
+            <h3 id="active-section">Active section</h3>
+            <p id="active-step" class="muted">No step yet.</p>
+            <div class="step-track" id="overlay-step-track"></div>
+            <ul class="list" id="substep-list"></ul>
+          </div>
+
+          <div class="overlay-box" id="box-overview">
+            <h4>Overview</h4>
+            <p class="muted" id="overview-text">None.</p>
+          </div>
+
+          <div class="overlay-box" id="box-skills">
+            <h4>Skill Requirements</h4>
+            <ul class="skill-list" id="skill-list"></ul>
+          </div>
+
+          <div class="overlay-box" id="box-reqs">
+            <h4>Other Requirements</h4>
+            <ul class="list" id="req-list"></ul>
+          </div>
+
+          <div class="overlay-box" id="box-items">
+            <h4>Items Required</h4>
+            <ul class="list" id="item-list"></ul>
+          </div>
+
+          <div class="overlay-box" id="box-rec">
+            <h4>Recommended</h4>
+            <ul class="list" id="rec-list"></ul>
+          </div>
+
+          <div class="overlay-box" id="box-enemies">
+            <h4>Enemies</h4>
+            <ul class="list" id="enemy-list"></ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    const STORAGE_KEY = "rs3-quest-helper-static";
+    const ICON_BASE = "./icons/skills";
+
+    const defaultState = {
+      accent: "#d8b45a",
+      quest: null,
+      activeSectionIndex: 0,
+      activeStepIndex: 0
+    };
+
+    let state = loadState();
+
+    const elements = {
+      questInput: document.getElementById("quest-input"),
+      accentInput: document.getElementById("accent-input"),
+      lookupStatus: document.getElementById("lookup-status"),
+      lookupNote: document.getElementById("lookup-note"),
+      sectionList: document.getElementById("section-list"),
+      sectionCount: document.getElementById("section-count"),
+      overlayTitle: document.getElementById("overlay-title"),
+      overlaySub: document.getElementById("overlay-sub"),
+      overlayStepPill: document.getElementById("overlay-step-pill"),
+      overlayStepMain: document.getElementById("overlay-step-main"),
+      overlayTotalPill: document.getElementById("overlay-total-pill"),
+      activeSection: document.getElementById("active-section"),
+      activeStep: document.getElementById("active-step"),
+      overlayStepTrack: document.getElementById("overlay-step-track"),
+      substepList: document.getElementById("substep-list"),
+      overviewText: document.getElementById("overview-text"),
+      skillList: document.getElementById("skill-list"),
+      reqList: document.getElementById("req-list"),
+      itemList: document.getElementById("item-list"),
+      recList: document.getElementById("rec-list"),
+      enemyList: document.getElementById("enemy-list"),
+      stateDot: document.getElementById("state-dot"),
+      stateLabel: document.getElementById("state-label"),
+      stateSub: document.getElementById("state-sub")
+    };
+
+    document.getElementById("lookup-form").addEventListener("submit", evt => {
+      evt.preventDefault();
+      lookupQuest(elements.questInput.value);
+    });
+    document.getElementById("prev-step").addEventListener("click", () => stepNav(-1));
+    document.getElementById("next-step").addEventListener("click", () => stepNav(1));
+    elements.accentInput.addEventListener("input", () => { setAccent(elements.accentInput.value); saveState(); renderOverlay(); });
+
+    setAccent(state.accent);
+    hydrateForm();
+    renderSections();
+    renderOverlay();
+    updateConnection("Idle", "#f59e0b", "Waiting for quest");
+
+    function hydrateForm() {
+      elements.questInput.value = state.quest?.name || "";
+      elements.accentInput.value = state.accent;
+    }
+
+    function updateConnection(label, color, sub) {
+      elements.stateLabel.textContent = label;
+      elements.stateSub.textContent = sub;
+      elements.stateDot.style.background = color;
+      elements.stateDot.style.boxShadow = `0 0 0 6px ${color}33`;
+    }
+
+    async function lookupQuest(name) {
+      const normalizedName = normalizeQuestName(name || "");
+      if (!normalizedName) {
+        setLookupStatus("Quest name required", "warn");
+        return;
+      }
+      setLookupStatus("Loading...", "warn");
+      elements.lookupNote.textContent = "Fetching quick guide from runescape.wiki...";
+      try {
+        const quest = await fetchQuickGuide(normalizedName);
+        state.quest = quest;
+        state.activeSectionIndex = 0;
+        state.activeStepIndex = 0;
+        elements.questInput.value = quest.name || normalizedName;
+        setLookupStatus("Loaded", "ok");
+        elements.lookupNote.textContent = quest.source ? `Loaded from ${quest.source}` : "Loaded quick guide.";
+        saveState();
+        renderSections();
+        renderOverlay();
+        updateConnection("Ready", "#22c55e", "Overlay updated");
+      } catch (err) {
+        console.error(err);
+        setLookupStatus("Error", "error");
+        elements.lookupNote.textContent = err.message || "Quest lookup failed.";
+      }
+    }
+
+    function setLookupStatus(text, tone = "muted") {
+      elements.lookupStatus.textContent = text;
+      const colors = {
+        ok: "rgba(34, 197, 94, 0.4)",
+        warn: "rgba(245, 158, 11, 0.4)",
+        error: "rgba(239, 68, 68, 0.4)",
+        muted: "rgba(255,255,255,0.1)"
+      };
+      elements.lookupStatus.style.background = colors[tone] || colors.muted;
+    }
+    function loadState() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return { ...defaultState };
+        const parsed = JSON.parse(raw);
+        return { ...defaultState, ...parsed };
+      } catch (err) {
+        console.warn("Failed to parse saved state", err);
+        return { ...defaultState };
+      }
+    }
+
+    function saveState() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      } catch (err) {
+        console.warn("Failed to save state", err);
+      }
+    }
+
+    function setAccent(value) {
+      state.accent = value || defaultState.accent;
+      document.documentElement.style.setProperty("--accent", state.accent);
+      document.documentElement.style.setProperty("--overlay-border", state.accent);
+      elements.overlayStepPill.style.borderColor = state.accent;
+    }
+
+    function stepNav(direction) {
+      if (!state.quest || !state.quest.sections || state.quest.sections.length === 0) return;
+      const section = state.quest.sections[state.activeSectionIndex] || { steps: [] };
+      const steps = section.steps || [];
+      if (steps.length === 0) return;
+
+      let nextStep = state.activeStepIndex + direction;
+      let nextSection = state.activeSectionIndex;
+
+      if (nextStep < 0 && nextSection > 0) {
+        nextSection -= 1;
+        nextStep = (state.quest.sections[nextSection].steps || []).length - 1;
+      } else if (nextStep >= steps.length && nextSection < state.quest.sections.length - 1) {
+        nextSection += 1;
+        nextStep = 0;
+      }
+
+      const boundedStep = Math.max(0, Math.min(nextStep, (state.quest.sections[nextSection].steps || []).length - 1));
+      state.activeSectionIndex = nextSection;
+      state.activeStepIndex = boundedStep;
+      saveState();
+      renderSections();
+      renderOverlay();
+    }
+
+    function renderSections() {
+      elements.sectionList.innerHTML = "";
+      if (!state.quest || !Array.isArray(state.quest.sections) || state.quest.sections.length === 0) {
+        elements.sectionList.innerHTML = '<div class="muted">No sections yet. Load a quest to see steps.</div>';
+        elements.sectionCount.textContent = "0 sections";
+        return;
+      }
+
+      state.quest.sections.forEach((section, idx) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = `section-btn${idx === state.activeSectionIndex ? " active" : ""}`;
+        btn.innerHTML = `
+          <div class="name">${section.title}</div>
+          <div class="meta">${(section.steps || []).length || 0} steps</div>
+        `;
+        btn.addEventListener("click", () => {
+          state.activeSectionIndex = idx;
+          state.activeStepIndex = 0;
+          saveState();
+          renderSections();
+          renderOverlay();
+        });
+        elements.sectionList.appendChild(btn);
+      });
+      elements.sectionCount.textContent = `${state.quest.sections.length} section${state.quest.sections.length === 1 ? "" : "s"}`;
+    }
+
+    function renderOverlay() {
+      if (!state.quest) {
+        elements.overlayTitle.textContent = "No quest loaded";
+        elements.overlaySub.textContent = "Use lookup on the left to load a quick guide.";
+        elements.overlayStepMain.textContent = "Idle";
+        elements.overlayTotalPill.textContent = "";
+        elements.activeSection.textContent = "Active section";
+        elements.activeStep.textContent = "No step yet.";
+        elements.activeStep.classList.add("muted");
+        elements.overlayStepTrack.innerHTML = "";
+        elements.overlayStepTrack.style.display = "none";
+        elements.substepList.innerHTML = "";
+        elements.overviewText.textContent = "None.";
+        elements.skillList.innerHTML = "";
+        elements.reqList.innerHTML = "";
+        elements.itemList.innerHTML = "";
+        elements.recList.innerHTML = "";
+        elements.enemyList.innerHTML = "";
+        return;
+      }
+
+      elements.overlayTitle.textContent = state.quest.name || "Quest";
+      elements.overlaySub.textContent = state.quest.source ? `Source: ${state.quest.source}` : "Quick guide";
+
+      const sections = state.quest.sections || [];
+      const section = sections[state.activeSectionIndex] || sections[0];
+      const steps = (section && section.steps) || [];
+      const safeSectionIndex = sections.indexOf(section);
+      state.activeSectionIndex = safeSectionIndex >= 0 ? safeSectionIndex : 0;
+
+      const step = steps[state.activeStepIndex] || steps[0];
+      const safeStepIndex = steps.indexOf(step);
+      state.activeStepIndex = safeStepIndex >= 0 ? safeStepIndex : 0;
+
+      const totalStepsAll = sections.reduce((sum, sec) => sum + ((sec.steps || []).length || 0), 0) || steps.length || 1;
+      const stepsBefore = sections
+        .slice(0, state.activeSectionIndex)
+        .reduce((sum, sec) => sum + ((sec.steps || []).length || 0), 0);
+      const flatIndex = stepsBefore + state.activeStepIndex + 1;
+
+      if (section) {
+        elements.overlayStepMain.textContent = `Section ${state.activeSectionIndex + 1} | Step ${state.activeStepIndex + 1} of ${steps.length || 1}`;
+        elements.overlayTotalPill.textContent = `Total steps ${flatIndex} of ${totalStepsAll}`;
+      } else {
+        elements.overlayStepMain.textContent = "No section";
+        elements.overlayTotalPill.textContent = "";
+      }
+      elements.overlayStepPill.style.border = `1px solid ${state.accent}`;
+
+      elements.activeSection.textContent = section ? section.title : "No section selected";
+      elements.activeStep.textContent = step ? step.text : "No step text available.";
+      elements.activeStep.classList.toggle("muted", !step || !step.text);
+
+      elements.overlayStepTrack.innerHTML = "";
+      const hasSteps = Array.isArray(steps) && steps.length > 0;
+      elements.overlayStepTrack.style.display = hasSteps ? "flex" : "none";
+      if (hasSteps) {
+        steps.forEach((_, idx) => {
+          const chip = document.createElement("button");
+          chip.type = "button";
+          chip.className = `chip${idx === state.activeStepIndex ? " active" : ""}`;
+          chip.textContent = idx + 1;
+          chip.addEventListener("click", () => {
+            state.activeStepIndex = idx;
+            saveState();
+            renderSections();
+            renderOverlay();
+          });
+          elements.overlayStepTrack.appendChild(chip);
+        });
+      }
+
+      renderEntryList(elements.substepList, (step && step.children) || [], "No sub-steps for this step.");
+
+      const overview = state.quest.overview || "";
+      elements.overviewText.textContent = overview || "None.";
+      elements.overviewText.classList.toggle("muted", !overview);
+
+      renderSkills(elements.skillList, state.quest.skillRequirements || []);
+      renderList(elements.reqList, state.quest.requirements || [], "None noted.");
+      renderList(elements.itemList, state.quest.itemsRequired || [], "None noted.");
+      renderList(elements.recList, state.quest.recommended || [], "None noted.");
+      renderList(elements.enemyList, state.quest.enemies || [], "None noted.");
+    }
+    function renderEntryList(container, entries, emptyText) {
+      container.innerHTML = "";
+      const hasEntries = Array.isArray(entries) && entries.length > 0;
+      container.style.display = hasEntries ? "block" : "none";
+      if (!hasEntries) {
+        return;
+      }
+      entries.forEach(entry => {
+        const li = document.createElement("li");
+        li.textContent = entry.text;
+        container.appendChild(li);
+        if (entry.children && entry.children.length) {
+          const nested = document.createElement("ul");
+          nested.className = "list";
+          renderEntryList(nested, entry.children, "");
+          container.appendChild(nested);
+        }
+      });
+    }
+
+    function renderList(container, entries, emptyText) {
+      container.innerHTML = "";
+      const hasEntries = Array.isArray(entries) && entries.length > 0;
+      if (!hasEntries) {
+        const li = document.createElement("li");
+        li.textContent = emptyText;
+        li.className = "muted";
+        container.appendChild(li);
+        return;
+      }
+      entries.forEach(entry => {
+        const li = document.createElement("li");
+        li.textContent = entry.text;
+        container.appendChild(li);
+        if (entry.children && entry.children.length) {
+          const nested = document.createElement("ul");
+          nested.className = "list";
+          renderList(nested, entry.children, "");
+          container.appendChild(nested);
+        }
+      });
+    }
+
+    function renderSkills(container, entries) {
+      container.innerHTML = "";
+      const hasEntries = Array.isArray(entries) && entries.length > 0;
+      if (!hasEntries) {
+        const li = document.createElement("li");
+        li.textContent = "None noted.";
+        li.className = "muted";
+        container.appendChild(li);
+        return;
+      }
+      entries.forEach(entry => {
+        const li = document.createElement("li");
+        li.className = "skill-item";
+        if (entry.icon) {
+          const img = document.createElement("img");
+          img.className = "skill-icon";
+          img.src = entry.icon;
+          img.alt = entry.text || "Skill";
+          li.appendChild(img);
+        }
+        const textSpan = document.createElement("span");
+        if (entry.level) {
+          const lvl = document.createElement("span");
+          lvl.className = "skill-level";
+          lvl.textContent = entry.level;
+          textSpan.appendChild(lvl);
+        }
+        const label = document.createElement("span");
+        const labelText = entry.level && entry.text ? entry.text.replace(/^\s*\d+\s*/, "").trim() : entry.text || "";
+        label.textContent = labelText;
+        textSpan.appendChild(label);
+        li.appendChild(textSpan);
+        container.appendChild(li);
+      });
+    }
+
+    async function fetchQuickGuide(questName) {
+      const pageName = `${questName}/Quick_guide`;
+      const url = `https://runescape.wiki/api.php?action=parse&page=${encodeURIComponent(pageName)}&prop=text|sections|displaytitle&format=json&origin=*`;
+      const res = await fetch(url, { headers: { "User-Agent": "Quest Helper Static (RS3 streamer tools)" } });
+      if (!res.ok) {
+        throw new Error(`Wiki returned ${res.status} for ${pageName}`);
+      }
+      const data = await res.json();
+      if (!data.parse || !data.parse.text || !data.parse.text["*"]) {
+        throw new Error(`No quick guide found for "${questName}".`);
+      }
+      const html = data.parse.text["*"];
+      const metaSections = data.parse.sections || [];
+      const displayTitle = stripTags(data.parse.displaytitle || data.parse.title || questName);
+      return parseQuickGuide(html, metaSections, displayTitle, questName);
+    }
+
+    function parseQuickGuide(html, metaSections, displayTitle, questName) {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, "text/html");
+      const cleanedTitle =
+        (displayTitle || questName || "")
+          .replace(/\s*-+\s*Quick guide$/i, "")
+          .replace(/\s*Quick guide$/i, "") || displayTitle;
+      return {
+        name: cleanedTitle,
+        overview: extractOverview(doc),
+        ...extractQuestDetails(doc),
+        sections: extractSections(doc, metaSections),
+        source: `https://runescape.wiki/w/${encodeURIComponent((questName || displayTitle).replace(/ /g, "_"))}/Quick_guide`
+      };
+    }
+
+    function stripTags(value) {
+      return value ? value.replace(/<[^>]+>/g, "") : "";
+    }
+
+    function extractOverview(doc) {
+      const heading = doc.querySelector("#Overview")?.closest("h2");
+      if (!heading) return "";
+      const paragraphs = [];
+      let node = heading.nextElementSibling;
+      while (node && node.tagName !== "H2") {
+        if (node.tagName === "P") {
+          const text = cleanText(node.textContent);
+          if (text) paragraphs.push(text);
+        }
+        node = node.nextElementSibling;
+      }
+      return paragraphs.join(" ");
+    }
+    function extractQuestDetails(doc) {
+      const details = { skillRequirements: [], requirements: [], itemsRequired: [], recommended: [], enemies: [] };
+      doc.querySelectorAll("th.questdetails-header").forEach(th => {
+        const header = cleanText(th.textContent);
+        const headerKey = header.toLowerCase();
+        const infoCell = th.nextElementSibling;
+        const entries = parseInfoCell(infoCell);
+        switch (headerKey) {
+          case "skill requirements":
+            details.skillRequirements = decorateSkillEntries(entries);
+            break;
+          case "requirements": {
+            const split = splitSkillRequirements(entries);
+            details.skillRequirements = details.skillRequirements.concat(split.skills);
+            details.requirements = split.remainder;
+            break;
+          }
+          case "items required":
+            details.itemsRequired = entries;
+            break;
+          case "recommended":
+            details.recommended = entries;
+            break;
+          case "enemies to defeat":
+            details.enemies = entries;
+            break;
+          default:
+            if (headerKey.includes("skill requirement")) {
+              details.skillRequirements = decorateSkillEntries(entries);
+            }
+            break;
+        }
+      });
+      return details;
+    }
+
+    function parseInfoCell(cell) {
+      if (!cell) return [];
+      const topLevelLists = Array.from(cell.querySelectorAll("ul, ol")).filter(list => !list.closest("ul ul, ol ol"));
+      if (topLevelLists.length) {
+        return topLevelLists.flatMap(list => parseList(list));
+      }
+      const text = cleanText(cell.textContent);
+      return text ? [{ text }] : [];
+    }
+
+    function extractSections(doc, metaSections) {
+      const ignore = new Set(["Overview", "Rewards", "Required for completing"]);
+      const sections = [];
+      const list = metaSections && metaSections.length
+        ? metaSections.map(section => ({ title: section.line, anchor: section.anchor }))
+        : Array.from(doc.querySelectorAll("h2 .mw-headline")).map(el => ({ title: cleanText(el.textContent), anchor: el.getAttribute("id") }));
+
+      list.forEach(section => {
+        if (!section.title || ignore.has(section.title)) return;
+        const selector = `#${cssEscape(section.anchor || section.title.replace(/\s+/g, "_"))}`;
+        const heading = doc.querySelector(selector)?.closest("h2");
+        if (!heading) return;
+
+        const content = [];
+        let node = heading.nextElementSibling;
+        while (node && node.tagName !== "H2") {
+          content.push(node);
+          node = node.nextElementSibling;
+        }
+
+        let primaryList = content.find(el => el.querySelector?.(".checklist ul, .checklist ol"))?.querySelector(".checklist ul, .checklist ol")
+          || content.find(el => el.matches?.("ol, ul"))
+          || content.find(el => Array.from(el.children || []).some(child => child.matches?.("ol, ul")));
+
+        let steps = [];
+        if (primaryList) {
+          steps = parseList(primaryList);
+        }
+        if (!steps.length) {
+          steps = Array.from(content.flatMap(el => Array.from(el.querySelectorAll ? el.querySelectorAll("li") : [])))
+            .map(li => ({ text: cleanText(li.textContent) }))
+            .filter(step => step.text);
+        }
+        if (!steps.length) {
+          steps = content
+            .filter(el => el.tagName === "P")
+            .map(p => ({ text: cleanText(p.textContent) }))
+            .filter(step => step.text);
+        }
+        sections.push({ title: section.title, steps });
+      });
+
+      return sections;
+    }
+
+    function parseList(listElement) {
+      const items = [];
+      Array.from(listElement.children).forEach(li => {
+        if (li.tagName !== "LI") return;
+        const node = li.cloneNode(true);
+        const nested = node.querySelectorAll("ul, ol");
+        const nestedChildren = [];
+        nested.forEach(childList => {
+          nestedChildren.push(...parseList(childList));
+          childList.remove();
+        });
+        const chatOptions = extractChatOptions(node);
+        const text = cleanText(node.textContent);
+        const children = [...chatOptions, ...nestedChildren].filter(Boolean);
+        if (text) {
+          items.push({ text, children: children.length ? children : undefined });
+        }
+      });
+      return items;
+    }
+
+    function cleanText(value = "") {
+      return value.replace(/\[[^\]]*\]/g, "").replace(/\s+/g, " ").replace(/\u00a0/g, " ").trim();
+    }
+
+    function cleanChatText(value = "") {
+      return value.replace(/\s+/g, " ").replace(/\u00a0/g, " ").trim();
+    }
+    const skillIconMap = {
+      agility: { icon: "agility.png", name: "Agility" },
+      archaeology: { icon: "archaeology.png", name: "Archaeology" },
+      attack: { icon: "attack.png", name: "Attack" },
+      constitution: { icon: "constitution.png", name: "Constitution" },
+      construction: { icon: "construction.png", name: "Construction" },
+      cooking: { icon: "cooking.png", name: "Cooking" },
+      crafting: { icon: "crafting.png", name: "Crafting" },
+      defence: { icon: "defence.png", name: "Defence" },
+      divination: { icon: "divination.png", name: "Divination" },
+      dungeoneering: { icon: "dungeoneering.png", name: "Dungeoneering" },
+      farming: { icon: "farming.png", name: "Farming" },
+      firemaking: { icon: "firemaking.png", name: "Firemaking" },
+      fishing: { icon: "fishing.png", name: "Fishing" },
+      fletching: { icon: "fletching.png", name: "Fletching" },
+      herblore: { icon: "herblore.png", name: "Herblore" },
+      hunter: { icon: "hunter.png", name: "Hunter" },
+      invention: { icon: "invention.png", name: "Invention" },
+      magic: { icon: "magic.png", name: "Magic" },
+      mining: { icon: "mining.png", name: "Mining" },
+      necromancy: { icon: "necromancy.png", name: "Necromancy" },
+      prayer: { icon: "prayer.png", name: "Prayer" },
+      ranged: { icon: "ranged.png", name: "Ranged" },
+      runecrafting: { icon: "runecrafting.png", name: "Runecrafting" },
+      slayer: { icon: "slayer.png", name: "Slayer" },
+      smithing: { icon: "smithing.png", name: "Smithing" },
+      strength: { icon: "strength.png", name: "Strength" },
+      summoning: { icon: "summoning.png", name: "Summoning" },
+      thieving: { icon: "thieving.png", name: "Thieving" },
+      woodcutting: { icon: "woodcutting.png", name: "Woodcutting" }
+    };
+
+    function normalizeSkillName(value = "") {
+      return value.toLowerCase().replace(/[^a-z]/g, "").replace(/range$/, "ranged").replace(/^wc$/, "woodcutting");
+    }
+
+    function detectSkillEntry(entryText) {
+      const cleaned = (entryText || "").replace(/["']/g, "").trim();
+      const match = cleaned.match(/(?:level|lvl)?\s*(\d+)\s+([A-Za-z' \-]+)/i);
+      if (!match) return null;
+      const level = Number(match[1]);
+      const namePart = normalizeSkillName(match[2]);
+      if (!namePart) return null;
+      const skillKey = skillIconMap[namePart] ? namePart : namePart === "range" ? "ranged" : namePart === "wc" ? "woodcutting" : null;
+      if (!skillKey || !skillIconMap[skillKey]) return null;
+      return {
+        level,
+        text: `${level} ${skillIconMap[skillKey].name}`,
+        icon: `${ICON_BASE}/${skillIconMap[skillKey].icon}`
+      };
+    }
+
+    function splitSkillRequirements(entries) {
+      const skills = [];
+      const remainder = [];
+      entries.forEach(entry => {
+        const detected = detectSkillEntry(entry.text || "");
+        if (detected) {
+          skills.push({ ...entry, ...detected });
+        } else {
+          remainder.push(entry);
+        }
+      });
+      return { skills, remainder };
+    }
+
+    function decorateSkillEntries(entries) {
+      return entries.map(entry => {
+        const detected = detectSkillEntry(entry.text || "");
+        return detected ? { ...entry, ...detected } : entry;
+      });
+    }
+
+    function extractChatOptions(node) {
+      const options = [];
+      node.querySelectorAll(".js-tooltip-wrapper[data-tooltip-for^='c_option-'] .js-tooltip-text table tr").forEach(row => {
+        const cells = Array.from(row.querySelectorAll("td")).map(td => cleanChatText(td.textContent)).filter(Boolean);
+        if (!cells.length) return;
+        const marker = cells[0];
+        const line = cells.length > 1 ? cells.slice(1).join(" ").trim() : "";
+        const text = marker && line ? `${marker} ${line}` : line || marker;
+        if (text) options.push({ text });
+      });
+      node.querySelectorAll(".chat-options, .js-tooltip-click.chat-options-dialogue, .js-tooltip-wrapper[data-tooltip-for^='c_option-']").forEach(el => el.remove());
+      return options;
+    }
+
+    const cssEscape = typeof CSS !== "undefined" && CSS.escape ? CSS.escape : value => value.replace(/[^a-zA-Z0-9_-]/g, s => `\\${s}`);
+
+    function normalizeQuestName(name = "") {
+      return name
+        .replace(/_/g, " ")
+        .trim()
+        .split(/\s+/)
+        .map(part => part ? part[0].toUpperCase() + part.slice(1).toLowerCase() : "")
+        .join(" ");
+    }
+  </script>
+</body>
+</html>
