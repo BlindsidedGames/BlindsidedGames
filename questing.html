@@ -531,20 +531,73 @@
     }
 
     async function fetchQuickGuide(questName) {
-      const pageName = `${questName}/Quick_guide`;
-      const url = `https://runescape.wiki/api.php?action=parse&page=${encodeURIComponent(pageName)}&prop=text|sections|displaytitle&format=json&origin=*`;
-      const res = await fetch(url, { headers: { "User-Agent": "Quest Helper Static (RS3 streamer tools)" } });
-      if (!res.ok) {
-        throw new Error(`Wiki returned ${res.status} for ${pageName}`);
+      const normalized = normalizeQuestName(questName);
+      const attempts = normalized ? [normalized] : [];
+      let lastError = null;
+      let missingTitle = false;
+
+      for (const candidate of attempts) {
+        const result = await tryFetchQuickGuide(candidate);
+        if (result.quest) return result.quest;
+        lastError = result.error;
+        missingTitle = missingTitle || result.missing;
       }
-      const data = await res.json();
-      if (!data.parse || !data.parse.text || !data.parse.text["*"]) {
-        throw new Error(`No quick guide found for "${questName}".`);
+
+      // If the page name casing was wrong, fall back to a wiki search to get the canonical title.
+      if (missingTitle) {
+        const resolved = await resolveQuestTitle(normalized);
+        if (resolved && !attempts.includes(resolved)) {
+          const result = await tryFetchQuickGuide(resolved);
+          if (result.quest) return result.quest;
+          lastError = result.error;
+        }
       }
-      const html = data.parse.text["*"];
-      const metaSections = data.parse.sections || [];
-      const displayTitle = stripTags(data.parse.displaytitle || data.parse.title || questName);
-      return parseQuickGuide(html, metaSections, displayTitle, questName);
+
+      throw lastError || new Error(`No quick guide found for "${questName}".`);
+    }
+
+    async function tryFetchQuickGuide(questTitle) {
+      const pageName = `${questTitle}/Quick_guide`;
+      const url = `https://runescape.wiki/api.php?action=parse&page=${encodeURIComponent(pageName)}&prop=text|sections|displaytitle&format=json&origin=*&redirects=1`;
+      try {
+        const res = await fetch(url, { headers: { "User-Agent": "Quest Helper Static (RS3 streamer tools)" } });
+        if (!res.ok) {
+          return { quest: null, error: new Error(`Wiki returned ${res.status} for ${pageName}`), missing: false };
+        }
+        const data = await res.json();
+        if (data.error?.code === "missingtitle") {
+          return { quest: null, error: new Error(`No quick guide found for "${questTitle}".`), missing: true };
+        }
+        if (!data.parse || !data.parse.text || !data.parse.text["*"]) {
+          return { quest: null, error: new Error(`No quick guide found for "${questTitle}".`), missing: false };
+        }
+        const html = data.parse.text["*"];
+        const metaSections = data.parse.sections || [];
+        const displayTitle = stripTags(data.parse.displaytitle || data.parse.title || questTitle);
+        return { quest: parseQuickGuide(html, metaSections, displayTitle, questTitle), error: null, missing: false };
+      } catch (err) {
+        return { quest: null, error: err instanceof Error ? err : new Error(String(err)), missing: false };
+      }
+    }
+
+    async function resolveQuestTitle(rawName) {
+      if (!rawName) return null;
+      try {
+        const searchUrl = `https://runescape.wiki/api.php?action=opensearch&search=${encodeURIComponent(rawName)}&limit=5&format=json&origin=*`;
+        const res = await fetch(searchUrl, { headers: { "User-Agent": "Quest Helper Static (RS3 streamer tools)" } });
+        if (!res.ok) return null;
+        const data = await res.json();
+        const titles = Array.isArray(data) && Array.isArray(data[1]) ? data[1] : [];
+        const pick = titles.find(title => /Quick guide$/i.test(title)) || titles[0];
+        if (!pick) return null;
+        return pick
+          .replace(/\s*\/\s*Quick guide$/i, "")
+          .replace(/\s+Quick guide$/i, "")
+          .trim();
+      } catch (err) {
+        console.warn("Fallback search failed", err);
+        return null;
+      }
     }
 
     function parseQuickGuide(html, metaSections, displayTitle, questName) {
@@ -792,10 +845,8 @@
     function normalizeQuestName(name = "") {
       return name
         .replace(/_/g, " ")
-        .trim()
-        .split(/\s+/)
-        .map(part => part ? part[0].toUpperCase() + part.slice(1).toLowerCase() : "")
-        .join(" ");
+        .replace(/\s+/g, " ")
+        .trim();
     }
   </script>
 </body>
