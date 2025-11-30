@@ -161,7 +161,7 @@
           </div>
 
           <div class="overlay-box" id="box-reqs">
-            <h4>Other Requirements</h4>
+            <h4>Quest Requirements</h4>
             <ul class="list" id="req-list"></ul>
           </div>
 
@@ -461,13 +461,13 @@
       entries.forEach(entry => {
         const li = document.createElement("li");
         li.textContent = entry.text;
-        container.appendChild(li);
         if (entry.children && entry.children.length) {
           const nested = document.createElement("ul");
           nested.className = "list";
           renderEntryList(nested, entry.children, "");
-          container.appendChild(nested);
+          li.appendChild(nested);
         }
+        container.appendChild(li);
       });
     }
 
@@ -484,13 +484,13 @@
       entries.forEach(entry => {
         const li = document.createElement("li");
         li.textContent = entry.text;
-        container.appendChild(li);
         if (entry.children && entry.children.length) {
           const nested = document.createElement("ul");
           nested.className = "list";
           renderList(nested, entry.children, "");
-          container.appendChild(nested);
+          li.appendChild(nested);
         }
+        container.appendChild(li);
       });
     }
 
@@ -667,7 +667,13 @@
             break;
         }
       });
-      return details;
+      return {
+        skillRequirements: dedupeEntries(details.skillRequirements),
+        requirements: dedupeEntries(details.requirements),
+        itemsRequired: dedupeEntries(details.itemsRequired),
+        recommended: dedupeEntries(details.recommended),
+        enemies: dedupeEntries(details.enemies)
+      };
     }
 
     function parseInfoCell(cell) {
@@ -730,7 +736,8 @@
       Array.from(listElement.children).forEach(li => {
         if (li.tagName !== "LI") return;
         const node = li.cloneNode(true);
-        const nested = node.querySelectorAll("ul, ol");
+        // Only consider direct child lists; including all descendants duplicates nested quest chains.
+        const nested = Array.from(node.children).filter(child => child.tagName === "UL" || child.tagName === "OL");
         const nestedChildren = [];
         nested.forEach(childList => {
           nestedChildren.push(...parseList(childList));
@@ -841,6 +848,22 @@
     }
 
     const cssEscape = typeof CSS !== "undefined" && CSS.escape ? CSS.escape : value => value.replace(/[^a-zA-Z0-9_-]/g, s => `\\${s}`);
+
+    function dedupeEntries(entries = []) {
+      const seen = new Set();
+      const result = [];
+      entries.forEach(entry => {
+        const key = (entry.text || "").toLowerCase();
+        if (!key || seen.has(key)) return;
+        seen.add(key);
+        const clone = { ...entry };
+        if (clone.children) {
+          clone.children = dedupeEntries(clone.children);
+        }
+        result.push(clone);
+      });
+      return result;
+    }
 
     function normalizeQuestName(name = "") {
       return name
