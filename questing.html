@@ -446,10 +446,10 @@
       elements.overviewText.classList.toggle("muted", !overview);
 
       renderSkills(elements.skillList, state.quest.skillRequirements || []);
-      renderList(elements.reqList, state.quest.requirements || [], "None noted.");
-      renderList(elements.itemList, state.quest.itemsRequired || [], "None noted.");
-      renderList(elements.recList, state.quest.recommended || [], "None noted.");
-      renderList(elements.enemyList, state.quest.enemies || [], "None noted.");
+      renderList(elements.reqList, state.quest.requirements || [], "None", state.quest.name || "");
+      renderList(elements.itemList, state.quest.itemsRequired || [], "None");
+      renderList(elements.recList, state.quest.recommended || [], "None");
+      renderList(elements.enemyList, state.quest.enemies || [], "None");
     }
     function renderEntryList(container, entries, emptyText) {
       container.innerHTML = "";
@@ -471,9 +471,10 @@
       });
     }
 
-    function renderList(container, entries, emptyText) {
+    function renderList(container, entries, emptyText, questName = "") {
       container.innerHTML = "";
-      const hasEntries = Array.isArray(entries) && entries.length > 0;
+      const normalized = questName ? cleanListEntries(entries, questName) : entries;
+      const hasEntries = Array.isArray(normalized) && normalized.length > 0;
       if (!hasEntries) {
         const li = document.createElement("li");
         li.textContent = emptyText;
@@ -481,7 +482,7 @@
         container.appendChild(li);
         return;
       }
-      entries.forEach(entry => {
+      normalized.forEach(entry => {
         const li = document.createElement("li");
         li.textContent = entry.text;
         if (entry.children && entry.children.length) {
@@ -494,12 +495,37 @@
       });
     }
 
+    // Removes placeholder/empty entries (like "None") and drops a lone quest-name wrapper that has no real children.
+    function cleanListEntries(entries = [], questName = "") {
+      const questLower = questName.toLowerCase();
+      const filtered = [];
+      entries.forEach(entry => {
+        if (!entry || !entry.text) return;
+        const lower = entry.text.toLowerCase();
+        if (lower === "none") return;
+        const children = cleanListEntries(entry.children || [], questName);
+        // If the entry is just the quest name, lift its children up a level instead of showing it.
+        if (questLower && lower === questLower) {
+          if (children.length) filtered.push(...children);
+          return;
+        }
+        const item = { ...entry };
+        if (children.length) {
+          item.children = children;
+        } else {
+          delete item.children;
+        }
+        filtered.push(item);
+      });
+      return filtered;
+    }
+
     function renderSkills(container, entries) {
       container.innerHTML = "";
       const hasEntries = Array.isArray(entries) && entries.length > 0;
       if (!hasEntries) {
         const li = document.createElement("li");
-        li.textContent = "None noted.";
+        li.textContent = "None";
         li.className = "muted";
         container.appendChild(li);
         return;
