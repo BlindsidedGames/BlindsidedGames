@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RS3 Base Map (Wiki Tiles)</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <style>
+    html, body, #map {
+      height: 100%;
+      margin: 0;
+      background: #0b0b0b;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script>
+    // Tile grid: at zoom 2 there are 64 x 64 tiles (256px each) -> 16,384 units; zoom 3 doubles the tiles to 128.
+    // Keep bounds within the valid tile area to avoid blank tiles from negative coordinates.
+    const bounds = [[0, 0], [16384, 16384]]; // [southWest, northEast] (y, x)
+    const center = [3564.74, 12900.5]; // approx tile (25.2, 7.0) at zoom 3
+    const floor = 0; // surface plane
+    const cacheVersion = "2025-09-27_3d_a";
+    const mapId = 28; // RS3 surface
+
+    // CRS where zoom 2 maps 256 game units to one tile index.
+    const GameCRS = L.Util.extend({}, L.CRS.Simple, {
+      transformation: L.transformation(1, 0, 1, 0),
+      scale: (z) => Math.pow(2, z - 2), // zoom 2 => scale 1 (1 unit == 1 px)
+      zoom: (s) => Math.log(s) / Math.LN2 + 2
+    });
+
+    const map = L.map("map", {
+      crs: GameCRS,
+      minZoom: 0,   // limit to valid wiki tiles
+      maxZoom: 3,
+      zoom: 3,      // start at desired level
+      center,
+      maxBounds: bounds,
+      maxBoundsViscosity: 1,
+      attributionControl: false
+    });
+
+    // Ensure we start at the desired tile center.
+    map.setView(center, 3, { animate: false });
+
+    const tiles = L.tileLayer("", {
+      tileSize: 256,
+      maxNativeZoom: 3,
+      noWrap: true,
+      attribution: '<a href="https://runescape.wiki/" target="_blank" rel="noreferrer">RuneScape Wiki</a>'
+    });
+
+    tiles.getTileUrl = ({ x, y, z }) => {
+      const baseTiles = 64; // zoom 2
+      const tilesPerAxis = baseTiles * Math.pow(2, z - 2); // halve per zoom-out, double per zoom-in
+      if (x < 0 || y < 0 || x >= tilesPerAxis || y >= tilesPerAxis) return "";
+      const tileY = tilesPerAxis - 1 - y; // flip vertically
+      return `https://maps.runescape.wiki/rs/versions/${cacheVersion}/map_icon_squares/${mapId}/${z}/${floor}_${x}_${tileY}.png`;
+    };
+
+    tiles.addTo(map);
+
+    // Log view position to help locate landmarks.
+    const logView = () => {
+      const c = map.getCenter();
+      const z = map.getZoom();
+      const tileSize = 256;
+      const scale = Math.pow(2, z - 2); // matches GameCRS.scale
+      const tileX = (c.lng / tileSize) * (1 / scale);
+      const tileY = (c.lat / tileSize) * (1 / scale);
+      console.log(`Center lat,lng: ${c.lat.toFixed(2)}, ${c.lng.toFixed(2)} | zoom: ${z} | approx tile: ${tileX.toFixed(2)}, ${tileY.toFixed(2)}`);
+    };
+
+    map.on("moveend", logView);
+    logView();
+  </script>
+</body>
+</html>
