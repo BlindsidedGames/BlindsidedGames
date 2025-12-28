@@ -1,0 +1,2041 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title></title>
+  <style>
+    :root{
+      --bg0:#07080c;
+      --bg1:#0b0d16;
+      --fg:#e9eefc;
+      --muted:rgba(233,238,252,.35);
+      --muted2:rgba(233,238,252,.18);
+      --accent:#a7b7ff;
+      --accent2:#7df0ff;
+      --danger:#ff6b8b;
+      --good:#6bffb0;
+
+      --panel: rgba(255,255,255,.04);
+      --panel2: rgba(255,255,255,.06);
+      --stroke: rgba(233,238,252,.18);
+
+      --block: rgba(233,238,252,.12);
+      --blockFill: rgba(233,238,252,.92);
+      --blockFill2: rgba(125,240,255,.95);
+
+      --shadow: 0 12px 30px rgba(0,0,0,.45);
+      --radius: 16px;
+
+      --ring: rgba(167,183,255,.22);
+      --ring2: rgba(125,240,255,.22);
+
+      --tile: rgba(255,255,255,.05);
+      --tileHover: rgba(255,255,255,.08);
+      --tileActive: rgba(255,255,255,.11);
+
+      --w: min(1100px, 96vw);
+      --h: min(720px, 94vh);
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:
+        radial-gradient(1200px 800px at 55% 40%, rgba(167,183,255,.08), transparent 58%),
+        radial-gradient(900px 700px at 35% 55%, rgba(125,240,255,.06), transparent 60%),
+        linear-gradient(180deg, var(--bg1), var(--bg0));
+      color:var(--fg);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      overflow:hidden;
+    }
+
+    /* Prevent accidental text selection (there shouldn't be visible text anyway). */
+    body, button { user-select: none; -webkit-tap-highlight-color: transparent; }
+
+    #app{
+      width:var(--w);
+      height:var(--h);
+      margin: 3vh auto;
+      border: 1px solid rgba(233,238,252,.08);
+      border-radius: calc(var(--radius) + 6px);
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
+      box-shadow: var(--shadow);
+      position:relative;
+      overflow:hidden;
+    }
+
+    /* Dream drift background */
+    #drift{
+      position:absolute; inset:-40px;
+      background:
+        radial-gradient(700px 500px at 10% 20%, rgba(255,255,255,.05), transparent 55%),
+        radial-gradient(900px 600px at 90% 75%, rgba(255,255,255,.04), transparent 55%),
+        radial-gradient(600px 400px at 60% 10%, rgba(125,240,255,.07), transparent 55%),
+        radial-gradient(650px 500px at 40% 90%, rgba(167,183,255,.07), transparent 55%);
+      filter: blur(8px);
+      opacity:.8;
+      transform: translate3d(0,0,0);
+      animation: drift 18s ease-in-out infinite alternate;
+      pointer-events:none;
+    }
+    @keyframes drift{
+      from{ transform: translate3d(-12px,-10px,0) scale(1.02) rotate(-.6deg); }
+      to{ transform: translate3d(12px,10px,0) scale(1.04) rotate(.6deg); }
+    }
+
+    /* Shift event visual */
+    body.shift #well{
+      animation: wobble 260ms ease-in-out infinite alternate;
+      transform-origin: 50% 50%;
+    }
+    @keyframes wobble{
+      from{ transform: rotate(-.08deg); }
+      to{ transform: rotate(.08deg); }
+    }
+    body.shift #drift{
+      opacity: 1;
+      filter: blur(11px) saturate(1.15);
+    }
+
+    #ui{
+      position:absolute; inset:0;
+      display:flex;
+      flex-direction:column;
+      gap: 10px;
+      padding: 12px;
+    }
+
+    /* Top bar */
+    #topbar{
+      display:flex;
+      align-items:stretch;
+      gap: 10px;
+      height: 96px;
+    }
+    .res{
+      flex:1;
+      background: var(--panel);
+      border: 1px solid rgba(233,238,252,.08);
+      border-radius: var(--radius);
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      padding: 10px;
+      min-width: 0;
+      position: relative;
+    }
+    .res .ic{
+      width: 42px; height: 42px;
+      display:grid; place-items:center;
+      border-radius: 14px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(233,238,252,.08);
+      flex: 0 0 auto;
+    }
+    .res svg{ width: 26px; height: 26px; fill: none; stroke: rgba(233,238,252,.9); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+    .res[data-k="totem"] svg{ stroke: rgba(125,240,255,.95); }
+    .res[data-k="sedative"] svg{ stroke: rgba(167,183,255,.95); }
+    .res[data-k="blueprint"] svg{ stroke: rgba(233,238,252,.90); }
+    .res[data-k="idea"] svg{ stroke: rgba(233,238,252,.90); }
+
+    .res .bn{
+      flex:1;
+      min-width: 0;
+      display:flex;
+      align-items:center;
+      justify-content:flex-end;
+      padding-right: 4px;
+    }
+
+    /* Main area */
+    #main{
+      flex: 1;
+      display:flex;
+      gap: 10px;
+      min-height: 0;
+    }
+
+    #left{
+      width: 120px;
+      display:flex;
+      flex-direction:column;
+      gap: 10px;
+    }
+
+    #center{
+      flex: 1;
+      min-width: 0;
+      display:flex;
+      flex-direction:column;
+      gap: 10px;
+    }
+
+    #right{
+      width: 300px;
+      display:flex;
+      flex-direction:column;
+      gap: 10px;
+      min-height: 0;
+    }
+
+    /* Controls panel */
+    .panel{
+      background: var(--panel);
+      border: 1px solid rgba(233,238,252,.08);
+      border-radius: var(--radius);
+      box-shadow: none;
+      overflow:hidden;
+    }
+    .panel.pad{ padding: 10px; }
+
+    .ctrl{
+      display:flex;
+      flex-direction:column;
+      gap: 10px;
+      padding: 10px;
+      align-items: stretch;
+    }
+
+    .icon-btn{
+      width: 100%;
+      height: 54px;
+      border-radius: 16px;
+      border: 1px solid rgba(233,238,252,.10);
+      background: rgba(255,255,255,.035);
+      display:grid;
+      place-items:center;
+      cursor:pointer;
+      transition: transform .08s ease, background .12s ease, border-color .12s ease, opacity .12s ease;
+      outline:none;
+    }
+    .icon-btn svg{ width: 26px; height: 26px; fill: none; stroke: rgba(233,238,252,.90); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+    .icon-btn:active{ transform: translateY(1px); background: rgba(255,255,255,.06); }
+    .icon-btn.afford{ border-color: rgba(125,240,255,.35); background: rgba(125,240,255,.05); }
+    .icon-btn.lock{ opacity: .45; cursor: default; }
+    .icon-btn.lock:active{ transform: none; background: rgba(255,255,255,.035); }
+
+    .costrow{
+      min-width: 0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap: 8px;
+      padding: 6px;
+      border-radius: 14px;
+      border: 1px solid rgba(233,238,252,.08);
+      background: rgba(255,255,255,.02);
+    }
+    .costrow .mini{
+      width: 20px; height: 20px;
+      display:grid; place-items:center;
+      border-radius: 10px;
+      border: 1px solid rgba(233,238,252,.10);
+      background: rgba(255,255,255,.03);
+      flex: 0 0 auto;
+    }
+    .costrow svg{ width: 14px; height: 14px; fill:none; stroke: rgba(233,238,252,.80); stroke-width:2.2; }
+    .costrow[data-k="totem"] svg{ stroke: rgba(125,240,255,.95); }
+    .costrow[data-k="sedative"] svg{ stroke: rgba(167,183,255,.95); }
+    .costrow[data-k="blueprint"] svg{ stroke: rgba(233,238,252,.90); }
+    .costrow[data-k="idea"] svg{ stroke: rgba(233,238,252,.90); }
+
+    .costrow .bn{ display:flex; justify-content:flex-end; flex: 1; min-width: 0; }
+
+    /* Dream well */
+    #well{
+      position:relative;
+      flex: 1;
+      min-height: 0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+      border: 1px solid rgba(233,238,252,.08);
+      overflow:hidden;
+    }
+
+    #rings{
+      position:absolute; inset:0;
+      display:grid;
+      place-items:center;
+      pointer-events:none;
+    }
+    .ring{
+      position:absolute;
+      border-radius: 999px;
+      border: 1px solid var(--ring);
+      box-shadow: 0 0 0 1px rgba(0,0,0,.08) inset;
+      opacity: .7;
+      animation: breathe 4.2s ease-in-out infinite alternate;
+    }
+    .ring:nth-child(2n){ border-color: var(--ring2); opacity: .55; }
+    @keyframes breathe{
+      from{ transform: scale(.998); }
+      to{ transform: scale(1.012); }
+    }
+
+    #totemBtn{
+      width: 160px;
+      height: 160px;
+      border-radius: 999px;
+      border: 1px solid rgba(233,238,252,.14);
+      background: radial-gradient(120px 120px at 40% 35%, rgba(255,255,255,.07), rgba(255,255,255,.02));
+      box-shadow: 0 10px 28px rgba(0,0,0,.45);
+      display:grid;
+      place-items:center;
+      cursor:pointer;
+      transition: transform .06s ease, border-color .12s ease, box-shadow .12s ease;
+      outline:none;
+      position:relative;
+    }
+    #totemBtn:active{ transform: scale(.992); }
+    #totemBtn.pulse{
+      animation: pulse 1.2s ease-in-out infinite;
+    }
+    @keyframes pulse{
+      0%, 100% { box-shadow: 0 10px 28px rgba(0,0,0,.45), 0 0 0 0 rgba(125,240,255,.16); }
+      50% { box-shadow: 0 10px 28px rgba(0,0,0,.45), 0 0 0 10px rgba(125,240,255,.04); }
+    }
+
+    #totemBtn svg{
+      width: 80px;
+      height: 80px;
+      fill:none;
+      stroke: rgba(233,238,252,.94);
+      stroke-width: 2.6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* little particles */
+    .spark{
+      position:absolute;
+      width: 6px; height: 6px;
+      border-radius: 2px;
+      background: rgba(125,240,255,.92);
+      box-shadow: 0 0 12px rgba(125,240,255,.35);
+      pointer-events:none;
+      transform: translate3d(0,0,0);
+      animation: spark 680ms ease-out forwards;
+    }
+    @keyframes spark{
+      to{
+        opacity: 0;
+        transform: translate3d(var(--dx), var(--dy), 0) scale(.7);
+      }
+    }
+
+    #meters{
+      position:absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      display:flex;
+      justify-content:space-between;
+      gap: 10px;
+      pointer-events:none;
+    }
+    .meter{
+      flex: 1;
+      background: rgba(0,0,0,.12);
+      border: 1px solid rgba(233,238,252,.08);
+      border-radius: 14px;
+      padding: 8px;
+      display:flex;
+      gap: 8px;
+      align-items:center;
+      justify-content:center;
+      backdrop-filter: blur(2px);
+    }
+    .meter .mini{
+      width: 18px; height: 18px;
+      display:grid; place-items:center;
+      border-radius: 9px;
+      border: 1px solid rgba(233,238,252,.10);
+      background: rgba(255,255,255,.03);
+      flex: 0 0 auto;
+    }
+    .meter svg{ width: 12px; height: 12px; fill:none; stroke: rgba(233,238,252,.78); stroke-width:2.1; }
+    .meter[data-k="rift"] svg{ stroke: rgba(255,107,139,.9); }
+
+    /* Conversion row */
+    #convert{
+      display:flex;
+      gap: 10px;
+      align-items:stretch;
+      height: 74px;
+    }
+    #convert .panel{
+      flex:1;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 10px;
+      padding: 10px;
+      border-radius: var(--radius);
+    }
+    #foldBtn{
+      width: 62px;
+      height: 54px;
+      border-radius: 16px;
+      border: 1px solid rgba(233,238,252,.10);
+      background: rgba(255,255,255,.035);
+      display:grid;
+      place-items:center;
+      cursor:pointer;
+      transition: transform .08s ease, background .12s ease, border-color .12s ease, opacity .12s ease;
+      outline:none;
+      flex: 0 0 auto;
+    }
+    #foldBtn svg{ width: 26px; height: 26px; fill:none; stroke: rgba(233,238,252,.90); stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
+    #foldBtn:active{ transform: translateY(1px); background: rgba(255,255,255,.06); }
+    #foldBtn.afford{ border-color: rgba(125,240,255,.35); background: rgba(125,240,255,.05); }
+    #foldBtn.lock{ opacity:.45; cursor: default; }
+
+    /* Buildings */
+    #buildings{
+      flex: 1;
+      min-height: 0;
+      overflow-y:auto;
+      overflow-x:hidden;
+      padding: 10px;
+      display:flex;
+      flex-direction:column;
+      gap: 10px;
+    }
+    #buildings::-webkit-scrollbar{ width: 8px; }
+    #buildings::-webkit-scrollbar-thumb{ background: rgba(255,255,255,.07); border-radius: 10px; }
+
+    .card{
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(233,238,252,.08);
+      border-radius: var(--radius);
+      padding: 10px;
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      cursor:pointer;
+      transition: background .12s ease, border-color .12s ease, transform .06s ease;
+      position:relative;
+    }
+    .card:active{ transform: translateY(1px); }
+    .card.lock{ opacity:.45; cursor: default; }
+    .card.lock:active{ transform:none; }
+    .card.afford{ border-color: rgba(125,240,255,.26); background: rgba(125,240,255,.035); }
+    .card.pulse{ animation: pulse 1.4s ease-in-out infinite; }
+
+    .card .ic{
+      width: 44px; height: 44px;
+      display:grid; place-items:center;
+      border-radius: 16px;
+      background: rgba(255,255,255,.035);
+      border: 1px solid rgba(233,238,252,.08);
+      flex: 0 0 auto;
+    }
+    .card svg{ width: 26px; height: 26px; fill:none; stroke: rgba(233,238,252,.92); stroke-width:2.4; stroke-linecap: round; stroke-linejoin: round; }
+    .card .mid{
+      flex:1;
+      min-width:0;
+      display:flex;
+      flex-direction:column;
+      gap: 8px;
+    }
+    .pair{
+      display:flex;
+      gap: 8px;
+      align-items:center;
+      justify-content:space-between;
+    }
+    .pair .costrow{
+      flex: 1 1 0;
+      min-width: 0;
+      padding: 5px;
+      gap: 6px;
+      justify-content:flex-start;
+    }
+
+    /* Upgrades */
+    #bottom{
+      height: 170px;
+      display:flex;
+      gap: 10px;
+      min-height: 0;
+    }
+
+    #tabs{
+      width: 120px;
+      display:flex;
+      flex-direction:column;
+      gap: 10px;
+    }
+    .tab{
+      height: 54px;
+      border-radius: 16px;
+      border: 1px solid rgba(233,238,252,.10);
+      background: rgba(255,255,255,.03);
+      display:grid;
+      place-items:center;
+      cursor:pointer;
+      transition: background .12s ease, border-color .12s ease, transform .06s ease, opacity .12s ease;
+      outline:none;
+    }
+    .tab svg{ width: 26px; height: 26px; fill:none; stroke: rgba(233,238,252,.88); stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
+    .tab.active{ border-color: rgba(125,240,255,.30); background: rgba(125,240,255,.04); }
+    .tab:active{ transform: translateY(1px); }
+
+    #upgradeGrid{
+      flex: 1;
+      display:grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 10px;
+      padding: 10px;
+      overflow-y:auto;
+      overflow-x:hidden;
+    }
+    #upgradeGrid::-webkit-scrollbar{ height: 8px; width: 8px; }
+    #upgradeGrid::-webkit-scrollbar-thumb{ background: rgba(255,255,255,.07); border-radius: 10px; }
+
+    .upg{
+      border-radius: 18px;
+      border: 1px solid rgba(233,238,252,.10);
+      background: rgba(255,255,255,.03);
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      gap: 8px;
+      padding: 10px;
+      cursor:pointer;
+      transition: background .12s ease, border-color .12s ease, transform .06s ease, opacity .12s ease;
+      min-height: 88px;
+      position:relative;
+      overflow:hidden;
+    }
+    .upg:active{ transform: translateY(1px); }
+    .upg.lock{ opacity:.45; cursor: default; }
+    .upg.lock:active{ transform:none; }
+    .upg.owned{ border-color: rgba(107,255,176,.25); background: rgba(107,255,176,.045); }
+    .upg.afford{ border-color: rgba(125,240,255,.26); background: rgba(125,240,255,.035); }
+
+    .upg .ic{
+      width: 38px; height: 38px;
+      border-radius: 14px;
+      border: 1px solid rgba(233,238,252,.08);
+      background: rgba(255,255,255,.03);
+      display:grid; place-items:center;
+    }
+    .upg svg{ width: 24px; height: 24px; fill:none; stroke: rgba(233,238,252,.92); stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
+    .upg.owned svg{ stroke: rgba(107,255,176,.95); }
+
+    .upg .costrow{
+      width: 100%;
+      padding: 6px;
+    }
+
+    /* Block numbers */
+    .block-number{
+      display:flex;
+      flex-direction:column-reverse; /* units row at the bottom */
+      gap: 4px;
+      align-items:flex-end;
+      min-width: 0;
+      max-height: 76px;
+      overflow:hidden;
+    }
+    .digit-row{
+      display:flex;
+      gap: 3px;
+      align-items:center;
+      justify-content:flex-end;
+    }
+    .block{
+      width: 9px;
+      height: 9px;
+      border-radius: 3px;
+      background: var(--block);
+      border: 1px solid rgba(0,0,0,.22);
+      box-shadow: 0 1px 0 rgba(255,255,255,.05) inset;
+    }
+    .block.fill{
+      background: var(--blockFill);
+      box-shadow: 0 0 12px rgba(233,238,252,.12);
+    }
+    .block.fill.alt{
+      background: var(--blockFill2);
+      box-shadow: 0 0 16px rgba(125,240,255,.14);
+    }
+    /* Smaller block number (for costs/owned) */
+    .block-number.sm .block{ width: 5px; height: 5px; border-radius: 2px; }
+    .block-number.sm{ gap: 2px; max-height: 50px; }
+    .block-number.sm .digit-row{ gap: 1px; }
+
+    /* Inspect overlay (no text) */
+    #inspect{
+      position:absolute;
+      inset:0;
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding: 18px;
+      background: rgba(0,0,0,.28);
+      backdrop-filter: blur(6px);
+      z-index: 50;
+    }
+    #inspect.open{ display:flex; }
+    #inspectPanel{
+      width: min(760px, 94%);
+      max-height: 86%;
+      display:flex;
+      flex-direction:column;
+      gap: 10px;
+      padding: 12px;
+      border-radius: calc(var(--radius) + 6px);
+      background: rgba(255,255,255,.045);
+      border: 1px solid rgba(233,238,252,.12);
+      box-shadow: 0 16px 44px rgba(0,0,0,.58);
+      overflow:hidden;
+    }
+    #inspectHead{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 10px;
+    }
+    #inspectHead .ic{
+      width: 44px;
+      height: 44px;
+      display:grid;
+      place-items:center;
+      border-radius: 16px;
+      background: rgba(255,255,255,.035);
+      border: 1px solid rgba(233,238,252,.10);
+      flex: 0 0 auto;
+    }
+    #inspectHead svg{ width: 26px; height: 26px; fill:none; stroke: rgba(233,238,252,.92); stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
+    #inspectClose{
+      width: 54px;
+      height: 44px;
+      border-radius: 16px;
+    }
+    #inspectBody{
+      flex: 1;
+      min-height: 0;
+      border: 1px solid rgba(233,238,252,.10);
+      border-radius: var(--radius);
+      background: rgba(0,0,0,.12);
+      overflow:hidden;
+      display:flex;
+    }
+    #inspectScroll{
+      flex:1;
+      min-height:0;
+      overflow-y:auto;
+      overflow-x:hidden;
+      padding: 12px;
+      display:flex;
+      justify-content:flex-end;
+    }
+    #inspectScroll::-webkit-scrollbar{ width: 8px; }
+    #inspectScroll::-webkit-scrollbar-thumb{ background: rgba(255,255,255,.07); border-radius: 10px; }
+    #bn-inspect{ max-height: none; }
+    #bn-inspect .block{ width: 7px; height: 7px; border-radius: 2px; }
+    #bn-inspect .digit-row{ gap: 2px; }
+
+
+/* Auto fold toggle (no text) */
+#autoFoldBtn{
+  width: 62px;
+  height: 54px;
+  border-radius: 16px;
+  border: 1px solid rgba(233,238,252,.10);
+  background: rgba(255,255,255,.035);
+  display:none;
+  place-items:center;
+  cursor:pointer;
+  transition: transform .08s ease, background .12s ease, border-color .12s ease, opacity .12s ease;
+  outline:none;
+  flex: 0 0 auto;
+}
+#autoFoldBtn.show{ display:grid; }
+#autoFoldBtn svg{ width: 26px; height: 26px; fill:none; stroke: rgba(233,238,252,.90); stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
+#autoFoldBtn:active{ transform: translateY(1px); background: rgba(255,255,255,.06); }
+#autoFoldBtn.lock{ opacity:.45; cursor: default; }
+#autoFoldBtn.lock:active{ transform:none; background: rgba(255,255,255,.035); }
+#autoFoldBtn.on{ border-color: rgba(125,240,255,.35); background: rgba(125,240,255,.05); }
+#autoFoldBtn.on svg{ stroke: rgba(125,240,255,.95); }
+
+/* Destructive button tint */
+.icon-btn.danger{ border-color: rgba(255,107,139,.28); background: rgba(255,107,139,.045); }
+.icon-btn.danger svg{ stroke: rgba(255,107,139,.92); }
+
+/* Reset overlay (no text) */
+#reset{
+  position:absolute;
+  inset:0;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding: 18px;
+  background: rgba(0,0,0,.32);
+  backdrop-filter: blur(6px);
+  z-index: 70;
+}
+#reset.open{ display:flex; }
+#resetPanel{
+  width: min(520px, 92%);
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+  padding: 12px;
+  border-radius: calc(var(--radius) + 6px);
+  background: rgba(255,255,255,.045);
+  border: 1px solid rgba(233,238,252,.12);
+  box-shadow: 0 16px 44px rgba(0,0,0,.58);
+  overflow:hidden;
+}
+#resetHead{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap: 10px;
+}
+#resetClose{
+  width: 54px;
+  height: 44px;
+  border-radius: 16px;
+}
+#resetBody{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 6px 0 10px;
+}
+#resetHold{
+  width: 150px;
+  height: 150px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,107,139,.22);
+  background:
+    radial-gradient(120px 120px at 40% 35%, rgba(255,107,139,.12), rgba(255,255,255,.02));
+  box-shadow: 0 10px 28px rgba(0,0,0,.45);
+  display:grid;
+  place-items:center;
+  cursor:pointer;
+  position:relative;
+  outline:none;
+}
+#resetHold svg{
+  width: 66px;
+  height: 66px;
+  fill:none;
+  stroke: rgba(255,107,139,.92);
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+#resetHold::after{
+  content:"";
+  position:absolute;
+  inset:-6px;
+  border-radius: 999px;
+  background: conic-gradient(rgba(255,107,139,.75) calc(var(--p,0)*1turn), rgba(255,107,139,0) 0);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 10px), #000 calc(100% - 9px));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 10px), #000 calc(100% - 9px));
+  opacity: .95;
+  pointer-events:none;
+  transition: opacity .12s ease;
+}
+#resetHold.holding{ border-color: rgba(255,107,139,.35); }
+
+    /* Responsive */
+    @media (max-width: 980px){
+      :root{ --w: 96vw; --h: 94vh; }
+      #right{ width: 260px; }
+      #upgradeGrid{ grid-template-columns: repeat(5, minmax(0, 1fr)); }
+      .pair{ flex-wrap: wrap; }
+      .pair .costrow{ flex: 1 1 100%; }
+    }
+    @media (max-width: 820px){
+      #topbar{ height: 88px; }
+      .res .ic{ width: 38px; height: 38px; }
+      .block{ width: 8px; height: 8px; }
+      #right{ width: 240px; }
+      #upgradeGrid{ grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    }
+    @media (max-width: 720px){
+      #app{ margin: 0 auto; border-radius: 0; height: 100vh; width: 100vw; }
+      body{ overflow:auto; }
+
+      #topbar{ flex-wrap: wrap; height: auto; }
+      .res{ flex: 1 1 calc(50% - 10px); height: 78px; }
+
+      #main{ flex-direction: column; }
+      #left{ width: auto; flex-direction:row; }
+      #right{ width:auto; height: 220px; }
+
+      #convert{ height: auto; }
+      #convert .panel{ flex-wrap: wrap; }
+      #convert .costrow{ flex: 1 1 100% !important; }
+      #foldBtn{ width: 100%; }
+      #autoFoldBtn{ width: 100%; }
+
+      #bottom{ height: 210px; }
+      #tabs{ width:auto; flex-direction:row; }
+      #upgradeGrid{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div id="drift"></div>
+
+    <div id="ui">
+      <div id="topbar">
+        <div class="res" data-k="idea">
+          <div class="ic"><svg><use href="#i-idea"/></svg></div>
+          <div class="bn"><div class="block-number" id="bn-idea"></div></div>
+        </div>
+        <div class="res" data-k="blueprint">
+          <div class="ic"><svg><use href="#i-blueprint"/></svg></div>
+          <div class="bn"><div class="block-number" id="bn-blueprint"></div></div>
+        </div>
+        <div class="res" data-k="sedative">
+          <div class="ic"><svg><use href="#i-sedative"/></svg></div>
+          <div class="bn"><div class="block-number" id="bn-sedative"></div></div>
+        </div>
+        <div class="res" data-k="totem">
+          <div class="ic"><svg><use href="#i-totem"/></svg></div>
+          <div class="bn"><div class="block-number" id="bn-totem"></div></div>
+        </div>
+      </div>
+
+      <div id="main">
+        <div id="left">
+          <div class="panel">
+            <div class="ctrl">
+              <button class="icon-btn lock" id="btn-descend"><svg><use href="#i-down"/></svg></button>
+              <div class="costrow" data-k="sedative">
+                <div class="mini"><svg><use href="#i-sedative"/></svg></div>
+                <div class="bn"><div class="block-number sm" id="bn-descend-cost"></div></div>
+              </div>
+
+              <button class="icon-btn lock" id="btn-inception"><svg><use href="#i-inception"/></svg></button>
+              <div class="costrow" data-k="totem">
+                <div class="mini"><svg><use href="#i-totem"/></svg></div>
+                <div class="bn"><div class="block-number sm" id="bn-inception-gain"></div></div>
+              </div>
+
+              <button class="icon-btn lock" id="btn-kick"><svg><use href="#i-up"/></svg></button>
+
+              <button class="icon-btn danger" id="btn-reset"><svg><use href="#i-reset"/></svg></button>
+            </div>
+          </div>
+        </div>
+
+        <div id="center">
+          <div id="well" class="panel">
+            <div id="rings"></div>
+            <button id="totemBtn" class="pulse"><svg><use href="#i-totem-big"/></svg></button>
+
+            <div id="meters">
+              <div class="meter" data-k="rift">
+                <div class="mini"><svg><use href="#i-rift"/></svg></div>
+                <div class="bn"><div class="block-number sm" id="bn-rift"></div></div>
+              </div>
+              <div class="meter" data-k="depth">
+                <div class="mini"><svg><use href="#i-layer"/></svg></div>
+                <div class="bn"><div class="block-number sm" id="bn-depth"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="convert">
+            <div class="panel">
+              <button id="foldBtn" class="lock"><svg><use href="#i-fold"/></svg></button>
+              <button id="autoFoldBtn" class="lock"><svg><use href="#i-auto"/></svg></button>
+              <div class="costrow" data-k="idea" style="flex:1">
+                <div class="mini"><svg><use href="#i-idea"/></svg></div>
+                <div class="bn"><div class="block-number sm" id="bn-fold-cost"></div></div>
+              </div>
+              <div class="costrow" data-k="blueprint" style="flex:1">
+                <div class="mini"><svg><use href="#i-blueprint"/></svg></div>
+                <div class="bn"><div class="block-number sm" id="bn-fold-gain"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="right">
+          <div class="panel" style="display:flex;flex-direction:column;min-height:0">
+            <div id="buildings"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="bottom">
+        <div id="tabs">
+          <button class="tab active" id="tab-run"><svg><use href="#i-gear"/></svg></button>
+          <button class="tab" id="tab-meta"><svg><use href="#i-totem"/></svg></button>
+        </div>
+
+        <div class="panel" style="flex:1;display:flex;min-height:0">
+          <div id="upgradeGrid"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="inspect" aria-hidden="true">
+      <div id="inspectPanel">
+        <div id="inspectHead">
+          <div class="ic" id="inspectIcon"><svg><use href="#i-idea"/></svg></div>
+          <button class="icon-btn" id="inspectClose"><svg><use href="#i-close"/></svg></button>
+        </div>
+        <div id="inspectBody">
+          <div id="inspectScroll">
+            <div class="block-number" id="bn-inspect"></div>
+          </div>
+        </div>
+      </div>
+
+</div>
+
+<div id="reset" aria-hidden="true">
+  <div id="resetPanel">
+    <div id="resetHead">
+      <button class="icon-btn" id="resetClose"><svg><use href="#i-close"/></svg></button>
+    </div>
+    <div id="resetBody">
+      <button id="resetHold"><svg><use href="#i-reset"/></svg></button>
+    </div>
+  </div>
+</div>
+
+<!-- Symbols (icons) -->
+    <svg width="0" height="0" style="position:absolute;left:-9999px;top:-9999px" aria-hidden="true" focusable="false">
+      <!-- Idea: lightbulb -->
+      <symbol id="i-idea" viewBox="0 0 24 24">
+        <path d="M9 18h6" />
+        <path d="M10 21h4" />
+        <path d="M8 14c-1.7-1.2-3-3-3-5.3C5 5.6 8 3 12 3s7 2.6 7 5.7c0 2.3-1.3 4.1-3 5.3-.8.6-1 1.4-1 2.3H9c0-.9-.2-1.7-1-2.3z" />
+      </symbol>
+
+      <!-- Blueprint: cube/maze -->
+      <symbol id="i-blueprint" viewBox="0 0 24 24">
+        <path d="M4 7l8-4 8 4-8 4-8-4z" />
+        <path d="M4 7v10l8 4 8-4V7" />
+        <path d="M12 11v10" />
+      </symbol>
+
+      <!-- Sedative: vial -->
+      <symbol id="i-sedative" viewBox="0 0 24 24">
+        <path d="M10 2h4" />
+        <path d="M9 2v6l-3 5a5 5 0 0 0 4.3 7.5h3.4A5 5 0 0 0 18 13l-3-5V2" />
+        <path d="M8.5 12h7" />
+      </symbol>
+
+      <!-- Totem: spinning top -->
+      <symbol id="i-totem" viewBox="0 0 24 24">
+        <path d="M12 2l2 4-2 2-2-2 2-4z" />
+        <path d="M8 10l4-2 4 2-4 3-4-3z" />
+        <path d="M7 12l5 3 5-3-3 7H10l-3-7z" />
+        <path d="M12 19v3" />
+      </symbol>
+
+      <!-- Big totem for center -->
+      <symbol id="i-totem-big" viewBox="0 0 96 96">
+        <path d="M48 8l7 16-7 7-7-7 7-16z" />
+        <path d="M30 40l18-9 18 9-18 12-18-12z" />
+        <path d="M26 48l22 14 22-14-12 36H38L26 48z" />
+        <path d="M48 84v8" />
+      </symbol>
+
+      <!-- Layer icon -->
+      <symbol id="i-layer" viewBox="0 0 24 24">
+        <path d="M12 3l9 5-9 5-9-5 9-5z" />
+        <path d="M3 12l9 5 9-5" />
+        <path d="M3 16l9 5 9-5" />
+      </symbol>
+
+      <!-- Rift icon -->
+      <symbol id="i-rift" viewBox="0 0 24 24">
+        <path d="M12 2v4" />
+        <path d="M12 18v4" />
+        <path d="M4 12h4" />
+        <path d="M16 12h4" />
+        <path d="M8 4l8 16" />
+        <path d="M9 12l3 2 3-2" />
+      </symbol>
+
+      <!-- Down -->
+      <symbol id="i-down" viewBox="0 0 24 24">
+        <path d="M12 4v14" />
+        <path d="M7 14l5 5 5-5" />
+      </symbol>
+
+      <!-- Up -->
+      <symbol id="i-up" viewBox="0 0 24 24">
+        <path d="M12 20V6" />
+        <path d="M7 10l5-5 5 5" />
+      </symbol>
+
+      <!-- Inception icon (seeded lightbulb) -->
+      <symbol id="i-inception" viewBox="0 0 24 24">
+        <path d="M9 18h6" />
+        <path d="M10 21h4" />
+        <path d="M8 14c-1.7-1.2-3-3-3-5.3C5 5.6 8 3 12 3s7 2.6 7 5.7c0 2.3-1.3 4.1-3 5.3-.8.6-1 1.4-1 2.3H9c0-.9-.2-1.7-1-2.3z" />
+        <path d="M12 8v6" />
+        <path d="M10.5 10.5L12 12l1.5-1.5" />
+      </symbol>
+
+      <!-- Fold / convert -->
+      <symbol id="i-fold" viewBox="0 0 24 24">
+        <path d="M4 7l8-4 8 4-8 4-8-4z" />
+        <path d="M4 7v10l8 4 8-4V7" />
+        <path d="M12 11v10" />
+        <path d="M6 9l6 3 6-3" />
+      </symbol>
+
+      <!-- Gear -->
+      <symbol id="i-gear" viewBox="0 0 24 24">
+        <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+        <path d="M19.4 15a8.5 8.5 0 0 0 .1-6l2-1.1-2-3.5-2.2 1a8.7 8.7 0 0 0-5.2-3l-.3-2.4h-4l-.3 2.4a8.7 8.7 0 0 0-5.2 3l-2.2-1-2 3.5 2 1.1a8.5 8.5 0 0 0 .1 6l-2 1.1 2 3.5 2.2-1a8.7 8.7 0 0 0 5.2 3l.3 2.4h4l.3-2.4a8.7 8.7 0 0 0 5.2-3l2.2 1 2-3.5-2-1.1z" />
+      </symbol>
+
+      <!-- Close -->
+      <symbol id="i-close" viewBox="0 0 24 24">
+        <path d="M6 6l12 12" />
+        <path d="M18 6L6 18" />
+      </symbol>
+
+      
+<!-- Reset / trash -->
+<symbol id="i-reset" viewBox="0 0 24 24">
+  <path d="M4 7h16" />
+  <path d="M9 7V5h6v2" />
+  <path d="M6 7l1 14h10l1-14" />
+  <path d="M10 11v6" />
+  <path d="M14 11v6" />
+</symbol>
+
+<!-- Buildings icons -->
+      <symbol id="i-extractor" viewBox="0 0 24 24">
+        <path d="M4 10h16v10H4V10z" />
+        <path d="M7 10V7a5 5 0 0 1 10 0v3" />
+        <path d="M9 15h6" />
+      </symbol>
+
+      <symbol id="i-architect" viewBox="0 0 24 24">
+        <path d="M4 20V4h16v16H4z" />
+        <path d="M8 4v16" />
+        <path d="M16 4v16" />
+        <path d="M4 8h16" />
+        <path d="M4 16h16" />
+      </symbol>
+
+      <symbol id="i-chemist" viewBox="0 0 24 24">
+        <path d="M10 2h4" />
+        <path d="M9 2v6l-3 5a5 5 0 0 0 4.3 7.5h3.4A5 5 0 0 0 18 13l-3-5V2" />
+        <path d="M9 12h6" />
+        <path d="M12 10v4" />
+      </symbol>
+
+      <symbol id="i-stabilizer" viewBox="0 0 24 24">
+        <path d="M12 2l2 4-2 2-2-2 2-4z" />
+        <path d="M8 10l4-2 4 2-4 3-4-3z" />
+        <path d="M7 12l5 3 5-3-3 7H10l-3-7z" />
+      </symbol>
+
+      <!-- Upgrade icons -->
+      <symbol id="i-hand" viewBox="0 0 24 24">
+        <path d="M7 12V6a1 1 0 0 1 2 0v6" />
+        <path d="M9 11V5a1 1 0 0 1 2 0v6" />
+        <path d="M11 12V6a1 1 0 0 1 2 0v6" />
+        <path d="M13 13V7a1 1 0 0 1 2 0v7" />
+        <path d="M7 12c0 7 3 10 7 10 3 0 5-2 5-5v-3c0-2-1-3-3-3h-1" />
+      </symbol>
+
+      <symbol id="i-mult" viewBox="0 0 24 24">
+        <path d="M12 3c4.5 0 8 3.5 8 8s-3.5 8-8 8-8-3.5-8-8 3.5-8 8-8z" />
+        <path d="M12 7c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4z" />
+      </symbol>
+
+      <symbol id="i-auto" viewBox="0 0 24 24">
+        <path d="M4 12a8 8 0 1 0 8-8" />
+        <path d="M12 2v4" />
+        <path d="M12 12l4 2" />
+      </symbol>
+
+      <symbol id="i-shield" viewBox="0 0 24 24">
+        <path d="M12 2l8 4v6c0 6-4 10-8 10S4 18 4 12V6l8-4z" />
+        <path d="M8 12l3 3 5-6" />
+      </symbol>
+
+      <symbol id="i-echo" viewBox="0 0 24 24">
+        <path d="M12 6a6 6 0 1 0 6 6" />
+        <path d="M18 12c0-3.3-2.7-6-6-6" />
+        <path d="M12 6v6l4 2" />
+      </symbol>
+
+      <symbol id="i-keep" viewBox="0 0 24 24">
+        <path d="M5 4h14v16H5V4z" />
+        <path d="M8 7h8" />
+        <path d="M8 11h8" />
+        <path d="M8 15h6" />
+      </symbol>
+    </svg>
+  </div>
+
+  <script>
+    (() => {
+      const $ = (sel) => document.querySelector(sel);
+      const el = {
+        bnIdea: $("#bn-idea"),
+        bnBlueprint: $("#bn-blueprint"),
+        bnSedative: $("#bn-sedative"),
+        bnTotem: $("#bn-totem"),
+        bnRift: $("#bn-rift"),
+        bnDepth: $("#bn-depth"),
+        bnDescendCost: $("#bn-descend-cost"),
+        bnInceptionGain: $("#bn-inception-gain"),
+        bnFoldCost: $("#bn-fold-cost"),
+        bnFoldGain: $("#bn-fold-gain"),
+        totemBtn: $("#totemBtn"),
+        rings: $("#rings"),
+        buildings: $("#buildings"),
+        upgradeGrid: $("#upgradeGrid"),
+        tabRun: $("#tab-run"),
+        tabMeta: $("#tab-meta"),
+        btnDescend: $("#btn-descend"),
+        btnKick: $("#btn-kick"),
+        btnInception: $("#btn-inception"),
+        foldBtn: $("#foldBtn"),
+        autoFoldBtn: $("#autoFoldBtn"),
+        btnReset: $("#btn-reset"),
+        reset: $("#reset"),
+        resetClose: $("#resetClose"),
+        resetHold: $("#resetHold"),
+
+        inspect: $("#inspect"),
+        inspectClose: $("#inspectClose"),
+        inspectIconUse: $("#inspectIcon use"),
+        inspectScroll: $("#inspectScroll"),
+        bnInspect: $("#bn-inspect"),
+      };
+
+      const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
+      const nowMs = () => performance.now();
+
+      function pow2n(n){ return 1n << BigInt(n); }
+
+      function bigIntSqrt(n){
+        if(n < 0n) return 0n;
+        if(n < 2n) return n;
+        let x0 = n;
+        let x1 = (x0 + 1n) >> 1n;
+        while(x1 < x0){
+          x0 = x1;
+          x1 = (x1 + n / x1) >> 1n;
+        }
+        return x0;
+      }
+
+      function renderBlockNumber(container, value, opts = {}){
+        const maxRows = opts.maxRows ?? 8;
+        const alt = !!opts.alt;
+        const v = (typeof value === "bigint") ? (value < 0n ? 0n : value) : BigInt(Math.max(0, Math.floor(value)));
+        // digits
+        let x = v;
+        const digits = [];
+        if(x === 0n) digits.push(0);
+        while(x > 0n){
+          digits.push(Number(x % 10n));
+          x /= 10n;
+        }
+        // cap rows (show least significant digits) but keep at least 1
+        while(digits.length > maxRows) digits.pop();
+
+        // render
+        container.textContent = ""; // ensures no stray text nodes remain inside
+        for(let i=0; i<digits.length; i++){
+          const d = digits[i];
+          const row = document.createElement("div");
+          row.className = "digit-row";
+          for(let j=0; j<10; j++){
+            const b = document.createElement("div");
+            b.className = "block" + (j < d ? (" fill" + (alt ? " alt" : "")) : "");
+            row.appendChild(b);
+          }
+          container.appendChild(row);
+        }
+      }
+
+      function renderMeter10(container, fillCount, opts={}){
+        const maxRows = 1;
+        const alt = !!opts.alt;
+        const d = clamp(Math.floor(fillCount), 0, 10);
+        container.textContent = "";
+        const row = document.createElement("div");
+        row.className = "digit-row";
+        for(let j=0; j<10; j++){
+          const b = document.createElement("div");
+          b.className = "block" + (j < d ? (" fill" + (alt ? " alt" : "")) : "");
+          row.appendChild(b);
+        }
+        container.appendChild(row);
+      }
+
+      const SAVE_KEY = "inception_inc_no_text_v1";
+
+      const state = {
+        // resources
+        idea: 0n,
+        blueprint: 0n,
+        sedative: 0n,
+        totem: 0n,
+
+        // lifetime
+        lifeIdea: 0n,
+        markIdea: 0n,    // lifeIdea at last inception (used to prevent infinite payouts)
+        lifeDepth: 0,     // max depth ever reached
+        runMaxDepth: 0,   // max depth this run
+
+        // dream
+        depth: 0,
+        rift: 0,          // 0..1000 (permille) for exact block meter
+        shiftMs: 0,       // active shift time remaining in ms
+
+        // production remainders (units*ms, modulo 1000)
+        rem: { idea: 0n, blueprint: 0n, sedative: 0n },
+
+        // buildings (owned)
+        b: { extractor: 0, architect: 0, chemist: 0, stabilizer: 0 },
+
+        // upgrades flags
+        u: {},     // run upgrades
+        m: {},     // meta upgrades
+
+        // computed stats
+        clickPower: 1n,
+        multIdea: 1n,
+        multBlueprint: 1n,
+        multSedative: 1n,
+
+        autoFoldUnlocked: false,
+        autoFoldPref: false,
+        autoFoldEver: false,
+        autoFoldAcc: 0,
+
+        autoFold: false,
+        keepBlueprintFrac: 0, // permille kept on inception, from meta
+      };
+
+      const Buildings = [
+        { id: "extractor", icon: "i-extractor", costK: "idea", base: 12n, unlock: () => true },
+        { id: "architect", icon: "i-architect", costK: "idea", base: 80n, unlock: () => state.depth >= 1 || state.blueprint > 0n || state.u["u-fold"] },
+        { id: "chemist", icon: "i-chemist", costK: "blueprint", base: 8n, unlock: () => state.blueprint > 0n || state.depth >= 1 || state.sedative > 0n || state.b.chemist > 0 },
+        { id: "stabilizer", icon: "i-stabilizer", costK: "sedative", base: 20n, unlock: () => state.depth >= 3 || state.b.stabilizer > 0 },
+      ];
+
+      const RunUpgrades = [
+        { id: "u-click",   icon: "i-hand",      costK: "blueprint", cost: 6n,  unlock: () => state.blueprint >= 1n || state.b.architect > 0 },
+        { id: "u-extract", icon: "i-extractor", costK: "blueprint", cost: 10n, unlock: () => state.b.extractor >= 2 },
+        { id: "u-fold",    icon: "i-blueprint", costK: "blueprint", cost: 12n, unlock: () => state.blueprint >= 3n },
+        { id: "u-auto",    icon: "i-auto",      costK: "blueprint", cost: 18n, unlock: () => state.depth >= 1 },
+        { id: "u-arch",    icon: "i-architect", costK: "blueprint", cost: 26n, unlock: () => state.b.architect >= 2 },
+        { id: "u-chem",    icon: "i-chemist",   costK: "blueprint", cost: 40n, unlock: () => state.b.chemist >= 1 || state.depth >= 2 },
+        { id: "u-dream",   icon: "i-mult",      costK: "blueprint", cost: 60n, unlock: () => state.depth >= 2 },
+        { id: "u-shield",  icon: "i-shield",    costK: "blueprint", cost: 90n, unlock: () => state.depth >= 3 },
+      ];
+
+      const MetaUpgrades = [
+        { id: "m-echo",   icon: "i-echo",   costK: "totem", cost: 1n, unlock: () => state.totem >= 1n || state.lifeDepth >= 3 },
+        { id: "m-click",  icon: "i-hand",   costK: "totem", cost: 2n, unlock: () => state.totem >= 1n || state.lifeDepth >= 4 },
+        { id: "m-keep",   icon: "i-keep",   costK: "totem", cost: 3n, unlock: () => state.lifeDepth >= 4 },
+        { id: "m-mult",   icon: "i-mult",   costK: "totem", cost: 5n, unlock: () => state.lifeDepth >= 5 },
+        { id: "m-auto",   icon: "i-auto",   costK: "totem", cost: 8n, unlock: () => state.lifeDepth >= 6 },
+        { id: "m-shield", icon: "i-shield", costK: "totem", cost: 13n, unlock: () => state.lifeDepth >= 7 },
+      ];
+
+      function buildingCost(def){
+        const owned = state.b[def.id] | 0;
+        const n = BigInt(owned + 1);
+        // base * (n^2)
+        return def.base * n * n;
+      }
+
+      function foldCost(){
+        // Base fold cost increases gently with depth (compressed growth), can be reduced by u-fold
+        const step = Math.floor(state.depth / 10);
+        let base = 20n * pow2n(step);
+        if(state.u["u-fold"]) base = base / 2n;
+        return (base < 1n) ? 1n : base;
+      }
+
+      function foldGain(){
+        // Always 1 blueprint per fold, represented as a single filled block row.
+        return 1n;
+      }
+
+      function dreamMult(){
+        // Compressed depth multiplier: doubles every 10 layers (keeps late-game readable)
+        const step = Math.floor(state.depth / 10);
+        let m = pow2n(step);
+        if(state.m["m-mult"]) m *= 2n;
+        if(state.u["u-dream"]) m *= 2n;
+        if(state.shiftMs > 0) m = m / 2n; // shift halves reality cohesion
+        return (m < 1n) ? 1n : m;
+      }
+
+      function applyUpgrades(){
+  // base
+  state.clickPower = 1n;
+  state.multIdea = 1n;
+  state.multBlueprint = 1n;
+  state.multSedative = 1n;
+  state.keepBlueprintFrac = 0;
+
+  // auto fold gating
+  state.autoFoldUnlocked = false;
+
+  // run upgrades
+  if(state.u["u-click"]) state.clickPower *= 2n;
+  if(state.u["u-extract"]) state.multIdea *= 2n;
+  if(state.u["u-arch"]) state.multBlueprint *= 2n;
+  if(state.u["u-chem"]) state.multSedative *= 2n;
+  if(state.u["u-auto"]) state.autoFoldUnlocked = true;
+  if(state.u["u-shield"]) ; // handled in rift dynamics
+  if(state.u["u-dream"]) ;  // handled in dreamMult()
+
+  // meta upgrades
+  if(state.m["m-click"]) state.clickPower *= 2n;
+  if(state.m["m-echo"]) state.multIdea *= 2n;
+  if(state.m["m-auto"]) state.autoFoldUnlocked = true;
+  if(state.m["m-keep"]) state.keepBlueprintFrac = 300; // keep 30% blueprints
+  if(state.m["m-mult"]) ; // handled in dreamMult()
+  if(state.m["m-shield"]) ; // handled in rift dynamics
+
+  // Default behavior: when auto becomes available for the first time, enable it once,
+  // unless the player has previously toggled the preference.
+  if(state.autoFoldUnlocked && !state.autoFoldEver && !state.autoFoldPref){
+    state.autoFoldPref = true;
+  }
+
+  state.autoFold = state.autoFoldUnlocked && state.autoFoldPref;
+}
+
+function canAfford(k, cost){
+        return state[k] >= cost;
+      }
+
+      function spend(k, cost){
+        state[k] -= cost;
+        if(state[k] < 0n) state[k] = 0n;
+      }
+
+      function addResource(k, amount){
+        if(amount <= 0n) return;
+        state[k] += amount;
+        if(k === "idea") state.lifeIdea += amount;
+      }
+
+      function spark(x, y){
+        const s = document.createElement("div");
+        s.className = "spark";
+        const a = (Math.random() * Math.PI * 2);
+        const r = 22 + Math.random() * 38;
+        const dx = Math.cos(a) * r;
+        const dy = Math.sin(a) * r;
+        s.style.setProperty("--dx", dx.toFixed(1) + "px");
+        s.style.setProperty("--dy", dy.toFixed(1) + "px");
+        s.style.left = x + "px";
+        s.style.top = y + "px";
+        el.well = el.well || $("#well");
+        el.well.appendChild(s);
+        setTimeout(() => s.remove(), 720);
+      }
+
+      function updateRings(){
+        el.rings.textContent = "";
+        const d = state.depth;
+        const count = Math.max(1, Math.min(8, d + 1));
+        for(let i=0; i<count; i++){
+          const r = document.createElement("div");
+          r.className = "ring";
+          const size = 140 + i * 70;
+          r.style.width = size + "px";
+          r.style.height = size + "px";
+          r.style.opacity = (0.15 + i * 0.08).toFixed(2);
+          r.style.animationDuration = (3.2 + i * 0.5) + "s";
+          el.rings.appendChild(r);
+        }
+      }
+
+      function buildBuildingsUI(){
+        el.buildings.textContent = "";
+        for(const def of Buildings){
+          const card = document.createElement("div");
+          card.className = "card";
+          card.dataset.id = def.id;
+
+          const ic = document.createElement("div");
+          ic.className = "ic";
+          ic.innerHTML = `<svg><use href="#${def.icon}"/></svg>`;
+          card.appendChild(ic);
+
+          const mid = document.createElement("div");
+          mid.className = "mid";
+
+          const row1 = document.createElement("div");
+          row1.className = "pair";
+          const costRow = document.createElement("div");
+          costRow.className = "costrow";
+          costRow.dataset.k = def.costK;
+          costRow.innerHTML = `<div class="mini"><svg><use href="#i-${def.costK}"/></svg></div><div class="bn"><div class="block-number sm" data-role="cost"></div></div>`;
+          row1.appendChild(costRow);
+
+          const ownRow = document.createElement("div");
+          ownRow.className = "costrow";
+          ownRow.dataset.k = def.id;
+          ownRow.innerHTML = `<div class="mini"><svg><use href="#${def.icon}"/></svg></div><div class="bn"><div class="block-number sm" data-role="own"></div></div>`;
+          row1.appendChild(ownRow);
+
+          mid.appendChild(row1);
+          card.appendChild(mid);
+
+          card.addEventListener("click", () => buyBuilding(def.id));
+          el.buildings.appendChild(card);
+        }
+      }
+
+      function buildUpgradesUI(){
+        el.upgradeGrid.textContent = "";
+        const list = (uiTab === "run") ? RunUpgrades : MetaUpgrades;
+        for(const def of list){
+          const tile = document.createElement("div");
+          tile.className = "upg";
+          tile.dataset.id = def.id;
+
+          const ic = document.createElement("div");
+          ic.className = "ic";
+          ic.innerHTML = `<svg><use href="#${def.icon}"/></svg>`;
+          tile.appendChild(ic);
+
+          const costRow = document.createElement("div");
+          costRow.className = "costrow";
+          costRow.dataset.k = def.costK;
+          costRow.innerHTML = `<div class="mini"><svg><use href="#i-${def.costK}"/></svg></div><div class="bn"><div class="block-number sm" data-role="cost"></div></div>`;
+          tile.appendChild(costRow);
+
+          tile.addEventListener("click", () => buyUpgrade(def.id));
+          el.upgradeGrid.appendChild(tile);
+        }
+      }
+
+      function updateBuildingsUI(){
+        const cards = el.buildings.querySelectorAll(".card");
+        for(const card of cards){
+          const id = card.dataset.id;
+          const def = Buildings.find(b => b.id === id);
+          const unlocked = def.unlock();
+          const cost = buildingCost(def);
+          const can = unlocked && canAfford(def.costK, cost);
+
+          card.classList.toggle("lock", !unlocked);
+          card.classList.toggle("afford", can);
+          const hint = (id === "chemist" && unlocked && (state.b.chemist === 0) && state.sedative === 0n && state.depth === 0 && state.blueprint > 0n);
+          card.classList.toggle("pulse", hint);
+
+          const bnCost = card.querySelector('[data-role="cost"]');
+          const bnOwn = card.querySelector('[data-role="own"]');
+
+          renderBlockNumber(bnCost, cost, { maxRows: 4 });
+          renderBlockNumber(bnOwn, BigInt(state.b[id] || 0), { maxRows: 3, alt: true });
+        }
+      }
+
+      function updateUpgradesUI(){
+        const list = (uiTab === "run") ? RunUpgrades : MetaUpgrades;
+        const tiles = el.upgradeGrid.querySelectorAll(".upg");
+        for(const tile of tiles){
+          const id = tile.dataset.id;
+          const def = list.find(u => u.id === id);
+          const unlocked = def.unlock();
+          const owned = (uiTab === "run") ? !!state.u[id] : !!state.m[id];
+          const can = unlocked && !owned && canAfford(def.costK, def.cost);
+
+          tile.classList.toggle("lock", !unlocked || owned);
+          tile.classList.toggle("owned", owned);
+          tile.classList.toggle("afford", can);
+
+          const bnCost = tile.querySelector('[data-role="cost"]');
+          renderBlockNumber(bnCost, def.cost, { maxRows: 3, alt: (def.costK === "totem") });
+        }
+      }
+
+      function updateControlsUI(){
+        // Descend unlocks at depth >=1 (or once you have chemists)
+        const descendUnlocked = state.depth >= 0; // always visible
+        const dCost = descendCost();
+        const dCan = canAfford("sedative", dCost) && descendUnlocked;
+        el.btnDescend.classList.toggle("lock", !descendUnlocked);
+        el.btnDescend.classList.toggle("afford", dCan);
+
+        // Inception unlock at depth >=3 or ever reached 3
+        const iUnlocked = state.runMaxDepth >= 3 || state.lifeDepth >= 3;
+        const gain = inceptionGain();
+        const iCan = iUnlocked && gain > 0n;
+        el.btnInception.classList.toggle("lock", !iUnlocked || gain <= 0n);
+        el.btnInception.classList.toggle("afford", iCan);
+
+        // Kick unlock at depth >=1
+        const kUnlocked = state.depth >= 1;
+        el.btnKick.classList.toggle("lock", !kUnlocked);
+        el.btnKick.classList.toggle("afford", kUnlocked);
+
+        renderBlockNumber(el.bnDescendCost, dCost, { maxRows: 4 });
+        renderBlockNumber(el.bnInceptionGain, gain, { maxRows: 4, alt: true });
+      }
+
+      function updateConversionUI(){
+  const unlocked = state.blueprint > 0n || state.idea >= foldCost() || state.u["u-fold"] || state.b.architect > 0;
+  const cost = foldCost();
+  const can = unlocked && canAfford("idea", cost);
+  el.foldBtn.classList.toggle("lock", !unlocked);
+  el.foldBtn.classList.toggle("afford", can);
+  renderBlockNumber(el.bnFoldCost, cost, { maxRows: 4 });
+  renderBlockNumber(el.bnFoldGain, foldGain(), { maxRows: 2, alt: true });
+
+  // auto fold toggle (appears once unlocked)
+  const showAuto = !!state.autoFoldUnlocked;
+  el.autoFoldBtn.classList.toggle("show", showAuto);
+  if(showAuto){
+    el.autoFoldBtn.classList.toggle("on", !!state.autoFoldPref);
+    el.autoFoldBtn.classList.toggle("lock", !state.autoFoldUnlocked);
+  }
+}
+
+function updateTopUI(){
+        renderBlockNumber(el.bnIdea, state.idea, { maxRows: 8 });
+        renderBlockNumber(el.bnBlueprint, state.blueprint, { maxRows: 8 });
+        renderBlockNumber(el.bnSedative, state.sedative, { maxRows: 8 });
+        renderBlockNumber(el.bnTotem, state.totem, { maxRows: 8, alt: true });
+
+        // Rift meter shown as 0..10 blocks (percentile)
+        renderMeter10(el.bnRift, (state.rift / 1000) * 10, { alt: true });
+
+        // Depth as block-number (more rows so it doesn't visually wrap at 100+)
+        renderBlockNumber(el.bnDepth, BigInt(state.depth), { maxRows: 6, alt: true });
+      }
+
+      // ----- Inspect overlay
+      let inspectKey = null;
+      function openInspect(k){
+        inspectKey = k;
+        if(el.inspectIconUse) el.inspectIconUse.setAttribute("href", `#i-${k}`);
+        el.inspect.classList.add("open");
+        el.inspect.setAttribute("aria-hidden", "false");
+        updateInspectUI(true);
+        // show most-significant digits by default
+        el.inspectScroll.scrollTop = 0;
+      }
+      function closeInspect(){
+        el.inspect.classList.remove("open");
+        el.inspect.setAttribute("aria-hidden", "true");
+        inspectKey = null;
+      }
+      function updateInspectUI(force=false){
+        if(!inspectKey) return;
+        if(!el.inspect.classList.contains("open")) return;
+        const alt = (inspectKey === "totem");
+        renderBlockNumber(el.bnInspect, state[inspectKey], { maxRows: 140, alt });
+      }
+
+// ----- Reset overlay (hard reset)
+let resetHolding = false;
+let resetStart = 0;
+const RESET_HOLD_MS = 1200;
+
+function openReset(){
+  closeInspect();
+  el.reset.classList.add("open");
+  el.reset.setAttribute("aria-hidden", "false");
+  el.resetHold.style.setProperty("--p", "0");
+}
+function stopResetHold(){
+  resetHolding = false;
+  el.resetHold.classList.remove("holding");
+  el.resetHold.style.setProperty("--p", "0");
+}
+function closeReset(){
+  if(!el.reset.classList.contains("open")) return;
+  el.reset.classList.remove("open");
+  el.reset.setAttribute("aria-hidden", "true");
+  stopResetHold();
+}
+
+function hardReset(){
+  try{ localStorage.removeItem(SAVE_KEY); }catch(_e){}
+
+  state.idea = 0n;
+  state.blueprint = 0n;
+  state.sedative = 0n;
+  state.totem = 0n;
+
+  state.lifeIdea = 0n;
+  state.markIdea = 0n;
+  state.lifeDepth = 0;
+  state.runMaxDepth = 0;
+
+  state.depth = 0;
+  state.rift = 0;
+  state.shiftMs = 0;
+
+  state.rem.idea = 0n;
+  state.rem.blueprint = 0n;
+  state.rem.sedative = 0n;
+
+  state.b = { extractor: 0, architect: 0, chemist: 0, stabilizer: 0 };
+  state.u = {};
+  state.m = {};
+
+  state.autoFoldUnlocked = false;
+  state.autoFoldPref = false;
+  state.autoFoldEver = false;
+  state.autoFoldAcc = 0;
+
+  document.body.classList.remove("shift");
+
+  clickPulseCount = 0;
+  el.totemBtn.classList.add("pulse");
+
+  applyUpgrades();
+  buildBuildingsUI();
+  setTab("run");
+  updateRings();
+
+  updateTopUI();
+  updateControlsUI();
+  updateConversionUI();
+  updateBuildingsUI();
+  updateUpgradesUI();
+  updateInspectUI(true);
+
+  save();
+}
+
+function startResetHold(e){
+  e.preventDefault();
+  if(!el.reset.classList.contains("open")) return;
+
+  resetHolding = true;
+  resetStart = nowMs();
+  el.resetHold.classList.add("holding");
+
+  const step = () => {
+    if(!resetHolding) return;
+    const p = clamp((nowMs() - resetStart) / RESET_HOLD_MS, 0, 1);
+    el.resetHold.style.setProperty("--p", p.toFixed(4));
+    if(p >= 1){
+      resetHolding = false;
+      hardReset();
+      closeReset();
+      return;
+    }
+    requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+      function descendCost(){
+        // Quadratic growth (no hard cap) so deep descent doesn't run away.
+        const n = BigInt(state.depth + 1);
+        return 12n * n * n;
+      }
+
+      function inceptionGain(){
+        // Prestige gain is based ONLY on progress since the last inception.
+        // (Old builds mistakenly used lifetime values, which allowed infinite payouts.)
+        const d = state.runMaxDepth;
+        if(d < 3) return 0n;
+        const depthGain = pow2n(Math.min(d - 3, 10)); // 1,2,4,... capped
+        const runIdea = (state.lifeIdea > state.markIdea) ? (state.lifeIdea - state.markIdea) : 0n;
+        const ideaGain = bigIntSqrt(runIdea / 400n); // gentle growth
+        return depthGain + ideaGain;
+      }
+
+      function buyBuilding(id){
+        const def = Buildings.find(b => b.id === id);
+        if(!def) return;
+        if(!def.unlock()) return;
+
+        const cost = buildingCost(def);
+        if(!canAfford(def.costK, cost)) return;
+
+        spend(def.costK, cost);
+        state.b[id] = (state.b[id] | 0) + 1;
+        if(id === "architect" && state.b.architect === 1) el.totemBtn.classList.remove("pulse");
+      }
+
+      function buyUpgrade(id){
+        const list = (uiTab === "run") ? RunUpgrades : MetaUpgrades;
+        const def = list.find(u => u.id === id);
+        if(!def) return;
+        if(!def.unlock()) return;
+
+        if(uiTab === "run"){
+          if(state.u[id]) return;
+        } else {
+          if(state.m[id]) return;
+        }
+
+        if(!canAfford(def.costK, def.cost)) return;
+
+        spend(def.costK, def.cost);
+        if(uiTab === "run") state.u[id] = true; else state.m[id] = true;
+        applyUpgrades();
+      }
+
+      function doFold(){
+        const cost = foldCost();
+        if(!canAfford("idea", cost)) return false;
+        spend("idea", cost);
+        addResource("blueprint", 1n);
+        return true;
+      }
+
+      function doDescend(){
+        const cost = descendCost();
+        if(!canAfford("sedative", cost)) return;
+        spend("sedative", cost);
+        state.depth += 1;
+        state.runMaxDepth = Math.max(state.runMaxDepth, state.depth);
+        state.lifeDepth = Math.max(state.lifeDepth, state.depth);
+        updateRings();
+      }
+
+      function doKick(){
+        if(state.depth <= 0) return;
+        // Kick jolts you upward; keeps resources but triggers rift reset and short shift.
+        state.depth -= 1;
+        state.shiftMs = Math.max(state.shiftMs, 1200);
+        state.rift = Math.floor(state.rift * 0.35);
+        updateRings();
+      }
+
+      function doInception(){
+        const gain = inceptionGain();
+        if(gain <= 0n) return;
+        addResource("totem", gain);
+
+        // Mark the end of this run's idea contribution so the next payout can't repeat it.
+        state.markIdea = state.lifeIdea;
+
+        // Reset run state (but keep meta upgrades)
+        state.idea = 0n;
+        state.sedative = 0n;
+        // Keep a fraction of blueprints if meta upgrade
+        if(state.keepBlueprintFrac > 0){
+          state.blueprint = (state.blueprint * BigInt(state.keepBlueprintFrac)) / 1000n;
+        } else {
+          state.blueprint = 0n;
+        }
+        state.depth = 0;
+        state.rift = 0;
+        state.shiftMs = 0;
+        state.rem.idea = 0n;
+        state.rem.blueprint = 0n;
+        state.rem.sedative = 0n;
+        state.autoFoldAcc = 0;
+        state.b.extractor = 0;
+        state.b.architect = 0;
+        state.b.chemist = 0;
+        state.b.stabilizer = 0;
+        state.u = {};
+        state.runMaxDepth = 0;
+
+        // Meta auto starts: add one extractor if m-echo? (subtle boost)
+        if(state.m["m-echo"]) state.b.extractor = 1;
+
+        applyUpgrades();
+        updateRings();
+      }
+
+      // Tabs
+      let uiTab = "run";
+      function setTab(tab){
+        uiTab = tab;
+        el.tabRun.classList.toggle("active", tab === "run");
+        el.tabMeta.classList.toggle("active", tab === "meta");
+        buildUpgradesUI();
+        updateUpgradesUI();
+      }
+
+      el.tabRun.addEventListener("click", () => setTab("run"));
+      el.tabMeta.addEventListener("click", () => setTab("meta"));
+
+      // Inspect overlay: click a top resource panel to zoom its full block-number.
+      document.querySelectorAll(".res").forEach((r) => {
+        r.addEventListener("click", () => openInspect(r.dataset.k));
+      });
+      el.inspectClose.addEventListener("click", (e) => { e.stopPropagation(); closeInspect(); });
+      el.inspect.addEventListener("click", (e) => { if(e.target === el.inspect) closeInspect(); });
+      window.addEventListener("keydown", (e) => { if(e.key === "Escape"){ closeInspect(); closeReset(); } });
+
+      // Reset overlay
+      el.btnReset.addEventListener("click", (e) => { e.stopPropagation(); openReset(); });
+      el.resetClose.addEventListener("click", (e) => { e.stopPropagation(); closeReset(); });
+      el.reset.addEventListener("click", (e) => { if(e.target === el.reset) closeReset(); });
+      el.resetHold.addEventListener("pointerdown", startResetHold);
+      ["pointerup","pointercancel","pointerleave"].forEach((ev) => el.resetHold.addEventListener(ev, stopResetHold));
+
+
+      // Main button
+      el.totemBtn.addEventListener("click", (e) => {
+        const mult = dreamMult();
+        const gain = state.clickPower * mult;
+        addResource("idea", gain);
+
+        const rect = el.totemBtn.getBoundingClientRect();
+        const x = (rect.left + rect.right) / 2 - $("#app").getBoundingClientRect().left;
+        const y = (rect.top + rect.bottom) / 2 - $("#app").getBoundingClientRect().top;
+        spark(x + (Math.random()*12-6), y + (Math.random()*12-6));
+
+        // once clicked a bit, stop pulsing
+        clickPulseCount++;
+        if(clickPulseCount > 4) el.totemBtn.classList.remove("pulse");
+      });
+
+      // Controls
+      el.btnDescend.addEventListener("click", () => { if(!el.btnDescend.classList.contains("lock")) doDescend(); });
+      el.btnKick.addEventListener("click", () => { if(!el.btnKick.classList.contains("lock")) doKick(); });
+      el.btnInception.addEventListener("click", () => { if(!el.btnInception.classList.contains("lock")) doInception(); });
+      el.foldBtn.addEventListener("click", () => { if(!el.foldBtn.classList.contains("lock")) doFold(); });
+el.autoFoldBtn.addEventListener("click", () => {
+  if(!state.autoFoldUnlocked) return;
+  state.autoFoldPref = !state.autoFoldPref;
+  state.autoFoldEver = true;
+  if(!state.autoFoldPref) state.autoFoldAcc = 0;
+  applyUpgrades();
+  updateConversionUI();
+  save();
+});
+
+
+      // --- Simulation
+      let last = nowMs();
+      let clickPulseCount = 0;
+
+      function riftDynamics(dtMs){
+        // rift uses permille for exactness; increase with depth, reduced by stabilizers and shields
+        let inc = 0;
+        if(state.depth > 0){
+          // Baseline grows linearly with depth (no sudden runaway)
+          inc = 20 + state.depth; // permille per second
+        }
+        // upgrades reduce rift accumulation
+        if(state.u["u-shield"]) inc = Math.floor(inc * 0.7);
+        if(state.m["m-shield"]) inc = Math.floor(inc * 0.7);
+
+        // stabilizers reduce rift
+        const stab = state.b.stabilizer | 0;
+        let dec = stab * 8; // permille per second
+
+        // apply dt
+        const delta = ((inc - dec) * dtMs) / 1000;
+        state.rift = clamp(state.rift + delta, 0, 1000);
+
+        if(state.shiftMs > 0){
+          state.shiftMs = Math.max(0, state.shiftMs - dtMs);
+          if(state.shiftMs === 0) document.body.classList.remove("shift");
+        }
+
+        if(state.rift >= 1000 && state.shiftMs === 0){
+          state.rift = 0;
+          state.shiftMs = 2600;
+          document.body.classList.add("shift");
+        }
+      }
+
+      function produce(dtMs){
+        applyUpgrades();
+        const mult = dreamMult();
+
+        // Idea rate: extractors
+        let ideaRate = BigInt(state.b.extractor | 0) * state.multIdea * mult;
+        // Architects also help by blueprint creation, but lightly emit ideas (dream artifacts)
+        if(state.b.architect > 0) ideaRate += BigInt(state.b.architect) * (mult / 4n + 1n);
+
+        // Blueprint rate: architects
+        let bpRate = BigInt(state.b.architect | 0) * state.multBlueprint * (mult / 2n + 1n);
+
+        // Sedative rate: chemists
+        let sedRate = BigInt(state.b.chemist | 0) * state.multSedative * (mult / 2n + 1n);
+
+        // Exact integration: add floor(rate*dt/1000) with remainder
+        // idea
+        let num = ideaRate * BigInt(dtMs) + state.rem.idea;
+        let add = num / 1000n;
+        state.rem.idea = num % 1000n;
+        addResource("idea", add);
+
+        // blueprint
+        num = bpRate * BigInt(dtMs) + state.rem.blueprint;
+        add = num / 1000n;
+        state.rem.blueprint = num % 1000n;
+        addResource("blueprint", add);
+
+        // sedative
+        num = sedRate * BigInt(dtMs) + state.rem.sedative;
+        add = num / 1000n;
+        state.rem.sedative = num % 1000n;
+        addResource("sedative", add);
+
+          // auto fold (time-based, toggleable; prevents idea starvation/softlocks)
+  if(state.autoFold){
+    // base interval per fold in ms; having both run+meta reduces interval
+    let interval = 650;
+    if(state.u["u-auto"] && state.m["m-auto"]) interval = 420;
+
+    state.autoFoldAcc += dtMs;
+
+    let steps = 0;
+    while(state.autoFoldAcc >= interval && steps < 8){
+      if(!doFold()){
+        // Don't bank up infinite backlog if you can't afford it.
+        state.autoFoldAcc = interval;
+        break;
+      }
+      state.autoFoldAcc -= interval;
+      steps++;
+    }
+    if(state.autoFoldAcc > interval * 4) state.autoFoldAcc = interval * 4;
+  } else {
+    state.autoFoldAcc = 0;
+  }
+}
+
+
+      function tick(){
+        const t = nowMs();
+        let dt = t - last;
+        last = t;
+        dt = clamp(dt, 0, 80); // stability
+
+        riftDynamics(dt);
+        produce(Math.floor(dt));
+
+        // UI rendering is throttled to avoid DOM churn when values get large.
+        uiTimer += dt;
+        if(uiTimer > 120){
+          uiTimer = 0;
+          updateTopUI();
+          updateControlsUI();
+          updateConversionUI();
+          updateBuildingsUI();
+          updateUpgradesUI();
+          updateInspectUI();
+        }
+
+        // pulse hint if very low and not clicked
+        if(state.idea === 0n && clickPulseCount < 2) el.totemBtn.classList.add("pulse");
+
+        // Save periodically
+        saveTimer += dt;
+        if(saveTimer > 2500){
+          saveTimer = 0;
+          save();
+        }
+
+        requestAnimationFrame(tick);
+      }
+
+      let saveTimer = 0;
+      let uiTimer = 0;
+
+      function save(){
+        try{
+          const data = {
+            idea: state.idea.toString(),
+            blueprint: state.blueprint.toString(),
+            sedative: state.sedative.toString(),
+            totem: state.totem.toString(),
+            lifeIdea: state.lifeIdea.toString(),
+            markIdea: state.markIdea.toString(),
+            lifeDepth: state.lifeDepth,
+            runMaxDepth: state.runMaxDepth,
+            depth: state.depth,
+            rift: state.rift,
+            shiftMs: state.shiftMs,
+            rem: {
+              idea: state.rem.idea.toString(),
+              blueprint: state.rem.blueprint.toString(),
+              sedative: state.rem.sedative.toString(),
+            },
+            b: state.b,
+            u: state.u,
+            m: state.m,
+            autoFoldPref: state.autoFoldPref,
+            autoFoldEver: state.autoFoldEver,
+          };
+          localStorage.setItem(SAVE_KEY, JSON.stringify(data));
+        }catch(_e){}
+      }
+
+      function load(){
+        try{
+          const raw = localStorage.getItem(SAVE_KEY);
+          if(!raw) return;
+          const d = JSON.parse(raw);
+          state.idea = BigInt(d.idea || "0");
+          state.blueprint = BigInt(d.blueprint || "0");
+          state.sedative = BigInt(d.sedative || "0");
+          state.totem = BigInt(d.totem || "0");
+          state.lifeIdea = BigInt(d.lifeIdea || "0");
+          state.markIdea = BigInt(d.markIdea || "0");
+          if(state.markIdea > state.lifeIdea) state.markIdea = 0n;
+          state.lifeDepth = d.lifeDepth || 0;
+          state.runMaxDepth = d.runMaxDepth || 0;
+          state.depth = d.depth || 0;
+          state.rift = d.rift || 0;
+          state.shiftMs = d.shiftMs || 0;
+          if(state.shiftMs > 0) document.body.classList.add("shift");
+          state.rem.idea = BigInt((d.rem && d.rem.idea) || "0");
+          state.rem.blueprint = BigInt((d.rem && d.rem.blueprint) || "0");
+          state.rem.sedative = BigInt((d.rem && d.rem.sedative) || "0");
+          state.b = d.b || state.b;
+          state.u = d.u || {};
+          state.m = d.m || {};
+
+          // Auto fold preference fields were added after early builds.
+          // Old saves default to OFF and "already chosen" to prevent unexpected idea draining.
+          if("autoFoldPref" in d) state.autoFoldPref = !!d.autoFoldPref; else state.autoFoldPref = false;
+          if("autoFoldEver" in d) state.autoFoldEver = !!d.autoFoldEver; else state.autoFoldEver = true;
+          state.autoFoldAcc = 0;
+        }catch(_e){}
+      }
+
+      // Init
+      load();
+      applyUpgrades();
+      buildBuildingsUI();
+      setTab("run");
+      updateRings();
+
+      // initial rift/depth displays
+      updateTopUI();
+      updateControlsUI();
+      updateConversionUI();
+      updateBuildingsUI();
+      updateUpgradesUI();
+
+      requestAnimationFrame(tick);
+      window.addEventListener("beforeunload", save);
+
+      // Safety: disable context menu (keeps UI clean)
+      window.addEventListener("contextmenu", (e) => e.preventDefault());
+    })();
+  </script>
+</body>
+</html>
