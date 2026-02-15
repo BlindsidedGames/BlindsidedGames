@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRAWL BACK — Mood Board</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Fira+Code:wght@300;400;500&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #09080c;
+    color: #b0a8c0;
+    font-family: 'Crimson Pro', serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  /* Ethereal ghost glow from below */
+  body::before {
+    content: '';
+    position: fixed;
+    bottom: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px;
+    height: 600px;
+    background: radial-gradient(ellipse, rgba(120, 160, 255, 0.06) 0%, transparent 65%);
+    animation: haunt 7s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  @keyframes haunt {
+    0%, 100% { opacity: 0.4; transform: translateX(-50%) translateY(0); }
+    50% { opacity: 1; transform: translateX(-50%) translateY(-30px); }
+  }
+
+  /* Dust/particle overlay */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 999;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 24px 100px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ---- HEADER ---- */
+  .header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .header-epitaph {
+    font-family: 'Fira Code', monospace;
+    font-size: 9px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #78a0ff33;
+    margin-bottom: 30px;
+  }
+
+  .title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(50px, 9vw, 86px);
+    font-weight: 900;
+    letter-spacing: 8px;
+    color: #e0d8f0;
+    position: relative;
+    display: inline-block;
+  }
+
+  .title span {
+    background: linear-gradient(180deg, #78a0ff 0%, #4466aa 60%, #2a3366 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Ghostly flicker on the title */
+  .title::after {
+    content: 'CRAWL BACK';
+    position: absolute;
+    inset: 0;
+    font-family: 'Cinzel', serif;
+    font-size: clamp(50px, 9vw, 86px);
+    font-weight: 900;
+    letter-spacing: 8px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(120, 160, 255, 0.08);
+    animation: ghostShift 5s ease-in-out infinite;
+  }
+
+  @keyframes ghostShift {
+    0%, 90%, 100% { transform: translate(0, 0); opacity: 0.5; }
+    93% { transform: translate(2px, -1px); opacity: 0.8; }
+    96% { transform: translate(-1px, 1px); opacity: 0.3; }
+  }
+
+  .subtitle {
+    font-family: 'Fira Code', monospace;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #4a4660;
+    margin-top: 14px;
+  }
+
+  .tagline {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 300;
+    color: #78a0ff88;
+    margin-top: 22px;
+    letter-spacing: 1px;
+  }
+
+  /* ---- DIVIDER ---- */
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #78a0ff18, transparent);
+    margin: 45px 0;
+  }
+
+  .section-label {
+    font-family: 'Fira Code', monospace;
+    font-size: 9px;
+    letter-spacing: 5px;
+    color: #78a0ff33;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  /* ---- PITCH ---- */
+  .pitch {
+    max-width: 720px;
+    margin: 0 auto 50px;
+    position: relative;
+  }
+
+  .pitch-tombstone {
+    padding: 40px 44px;
+    border: 1px solid #78a0ff12;
+    background: linear-gradient(180deg, rgba(120, 160, 255, 0.03) 0%, transparent 100%);
+    position: relative;
+  }
+
+  .pitch-tombstone::before {
+    content: '† HERE LIES THE HERO †';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #09080c;
+    padding: 0 18px;
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    letter-spacing: 5px;
+    color: #78a0ff44;
+  }
+
+  .pitch p {
+    line-height: 2;
+    font-size: 16px;
+    font-weight: 300;
+    color: #8880a0;
+    margin-bottom: 14px;
+  }
+
+  .pitch p:last-child { margin-bottom: 0; }
+  .pitch strong { color: #78a0ff; font-weight: 600; }
+  .pitch em { color: #c8c0e0; font-style: italic; }
+
+  /* ---- DUNGEON CROSS SECTION ---- */
+  .dungeon-section {
+    margin-bottom: 50px;
+    padding: 30px;
+    border: 1px solid #78a0ff10;
+    background: rgba(120, 160, 255, 0.01);
+  }
+
+  .dungeon-floors {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .floor {
+    display: flex;
+    align-items: stretch;
+    border-bottom: 1px solid #1a1828;
+    min-height: 64px;
+    transition: background 0.3s;
+  }
+
+  .floor:hover {
+    background: rgba(120, 160, 255, 0.03);
+  }
+
+  .floor:last-child { border-bottom: none; }
+
+  .floor-depth {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fira Code', monospace;
+    font-size: 11px;
+    color: #78a0ff44;
+    flex-shrink: 0;
+    border-right: 1px solid #1a1828;
+  }
+
+  .floor-bar {
+    width: 6px;
+    flex-shrink: 0;
+    margin: 4px 0;
+  }
+
+  .floor-content {
+    flex: 1;
+    padding: 14px 20px;
+  }
+
+  .floor-name {
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #c0b8d8;
+    margin-bottom: 4px;
+  }
+
+  .floor-desc {
+    font-size: 12px;
+    font-weight: 300;
+    color: #5a5470;
+    line-height: 1.5;
+  }
+
+  .floor-status {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fira Code', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    flex-shrink: 0;
+  }
+
+  .status-overgrown { color: #55aa55; }
+  .status-infested { color: #c7a844; }
+  .status-haunted { color: #78a0ff; }
+  .status-clear { color: #555060; }
+
+  .bar-surface { background: linear-gradient(180deg, #55aa55, #337733); }
+  .bar-upper { background: linear-gradient(180deg, #88aa44, #557722); }
+  .bar-mid { background: linear-gradient(180deg, #c7a844, #8a7530); }
+  .bar-deep { background: linear-gradient(180deg, #aa6644, #774422); }
+  .bar-boss { background: linear-gradient(180deg, #78a0ff, #4466aa); }
+
+  /* ---- MOOD GRID ---- */
+  .mood-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
+    margin-bottom: 50px;
+  }
+
+  .mood-cell {
+    aspect-ratio: 16/10;
+    position: relative;
+    overflow: hidden;
+    background: #0e0d14;
+  }
+
+  .mood-cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(0.4) brightness(0.65) contrast(1.15) hue-rotate(10deg);
+    transition: all 0.8s ease;
+  }
+
+  .mood-cell:hover img {
+    filter: saturate(0.6) brightness(0.8) contrast(1.2);
+    transform: scale(1.04);
+  }
+
+  .mood-cell::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(120, 160, 255, 0.04) 0%, rgba(9, 8, 12, 0.5) 100%);
+    pointer-events: none;
+  }
+
+  .mood-cell-label {
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    font-family: 'Fira Code', monospace;
+    font-size: 8px;
+    letter-spacing: 2px;
+    color: #78a0ff44;
+    z-index: 2;
+    text-transform: uppercase;
+  }
+
+  /* ---- MECHANICS STRIP ---- */
+  .mechanics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin-bottom: 50px;
+    border: 1px solid #78a0ff10;
+  }
+
+  .mechanic {
+    padding: 28px 22px;
+    border-right: 1px solid #78a0ff10;
+    position: relative;
+  }
+
+  .mechanic:last-child { border-right: none; }
+
+  .mechanic-icon {
+    font-size: 32px;
+    margin-bottom: 14px;
+    opacity: 0.6;
+  }
+
+  .mechanic-title {
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #c0b8d8;
+    margin-bottom: 10px;
+  }
+
+  .mechanic-desc {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #5a5470;
+  }
+
+  /* ---- KEYWORDS ---- */
+  .keywords {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+
+  .keyword {
+    padding: 7px 16px;
+    border: 1px solid #78a0ff18;
+    font-family: 'Fira Code', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #4a4660;
+    background: rgba(120, 160, 255, 0.02);
+    transition: all 0.3s;
+  }
+
+  .keyword:hover {
+    border-color: #78a0ff55;
+    color: #78a0ff;
+  }
+
+  .keyword.glow {
+    border-color: #78a0ff33;
+    color: #78a0ff88;
+  }
+
+  /* ---- PALETTE ---- */
+  .palette-section { margin-bottom: 50px; }
+
+  .palette {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    height: 50px;
+  }
+
+  .swatch {
+    flex: 1;
+    max-width: 100px;
+    position: relative;
+    cursor: crosshair;
+    transition: flex 0.3s;
+  }
+
+  .swatch:hover { flex: 1.5; }
+
+  .swatch::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Fira Code', monospace;
+    font-size: 7px;
+    letter-spacing: 2px;
+    color: #3a3650;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .swatch:hover::after { opacity: 1; }
+
+  /* ---- SPECS ---- */
+  .specs {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 28px;
+    border-top: 1px solid #1a1828;
+    border-bottom: 1px solid #1a1828;
+    margin-bottom: 50px;
+  }
+
+  .spec-value {
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #78a0ff;
+    text-align: center;
+  }
+
+  .spec-label {
+    font-family: 'Fira Code', monospace;
+    font-size: 8px;
+    letter-spacing: 3px;
+    color: #3a3650;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  /* ---- REFERENCES ---- */
+  .references { text-align: center; }
+
+  .ref-list {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+
+  .ref-item {
+    font-family: 'Fira Code', monospace;
+    font-size: 11px;
+    color: #4a4660;
+    padding-left: 14px;
+    position: relative;
+  }
+
+  .ref-item::before {
+    content: '†';
+    position: absolute;
+    left: 0;
+    color: #78a0ff33;
+  }
+
+  .footer-epitaph {
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #78a0ff15;
+  }
+
+  @media (max-width: 750px) {
+    .mechanics { grid-template-columns: 1fr; }
+    .mechanic { border-right: none; border-bottom: 1px solid #78a0ff10; }
+    .mechanic:last-child { border-bottom: none; }
+    .mood-grid { grid-template-columns: 1fr 1fr; }
+    .specs { flex-wrap: wrap; gap: 24px; }
+    .floor-status { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-epitaph">You conquered the dungeon. Then you died in it.</div>
+    <div class="title">CRAWL <span>BACK</span></div>
+    <div class="subtitle">Reverse Dungeon Crawler — Incremental Haunting</div>
+    <div class="tagline">"The hero's journey ends. The ghost's journey begins."</div>
+  </div>
+
+  <!-- Pitch -->
+  <div class="pitch">
+    <div class="pitch-tombstone">
+      <p>
+        You <strong>killed the final boss</strong>. You claimed the treasure. And then you <em>died in the boss room</em> — alone, bleeding, victorious and dead. Now you're a ghost at the bottom of the dungeon you already cleared.
+      </p>
+      <p>
+        But it's been <strong>years</strong>. The dungeon has <em>healed</em>. New creatures nested in the corridors. Traps reset. Moss and roots reclaimed the upper floors. Worse — <strong>adventurers</strong> are coming down looking for your legendary loot.
+      </p>
+      <p>
+        You have no body. No weapons. You <strong>possess objects</strong>, manipulate the environment, trick invaders, and slowly piece together <em>why you died and how to come back</em>. The deeper floors are easier — you cleared them recently. The surface is a jungle. <strong>Haunt your way up. Floor by floor. Power by power.</strong>
+      </p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Mood Images -->
+  <div class="section-label">// Visual Direction</div>
+  <div class="mood-grid">
+    <div class="mood-cell">
+      <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500&h=312&fit=crop" alt="Dark stone corridor"
+           onerror="this.parentElement.style.background='linear-gradient(180deg, #12111a, #09080c)'">
+      <div class="mood-cell-label">Deep Corridors</div>
+    </div>
+    <div class="mood-cell">
+      <img src="https://images.unsplash.com/photo-1507400492013-162706c8c05e?w=500&h=312&fit=crop" alt="Overgrown ruins"
+           onerror="this.parentElement.style.background='linear-gradient(180deg, #0e1410, #09080c)'">
+      <div class="mood-cell-label">Overgrown Upper Floors</div>
+    </div>
+    <div class="mood-cell">
+      <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=500&h=312&fit=crop" alt="Blue ethereal light"
+           onerror="this.parentElement.style.background='linear-gradient(180deg, #0c0e1a, #09080c)'">
+      <div class="mood-cell-label">Ghost Form</div>
+    </div>
+  </div>
+
+  <!-- Dungeon Cross Section -->
+  <div class="section-label">// The Dungeon — Current State</div>
+  <div class="dungeon-section">
+    <div class="dungeon-floors">
+      <div class="floor">
+        <div class="floor-depth">F1</div>
+        <div class="floor-bar bar-surface"></div>
+        <div class="floor-content">
+          <div class="floor-name">The Entrance — Overgrown</div>
+          <div class="floor-desc">Completely reclaimed by forest. Roots and vines have collapsed sections. Wolves den in the foyer. Adventurers camp here before descending.</div>
+        </div>
+        <div class="floor-status status-overgrown">OVERGROWN</div>
+      </div>
+      <div class="floor">
+        <div class="floor-depth">F2-F4</div>
+        <div class="floor-bar bar-upper"></div>
+        <div class="floor-content">
+          <div class="floor-name">Upper Halls — Infested</div>
+          <div class="floor-desc">New creatures have moved in. Goblins built crude settlements in your old cleared rooms. Traps reset with crude imitations. Your legend is graffiti on the walls.</div>
+        </div>
+        <div class="floor-status status-infested">INFESTED</div>
+      </div>
+      <div class="floor">
+        <div class="floor-depth">F5-F7</div>
+        <div class="floor-bar bar-mid"></div>
+        <div class="floor-content">
+          <div class="floor-name">Mid Depths — Haunted</div>
+          <div class="floor-desc">Your presence lingers here. Scorch marks from old battles. Broken mechanisms you disabled. Other ghosts drift — monsters you killed returning the same way you did.</div>
+        </div>
+        <div class="floor-status status-haunted">HAUNTED</div>
+      </div>
+      <div class="floor">
+        <div class="floor-depth">F8-F9</div>
+        <div class="floor-bar bar-deep"></div>
+        <div class="floor-content">
+          <div class="floor-name">Deep Vaults — Mostly Clear</div>
+          <div class="floor-desc">Still bears the marks of your rampage. Fewer new inhabitants — too dangerous, too deep. Your old campfire sites remain. Notes you left on the walls.</div>
+        </div>
+        <div class="floor-status status-clear">CLEARING</div>
+      </div>
+      <div class="floor">
+        <div class="floor-depth">F10</div>
+        <div class="floor-bar bar-boss"></div>
+        <div class="floor-content">
+          <div class="floor-name">The Throne Room — You Are Here</div>
+          <div class="floor-desc">The boss is dead. Your body sits on the throne, skeletal hand still gripping your sword. Your ghost wakes up here. The long climb begins.</div>
+        </div>
+        <div class="floor-status status-haunted">YOU ↑</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Core Mechanics -->
+  <div class="section-label">// Core Mechanics</div>
+  <div class="mechanics">
+    <div class="mechanic">
+      <div class="mechanic-icon">👻</div>
+      <div class="mechanic-title">Possess & Haunt</div>
+      <div class="mechanic-desc">No body, no weapons. Possess objects — doors, torches, statues, traps. Manipulate the environment. Scare, trick, and redirect creatures and adventurers. Gain new possession abilities as you ascend.</div>
+    </div>
+    <div class="mechanic">
+      <div class="mechanic-icon">⬆</div>
+      <div class="mechanic-title">Floor by Floor</div>
+      <div class="mechanic-desc">Each floor is a puzzle-combat sandbox. Clear or circumvent threats to reach the stairs up. Lower floors start easy — you wrecked them recently. Upper floors are rebuilt ecosystems. The surface is the final boss.</div>
+    </div>
+    <div class="mechanic">
+      <div class="mechanic-icon">🔄</div>
+      <div class="mechanic-title">Incremental Power</div>
+      <div class="mechanic-desc">Absorb residual soul energy from your old kills. Unlock ghost abilities: phasing through walls, possession chains, manifesting briefly. Each ascent attempt pushes higher. Meta-progression between runs.</div>
+    </div>
+  </div>
+
+  <!-- Keywords -->
+  <div class="section-label">// Aesthetic Keywords</div>
+  <div class="keywords">
+    <span class="keyword glow">Spectral Blue</span>
+    <span class="keyword">Overgrown Ruins</span>
+    <span class="keyword glow">Reverse Dungeon</span>
+    <span class="keyword">Environmental Puzzle</span>
+    <span class="keyword">Possession Mechanic</span>
+    <span class="keyword glow">Incremental Haunting</span>
+    <span class="keyword">Dark Fantasy</span>
+    <span class="keyword">Roguelite Ascent</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Palette -->
+  <div class="palette-section">
+    <div class="section-label">// Color Palette</div>
+    <div class="palette">
+      <div class="swatch" data-label="VOID" style="background: #09080c;"></div>
+      <div class="swatch" data-label="STONE" style="background: #1a1828;"></div>
+      <div class="swatch" data-label="GHOST" style="background: #78a0ff;"></div>
+      <div class="swatch" data-label="MOSS" style="background: #55aa55;"></div>
+      <div class="swatch" data-label="TORCH" style="background: #c7a844;"></div>
+      <div class="swatch" data-label="BLOOD" style="background: #aa3333;"></div>
+      <div class="swatch" data-label="BONE" style="background: #c0b8a0;"></div>
+      <div class="swatch" data-label="DEEP" style="background: #2a2840;"></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Specs -->
+  <div class="specs">
+    <div class="spec">
+      <div class="spec-value">6–8</div>
+      <div class="spec-label">Weeks Dev</div>
+    </div>
+    <div class="spec">
+      <div class="spec-value">PC</div>
+      <div class="spec-label">Platform</div>
+    </div>
+    <div class="spec">
+      <div class="spec-value">$7.99</div>
+      <div class="spec-label">Price Point</div>
+    </div>
+    <div class="spec">
+      <div class="spec-value">ROGUELITE</div>
+      <div class="spec-label">Core Loop</div>
+    </div>
+    <div class="spec">
+      <div class="spec-value">PUZZLE + ACTION</div>
+      <div class="spec-label">Genre Blend</div>
+    </div>
+  </div>
+
+  <!-- References -->
+  <div class="references">
+    <div class="section-label">// Reference Points</div>
+    <div class="ref-list">
+      <span class="ref-item">Hades (roguelite ascent)</span>
+      <span class="ref-item">Geist (possession mechanic)</span>
+      <span class="ref-item">Dungeon Keeper (inverse perspective)</span>
+      <span class="ref-item">Ghost Trick (environmental puzzles)</span>
+      <span class="ref-item">Carrion (power fantasy in reverse)</span>
+    </div>
+  </div>
+
+  <div class="footer-epitaph">† Rest in peace. Or don't. †</div>
+
+</div>
+
+</body>
+</html>
