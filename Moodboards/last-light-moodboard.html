@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LAST LIGHT — Mood Board</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@300;400;500&family=Bodoni+Moda:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0a0c10;
+    color: #a0aab8;
+    font-family: 'Cormorant Garamond', serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  /* Lighthouse beam sweep */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(255, 210, 80, 0.08), transparent 60%);
+    transform-origin: top center;
+    animation: beamSweep 12s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  @keyframes beamSweep {
+    0% { transform: rotate(-25deg); opacity: 0.3; }
+    25% { opacity: 0.8; }
+    50% { transform: rotate(25deg); opacity: 0.3; }
+    75% { opacity: 0.8; }
+    100% { transform: rotate(-25deg); opacity: 0.3; }
+  }
+
+  /* Deep water ambient */
+  body::after {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40vh;
+    background: linear-gradient(180deg, transparent, rgba(10, 30, 50, 0.4));
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 50px 24px 100px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ---- HEADER ---- */
+  .header {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .header-signal {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 6px;
+    color: #ffd25022;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    animation: signalPulse 3s ease-in-out infinite;
+  }
+
+  @keyframes signalPulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+  }
+
+  /* Lighthouse silhouette via CSS */
+  .lighthouse-icon {
+    width: 40px;
+    height: 120px;
+    margin: 0 auto 30px;
+    position: relative;
+  }
+
+  .lighthouse-icon::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 90px;
+    background: linear-gradient(180deg, #ffd25015, #ffd25008, transparent);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  }
+
+  .lighthouse-icon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    background: radial-gradient(circle, #ffd250 0%, #ffd25066 40%, transparent 70%);
+    border-radius: 50%;
+    animation: lightFlicker 4s ease-in-out infinite;
+  }
+
+  @keyframes lightFlicker {
+    0%, 88%, 92%, 96%, 100% { opacity: 1; }
+    90% { opacity: 0.6; }
+    94% { opacity: 0.8; }
+  }
+
+  .title {
+    font-family: 'Bodoni Moda', serif;
+    font-size: clamp(52px, 9vw, 88px);
+    font-weight: 900;
+    letter-spacing: 6px;
+    line-height: 0.95;
+  }
+
+  .title-last {
+    color: #e8e0d0;
+  }
+
+  .title-light {
+    background: linear-gradient(180deg, #ffd250, #cc9520);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .subtitle {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #3a4555;
+    margin-top: 16px;
+  }
+
+  .tagline {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 300;
+    color: #667788;
+    margin-top: 22px;
+  }
+
+  /* ---- DIVIDER ---- */
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #ffd25015, transparent);
+    margin: 45px 0;
+  }
+
+  .section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 5px;
+    color: #ffd25033;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  /* ---- PITCH ---- */
+  .pitch {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    padding: 40px;
+    position: relative;
+    background: linear-gradient(180deg, rgba(255, 210, 80, 0.02), transparent);
+    border-top: 1px solid #ffd25015;
+  }
+
+  .pitch p {
+    line-height: 2;
+    font-size: 17px;
+    font-weight: 300;
+    color: #778899;
+    margin-bottom: 16px;
+  }
+
+  .pitch p:last-child { margin-bottom: 0; }
+  .pitch strong { color: #ffd250; font-weight: 600; }
+  .pitch em { color: #b0bcc8; font-style: italic; }
+
+  /* ---- MOOD GRID - Cinematic widescreen panels ---- */
+  .mood-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    margin-bottom: 50px;
+  }
+
+  .mood-panel {
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    background: #0d1018;
+  }
+
+  .mood-panel.hero { height: 280px; }
+
+  .mood-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(0.35) brightness(0.55) contrast(1.15);
+    transition: all 1s ease;
+  }
+
+  .mood-panel:hover img {
+    filter: saturate(0.5) brightness(0.7) contrast(1.2);
+    transform: scale(1.02);
+  }
+
+  .mood-panel::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(10, 12, 16, 0.3) 0%, rgba(10, 12, 16, 0.6) 100%);
+    pointer-events: none;
+  }
+
+  .mood-panel-label {
+    position: absolute;
+    bottom: 14px;
+    left: 18px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8px;
+    letter-spacing: 3px;
+    color: #ffd25044;
+    z-index: 2;
+    text-transform: uppercase;
+  }
+
+  .mood-panel-quote {
+    position: absolute;
+    bottom: 14px;
+    right: 18px;
+    font-style: italic;
+    font-size: 14px;
+    color: #ffd25022;
+    z-index: 2;
+  }
+
+  .mood-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+  }
+
+  /* ---- DAY / NIGHT CYCLE ---- */
+  .cycle-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin-bottom: 50px;
+    border: 1px solid #ffd25010;
+    overflow: hidden;
+  }
+
+  .cycle-half {
+    padding: 34px 30px;
+    position: relative;
+  }
+
+  .cycle-day {
+    background: linear-gradient(135deg, rgba(255, 210, 80, 0.04), transparent);
+    border-right: 1px solid #ffd25010;
+  }
+
+  .cycle-night {
+    background: linear-gradient(135deg, rgba(30, 60, 100, 0.08), transparent);
+  }
+
+  .cycle-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .cycle-icon {
+    font-size: 24px;
+    opacity: 0.6;
+  }
+
+  .cycle-title {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #d0c8b8;
+    letter-spacing: 2px;
+  }
+
+  .cycle-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cycle-item {
+    font-size: 14px;
+    font-weight: 300;
+    color: #5a6a7a;
+    line-height: 1.5;
+    padding-left: 16px;
+    position: relative;
+  }
+
+  .cycle-item::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: #ffd25033;
+  }
+
+  .cycle-night .cycle-item::before {
+    color: #4488cc33;
+  }
+
+  /* ---- EROSION TRACKER ---- */
+  .erosion {
+    margin-bottom: 50px;
+    padding: 28px;
+    border: 1px solid #ffd25010;
+  }
+
+  .erosion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .erosion-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #ffd25044;
+    text-transform: uppercase;
+  }
+
+  .erosion-day {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: #3a4555;
+  }
+
+  .erosion-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .erosion-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .erosion-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #3a4555;
+    width: 100px;
+    text-transform: uppercase;
+    flex-shrink: 0;
+  }
+
+  .erosion-track {
+    flex: 1;
+    height: 8px;
+    background: #111520;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .erosion-fill {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width 1s;
+  }
+
+  .fill-island { width: 72%; background: linear-gradient(90deg, #557755, #335533); }
+  .fill-fuel { width: 45%; background: linear-gradient(90deg, #ffd250, #cc9520); }
+  .fill-light { width: 88%; background: linear-gradient(90deg, #ffd250, #ffaa20); }
+  .fill-sanity { width: 60%; background: linear-gradient(90deg, #4488cc, #2255aa); }
+  .fill-dark { width: 34%; background: linear-gradient(90deg, #882244, #cc3355); }
+
+  .erosion-val {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: #4a5565;
+    width: 40px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  /* ---- KEYWORDS ---- */
+  .keywords {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+
+  .keyword {
+    padding: 7px 16px;
+    border: 1px solid #ffd25015;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #3a4555;
+    transition: all 0.3s;
+  }
+
+  .keyword:hover {
+    border-color: #ffd25055;
+    color: #ffd250;
+  }
+
+  .keyword.warm {
+    border-color: #ffd25030;
+    color: #ffd25088;
+  }
+
+  .keyword.cold {
+    border-color: #4488cc25;
+    color: #4488cc77;
+  }
+
+  /* ---- PILLARS ---- */
+  .pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 50px;
+  }
+
+  .pillar {
+    padding: 26px 20px;
+    border: 1px solid #1a2030;
+    background: linear-gradient(180deg, rgba(255, 210, 80, 0.02), transparent);
+  }
+
+  .pillar-num {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: #ffd25012;
+    margin-bottom: 8px;
+  }
+
+  .pillar-title {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #d0c8b8;
+    margin-bottom: 10px;
+  }
+
+  .pillar-desc {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #4a5a6a;
+  }
+
+  /* ---- PALETTE ---- */
+  .palette-section { margin-bottom: 50px; }
+
+  .palette {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    height: 50px;
+  }
+
+  .swatch {
+    flex: 1;
+    max-width: 100px;
+    position: relative;
+    cursor: crosshair;
+    transition: flex 0.3s;
+  }
+
+  .swatch:hover { flex: 1.5; }
+
+  .swatch::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7px;
+    letter-spacing: 2px;
+    color: #2a3545;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .swatch:hover::after { opacity: 1; }
+
+  /* ---- SPECS ---- */
+  .specs {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 28px;
+    border-top: 1px solid #1a2030;
+    border-bottom: 1px solid #1a2030;
+    margin-bottom: 50px;
+  }
+
+  .spec-value {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffd250;
+    text-align: center;
+  }
+
+  .spec-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8px;
+    letter-spacing: 3px;
+    color: #2a3545;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  /* ---- REFERENCES ---- */
+  .references { text-align: center; }
+
+  .ref-list {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+
+  .ref-item {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: #3a4555;
+    padding-left: 14px;
+    position: relative;
+  }
+
+  .ref-item::before {
+    content: '◉';
+    position: absolute;
+    left: 0;
+    color: #ffd25033;
+    font-size: 8px;
+    top: 2px;
+  }
+
+  .footer-line {
+    text-align: center;
+    margin-top: 60px;
+    font-style: italic;
+    font-size: 14px;
+    color: #ffd25015;
+    letter-spacing: 2px;
+  }
+
+  @media (max-width: 750px) {
+    .pillars { grid-template-columns: 1fr; }
+    .cycle-section { grid-template-columns: 1fr; }
+    .cycle-day { border-right: none; border-bottom: 1px solid #ffd25010; }
+    .mood-row { grid-template-columns: 1fr; }
+    .specs { flex-wrap: wrap; gap: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-signal">● ● ● — — — ● ● ● &nbsp; Keep The Light Burning</div>
+    <div class="lighthouse-icon"></div>
+    <div class="title">
+      <div class="title-last">LAST</div>
+      <div class="title-light">LIGHT</div>
+    </div>
+    <div class="subtitle">Lighthouse Keeper Survival — Idle Horror</div>
+    <div class="tagline">"The sea is patient. The dark is not."</div>
+  </div>
+
+  <!-- Pitch -->
+  <div class="pitch">
+    <p>
+      You are the keeper of the <strong>last lighthouse</strong> on a shrinking island at the edge of the world. The sea is rising. Your job is simple: <em>keep the light burning</em>.
+    </p>
+    <p>
+      But the light doesn't just guide ships — it <strong>holds back something</strong> in the dark water. By day you scavenge, repair, and trade with passing vessels. By night you manage the beam — aim it, fuel it, choose what to reveal. <em>Things in the water react.</em> Some flee. Some are drawn closer. Some just watch.
+    </p>
+    <p>
+      The island <strong>erodes a little each day</strong>. Resources shrink. Ships come less often. The nights get longer. The fuel runs lower. The things get bolder. <em>How many nights can you last?</em>
+    </p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Mood Images -->
+  <div class="section-label">// Visual Direction</div>
+  <div class="mood-grid">
+    <div class="mood-panel hero">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=500&fit=crop&crop=bottom" alt="Lighthouse on coast"
+           onerror="this.parentElement.style.background='linear-gradient(180deg, #0d1018, #0a1520, #0a0c10)'">
+      <div class="mood-panel-label">The Last Light</div>
+      <div class="mood-panel-quote">"Still burning."</div>
+    </div>
+    <div class="mood-row">
+      <div class="mood-panel">
+        <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=600&h=360&fit=crop" alt="Dark ocean surface"
+             onerror="this.parentElement.style.background='linear-gradient(180deg, #0a1520, #0a0c10)'">
+        <div class="mood-panel-label">The Rising Sea</div>
+      </div>
+      <div class="mood-panel">
+        <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=600&h=360&fit=crop" alt="Coastal erosion cliffs"
+             onerror="this.parentElement.style.background='linear-gradient(180deg, #0d1018, #0a0c10)'">
+        <div class="mood-panel-label">The Shrinking Island</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day / Night Cycle -->
+  <div class="section-label">// The Daily Cycle</div>
+  <div class="cycle-section">
+    <div class="cycle-half cycle-day">
+      <div class="cycle-header">
+        <div class="cycle-icon">☀</div>
+        <div class="cycle-title">Day Phase</div>
+      </div>
+      <div class="cycle-items">
+        <div class="cycle-item">Scavenge the island for fuel, materials, food — less each day as the sea claims land</div>
+        <div class="cycle-item">Repair lighthouse systems — the lens, the fuel line, the foundation cracking beneath you</div>
+        <div class="cycle-item">Trade with passing ships — if any come. Barter salvage for fuel, news, hope</div>
+        <div class="cycle-item">Study recovered artifacts washed ashore — some helpful, some best left in the water</div>
+      </div>
+    </div>
+    <div class="cycle-half cycle-night">
+      <div class="cycle-header">
+        <div class="cycle-icon">🌑</div>
+        <div class="cycle-title">Night Phase</div>
+      </div>
+      <div class="cycle-items">
+        <div class="cycle-item">Manage the light — angle the beam, control fuel burn rate, choose what to illuminate</div>
+        <div class="cycle-item">Things surface in the dark water. They react to the light differently. Learn their patterns</div>
+        <div class="cycle-item">Ships may approach — guide them safe or watch them founder. Some ships aren't real</div>
+        <div class="cycle-item">If the light goes out, even for a moment — something moves closer. You hear it breathing</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Erosion Tracker -->
+  <div class="erosion">
+    <div class="erosion-header">
+      <div class="erosion-title">Station Status — Day 47</div>
+      <div class="erosion-day">Night falls in 3:42</div>
+    </div>
+    <div class="erosion-bars">
+      <div class="erosion-row">
+        <div class="erosion-label">Island Mass</div>
+        <div class="erosion-track"><div class="erosion-fill fill-island"></div></div>
+        <div class="erosion-val">72%</div>
+      </div>
+      <div class="erosion-row">
+        <div class="erosion-label">Fuel Reserve</div>
+        <div class="erosion-track"><div class="erosion-fill fill-fuel"></div></div>
+        <div class="erosion-val">45%</div>
+      </div>
+      <div class="erosion-row">
+        <div class="erosion-label">Light Power</div>
+        <div class="erosion-track"><div class="erosion-fill fill-light"></div></div>
+        <div class="erosion-val">88%</div>
+      </div>
+      <div class="erosion-row">
+        <div class="erosion-label">Keeper Sanity</div>
+        <div class="erosion-track"><div class="erosion-fill fill-sanity"></div></div>
+        <div class="erosion-val">60%</div>
+      </div>
+      <div class="erosion-row">
+        <div class="erosion-label">Dark Activity</div>
+        <div class="erosion-track"><div class="erosion-fill fill-dark"></div></div>
+        <div class="erosion-val">34%</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Keywords -->
+  <div class="section-label">// Aesthetic Keywords</div>
+  <div class="keywords">
+    <span class="keyword warm">Warm Amber Light</span>
+    <span class="keyword cold">Deep Black Sea</span>
+    <span class="keyword warm">Isolation</span>
+    <span class="keyword">Coastal Erosion</span>
+    <span class="keyword cold">Cosmic Dread</span>
+    <span class="keyword warm">Cozy Survival</span>
+    <span class="keyword">Resource Scarcity</span>
+    <span class="keyword cold">Things Below</span>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Design Pillars -->
+  <div class="section-label">// Design Pillars</div>
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-num">01</div>
+      <div class="pillar-title">The Shrinking World</div>
+      <div class="pillar-desc">The island loses land every day. Your scavenging area contracts. Resources dwindle. The lighthouse foundation weakens. The map literally gets smaller. Time pressure without a timer — the world itself is the clock.</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-num">02</div>
+      <div class="pillar-title">Light as Weapon</div>
+      <div class="pillar-desc">The beam isn't passive — you aim it, power it, modify it. Different things react differently. Some creatures flee light. Some attack the source. The beam reveals the water's secrets — but fuel is finite and the night is long.</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-num">03</div>
+      <div class="pillar-title">Cozy Dread</div>
+      <div class="pillar-desc">Inside the lighthouse: warm, safe, yours. A fire, a journal, supplies on shelves. Outside: the endless dark ocean and whatever lives in it. The tension between comfort and horror. You never see the things clearly. You don't want to.</div>
+    </div>
+  </div>
+
+  <!-- Palette -->
+  <div class="palette-section">
+    <div class="section-label">// Color Palette</div>
+    <div class="palette">
+      <div class="swatch" data-label="ABYSS" style="background: #0a0c10;"></div>
+      <div class="swatch" data-label="DEEP SEA" style="background: #0a1520;"></div>
+      <div class="swatch" data-label="BEAM" style="background: #ffd250;"></div>
+      <div class="swatch" data-label="FLAME" style="background: #cc7720;"></div>
+      <div class="swatch" data-label="SALT" style="background: #a0aab8;"></div>
+      <div class="swatch" data-label="NIGHT WATER" style="background: #1a3050;"></div>
+      <div class="swatch" data-label="DREAD" style="background: #882244;"></div>
+      <div class="swatch" data-label="FOG" style="background: #2a3545;"></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Specs -->
+  <div class="specs">
+    <div class="spec">
+      <div class="spec-value">6–8</div>
+      <div class="spec-label">Weeks Dev</div>
+    </div>
+    <div class="spec">
+      <div class="spec-value">PC</div>
+      <div class="spec-label">Platform</div>
+    </div>
+    <div class="spec">
+      <div class="spec-value">$7.99</div>
+      <div class="spec-label">Price Point</div>
+    </div>
+    <div class="spec">
+      <div class="spec-value">IDLE + HORROR</div>
+      <div class="spec-label">Genre Blend</div>
+    </div>
+    <div class="spec">
+      <div class="spec-value">SURVIVAL</div>
+      <div class="spec-label">Core Loop</div>
+    </div>
+  </div>
+
+  <!-- References -->
+  <div class="references">
+    <div class="section-label">// Reference Points</div>
+    <div class="ref-list">
+      <span class="ref-item">Dredge (oceanic horror)</span>
+      <span class="ref-item">Sunless Sea (cosmic dread)</span>
+      <span class="ref-item">The Lighthouse (film — isolation)</span>
+      <span class="ref-item">Papers Please (routine tension)</span>
+      <span class="ref-item">A Dark Room (idle dread)</span>
+    </div>
+  </div>
+
+  <div class="footer-line">The light must stay on.</div>
+
+</div>
+
+</body>
+</html>
