@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRAWL BACK — Pitch Deck (Kenmi Edition)</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Silkscreen:wght@400;700&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    /* Ghost/spectral tinted Endesga-64 */
+    --void: #0e0e1e;
+    --deep: #1a1a30;
+    --mid: #282848;
+    --stone: #3a3a5c;
+    --ghost-blue: #7ab8e0;
+    --ghost-glow: #a0d8ff;
+    --ghost-dim: #3a6080;
+    --ecto: #40e8b0;
+    --ecto-dark: #208860;
+    --gold: #fee761;
+    --gold-dark: #d4a020;
+    --cream: #e0d8e8;
+    --moss: #63c64d;
+    --moss-dark: #327345;
+    --wood: #d9a066;
+    --wood-dark: #8a503e;
+    --blood: #e8524e;
+    --magic: #8b5ec6;
+    --lava: #ff6040;
+    --bone: #d8d0c0;
+  }
+
+  body {
+    background: var(--void);
+    color: var(--cream);
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  /* Ghost glow — spectral light emanating upward */
+  body::before {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
+    height: 600px;
+    background: radial-gradient(ellipse at 50% 100%, rgba(122, 184, 224, 0.05) 0%, rgba(64, 232, 176, 0.02) 30%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+    animation: ghostPulse 6s ease-in-out infinite;
+  }
+
+  @keyframes ghostPulse {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
+
+  /* Floating particle effect */
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background:
+      radial-gradient(1px 1px at 20% 30%, rgba(160, 216, 255, 0.15), transparent),
+      radial-gradient(1px 1px at 60% 50%, rgba(64, 232, 176, 0.1), transparent),
+      radial-gradient(1px 1px at 80% 20%, rgba(160, 216, 255, 0.1), transparent),
+      radial-gradient(1px 1px at 40% 70%, rgba(64, 232, 176, 0.08), transparent),
+      radial-gradient(1px 1px at 10% 80%, rgba(160, 216, 255, 0.12), transparent),
+      radial-gradient(1px 1px at 90% 60%, rgba(64, 232, 176, 0.06), transparent);
+    pointer-events: none;
+    z-index: 0;
+    animation: particleDrift 20s linear infinite;
+  }
+
+  @keyframes particleDrift {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-40px); }
+  }
+
+  .container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ============ HEADER ============ */
+  .header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .pack-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 18px;
+    background: var(--deep);
+    border: 2px solid var(--mid);
+    border-radius: 6px;
+    font-family: 'Silkscreen', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--ghost-blue);
+    margin-bottom: 22px;
+  }
+
+  .pack-badge .dot {
+    width: 6px;
+    height: 6px;
+    background: var(--ecto);
+    border-radius: 50%;
+    animation: dotPulse 2s infinite;
+    box-shadow: 0 0 6px rgba(64, 232, 176, 0.4);
+  }
+
+  @keyframes dotPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  /* Ghost icon */
+  .ghost-icon {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ghost-icon::before {
+    content: '👻';
+    font-size: 44px;
+    filter: drop-shadow(0 0 12px rgba(122, 184, 224, 0.4));
+    animation: ghostFloat 3s ease-in-out infinite;
+  }
+
+  @keyframes ghostFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+
+  .title {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  .title-crawl {
+    font-size: clamp(44px, 8vw, 72px);
+    color: var(--cream);
+    display: block;
+  }
+
+  .title-back {
+    font-size: clamp(52px, 10vw, 86px);
+    display: block;
+    background: linear-gradient(180deg, var(--ghost-glow), var(--ecto) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 20px rgba(64, 232, 176, 0.15));
+  }
+
+  .subtitle {
+    font-family: 'Silkscreen', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--stone);
+    margin-top: 12px;
+  }
+
+  .tagline {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--ghost-dim);
+    margin-top: 16px;
+    font-style: italic;
+  }
+
+  /* ============ DIVIDER ============ */
+  .divider {
+    height: 4px;
+    margin: 36px 0;
+    background: repeating-linear-gradient(90deg, var(--mid) 0px, var(--mid) 8px, transparent 8px, transparent 12px);
+    opacity: 0.3;
+  }
+
+  .section-label {
+    font-family: 'Silkscreen', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--ghost-blue);
+    text-align: center;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .section-label::before, .section-label::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: var(--mid);
+  }
+
+  /* ============ PITCH ============ */
+  .pitch {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    padding: 30px 34px;
+    background: var(--deep);
+    border: 3px solid var(--mid);
+    border-radius: 4px;
+    position: relative;
+  }
+
+  .pitch::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 20%;
+    right: 20%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--ghost-blue), var(--ecto));
+    opacity: 0.3;
+  }
+
+  .pitch p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #9898b8;
+    margin-bottom: 14px;
+  }
+
+  .pitch p:last-child { margin-bottom: 0; }
+  .pitch strong { color: var(--ghost-glow); font-weight: 600; }
+  .pitch em { color: var(--ecto); font-style: normal; font-weight: 600; }
+
+  /* ============ KENMI VISUAL PREVIEW ============ */
+  .preview-section { margin-bottom: 40px; }
+
+  .preview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+  }
+
+  .preview-cell {
+    aspect-ratio: 4/3;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--mid);
+    border-radius: 4px;
+    background: var(--deep);
+  }
+
+  .preview-cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: pixelated;
+    transition: transform 0.4s;
+    /* Ghostly tint on the art */
+    filter: brightness(0.7) saturate(0.6) hue-rotate(10deg);
+  }
+
+  .preview-cell:hover img {
+    transform: scale(1.06);
+    filter: brightness(0.85) saturate(0.8) hue-rotate(10deg);
+  }
+
+  .preview-cell::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, transparent 40%, rgba(14, 14, 30, 0.6)),
+      radial-gradient(ellipse at center, rgba(122, 184, 224, 0.03), transparent 70%);
+    pointer-events: none;
+  }
+
+  .preview-label {
+    position: absolute;
+    bottom: 6px;
+    left: 8px;
+    font-family: 'Silkscreen', monospace;
+    font-size: 8px;
+    letter-spacing: 2px;
+    color: var(--ghost-blue);
+    opacity: 0.7;
+    z-index: 2;
+  }
+
+  .preview-floor {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    font-family: 'Silkscreen', monospace;
+    font-size: 7px;
+    letter-spacing: 1px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    z-index: 2;
+  }
+
+  .floor-deep { background: var(--lava); color: #fff; opacity: 0.8; }
+  .floor-mid { background: var(--magic); color: #fff; opacity: 0.8; }
+  .floor-top { background: var(--moss); color: #fff; opacity: 0.8; }
+
+  /* ============ THE VERTICAL DUNGEON (floor map) ============ */
+  .dungeon-map {
+    margin-bottom: 40px;
+    background: var(--deep);
+    border: 3px solid var(--mid);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .dungeon-map-header {
+    padding: 14px 20px;
+    background: var(--mid);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .map-title {
+    font-family: 'Silkscreen', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--ghost-blue);
+  }
+
+  .map-note {
+    font-size: 10px;
+    color: var(--stone);
+  }
+
+  /* Arrow showing upward direction */
+  .direction-arrow {
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    bottom: 20px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.15;
+  }
+
+  .direction-arrow::before {
+    content: '▲';
+    font-size: 20px;
+    color: var(--ghost-glow);
+  }
+
+  .direction-arrow::after {
+    content: '';
+    width: 2px;
+    flex: 1;
+    background: linear-gradient(180deg, var(--ghost-glow), transparent);
+    margin-top: 6px;
+  }
+
+  .floor-row {
+    display: flex;
+    border-bottom: 1px solid rgba(40, 40, 72, 0.4);
+    transition: background 0.2s;
+    position: relative;
+  }
+
+  .floor-row:hover { background: rgba(122, 184, 224, 0.02); }
+  .floor-row:last-child { border-bottom: none; }
+
+  .floor-num {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Silkscreen', monospace;
+    font-size: 11px;
+    border-right: 1px solid rgba(40, 40, 72, 0.3);
+    flex-shrink: 0;
+  }
+
+  .floor-bar {
+    width: 5px;
+    flex-shrink: 0;
+    margin: 2px 0;
+  }
+
+  .floor-content {
+    flex: 1;
+    padding: 16px 20px;
+    padding-right: 50px;
+  }
+
+  .floor-name {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .floor-desc {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #6868a0;
+  }
+
+  .floor-pack {
+    font-family: 'Silkscreen', monospace;
+    font-size: 7px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 6px;
+  }
+
+  .floor-difficulty {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Silkscreen', monospace;
+    font-size: 9px;
+    letter-spacing: 1px;
+    flex-shrink: 0;
+  }
+
+  /* Floor-specific colors */
+  .f-surface .floor-num { color: var(--moss); }
+  .f-surface .floor-name { color: var(--moss); }
+  .f-surface .floor-bar { background: var(--moss); }
+  .f-surface .floor-pack { background: var(--moss-dark); color: var(--moss); }
+  .f-surface .floor-difficulty { color: var(--blood); }
+
+  .f-upper .floor-num { color: var(--wood); }
+  .f-upper .floor-name { color: var(--wood); }
+  .f-upper .floor-bar { background: var(--wood); }
+  .f-upper .floor-pack { background: var(--wood-dark); color: var(--wood); }
+  .f-upper .floor-difficulty { color: var(--lava); }
+
+  .f-mid .floor-num { color: var(--magic); }
+  .f-mid .floor-name { color: var(--magic); }
+  .f-mid .floor-bar { background: var(--magic); }
+  .f-mid .floor-pack { background: #3a2060; color: var(--magic); }
+  .f-mid .floor-difficulty { color: var(--gold); }
+
+  .f-deep .floor-num { color: var(--ghost-blue); }
+  .f-deep .floor-name { color: var(--ghost-blue); }
+  .f-deep .floor-bar { background: var(--ghost-blue); }
+  .f-deep .floor-pack { background: var(--ghost-dim); color: var(--ghost-blue); }
+  .f-deep .floor-difficulty { color: var(--moss); }
+
+  .f-corpse .floor-num { color: var(--ecto); }
+  .f-corpse .floor-name { color: var(--ecto); }
+  .f-corpse .floor-bar { background: var(--ecto); animation: ectoFlicker 2s infinite; }
+  .f-corpse .floor-pack { background: var(--ecto-dark); color: var(--ecto); }
+  .f-corpse .floor-difficulty { color: var(--ecto); }
+
+  @keyframes ectoFlicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  /* ============ GHOST POWERS + POSSESSION ============ */
+  .mechanics-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .mech-panel {
+    background: var(--deep);
+    border: 3px solid var(--mid);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .mech-header {
+    padding: 12px 16px;
+    background: var(--mid);
+    font-family: 'Silkscreen', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .mech-header.ghost { color: var(--ghost-blue); }
+  .mech-header.possess { color: var(--ecto); }
+
+  .mech-body { padding: 16px; }
+
+  .power {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(40, 40, 72, 0.3);
+    align-items: flex-start;
+  }
+
+  .power:last-child { border-bottom: none; }
+
+  .power-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .power-icon.ghost-power { background: rgba(122, 184, 224, 0.1); border: 1px solid rgba(122, 184, 224, 0.2); }
+  .power-icon.possess-power { background: rgba(64, 232, 176, 0.1); border: 1px solid rgba(64, 232, 176, 0.2); }
+
+  .power-info { flex: 1; }
+
+  .power-name {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cream);
+    margin-bottom: 2px;
+  }
+
+  .power-desc {
+    font-size: 11px;
+    color: #7070a0;
+    line-height: 1.4;
+  }
+
+  .power-unlock {
+    font-family: 'Silkscreen', monospace;
+    font-size: 7px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-top: 4px;
+    display: inline-block;
+    background: rgba(122, 184, 224, 0.1);
+    color: var(--ghost-dim);
+  }
+
+  /* ============ THE INVERSION (difficulty concept) ============ */
+  .inversion-section {
+    margin-bottom: 40px;
+    background: var(--deep);
+    border: 3px solid var(--mid);
+    border-radius: 4px;
+    padding: 24px;
+  }
+
+  .inversion-header {
+    font-family: 'Silkscreen', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--ghost-blue);
+    margin-bottom: 18px;
+    text-align: center;
+  }
+
+  .inversion-visual {
+    display: flex;
+    align-items: stretch;
+    gap: 3px;
+    height: 160px;
+    margin-bottom: 18px;
+  }
+
+  .inv-bar {
+    flex: 1;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+  }
+
+  .inv-fill {
+    width: 100%;
+    transition: height 0.5s;
+    border-radius: 3px 3px 0 0;
+  }
+
+  .inv-label {
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Silkscreen', monospace;
+    font-size: 7px;
+    color: var(--stone);
+    white-space: nowrap;
+    letter-spacing: 1px;
+  }
+
+  .inv-bar:nth-child(1) .inv-fill { height: 15%; background: var(--ecto); }
+  .inv-bar:nth-child(2) .inv-fill { height: 30%; background: var(--ghost-blue); }
+  .inv-bar:nth-child(3) .inv-fill { height: 50%; background: var(--magic); }
+  .inv-bar:nth-child(4) .inv-fill { height: 70%; background: var(--wood); }
+  .inv-bar:nth-child(5) .inv-fill { height: 90%; background: var(--moss); }
+  .inv-bar:nth-child(6) .inv-fill { height: 100%; background: var(--blood); }
+
+  .inversion-explain {
+    text-align: center;
+    font-size: 13px;
+    color: #7878a0;
+    margin-top: 30px;
+    line-height: 1.6;
+  }
+
+  .inversion-explain strong { color: var(--ghost-glow); }
+
+  /* ============ KENMI ASSET MAP ============ */
+  .asset-map {
+    margin-bottom: 40px;
+    background: var(--deep);
+    border: 3px solid var(--mid);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .asset-map-header {
+    padding: 14px 20px;
+    background: var(--mid);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .asset-map-title {
+    font-family: 'Silkscreen', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--ghost-blue);
+  }
+
+  .asset-map-note {
+    font-size: 10px;
+    color: var(--stone);
+  }
+
+  .asset-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    padding: 2px;
+  }
+
+  .asset-card {
+    background: rgba(14, 14, 30, 0.8);
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.2s;
+  }
+
+  .asset-card:hover { background: rgba(40, 40, 72, 0.4); }
+
+  .asset-emoji { font-size: 26px; height: 34px; display: flex; align-items: center; }
+
+  .asset-name {
+    font-family: 'Silkscreen', monospace;
+    font-size: 8px;
+    letter-spacing: 1px;
+    color: var(--ghost-blue);
+    text-align: center;
+  }
+
+  .asset-use {
+    font-size: 10px;
+    color: var(--stone);
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .asset-floor {
+    font-family: 'Silkscreen', monospace;
+    font-size: 7px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+  }
+
+  .af-deep { background: rgba(122, 184, 224, 0.1); color: var(--ghost-blue); }
+  .af-mid { background: rgba(139, 94, 198, 0.15); color: var(--magic); }
+  .af-upper { background: rgba(217, 160, 102, 0.15); color: var(--wood); }
+  .af-surface { background: rgba(99, 198, 77, 0.15); color: var(--moss); }
+  .af-all { background: rgba(64, 232, 176, 0.1); color: var(--ecto); }
+
+  /* ============ KEYWORDS ============ */
+  .keywords {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 40px;
+  }
+
+  .keyword {
+    padding: 5px 14px;
+    background: var(--deep);
+    border: 2px solid var(--mid);
+    border-radius: 20px;
+    font-family: 'Silkscreen', monospace;
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: var(--stone);
+    transition: all 0.2s;
+  }
+
+  .keyword:hover { border-color: var(--ghost-blue); color: var(--ghost-blue); }
+  .keyword.k-blue { border-color: rgba(122, 184, 224, 0.3); color: var(--ghost-blue); }
+  .keyword.k-green { border-color: rgba(64, 232, 176, 0.3); color: var(--ecto); }
+  .keyword.k-purple { border-color: rgba(139, 94, 198, 0.3); color: var(--magic); }
+
+  /* ============ PILLARS ============ */
+  .pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
+  .pillar {
+    background: var(--deep);
+    border: 3px solid var(--mid);
+    border-radius: 4px;
+    padding: 22px 18px;
+  }
+
+  .pillar-icon { font-size: 28px; margin-bottom: 8px; }
+
+  .pillar-title {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ghost-glow);
+    margin-bottom: 10px;
+  }
+
+  .pillar-desc {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #6868a0;
+  }
+
+  /* ============ PALETTE ============ */
+  .palette-section { margin-bottom: 40px; }
+
+  .palette {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .swatch {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    position: relative;
+    cursor: crosshair;
+    transition: transform 0.2s;
+    border: 2px solid rgba(255,255,255,0.05);
+  }
+
+  .swatch:hover { transform: translateY(-4px); border-color: rgba(255,255,255,0.15); }
+
+  .swatch::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Silkscreen', monospace;
+    font-size: 6px;
+    color: var(--stone);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .swatch:hover::after { opacity: 1; }
+
+  /* ============ SPECS ============ */
+  .specs {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    padding: 22px;
+    background: var(--deep);
+    border: 3px solid var(--mid);
+    border-radius: 4px;
+    margin-bottom: 40px;
+  }
+
+  .spec-value {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--ghost-glow);
+    text-align: center;
+  }
+
+  .spec-label {
+    font-family: 'Silkscreen', monospace;
+    font-size: 7px;
+    letter-spacing: 2px;
+    color: var(--stone);
+    text-align: center;
+  }
+
+  /* ============ REFERENCES ============ */
+  .references { text-align: center; margin-bottom: 30px; }
+
+  .ref-list {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .ref-item {
+    font-family: 'Silkscreen', monospace;
+    font-size: 9px;
+    color: var(--stone);
+    padding: 5px 12px;
+    background: var(--deep);
+    border: 2px solid var(--mid);
+    border-radius: 20px;
+  }
+
+  .footer-ghost {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--ghost-dim);
+    opacity: 0.4;
+  }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 800px) {
+    .pillars { grid-template-columns: 1fr; }
+    .mechanics-section { grid-template-columns: 1fr; }
+    .asset-grid { grid-template-columns: 1fr 1fr; }
+    .preview-grid { grid-template-columns: 1fr 1fr; }
+    .inversion-visual { height: 120px; }
+    .specs { flex-wrap: wrap; gap: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ====== HEADER ====== -->
+  <div class="header">
+    <div class="pack-badge">
+      <span class="dot"></span>
+      KENMI CUTE FANTASY 16x16 · GHOSTIFIED
+    </div>
+    <div class="ghost-icon"></div>
+    <div class="title">
+      <span class="title-crawl">Crawl</span>
+      <span class="title-back">Back</span>
+    </div>
+    <div class="subtitle">Reverse Dungeon Crawler · Ghost Roguelite · 16x16 Top-Down</div>
+    <div class="tagline">"You died at the bottom. Now climb."</div>
+  </div>
+
+  <!-- ====== PITCH ====== -->
+  <div class="pitch">
+    <p>
+      You were a hero. You <strong>cleared this dungeon</strong>. Every floor, every monster, every trap — defeated. Then something killed you in the deepest chamber. Now you're a <em>ghost</em>, and the dungeon has <strong>regrown around your corpse</strong>.
+    </p>
+    <p>
+      You have no body. No weapons. You're a <strong>spectral wisp</strong> at the bottom of a dungeon that's been recolonized by new monsters, overgrown with new life, and claimed by <em>new adventurers raiding your remains</em>. Your only way out is <strong>up</strong>.
+    </p>
+    <p>
+      Possess objects. Haunt the environment. <em>Manipulate rooms to create paths upward.</em> The bottom floors are empty — nobody comes this deep. The higher you climb, the <strong>more crowded it gets</strong>. Settlers, merchants, soldiers, adventuring parties — all entered from the top and spread downward. You're swimming upstream through <em>increasingly populated territory</em>. Everything in this dungeon was designed to keep things <em>in</em>.
+    </p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ====== KENMI VISUAL PREVIEW ====== -->
+  <div class="section-label">The Art (You Own It)</div>
+  <div class="preview-grid">
+    <div class="preview-cell">
+      <img src="https://img.itch.zone/aW1hZ2UvMTk5MTQ4NS8xMTcxOTQ5NS5wbmc=/original/eNxQKO.png" alt="Kenmi Dungeon"
+           onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, var(--deep), var(--mid))'">
+      <div class="preview-label">DEEP FLOORS</div>
+      <div class="preview-floor floor-deep">VOLCANO</div>
+    </div>
+    <div class="preview-cell">
+      <img src="https://img.itch.zone/aW1hZ2UvMjIyNDk3MC8xMzQ3OTk2Ny5wbmc=/original/%2FT6j0K.png" alt="Kenmi Shroomlands"
+           onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, var(--deep), #2a1a3a)'">
+      <div class="preview-label">MID FLOORS</div>
+      <div class="preview-floor floor-mid">SHROOMLANDS</div>
+    </div>
+    <div class="preview-cell">
+      <img src="https://img.itch.zone/aW1hZ2UvMTUzMzI0OC85MDA4MjMzLnBuZw==/original/KLGJ%2FZ.png" alt="Kenmi Overworld"
+           onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, var(--deep), var(--moss-dark))'">
+      <div class="preview-label">THE SURFACE</div>
+      <div class="preview-floor floor-top">RPG PACK</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ====== VERTICAL DUNGEON MAP ====== -->
+  <div class="section-label">The Dungeon (Bottom to Top)</div>
+  <div class="dungeon-map">
+    <div class="dungeon-map-header">
+      <span class="map-title">ASCENT MAP — YOU START AT THE BOTTOM</span>
+      <span class="map-note">Population increases toward surface</span>
+    </div>
+    <div class="direction-arrow"></div>
+
+    <div class="floor-row f-corpse">
+      <div class="floor-num">B5</div>
+      <div class="floor-bar"></div>
+      <div class="floor-content">
+        <div class="floor-name">Your Corpse — The Deepest Chamber</div>
+        <div class="floor-desc">This is where you died. Your body is here, and word is spreading. You wake as a wisp of ectoplasm. Down here it's silent — nobody comes this deep. Yet. Lone treasure hunters will start arriving soon, racing to loot your legendary gear.</div>
+        <div class="floor-pack">START HERE</div>
+      </div>
+      <div class="floor-difficulty">TUTORIAL</div>
+    </div>
+
+    <div class="floor-row f-deep">
+      <div class="floor-num">B4</div>
+      <div class="floor-bar"></div>
+      <div class="floor-content">
+        <div class="floor-name">The Deep Sewers — Almost Empty</div>
+        <div class="floor-desc">Too deep for most. Rats, slimes, and the occasional desperate scavenger. Nobody sets up camp this far down — the air is bad and there's nothing to loot. Easy to drift through as a ghost. The quiet before the storm.</div>
+        <div class="floor-pack">DUNGEON + SEWER</div>
+      </div>
+      <div class="floor-difficulty">EASY</div>
+    </div>
+
+    <div class="floor-row f-mid">
+      <div class="floor-num">B3</div>
+      <div class="floor-bar"></div>
+      <div class="floor-content">
+        <div class="floor-name">The Fungal Depths — Foragers & Scouts</div>
+        <div class="floor-desc">Mushroom harvesters work these corridors. Small camps of scouts mapping deeper routes. Organised parties pass through heading down to find your corpse. More eyes, more danger — but still spread thin across winding tunnels.</div>
+        <div class="floor-pack">SHROOMLANDS</div>
+      </div>
+      <div class="floor-difficulty">MEDIUM</div>
+    </div>
+
+    <div class="floor-row f-mid" style="border-color: rgba(255, 96, 64, 0.1);">
+      <div class="floor-num" style="color: var(--lava);">B2</div>
+      <div class="floor-bar" style="background: var(--lava);"></div>
+      <div class="floor-content">
+        <div class="floor-name" style="color: var(--lava);">The Volcanic Core — Mining Operations</div>
+        <div class="floor-desc">Valuable ore and lava-forged materials drew miners and mercenaries. Guarded extraction camps, patrolled tunnels, fire-resistant monsters kept as work animals. A functioning economy. They don't take kindly to ghosts disrupting production.</div>
+        <div class="floor-pack" style="background: #602010; color: var(--lava);">VOLCANO</div>
+      </div>
+      <div class="floor-difficulty" style="color: var(--lava);">HARD</div>
+    </div>
+
+    <div class="floor-row f-upper">
+      <div class="floor-num">B1</div>
+      <div class="floor-bar"></div>
+      <div class="floor-content">
+        <div class="floor-name">The Upper Halls — A Small City</div>
+        <div class="floor-desc">Closest to the entrance, most populated. Orc war camps, merchant stalls, guard rotations, taverns carved into old boss chambers. A functioning military settlement. Hundreds of inhabitants. Navigating this as a ghost means threading through a crowd that would panic if they saw you.</div>
+        <div class="floor-pack">WAR CAMP + DUNGEON</div>
+      </div>
+      <div class="floor-difficulty">VERY HARD</div>
+    </div>
+
+    <div class="floor-row f-surface">
+      <div class="floor-num">SURFACE</div>
+      <div class="floor-bar"></div>
+      <div class="floor-content">
+        <div class="floor-name">The Overworld — A Village That Forgot</div>
+        <div class="floor-desc">A full village sits over the dungeon entrance. Families, farms, a market square. They don't think of what's beneath them. The final challenge: escape into a world full of people who have no idea a ghost is rising through their foundations. Or announce yourself.</div>
+        <div class="floor-pack">RPG OVERWORLD</div>
+      </div>
+      <div class="floor-difficulty">FINAL</div>
+    </div>
+  </div>
+
+  <!-- ====== GHOST POWERS + POSSESSION ====== -->
+  <div class="section-label">How You Play (Without a Body)</div>
+  <div class="mechanics-section">
+    <div class="mech-panel">
+      <div class="mech-header ghost">👻 GHOST ABILITIES</div>
+      <div class="mech-body">
+        <div class="power">
+          <div class="power-icon ghost-power">💨</div>
+          <div class="power-info">
+            <div class="power-name">Phase Drift</div>
+            <div class="power-desc">Move through walls and obstacles as a wisp. Can't interact with anything. Your base movement form.</div>
+            <div class="power-unlock">INNATE</div>
+          </div>
+        </div>
+        <div class="power">
+          <div class="power-icon ghost-power">👁️</div>
+          <div class="power-info">
+            <div class="power-name">Death Sight</div>
+            <div class="power-desc">See the dungeon as it was when you were alive. Ghost vision overlay reveals old paths, hidden doors, and your original trail.</div>
+            <div class="power-unlock">FLOOR B4</div>
+          </div>
+        </div>
+        <div class="power">
+          <div class="power-icon ghost-power">❄️</div>
+          <div class="power-info">
+            <div class="power-name">Chill Aura</div>
+            <div class="power-desc">Slow nearby enemies. Extinguish small fires. The cold of the grave follows you. Monsters instinctively avoid your presence.</div>
+            <div class="power-unlock">FLOOR B3</div>
+          </div>
+        </div>
+        <div class="power">
+          <div class="power-icon ghost-power">💀</div>
+          <div class="power-info">
+            <div class="power-name">Memory Echo</div>
+            <div class="power-desc">Project a phantom of your living self for 5 seconds. It can trigger pressure plates, distract enemies, and open doors that require a physical body.</div>
+            <div class="power-unlock">FLOOR B1</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mech-panel">
+      <div class="mech-header possess">🟢 POSSESSION TARGETS</div>
+      <div class="mech-body">
+        <div class="power">
+          <div class="power-icon possess-power">🪑</div>
+          <div class="power-info">
+            <div class="power-name">Furniture & Props</div>
+            <div class="power-desc">Possess chairs, barrels, crates. Slide them to block paths, create bridges, or crush enemies. The dungeon's clutter becomes your weapon.</div>
+          </div>
+        </div>
+        <div class="power">
+          <div class="power-icon possess-power">⚙️</div>
+          <div class="power-info">
+            <div class="power-name">Traps & Mechanisms</div>
+            <div class="power-desc">Spike traps, crossbow turrets, gates, levers. Activate them out of sequence. Turn the dungeon's defenses against its new occupants.</div>
+          </div>
+        </div>
+        <div class="power">
+          <div class="power-icon possess-power">🔥</div>
+          <div class="power-info">
+            <div class="power-name">Torches & Light</div>
+            <div class="power-desc">Extinguish or ignite. Plunge rooms into darkness. Lure enemies toward light. Control what they can and can't see.</div>
+          </div>
+        </div>
+        <div class="power">
+          <div class="power-icon possess-power">⚔️</div>
+          <div class="power-info">
+            <div class="power-name">Your Old Gear</div>
+            <div class="power-desc">If you find pieces of your legendary equipment (stolen by adventurers, scattered across floors), possess them briefly for devastating attacks. Rare. Powerful. Temporary.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== THE INVERSION ====== -->
+  <div class="section-label">The Core Twist</div>
+  <div class="inversion-section">
+    <div class="inversion-header">DIFFICULTY = POPULATION DENSITY</div>
+    <div class="inversion-visual">
+      <div class="inv-bar"><div class="inv-fill"></div><div class="inv-label">B5 CORPSE</div></div>
+      <div class="inv-bar"><div class="inv-fill"></div><div class="inv-label">B4 SEWERS</div></div>
+      <div class="inv-bar"><div class="inv-fill"></div><div class="inv-label">B3 SHROOMS</div></div>
+      <div class="inv-bar"><div class="inv-fill"></div><div class="inv-label">B2 VOLCANO</div></div>
+      <div class="inv-bar"><div class="inv-fill"></div><div class="inv-label">B1 WAR CAMP</div></div>
+      <div class="inv-bar"><div class="inv-fill"></div><div class="inv-label">SURFACE</div></div>
+    </div>
+    <div class="inversion-explain">
+      Everyone enters from the <strong>top</strong>. Settlers, merchants, soldiers, adventurers — they all spread <strong>downward</strong> from the entrance.<br>
+      The upper floors are packed. The deep floors are empty. Nobody bothers going that far down.<br>
+      You're at the bottom, heading up. <strong>You're swimming upstream through civilization.</strong>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ====== KENMI ASSET MAP ====== -->
+  <div class="section-label">Kenmi Pack → Floor Mapping</div>
+  <div class="asset-map">
+    <div class="asset-map-header">
+      <span class="asset-map-title">EVERY PACK = A DUNGEON FLOOR</span>
+      <span class="asset-map-note">All owned · All same palette · Zero custom art</span>
+    </div>
+    <div class="asset-grid">
+      <div class="asset-card">
+        <div class="asset-emoji">🏰</div>
+        <div class="asset-name">DUNGEON + SEWER</div>
+        <div class="asset-use">Core tileset for B4 + B1. Traps, gates, sewers, corridors</div>
+        <div class="asset-floor af-deep">B4 + B1</div>
+      </div>
+      <div class="asset-card">
+        <div class="asset-emoji">🍄</div>
+        <div class="asset-name">SHROOMLANDS</div>
+        <div class="asset-use">Floor B3 — fungal overgrowth, spore clouds, mushroom enemies</div>
+        <div class="asset-floor af-mid">FLOOR B3</div>
+      </div>
+      <div class="asset-card">
+        <div class="asset-emoji">🌋</div>
+        <div class="asset-name">VOLCANO</div>
+        <div class="asset-use">Floor B2 — lava flows, fire traps, volcanic chambers</div>
+        <div class="asset-floor af-mid">FLOOR B2</div>
+      </div>
+      <div class="asset-card">
+        <div class="asset-emoji">⚔️</div>
+        <div class="asset-name">WAR CAMP</div>
+        <div class="asset-use">Floor B1 — orc fortifications, palisades, guard posts</div>
+        <div class="asset-floor af-upper">FLOOR B1</div>
+      </div>
+      <div class="asset-card">
+        <div class="asset-emoji">🏘️</div>
+        <div class="asset-name">RPG OVERWORLD</div>
+        <div class="asset-use">Surface — the village built over the dungeon entrance</div>
+        <div class="asset-floor af-surface">SURFACE</div>
+      </div>
+      <div class="asset-card">
+        <div class="asset-emoji">👹</div>
+        <div class="asset-name">CHARACTERS</div>
+        <div class="asset-use">All enemies — slimes, skeletons, orcs. Plus adventurer NPCs</div>
+        <div class="asset-floor af-all">ALL FLOORS</div>
+      </div>
+      <div class="asset-card">
+        <div class="asset-emoji">🎒</div>
+        <div class="asset-name">UI PACK</div>
+        <div class="asset-use">Frames, icons, ghost power HUD, possession indicator</div>
+        <div class="asset-floor af-all">INTERFACE</div>
+      </div>
+      <div class="asset-card">
+        <div class="asset-emoji">🎄</div>
+        <div class="asset-name">SEASONAL</div>
+        <div class="asset-use">Bonus secret floors — haunted Christmas dungeon, Halloween wing</div>
+        <div class="asset-floor af-all">SECRETS</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ====== KEYWORDS ====== -->
+  <div class="section-label">Aesthetic Keywords</div>
+  <div class="keywords">
+    <span class="keyword k-blue">Ghost Roguelite</span>
+    <span class="keyword k-green">Possession Puzzles</span>
+    <span class="keyword">16x16 Top-Down</span>
+    <span class="keyword k-blue">Reverse Ascent</span>
+    <span class="keyword k-purple">Kenmi Aesthetic</span>
+    <span class="keyword k-green">No Custom Art</span>
+    <span class="keyword">Inverted Difficulty</span>
+    <span class="keyword k-blue">Original Concept</span>
+    <span class="keyword k-purple">Cute but Dead</span>
+  </div>
+
+  <!-- ====== PILLARS ====== -->
+  <div class="section-label">Design Pillars</div>
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-icon">👻</div>
+      <div class="pillar-title">Dead, Not Helpless</div>
+      <div class="pillar-desc">No body, no weapons — but you can possess every object in the dungeon. Furniture, traps, mechanisms, light sources, even fragments of your old legendary gear. The dungeon itself is your weapon. Every room is a puzzle of what to possess and when.</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">⬆️</div>
+      <div class="pillar-title">Up, Not Down</div>
+      <div class="pillar-desc">Every dungeon crawler goes deeper. You go up. The inversion changes everything: deeper floors are easier (recently cleared), upper floors are a nightmare (years overgrown). Each Kenmi biome pack maps to a floor. The surface is the final boss.</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">🎨</div>
+      <div class="pillar-title">Cute but Haunted</div>
+      <div class="pillar-desc">Kenmi's adorable pixel art meets ghost horror. The contrast IS the tone. Cute slimes that can kill you. A pretty mushroom forest that's suffocating. The cutest village built over your grave. The art style makes the existential dread land harder, not softer.</div>
+    </div>
+  </div>
+
+  <!-- ====== PALETTE ====== -->
+  <div class="palette-section">
+    <div class="section-label">Endesga 64 — Ghost Tinted</div>
+    <div class="palette">
+      <div class="swatch" data-label="VOID" style="background:#0e0e1e;"></div>
+      <div class="swatch" data-label="STONE" style="background:#3a3a5c;"></div>
+      <div class="swatch" data-label="GHOST" style="background:#7ab8e0;"></div>
+      <div class="swatch" data-label="ECTO" style="background:#40e8b0;"></div>
+      <div class="swatch" data-label="MOSS" style="background:#63c64d;"></div>
+      <div class="swatch" data-label="WOOD" style="background:#d9a066;"></div>
+      <div class="swatch" data-label="GOLD" style="background:#fee761;"></div>
+      <div class="swatch" data-label="LAVA" style="background:#ff6040;"></div>
+      <div class="swatch" data-label="MAGIC" style="background:#8b5ec6;"></div>
+      <div class="swatch" data-label="BONE" style="background:#d8d0c0;"></div>
+      <div class="swatch" data-label="BLOOD" style="background:#e8524e;"></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ====== SPECS ====== -->
+  <div class="specs">
+    <div class="spec">
+      <div class="spec-value">6–8</div>
+      <div class="spec-label">WEEKS DEV</div>
+    </div>
+    <div class="spec">
+      <div class="spec-value">PC</div>
+      <div class="spec-label">PLATFORM</div>
+    </div>
+    <div class="spec">
+      <div class="spec-value">$9.99</div>
+      <div class="spec-label">PRICE</div>
+    </div>
+    <div class="spec">
+      <div class="spec-value">ROGUELITE</div>
+      <div class="spec-label">CORE LOOP</div>
+    </div>
+    <div class="spec">
+      <div class="spec-value">OWNED</div>
+      <div class="spec-label">ART STATUS</div>
+    </div>
+    <div class="spec">
+      <div class="spec-value">ZERO</div>
+      <div class="spec-label">COMPETITORS</div>
+    </div>
+  </div>
+
+  <!-- ====== REFERENCES ====== -->
+  <div class="references">
+    <div class="section-label">Reference Points</div>
+    <div class="ref-list">
+      <span class="ref-item">Ghost Trick (possession)</span>
+      <span class="ref-item">Carrion (non-human player)</span>
+      <span class="ref-item">Hades (roguelite escape)</span>
+      <span class="ref-item">Dungeon Defenders (your DNA)</span>
+      <span class="ref-item">Undertale (cute + existential)</span>
+    </div>
+  </div>
+
+  <div class="footer-ghost">You died here once. You won't stay. ↑</div>
+
+</div>
+
+</body>
+</html>
