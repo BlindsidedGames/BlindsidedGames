@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LITTLE DUNGEON, BIG TROUBLE — Pitch Deck</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Silkscreen:wght@400;700&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    /* Endesga-64 core subset — matching Kenmi packs */
+    --void: #1a1a2e;
+    --dungeon: #262640;
+    --stone: #3a3a5c;
+    --stone-light: #4a4a6a;
+    --moss: #3e6e48;
+    --moss-light: #63c64d;
+    --wood: #d9a066;
+    --wood-dark: #8a503e;
+    --gold: #fee761;
+    --gold-dark: #d4a020;
+    --cream: #f0e5d8;
+    --slime-green: #92dc52;
+    --slime-dark: #4caa28;
+    --bone: #e8d8c4;
+    --blood: #e8524e;
+    --magic: #8b5ec6;
+    --water: #68aed4;
+    --ui-brown: #6a4a3a;
+    --ui-frame: #c8a87a;
+  }
+
+  body {
+    background: var(--void);
+    color: var(--cream);
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    image-rendering: auto;
+  }
+
+  /* Subtle dungeon torch flicker */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+      radial-gradient(ellipse at 20% 30%, rgba(254, 231, 97, 0.03), transparent 40%),
+      radial-gradient(ellipse at 80% 70%, rgba(254, 231, 97, 0.02), transparent 35%);
+    animation: torchFlicker 4s ease-in-out infinite alternate;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  @keyframes torchFlicker {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.7; }
+  }
+
+  .container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ============ HEADER ============ */
+  .header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .pack-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 18px;
+    background: var(--dungeon);
+    border: 2px solid var(--stone);
+    border-radius: 6px;
+    font-family: 'Silkscreen', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--gold);
+    margin-bottom: 22px;
+  }
+
+  .pack-badge .dot {
+    width: 6px;
+    height: 6px;
+    background: var(--moss-light);
+    border-radius: 50%;
+    animation: dotPulse 2s infinite;
+  }
+
+  @keyframes dotPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  /* Pixel-style mop icon */
+  .mop-icon {
+    width: 48px;
+    height: 64px;
+    margin: 0 auto 18px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    filter: drop-shadow(0 0 8px rgba(254, 231, 97, 0.2));
+  }
+
+  .title {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  .title-line1 {
+    font-size: clamp(32px, 6vw, 50px);
+    color: var(--cream);
+    display: block;
+  }
+
+  .title-line2 {
+    font-size: clamp(42px, 8vw, 70px);
+    color: var(--gold);
+    display: block;
+    text-shadow: 0 3px 0 var(--gold-dark);
+  }
+
+  .subtitle {
+    font-family: 'Silkscreen', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--stone-light);
+    margin-top: 12px;
+  }
+
+  .tagline {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--wood);
+    margin-top: 16px;
+    font-style: italic;
+  }
+
+  /* ============ DIVIDER ============ */
+  .divider {
+    height: 4px;
+    margin: 36px 0;
+    background: repeating-linear-gradient(90deg, var(--stone) 0px, var(--stone) 8px, transparent 8px, transparent 12px);
+    opacity: 0.3;
+    border-radius: 2px;
+  }
+
+  .section-label {
+    font-family: 'Silkscreen', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--gold);
+    text-align: center;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .section-label::before, .section-label::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: var(--stone);
+  }
+
+  /* ============ PITCH SCROLL ============ */
+  .pitch {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    padding: 30px 34px;
+    background: var(--dungeon);
+    border: 3px solid var(--stone);
+    border-radius: 4px;
+    position: relative;
+  }
+
+  /* Top frame decoration */
+  .pitch::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 20%;
+    right: 20%;
+    height: 3px;
+    background: var(--gold);
+    opacity: 0.3;
+  }
+
+  .pitch p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #a8a0b8;
+    margin-bottom: 14px;
+  }
+
+  .pitch p:last-child { margin-bottom: 0; }
+  .pitch strong { color: var(--gold); font-weight: 600; }
+  .pitch em { color: var(--cream); font-style: normal; font-weight: 600; }
+
+  /* ============ KENMI ASSET MAP ============ */
+  .asset-map {
+    margin-bottom: 40px;
+    background: var(--dungeon);
+    border: 3px solid var(--stone);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .asset-map-header {
+    padding: 14px 20px;
+    background: var(--stone);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .asset-map-title {
+    font-family: 'Silkscreen', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--gold);
+  }
+
+  .asset-map-note {
+    font-size: 10px;
+    color: var(--stone-light);
+  }
+
+  .asset-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    padding: 2px;
+  }
+
+  .asset-card {
+    background: rgba(26, 26, 46, 0.8);
+    padding: 18px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s;
+    position: relative;
+  }
+
+  .asset-card:hover {
+    background: rgba(58, 58, 92, 0.4);
+  }
+
+  .asset-emoji {
+    font-size: 28px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+  }
+
+  .asset-name {
+    font-family: 'Silkscreen', monospace;
+    font-size: 8px;
+    letter-spacing: 1px;
+    color: var(--ui-frame);
+    text-align: center;
+  }
+
+  .asset-use {
+    font-size: 10px;
+    color: var(--stone-light);
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .asset-tag {
+    font-family: 'Silkscreen', monospace;
+    font-size: 7px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+  }
+
+  .tag-core { background: var(--moss); color: var(--moss-light); }
+  .tag-biome { background: var(--wood-dark); color: var(--wood); }
+  .tag-ui { background: var(--magic); color: #d4b8ff; }
+  .tag-enemy { background: #6a2020; color: var(--blood); }
+
+  /* ============ THE DAILY LOOP ============ */
+  .loop-section {
+    margin-bottom: 40px;
+  }
+
+  .loop-timeline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+  }
+
+  .loop-phase {
+    padding: 22px 16px;
+    border-radius: 4px;
+    position: relative;
+  }
+
+  .phase-raid {
+    background: linear-gradient(180deg, #3a2020, var(--dungeon));
+    border: 2px solid #5a3030;
+  }
+
+  .phase-cleanup {
+    background: linear-gradient(180deg, #1a3a20, var(--dungeon));
+    border: 2px solid #2a5a30;
+  }
+
+  .phase-restock {
+    background: linear-gradient(180deg, #2a2a40, var(--dungeon));
+    border: 2px solid #4a4a6a;
+  }
+
+  .phase-night {
+    background: linear-gradient(180deg, #2a1a3a, var(--dungeon));
+    border: 2px solid #4a3060;
+  }
+
+  .phase-time {
+    font-family: 'Silkscreen', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+
+  .phase-raid .phase-time { color: var(--blood); }
+  .phase-cleanup .phase-time { color: var(--moss-light); }
+  .phase-restock .phase-time { color: var(--water); }
+  .phase-night .phase-time { color: var(--magic); }
+
+  .phase-title {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .phase-raid .phase-title { color: var(--blood); }
+  .phase-cleanup .phase-title { color: var(--moss-light); }
+  .phase-restock .phase-title { color: var(--water); }
+  .phase-night .phase-title { color: var(--magic); }
+
+  .phase-items {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .phase-item {
+    font-size: 11px;
+    color: #8880a0;
+    line-height: 1.4;
+    padding-left: 14px;
+    position: relative;
+  }
+
+  .phase-item::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    font-size: 8px;
+    color: var(--stone-light);
+  }
+
+  /* ============ WORK ORDER (the daily task list) ============ */
+  .work-order {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .order-panel {
+    background: var(--dungeon);
+    border: 3px solid var(--stone);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .order-header {
+    padding: 12px 16px;
+    background: var(--stone);
+    font-family: 'Silkscreen', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .header-gold { color: var(--gold); }
+  .header-green { color: var(--moss-light); }
+  .header-red { color: var(--blood); }
+  .header-purple { color: var(--magic); }
+
+  .order-body { padding: 16px; }
+
+  /* Task list */
+  .task {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(58, 58, 92, 0.3);
+  }
+
+  .task:last-child { border-bottom: none; }
+
+  .task-check {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--stone-light);
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    transition: all 0.2s;
+  }
+
+  .task-check.done {
+    background: var(--moss);
+    border-color: var(--moss-light);
+    color: var(--moss-light);
+  }
+
+  .task-check.done::after { content: '✓'; }
+
+  .task-text {
+    font-size: 13px;
+    color: #9090b0;
+    line-height: 1.4;
+  }
+
+  .task-text strong { color: var(--cream); font-weight: 600; }
+
+  .task.done-row .task-text {
+    text-decoration: line-through;
+    opacity: 0.4;
+  }
+
+  /* Monster coworkers */
+  .coworker {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(58, 58, 92, 0.3);
+  }
+
+  .coworker:last-child { border-bottom: none; }
+
+  .coworker-face {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+
+  .coworker-info { flex: 1; }
+
+  .coworker-name {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cream);
+  }
+
+  .coworker-role {
+    font-size: 11px;
+    color: #7070a0;
+    margin-top: 1px;
+  }
+
+  .coworker-mood {
+    font-family: 'Silkscreen', monospace;
+    font-size: 8px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+
+  .mood-happy { background: #1a3a1a; color: var(--moss-light); }
+  .mood-sad { background: #1a1a3a; color: var(--water); }
+  .mood-angry { background: #3a1a1a; color: var(--blood); }
+  .mood-love { background: #3a1a2a; color: #e880a0; }
+
+  /* ============ THE FEELS (story moments) ============ */
+  .feels-section {
+    margin-bottom: 40px;
+    background: var(--dungeon);
+    border: 3px solid var(--stone);
+    border-radius: 4px;
+    padding: 24px;
+  }
+
+  .feels-header {
+    font-family: 'Silkscreen', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--gold);
+    margin-bottom: 18px;
+    text-align: center;
+  }
+
+  .feels-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .feel-card {
+    padding: 16px;
+    border: 2px solid rgba(58, 58, 92, 0.4);
+    border-radius: 4px;
+    background: rgba(26, 26, 46, 0.5);
+    transition: border-color 0.3s;
+  }
+
+  .feel-card:hover { border-color: var(--gold-dark); }
+
+  .feel-day {
+    font-family: 'Silkscreen', monospace;
+    font-size: 8px;
+    color: var(--stone-light);
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+  }
+
+  .feel-text {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #9090b0;
+    font-style: italic;
+  }
+
+  .feel-text .heart { color: #e880a0; font-style: normal; }
+  .feel-text .sad { color: var(--water); font-style: normal; }
+  .feel-text .funny { color: var(--gold); font-style: normal; }
+
+  /* ============ KEYWORDS ============ */
+  .keywords {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 40px;
+  }
+
+  .keyword {
+    padding: 5px 14px;
+    background: var(--dungeon);
+    border: 2px solid var(--stone);
+    border-radius: 20px;
+    font-family: 'Silkscreen', monospace;
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: var(--stone-light);
+    transition: all 0.2s;
+  }
+
+  .keyword:hover { border-color: var(--gold); color: var(--gold); }
+  .keyword.k-gold { border-color: rgba(254, 231, 97, 0.3); color: var(--gold); }
+  .keyword.k-green { border-color: rgba(99, 198, 77, 0.3); color: var(--moss-light); }
+  .keyword.k-pink { border-color: rgba(232, 128, 160, 0.3); color: #e880a0; }
+
+  /* ============ PILLARS ============ */
+  .pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
+  .pillar {
+    background: var(--dungeon);
+    border: 3px solid var(--stone);
+    border-radius: 4px;
+    padding: 22px 18px;
+  }
+
+  .pillar-icon {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  .pillar-title {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+
+  .pillar-desc {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #7878a0;
+  }
+
+  /* ============ KENMI VISUAL PREVIEW ============ */
+  .preview-section {
+    margin-bottom: 40px;
+  }
+
+  .preview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+  }
+
+  .preview-cell {
+    aspect-ratio: 4/3;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--stone);
+    border-radius: 4px;
+  }
+
+  .preview-cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: pixelated;
+    transition: transform 0.4s;
+  }
+
+  .preview-cell:hover img { transform: scale(1.08); }
+
+  .preview-cell::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 50%, rgba(26, 26, 46, 0.6));
+    pointer-events: none;
+  }
+
+  .preview-label {
+    position: absolute;
+    bottom: 6px;
+    left: 8px;
+    font-family: 'Silkscreen', monospace;
+    font-size: 8px;
+    letter-spacing: 2px;
+    color: var(--gold);
+    opacity: 0.7;
+    z-index: 2;
+  }
+
+  /* ============ PALETTE ============ */
+  .palette-section { margin-bottom: 40px; }
+
+  .palette {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .swatch {
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+    position: relative;
+    cursor: crosshair;
+    transition: transform 0.2s;
+    border: 2px solid rgba(255,255,255,0.05);
+  }
+
+  .swatch:hover { transform: translateY(-4px); border-color: rgba(255,255,255,0.2); }
+
+  .swatch::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Silkscreen', monospace;
+    font-size: 6px;
+    color: var(--stone-light);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .swatch:hover::after { opacity: 1; }
+
+  /* ============ SPECS ============ */
+  .specs {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    padding: 22px;
+    background: var(--dungeon);
+    border: 3px solid var(--stone);
+    border-radius: 4px;
+    margin-bottom: 40px;
+  }
+
+  .spec-value {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--gold);
+    text-align: center;
+  }
+
+  .spec-label {
+    font-family: 'Silkscreen', monospace;
+    font-size: 7px;
+    letter-spacing: 2px;
+    color: var(--stone-light);
+    text-align: center;
+  }
+
+  /* ============ REFERENCES ============ */
+  .references { text-align: center; margin-bottom: 30px; }
+
+  .ref-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .ref-item {
+    font-family: 'Silkscreen', monospace;
+    font-size: 9px;
+    color: var(--stone-light);
+    padding: 5px 12px;
+    background: var(--dungeon);
+    border: 2px solid var(--stone);
+    border-radius: 20px;
+  }
+
+  /* ============ FOOTER ============ */
+  .footer-quote {
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--wood);
+    opacity: 0.5;
+    margin-top: 40px;
+  }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 800px) {
+    .pillars { grid-template-columns: 1fr; }
+    .work-order { grid-template-columns: 1fr; }
+    .loop-timeline { grid-template-columns: 1fr 1fr; }
+    .feels-grid { grid-template-columns: 1fr; }
+    .asset-grid { grid-template-columns: 1fr 1fr; }
+    .preview-grid { grid-template-columns: 1fr 1fr; }
+    .specs { flex-wrap: wrap; gap: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ====== HEADER ====== -->
+  <div class="header">
+    <div class="pack-badge">
+      <span class="dot"></span>
+      BUILT ON KENMI CUTE FANTASY 16x16 PACKS
+    </div>
+    <div class="mop-icon">🧹</div>
+    <div class="title">
+      <span class="title-line1">Little Dungeon,</span>
+      <span class="title-line2">Big Trouble</span>
+    </div>
+    <div class="subtitle">Dungeon Janitor Sim · 16x16 Top-Down · Pixel Feelings</div>
+    <div class="tagline">"Someone's gotta clean up after the heroes."</div>
+  </div>
+
+  <!-- ====== PITCH ====== -->
+  <div class="pitch">
+    <p>
+      You're a <strong>dungeon janitor</strong>. Not a hero. Not a boss. The guy who cleans up <em>after the adventurers leave</em>. Sweep skeleton bones. Mop slime trails. Repair smashed doors. Restock treasure chests. Reset spike traps. Feed the remaining monsters.
+    </p>
+    <p>
+      Each day a new <strong>adventuring party raids your dungeon</strong>. You watch them go through — the carnage happens in real time. Then you get the <em>day shift</em> to clean, repair, and restock before the next party arrives. Your boss — the <strong>Dungeon Lord</strong> — has expectations.
+    </p>
+    <p>
+      The twist: you start <strong>caring about both sides</strong>. The monsters are your <em>coworkers</em>. The adventurers leave thank-you notes. You find a hero's journal and it's heartbreaking. A slime follows you like a pet. The skeleton in Room 3 <strong>keeps trying to give you a flower</strong>.
+    </p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ====== KENMI ASSET MAP ====== -->
+  <div class="section-label">Kenmi Pack Coverage</div>
+  <div class="asset-map">
+    <div class="asset-map-header">
+      <span class="asset-map-title">EVERY PACK HAS A JOB</span>
+      <span class="asset-map-note">Art budget: ~$18 total · Zero custom art needed</span>
+    </div>
+    <div class="asset-grid">
+      <div class="asset-card">
+        <div class="asset-emoji">🏰</div>
+        <div class="asset-name">DUNGEON PACK</div>
+        <div class="asset-use">Core tileset — every room, trap, door, gate, sewer</div>
+        <div class="asset-tag tag-core">CORE</div>
+      </div>
+      <div class="asset-card">
+        <div class="asset-emoji">👹</div>
+        <div class="asset-name">CHARACTERS</div>
+        <div class="asset-use">Your monster coworkers — slimes, skeletons, orcs, all animated</div>
+        <div class="asset-tag tag-enemy">MONSTERS</div>
+      </div>
+      <div class="asset-card">
+        <div class="asset-emoji">🏘️</div>
+        <div class="asset-name">RPG PACK</div>
+        <div class="asset-use">Player sprite, overworld for hero arrivals, village scenes</div>
+        <div class="asset-tag tag-core">CORE</div>
+      </div>
+      <div class="asset-card">
+        <div class="asset-emoji">🎒</div>
+        <div class="asset-name">UI PACK</div>
+        <div class="asset-use">Frames, icons, fonts, cursors — the entire interface layer</div>
+        <div class="asset-tag tag-ui">UI</div>
+      </div>
+      <div class="asset-card">
+        <div class="asset-emoji">🍄</div>
+        <div class="asset-name">SHROOMLANDS</div>
+        <div class="asset-use">Mushroom wing of dungeon — unique biome rooms</div>
+        <div class="asset-tag tag-biome">BIOME</div>
+      </div>
+      <div class="asset-card">
+        <div class="asset-emoji">🌋</div>
+        <div class="asset-name">VOLCANO</div>
+        <div class="asset-use">Lava wing — hardest rooms, fire traps, boss chambers</div>
+        <div class="asset-tag tag-biome">BIOME</div>
+      </div>
+      <div class="asset-card">
+        <div class="asset-emoji">⚔️</div>
+        <div class="asset-name">WAR CAMP</div>
+        <div class="asset-use">Dungeon exterior, palisades, the front gate you repair daily</div>
+        <div class="asset-tag tag-biome">BIOME</div>
+      </div>
+      <div class="asset-card">
+        <div class="asset-emoji">🎄</div>
+        <div class="asset-name">SEASONAL</div>
+        <div class="asset-use">Holiday events — Christmas dungeon, Halloween decorations</div>
+        <div class="asset-tag tag-biome">EVENT</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== KENMI VISUAL PREVIEW ====== -->
+  <div class="section-label">The Art (Already Done)</div>
+  <div class="preview-grid">
+    <div class="preview-cell">
+      <img src="https://img.itch.zone/aW1hZ2UvMTk5MTQ4NS8xMTcxOTQ5NS5wbmc=/original/eNxQKO.png" alt="Kenmi Dungeon"
+           onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, var(--dungeon), var(--stone))'">
+      <div class="preview-label">DUNGEON ROOMS</div>
+    </div>
+    <div class="preview-cell">
+      <img src="https://img.itch.zone/aW1hZ2UvMTUzMzI0OC85MTY3Mzk3LnBuZw==/original/eBzBhN.png" alt="Kenmi Characters"
+           onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, var(--dungeon), #3a2020)'">
+      <div class="preview-label">MONSTERS</div>
+    </div>
+    <div class="preview-cell">
+      <img src="https://img.itch.zone/aW1hZ2UvMTUzMzI0OC85MDA4MjMzLnBuZw==/original/KLGJ%2FZ.png" alt="Kenmi RPG Village"
+           onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, var(--dungeon), var(--moss))'">
+      <div class="preview-label">OVERWORLD</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ====== THE DAILY LOOP ====== -->
+  <div class="section-label">The Daily Loop</div>
+  <div class="loop-timeline">
+    <div class="loop-phase phase-raid">
+      <div class="phase-time">DAWN</div>
+      <div class="phase-title">The Raid</div>
+      <div class="phase-items">
+        <div class="phase-item">Adventurers arrive at dungeon entrance</div>
+        <div class="phase-item">Watch the carnage unfold room by room</div>
+        <div class="phase-item">Monsters fight, traps trigger, loot gets grabbed</div>
+        <div class="phase-item">The party leaves (or dies trying)</div>
+      </div>
+    </div>
+    <div class="loop-phase phase-cleanup">
+      <div class="phase-time">MIDDAY</div>
+      <div class="phase-title">Cleanup</div>
+      <div class="phase-items">
+        <div class="phase-item">Sweep bones and debris</div>
+        <div class="phase-item">Mop slime trails and blood</div>
+        <div class="phase-item">Repair smashed furniture and doors</div>
+        <div class="phase-item">Collect dropped hero items (read their journals)</div>
+      </div>
+    </div>
+    <div class="loop-phase phase-restock">
+      <div class="phase-time">AFTERNOON</div>
+      <div class="phase-title">Restock</div>
+      <div class="phase-items">
+        <div class="phase-item">Reset spike traps and pressure plates</div>
+        <div class="phase-item">Refill treasure chests with loot</div>
+        <div class="phase-item">Feed surviving monsters</div>
+        <div class="phase-item">Request replacement monsters from the Lord</div>
+      </div>
+    </div>
+    <div class="loop-phase phase-night">
+      <div class="phase-time">NIGHT</div>
+      <div class="phase-title">Downtime</div>
+      <div class="phase-items">
+        <div class="phase-item">Hang out with monster coworkers</div>
+        <div class="phase-item">Upgrade your tools and janitor quarters</div>
+        <div class="phase-item">Read found journals and letters</div>
+        <div class="phase-item">Dungeon Lord gives tomorrow's orders</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ====== WORK ORDER + COWORKERS ====== -->
+  <div class="section-label">A Typical Day</div>
+  <div class="work-order">
+    <div class="order-panel">
+      <div class="order-header header-gold">📋 TODAY'S WORK ORDER — DAY 14</div>
+      <div class="order-body">
+        <div class="task done-row">
+          <div class="task-check done"></div>
+          <div class="task-text"><strong>Room 1 — Entrance Hall:</strong> Sweep broken arrow shafts. Rehang the "BEWARE" sign (again).</div>
+        </div>
+        <div class="task done-row">
+          <div class="task-check done"></div>
+          <div class="task-text"><strong>Room 3 — Bone Corridor:</strong> Reassemble Gerald. He lost his left arm in the raid. He's fine about it.</div>
+        </div>
+        <div class="task">
+          <div class="task-check"></div>
+          <div class="task-text"><strong>Room 5 — Spike Hall:</strong> 3 of 6 spike traps triggered. Reset mechanisms. Clean... residue.</div>
+        </div>
+        <div class="task">
+          <div class="task-check"></div>
+          <div class="task-text"><strong>Room 7 — Treasure Room:</strong> Heroes took everything. Restock with 40 gold, 2 potions, 1 "cursed" amulet.</div>
+        </div>
+        <div class="task">
+          <div class="task-check"></div>
+          <div class="task-text"><strong>Room 9 — Boss Chamber:</strong> The Dungeon Lord is upset about scuff marks on his throne. Priority 1.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="order-panel">
+      <div class="order-header header-green">👥 YOUR COWORKERS</div>
+      <div class="order-body">
+        <div class="coworker">
+          <div class="coworker-face" style="background:#1a3a1a">🟢</div>
+          <div class="coworker-info">
+            <div class="coworker-name">Bloop</div>
+            <div class="coworker-role">Slime · Room 2 · Follows you around after shifts</div>
+          </div>
+          <div class="coworker-mood mood-love">ATTACHED</div>
+        </div>
+        <div class="coworker">
+          <div class="coworker-face" style="background:#2a2a3a">💀</div>
+          <div class="coworker-info">
+            <div class="coworker-name">Gerald</div>
+            <div class="coworker-role">Skeleton · Room 3 · Keeps trying to give you a flower</div>
+          </div>
+          <div class="coworker-mood mood-happy">CHEERFUL</div>
+        </div>
+        <div class="coworker">
+          <div class="coworker-face" style="background:#3a2020">👹</div>
+          <div class="coworker-info">
+            <div class="coworker-name">Grumsh</div>
+            <div class="coworker-role">Orc · Room 6 · Misses the old janitor. Won't say why.</div>
+          </div>
+          <div class="coworker-mood mood-sad">QUIET</div>
+        </div>
+        <div class="coworker">
+          <div class="coworker-face" style="background:#3a1a3a">🦇</div>
+          <div class="coworker-info">
+            <div class="coworker-name">Nyx</div>
+            <div class="coworker-role">Bat Swarm · Ceiling · Angry about the new torch placement</div>
+          </div>
+          <div class="coworker-mood mood-angry">ANNOYED</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== THE FEELS ====== -->
+  <div class="section-label">Story Moments</div>
+  <div class="feels-section">
+    <div class="feels-header">THINGS THAT HAPPEN WHILE YOU MOP</div>
+    <div class="feels-grid">
+      <div class="feel-card">
+        <div class="feel-day">DAY 3</div>
+        <div class="feel-text">You find a <span class="heart">hero's journal</span> in the rubble. Last entry: "If I don't come home, tell my daughter I tried." The hero didn't make it past Room 5.</div>
+      </div>
+      <div class="feel-card">
+        <div class="feel-day">DAY 8</div>
+        <div class="feel-text">Gerald the skeleton <span class="heart">leaves a flower on your mop bucket</span> every morning. You don't know where he gets them. There are no flowers in the dungeon.</div>
+      </div>
+      <div class="feel-card">
+        <div class="feel-day">DAY 14</div>
+        <div class="feel-text">A <span class="funny">thank-you note</span> from an adventuring party taped to the dungeon door: "Cleanest dungeon we've ever raided. 5 stars. Would die here again."</div>
+      </div>
+      <div class="feel-card">
+        <div class="feel-day">DAY 22</div>
+        <div class="feel-text">Bloop the slime <span class="sad">won't leave Room 4</span>. That's where the other slimes were before yesterday's raid. You sit with Bloop for a while. You don't mop Room 4 today.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ====== KEYWORDS ====== -->
+  <div class="section-label">Aesthetic Keywords</div>
+  <div class="keywords">
+    <span class="keyword k-gold">Dungeon Janitor</span>
+    <span class="keyword k-green">Kenmi 16x16</span>
+    <span class="keyword">Top-Down Pixel Art</span>
+    <span class="keyword k-pink">Monster Coworkers</span>
+    <span class="keyword k-gold">Cleanup Sim</span>
+    <span class="keyword">Endesga 64</span>
+    <span class="keyword k-pink">Unexpected Feelings</span>
+    <span class="keyword k-green">Zero Custom Art</span>
+    <span class="keyword">Daily Work Loop</span>
+  </div>
+
+  <!-- ====== PILLARS ====== -->
+  <div class="section-label">Design Pillars</div>
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-icon">🧹</div>
+      <div class="pillar-title">The Job Is The Game</div>
+      <div class="pillar-desc">Sweeping, mopping, repairing, restocking — these ARE the mechanics. Satisfying cleanup loops. Watch a destroyed room become pristine. The dopamine is in the before/after. Viscera Cleanup Detail meets Stardew Valley's daily rhythm.</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">💀</div>
+      <div class="pillar-title">Monsters Are People</div>
+      <div class="pillar-desc">Your coworkers happen to be slimes, skeletons, and orcs. They have names, moods, and relationships. They die in raids and get replaced. You care about the replacements too. The emotional core is workplace friendships in an impossible workplace.</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">🎨</div>
+      <div class="pillar-title">Art Is Solved</div>
+      <div class="pillar-desc">Kenmi's full Cute Fantasy suite covers dungeons, enemies, villages, UI, and seasonal events. All same palette, same style. ~$18 total. You already own it. This is pure systems and writing work — no art pipeline, no scope creep from assets.</div>
+    </div>
+  </div>
+
+  <!-- ====== PALETTE ====== -->
+  <div class="palette-section">
+    <div class="section-label">Endesga 64 Subset</div>
+    <div class="palette">
+      <div class="swatch" data-label="VOID" style="background:#1a1a2e;"></div>
+      <div class="swatch" data-label="STONE" style="background:#3a3a5c;"></div>
+      <div class="swatch" data-label="MOSS" style="background:#63c64d;"></div>
+      <div class="swatch" data-label="WOOD" style="background:#d9a066;"></div>
+      <div class="swatch" data-label="GOLD" style="background:#fee761;"></div>
+      <div class="swatch" data-label="SLIME" style="background:#92dc52;"></div>
+      <div class="swatch" data-label="BONE" style="background:#e8d8c4;"></div>
+      <div class="swatch" data-label="BLOOD" style="background:#e8524e;"></div>
+      <div class="swatch" data-label="MAGIC" style="background:#8b5ec6;"></div>
+      <div class="swatch" data-label="WATER" style="background:#68aed4;"></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ====== SPECS ====== -->
+  <div class="specs">
+    <div class="spec">
+      <div class="spec-value">4–6</div>
+      <div class="spec-label">WEEKS DEV</div>
+    </div>
+    <div class="spec">
+      <div class="spec-value">PC</div>
+      <div class="spec-label">PLATFORM</div>
+    </div>
+    <div class="spec">
+      <div class="spec-value">$6.99</div>
+      <div class="spec-label">PRICE</div>
+    </div>
+    <div class="spec">
+      <div class="spec-value">SIM</div>
+      <div class="spec-label">CORE LOOP</div>
+    </div>
+    <div class="spec">
+      <div class="spec-value">~$18</div>
+      <div class="spec-label">ART COST</div>
+    </div>
+    <div class="spec">
+      <div class="spec-value">OWNED</div>
+      <div class="spec-label">PACK STATUS</div>
+    </div>
+  </div>
+
+  <!-- ====== REFERENCES ====== -->
+  <div class="references">
+    <div class="section-label">Reference Points</div>
+    <div class="ref-list">
+      <span class="ref-item">Viscera Cleanup Detail</span>
+      <span class="ref-item">Stardew Valley (daily loop)</span>
+      <span class="ref-item">Undertale (monster empathy)</span>
+      <span class="ref-item">Papers Please (routine + story)</span>
+      <span class="ref-item">PowerWash Simulator (satisfying cleanup)</span>
+    </div>
+  </div>
+
+  <div class="footer-quote">Gerald left you another flower. 🌸</div>
+
+</div>
+
+</body>
+</html>
