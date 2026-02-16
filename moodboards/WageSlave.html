@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAGE SLAVE — Mood Board & MVP</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Dela+Gothic+One&family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --grind-bg: #1a1a2e;
+    --grind-surface: #16213e;
+    --grind-accent: #0f3460;
+    --grind-text: #94a3b8;
+    --grind-highlight: #e2e8f0;
+
+    --mtx-neon-pink: #ff2d78;
+    --mtx-neon-gold: #ffd700;
+    --mtx-neon-cyan: #00f0ff;
+    --mtx-neon-purple: #b026ff;
+    --mtx-bg: #0a0a0a;
+    --mtx-surface: #1a0a2e;
+
+    --life-green: #4ade80;
+    --life-amber: #fbbf24;
+    --life-red: #ef4444;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0d0d0d;
+    color: #e2e8f0;
+    font-family: 'Outfit', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* ===== HEADER ===== */
+  .header {
+    position: relative;
+    padding: 80px 40px 60px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.015) 2px, rgba(255,255,255,0.015) 4px),
+      radial-gradient(ellipse at 30% 50%, rgba(255,45,120,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse at 70% 50%, rgba(0,240,255,0.06) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .working-title {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    letter-spacing: 0.05em;
+    background: linear-gradient(135deg, var(--grind-highlight) 0%, var(--mtx-neon-gold) 50%, var(--mtx-neon-pink) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 12px;
+    position: relative;
+  }
+
+  .subtitle {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--grind-text);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+
+  .tagline {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 300;
+    color: var(--grind-text);
+    max-width: 600px;
+    margin: 24px auto 0;
+    line-height: 1.7;
+  }
+
+  .tagline em {
+    color: var(--mtx-neon-pink);
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  /* ===== DUAL MOOD ===== */
+  .dual-mood {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    margin: 0 40px 60px;
+    position: relative;
+  }
+
+  .dual-mood::after {
+    content: 'VS';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 1.5rem;
+    color: var(--mtx-neon-gold);
+    background: #0d0d0d;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    border: 2px solid var(--mtx-neon-gold);
+    box-shadow: 0 0 20px rgba(255,215,0,0.3);
+  }
+
+  .mood-grind::after {
+    content: 'VS';
+    position: absolute;
+    bottom: -27px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 1.5rem;
+    color: var(--mtx-neon-gold);
+    background: #0d0d0d;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    border: 2px solid var(--mtx-neon-gold);
+    box-shadow: 0 0 20px rgba(255,215,0,0.3);
+  }
+
+  .mood-panel {
+    padding: 48px 36px;
+    position: relative;
+    overflow: hidden;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* GRIND SIDE */
+  .mood-grind {
+    background: var(--grind-bg);
+    border-radius: 16px 0 0 16px;
+  }
+
+  .mood-grind::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      repeating-linear-gradient(90deg, transparent 0px, transparent 59px, rgba(255,255,255,0.02) 59px, rgba(255,255,255,0.02) 60px),
+      repeating-linear-gradient(0deg, transparent 0px, transparent 59px, rgba(255,255,255,0.02) 59px, rgba(255,255,255,0.02) 60px);
+    pointer-events: none;
+  }
+
+  .mood-grind .panel-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: var(--grind-text);
+    opacity: 0.5;
+    margin-bottom: 16px;
+  }
+
+  .mood-grind h2 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1.1rem;
+    color: var(--grind-highlight);
+    margin-bottom: 24px;
+    line-height: 1.8;
+  }
+
+  .grind-vibes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .grind-vibes li {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--grind-text);
+    padding: 10px 16px;
+    background: rgba(255,255,255,0.03);
+    border-left: 3px solid var(--grind-accent);
+    border-radius: 0 6px 6px 0;
+  }
+
+  .grind-vibes li span {
+    color: var(--life-green);
+    margin-right: 8px;
+  }
+
+  /* MTX SIDE */
+  .mood-mtx {
+    background: var(--mtx-bg);
+    border-radius: 0 16px 16px 0;
+    text-align: right;
+  }
+
+  .mood-mtx::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 80% 20%, rgba(255,45,120,0.12) 0%, transparent 50%),
+      radial-gradient(circle at 20% 80%, rgba(176,38,255,0.1) 0%, transparent 50%),
+      radial-gradient(circle at 60% 60%, rgba(255,215,0,0.06) 0%, transparent 40%);
+    pointer-events: none;
+    animation: mtx-pulse 4s ease-in-out infinite alternate;
+  }
+
+  @keyframes mtx-pulse {
+    0% { opacity: 0.6; }
+    100% { opacity: 1; }
+  }
+
+  .mood-mtx .panel-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: var(--mtx-neon-pink);
+    opacity: 0.7;
+    margin-bottom: 16px;
+  }
+
+  .mood-mtx h2 {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 1.4rem;
+    background: linear-gradient(135deg, var(--mtx-neon-gold), var(--mtx-neon-pink), var(--mtx-neon-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 24px;
+    animation: shimmer 3s linear infinite;
+    background-size: 200% 100%;
+  }
+
+  @keyframes shimmer {
+    0% { background-position: 100% 0; }
+    100% { background-position: -100% 0; }
+  }
+
+  .mtx-vibes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-end;
+  }
+
+  .mtx-vibes li {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 6px 0 0 6px;
+    border-right: 3px solid;
+    position: relative;
+  }
+
+  .mtx-vibes li:nth-child(1) { color: var(--mtx-neon-pink); border-color: var(--mtx-neon-pink); background: rgba(255,45,120,0.08); }
+  .mtx-vibes li:nth-child(2) { color: var(--mtx-neon-gold); border-color: var(--mtx-neon-gold); background: rgba(255,215,0,0.06); }
+  .mtx-vibes li:nth-child(3) { color: var(--mtx-neon-cyan); border-color: var(--mtx-neon-cyan); background: rgba(0,240,255,0.06); }
+  .mtx-vibes li:nth-child(4) { color: var(--mtx-neon-purple); border-color: var(--mtx-neon-purple); background: rgba(176,38,255,0.06); }
+  .mtx-vibes li:nth-child(5) { color: var(--mtx-neon-pink); border-color: var(--mtx-neon-pink); background: rgba(255,45,120,0.06); }
+  .mtx-vibes li:nth-child(6) { color: var(--mtx-neon-gold); border-color: var(--mtx-neon-gold); background: rgba(255,215,0,0.04); }
+
+  /* ===== LIFE STAGES ===== */
+  .section-title {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 1.3rem;
+    padding: 0 40px;
+    margin-bottom: 32px;
+    color: var(--grind-highlight);
+  }
+
+  .section-title small {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--grind-text);
+    display: block;
+    margin-top: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+  }
+
+  .stages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 0 40px;
+    margin-bottom: 60px;
+  }
+
+  .stage-card {
+    background: var(--grind-surface);
+    border-radius: 12px;
+    padding: 24px 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.04);
+    transition: transform 0.2s;
+  }
+
+  .stage-card:hover {
+    transform: translateY(-2px);
+  }
+
+  .stage-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+  }
+
+  .stage-card:nth-child(1)::after { background: var(--life-green); }
+  .stage-card:nth-child(2)::after { background: var(--life-amber); }
+  .stage-card:nth-child(3)::after { background: var(--mtx-neon-cyan); }
+  .stage-card:nth-child(4)::after { background: var(--mtx-neon-pink); }
+  .stage-card:nth-child(5)::after { background: var(--mtx-neon-purple); }
+
+  .stage-age {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.6rem;
+    color: var(--grind-text);
+    margin-bottom: 8px;
+  }
+
+  .stage-name {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--grind-highlight);
+    margin-bottom: 12px;
+  }
+
+  .stage-desc {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--grind-text);
+    line-height: 1.7;
+  }
+
+  .stage-earn {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--life-green);
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  /* ===== MINI-GAMES SHOWCASE ===== */
+  .minigames-section {
+    margin: 0 40px 60px;
+    background: var(--grind-bg);
+    border-radius: 16px;
+    padding: 40px;
+    border: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .minigames-section h3 {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 1.2rem;
+    color: var(--grind-highlight);
+    margin-bottom: 8px;
+  }
+
+  .minigames-section > p {
+    font-size: 0.8rem;
+    color: var(--grind-text);
+    margin-bottom: 28px;
+    font-family: 'Space Mono', monospace;
+  }
+
+  .minigame-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+  }
+
+  .minigame-card {
+    background: rgba(255,255,255,0.02);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.04);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .minigame-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--grind-accent);
+  }
+
+  .minigame-icon {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .minigame-name {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--grind-highlight);
+    margin-bottom: 6px;
+  }
+
+  .minigame-input {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.5rem;
+    color: var(--life-green);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .minigame-desc {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--grind-text);
+    line-height: 1.7;
+  }
+
+  /* ===== STUDY SYSTEM ===== */
+  .study-section {
+    margin: 0 40px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .study-panel {
+    padding: 32px 28px;
+  }
+
+  .study-how {
+    background: var(--grind-surface);
+  }
+
+  .study-why {
+    background: var(--grind-bg);
+  }
+
+  .study-panel h4 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+  }
+
+  .study-how h4 { color: var(--life-amber); }
+  .study-why h4 { color: var(--life-green); }
+
+  .study-panel .study-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--grind-text);
+    line-height: 1.6;
+  }
+
+  .study-item .icon {
+    flex-shrink: 0;
+    font-size: 1rem;
+  }
+
+  /* ===== DARK PATTERNS GALLERY ===== */
+  .dark-patterns {
+    margin: 0 40px 60px;
+    background: var(--mtx-surface);
+    border-radius: 16px;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255,45,120,0.1);
+  }
+
+  .dark-patterns::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 10% 90%, rgba(255,215,0,0.05) 0%, transparent 40%),
+      radial-gradient(circle at 90% 10%, rgba(0,240,255,0.04) 0%, transparent 40%);
+    pointer-events: none;
+  }
+
+  .dark-patterns h3 {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 1.2rem;
+    color: var(--mtx-neon-gold);
+    margin-bottom: 8px;
+  }
+
+  .dark-patterns > p {
+    font-size: 0.8rem;
+    color: var(--grind-text);
+    margin-bottom: 28px;
+    font-family: 'Space Mono', monospace;
+  }
+
+  .patterns-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+  }
+
+  .pattern-card {
+    background: rgba(0,0,0,0.4);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .pattern-card .pattern-name {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+
+  .pattern-card:nth-child(1) .pattern-name { color: var(--mtx-neon-pink); }
+  .pattern-card:nth-child(2) .pattern-name { color: var(--mtx-neon-gold); }
+  .pattern-card:nth-child(3) .pattern-name { color: var(--mtx-neon-cyan); }
+  .pattern-card:nth-child(4) .pattern-name { color: var(--mtx-neon-purple); }
+  .pattern-card:nth-child(5) .pattern-name { color: var(--mtx-neon-pink); }
+  .pattern-card:nth-child(6) .pattern-name { color: var(--mtx-neon-gold); }
+
+  .pattern-card .pattern-desc {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--grind-text);
+    line-height: 1.7;
+  }
+
+  .pattern-card .pattern-example {
+    margin-top: 12px;
+    padding: 10px 14px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 6px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.75rem;
+    color: var(--grind-highlight);
+    font-style: italic;
+  }
+
+  /* ===== MVP PLAN ===== */
+  .mvp-section {
+    margin: 0 40px 60px;
+    padding: 40px;
+    background: var(--grind-bg);
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.04);
+    position: relative;
+  }
+
+  .mvp-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--life-green), var(--mtx-neon-gold), var(--mtx-neon-pink));
+    border-radius: 16px 16px 0 0;
+  }
+
+  .mvp-section h3 {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 1.2rem;
+    color: var(--grind-highlight);
+    margin-bottom: 8px;
+  }
+
+  .mvp-section > p {
+    font-size: 0.8rem;
+    color: var(--grind-text);
+    margin-bottom: 28px;
+    font-family: 'Space Mono', monospace;
+  }
+
+  .mvp-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .mvp-col h4 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .mvp-col:first-child h4 { color: var(--life-green); }
+  .mvp-col:last-child h4 { color: var(--mtx-neon-pink); }
+
+  .mvp-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 14px;
+    font-size: 0.82rem;
+    color: var(--grind-text);
+    line-height: 1.6;
+  }
+
+  .mvp-item .check {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+  }
+
+  .mvp-col:first-child .check {
+    background: rgba(74,222,128,0.1);
+    color: var(--life-green);
+    border: 1px solid rgba(74,222,128,0.2);
+  }
+
+  .mvp-col:last-child .check {
+    background: rgba(255,45,120,0.1);
+    color: var(--mtx-neon-pink);
+    border: 1px solid rgba(255,45,120,0.2);
+  }
+
+  /* ===== TONE STRIP ===== */
+  .tone-strip {
+    margin: 0 40px 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .tone-block {
+    padding: 32px 24px;
+    text-align: center;
+  }
+
+  .tone-block:nth-child(1) {
+    background: var(--grind-surface);
+  }
+  .tone-block:nth-child(2) {
+    background: linear-gradient(135deg, var(--grind-surface), var(--mtx-surface));
+  }
+  .tone-block:nth-child(3) {
+    background: var(--mtx-surface);
+  }
+
+  .tone-emoji {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+
+  .tone-label {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 8px;
+  }
+
+  .tone-block:nth-child(1) .tone-label { color: var(--grind-text); }
+  .tone-block:nth-child(2) .tone-label { color: var(--mtx-neon-gold); }
+  .tone-block:nth-child(3) .tone-label { color: var(--mtx-neon-pink); }
+
+  .tone-desc {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--grind-text);
+    line-height: 1.7;
+  }
+
+  /* ===== THE HOOK ===== */
+  .hook-section {
+    margin: 0 40px 60px;
+    padding: 48px 40px;
+    background: linear-gradient(135deg, rgba(255,45,120,0.06), rgba(255,215,0,0.04), rgba(0,240,255,0.03));
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid rgba(255,215,0,0.1);
+    position: relative;
+  }
+
+  .hook-section h3 {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: var(--mtx-neon-gold);
+    margin-bottom: 20px;
+  }
+
+  .hook-text {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: var(--grind-highlight);
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 24px;
+  }
+
+  .hook-text em {
+    font-style: normal;
+    background: linear-gradient(135deg, var(--mtx-neon-gold), var(--mtx-neon-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hook-sub {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--grind-text);
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    padding: 40px;
+    text-align: center;
+  }
+
+  .footer p {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--grind-text);
+    opacity: 0.4;
+    letter-spacing: 0.1em;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 768px) {
+    .dual-mood {
+      grid-template-columns: 1fr;
+      margin: 0 20px 40px;
+    }
+    .mood-grind { border-radius: 16px 16px 0 0; }
+    .mood-mtx { border-radius: 0 0 16px 16px; text-align: left; }
+    .mtx-vibes { align-items: flex-start; }
+    .mtx-vibes li { border-radius: 0 6px 6px 0; border-right: none; border-left: 3px solid; }
+    .dual-mood::after { display: none; }
+    .mood-grind::after { display: flex; }
+    .mood-grind { border-radius: 16px 16px 0 0; overflow: visible; }
+    .stages { padding: 0 20px; }
+    .minigames-section { margin: 0 20px 40px; padding: 24px; }
+    .study-section { grid-template-columns: 1fr; margin: 0 20px 40px; }
+    .dark-patterns, .mvp-section, .hook-section { margin: 0 20px 40px; padding: 24px; }
+    .mvp-columns { grid-template-columns: 1fr; }
+    .tone-strip { grid-template-columns: 1fr; margin: 0 20px 40px; }
+    .header { padding: 60px 20px 40px; }
+    .section-title { padding: 0 20px; }
+    .footer { padding: 24px 20px; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="subtitle">blindsided games presents</div>
+    <h1 class="working-title">WAGE SLAVE</h1>
+    <div class="subtitle">working title — mood board & mvp plan</div>
+    <p class="tagline">
+      An idle game where you <em>earn</em> every dollar through the active grind of life —
+      mowing lawns, washing dishes, climbing the career ladder —
+      then watch the idle side try to take it all back with every predatory trick in the book.
+    </p>
+  </header>
+
+  <!-- DUAL MOOD -->
+  <section class="dual-mood">
+    <div class="mood-panel mood-grind">
+      <div class="panel-label">Active Play — Your Life</div>
+      <h2>THE GRIND</h2>
+      <ul class="grind-vibes">
+        <li><span>></span> Each job is a mini-game, not a button</li>
+        <li><span>></span> Swipe, drag, type — you DO the work</li>
+        <li><span>></span> Muted UI. Deliberately mundane aesthetic</li>
+        <li><span>></span> Study workbooks between jobs to level stats</li>
+        <li><span>></span> Stats carry forward: Education, Fitness, Social, Sanity</li>
+        <li><span>></span> Better stats = better jobs = more cash</li>
+      </ul>
+    </div>
+    <div class="mood-panel mood-mtx">
+      <div class="panel-label">The Idle — The Store</div>
+      <h2>THE DRAIN</h2>
+      <ul class="mtx-vibes">
+        <li>Flashy. Loud. Dopamine casino</li>
+        <li>Neon gradients. Gold particles. Screenshake</li>
+        <li>BIG numbers. Fake urgency</li>
+        <li>Lootboxes. Gacha. Season passes</li>
+        <li>Designed to drain your wallet</li>
+        <li>"BEST VALUE!!!" on the worst deal</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- LIFE STAGES -->
+  <h2 class="section-title">
+    Life Stages
+    <small>Career progression = clicker progression</small>
+  </h2>
+  <section class="stages">
+    <div class="stage-card">
+      <div class="stage-age">AGE 10-15</div>
+      <div class="stage-name">Chores</div>
+      <div class="stage-desc">Mow lawns (top-down swipe to clear grass), wash dishes (drag sponge over muck), take out trash (drag bags to bin). Study workbooks to boost Education stat.</div>
+      <div class="stage-earn">$2-5 per task</div>
+    </div>
+    <div class="stage-card">
+      <div class="stage-age">AGE 16-18</div>
+      <div class="stage-name">Part-Time + School</div>
+      <div class="stage-desc">Scan groceries (drag items over scanner), flip burgers (timing mini-game), stack shelves (drag to grid). School workbooks improve stats for job applications.</div>
+      <div class="stage-earn">$8-12/hr</div>
+    </div>
+    <div class="stage-card">
+      <div class="stage-age">AGE 19-25</div>
+      <div class="stage-name">Entry Level</div>
+      <div class="stage-desc">Type emails (keyboard input), sort spreadsheets (drag rows), sit through meetings (click to stay awake). Education stat gates which jobs you qualify for.</div>
+      <div class="stage-earn">$35-50k/yr</div>
+    </div>
+    <div class="stage-card">
+      <div class="stage-age">AGE 26-40</div>
+      <div class="stage-name">Career</div>
+      <div class="stage-desc">Manage projects (prioritize task queue), give presentations (timing clicks), navigate office politics (dialog choices). Idle side goes full casino.</div>
+      <div class="stage-earn">$60-120k/yr</div>
+    </div>
+    <div class="stage-card">
+      <div class="stage-age">AGE 40+</div>
+      <div class="stage-name">Late Game</div>
+      <div class="stage-desc">Did you save anything? Or did the idle side eat it all? Retirement is the prestige layer. Your stats determine your ending.</div>
+      <div class="stage-earn">???</div>
+    </div>
+  </section>
+
+  <!-- MINI-GAMES SHOWCASE -->
+  <section class="minigames-section">
+    <h3>Mini-Game Examples</h3>
+    <p>Every job is hands-on. You don't click "work" — you DO the work.</p>
+    <div class="minigame-grid">
+      <div class="minigame-card">
+        <div class="minigame-icon">🌿</div>
+        <div class="minigame-name">Mow the Lawn</div>
+        <div class="minigame-input">Swipe / Drag</div>
+        <div class="minigame-desc">Top-down view of a yard. Swipe cursor across grass to mow it. Missed patches = less pay. Rocks slow you down.</div>
+      </div>
+      <div class="minigame-card">
+        <div class="minigame-icon">🍽️</div>
+        <div class="minigame-name">Wash Dishes</div>
+        <div class="minigame-input">Drag to Scrub</div>
+        <div class="minigame-desc">Dirty plate appears. Drag sponge over grime spots to clean. Harder food = more scrubs. Speed bonus for fast clears.</div>
+      </div>
+      <div class="minigame-card">
+        <div class="minigame-icon">🛒</div>
+        <div class="minigame-name">Scan Groceries</div>
+        <div class="minigame-input">Drag to Scanner</div>
+        <div class="minigame-desc">Items on a belt. Drag each across the scanner. Wrong orientation = beep, try again. Speed = tips.</div>
+      </div>
+      <div class="minigame-card">
+        <div class="minigame-icon">🍔</div>
+        <div class="minigame-name">Flip Burgers</div>
+        <div class="minigame-input">Timing Click</div>
+        <div class="minigame-desc">Patties on grill. Click to flip at the right moment. Too early = raw. Too late = burnt. Hit the sweet spot.</div>
+      </div>
+      <div class="minigame-card">
+        <div class="minigame-icon">📧</div>
+        <div class="minigame-name">Sort Emails</div>
+        <div class="minigame-input">Drag to Folders</div>
+        <div class="minigame-desc">Inbox fills up. Drag emails to correct folders. Mis-files lose you reputation. Boss emails are priority.</div>
+      </div>
+      <div class="minigame-card">
+        <div class="minigame-icon">📊</div>
+        <div class="minigame-name">Give Presentation</div>
+        <div class="minigame-input">Timed Clicks</div>
+        <div class="minigame-desc">Click to advance slides at the right pace. Too fast = confused audience. Too slow = bored. Social stat helps.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STUDY SYSTEM -->
+  <section class="study-section">
+    <div class="study-panel study-how">
+      <h4>Study System — How It Works</h4>
+      <div class="study-item"><span class="icon">📖</span> Workbooks appear during school/downtime phases</div>
+      <div class="study-item"><span class="icon">📄</span> Click to flip pages of lorem ipsum "textbooks"</div>
+      <div class="study-item"><span class="icon">⏱️</span> Time spent studying = XP toward stats</div>
+      <div class="study-item"><span class="icon">🎯</span> Different workbooks train different stats</div>
+      <div class="study-item"><span class="icon">😴</span> Studying drains Sanity — can't grind forever</div>
+    </div>
+    <div class="study-panel study-why">
+      <h4>Stats — Why They Matter</h4>
+      <div class="study-item"><span class="icon">🎓</span> Education gates which career path you unlock</div>
+      <div class="study-item"><span class="icon">💪</span> Fitness affects Energy pool for work shifts</div>
+      <div class="study-item"><span class="icon">🗣️</span> Social improves performance in people-facing jobs</div>
+      <div class="study-item"><span class="icon">🧠</span> Sanity is your resource cap — burn out = forced rest</div>
+      <div class="study-item"><span class="icon">🔄</span> On prestige, stats carry over partially — replayability</div>
+    </div>
+  </section>
+
+  <!-- DARK PATTERNS -->
+  <section class="dark-patterns">
+    <h3>Dark Pattern Playbook</h3>
+    <p>Every real predatory monetization trick — but the punchline is you earned this money by clicking through a 9-to-5</p>
+    <div class="patterns-grid">
+      <div class="pattern-card">
+        <div class="pattern-name">Fake Timers</div>
+        <div class="pattern-desc">"LIMITED TIME OFFER" that resets every time. Countdown hits zero, new countdown starts.</div>
+        <div class="pattern-example">"ONLY 2:34:17 LEFT! (this deal has been running for 6 months)"</div>
+      </div>
+      <div class="pattern-card">
+        <div class="pattern-name">Confusopoly Currency</div>
+        <div class="pattern-desc">Gems buy Crystals. Crystals buy Tokens. Tokens buy Shards. Nobody knows what anything costs.</div>
+        <div class="pattern-example">1 Gem = 3.7 Crystals = 0.4 Tokens = ???</div>
+      </div>
+      <div class="pattern-card">
+        <div class="pattern-name">Confirm Shaming</div>
+        <div class="pattern-desc">The "no" button is designed to make you feel bad. The "yes" button is enormous and glowing.</div>
+        <div class="pattern-example">"No thanks, I hate progress" [tiny gray text]</div>
+      </div>
+      <div class="pattern-card">
+        <div class="pattern-name">Anchoring</div>
+        <div class="pattern-desc">"BEST VALUE" tag on the $49.99 pack. The $4.99 pack exists only to make $49.99 look reasonable.</div>
+        <div class="pattern-example">$4.99 (bad) / $19.99 (ok) / $49.99 ★BEST VALUE★</div>
+      </div>
+      <div class="pattern-card">
+        <div class="pattern-name">Artificial Scarcity</div>
+        <div class="pattern-desc">"Only 3 left in stock!" for a digital item with infinite supply. FOMO as a mechanic.</div>
+        <div class="pattern-example">"🔥 47 other players are viewing this deal!"</div>
+      </div>
+      <div class="pattern-card">
+        <div class="pattern-name">Soft Lock Paywalls</div>
+        <div class="pattern-desc">Progress grinds to a halt. You CAN keep going... if you click 10,000 more times. Or just pay.</div>
+        <div class="pattern-example">"Skip 4 hours of grinding for just $2.99!"</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TONE STRIP -->
+  <section class="tone-strip">
+    <div class="tone-block">
+      <div class="tone-emoji">😐</div>
+      <div class="tone-label">The Work</div>
+      <div class="tone-desc">Deliberately tedious. The player should feel the weight of labor. Slow, methodical, real.</div>
+    </div>
+    <div class="tone-block">
+      <div class="tone-emoji">😏</div>
+      <div class="tone-label">The Satire</div>
+      <div class="tone-desc">The humor lives in the contrast. Every dark pattern is a real thing games actually do.</div>
+    </div>
+    <div class="tone-block">
+      <div class="tone-emoji">😬</div>
+      <div class="tone-label">The Point</div>
+      <div class="tone-desc">By the end, the player realizes they've felt what predatory monetization actually does.</div>
+    </div>
+  </section>
+
+  <!-- MVP -->
+  <section class="mvp-section">
+    <h3>MVP — Build This First</h3>
+    <p>Scope for week 1 sprint. Ship the loop, not the polish.</p>
+    <div class="mvp-columns">
+      <div class="mvp-col">
+        <h4>Active Side (Life)</h4>
+        <div class="mvp-item"><span class="check">□</span> Lawn mowing mini-game (swipe to clear grass)</div>
+        <div class="mvp-item"><span class="check">□</span> Dish washing mini-game (drag to scrub plates)</div>
+        <div class="mvp-item"><span class="check">□</span> One study workbook (click to flip pages, lorem ipsum, trains Education)</div>
+        <div class="mvp-item"><span class="check">□</span> Energy/Sanity bars that gate how much you can do per day</div>
+        <div class="mvp-item"><span class="check">□</span> Day cycle — work during day, study or rest at night</div>
+        <div class="mvp-item"><span class="check">□</span> First stage transition: Chores → Part-Time (gated by Education stat)</div>
+        <div class="mvp-item"><span class="check">□</span> Deliberately plain, muted UI — the mundane is the point</div>
+      </div>
+      <div class="mvp-col">
+        <h4>Idle Side (Drain)</h4>
+        <div class="mvp-item"><span class="check">□</span> Basic idle number-go-up with auto generators</div>
+        <div class="mvp-item"><span class="check">□</span> First paywall / soft lock at ~30 min mark</div>
+        <div class="mvp-item"><span class="check">□</span> One fake timer offer that never actually expires</div>
+        <div class="mvp-item"><span class="check">□</span> Confirm-shame dialog on first purchase</div>
+        <div class="mvp-item"><span class="check">□</span> At least 2 fake currencies with confusing exchange rates</div>
+        <div class="mvp-item"><span class="check">□</span> One "BEST VALUE" anchoring offer</div>
+        <div class="mvp-item"><span class="check">□</span> Flashy obnoxious neon UI — the contrast IS the joke</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE HOOK -->
+  <section class="hook-section">
+    <h3>The Elevator Pitch</h3>
+    <div class="hook-text">
+      You live your life through mini-games.<br>
+      Mow lawns. Wash dishes. Climb the ladder.<br>
+      Then an idle game tries to <em>take it all from you</em>.<br>
+      Every predatory trick is real. The only fake money is <em>yours</em>.
+    </div>
+    <div class="hook-sub">
+      Satirical incremental game. Web build. Perfect for jam/monthly release scope. Commentary through gameplay, not cutscenes.
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>BLINDSIDED GAMES — 2026 — THIS IS THE ONE</p>
+  </footer>
+
+</body>
+</html>
