@@ -1,0 +1,85 @@
+{
+    "id": "music_hard_03",
+    "title": "Hard Music Quiz 3",
+    "sections": [
+        {
+            "title": "Music",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which scale consists entirely of whole-tone intervals?",
+                    "options": [
+                        "Chromatic Scale",
+                        "Whole-Tone Scale",
+                        "Mixolydian Scale",
+                        "Dorian Mode"
+                    ],
+                    "a": "Whole-Tone Scale",
+                    "explanation": "A whole-tone scale is a hexatonic scale (six notes) consisting entirely of intervals of a whole tone, having no semitones."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Beethoven was completely deaf when he composed his Ninth Symphony.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "He lost his hearing progressively, becoming profoundly deaf by his later years, yet still composed some of his greatest works."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The original Fender Stratocaster featured a humbucking pickup.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The original Stratocasters came equipped primarily with three single-coil pickups. Humbuckers were popularized by Gibson."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Define the musical term 'counterpoint'.",
+                    "a": "Counterpoint is the relationship between musical voices that are harmonically interdependent yet independent in rhythm and contour.",
+                    "explanation": "It is a complex compositional technique closely tied to polyphony."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain what 'just intonation' is compared to 'equal temperament'.",
+                    "a": "Just intonation is a tuning system that tunes musical intervals as whole number ratios, making chords perfectly consonant. Equal temperament divides the octave into exactly mathematically equal steps.",
+                    "explanation": "Equal temperament allows modern keyboards to play in any key without unplayable dissonances."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who famously composed 'Rhapsody in Blue', attempting to fuse classical music with jazz?",
+                    "a": "George Gershwin.",
+                    "explanation": "The piece premiered in 1924 and is noted for its iconic opening clarinet glissando."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is 'musique concrète'?",
+                    "a": "Musique concrète is a type of electroacoustic music composition that utilizes recorded sounds as raw material, modifying and manipulating them via tape.",
+                    "explanation": "Developed in the 1940s, it predated synthesizer-based electronic music."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe the function of 'Phantom Power' in audio recording.",
+                    "a": "Phantom power is a DC voltage (often +48V) transmitted through microphone cables to operate microphones that contain active electronic circuitry, mostly condenser microphones.",
+                    "explanation": "Dynamic microphones, conversely, do not require phantom power."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the 'circle of fifths'?",
+                    "a": "The circle of fifths is a visual representation of the relationships among the 12 chromatic pitches, arranged sequentially in perfect fifths.",
+                    "explanation": "It is a vital tool for understanding key signatures, chords, and scales."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which romantic-era composer is most strongly associated with the 'Liebesträume' (Dreams of Love)?",
+                    "a": "Franz Liszt.",
+                    "explanation": "Liszt was a legendary piano virtuoso and a towering figure of the Romantic era."
+                }
+            ]
+        }
+    ]
+}

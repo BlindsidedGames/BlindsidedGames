@@ -1,0 +1,85 @@
+{
+  "id": "biology_medium_03",
+  "title": "Medium Biology Quiz 3",
+  "sections": [
+    {
+      "title": "Biology",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which part of a plant cell provides structural support and protection, making it rigid?",
+          "options": [
+            "Cell Membrane",
+            "Cytoplasm",
+            "Cell Wall",
+            "Nucleus"
+          ],
+          "a": "Cell Wall",
+          "explanation": "The cell wall is found outside the cell membrane in plants."
+        },
+        {
+          "type": "true-false",
+          "q": "Penicillin was discovered by studying a mold fungus.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "Alexander Fleming noticed that Penicillium mold killed surrounding bacteria."
+        },
+        {
+          "type": "true-false",
+          "q": "All animals with backbones are classified as vertebrates.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "This subphylum includes mammals, birds, reptiles, amphibians, and fish."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is a sudden, permanent change in a gene's DNA sequence called?",
+          "a": "Mutation",
+          "explanation": "Mutations are the source of new alleles in a population."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which system of the body is responsible for producing hormones?",
+          "a": "Endocrine system",
+          "explanation": "It uses glands like the pituitary and thyroid."
+        },
+        {
+          "type": "self-eval",
+          "q": "What do we call the structure formed when male and female gametes fuse?",
+          "a": "Zygote",
+          "explanation": "It's the very first cell of a new organism."
+        },
+        {
+          "type": "self-eval",
+          "q": "What carries oxygen inside a red blood cell?",
+          "a": "Hemoglobin",
+          "explanation": "It is an iron-rich protein that binds to oxygen."
+        },
+        {
+          "type": "self-eval",
+          "q": "What term refers to the variety of life in the world or in a particular habitat or ecosystem?",
+          "a": "Biodiversity",
+          "explanation": "High biodiversity often means a healthier ecosystem."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which type of blood vessel has valves to prevent backflow?",
+          "a": "Veins",
+          "explanation": "Because blood pressure in veins is low, valves are necessary."
+        },
+        {
+          "type": "self-eval",
+          "q": "What specific part of the brain is the main center for memory, learning, and conscious thought?",
+          "a": "Cerebrum",
+          "explanation": "It is the largest and uppermost portion of the brain."
+        }
+      ]
+    }
+  ]
+}

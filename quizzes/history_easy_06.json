@@ -1,0 +1,85 @@
+{
+  "id": "history_easy_06",
+  "title": "Easy History Quiz 6",
+  "sections": [
+    {
+      "title": "History",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which country sent an Armada to attack England in 1588?",
+          "options": [
+            "France",
+            "Spain",
+            "Portugal",
+            "Netherlands"
+          ],
+          "a": "Spain",
+          "explanation": "The Spanish Armada was defeated by the English navy and storms."
+        },
+        {
+          "type": "true-false",
+          "q": "Queen Victoria ruled the British Empire during the 19th century.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "The Victorian era was named after her reign (1837-1901)."
+        },
+        {
+          "type": "true-false",
+          "q": "The printing press was invented in the 20th century.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Johannes Gutenberg invented it in the 15th century."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the collective name for the first 10 amendments to the US Constitution?",
+          "a": "The Bill of Rights",
+          "explanation": "They guarantee individual liberties like freedom of speech."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who led the French army to several victories during the Hundred Years' War before being burned at the stake?",
+          "a": "Joan of Arc",
+          "explanation": "She is a national heroine of France."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which US president dropped atomic bombs on Hiroshima and Nagasaki to end WWII?",
+          "a": "Harry S. Truman",
+          "explanation": "This decision forced Japan to surrender in 1945."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the ancient Greek sporting event that we still celebrate today?",
+          "a": "The Olympic Games",
+          "explanation": "The modern Olympics began in 1896."
+        },
+        {
+          "type": "self-eval",
+          "q": "What type of massive graves did ancient Egyptian Pharaohs build?",
+          "a": "Pyramids",
+          "explanation": "The Great Pyramid of Giza is the most famous."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who painted the Mona Lisa?",
+          "a": "Leonardo da Vinci",
+          "explanation": "It is arguably the most famous painting in the world."
+        },
+        {
+          "type": "self-eval",
+          "q": "What title was given to the rulers of imperial Russia before 1917?",
+          "a": "Tsar (or Czar)",
+          "explanation": "Nicholas II was the last Tsar."
+        }
+      ]
+    }
+  ]
+}

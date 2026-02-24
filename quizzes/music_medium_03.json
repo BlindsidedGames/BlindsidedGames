@@ -1,0 +1,85 @@
+{
+    "id": "music_medium_03",
+    "title": "Medium Music Quiz 3",
+    "sections": [
+        {
+            "title": "Music",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "What does 'allegro' mean in musical tempo markings?",
+                    "options": [
+                        "Very slow",
+                        "Moderate",
+                        "Fast, quickly, and bright",
+                        "Gradually speeding up"
+                    ],
+                    "a": "Fast, quickly, and bright",
+                    "explanation": "Allegro typically refers to a brisk, uptempo pace, usually between 120 and 156 beats per minute."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The theremin is an instrument played without any physical contact.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The player manipulates electromagnetic fields between two antennas to control pitch and volume."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In sheet music, a sharp symbol (#) lowers a note by a half step.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "A sharp raises a note by a half step. A flat (b) lowers it by a half step."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What constitutes a 'power trio' in rock music?",
+                    "a": "A power trio is a rock band format consisting of an electric guitar, an electric bass, and a drum kit, without a rhythm guitarist or keyboardist.",
+                    "explanation": "Famous power trios include Rush, Nirvana, and Cream."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe what 'harmony' means in vocal performance.",
+                    "a": "Harmony occurs when multiple pitches are sung simultaneously, creating chords that complement and support the main melody.",
+                    "explanation": "It adds depth and richness to the overall sound."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the purpose of an 'amp' (amplifier)?",
+                    "a": "An amplifier takes a weak electrical signal from an instrument (like an electric guitar) or vocal microphone and boosts it so it can drive speakers and be heard clearly.",
+                    "explanation": "Amplifiers can also shape the tone and distortion of electric instruments."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which artist is known for the 1984 hit song 'Purple Rain'?",
+                    "a": "Prince.",
+                    "explanation": "He also starred in the semi-autobiographical film of the same name."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain the concept of an 'octave'.",
+                    "a": "An octave is the interval between one musical pitch and another with double or half its frequency.",
+                    "explanation": "Notes that are an octave apart sound 'the same' but in a higher or lower register."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is a 'cadence' in classical composition?",
+                    "a": "A cadence is a series of chords that concludes a musical phrase, providing a sense of resolution or resting point.",
+                    "explanation": "It functions similarly to punctuation at the end of a sentence."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the genre that combines elements of rhythm and blues, gospel, and soul, heavily popularized by Motown Records.",
+                    "a": "Motown or R&B/Soul.",
+                    "explanation": "Motown music had a distinct, polished pop appeal dubbed 'The Motown Sound'."
+                }
+            ]
+        }
+    ]
+}

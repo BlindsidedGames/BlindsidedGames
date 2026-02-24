@@ -1,0 +1,85 @@
+{
+    "id": "games_hard_03",
+    "title": "Hard Games Quiz 3",
+    "sections": [
+        {
+            "title": "Games",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "In Dungeons & Dragons (5th Edition), what ability score directly governs a character's skill in Athletics?",
+                    "options": [
+                        "Dexterity",
+                        "Constitution",
+                        "Strength",
+                        "Charisma"
+                    ],
+                    "a": "Strength",
+                    "explanation": "Athletics covers difficult situations encountering while climbing, jumping, or swimming."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The iconic video game 'E.T. the Extra-Terrestrial' is widely blamed for causing the video game crash of 1983.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Atari famously buried millions of unsold cartridges in a New Mexico landfill."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The main objective of 'Carcassonne' is to draw the longest continuous road across a map of Europe.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The objective is to score points by placing followers on cities, roads, abbeys, and fields as you place tiles."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What heavy tabletop game is designed entirely around placing uniquely shaped quilt patches onto a personal board to score points?",
+                    "a": "Patchwork.",
+                    "explanation": "The highly successful board game was designed exclusively for two players by Uwe Rosenberg."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which highly stressful, cooperative video game involves players frantically cooking meals in increasingly dangerous kitchens?",
+                    "a": "Overcooked!",
+                    "explanation": "The game requires intense communication to successfully fulfill complex orders."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What critically acclaimed 2015 game features a protagonist named 'The Hunter' exploring the gothic city of Yharnam?",
+                    "a": "Bloodborne.",
+                    "explanation": "Developed by FromSoftware, it is heavily inspired by Lovecraftian horror."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In poker terminology, what is 'the flop'?",
+                    "a": "The first three community cards drawn simultaneously face-up on the board.",
+                    "explanation": "They are placed after the initial round of betting."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What incredibly successful game involves constructing a fully functioning deck of uniquely synergizing cards to defeat a Spire?",
+                    "a": "Slay the Spire.",
+                    "explanation": "It powerfully popularized the modern digital deck-building roguelike genre."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which legendary fighting game crucially popularized the combo system accidentally through a programming bug?",
+                    "a": "Street Fighter II.",
+                    "explanation": "Developers decided to deeply integrate the bug into future game mechanics."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the primary objective of the strategy board game 'Terraforming Mars'?",
+                    "a": "Raise the temperature, oxygen level, and ocean coverage of the planet.",
+                    "explanation": "Players act as rival corporations competing for victory points."
+                }
+            ]
+        }
+    ]
+}

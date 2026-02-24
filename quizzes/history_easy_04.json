@@ -1,0 +1,85 @@
+{
+  "id": "history_easy_04",
+  "title": "Easy History Quiz 4",
+  "sections": [
+    {
+      "title": "History",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which famous document begins with 'We the People'?",
+          "options": [
+            "The Declaration of Independence",
+            "The Magna Carta",
+            "The US Constitution",
+            "The Emancipation Proclamation"
+          ],
+          "a": "The US Constitution",
+          "explanation": "It established America's national government and fundamental laws."
+        },
+        {
+          "type": "true-false",
+          "q": "Cleopatra was a queen of Ancient Egypt.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "She was the last active ruler of the Ptolemaic Kingdom of Egypt."
+        },
+        {
+          "type": "true-false",
+          "q": "The Wright brothers invented the first successful airplane.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "They achieved the first powered flight in 1903."
+        },
+        {
+          "type": "self-eval",
+          "q": "What global conflict lasted from 1914 to 1918?",
+          "a": "World War I",
+          "explanation": "It was known as the Great War at the time."
+        },
+        {
+          "type": "self-eval",
+          "q": "What American holiday celebrates the Pilgrims' harvest feast of 1621?",
+          "a": "Thanksgiving",
+          "explanation": "It is celebrated on the fourth Thursday of November."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which US president is pictured on the one-dollar bill?",
+          "a": "George Washington",
+          "explanation": "He is deeply revered as the father of the country."
+        },
+        {
+          "type": "self-eval",
+          "q": "What ancient device was used in China to calculate numbers using sliding beads?",
+          "a": "Abacus",
+          "explanation": "It is an ancient calculating tool."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which famous nurse came to prominence during the Crimean War?",
+          "a": "Florence Nightingale",
+          "explanation": "She is considered the founder of modern nursing."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the period of global economic decline that began in 1929.",
+          "a": "The Great Depression",
+          "explanation": "It started after a major stock market crash in the US."
+        },
+        {
+          "type": "self-eval",
+          "q": "What legendary ancient city was infiltrated using a giant wooden horse?",
+          "a": "Troy",
+          "explanation": "The 'Trojan Horse' allowed Greek soldiers to enter the city."
+        }
+      ]
+    }
+  ]
+}

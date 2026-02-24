@@ -1,0 +1,85 @@
+{
+  "id": "history_medium_03",
+  "title": "Medium History Quiz 3",
+  "sections": [
+    {
+      "title": "History",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which naval battle was a turning point in the Pacific Theater of WWII?",
+          "options": [
+            "Battle of the Coral Sea",
+            "Battle of Midway",
+            "Battle of Leyte Gulf",
+            "Battle of Okinawa"
+          ],
+          "a": "Battle of Midway",
+          "explanation": "The US Navy decisively defeated an attacking fleet of the Imperial Japanese Navy."
+        },
+        {
+          "type": "true-false",
+          "q": "The bubonic plague pandemic in the 14th century is often called the Black Death.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "It wiped out an estimated 30-50% of Europe's population."
+        },
+        {
+          "type": "true-false",
+          "q": "Mao Zedong was strictly a cultural figure and poet in China.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Mao Zedong was a communist revolutionary and the founding father of the People's Republic of China."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the powerful Queen of France executed by guillotine during the French Revolution?",
+          "a": "Marie Antoinette",
+          "explanation": "She was the wife of King Louis XVI."
+        },
+        {
+          "type": "self-eval",
+          "q": "What ancient trade network linked sub-Saharan Africa to the Mediterranean world?",
+          "a": "The Trans-Saharan trade routes",
+          "explanation": "Gold and salt were the primary commodities exchanged."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the name of the era of Japanese history characterized by samurai, shoguns, and isolationism closing in 1868?",
+          "a": "The Edo period (or Tokugawa shogunate)",
+          "explanation": "It was marked by internal peace but strict social order."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which King of England formed the Church of England so he could annul his marriage?",
+          "a": "King Henry VIII",
+          "explanation": "He broke away from the Pope's authority to marry Anne Boleyn."
+        },
+        {
+          "type": "self-eval",
+          "q": "What act signed by Abraham Lincoln officially freed slaves in Confederate-held territory?",
+          "a": "The Emancipation Proclamation",
+          "explanation": "It was issued during the Civil War in 1863."
+        },
+        {
+          "type": "self-eval",
+          "q": "What period of peace across the Mediterranean was established by Roman rule?",
+          "a": "Pax Romana",
+          "explanation": "It lasted for roughly 200 years, starting with Augustus."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which war famously inspired Francis Scott Key to write 'The Star-Spangled Banner'?",
+          "a": "The War of 1812",
+          "explanation": "He witnessed the bombardment of Fort McHenry by the British."
+        }
+      ]
+    }
+  ]
+}

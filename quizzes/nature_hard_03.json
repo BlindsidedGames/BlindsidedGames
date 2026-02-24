@@ -1,0 +1,85 @@
+{
+    "id": "nature_hard_03",
+    "title": "Hard Nature Quiz 3",
+    "sections": [
+        {
+            "title": "Nature",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "What is the primary gas released into the atmosphere by volcanic eruptions, aside from water vapor and carbon dioxide?",
+                    "options": [
+                        "Methane",
+                        "Sulfur dioxide",
+                        "Nitrogen",
+                        "Ozone"
+                    ],
+                    "a": "Sulfur dioxide",
+                    "explanation": "Sulfur dioxide (SO2) from eruptions can combine with water to form sulfuric acid aerosols, potentially cooling the planet significantly."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Monarch butterflies complete their annual migration from North America to Mexico within a single generation.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The migration north takes multiple successive generations to complete, though the return journey south is done by a single 'super generation'."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Pumice is the only rock that can float on water.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Because pumice consists of highly vesicular rough textured volcanic glass, it contains so many trapped gas bubbles that its density is less than water."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is 'aposematism'?",
+                    "a": "Aposematism is the use of bright warning coloration or markings by a toxic or dangerous animal to deter potential predators.",
+                    "explanation": "Poison dart frogs and monarch butterflies exhibit aposematic coloration."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain the ecological concept of 'succession'.",
+                    "a": "Ecological succession is the process of change in the species structure of an ecological community over time, often following a disturbance like a forest fire (secondary succession) or the formation of new habitat (primary succession).",
+                    "explanation": "It ultimately leads towards a climax community."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is a 'k-selected' species?",
+                    "a": "A k-selected species operates close to the carrying capacity of their environment, prioritizing the production of fewer offspring but investing high amounts of parental care to ensure survival.",
+                    "explanation": "Elephants, whales, and humans are k-selected species."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe the function of the 'xylem' in vascular plants.",
+                    "a": "The xylem is a specialized tissue that transports water and dissolved minerals upwards from the roots to the stems and leaves.",
+                    "explanation": "It also provides vital physical support for the plant."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What phenomenon causes the 'midnight sun' within the Arctic and Antarctic circles?",
+                    "a": "The axial tilt of the Earth causes regions near the poles to receive 24 hours of continuous sunlight during their respective summer solstices.",
+                    "explanation": "The Earth is tilted on its axis at approximately 23.5 degrees."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What are 'extremophiles'?",
+                    "a": "Extremophiles are organisms that thrive in physically or geochemically extreme conditions that are detrimental to most life on Earth.",
+                    "explanation": "Examples include bacteria living in boiling hydrothermal vents or deep in acidic lakes."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Define 'phenology'.",
+                    "a": "Phenology is the study of cyclic and seasonal natural phenomena, especially in relation to climate and plant and animal life.",
+                    "explanation": "Studying when blossoms appear or birds migrate each year tracks phenological changes."
+                }
+            ]
+        }
+    ]
+}

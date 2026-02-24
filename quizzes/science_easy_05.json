@@ -1,0 +1,85 @@
+{
+  "id": "science_easy_05",
+  "title": "Easy Science Quiz 5",
+  "sections": [
+    {
+      "title": "Science",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which colors make up the primary colors of light?",
+          "options": [
+            "Red, Blue, Yellow",
+            "Red, Green, Blue",
+            "Cyan, Magenta, Yellow",
+            "Orange, Purple, Green"
+          ],
+          "a": "Red, Green, Blue",
+          "explanation": "RGB are the primary colors in additive light mixing."
+        },
+        {
+          "type": "true-false",
+          "q": "Humans have four lungs.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Humans only have two lungs."
+        },
+        {
+          "type": "true-false",
+          "q": "An ostrich can fly.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Ostriches are flightless birds."
+        },
+        {
+          "type": "self-eval",
+          "q": "What planet do we live on?",
+          "a": "Earth",
+          "explanation": "Earth is the third planet from the sun."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the force that slows things down when they rub together?",
+          "a": "Friction",
+          "explanation": "Friction resists relative motion."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is a scientist who studies rocks called?",
+          "a": "Geologist",
+          "explanation": "Geology is the study of the solid Earth."
+        },
+        {
+          "type": "self-eval",
+          "q": "What do we call a caterpillar's changing phase?",
+          "a": "Chrysalis / Pupa",
+          "explanation": "A caterpillar transforms inside a chrysalis."
+        },
+        {
+          "type": "self-eval",
+          "q": "How many legs does a spider have?",
+          "a": "Eight",
+          "explanation": "Spiders are arachnids, which have eight legs."
+        },
+        {
+          "type": "self-eval",
+          "q": "What organ is found inside the skull?",
+          "a": "Brain",
+          "explanation": "The cranium protects the brain."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the chemical symbol for Oxygen?",
+          "a": "O",
+          "explanation": "O is the symbol for Oxygen on the periodic table."
+        }
+      ]
+    }
+  ]
+}

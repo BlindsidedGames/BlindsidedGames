@@ -1,0 +1,85 @@
+{
+  "id": "biology_easy_03",
+  "title": "Easy Biology Quiz 3",
+  "sections": [
+    {
+      "title": "Biology",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which of these is not an ape?",
+          "options": [
+            "Gorilla",
+            "Chimpanzee",
+            "Monkey",
+            "Orangutan"
+          ],
+          "a": "Monkey",
+          "explanation": "Monkeys generally have tails; apes do not."
+        },
+        {
+          "type": "true-false",
+          "q": "Human hair and nails are made from the same protein.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "They are both composed primarily of keratin."
+        },
+        {
+          "type": "true-false",
+          "q": "Sharks have bones.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Sharks have skeletons made of cartilage, not bone."
+        },
+        {
+          "type": "self-eval",
+          "q": "What tree produces acorns?",
+          "a": "Oak tree",
+          "explanation": "Acorns are the nuts of oak trees."
+        },
+        {
+          "type": "self-eval",
+          "q": "What do we call animals that live both in water and on land?",
+          "a": "Amphibians",
+          "explanation": "Frogs and toads are classic examples."
+        },
+        {
+          "type": "self-eval",
+          "q": "What connects our muscles to our bones?",
+          "a": "Tendons",
+          "explanation": "Tendons transmit the mechanical force of muscle contraction to the bones."
+        },
+        {
+          "type": "self-eval",
+          "q": "What internal organ stores urine?",
+          "a": "Bladder",
+          "explanation": "The urinary bladder collects waste from the kidneys."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the natural habitat of a polar bear?",
+          "a": "The Arctic / sea ice",
+          "explanation": "They live in parts of the Arctic region."
+        },
+        {
+          "type": "self-eval",
+          "q": "How many days does a caterpillar typically spend as a pupa before it becomes a butterfly?",
+          "a": "Around 1 to 2 weeks (Varies widely depending on species)",
+          "explanation": "The exact time changes based on the species and temperature."
+        },
+        {
+          "type": "self-eval",
+          "q": "What do we call animals that sleep during the day and are active at night?",
+          "a": "Nocturnal",
+          "explanation": "Owls and bats are common nocturnal animals."
+        }
+      ]
+    }
+  ]
+}

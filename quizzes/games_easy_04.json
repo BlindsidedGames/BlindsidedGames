@@ -1,0 +1,85 @@
+{
+    "id": "games_easy_04",
+    "title": "Easy Games Quiz 4",
+    "sections": [
+        {
+            "title": "Games",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which classic board game features a popping plastic bubble in the center called the 'Pop-O-Matic'?",
+                    "options": [
+                        "Sorry!",
+                        "Trouble",
+                        "Parcheesi",
+                        "Aggravation"
+                    ],
+                    "a": "Trouble",
+                    "explanation": "Players press the Pop-O-Matic to roll the die without losing it."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The main objective of the video game 'Sonic the Hedgehog' is to collect gold coins.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Sonic collects gold rings, not coins like Mario."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In a standard game of pool (8-ball), the black ball is numbered 8.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The 8-ball is the final ball a player must sink to win."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What wildly successful sandbox video game involves shooting portals to solve spatial puzzles?",
+                    "a": "Portal.",
+                    "explanation": "The player uses the Aperture Science Handheld Portal Device."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which family card game involves playing cards sequentially from 1 to 12 in order to build 'stockpiles'?",
+                    "a": "Skip-Bo.",
+                    "explanation": "The first player to empty their stockpile wins."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What colorful tile-based game requires players to create runs or sets of numbers, similar to the card game Rummy?",
+                    "a": "Rummikub.",
+                    "explanation": "Players use racks to hold their plastic tiles."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the game 'Battleship', what classic phrase do you say when your opponent guesses the coordinate of one of your ships?",
+                    "a": "You sunk my battleship! (Or simply 'Hit').",
+                    "explanation": "The goal is to sink all of your opponent's hidden naval fleet."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What incredibly popular, blocky 3D platforming video game platform allows players to create and play games made by other users, featuring 'Robux'?",
+                    "a": "Roblox.",
+                    "explanation": "The massively multiplayer platform is extremely popular with children."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which tabletop game involves trying to guess a word based on a drawing made by your teammate before time runs out?",
+                    "a": "Pictionary.",
+                    "explanation": "Drawing skills often lead to hilarious misunderstandings."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In a game of bowling, what is it called when a player knocks down all ten pins on their first roll?",
+                    "a": "A strike.",
+                    "explanation": "It is scored as 10 points plus the total of the next two rolls."
+                }
+            ]
+        }
+    ]
+}

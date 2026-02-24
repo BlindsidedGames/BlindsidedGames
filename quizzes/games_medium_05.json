@@ -1,0 +1,85 @@
+{
+    "id": "games_medium_05",
+    "title": "Medium Games Quiz 5",
+    "sections": [
+        {
+            "title": "Games",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which incredibly influential 1993 game popularized the first-person shooter genre on PC?",
+                    "options": [
+                        "Wolfenstein 3D",
+                        "Doom",
+                        "Quake",
+                        "Duke Nukem 3D"
+                    ],
+                    "a": "Doom",
+                    "explanation": "Developed by id Software, it fundamentally set the standard for 3D action games."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The objective in 'Checkers' is to capture all of your opponent's pieces.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Pieces are captured by jumping over them diagonally."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the game 'Cards Against Humanity', the player acting as the 'Card Czar' plays a white card.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The Card Czar reads the black prompt card and judges the white cards played by others."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What wildly popular racing game spin-off franchise fiercely tasks Nintendo characters with throwing colored turtle shells?",
+                    "a": "Mario Kart.",
+                    "explanation": "The chaotic multiplayer franchise is famous for ruining friendships via the blue shell."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which highly strategic, beautiful board game features players attempting to establish a dominant medieval European empire?",
+                    "a": "The Castles of Burgundy.",
+                    "explanation": "It is a heavy, celebrated 'eurogame' known for deep strategy."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What critically acclaimed 2007 game tasks the player with exploring the ruined underwater city of Rapture?",
+                    "a": "BioShock.",
+                    "explanation": "The player uses weapons and genetically modified powers called Plasmids."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What specific board game genre involves players adding new cards to their personal play area throughout the game?",
+                    "a": "Deck-building games.",
+                    "explanation": "Games like Dominion pioneered this highly popular mechanic."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the classic arcade game 'Asteroids', what abstract shape represents the player's ship?",
+                    "a": "A triangle.",
+                    "explanation": "The simple vector graphics were heavily iconic for the era."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What popular 1980 arcade game tasks the player with defending multiple cities from falling ballistic weapons?",
+                    "a": "Missile Command.",
+                    "explanation": "It was inspired by the Cold War paranoia of the time."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What massively successful 2009 sandbox game allows players to build structures out of textured cubes in a 3D world?",
+                    "a": "Minecraft.",
+                    "explanation": "Created by Markus 'Notch' Persson, it is the best-selling game of all time."
+                }
+            ]
+        }
+    ]
+}

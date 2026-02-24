@@ -1,0 +1,85 @@
+{
+    "id": "pop_culture_easy_03",
+    "title": "Easy Pop Culture Quiz 3",
+    "sections": [
+        {
+            "title": "Pop Culture",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which of these is NOT a house at Hogwarts School of Witchcraft and Wizardry?",
+                    "options": [
+                        "Gryffindor",
+                        "Ravenclaw",
+                        "Thunderbird",
+                        "Slytherin"
+                    ],
+                    "a": "Thunderbird",
+                    "explanation": "Thunderbird is a house at Ilvermorny, the American wizarding school, not Hogwarts."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Darth Vader is Luke Skywalker's father.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "This is famously revealed during the climax of 'The Empire Strikes Back'."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the game 'Minecraft', you must punch trees to get your first wood blocks.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Punching wood is the iconic first step for almost every new Minecraft survival player."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the name of the fictional town where 'Stranger Things' is set?",
+                    "a": "Hawkins, Indiana.",
+                    "explanation": "Hawkins is the epicenter of the supernatural events involving the 'Upside Down'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who is the creator of the popular sci-fi franchise 'Star Wars'?",
+                    "a": "George Lucas.",
+                    "explanation": "He directed the original 1977 film and shaped the universe for decades."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What animated movie features a snowman named Olaf who loves summer?",
+                    "a": "Frozen.",
+                    "explanation": "Olaf was magically brought to life by Princess Elsa."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who wrote the hit song 'Shape of You' released in 2017?",
+                    "a": "Ed Sheeran.",
+                    "explanation": "It became one of the best-selling digital singles of all time."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the name of the protagonist in 'The Hunger Games' series?",
+                    "a": "Katniss Everdeen.",
+                    "explanation": "She famously volunteers to take her younger sister's place in the deadly games."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which Marvel superhero is known as the 'Friendly Neighborhood' hero?",
+                    "a": "Spider-Man.",
+                    "explanation": "Peter Parker protects New York City from various villains."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What legendary hip-hop artist released the critically acclaimed album 'To Pimp a Butterfly' in 2015?",
+                    "a": "Kendrick Lamar.",
+                    "explanation": "The album won the Grammy for Best Rap Album and is considered a modern classic."
+                }
+            ]
+        }
+    ]
+}

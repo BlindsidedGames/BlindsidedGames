@@ -1,0 +1,85 @@
+{
+  "id": "biology_hard_02",
+  "title": "Hard Biology Quiz 2",
+  "sections": [
+    {
+      "title": "Biology",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "What is the name of the cycle that fixes carbon dioxide during photosynthesis?",
+          "options": [
+            "Krebs Cycle",
+            "Calvin Cycle",
+            "Citric Acid Cycle",
+            "Nitrogen Cycle"
+          ],
+          "a": "Calvin Cycle",
+          "explanation": "It takes place in the stroma of chloroplasts."
+        },
+        {
+          "type": "true-false",
+          "q": "A dominant allele will mask the expression of a recessive allele in a heterozygous individual.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "This is the principle of complete dominance."
+        },
+        {
+          "type": "true-false",
+          "q": "Prions are viruses that specifically infect bacteria.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Bacteriophages infect bacteria. Prions are misfolded proteins that cause diseases like Mad Cow."
+        },
+        {
+          "type": "self-eval",
+          "q": "What scientific term refers to programmed cell death?",
+          "a": "Apoptosis",
+          "explanation": "This is a normal part of development and maintaining tissue health."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the primary neurotransmitter involved at the neuromuscular junction to trigger muscle contraction?",
+          "a": "Acetylcholine",
+          "explanation": "It binds to receptors on the muscle fiber."
+        },
+        {
+          "type": "self-eval",
+          "q": "What organelle is responsible for breaking down cellular waste and debris?",
+          "a": "Lysosome",
+          "explanation": "They contain hydrolytic enzymes."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what specific part of the kidney are the glomeruli located?",
+          "a": "Renal cortex",
+          "explanation": "The cortex is the outer layer of the kidney."
+        },
+        {
+          "type": "self-eval",
+          "q": "What process converts nitrogen gas from the atmosphere into ammonia, making it usable for plants?",
+          "a": "Nitrogen Fixation",
+          "explanation": "This is primarily done by specialized bacteria in the soil or in root nodules."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the phase of the cell cycle where DNA is actually replicated.",
+          "a": "S Phase (Synthesis phase)",
+          "explanation": "It is part of interphase, before mitosis begins."
+        },
+        {
+          "type": "self-eval",
+          "q": "What type of organism relies on a host for survival while causing harm to the host?",
+          "a": "Parasite",
+          "explanation": "Parasitism is a type of symbiotic relationship."
+        }
+      ]
+    }
+  ]
+}

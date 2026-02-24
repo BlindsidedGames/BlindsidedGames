@@ -1,0 +1,85 @@
+{
+  "id": "biology_medium_02",
+  "title": "Medium Biology Quiz 2",
+  "sections": [
+    {
+      "title": "Biology",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which of these traits is determined entirely by genetics?",
+          "options": [
+            "Weight",
+            "Blood Type",
+            "Intelligence",
+            "Muscle Mass"
+          ],
+          "a": "Blood Type",
+          "explanation": "Blood type is directly inherited from your parents' genes."
+        },
+        {
+          "type": "true-false",
+          "q": "All bacteria are harmful to humans.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Many bacteria, such as those in our gut, are highly beneficial and necessary for health."
+        },
+        {
+          "type": "true-false",
+          "q": "A platypus is a mammal.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "It is a monotreme, a specialized group of mammals that lay eggs."
+        },
+        {
+          "type": "self-eval",
+          "q": "What specific part of the digestive system absorbs the most nutrients?",
+          "a": "Small Intestine",
+          "explanation": "Villi in the small intestine absorb nutrients into the blood."
+        },
+        {
+          "type": "self-eval",
+          "q": "What process do bacteria use to reproduce?",
+          "a": "Binary fission",
+          "explanation": "This is a form of asexual reproduction where a cell divides into two."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the primary function of white blood cells?",
+          "a": "To fight infection / immune response",
+          "explanation": "They attack viruses, bacteria, and foreign invaders."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the pigment that gives human skin, hair, and eyes their color?",
+          "a": "Melanin",
+          "explanation": "Melanin also provides some protection against UV radiation."
+        },
+        {
+          "type": "self-eval",
+          "q": "What type of joint is the human knee?",
+          "a": "Hinge joint",
+          "explanation": "It allows for bending and straightening."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which gas is arguably the most important waste product of cellular respiration in humans?",
+          "a": "Carbon dioxide",
+          "explanation": "We exhale it to prevent it from building up to toxic levels."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the science of classifying living things called?",
+          "a": "Taxonomy",
+          "explanation": "It organizes organisms into groupings like genus and species."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "biology_hard_03",
+  "title": "Hard Biology Quiz 3",
+  "sections": [
+    {
+      "title": "Biology",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which cranial nerve is primarily responsible for transmitting visual information from the retina to the brain?",
+          "options": [
+            "Olfactory",
+            "Optic",
+            "Oculomotor",
+            "Trigeminal"
+          ],
+          "a": "Optic Nerve",
+          "explanation": "Cranial Nerve II carries visual signals."
+        },
+        {
+          "type": "true-false",
+          "q": "Smooth endoplasmic reticulum is heavily studded with ribosomes.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Rough ER has ribosomes; smooth ER is involved in lipid synthesis and detoxification."
+        },
+        {
+          "type": "true-false",
+          "q": "Humans have 23 pairs of autosomes.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Humans have 22 pairs of autosomes and 1 pair of sex chromosomes, making 23 pairs total."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the measure of the evolutionary success of an individual, usually determined by the number of viable offspring it leaves?",
+          "a": "Fitness (Evolutionary/Darwinian Fitness)",
+          "explanation": "It's a central concept in natural selection."
+        },
+        {
+          "type": "self-eval",
+          "q": "What type of RNA is synthesized during transcription from a DNA template?",
+          "a": "mRNA (messenger RNA)",
+          "explanation": "It carries the code to the ribosome."
+        },
+        {
+          "type": "self-eval",
+          "q": "What kind of bond links amino acids together in a polypeptide chain?",
+          "a": "Peptide bond",
+          "explanation": "It's a covalent chemical bond formed between the carboxyl group of one amino acid and the amino group of another."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which part of the autonomic nervous system is responsible for the 'fight or flight' response?",
+          "a": "Sympathetic Nervous System",
+          "explanation": "It prepares the body for intense physical activity."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the primary function of the Loop of Henle in the mammalian kidney?",
+          "a": "To concentrate urine / conserve water",
+          "explanation": "It creates a concentration gradient in the medulla of the kidney."
+        },
+        {
+          "type": "self-eval",
+          "q": "What happens when a cell's environment is hypertonic compared to the inside of the cell?",
+          "a": "Water moves out, the cell shrinks",
+          "explanation": "Osmosis causes water to rush to the higher solute concentration outside."
+        },
+        {
+          "type": "self-eval",
+          "q": "What class of enzymes regulates the cell cycle checkpoints, acting only when bound to cyclins?",
+          "a": "Cyclin-dependent kinases (CDKs)",
+          "explanation": "They are key regulators of cell division."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+    "id": "entertainment_medium_03",
+    "title": "Medium Entertainment Quiz 3",
+    "sections": [
+        {
+            "title": "Entertainment",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Who directed the critically acclaimed 1994 film 'Pulp Fiction'?",
+                    "options": [
+                        "Martin Scorsese",
+                        "Quentin Tarantino",
+                        "David Fincher",
+                        "Francis Ford Coppola"
+                    ],
+                    "a": "Quentin Tarantino",
+                    "explanation": "The film revitalized John Travolta's career and won the Palme d'Or."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The first video game console ever released was the Nintendo Entertainment System.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The Magnavox Odyssey was released in 1972, long before the NES."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In music, a 'capella' means singing without any instrumental accompaniment.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The term literally means 'in the style of the chapel'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What does 'CGI' stand for in film production?",
+                    "a": "Computer-Generated Imagery.",
+                    "explanation": "It refers to the use of computer graphics to create or alter images."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which famous theater in London is most closely associated with William Shakespeare?",
+                    "a": "The Globe Theatre.",
+                    "explanation": "Shakespeare's playing company built the original in 1599."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What highly influential electronic music duo wears robot helmets in public?",
+                    "a": "Daft Punk.",
+                    "explanation": "The French duo created iconic tracks like 'Harder, Better, Faster, Stronger'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In a screenplay, what is a 'McGuffin'?",
+                    "a": "An object or event that drives the plot, but isn't important in itself.",
+                    "explanation": "Alfred Hitchcock popularized the term."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What wildly successful Broadway musical tells the story of Alexander Hamilton?",
+                    "a": "Hamilton.",
+                    "explanation": "Created by Lin-Manuel Miranda, it uses hip-hop to tell American history."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which actor plays the title character in the 'John Wick' action movies?",
+                    "a": "Keanu Reeves.",
+                    "explanation": "He plays a retired hitman drawn back into the criminal underworld."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What streaming service is famous for shows like 'The Crown' and 'Bridgerton'?",
+                    "a": "Netflix.",
+                    "explanation": "These major original series helped cement Netflix's dominance."
+                }
+            ]
+        }
+    ]
+}

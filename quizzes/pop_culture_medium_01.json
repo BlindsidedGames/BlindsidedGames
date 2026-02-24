@@ -1,0 +1,85 @@
+{
+    "id": "pop_culture_medium_01",
+    "title": "Medium Pop Culture Quiz 1",
+    "sections": [
+        {
+            "title": "Pop Culture",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which film won the first-ever Academy Award for Best Animated Feature in 2002?",
+                    "options": [
+                        "Shrek",
+                        "Monsters, Inc.",
+                        "Jimmy Neutron: Boy Genius",
+                        "Spirited Away"
+                    ],
+                    "a": "Shrek",
+                    "explanation": "The DreamWorks hit defeated Pixar's Monsters, Inc. for the inaugural award."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The characters in the video game 'The Sims' speak a fictional language called Simlish.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Simlish is a completely constructed language made of gibberish designed to sound universal."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the TV show 'Breaking Bad', Walter White taught high school biology before turning to cooking meth.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "He was an overqualified high school chemistry teacher, which explains his exceptional meth-cooking skills."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What legendary hip-hop group released the seminal 1993 album 'Enter the Wu-Tang (36 Chambers)'?",
+                    "a": "Wu-Tang Clan.",
+                    "explanation": "The Staten Island collective revolutionized East Coast hip-hop with their gritty sound and martial arts themes."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who wrote and directed the blockbuster 2017 horror film 'Get Out'?",
+                    "a": "Jordan Peele.",
+                    "explanation": "The film was a massive critical and commercial success, earning Peele an Oscar for Best Original Screenplay."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What highly acclaimed Broadway musical tells the story of America's founding fathers using hip-hop and R&B?",
+                    "a": "Hamilton.",
+                    "explanation": "Created by Lin-Manuel Miranda, it became a massive cultural phenomenon and won 11 Tony Awards."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the Marvel Cinematic Universe, what is the name of Thor's enchanted hammer?",
+                    "a": "Mjolnir.",
+                    "explanation": "It can only be lifted by those deemed 'worthy', famously including Captain America."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which iconic pop star wore a controversial 'meat dress' to the 2010 MTV Video Music Awards?",
+                    "a": "Lady Gaga.",
+                    "explanation": "The dress was made of raw flank steak and was instantly considered an iconic pop culture moment."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What critically acclaimed HBO series follows the fictional Roy family and their global media empire?",
+                    "a": "Succession.",
+                    "explanation": "The show focuses on the bitter fight for control of Waystar RoyCo among the patriarch's children."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What British singer-songwriter's debut album is simply titled '19'?",
+                    "a": "Adele.",
+                    "explanation": "She continued the trend of naming her albums after her age with '21', '25', and '30'."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "id": "nature_medium_02",
+    "title": "Medium Nature Quiz 2",
+    "sections": [
+        {
+            "title": "Nature",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "What is the scientific term for the production of light by living organisms, such as fireflies?",
+                    "options": [
+                        "Photosynthesis",
+                        "Bioluminescence",
+                        "Fluorescence",
+                        "Phosphorescence"
+                    ],
+                    "a": "Bioluminescence",
+                    "explanation": "Bioluminescence occurs through a chemical reaction within the organism's body, often used to attract mates or lure prey."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The rings of a tree's stump can tell a scientist approximately how old the tree was when cut down.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Trees generally add one layer of wood to their trunk each year, appearing as a ring. Examining them is called dendrochronology."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A platypus is a type of egg-laying reptile found in Australia.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The platypus is a monotreme, which is a rare type of egg-laying mammal."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the primary function of the ozone layer in Earth's atmosphere?",
+                    "a": "The ozone layer absorbs the majority of the sun's harmful ultraviolet (UV) radiation.",
+                    "explanation": "Without it, life on Earth would be severely damaged by intense UV exposure."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain what 'symbiosis' means in biology.",
+                    "a": "Symbiosis is a close, prolonged physical association between two different biological species.",
+                    "explanation": "Examples include mutualism (both benefit), commensalism (one benefits, the other is unaffected), and parasitism (one benefits, the other is harmed)."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What natural hazard is measured using the Richter scale?",
+                    "a": "Earthquakes.",
+                    "explanation": "The scale quantifies the energy released by an earthquake based on the amplitude of seismic waves."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is 'permafrost'?",
+                    "a": "Permafrost is a thick subsurface layer of soil that remains frozen throughout the year, primarily occurring in polar regions.",
+                    "explanation": "Thawing permafrost due to climate change is a significant environmental concern."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe the main difference between an alligator and a crocodile.",
+                    "a": "Alligators generally have a wider, U-shaped snout and live mostly in freshwater, while crocodiles have a pointier, V-shaped snout, visible lower teeth when the jaw is shut, and can tolerate saltwater.",
+                    "explanation": "Crocodiles are generally considered to be more aggressive."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What phenomenon causes the spectacular visual displays known as the Aurora Borealis (Northern Lights)?",
+                    "a": "The interaction of the solar wind (charged particles from the sun) with Earth's magnetic field and atmosphere.",
+                    "explanation": "The particles excite gases in the atmosphere, causing them to glow."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What do we call a scientist who primarily studies insects?",
+                    "a": "An entomologist.",
+                    "explanation": "Entomology is a vital branch of zoology given the vast diversity and ecological importance of insects."
+                }
+            ]
+        }
+    ]
+}

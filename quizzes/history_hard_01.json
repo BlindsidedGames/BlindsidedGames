@@ -1,0 +1,85 @@
+{
+  "id": "history_hard_01",
+  "title": "Hard History Quiz 1",
+  "sections": [
+    {
+      "title": "History",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which conflict is often cited as the first 'modern' war due to its extensive use of trenches, telegraphs, and early ironclad ships?",
+          "options": [
+            "The Spanish-American War",
+            "The Crimean War",
+            "The Franco-Prussian War",
+            "The Boer War"
+          ],
+          "a": "The Crimean War",
+          "explanation": "Fought largely on the Crimean Peninsula (1853-1856), it involved modern technologies like railways and telegraphs."
+        },
+        {
+          "type": "true-false",
+          "q": "The ancient city of Petra was carved primarily by the Roman Empire.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Petra was established and carved largely by the Nabataeans, an Arab people, before Roman annexation."
+        },
+        {
+          "type": "true-false",
+          "q": "The term 'Balkanization' refers to the division of a multinational state into smaller, ethnically homogeneous entities.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "It is named after the Balkan Peninsula, which experienced severe splintering in the 19th and 20th centuries."
+        },
+        {
+          "type": "self-eval",
+          "q": "What 1494 treaty divided the newly-discovered lands outside Europe between Portugal and Spain?",
+          "a": "The Treaty of Tordesillas",
+          "explanation": "It drew a line of demarcation halfway between the Cape Verde islands and the islands discovered by Columbus."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the last ruler of the Incan Empire, executed by Spanish conquistador Francisco Pizarro?",
+          "a": "Atahualpa",
+          "explanation": "Despite offering a massive ransom of gold, he was killed."
+        },
+        {
+          "type": "self-eval",
+          "q": "What battle fought in 1815 resulted in the final defeat of Napoleon Bonaparte?",
+          "a": "The Battle of Waterloo",
+          "explanation": "An allied army under Wellington and a Prussian army commanded by Bl\u00fccher defeated the French."
+        },
+        {
+          "type": "self-eval",
+          "q": "What name is given to the forcible relocation of Native Americans to territories west of the Mississippi River in the 1830s?",
+          "a": "The Trail of Tears",
+          "explanation": "Thousands died from disease, exposure, and starvation during the journey."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the leader of the Soviet Union from the mid-1920s until 1953?",
+          "a": "Joseph Stalin",
+          "explanation": "He oversaw forced industrialization, massive purges, and the USSR's role in WWII."
+        },
+        {
+          "type": "self-eval",
+          "q": "What set of reform programs in China, initiated by Deng Xiaoping, modernized agriculture, industry, defense, and science?",
+          "a": "The Four Modernizations",
+          "explanation": "These reforms transitioned China into a major global economic power."
+        },
+        {
+          "type": "self-eval",
+          "q": "What famous 13th-century English document explicitly confirmed that the King was not above the law and guaranteed the rights to a fair trial?",
+          "a": "The Magna Carta (Great Charter)",
+          "explanation": "It is a foundational document of Western constitutional law."
+        }
+      ]
+    }
+  ]
+}

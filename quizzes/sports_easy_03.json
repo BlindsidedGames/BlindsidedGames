@@ -1,0 +1,85 @@
+{
+    "id": "sports_easy_03",
+    "title": "Easy Sports Quiz 3",
+    "sections": [
+        {
+            "title": "Sports",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which of these sports does NOT traditionally use a ball?",
+                    "options": [
+                        "Tennis",
+                        "Basketball",
+                        "Ice Hockey",
+                        "Volleyball"
+                    ],
+                    "a": "Ice Hockey",
+                    "explanation": "Ice hockey uses a hard, flat rubber disc called a puck."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A 'hole-in-one' in golf means the player got the ball into the hole on their very first stroke.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "It is also known as an 'ace' and is incredibly rare to achieve."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In soccer, only the goalkeeper is allowed to intentionally touch the ball with their hands or arms during open play.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "If any other player does it, it's considered a handball foul."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What shape is a standard rugby ball?",
+                    "a": "Oval (or an elongated ellipsoid).",
+                    "explanation": "Its shape makes it easier to carry and pass backward, but challenging to kick predictably."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In which sport would you try to 'pin' your opponent's shoulders to the mat?",
+                    "a": "Wrestling.",
+                    "explanation": "A pin immediately ends the match and awards the victory."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the name of the prestigious global soccer tournament held every four years?",
+                    "a": "The FIFA World Cup.",
+                    "explanation": "It is the most widely viewed and followed single sporting event in the world."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "How many players are on the court for a single volleyball team?",
+                    "a": "Six.",
+                    "explanation": "Teams rotate positions clockwise every time they win the serve back from the opposing team."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which popular winter sport involves sliding down snow-covered hills on a single wide board attached to your feet?",
+                    "a": "Snowboarding.",
+                    "explanation": "Both feet are strapped to a single board, visually similar to skateboarding or surfing, but on snow."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What does 'NBA' stand for?",
+                    "a": "National Basketball Association.",
+                    "explanation": "It is the premier professional basketball league internationally."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What aquatic sport involves racing through the water using various strokes like freestyle or butterfly?",
+                    "a": "Swimming.",
+                    "explanation": "Competitive swimmers race to complete a specific distance faster than their opponents."
+                }
+            ]
+        }
+    ]
+}

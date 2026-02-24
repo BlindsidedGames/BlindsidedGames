@@ -1,0 +1,85 @@
+{
+  "id": "science_easy_02",
+  "title": "Easy Science Quiz 2",
+  "sections": [
+    {
+      "title": "Science",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which of these is not a state of matter?",
+          "options": [
+            "Solid",
+            "Liquid",
+            "Gas",
+            "Energy"
+          ],
+          "a": "Energy",
+          "explanation": "Energy is a property of objects, not a fundamental state of matter."
+        },
+        {
+          "type": "true-false",
+          "q": "Sound travels faster in space.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Space is a vacuum, so sound cannot travel through it."
+        },
+        {
+          "type": "true-false",
+          "q": "The Sun is a star.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "The Sun is a yellow dwarf star at the center of our solar system."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is H2O more commonly known as?",
+          "a": "Water",
+          "explanation": "H2O is the chemical formula for water."
+        },
+        {
+          "type": "self-eval",
+          "q": "What instrument is used to measure temperature?",
+          "a": "Thermometer",
+          "explanation": "Thermometers measure temperature in Celsius, Fahrenheit, or Kelvin."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the hard outer layer of the Earth called?",
+          "a": "Crust",
+          "explanation": "The crust is the outermost rock layer."
+        },
+        {
+          "type": "self-eval",
+          "q": "What kind of energy does the sun supply?",
+          "a": "Solar energy",
+          "explanation": "Solar energy is radiant light and heat from the Sun."
+        },
+        {
+          "type": "self-eval",
+          "q": "What do we call the path Earth takes around the Sun?",
+          "a": "Orbit",
+          "explanation": "Earth's orbit is roughly elliptical."
+        },
+        {
+          "type": "self-eval",
+          "q": "What gas do humans completely depend on to breathe?",
+          "a": "Oxygen",
+          "explanation": "Humans require oxygen for cellular respiration."
+        },
+        {
+          "type": "self-eval",
+          "q": "What gives plants their green color?",
+          "a": "Chlorophyll",
+          "explanation": "Chlorophyll absorbs blue and red light, reflecting green."
+        }
+      ]
+    }
+  ]
+}

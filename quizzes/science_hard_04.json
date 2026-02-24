@@ -1,0 +1,85 @@
+{
+  "id": "science_hard_04",
+  "title": "Hard Science Quiz 4",
+  "sections": [
+    {
+      "title": "Science",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "In fluid dynamics, what principle states that an increase in the speed of a fluid occurs simultaneously with a decrease in static pressure?",
+          "options": [
+            "Archimedes' Principle",
+            "Pascal's Principle",
+            "Bernoulli's Principle",
+            "Newton's First Law"
+          ],
+          "a": "Bernoulli's Principle",
+          "explanation": "This principle helps explain aerodynamic lift."
+        },
+        {
+          "type": "true-false",
+          "q": "Cation is the term for a negatively charged ion.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Anions are negative; cations are positive."
+        },
+        {
+          "type": "true-false",
+          "q": "Entropy in an isolated system always decreases over time.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "The Second Law of Thermodynamics states entropy never decreases."
+        },
+        {
+          "type": "self-eval",
+          "q": "What process involves the separation of substances from a liquid mixture based on different boiling points?",
+          "a": "Distillation",
+          "explanation": "It is widely used in chemistry and to produce spirits."
+        },
+        {
+          "type": "self-eval",
+          "q": "What cellular process produces haploid gametes from a diploid cell?",
+          "a": "Meiosis",
+          "explanation": "It involves two rounds of division to halve the chromosome number."
+        },
+        {
+          "type": "self-eval",
+          "q": "What paradox illustrates the bizarre implications of quantum superposition with a feline in a box?",
+          "a": "Schr\u00f6dinger's cat",
+          "explanation": "The cat is both alive and dead until observed."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the primary pigment responsible for photosynthesis in plants.",
+          "a": "Chlorophyll a",
+          "explanation": "It absorbs light mostly in the blue and red wavelengths."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the only noble gas that does not have an octet of electrons in its outer shell?",
+          "a": "Helium",
+          "explanation": "Helium only has 2 valence electrons as its outer shell is full."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the specific heat capacity of liquid water (approx. in J/g\u00b0C)?",
+          "a": "4.18 J/g\u00b0C",
+          "explanation": "Water requires distinctively high energy to increase its temperature."
+        },
+        {
+          "type": "self-eval",
+          "q": "What theory describes the large-scale motion of the Earth's lithosphere?",
+          "a": "Plate Tectonics",
+          "explanation": "It superseded the older theory of continental drift."
+        }
+      ]
+    }
+  ]
+}

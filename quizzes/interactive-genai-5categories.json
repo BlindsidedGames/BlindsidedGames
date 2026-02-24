@@ -1,0 +1,402 @@
+{
+  "id": "interactive-genai-5categories",
+  "title": "The Ultimate 5-Category Mix",
+  "description": "Test yourself across History, Science, Geography, Pop Culture, and Video Games.",
+  "sections": [
+    {
+      "title": "History",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Who discovered America in 1492?",
+          "a": "Christopher Columbus",
+          "explanation": "He thought he had reached the East Indies."
+        },
+        {
+          "type": "self-eval",
+          "q": "What ancient civilization built the Machu Picchu?",
+          "a": "Inca",
+          "explanation": "Located in the Andes mountains of Peru."
+        },
+        {
+          "type": "true-false",
+          "q": "Julius Caesar was assassinated on the Ides of March.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "He was stabbed to death at a meeting of the Senate."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the first female Prime Minister of the UK?",
+          "a": "Margaret Thatcher",
+          "explanation": "She was known as the 'Iron Lady'."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the British Prime Minister during most of World War II?",
+          "a": "Winston Churchill",
+          "explanation": "Known for his inspiring speeches during the Blitz."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year did World War II end?",
+          "a": "1945",
+          "explanation": "The war ended with the surrender of Japan in September 1945."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Who was the first President of the United States?",
+          "a": "George Washington",
+          "options": [
+            "Abraham Lincoln",
+            "George Washington",
+            "John Adams",
+            "Thomas Jefferson"
+          ],
+          "explanation": "He served two terms from 1789 to 1797."
+        },
+        {
+          "type": "true-false",
+          "q": "The Great Wall of China is visible from the Moon with the naked eye.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "It is a myth that the Great Wall is visible from the Moon without aid."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who painted the Mona Lisa?",
+          "a": "Leonardo da Vinci",
+          "explanation": "The painting is currently housed in the Louvre in Paris."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year did the Titanic sink?",
+          "a": "1912",
+          "explanation": "It struck an iceberg during its maiden voyage."
+        }
+      ]
+    },
+    {
+      "title": "Science",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "What is the powerhouse of the cell?",
+          "a": "Mitochondria",
+          "explanation": "They generate most of the chemical energy needed to power the cell's biochemical reactions."
+        },
+        {
+          "type": "self-eval",
+          "q": "What gas do plants absorb from the atmosphere?",
+          "a": "Carbon dioxide",
+          "explanation": "They use it along with sunlight and water to produce their own food."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the hardest natural substance on Earth?",
+          "a": "Diamond",
+          "explanation": "Diamonds are formed from pure carbon under intense heat and pressure."
+        },
+        {
+          "type": "self-eval",
+          "q": "What organ is responsible for pumping blood throughout the body?",
+          "a": "Heart",
+          "explanation": "It is a muscular organ located perfectly in the center of your chest."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What is the chemical symbol for Gold?",
+          "a": "Au",
+          "options": [
+            "Ag",
+            "Au",
+            "Fe",
+            "Go"
+          ],
+          "explanation": "The symbol comes from 'aurum', the Latin word for gold."
+        },
+        {
+          "type": "self-eval",
+          "q": "What force keeps planets in orbit around the sun?",
+          "a": "Gravity",
+          "explanation": "Described by Isaac Newton and later expanded by Albert Einstein."
+        },
+        {
+          "type": "true-false",
+          "q": "Venus is the hottest planet in our solar system.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Its thick atmosphere traps heat, leading to extreme greenhouse effects."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the largest planet in our solar system?",
+          "a": "Jupiter",
+          "explanation": "It is a gas giant with dozens of moons."
+        },
+        {
+          "type": "true-false",
+          "q": "Water consists of two hydrogen atoms and one oxygen atom.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "The chemical formula for water is widely known as H2O."
+        },
+        {
+          "type": "self-eval",
+          "q": "What scientist proposed the theory of relativity?",
+          "a": "Albert Einstein",
+          "explanation": "His equation E=mc^2 is the most famous in physics."
+        }
+      ]
+    },
+    {
+      "title": "Geography",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "What is the smallest country in the world by land area?",
+          "a": "Vatican City",
+          "explanation": "It is an independent city-state enclaved within Rome, Italy."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What is the capital of Australia?",
+          "a": "Canberra",
+          "options": [
+            "Canberra",
+            "Melbourne",
+            "Perth",
+            "Sydney"
+          ],
+          "explanation": "It was chosen as the capital in 1908 as a compromise between Sydney and Melbourne."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the capital city of Japan?",
+          "a": "Tokyo",
+          "explanation": "It is one of the most populous metropolitan areas in the world."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which continent is the Sahara Desert located on?",
+          "a": "Africa",
+          "explanation": "It covers most of North Africa and is roughly the size of the United States."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the longest river in the world?",
+          "a": "The Nile",
+          "explanation": "Though the Amazon is highly debated to be essentially tied."
+        },
+        {
+          "type": "self-eval",
+          "q": "In which US state would you find the Grand Canyon?",
+          "a": "Arizona",
+          "explanation": "It was carved by the Colorado River."
+        },
+        {
+          "type": "self-eval",
+          "q": "What ocean lies off the east coast of the United States?",
+          "a": "The Atlantic Ocean",
+          "explanation": "It separates the Americas from Europe and Africa."
+        },
+        {
+          "type": "true-false",
+          "q": "Mount Everest is the tallest mountain in the world.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "It is located in the Himalayas on the border between Nepal and China."
+        },
+        {
+          "type": "true-false",
+          "q": "There is no landmass at the North Pole.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Unlike the South Pole, which is on the continent of Antarctica, the North Pole is just ice over ocean."
+        },
+        {
+          "type": "self-eval",
+          "q": "What country has the largest population in the world?",
+          "a": "India",
+          "explanation": "India recently surpassed China as the most populous country."
+        }
+      ]
+    },
+    {
+      "title": "Pop Culture",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Who played the character of Iron Man in the Marvel Cinematic Universe?",
+          "a": "Robert Downey Jr.",
+          "explanation": "He kicked off the MCU with the first Iron Man film in 2008."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which boy band included members Harry Styles, Liam Payne, Louis Tomlinson, Niall Horan, and Zayn Malik?",
+          "a": "One Direction",
+          "explanation": "Formed on the British television show The X Factor in 2010."
+        },
+        {
+          "type": "true-false",
+          "q": "The Beatles formed in Liverpool, England.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "They became the most influential band of all time out of Liverpool."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which pop star's fan base is known as the 'Swifties'?",
+          "a": "Taylor Swift",
+          "explanation": "She famously began re-recording her albums as 'Taylor's Version'."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who directed the blockbuster film Avatar?",
+          "a": "James Cameron",
+          "explanation": "He also directed Titanic and Terminator 2."
+        },
+        {
+          "type": "self-eval",
+          "q": "What famous coffee shop is prominently featured in the sitcom 'Friends'?",
+          "a": "Central Perk",
+          "explanation": "Gunther was the famously exasperated manager of the shop."
+        },
+        {
+          "type": "true-false",
+          "q": "Michael Jackson is known as the 'King of Pop'.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "He popularized the moonwalk and broke numerous records with Thriller."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which movie won the Academy Award for Best Picture in 1998?",
+          "a": "Titanic",
+          "options": [
+            "As Good as It Gets",
+            "Good Will Hunting",
+            "L.A. Confidential",
+            "Titanic"
+          ],
+          "explanation": "It won 11 Oscars in total, tying the record held by Ben-Hur."
+        },
+        {
+          "type": "self-eval",
+          "q": "What TV series featured dragons, White Walkers, and the Iron Throne?",
+          "a": "Game of Thrones",
+          "explanation": "Based on George R.R. Martin's 'A Song of Ice and Fire'."
+        },
+        {
+          "type": "self-eval",
+          "q": "What magical sport is played on flying broomsticks in Harry Potter?",
+          "a": "Quidditch",
+          "explanation": "Players score by throwing a Quaffle through hoops or catching the Golden Snitch."
+        }
+      ]
+    },
+    {
+      "title": "Video Games",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "What fighting game features characters like Ryu, Ken, and Chun-Li?",
+          "a": "Street Fighter",
+          "explanation": "The release of Street Fighter II in 1991 revolutionized the fighting game genre."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the highest-selling video game console of all time?",
+          "a": "PlayStation 2",
+          "explanation": "It sold over 155 million units worldwide."
+        },
+        {
+          "type": "true-false",
+          "q": "Minecraft was created by a single person originally.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "It was created by Markus 'Notch' Persson before his company Mojang was acquired by Microsoft."
+        },
+        {
+          "type": "self-eval",
+          "q": "What block-building game is the best-selling game of all time?",
+          "a": "Minecraft",
+          "explanation": "It has sold over 300 million copies across all platforms."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the primary currency in the Fallout series?",
+          "a": "Bottle caps",
+          "explanation": "They were adopted because they are hard to counterfeit and limited in number."
+        },
+        {
+          "type": "true-false",
+          "q": "Mario first appeared in the arcade game Donkey Kong.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "In that game, his name was Jumpman."
+        },
+        {
+          "type": "self-eval",
+          "q": "What arcade game involves eating dots and running from ghosts?",
+          "a": "Pac-Man",
+          "explanation": "The ghosts are named Blinky, Pinky, Inky, and Clyde."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who is the main antagonist of the Portal series?",
+          "a": "GLaDOS",
+          "explanation": "Genetic Lifeform and Disk Operating System is a rogue AI that loves deadly tests."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What is the name of the protagonist in the Legend of Zelda series?",
+          "a": "Link",
+          "options": [
+            "Ganon",
+            "Link",
+            "Navi",
+            "Zelda"
+          ],
+          "explanation": "Despite the title, the player almost always controls Link, not Zelda."
+        },
+        {
+          "type": "self-eval",
+          "q": "What company created the Pokémon franchise?",
+          "a": "Nintendo / The Pokémon Company",
+          "explanation": "The franchise encompasses video games, trading cards, and television."
+        }
+      ]
+    }
+  ]
+}

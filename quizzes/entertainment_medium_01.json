@@ -1,0 +1,85 @@
+{
+    "id": "entertainment_medium_01",
+    "title": "Medium Entertainment Quiz 1",
+    "sections": [
+        {
+            "title": "Entertainment",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which director pioneered the 'bullet time' visual effect in their 1999 film?",
+                    "options": [
+                        "Steven Spielberg",
+                        "Christopher Nolan",
+                        "The Wachowskis",
+                        "Quentin Tarantino"
+                    ],
+                    "a": "The Wachowskis",
+                    "explanation": "The Wachowskis popularized 'bullet time' in The Matrix."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The musical 'Wicked' is a prequel to 'The Wizard of Oz'.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "It tells the story of the witches before Dorothy drops in."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In television production, a 'pilot' is the final episode of a series.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "A pilot is a standalone episode created to sell a show to a network."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the role of a 'showrunner' on a television series?",
+                    "a": "A showrunner is the person with overall creative and management authority.",
+                    "explanation": "They are usually the head writer and executive producer."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What prestigious award is given for excellence in the American recording industry?",
+                    "a": "The Grammy Award.",
+                    "explanation": "Grammys have been awarded annually since 1959."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which 1994 film starring Tom Hanks won six Academy Awards, including Best Picture?",
+                    "a": "Forrest Gump.",
+                    "explanation": "The film follows an Alabama man with a low IQ who accomplishes great things."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What popular video game franchise features characters like Master Chief and Cortana?",
+                    "a": "Halo.",
+                    "explanation": "Halo is a flagship sci-fi franchise for the Xbox console."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What are the names of the four main characters in the sitcom 'Seinfeld'?",
+                    "a": "Jerry, George, Elaine, and Kramer.",
+                    "explanation": "The 'show about nothing' ran for nine successful seasons."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which iconic music festival took place in upstate New York in 1969?",
+                    "a": "Woodstock.",
+                    "explanation": "It is widely considered a pivotal moment in popular music history."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In film lighting, what is a 'key light'?",
+                    "a": "The main source of light illuminating a subject.",
+                    "explanation": "It is the primary light used in a standard three-point lighting setup."
+                }
+            ]
+        }
+    ]
+}

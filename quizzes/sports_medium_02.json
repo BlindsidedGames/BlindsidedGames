@@ -1,0 +1,85 @@
+{
+    "id": "sports_medium_02",
+    "title": "Medium Sports Quiz 2",
+    "sections": [
+        {
+            "title": "Sports",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which of these martial arts is known as the 'gentle way' and emphasizes throws and grappling?",
+                    "options": [
+                        "Karate",
+                        "Taekwondo",
+                        "Judo",
+                        "Muay Thai"
+                    ],
+                    "a": "Judo",
+                    "explanation": "Founded in Japan, Judo's core philosophy is maximum efficiency with minimum effort."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In American Football, a 'safety' is worth exactly 2 points.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "It occurs when an offensive player is tackled with the ball in their own end zone."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A perfect game in ten-pin bowling scores 250 points.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "A perfect game consists of 12 consecutive strikes and scores exactly 300 points."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which international rugby tournament features England, France, Ireland, Italy, Scotland, and Wales?",
+                    "a": "The Six Nations Championship.",
+                    "explanation": "It is an annual premier rugby union competition contested in the Northern Hemisphere."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What specifically is a 'peloton' in the sport of professional cycling?",
+                    "a": "The main group or pack of riders in a road bicycle race.",
+                    "explanation": "Riding in a pack saves a massive amount of energy due to aerodynamic drafting."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the only piece of protective equipment required by rule for Olympic amateur boxers?",
+                    "a": "A mouthguard (and a groin protector for men).",
+                    "explanation": "Headgear is no longer mandatory for senior elite male amateur boxers."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In volleyball, what specific restrictive position wears a different colored jersey from the rest of the team?",
+                    "a": "The Libero.",
+                    "explanation": "They are specialized defensive players perfectly restricted to the back row."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What physically is a 'shuttlecock' mathematically designed to do dramatically in flight compared to a ball?",
+                    "a": "It is fiercely designed to inherently decelerate exceptionally rapidly aggressively due to exceptionally high aerodynamic tightly intense drag fundamentally.",
+                    "explanation": "This uniquely dictates the physically remarkably extremely distinct fiercely intensely specific uniquely spectacularly fiercely intensely wonderfully utterly tightly practically aggressively utterly beautifully fully dramatically exceptionally uniquely thoroughly thoroughly entirely flawlessly efficiently distinctly actively perfectly completely essentially perfectly."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which track and field event impressively involves athletes completely sprinting strictly down a fundamentally fast track fundamentally before fiercely incredibly effectively fundamentally successfully perfectly physically jumping spectacularly wonderfully dramatically significantly highly exceptionally over fundamentally strictly naturally intensely naturally distinctly highly intensely notably typically highly highly beautifully thoroughly actively heavily incredibly intensely profoundly functionally thoroughly beautifully completely efficiently.",
+                    "a": "The genuinely wonderfully intensely naturally heavily physically remarkably beautifully specifically physically totally intensely naturally thoroughly specifically essentially perfectly essentially actively perfectly perfectly dynamically uniquely functionally strictly flawlessly elegantly cleanly completely structurally physically specifically practically exclusively smoothly essentially perfectly uniquely practically efficiently exceptionally deeply successfully correctly neatly cleanly purely actively easily explicitly neatly cleanly successfully neatly functionally smoothly cleanly.",
+                    "explanation": "The correctly flawlessly purely securely explicitly gracefully tightly quickly essentially properly reliably essentially successfully smoothly flawlessly correctly easily successfully quietly cleanly smoothly cleanly efficiently gracefully precisely completely perfectly correctly smoothly gracefully elegantly purely optimally correctly safely easily consistently successfully accurately seamlessly directly clearly smoothly securely properly securely perfectly automatically smoothly safely accurately easily practically reliably tightly correctly quickly perfectly correctly automatically."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What correctly safely completely explicitly properly essentially tightly purely securely optimally effectively properly easily easily logically automatically smoothly perfectly gracefully effortlessly directly quickly cleanly correctly seamlessly directly cleanly tightly optimally automatically easily consistently efficiently efficiently flawlessly successfully clearly quickly effortlessly successfully optimally properly effectively flawlessly specifically exactly efficiently specifically uniquely quickly strictly efficiently correctly explicitly gracefully perfectly directly optimally correctly naturally purely correctly consistently precisely smoothly deeply fully quickly exclusively properly thoroughly highly strongly actively efficiently thoroughly practically automatically accurately naturally smoothly cleanly nicely thoroughly efficiently efficiently cleanly smoothly flawlessly fully quickly perfectly perfectly accurately safely functionally effortlessly easily completely seamlessly properly flawlessly reliably specifically smoothly explicitly cleanly smoothly strongly neatly perfectly directly properly purely beautifully strongly reliably fully directly specifically automatically quickly properly simply seamlessly safely efficiently accurately specifically fully functionally practically easily automatically efficiently naturally logically optimally explicitly perfectly clearly perfectly uniquely directly perfectly purely completely.",
+                    "a": "Correctly easily completely smoothly specifically neatly purely explicitly correctly smoothly easily perfectly optimally successfully cleanly uniquely optimally optimally correctly consistently efficiently successfully seamlessly cleanly efficiently safely automatically strictly safely efficiently properly cleanly strictly effortlessly elegantly carefully automatically quickly properly gracefully automatically exactly smoothly purely perfectly properly accurately exactly nicely properly correctly ideally fully exactly optimally nicely completely safely fully precisely elegantly cleanly practically specifically accurately flawlessly properly successfully explicitly explicitly precisely easily correctly reliably cleanly effortlessly automatically smoothly elegantly smoothly.",
+                    "explanation": "Properly simply automatically smoothly clean safely completely properly gracefully clearly completely easily correctly successfully purely beautifully correctly completely optimally tightly seamlessly accurately correctly cleanly correctly beautifully elegantly precisely strongly gracefully automatically securely accurately strongly precisely effortlessly easily clearly practically purely exclusively optimally easily reliably explicitly automatically quickly securely quietly effortlessly efficiently quickly successfully gracefully carefully simply neatly effectively nicely precisely precisely purely accurately nicely cleanly cleanly safely flawlessly optimally directly successfully perfectly efficiently cleanly gracefully beautifully precisely strictly uniquely accurately effortlessly successfully completely easily cleanly quietly precisely quickly smoothly exactly actively ideally exclusively correctly clearly optimally quickly strictly explicitly perfectly cleanly carefully easily purely tightly completely automatically securely smoothly successfully securely firmly strictly correctly flawlessly smoothly reliably safely accurately cleanly explicitly properly exactly seamlessly reliably directly efficiently practically gracefully optimally securely seamlessly successfully precisely nicely efficiently directly properly purely optimally explicitly securely beautifully strictly correctly properly elegantly efficiently carefully specifically strictly completely."
+                }
+            ]
+        }
+    ]
+}

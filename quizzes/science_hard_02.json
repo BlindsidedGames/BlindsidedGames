@@ -1,0 +1,85 @@
+{
+  "id": "science_hard_02",
+  "title": "Hard Science Quiz 2",
+  "sections": [
+    {
+      "title": "Science",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "What is the first element on the periodic table to have an atomic mass greater than 100 u?",
+          "options": [
+            "Ruthenium",
+            "Rhodium",
+            "Palladium",
+            "Silver"
+          ],
+          "a": "Ruthenium",
+          "explanation": "Ruthenium (Ru) has an atomic mass of about 101 u."
+        },
+        {
+          "type": "true-false",
+          "q": "The speed of light changes as it passes through water.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "Light slows down as it enters a denser medium like water."
+        },
+        {
+          "type": "true-false",
+          "q": "In quantum mechanics, a photon always behaves strictly as a wave.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Photons exhibit wave-particle duality."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the name of the process that powers the Sun?",
+          "a": "Nuclear fusion",
+          "explanation": "Hydrogen nuclei fuse into helium, releasing energy."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the SI unit for electrical resistance?",
+          "a": "Ohm",
+          "explanation": "Named after Georg Ohm. Symbol is Omega."
+        },
+        {
+          "type": "self-eval",
+          "q": "What term describes the change in frequency of a wave in relation to an observer who is moving relative to the wave source?",
+          "a": "Doppler effect",
+          "explanation": "This is why a siren's pitch drops as it passes by."
+        },
+        {
+          "type": "self-eval",
+          "q": "What does DNA stand for?",
+          "a": "Deoxyribonucleic acid",
+          "explanation": "It is a molecule composed of two polynucleotide chains forming a double helix."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the boundary around a black hole beyond which no light or other radiation can escape.",
+          "a": "Event horizon",
+          "explanation": "This represents the 'point of no return'."
+        },
+        {
+          "type": "self-eval",
+          "q": "What specific part of a plant root is responsible for most water absorption?",
+          "a": "Root hairs",
+          "explanation": "They greatly increase the surface area of the root system."
+        },
+        {
+          "type": "self-eval",
+          "q": "What type of rock is formed from the cooling and solidification of magma or lava?",
+          "a": "Igneous",
+          "explanation": "Magmatic rock is one of the three main rock types."
+        }
+      ]
+    }
+  ]
+}

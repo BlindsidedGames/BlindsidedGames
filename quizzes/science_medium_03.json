@@ -1,0 +1,85 @@
+{
+  "id": "science_medium_03",
+  "title": "Medium Science Quiz 2",
+  "sections": [
+    {
+      "title": "Science",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which of the following is an igneous rock?",
+          "options": [
+            "Limestone",
+            "Granite",
+            "Marble",
+            "Slate"
+          ],
+          "a": "Granite",
+          "explanation": "Granite forms from the slow crystallization of magma below Earth's surface."
+        },
+        {
+          "type": "true-false",
+          "q": "The human skeleton has over 300 bones in adulthood.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "A typical human adult has 206 bones."
+        },
+        {
+          "type": "true-false",
+          "q": "Antibiotics are effective against viruses.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Antibiotics only treat bacterial infections, not viral ones."
+        },
+        {
+          "type": "self-eval",
+          "q": "What theory explains the movement of Earth's landmasses?",
+          "a": "Plate Tectonics",
+          "explanation": "The lithosphere is divided into tectonic plates that move."
+        },
+        {
+          "type": "self-eval",
+          "q": "What do you call an animal that eats only plants?",
+          "a": "Herbivore",
+          "explanation": "Herbivores consume plant material as their main diet."
+        },
+        {
+          "type": "self-eval",
+          "q": "What instrument measures atmospheric pressure?",
+          "a": "Barometer",
+          "explanation": "Barometers are crucial for forecasting weather."
+        },
+        {
+          "type": "self-eval",
+          "q": "What scale measures the acidity of a substance?",
+          "a": "pH Scale",
+          "explanation": "The scale typically goes from 0 to 14."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the main energy source for deep ocean food webs lacking sunlight?",
+          "a": "Hydrothermal vents",
+          "explanation": "Chemosynthesis allows bacteria to produce energy from vent chemicals."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is a positively charged subatomic particle called?",
+          "a": "Proton",
+          "explanation": "Protons live in the nucleus with neutrons."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the largest organ of the human body?",
+          "a": "Skin",
+          "explanation": "The skin protects the body and regulates temperature."
+        }
+      ]
+    }
+  ]
+}

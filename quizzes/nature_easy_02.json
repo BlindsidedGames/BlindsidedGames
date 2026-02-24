@@ -1,0 +1,85 @@
+{
+    "id": "nature_easy_02",
+    "title": "Easy Nature Quiz 2",
+    "sections": [
+        {
+            "title": "Nature",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which part of a plant primarily absorbs water and nutrients from the soil?",
+                    "options": [
+                        "Leaves",
+                        "Roots",
+                        "Stem",
+                        "Flowers"
+                    ],
+                    "a": "Roots",
+                    "explanation": "Roots anchor the plant and act as a sponge to absorb water and dissolved minerals."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Penguins are native only to the Northern Hemisphere.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Penguins are found almost exclusively in the Southern Hemisphere, mostly in Antarctica."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Most snakes are venomous.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Only about 20% of the world's snake species are venomous. Most are harmless to humans."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is an ecosystem?",
+                    "a": "An ecosystem is a community of living organisms interacting with each other and their physical environment.",
+                    "explanation": "Examples include rainforests, coral reefs, and deserts."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What gas do plants take in from the air to make their food?",
+                    "a": "Carbon dioxide (CO2).",
+                    "explanation": "Plants take in CO2 and release oxygen as roughly a byproduct during photosynthesis."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the tallest type of tree in the world.",
+                    "a": "The Coast Redwood.",
+                    "explanation": "These giants, found in coastal California, can grow to over 350 feet tall."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What does an herbivore eat?",
+                    "a": "An herbivore eats primarily plants.",
+                    "explanation": "Cows, deer, and elephants are examples of herbivores."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is hibernation?",
+                    "a": "Hibernation is a state of deep sleep or inactivity that some animals undergo during winter to conserve energy when food is scarce.",
+                    "explanation": "Bears and groundhogs are famous for their winter hibernation."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "How does a snake primarily smell its surroundings?",
+                    "a": "A snake 'tastes' the air by flickering its forked tongue to collect airborne scent particles, which it then processes using an organ in the roof of its mouth.",
+                    "explanation": "This sensory system is called the Jacobson's organ."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the hard outer skeleton of insects and crabs called?",
+                    "a": "An exoskeleton.",
+                    "explanation": "It protects and supports their bodies since they lack internal bones."
+                }
+            ]
+        }
+    ]
+}

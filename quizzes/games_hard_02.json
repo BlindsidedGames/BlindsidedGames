@@ -1,0 +1,85 @@
+{
+    "id": "games_hard_02",
+    "title": "Hard Games Quiz 2",
+    "sections": [
+        {
+            "title": "Games",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which highly influential designer spearheaded the creation of 'Super Mario Bros.', 'The Legend of Zelda', and 'Donkey Kong'?",
+                    "options": [
+                        "Hideo Kojima",
+                        "Shigeru Miyamoto",
+                        "Gunpei Yokoi",
+                        "Satoru Iwata"
+                    ],
+                    "a": "Shigeru Miyamoto",
+                    "explanation": "He is widely considered one of the most important figures in gaming history."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The highest possible score in a standard game of Pac-Man is 3,333,360 points.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Achieving this score ends the game in a 'kill screen' due to an integer overflow."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the board game 'Gloomhaven', players successfully win mainly by trading goods across Europe.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Gloomhaven is a cooperative campaign game about exploring dungeons and fighting monsters."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What massive cooperative board game became a massive critical success by physically hiding legacy components in sealed envelopes?",
+                    "a": "Pandemic Legacy.",
+                    "explanation": "The game fundamentally changes permanently as players progress through a sprawling campaign."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What influential Japanese company created the Game Boy and the incredibly successful Nintendo DS?",
+                    "a": "Nintendo.",
+                    "explanation": "The company originally started in 1889 producing handmade hanafuda playing cards."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which terrifying 1999 video game tasks the protagonist Harry Mason with searching a heavily fogged town for his daughter?",
+                    "a": "Silent Hill.",
+                    "explanation": "The thick fog physically hid the limited render distance of the original PlayStation."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the complex card game 'Bridge', what does 'dummy' mean?",
+                    "a": "The partner of the declarer, whose cards are placed face up on the table.",
+                    "explanation": "The declarer then plays both hands for the duration of the round."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What wildly popular 2011 sandbox game tasks players with creatively surviving terrifying creatures called Creepers?",
+                    "a": "Minecraft.",
+                    "explanation": "The game was originally developed in Java."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which critically acclaimed 2007 game is considered the spiritual successor to 'System Shock 2'?",
+                    "a": "BioShock.",
+                    "explanation": "Both games blend first-person shooting with complex RPG elements."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What massively multiplayer game involves heavily armored characters fighting in the 'Summoner's Rift'?",
+                    "a": "League of Legends.",
+                    "explanation": "It is one of the most prominent esports titles."
+                }
+            ]
+        }
+    ]
+}

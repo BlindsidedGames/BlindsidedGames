@@ -1,0 +1,85 @@
+{
+    "id": "geography_hard_04",
+    "title": "Hard Geography Quiz 4",
+    "sections": [
+        {
+            "title": "Geography",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which of these seas is practically entirely enclosed by the landmasses of Europe and Asia, save for the narrow Bosphorus and Dardanelles straits?",
+                    "options": [
+                        "The Red Sea",
+                        "The Black Sea",
+                        "The Mediterranean Sea",
+                        "The Baltic Sea"
+                    ],
+                    "a": "The Black Sea",
+                    "explanation": "It connects to the Atlantic Ocean only via the Mediterranean and Aegean Seas, and various narrow straits."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The country of Indonesia is geographically spread across more than 17,000 distinct islands.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "It truly is the quintessential and largest archipelago state in the world by both area and population."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The Equator fundamentally passes directly through the physical center of the Australian continent.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Australia is located entirely in the Southern Hemisphere; the Equator passes significantly north of it through Indonesia."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the name of the incredibly deep geological rift valley running longitudinally downwards through Eastern Africa?",
+                    "a": "The Great Rift Valley.",
+                    "explanation": "It is an active continental rift zone where the African tectonic plate is historically splitting into two new plates."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which US state physically borders both the Pacific Ocean to its west and the country of Mexico to its south?",
+                    "a": "California.",
+                    "explanation": "California shares a heavily populated international border with the Mexican state of Baja California."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the colossal, high-altitude lake positioned directly on the mountainous border between Bolivia and Peru.",
+                    "a": "Lake Titicaca.",
+                    "explanation": "It is widely considered the highest commercially navigable lake in the entire world."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What specifically is a basin geographically speaking?",
+                    "a": "A basin is a broad, naturally formed depression in the Earth's surface, typically fundamentally shaped like a bowl, where water universally collects or drains into.",
+                    "explanation": "Geological forces, erosion, and even meteor impacts can successfully form them."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which European completely landlocked country fundamentally borders Germany, Austria, Slovakia, and Poland?",
+                    "a": "The Czech Republic (Czechia).",
+                    "explanation": "It sits squarely and historically in the geographic center of Europe."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe precisely what the tundra biome fundamentally represents.",
+                    "a": "The tundra is a vast, mostly flat, brutally treeless Arctic region defined by a profoundly harsh climate, violently low temperatures, completely poor nutrients, and characteristically terribly short growing seasons.",
+                    "explanation": "Under the soil layer is typically permanently frozen ground called permafrost."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What legendary ancient city impressively carved directly into vibrant rose-red rock faces is fundamentally located geographically in modern-day Jordan?",
+                    "a": "Petra.",
+                    "explanation": "It was historically the remarkably prosperous capital of the Nabataean Kingdom."
+                }
+            ]
+        }
+    ]
+}

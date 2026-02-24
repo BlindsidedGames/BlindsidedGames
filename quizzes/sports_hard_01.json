@@ -1,0 +1,85 @@
+{
+    "id": "sports_hard_01",
+    "title": "Hard Sports Quiz 1",
+    "sections": [
+        {
+            "title": "Sports",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Who is the only player in NHL history to record over 200 points in a single regular season?",
+                    "options": [
+                        "Mario Lemieux",
+                        "Wayne Gretzky",
+                        "Bobby Orr",
+                        "Gordie Howe"
+                    ],
+                    "a": "Wayne Gretzky",
+                    "explanation": "He accomplished this incredible feat four times during his career."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The first modern Olympic Games held in Athens in 1896 featured female competitors.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Women were not allowed to compete until the 1900 Games in Paris."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In rugby union, a 'drop goal' is worth 3 points.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "It is scored by drop-kicking the ball over the crossbar and between the uprights during open play."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the name of the prestigious decathlon scoring table formula currently used by World Athletics?",
+                    "a": "The 1984 scoring tables (with minor subsequent adjustments).",
+                    "explanation": "It comprehensively calculates points based on performance mathematically using specific constants for each event."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which country has won the most Rugby World Cup tournaments?",
+                    "a": "South Africa (as of 2023).",
+                    "explanation": "South Africa secured their fourth title in 2023, surpassing New Zealand."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In Formula 1 racing, what specifically does a 'black flag with an orange disc' indicate to a driver?",
+                    "a": "The car has a mechanical problem that endangers themselves or others and must return to the pits immediately.",
+                    "explanation": "It is colloquially known as the 'meatball' flag."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the exact official distance of a standard Olympic marathon in kilometers?",
+                    "a": "42.195 kilometers.",
+                    "explanation": "The distance was standardized in 1921 based on the length run at the 1908 London Olympics."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In professional darts, what is the highest possible theoretical checkout (completing a leg in one turn)?",
+                    "a": "170.",
+                    "explanation": "It requires hitting two treble 20s and the inner bullseye (50 points)."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who was the first gymnast to be awarded a perfect score of 10.0 at the Olympic Games?",
+                    "a": "Nadia Comăneci.",
+                    "explanation": "She achieved this historic feat on the uneven bars at the 1976 Montreal Olympics."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What specific illegal chess move involves a player simultaneously moving their king two squares towards a rook, and the rook moving to the square the king crossed?",
+                    "a": "It is not an illegal move; it is called 'castling'.",
+                    "explanation": "However, it is illegal if the king is in check, moves through check, or ends up in check."
+                }
+            ]
+        }
+    ]
+}

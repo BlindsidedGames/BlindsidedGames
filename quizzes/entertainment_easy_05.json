@@ -1,0 +1,85 @@
+{
+    "id": "entertainment_easy_05",
+    "title": "Easy Entertainment Quiz 5",
+    "sections": [
+        {
+            "title": "Entertainment",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which animated television series famously features a bald, yellow father named Homer?",
+                    "options": [
+                        "The Simpsons",
+                        "Family Guy",
+                        "Bob's Burgers",
+                        "King of the Hill"
+                    ],
+                    "a": "The Simpsons",
+                    "explanation": "It is exactly the longest-running American animated series in television history."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A 'cameo' in a movie refers to a long, starring role by an unknown actor.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "A cameo is typically a brief, uncredited appearance by a very famous person."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The massive annual music and arts festival held in the Colorado desert is called Coachella.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The festival features major artists and is famously known for its influential fashion."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What massive global franchise follows the adventures of Jedi Knights battling the dark side?",
+                    "a": "Star Wars.",
+                    "explanation": "Created by George Lucas, the expansive universe includes movies, shows, and games."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which wildly popular, critically acclaimed streaming show focuses on kids fighting monsters in the 1980s town of Hawkins?",
+                    "a": "Stranger Things.",
+                    "explanation": "The Netflix hit heavily relies on nostalgia for 1980s pop culture and horror."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the music industry, what does the 'Billboard Hot 100' famously track and rank?",
+                    "a": "The most popular hit songs natively in the United States exclusively.",
+                    "explanation": "The Hot 100 tracks the most popular songs in the US based on sales, radio play, and streaming."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the name of the prestigious golden statuette awarded at the Academy Awards?",
+                    "a": "The Oscar.",
+                    "explanation": "It is the primary award given by the Academy of Motion Picture Arts and Sciences."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the term for a movie that re-tells the story of a previous movie?",
+                    "a": "A Remake.",
+                    "explanation": "Remakes often update the setting, cast, or special effects for a modern audience."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which legendary pop singer is known around the world as the 'Material Girl'?",
+                    "a": "Madonna.",
+                    "explanation": "The nickname comes from her massive 1984 hit song of the same name."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What specifically is the name given to the heavily stylized form of traditional Japanese animated entertainment?",
+                    "a": "Anime.",
+                    "explanation": "Anime covers a massive range of genres and has a distinct visual aesthetic."
+                }
+            ]
+        }
+    ]
+}

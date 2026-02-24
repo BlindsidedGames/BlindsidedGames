@@ -1,0 +1,85 @@
+{
+  "id": "biology_easy_04",
+  "title": "Easy Biology Quiz 4",
+  "sections": [
+    {
+      "title": "Biology",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which part of the plant develops into a fruit?",
+          "options": [
+            "Leaf",
+            "Root",
+            "Stem",
+            "Flower"
+          ],
+          "a": "Flower",
+          "explanation": "The ovary of the flower matures into what we call a fruit."
+        },
+        {
+          "type": "true-false",
+          "q": "A mushroom is a type of plant.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Mushrooms are fungi, which are in a different biological kingdom than plants."
+        },
+        {
+          "type": "true-false",
+          "q": "An adult human has 32 teeth.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "This includes the wisdom teeth."
+        },
+        {
+          "type": "self-eval",
+          "q": "What do seeds need to germinate (start growing)?",
+          "a": "Water, warmth, and oxygen",
+          "explanation": "These conditions trigger the seed to sprout."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the name of the long bone in your upper arm?",
+          "a": "Humerus",
+          "explanation": "It's located between the shoulder and the elbow."
+        },
+        {
+          "type": "self-eval",
+          "q": "What do camels store in their humps?",
+          "a": "Fat",
+          "explanation": "They store fat for energy, not water as commonly believed."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which organ covers the entire outside of the human body?",
+          "a": "Skin",
+          "explanation": "The skin is the largest organ of the integumentary system."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name a bird that cannot fly but can run very fast.",
+          "a": "Ostrich (or Emu)",
+          "explanation": "Ostriches are the largest and fastest-running birds."
+        },
+        {
+          "type": "self-eval",
+          "q": "What part of a fish helps it to swim and balance in the water?",
+          "a": "Fins",
+          "explanation": "Fins provide thrust and control in the water."
+        },
+        {
+          "type": "self-eval",
+          "q": "What small, highly social insects belong to the family Formicidae and live in massive colonies?",
+          "a": "Ants",
+          "explanation": "Ants are highly social insects with complex colonies."
+        }
+      ]
+    }
+  ]
+}

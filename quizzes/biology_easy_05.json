@@ -1,0 +1,85 @@
+{
+  "id": "biology_easy_05",
+  "title": "Easy Biology Quiz 5",
+  "sections": [
+    {
+      "title": "Biology",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "What type of animal is a frog?",
+          "options": [
+            "Reptile",
+            "Amphibian",
+            "Mammal",
+            "Fish"
+          ],
+          "a": "Amphibian",
+          "explanation": "Frogs typically start life in the water with gills, and develop lungs as adults."
+        },
+        {
+          "type": "true-false",
+          "q": "All spiders weave webs.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Many species, like wolf spiders, hunt actively and don't rely on webs."
+        },
+        {
+          "type": "true-false",
+          "q": "The primary job of the lungs is to breathe in oxygen and breathe out carbon dioxide.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "This allows for gas exchange vital for respiration."
+        },
+        {
+          "type": "self-eval",
+          "q": "What kind of animal has a pouch to carry its young?",
+          "a": "Marsupial",
+          "explanation": "Kangaroos and koalas are famous marsupials."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the outer covering of a tree trunk called?",
+          "a": "Bark",
+          "explanation": "Bark protects the inner wood from disease and damage."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is a group of lions called?",
+          "a": "A pride",
+          "explanation": "Lions are the only cats that live in large social groups."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the main structural support in the human body?",
+          "a": "The skeleton (or bones)",
+          "explanation": "Without bones, our bodies would have no rigid shape."
+        },
+        {
+          "type": "self-eval",
+          "q": "What fluid circulates through our veins and arteries?",
+          "a": "Blood",
+          "explanation": "Blood transports nutrients and oxygen throughout the body."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the common name for the larva of a frog or toad?",
+          "a": "Tadpole",
+          "explanation": "Tadpoles possess gills and swim in water before metamorphosing."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which part of a flower produces pollen?",
+          "a": "Anther (or stamen)",
+          "explanation": "Pollen is vital for plant reproduction."
+        }
+      ]
+    }
+  ]
+}

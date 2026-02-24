@@ -1,0 +1,85 @@
+{
+  "id": "history_hard_03",
+  "title": "Hard History Quiz 3",
+  "sections": [
+    {
+      "title": "History",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which King of France was known as the 'Sun King' and epitomized absolute monarchy?",
+          "options": [
+            "Louis XIII",
+            "Louis XIV",
+            "Louis XV",
+            "Louis XVI"
+          ],
+          "a": "Louis XIV",
+          "explanation": "He famously declared 'L'\u00e9tat, c'est moi' (I am the state) and built the Palace of Versailles."
+        },
+        {
+          "type": "true-false",
+          "q": "The Byzantine Empire finally collapsed when Rome fell to the Visigoths in 410 AD.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "The Western Roman empire fell in the 5th century. The Byzantine (Eastern) Empire continued until 1453."
+        },
+        {
+          "type": "true-false",
+          "q": "The Monroe Doctrine was an 1823 US policy opposing European colonialism in the Americas.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "President James Monroe warned that any intervention would be viewed as a hostile act."
+        },
+        {
+          "type": "self-eval",
+          "q": "What major naval battle in 1805 saw the British Royal Navy defeat the combined fleets of the French and Spanish Navies?",
+          "a": "The Battle of Trafalgar",
+          "explanation": "Admiral Horatio Nelson won the battle but lost his life."
+        },
+        {
+          "type": "self-eval",
+          "q": "What political movement sought the establishment of a Jewish homeland in Palestine?",
+          "a": "Zionism",
+          "explanation": "It eventually culminated in the creation of the State of Israel in 1948."
+        },
+        {
+          "type": "self-eval",
+          "q": "What massive 19th-century conflict in South Africa was fought between the British Empire and two independent Boer states?",
+          "a": "The Second Boer War",
+          "explanation": "It resulted in British victory and the eventual formation of the Union of South Africa."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the founder of the Republic of Turkey and its first President, implementing sweeping progressive reforms?",
+          "a": "Mustafa Kemal Atat\u00fcrk",
+          "explanation": "He modernized the legal system, women's rights, and the alphabet."
+        },
+        {
+          "type": "self-eval",
+          "q": "What event in 1968 saw Soviet and Warsaw Pact troops invade Czechoslovakia to halt political reforms?",
+          "a": "The suppression of the Prague Spring",
+          "explanation": "Alexander Dub\u010dek had attempted 'socialism with a human face'."
+        },
+        {
+          "type": "self-eval",
+          "q": "What empire was ruled by figures such as Ashoka the Great, known for spreading Buddhism across India?",
+          "a": "The Maurya Empire",
+          "explanation": "It was one of the largest and most powerful ancient Indian empires."
+        },
+        {
+          "type": "self-eval",
+          "q": "What series of treaties, ending in 1713, helped conclude the War of the Spanish Succession and established the concept of the balance of power in Europe?",
+          "a": "The Peace of Utrecht",
+          "explanation": "It curtailed French expansionism under Louis XIV."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+    "id": "nature_hard_01",
+    "title": "Hard Nature Quiz 1",
+    "sections": [
+        {
+            "title": "Nature",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which part of a flower contains the pollen?",
+                    "options": [
+                        "Stigma",
+                        "Style",
+                        "Anther",
+                        "Sepal"
+                    ],
+                    "a": "Anther",
+                    "explanation": "The anther is the pollen-bearing part of the stamen (the male reproductive organ of a flower)."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A 'murmuration' refers to a massive flock of migrating geese.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "A murmuration typically refers to the mesmerizing, coordinated flight patterns of large flocks of starlings."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The Coriolis effect dictates the direction water drains in a sink or toilet.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The Coriolis effect influences large-scale weather systems like hurricanes, but is far too weak to affect the direction of draining water in small basins."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is 'eutrophication' and what causes it?",
+                    "a": "Eutrophication is the excessive richness of nutrients (often nitrogen or phosphorus) in a body of water, frequently due to runoff from the land, which causes a dense growth of plant life and death of animal life from lack of oxygen.",
+                    "explanation": "Algal blooms are a primary symptom of this process."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain the concept of 'convergent evolution'.",
+                    "a": "Convergent evolution is the independent evolution of similar features in species of different periods or epochs in time.",
+                    "explanation": "An example is the similar body shapes of sharks (fish) and dolphins (mammals), adapted for swimming."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the difference between an 'epiphyte' and a 'parasite' plant?",
+                    "a": "An epiphyte grows on the surface of another plant for physical support but derives its moisture and nutrients from the air and rain, causing no harm. A parasite extracts nutrients directly from its host, often harming it.",
+                    "explanation": "Orchids and bromeliads are common epiphytes."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe the function of 'mycorrhizae' in a forest ecosystem.",
+                    "a": "Mycorrhizae are symbiotic associations between fungi and plant roots. The fungi enhance the plant's water and nutrient uptake, while the plant provides the fungi with carbohydrates formed from photosynthesis.",
+                    "explanation": "This underground 'wood wide web' connects many forest trees."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What defines a 'Rain shadow'?",
+                    "a": "A rain shadow is a dry area on the leeward (downwind) side of a mountainous area, caused because the mountains block the passage of rain-producing weather systems.",
+                    "explanation": "As air rises over the mountains, it cools and drops moisture, leaving dry air descending on the other side."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the 'Cambrian Explosion'?",
+                    "a": "It was an event approximately 541 million years ago when practically all major animal phyla started appearing in the fossil record, marking a rapid diversification of life on Earth.",
+                    "explanation": "It signifies a major turning point in evolutionary history."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "How does a 'rip current' form and function?",
+                    "a": "A rip current is a strong, localized, and narrow current of water which moves directly away from the shore, cutting through the lines of breaking waves.",
+                    "explanation": "They form when water brought to the beach by waves funnels back out to sea."
+                }
+            ]
+        }
+    ]
+}

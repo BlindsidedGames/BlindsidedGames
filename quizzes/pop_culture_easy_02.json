@@ -1,0 +1,85 @@
+{
+    "id": "pop_culture_easy_02",
+    "title": "Easy Pop Culture Quiz 2",
+    "sections": [
+        {
+            "title": "Pop Culture",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "In the movie 'The Matrix', what color pill does Neo take to wake up from the simulation?",
+                    "options": [
+                        "Blue",
+                        "Red",
+                        "Green",
+                        "Yellow"
+                    ],
+                    "a": "Red",
+                    "explanation": "Morpheus offers him the red pill to show him 'how deep the rabbit hole goes', representing the harsh truth of reality."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The animated TV show 'The Simpsons' is set in the fictional town of Quahog.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "'The Simpsons' is set in Springfield. 'Family Guy' is set in Quahog."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Beyoncé was originally a member of the girl group Destiny's Child.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "She rose to fame as the lead singer of Destiny's Child before launching a hugely successful solo career."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which young wizard has a distinctive lightning bolt-shaped scar on his forehead?",
+                    "a": "Harry Potter.",
+                    "explanation": "The scar was given to him as a baby by the dark wizard Lord Voldemort."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the name of the incredibly prestigious annual award given specifically for cinematic achievements in the United States film industry?",
+                    "a": "The Academy Awards (or Oscars).",
+                    "explanation": "They are widely considered the most prestigious and significant awards in the entertainment industry."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which critically acclaimed HBO series focuses on the Roy family and their global media empire?",
+                    "a": "Succession.",
+                    "explanation": "The show follows the children of Logan Roy fighting for control of the company."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the fictional African nation that serves as the home of the Marvel superhero Black Panther?",
+                    "a": "Wakanda.",
+                    "explanation": "It is depicted as the most technologically advanced nation on Earth due to its vast deposits of Vibranium."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What legendary British rock band featured John Lennon, Paul McCartney, George Harrison, and Ringo Starr?",
+                    "a": "The Beatles.",
+                    "explanation": "They are famously widely recognized as one of the most influential bands of the pop and rock era."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who is the primary antagonist in the original 'Star Wars' trilogy, famous for his severe black armor and heavy breathing?",
+                    "a": "Darth Vader.",
+                    "explanation": "He is later revealed to be Anakin Skywalker, Luke Skywalker's father."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What highly popular 1990s sitcom featured six close friends living together in New York City?",
+                    "a": "Friends.",
+                    "explanation": "The main characters are Rachel, Monica, Phoebe, Joey, Chandler, and Ross."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "id": "pop_culture_medium_04",
+    "title": "Medium Pop Culture Quiz 4",
+    "sections": [
+        {
+            "title": "Pop Culture",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which popular modern rock band features frontman Alex Turner?",
+                    "options": [
+                        "The Killers",
+                        "Arctic Monkeys",
+                        "The Strokes",
+                        "Kings of Leon"
+                    ],
+                    "a": "Arctic Monkeys",
+                    "explanation": "Turner is the primary songwriter and lead vocalist for the massive UK indie rock band."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The first ever episode of the wildly successful animated comedy 'Family Guy' aired before the year 2000.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "It premiered right after the Super Bowl in January 1999."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the famous 1982 movie 'Blade Runner', Harrison Ford's character Deckard is confirmed definitively on-screen to be a Replicant.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "While heavily implied by Ridley Scott in later cuts, the original film deliberately leaves it ambiguous."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which iconic 1999 psychological thriller directed by David Fincher famously starred Edward Norton and Brad Pitt and heavily explored themes of consumerism and toxic masculinity?",
+                    "a": "Fight Club.",
+                    "explanation": "The film notoriously flopped at the box office before finding massive cult success on DVD."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What legendary hip-hop duo consisting of André 3000 and Big Boi released the massive hit album 'Speakerboxxx/The Love Below' in 2003?",
+                    "a": "Outkast.",
+                    "explanation": "The innovative double album won the Grammy for Album of the Year."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What groundbreaking 1993 sci-fi film directed by Steven Spielberg revolutionized the extensive use of computer-generated imagery (CGI) in cinema?",
+                    "a": "Jurassic Park.",
+                    "explanation": "It flawlessly blended animatronics with unprecedented CGI dinosaurs to historic critical and commercial success."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the 'A Song of Ice and Fire' book series (and the 'Game of Thrones' show), what is the sigil (emblem) of House Stark?",
+                    "a": "A Direwolf.",
+                    "explanation": "The ancient, massive wolves represent the deeply rooted Northern house historically."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which critically acclaimed 2007 drama series closely followed the intersecting lives of numerous advertising executives working on Madison Avenue in the 1960s?",
+                    "a": "Mad Men.",
+                    "explanation": "It famously won the Emmy for Outstanding Drama Series for its first four consecutive seasons."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What massively popular video game console released in 2006 featured the incredibly innovative motion-sensing 'Wiimote' controller?",
+                    "a": "The Nintendo Wii.",
+                    "explanation": "The console dominated the market largely due to its wildly accessible motion controls."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which famous artist painted 'The Starry Night'?",
+                    "a": "Vincent van Gogh.",
+                    "explanation": "Van Gogh painted the iconic masterwork in 1889."
+                }
+            ]
+        }
+    ]
+}

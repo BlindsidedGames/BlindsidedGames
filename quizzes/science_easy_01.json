@@ -1,0 +1,85 @@
+{
+  "id": "science_easy_01",
+  "title": "Easy Science Quiz 1",
+  "sections": [
+    {
+      "title": "Science",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "What is the boiling point of water at sea level?",
+          "options": [
+            "90\u00b0C",
+            "100\u00b0C",
+            "110\u00b0C",
+            "120\u00b0C"
+          ],
+          "a": "100\u00b0C",
+          "explanation": "Water boils at 100 degrees Celsius at 1 atmosphere of pressure."
+        },
+        {
+          "type": "true-false",
+          "q": "The Earth is the fourth planet from the Sun.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "The Earth is the third planet from the Sun."
+        },
+        {
+          "type": "true-false",
+          "q": "Venus is the hottest planet in our solar system.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "Venus has a thick atmosphere that traps heat."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the primary gas found in Earth's atmosphere?",
+          "a": "Nitrogen",
+          "explanation": "Nitrogen makes up about 78% of Earth's atmosphere."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the force that keeps the planets in orbit around the Sun.",
+          "a": "Gravity",
+          "explanation": "Gravity is the attractive force between masses."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the chemical symbol for Helium?",
+          "a": "He",
+          "explanation": "Helium is element number 2, symbol He."
+        },
+        {
+          "type": "self-eval",
+          "q": "What part of the plant conducts photosynthesis?",
+          "a": "Leaves",
+          "explanation": "Leaves contain chlorophyll for photosynthesis."
+        },
+        {
+          "type": "self-eval",
+          "q": "What happens to water when it freezes?",
+          "a": "It expands",
+          "explanation": "Ice is less dense than liquid water because it expands upon freezing."
+        },
+        {
+          "type": "self-eval",
+          "q": "What do we call a scientist who studies stars?",
+          "a": "Astronomer",
+          "explanation": "Astronomy is the study of celestial objects."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the center of an atom called?",
+          "a": "Nucleus",
+          "explanation": "The nucleus contains protons and neutrons."
+        }
+      ]
+    }
+  ]
+}

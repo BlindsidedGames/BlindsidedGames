@@ -1,0 +1,85 @@
+{
+    "id": "games_medium_03",
+    "title": "Medium Games Quiz 3",
+    "sections": [
+        {
+            "title": "Games",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "In the game 'Elden Ring', who directed the game with worldbuilding provided by George R. R. Martin?",
+                    "options": [
+                        "Hideo Kojima",
+                        "Shigeru Miyamoto",
+                        "Hidetaka Miyazaki",
+                        "Todd Howard"
+                    ],
+                    "a": "Hidetaka Miyazaki",
+                    "explanation": "He is the president of FromSoftware and creator of the Souls series."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The objective in the game of Dominoes is to build a tall tower using the pieces.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The objective is traditionally to lay down dominoes by matching numbers on their ends."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the classic game of 'Operation', players use plastic tweezers to carefully remove body parts.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The tweezers are metal. Touching the metal edge completes a circuit and triggers a buzzer."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What popular 1997 role-playing game features Cloud Strife fighting the megacorporation Shinra?",
+                    "a": "Final Fantasy VII.",
+                    "explanation": "Its cinematic cutscenes and 3D graphics popularized RPGs in the West."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which famous real-time strategy series involves choosing between the Terran, Zerg, and Protoss factions?",
+                    "a": "StarCraft.",
+                    "explanation": "It profoundly influenced the development of global esports, especially in South Korea."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the name of the popular party game where players try to secretly identify the Mafia members hidden among the townsfolk?",
+                    "a": "Mafia (or Werewolf).",
+                    "explanation": "It is a game of social deduction where informed minorities battle uninformed majorities."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the card game 'Hearts', which specific card carries a devastating penalty of 13 points?",
+                    "a": "The Queen of Spades.",
+                    "explanation": "The goal is usually to avoid taking any hearts or the Queen of Spades."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which highly influential video game created by Sid Meier tasks the player with building an empire from the Stone Age to the Information Age?",
+                    "a": "Civilization.",
+                    "explanation": "It heavily defined the 4X strategy game genre."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What popular board game involves buying, selling, and building on properties to bankrupt opponents?",
+                    "a": "Monopoly.",
+                    "explanation": "The game was originally designed to teach people about the dangers of land monopolies."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What critically acclaimed 2011 video game tasks players with exploring the frozen fantasy province of Skyrim?",
+                    "a": "The Elder Scrolls V: Skyrim.",
+                    "explanation": "The player takes on the role of the Dragonborn to defeat Alduin the World-Eater."
+                }
+            ]
+        }
+    ]
+}

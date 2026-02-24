@@ -1,0 +1,85 @@
+{
+    "id": "nature_hard_04",
+    "title": "Hard Nature Quiz 4",
+    "sections": [
+        {
+            "title": "Nature",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which of the following describes a 'barchan'?",
+                    "options": [
+                        "A types of coral reef",
+                        "A crescent-shaped sand dune",
+                        "A glacial valley",
+                        "A volcanic vent"
+                    ],
+                    "a": "A crescent-shaped sand dune",
+                    "explanation": "Barchans are formed by wind blowing consistently from one direction, creating dunes with distinct 'horns' pointing downwind."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The gympie-gympie plant is renowned for its nutritious fruit.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The gympie-gympie (Dendrocnide moroides) is a stinging tree native to Australia notorious for delivering incredibly painful and long-lasting stings via hollow silica hairs."
+                },
+                {
+                    "type": "true-false",
+                    "q": "An 'exothermic' reaction in nature releases heat.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Exothermic reactions release energy, usually in the form of heat, to their surroundings. (Endothermic reactions absorb heat)."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is 'Batesian mimicry'?",
+                    "a": "Batesian mimicry is when a harmless species has evolved to imitate the warning signals, such as coloration, of a harmful species directed at a predator of them both.",
+                    "explanation": "This tricks the predator into avoiding the harmless mimic."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain the role of 'nitrogen-fixing bacteria' in an ecosystem.",
+                    "a": "These bacteria convert incredibly stable nitrogen gas in the atmosphere into ammonia or related nitrogenous compounds that plants can finally absorb and utilize.",
+                    "explanation": "They are often found in root nodules of legumes."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What exactly defines a 'desert' scientifically based on precipitation?",
+                    "a": "A desert is officially defined as an area that receives less than 10 inches (25 centimeters) of annual precipitation.",
+                    "explanation": "Temperature is not the defining factor, only aridity."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is a 'fjord'?",
+                    "a": "A fjord is a long, deep, narrow inlet of the sea, bounded by steep cliffs or slopes, created largely by glacial erosion.",
+                    "explanation": "They are widely prominent along the coastlines of Norway and New Zealand."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe the geological feature of a 'karst' landscape.",
+                    "a": "Karst topography is a landscape formed from the dissolution of soluble rocks such as limestone, dolomite, and gypsum, characterized by underground drainage systems with sinkholes and caves.",
+                    "explanation": "These areas often lack surface rivers."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is an 'orographic' cloud?",
+                    "a": "An orographic cloud forms when air is forced to rise over a mountainous barrier, cooling rapidly and causing water vapor to condense.",
+                    "explanation": "This leads directly to the 'rain shadow' effect on the downwind slopes."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is 'dimorphism', specifically sexual dimorphism?",
+                    "a": "Sexual dimorphism is the condition where the two sexes of the same species exhibit differently measurable characteristics beyond the differences in their sexual organs.",
+                    "explanation": "Differences in size, color, or ornamentation (like antlers or bright plumage) are common examples."
+                }
+            ]
+        }
+    ]
+}

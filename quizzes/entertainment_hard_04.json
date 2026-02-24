@@ -1,0 +1,85 @@
+{
+    "id": "entertainment_hard_04",
+    "title": "Hard Entertainment Quiz 4",
+    "sections": [
+        {
+            "title": "Entertainment",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which influential film editing technique was famously pioneered by Sergei Eisenstein in the 1925 film 'Battleship Potemkin'?",
+                    "options": [
+                        "Cross-cutting",
+                        "Montage",
+                        "Match cut",
+                        "Fade to black"
+                    ],
+                    "a": "Montage",
+                    "explanation": "He used the 'Odessa Steps' sequence to famously demonstrate the emotional power of rapid editing."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The iconic role of Neo in 'The Matrix' was originally offered to Will Smith, who turned it down for 'Wild Wild West'.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Smith later admitted he didn't fully grasp the Wachowskis' complex vision for the film."
+                },
+                {
+                    "type": "true-false",
+                    "q": "To create the famous 'bullet time' effect in The Matrix, the Wachowskis used highly advanced CGI to digitally stretch the film reels.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "They used dozens of still cameras firing sequentially in a ring around the actors."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What wildly influential 1988 anime feature film helped heavily popularize the cyberpunk genre in the West?",
+                    "a": "Akira.",
+                    "explanation": "Its breathtaking, hyper-detailed animation set a new standard for the medium."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which infamous 1999 massive outdoor music festival devolved into riots, arson, and widespread horrific violence?",
+                    "a": "Woodstock '99.",
+                    "explanation": "The disastrous event is widely considered one of the worst-planned festivals in history."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What complex 1990s television thriller famously featured FBI Agent Dale Cooper investigating a murder in a strange Pacific Northwest logging town?",
+                    "a": "Twin Peaks.",
+                    "explanation": "Created by David Lynch and Mark Frost, it revolutionized serialized television drama."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In music production, what exactly does a 'compressor' physically do to an audio signal?",
+                    "a": "It reduces the dynamic range by making loud sounds quieter and quiet sounds louder.",
+                    "explanation": "It helps make the overall mix sound more cohesive and punchy."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What incredibly expensive, famously convoluted sci-fi film directed by David Lynch completely bombed upon release in 1984?",
+                    "a": "Dune.",
+                    "explanation": "Lynch famously disowned certain cuts of the film, removing his name from the credits."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What specific obscure, incredibly difficult 1980s arcade game fiercely tasked the player with defending multiple cities from falling ballistic missiles?",
+                    "a": "Missile Command.",
+                    "explanation": "Known for its harsh, unwinnable 'Game Over' conclusion symbolizing nuclear annihilation."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which highly influential 1970s New York rock band, famously fronted by David Byrne, released the concert film 'Stop Making Sense'?",
+                    "a": "Talking Heads.",
+                    "explanation": "The film heavily redefined how live concert performances were captured on screen."
+                }
+            ]
+        }
+    ]
+}

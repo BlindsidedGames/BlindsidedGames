@@ -1,0 +1,85 @@
+{
+    "id": "geography_medium_04",
+    "title": "Medium Geography Quiz 4",
+    "sections": [
+        {
+            "title": "Geography",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which of these major world capitals is located furthest north?",
+                    "options": [
+                        "London",
+                        "Stockholm",
+                        "Reykjavík",
+                        "Moscow"
+                    ],
+                    "a": "Reykjavík",
+                    "explanation": "The capital of Iceland is notoriously the northernmost capital of a sovereign state in the world."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The 'Ecuador' in the country Ecuador's name literally translates to 'Equator' in Spanish.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Ecuador is named precisely after the imaginary line that prominently runs directly through its territory."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The city of Venice, Italy is built primarily spanning across 118 small islands.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The islands are separated by winding canals and linked securely by over 400 bridges."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the term for a broad, flat area of high land, often elevated sharply above the surrounding area?",
+                    "a": "A plateau.",
+                    "explanation": "The Tibetan Plateau is famously known as 'the Roof of the World'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which US state has the smallest total land area?",
+                    "a": "Rhode Island.",
+                    "explanation": "Despite being small geographically, it has a high population density."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the enormous river that flows predominantly eastward through South America and discharges into the Atlantic.",
+                    "a": "The Amazon River.",
+                    "explanation": "By water volume discharged, it is staggeringly larger than any other river globally."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the predominant massive mountain range strictly in the eastern United States?",
+                    "a": "The Appalachian Mountains.",
+                    "explanation": "They run roughly parallel to the US east coast, ending functionally in Alabama."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe what a 'delta' is in reference to a river.",
+                    "a": "A river delta is a distinctive landform created by the deposition of sediment carried by a river as the water slowly flows into a standing body of water like an ocean or lake.",
+                    "explanation": "The Nile Delta in Egypt forms a classic triangular shape."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which African country is famously entirely surrounded geographically by another single country (South Africa)?",
+                    "a": "Lesotho.",
+                    "explanation": "This makes it a unique geographic enclave."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the capital of South Korea?",
+                    "a": "Seoul.",
+                    "explanation": "Seoul is located on the Han River in the northwestern part of the country."
+                }
+            ]
+        }
+    ]
+}

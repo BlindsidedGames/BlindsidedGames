@@ -1,0 +1,85 @@
+{
+    "id": "geography_medium_05",
+    "title": "Medium Geography Quiz 5",
+    "sections": [
+        {
+            "title": "Geography",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which country is home to the ancient Mayan ruins of Chichen Itza?",
+                    "options": [
+                        "Peru",
+                        "Guatemala",
+                        "Mexico",
+                        "Honduras"
+                    ],
+                    "a": "Mexico",
+                    "explanation": "It is located physically on the Yucatán Peninsula in Mexico."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The Danube River essentially flows through London, England.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The Thames flows through London; the massive Danube flows through several major Central and Eastern European cities."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Alaska is the physically largest state in the USA by landmass.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "It is staggeringly larger than Texas, the second largest state."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is an 'isthmus'?",
+                    "a": "An isthmus is a narrow strip of physically connecting land that securely links two larger landmasses together, while separating two bodies of water.",
+                    "explanation": "The Isthmus of Panama essentially connects North and South America."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which incredibly vast desert effectively dominates the entirely northern portion of Africa?",
+                    "a": "The Sahara Desert.",
+                    "explanation": "It fundamentally shapes the climate, culture, and physical geography of the region."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What determines whether a water body is classified strictly as a sea or a lake?",
+                    "a": "A sea is generally part of the larger ocean and partially enclosed strongly by land, usually saltwater. A lake is completely surrounded entirely by inland land.",
+                    "explanation": "The 'Caspian Sea' is technically the world's largest inland lake physically."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the capital city of Spain.",
+                    "a": "Madrid.",
+                    "explanation": "It is the geographically central physical hub of the country."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which crucial waterway physically separated primarily the state of New York from Canada effectively forming their border?",
+                    "a": "The St. Lawrence River (and Lake Ontario).",
+                    "explanation": "It is a vital shipping artery directly from the Great Lakes into the Atlantic."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What does a cartographer do professionally?",
+                    "a": "A cartographer is someone thoroughly trained to draw or produce accurate geographical maps completely.",
+                    "explanation": "They blend science, geology, and intricate design perfectly."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Where is the legendary 'Loch Ness' historically located geographically?",
+                    "a": "Scotland.",
+                    "explanation": "It is the famous deep freshwater loch in the Scottish Highlands globally known for its mythical monster."
+                }
+            ]
+        }
+    ]
+}

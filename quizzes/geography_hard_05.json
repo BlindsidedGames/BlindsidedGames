@@ -1,0 +1,85 @@
+{
+    "id": "geography_hard_05",
+    "title": "Hard Geography Quiz 5",
+    "sections": [
+        {
+            "title": "Geography",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which of these major African rivers physically crosses the Equator twice during its incredibly long meandering course?",
+                    "options": [
+                        "The Nile",
+                        "The Niger",
+                        "The Congo",
+                        "The Zambezi"
+                    ],
+                    "a": "The Congo",
+                    "explanation": "The Congo River structurally crosses the Equator twice, making it a globally uniquely massive equatorial river system."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The country of Lesotho is an enclave entirely geographically surrounded fundamentally by the sovereign nation of South Africa.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "It is exactly one of only three truly landlocked enclaved countries in the entire world (the others being Vatican City and San Marino)."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The immense vastness of the Sahara Desert is constantly slowly shrinking roughly year over year presently.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The Sahara is actually relentlessly expanding, primarily physically downwards into the fundamentally fragile Sahel region."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What effectively defines a 'mesa' geographically speaking?",
+                    "a": "A mesa is an aggressively isolated, essentially flat-topped elevation physically bounded from all sides substantially by shockingly steep escarpments.",
+                    "explanation": "They are exceptionally common prominently across perfectly arid landscapes typically like the American Southwest."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which major Asian river flows entirely within the absolutely physical boundaries completely of China?",
+                    "a": "The Yangtze.",
+                    "explanation": "It fiercely dominates profoundly the incredibly vast regional geography strictly within China's absolute borders entirely."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the colossal highest commercially navigable lake located directly on the mountainous border between Bolivia and Peru.",
+                    "a": "Lake Titicaca.",
+                    "explanation": "It holds tremendous cultural importance for the indigenous communities of the region."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What specifically is a 'caldera' structurally and geologically speaking?",
+                    "a": "An immensely large profoundly deep naturally formed depression created after a violently explosive volcanic eruption structurally collapses inwards.",
+                    "explanation": "Crater Lake in Oregon is a perfect example of this formation."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which African nation has three capital cities?",
+                    "a": "South Africa.",
+                    "explanation": "Pretoria is the executive capital, Bloemfontein the judicial, and Cape Town the legislative."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the highest uninterrupted waterfall in the world?",
+                    "a": "Angel Falls.",
+                    "explanation": "Located deeply within the pristine jungles of Venezuela, it drops over 3,200 feet."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe the term 'isthmus' in a geographic context.",
+                    "a": "A narrow strip of land connecting two larger landmasses and separating two bodies of water.",
+                    "explanation": "The Isthmus of Panama connects North and South America while separating the Atlantic and Pacific oceans."
+                }
+            ]
+        }
+    ]
+}

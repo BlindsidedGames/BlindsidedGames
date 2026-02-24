@@ -1,0 +1,85 @@
+{
+    "id": "games_medium_01",
+    "title": "Medium Games Quiz 1",
+    "sections": [
+        {
+            "title": "Games",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "In the game of Settlers of Catan, what combination of resources is required to build a road?",
+                    "options": [
+                        "Wood and Brick",
+                        "Sheep and Wheat",
+                        "Ore and Wheat",
+                        "Wood and Ore"
+                    ],
+                    "a": "Wood and Brick",
+                    "explanation": "Building roads allows you to expand your network to new resource hexes."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the video game 'Half-Life', the protagonist is a heavily armored space marine.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The protagonist, Gordon Freeman, is a theoretical physicist."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The standard layout of a dartboard places high numbers next to very low numbers.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "This layout rewards accuracy and severely punishes near misses."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What critically acclaimed role-playing video game features a monster hunter named Geralt of Rivia?",
+                    "a": "The Witcher 3: Wild Hunt.",
+                    "explanation": "It is widely considered one of the greatest RPGs ever made."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which classic strategy board game focuses on establishing train routes across North America?",
+                    "a": "Ticket to Ride.",
+                    "explanation": "Players collect beautifully animated train cars to claim routes."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In Dungeons & Dragons, what die does a player roll to see if their attack hits an enemy?",
+                    "a": "A twenty-sided die (d20).",
+                    "explanation": "The player must meet or exceed the enemy's armor class."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What competitive card game, released by Richard Garfield in 1993, pioneered the collectible card game genre?",
+                    "a": "Magic: The Gathering.",
+                    "explanation": "It established mechanics used in many subsequent card games."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which iconic video game series features the King of Iron Fist Tournament?",
+                    "a": "Tekken.",
+                    "explanation": "The fighting game revolves around the dysfunctional Mishima family."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In Poker, what hand contains five cards of the exact same suit in sequential order?",
+                    "a": "A straight flush.",
+                    "explanation": "A royal flush is a straight flush containing the highest cards."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What cooperative board game tasks players with violently curing four global diseases?",
+                    "a": "Pandemic.",
+                    "explanation": "Players work together as specialists preventing catastrophic outbreaks."
+                }
+            ]
+        }
+    ]
+}

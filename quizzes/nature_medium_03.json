@@ -1,0 +1,85 @@
+{
+    "id": "nature_medium_03",
+    "title": "Medium Nature Quiz 3",
+    "sections": [
+        {
+            "title": "Nature",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which biome is characterized by having very low temperatures, low precipitation, and permafrost?",
+                    "options": [
+                        "Taiga",
+                        "Tundra",
+                        "Savanna",
+                        "Chaparral"
+                    ],
+                    "a": "Tundra",
+                    "explanation": "The tundra is a cold, harsh, and largely treeless environment found primarily in the Arctic and on high mountain tops."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Rabbits are considered rodents.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Rabbits belong to the order Lagomorpha, not Rodentia. They have a second set of peg-like incisors behind their large upper teeth."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The fastest land animal over short distances is the cheetah.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Cheetahs can accelerate from 0 to 60 mph in just a few seconds during a sprint."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What does a barometer measure?",
+                    "a": "A barometer measures atmospheric pressure.",
+                    "explanation": "Meteorologists use variations in pressure to forecast short-term changes in the weather."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain the biological term 'endemic'.",
+                    "a": "A species is endemic if it is native and restricted to a certain specific geographical area and is found nowhere else naturally on Earth.",
+                    "explanation": "For example, the lemur is endemic to Madagascar."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "How do bats navigate and hunt in complete darkness?",
+                    "a": "They use echolocation, emitting high-frequency sound waves and listening for the echoes that bounce off objects and prey.",
+                    "explanation": "This biological sonar allows them to 'see' their surroundings with sound."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is meant by the 'gestation period' of an animal?",
+                    "a": "The gestation period is the time during which mammalian young develop inside the mother's womb, from conception to birth.",
+                    "explanation": "Elephants have the longest gestation period of all mammals, nearly 22 months."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe what a tsunami is and what typically causes it.",
+                    "a": "A tsunami is a series of massive ocean waves typically caused by sudden, large-scale displacements of water, usually resulting from underwater earthquakes, volcanic eruptions, or landslides.",
+                    "explanation": "They can travel across oceans at high speeds and cause devastating coastal flooding."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What defines an 'invertebrate' animal?",
+                    "a": "An invertebrate is an animal that lacks a backbone or spinal column.",
+                    "explanation": "The vast majority of animal species on Earth, including insects, worms, and mollusks, are invertebrates."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What are tectonic plates?",
+                    "a": "Tectonic plates are massive, rigid pieces of the Earth's lithosphere that slowly move and interact over the underlying softer mantle.",
+                    "explanation": "Their movement causes continental drift, earthquakes, and the formation of mountains."
+                }
+            ]
+        }
+    ]
+}

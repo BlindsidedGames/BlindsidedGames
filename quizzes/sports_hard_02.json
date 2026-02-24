@@ -1,0 +1,85 @@
+{
+    "id": "sports_hard_02",
+    "title": "Hard Sports Quiz 2",
+    "sections": [
+        {
+            "title": "Sports",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which country won the very first FIFA World Cup held in 1930?",
+                    "options": [
+                        "Brazil",
+                        "Argentina",
+                        "Uruguay",
+                        "Italy"
+                    ],
+                    "a": "Uruguay",
+                    "explanation": "Uruguay hosted the tournament and defeated Argentina 4-2 in the final."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The diameter of a standard golf hole is exactly 4.25 inches.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "This specific measurement was standardized by the Royal and Ancient Golf Club of St Andrews in 1893."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A perfect break in snooker scores 147 points, but it is mathematically possible to score 155 points in a single break under specific foul conditions.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "A 'free ball' awarded before any reds are potted allows an extra color to be potted for 1 point plus a color (up to 7), before the standard 147 clearance."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In Major League Baseball, who holds the record for the most career strikeouts as a pitcher?",
+                    "a": "Nolan Ryan.",
+                    "explanation": "He amassed an incredible 5,714 strikeouts over his 27-season career."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the name of the challenging cycling race often called 'The Hell of the North'?",
+                    "a": "Paris-Roubaix.",
+                    "explanation": "It is famous for its exceptionally rough terrain and extensive use of grueling cobblestone sectors (pavé)."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the decathlon, what is uniquely the final event on the second day of competition?",
+                    "a": "The 1500 meters.",
+                    "explanation": "It is the only middle-distance running event in the decathlon, severely testing athletes' remaining endurance."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What legendary boxer famously originated the 'rope-a-dope' fighting style?",
+                    "a": "Muhammad Ali.",
+                    "explanation": "He used it famously to exhaust George Foreman during 'The Rumble in the Jungle' in 1974."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In sumo wrestling, what is the specific Japanese term for the elevated clay ring where bouts take place?",
+                    "a": "The Dohyō.",
+                    "explanation": "It is constructed of a specific type of clay mixed with sand, uniquely built for each tournament."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which NFL franchise holds the record for the most Super Bowl appearances (not necessarily victories)?",
+                    "a": "The New England Patriots.",
+                    "explanation": "They have appeared in 11 Super Bowls, winning 6 of them."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What highly technical sailing maneuver involves entirely pivoting the bow of the boat through the wind to change direction?",
+                    "a": "Tacking.",
+                    "explanation": "This contrasts with 'jibing', where the stern of the boat passes directly through the wind."
+                }
+            ]
+        }
+    ]
+}

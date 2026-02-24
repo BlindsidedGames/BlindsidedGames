@@ -1,0 +1,85 @@
+{
+    "id": "nature_easy_01",
+    "title": "Easy Nature Quiz 1",
+    "sections": [
+        {
+            "title": "Nature",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "What do bees collect from flowers to make honey?",
+                    "options": [
+                        "Pollen",
+                        "Water",
+                        "Nectar",
+                        "Leaves"
+                    ],
+                    "a": "Nectar",
+                    "explanation": "Bees collect sugary nectar from flowers, which they then process into honey in their hives."
+                },
+                {
+                    "type": "true-false",
+                    "q": "All spiders spin webs to catch their prey.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "While many spiders spin webs, others, like wolf spiders or jumping spiders, actively hunt down their prey."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Evergreen trees lose all their leaves in the winter.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Evergreen trees retain their green needles or leaves throughout the entire year."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the process by which a caterpillar turns into a butterfly?",
+                    "a": "Metamorphosis.",
+                    "explanation": "The caterpillar forms a chrysalis (pupa) and transforms into a mature adult butterfly."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Why is the earthworm beneficial to our soil?",
+                    "a": "Earthworms naturally aerate the soil by burrowing through it and their waste provides vital nutrients that help plants grow.",
+                    "explanation": "They are a critical component of healthy, productive garden soil."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is a nocturnal animal?",
+                    "a": "An animal that is active primarily during the night and usually sleeps during the day.",
+                    "explanation": "Owls and bats are common examples of nocturnal creatures."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What does a carnivore mainly eat?",
+                    "a": "Carnivores eat other animals (meat).",
+                    "explanation": "Lions, wolves, and eagles are examples of carnivorous predators."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What causes the ocean tides?",
+                    "a": "The gravitational pull of the moon and the sun on the Earth's oceans.",
+                    "explanation": "The moon's closer proximity makes its gravitational influence on tides much stronger than the sun's."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What natural phenomenon results when water vapor condenses into water droplets in the sky?",
+                    "a": "Clouds.",
+                    "explanation": "This is a key part of the water cycle."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What are the seasonal periods called when animals move from one region to another to find food or a better climate?",
+                    "a": "Migration.",
+                    "explanation": "Many species of birds, monarch butterflies, and certain mammals undertake large-scale annual migrations."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "id": "nature_medium_04",
+    "title": "Medium Nature Quiz 4",
+    "sections": [
+        {
+            "title": "Nature",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which class of animals relies mostly on the external environment to regulate their body temperature, generally making them 'cold-blooded'?",
+                    "options": [
+                        "Mammals",
+                        "Birds",
+                        "Reptiles",
+                        "Cetaceans"
+                    ],
+                    "a": "Reptiles",
+                    "explanation": "Reptiles, amphibians, and fish are ectothermic, meaning they often bask in the sun to warm up."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The Venus flytrap digests insects immediately upon snapping its jaws shut.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The plant takes several days (typically 5-12 days) to secrete digestive enzymes and absorb the nutrients from the trapped insect."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Male peacocks possess the elaborate, colorful tail feathers, not the females.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The male (peacock) uses its train to attract females (peahens), which are much duller in coloration."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is 'biodiversity'?",
+                    "a": "Biodiversity refers to the variety and variability of life on Earth, encompassing all species of plants, animals, and microorganisms, as well as the ecosystems they form.",
+                    "explanation": "High biodiversity is generally a sign of a healthy, resilient ecosystem."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe the main components defining a 'food web' compared to a 'food chain'.",
+                    "a": "A food chain follows a single linear pathway of energy flow from producer to top predator, while a food web is a complex network showing all the interconnected and overlapping food chains in an ecosystem.",
+                    "explanation": "Food webs provide a much more realistic view of ecological interactions."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the study of weather and the atmosphere called?",
+                    "a": "Meteorology.",
+                    "explanation": "Meteorologists study atmospheric pressure, temperature, and moisture to forecast the weather."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain what 'magma' is.",
+                    "a": "Magma is extremely hot liquid and semi-liquid rock located under the Earth's surface.",
+                    "explanation": "When it erupts onto the surface, it is then referred to as lava."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the primary difference between a stalactite and a stalagmite?",
+                    "a": "A stalactite grows downwards from the ceiling of a cave, while a stalagmite grows upwards from the floor.",
+                    "explanation": "Both are formed from dripping mineral-rich water."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What unique trait defines 'monotreme' mammals?",
+                    "a": "Monotremes are the only mammals that reproduce by laying eggs rather than giving birth to live young.",
+                    "explanation": "The platypus and echidna are the only known surviving monotremes."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the atmospheric phenomenon that produces a brief but intense electrical discharge between clouds and the ground.",
+                    "a": "Lightning.",
+                    "explanation": "The rapid heating and expansion of air around the lightning bolt creates the sound of thunder."
+                }
+            ]
+        }
+    ]
+}

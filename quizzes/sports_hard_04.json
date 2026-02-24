@@ -1,0 +1,85 @@
+{
+    "id": "sports_hard_04",
+    "title": "Hard Sports Quiz 4",
+    "sections": [
+        {
+            "title": "Sports",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which of these incredibly challenging cycling races is officially considered one of the five 'Monuments' of cycling?",
+                    "options": [
+                        "Tour of Flanders",
+                        "Amstel Gold Race",
+                        "Strade Bianche",
+                        "La Flèche Wallonne"
+                    ],
+                    "a": "Tour of Flanders",
+                    "explanation": "The five Monuments are Milan-San Remo, Tour of Flanders, Paris-Roubaix, Liège-Bastogne-Liège, and the Tour of Lombardy."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In official Olympic weightlifting, the 'clean and press' is one of the two standard lifts.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The 'clean and press' was famously removed in 1972 due to judging difficulties. The two current lifts are the 'snatch' and the 'clean and jerk'."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The Boston Marathon is historically the world's oldest annual marathon.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "It started in 1897, inspired by the success of the first modern marathon at the 1896 Olympics."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What specifically is a 'libero' strictly forbidden from doing in a professional volleyball match?",
+                    "a": "They cannot serve, block, or attack the ball if it is entirely above the height of the net.",
+                    "explanation": "Liberos are highly specialized defensive players restricted to the backcourt."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the complex sport of cricket, what exactly does a 'golden duck' signify?",
+                    "a": "A batsman being dismissed for zero runs on the very first legal delivery they face.",
+                    "explanation": "A standard 'duck' is just scoring zero runs, but 'golden' emphasizes the immediate dismissal."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What highly demanding gymnastics apparatus requires athletes to swing entirely around a single elevated bar performing release moves?",
+                    "a": "The Horizontal Bar (or High Bar).",
+                    "explanation": "It is traditionally the spectacularly thrilling final event of a men's artistic gymnastics competition."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which legendary tennis player achieved the incredibly rare 'Golden Slam' by winning all four majors and Olympic gold in a single calendar year (1988)?",
+                    "a": "Steffi Graf.",
+                    "explanation": "To date, she is the only tennis player to achieve this phenomenal feat."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What effectively is the specific distance mathematically of the bike leg directly in a standard Olympic-distance triathlon?",
+                    "a": "40 kilometers (roughly 24.8 miles).",
+                    "explanation": "It is perfectly sandwiched between a 1.5km swim and a 10km run."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What specifically does 'O.B.' stand for in the game of golf?",
+                    "a": "Out of Bounds.",
+                    "explanation": "Hitting a ball out of bounds incurs a one-stroke penalty and requires the player to hit again from the original spot."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who won the 2019 Rugby World Cup?",
+                    "a": "South Africa.",
+                    "explanation": "The Springboks defeated England in the final, securing their third Webb Ellis Cup."
+                }
+            ]
+        }
+    ]
+}

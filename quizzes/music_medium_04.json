@@ -1,0 +1,85 @@
+{
+    "id": "music_medium_04",
+    "title": "Medium Music Quiz 4",
+    "sections": [
+        {
+            "title": "Music",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which musical interval consists of playing three whole steps (six half steps) and is famous for its dissonance?",
+                    "options": [
+                        "Perfect Fifth",
+                        "Major Third",
+                        "Tritone",
+                        "Minor Sixth"
+                    ],
+                    "a": "Tritone",
+                    "explanation": "The tritone is an interval spanning three whole tones. It was historically called 'the devil in music' due to its unsettling dissonance."
+                },
+                {
+                    "type": "true-false",
+                    "q": "David Bowie created the alter-ego Ziggy Stardust.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Ziggy Stardust was a fictional androgynous rock star created by Bowie for his 1972 concept album."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Electronic Dance Music (EDM) is generally characterized by a lack of a continuous, regular beat.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "EDM relies heavily on a strong, percussive, continuous rhythmic beat (often four-on-the-floor) to encourage dancing."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What does a 'producer' do for a music album?",
+                    "a": "A producer oversees the recording process, guiding the artists, managing budgets, directing recording engineers, and making key creative decisions regarding arrangements and sound.",
+                    "explanation": "Their role is analogous to a director in film."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe 'falsetto' singing.",
+                    "a": "Falsetto is a vocal register occupying the frequency range just above the modal voice register, typically used by male singers to reach notes higher than their normal range.",
+                    "explanation": "It often has a lighter, breathier, and less powerful tone than chest voice."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What defines a 'concept album'?",
+                    "a": "A concept album is an album whose tracks hold a larger purpose or meaning collectively than they do individually, often telling a narrative story or exploring a unified thematic idea.",
+                    "explanation": "Pink Floyd's 'The Wall' is a famous example."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the woodwind instrument known for being largely made of brass, yet uses a single reed to produce sound?",
+                    "a": "The saxophone.",
+                    "explanation": "Invented by Adolphe Sax, it bridges woodwind acoustic properties with a brass body."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain what a 'chord progression' is.",
+                    "a": "A chord progression is a sequence or series of musical chords played in a specific order.",
+                    "explanation": "These progressions establish harmony and form the foundation over which melodies are created."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who wrote the iconic piano piece 'Für Elise'?",
+                    "a": "Ludwig van Beethoven.",
+                    "explanation": "It is one of Beethoven's most popular compositions, discovered after his death."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What genre does the band Metallica primarily play?",
+                    "a": "Heavy Metal (or Trash Metal).",
+                    "explanation": "They are considered one of the 'Big Four' founding bands of thrash metal."
+                }
+            ]
+        }
+    ]
+}

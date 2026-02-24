@@ -1,0 +1,85 @@
+{
+    "id": "pop_culture_easy_04",
+    "title": "Easy Pop Culture Quiz 4",
+    "sections": [
+        {
+            "title": "Pop Culture",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "In 'The Lord of the Rings', what type of creature is Frodo Baggins?",
+                    "options": [
+                        "Elf",
+                        "Dwarf",
+                        "Hobbit",
+                        "Human"
+                    ],
+                    "a": "Hobbit",
+                    "explanation": "Hobbits are small, peace-loving creatures known for their furry feet and love of food."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Mickey Mouse's original name was Mortimer Mouse.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Walt Disney's wife Lillian suggested the name change from Mortimer to Mickey."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The iconic phrase 'Beam me up, Scotty' was said in every episode of the original Star Trek series.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Interestingly, Captain Kirk never actually said the exact phrase 'Beam me up, Scotty' in the original series."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the name of the massive, cinematic universe created by Marvel Studios?",
+                    "a": "The Marvel Cinematic Universe (MCU).",
+                    "explanation": "It started with 'Iron Man' in 2008 and spans dozens of interconnected films and shows."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which artist is famous for the hit single 'Bad Romance' and her meat dress at the VMAs?",
+                    "a": "Lady Gaga.",
+                    "explanation": "Her dramatic fashion and theatrical performances define her pop persona."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What animated underwater town does SpongeBob SquarePants live in?",
+                    "a": "Bikini Bottom.",
+                    "explanation": "He lives there in a pineapple with his pet snail, Gary."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the highest-grossing film of all time (unadjusted for inflation)?",
+                    "a": "Avatar (2009).",
+                    "explanation": "Directed by James Cameron, its groundbreaking 3D technology drove massive box office returns."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the 'Harry Potter' universe, what is the sport played on flying broomsticks?",
+                    "a": "Quidditch.",
+                    "explanation": "It involves chasing a Golden Snitch and throwing Quaffles through hoops."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who played Jack Dawson in the 1997 blockbuster movie 'Titanic'?",
+                    "a": "Leonardo DiCaprio.",
+                    "explanation": "The role catapulted him to international superstardom."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What legendary British spy is famously known by his code number, 007?",
+                    "a": "James Bond.",
+                    "explanation": "Created by Ian Fleming, he works for MI6."
+                }
+            ]
+        }
+    ]
+}

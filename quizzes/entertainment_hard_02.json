@@ -1,0 +1,85 @@
+{
+    "id": "entertainment_hard_02",
+    "title": "Hard Entertainment Quiz 2",
+    "sections": [
+        {
+            "title": "Entertainment",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which filmmaker pioneered the use of the 'jump cut' in his 1960 French New Wave classic 'Breathless'?",
+                    "options": [
+                        "François Truffaut",
+                        "Jean-Luc Godard",
+                        "Agnès Varda",
+                        "Jacques Demy"
+                    ],
+                    "a": "Jean-Luc Godard",
+                    "explanation": "He used the radical editing technique to challenge traditional Hollywood continuity."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The television show 'M*A*S*H' ended with a finale that remains the most-watched television episode in U.S. history.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Over 100 million people tuned into the 1983 finale 'Goodbye, Farewell and Amen'."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the film 'Psycho', director Alfred Hitchcock used chocolate syrup to simulate blood in the famous shower scene.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Because the movie was shot in black and white, Bosco chocolate syrup looked more realistic on film."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What notorious 1980 film flopped so hard it brought down the United Artists studio?",
+                    "a": "Heaven's Gate.",
+                    "explanation": "Michael Cimino's massively over-budget film marked the end of the auteur-driven New Hollywood era."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who wrote the intense, minimalist plays 'Waiting for Godot' and 'Endgame'?",
+                    "a": "Samuel Beckett.",
+                    "explanation": "He was a leading figure in the 'Theatre of the Absurd'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What legendary jazz saxophonist released the deeply spiritual 1965 album 'A Love Supreme'?",
+                    "a": "John Coltrane.",
+                    "explanation": "The album is highly regarded as one of the greatest jazz recordings of all time."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which 1970s TV producer created socially conscious sitcoms like 'All in the Family' and 'The Jeffersons'?",
+                    "a": "Norman Lear.",
+                    "explanation": "He revolutionized television comedy by tackling issues like racism and politics."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What early video game crash occurred in 1983, severely damaging the North American console market?",
+                    "a": "The Video Game Crash of 1983.",
+                    "explanation": "It was caused by a flood of low-quality games, notably Atari's 'E.T.'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which legendary French electronic music pioneer broke worldwide records with his massive outdoor concerts in the 1970s and 1980s?",
+                    "a": "Jean-Michel Jarre.",
+                    "explanation": "His album 'Oxygène' was a massive global synthesizer hit."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What 1920 horror film is considered one of the defining works of German Expressionist cinema?",
+                    "a": "The Cabinet of Dr. Caligari.",
+                    "explanation": "It features a highly stylized, distorted visual design to reflect madness."
+                }
+            ]
+        }
+    ]
+}

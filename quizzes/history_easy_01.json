@@ -1,0 +1,85 @@
+{
+  "id": "history_easy_01",
+  "title": "Easy History Quiz 1",
+  "sections": [
+    {
+      "title": "History",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Who was the first President of the United States?",
+          "a": "George Washington",
+          "options": [
+            "Thomas Jefferson",
+            "Abraham Lincoln",
+            "George Washington",
+            "John Adams"
+          ],
+          "explanation": "He served from 1789 to 1797."
+        },
+        {
+          "type": "true-false",
+          "q": "The Titanic sank in 1912.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "It sank on April 15, 1912 after hitting an iceberg."
+        },
+        {
+          "type": "true-false",
+          "q": "Julius Caesar was the first Emperor of Rome.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Augustus (Octavian) was the first Roman Emperor. Caesar was a dictator."
+        },
+        {
+          "type": "self-eval",
+          "q": "What ancient civilization built the pyramids at Giza?",
+          "a": "The Ancient Egyptians",
+          "explanation": "They were built as tombs for the pharaohs."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which country gifted the Statue of Liberty to the USA?",
+          "a": "France",
+          "explanation": "It was dedicated in 1886 to commemorate the alliance between France and the US."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the Queen of England during the Spanish Armada's defeat in 1588?",
+          "a": "Queen Elizabeth I",
+          "explanation": "Her reign is known as the Elizabethan era."
+        },
+        {
+          "type": "self-eval",
+          "q": "What year did World War II end?",
+          "a": "1945",
+          "explanation": "The war ended with the surrender of Germany in May and Japan in September."
+        },
+        {
+          "type": "self-eval",
+          "q": "What famous wall in Germany was torn down in 1989?",
+          "a": "The Berlin Wall",
+          "explanation": "Its fall marked the beginning of the reunification of Germany."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the civil rights leader who gave the 'I Have a Dream' speech?",
+          "a": "Martin Luther King Jr.",
+          "explanation": "He delivered the speech during the March on Washington in 1963."
+        },
+        {
+          "type": "self-eval",
+          "q": "What was the name of the ship that brought the Pilgrims to America in 1620?",
+          "a": "The Mayflower",
+          "explanation": "They established the Plymouth Colony in Massachusetts."
+        }
+      ]
+    }
+  ]
+}

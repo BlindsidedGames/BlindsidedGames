@@ -1,0 +1,85 @@
+{
+    "id": "sports_easy_04",
+    "title": "Easy Sports Quiz 4",
+    "sections": [
+        {
+            "title": "Sports",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which track and field event involves throwing a heavy metal sphere as far as possible?",
+                    "options": [
+                        "Javelin",
+                        "Discus",
+                        "Shot put",
+                        "Hammer throw"
+                    ],
+                    "a": "Shot put",
+                    "explanation": "Competitors 'put' (push) a heavy metal ball—the shot—for maximum distance."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In American football, the quarterback is the player who throws the ball the most.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The quarterback leads the offense, calls the plays, and initiates the action on every single offensive down."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A standard professional basketball hoop is exactly 8 feet off the ground.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The standard height of a regulation basketball hoop is exactly 10 feet (3.05 meters) from the floor."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In which sport do teams pull forcefully on opposite ends of a long rope?",
+                    "a": "Tug of war.",
+                    "explanation": "The objective is to pull the opposing team across a designated center line."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the penalty called in soccer when a player is brought down illegally by an opponent inside the penalty box?",
+                    "a": "A penalty kick (or simply, a penalty).",
+                    "explanation": "It results in a direct free kick on goal with only the goalkeeper to beat from 12 yards out."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which gymnastic apparatus features two horizontal bars positioned at different heights?",
+                    "a": "The uneven bars.",
+                    "explanation": "This is a strictly female gymnastics event requiring immense upper body strength and agility."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What do the five interconnected rings on the Olympic flag represent?",
+                    "a": "The five major inhabited continents of the world.",
+                    "explanation": "They symbolize the unity of athletes from Africa, the Americas, Asia, Europe, and Oceania."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is it called in baseball when a batter successfully hits the ball entirely out of the playing field fair territory?",
+                    "a": "A home run.",
+                    "explanation": "This allows the batter, and any runners currently on base, to safely circle the bases and score."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In pool (billiards), what distinct color is the 8-ball?",
+                    "a": "Solid black.",
+                    "explanation": "In 8-ball pool, pocketing the 8-ball legally wins the game."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What protective padding do cricket batsmen wear conspicuously on their lower legs?",
+                    "a": "Pads.",
+                    "explanation": "They protect the legs from being injured by the incredibly hard, fast-moving cricket ball."
+                }
+            ]
+        }
+    ]
+}

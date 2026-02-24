@@ -1,0 +1,85 @@
+{
+    "id": "pop_culture_hard_05",
+    "title": "Hard Pop Culture Quiz 5",
+    "sections": [
+        {
+            "title": "Pop Culture",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which infamous cult movie directed by Tommy Wiseau is fundamentally widely referred to as 'the Citizen Kane of bad movies'?",
+                    "options": [
+                        "Troll 2",
+                        "Plan 9 from Outer Space",
+                        "The Room",
+                        "Birdemic"
+                    ],
+                    "a": "The Room",
+                    "explanation": "Its bizarre script, baffling performances, and nonsensical plot made it a legendary midnight movie."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The iconic 'Scream' mask used by the killer Ghostface was originally designed specifically for the movie.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "It was actually an off-the-shelf Halloween mask discovered by a producer while location scouting."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the game 'Portal', the cake is indeed a lie.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The AI GLaDOS repeatedly promises cake as a reward, which turns out to be a deception."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What legendary British comedy troupe created the influential films 'Monty Python and the Holy Grail' and 'Life of Brian'?",
+                    "a": "Monty Python.",
+                    "explanation": "Their surreal, sketch-based comedy deeply influenced modern humor."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who directed the critically acclaimed 1999 psychological drama 'Magnolia', known for its sprawling ensemble cast?",
+                    "a": "Paul Thomas Anderson.",
+                    "explanation": "The film intricately weaves together the lives of multiple characters in the San Fernando Valley."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What influential Japanese video game designer created the 'Metal Gear' series and 'Death Stranding'?",
+                    "a": "Hideo Kojima.",
+                    "explanation": "He is widely celebrated for his highly cinematic and complex narrative approach to game design."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which infamous hip-hop group released the highly controversial, seminal gangsta rap album 'Straight Outta Compton' in 1988?",
+                    "a": "N.W.A.",
+                    "explanation": "The group included icons like Dr. Dre, Ice Cube, and Eazy-E."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What beloved 2001 puzzle-platformer video game famously introduced the 'Cel-Shaded' art style to mainstream 3D gaming?",
+                    "a": "Jet Set Radio.",
+                    "explanation": "Its vibrant, graffiti-themed street esthetic was highly influential."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which critically acclaimed, surreal FX comedy series, created by and starring Donald Glover, critically explores the Atlanta rap scene?",
+                    "a": "Atlanta.",
+                    "explanation": "The show is renowned for its blend of grounded drama and bizarre, dreamlike scenarios."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What classic 1973 horror film, directed by Robin Hardy, famously culminates with Edward Woodward's character being burned alive inside a giant wicker statue?",
+                    "a": "The Wicker Man.",
+                    "explanation": "It heavily defined the 'folk horror' subgenre."
+                }
+            ]
+        }
+    ]
+}

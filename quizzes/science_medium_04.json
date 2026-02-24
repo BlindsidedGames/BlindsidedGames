@@ -1,0 +1,85 @@
+{
+  "id": "science_medium_04",
+  "title": "Medium Science Quiz 3",
+  "sections": [
+    {
+      "title": "Science",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "What part of the brain controls balance and coordination?",
+          "options": [
+            "Cerebrum",
+            "Cerebellum",
+            "Brain Stem",
+            "Hypothalamus"
+          ],
+          "a": "Cerebellum",
+          "explanation": "The cerebellum sits at the back of the brain and fine-tunes motor movements."
+        },
+        {
+          "type": "true-false",
+          "q": "Rust is chemically known as iron oxide.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "Rust forms when iron reacts with oxygen and water."
+        },
+        {
+          "type": "true-false",
+          "q": "Mars is known as the Blue Planet.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Earth is the Blue Planet; Mars is the Red Planet."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the process by which a gas changes into a liquid?",
+          "a": "Condensation",
+          "explanation": "Water vapor turning into liquid water is an example."
+        },
+        {
+          "type": "self-eval",
+          "q": "What do we call a material that does not conduct electricity well?",
+          "a": "Insulator",
+          "explanation": "Materials like rubber or wood resist electrical flow."
+        },
+        {
+          "type": "self-eval",
+          "q": "What are the building blocks of proteins?",
+          "a": "Amino acids",
+          "explanation": "Amino acids connect in long chains to form proteins."
+        },
+        {
+          "type": "self-eval",
+          "q": "What phenomenon deflects moving air to the right in the Northern Hemisphere?",
+          "a": "Coriolis effect",
+          "explanation": "This is caused by the Earth's rotation."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the chemical formula for table salt?",
+          "a": "NaCl",
+          "explanation": "Sodium chloride is standard table salt."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the closest star to Earth besides the Sun?",
+          "a": "Proxima Centauri",
+          "explanation": "It is about 4.24 light-years away."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the study of fossils called?",
+          "a": "Paleontology",
+          "explanation": "Paleontologists study prehistoric life through fossils."
+        }
+      ]
+    }
+  ]
+}

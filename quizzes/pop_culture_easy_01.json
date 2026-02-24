@@ -1,0 +1,85 @@
+{
+    "id": "pop_culture_easy_01",
+    "title": "Easy Pop Culture Quiz 1",
+    "sections": [
+        {
+            "title": "Pop Culture",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which actor plays Iron Man in the Marvel Cinematic Universe?",
+                    "options": [
+                        "Chris Evans",
+                        "Chris Hemsworth",
+                        "Robert Downey Jr.",
+                        "Mark Ruffalo"
+                    ],
+                    "a": "Robert Downey Jr.",
+                    "explanation": "He first portrayed Tony Stark in the 2008 film 'Iron Man'."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The reality TV show 'Keeping Up with the Kardashians' originally premiered on the E! network.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The show ran for 20 seasons on E! before moving to Hulu."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Taylor Swift's fans are commonly referred to as 'Beliebers'.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Taylor Swift's fans are called 'Swifties'. Justin Bieber's fans are 'Beliebers'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What incredibly successful British author wrote the Harry Potter book series?",
+                    "a": "J.K. Rowling.",
+                    "explanation": "The series consists of seven main books detailing the magical adventures of the boy wizard."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which wildly popular sci-fi franchise prominently features characters fighting with glowing 'lightsabers'?",
+                    "a": "Star Wars.",
+                    "explanation": "Lightsabers are the traditional weapon of the Jedi and the Sith."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What iconic pop star is famously referred to as the 'King of Pop'?",
+                    "a": "Michael Jackson.",
+                    "explanation": "He is recognized as one of the most culturally significant entertainers of the 20th century."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What massively popular streaming service debuted with the hit original series 'House of Cards' in 2013?",
+                    "a": "Netflix.",
+                    "explanation": "This marked a major shift towards streaming platforms producing their own high-budget prestige television."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the name of the fictional continent where the majority of the popular series 'Game of Thrones' takes place?",
+                    "a": "Westeros.",
+                    "explanation": "Westeros is the setting for the Seven Kingdoms and the struggle for the Iron Throne."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which pop singer released the hit albums '1989' and 'Folklore'?",
+                    "a": "Taylor Swift.",
+                    "explanation": "Taylor Swift released both '1989' (a pop album) and 'Folklore' (an indie folk album)."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What animated movie features a lovable snowman named Olaf?",
+                    "a": "Frozen.",
+                    "explanation": "The 2013 Disney film became a massive worldwide sensation."
+                }
+            ]
+        }
+    ]
+}

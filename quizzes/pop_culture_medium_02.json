@@ -1,0 +1,85 @@
+{
+    "id": "pop_culture_medium_02",
+    "title": "Medium Pop Culture Quiz 2",
+    "sections": [
+        {
+            "title": "Pop Culture",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which actor famously turned down the role of Neo in 'The Matrix' to star in 'Wild Wild West'?",
+                    "options": [
+                        "Brad Pitt",
+                        "Will Smith",
+                        "Tom Cruise",
+                        "Leonardo DiCaprio"
+                    ],
+                    "a": "Will Smith",
+                    "explanation": "Will Smith later admitted he didn't fully understand the Wachowskis' complex pitch for the film."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The phrase 'I'll be back' was originally scripted as 'I will be back' in the movie 'The Terminator'.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Arnold Schwarzenegger famously struggled to pronounce 'I'll' and asked to change it, but James Cameron insisted."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The character of Mario was originally a carpenter in his first arcade appearance.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "In 1981's 'Donkey Kong', Mario (then called Jumpman) was a carpenter traversing a construction site."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What wildly popular Korean TV series became Netflix's most-watched show ever shortly after its 2021 release?",
+                    "a": "Squid Game.",
+                    "explanation": "The brutal survival drama centered around deadly children's games captivated a global audience."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which popular 90s sitcom heavily popularized the phrase 'Yada, yada, yada'?",
+                    "a": "Seinfeld.",
+                    "explanation": "The phrase was used to skip over mundane or potentially incriminating details in a story."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What immensely successful musical artist released the critically acclaimed visual album 'Lemonade' in 2016?",
+                    "a": "Beyoncé.",
+                    "explanation": "The album powerfully explored themes of infidelity, black womanhood, and healing."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the film 'Inception', what personal object does Cobb (Leonardo DiCaprio) use to tell if he is dreaming?",
+                    "a": "A spinning top.",
+                    "explanation": "If the top spins endlessly, he knows he is still trapped inside a dream."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What British television series features a time-traveling alien from the planet Gallifrey?",
+                    "a": "Doctor Who.",
+                    "explanation": "The Doctor famously travels through space and time in a police box called the TARDIS."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who directed the critically acclaimed 1994 film 'Pulp Fiction'?",
+                    "a": "Quentin Tarantino.",
+                    "explanation": "The film revitalized John Travolta's career and won the Palme d'Or at Cannes."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What pop star's highly publicized 2023 'Eras Tour' broke numerous ticket sales records globally?",
+                    "a": "Taylor Swift.",
+                    "explanation": "The massive stadium tour chronologically highlighted every distinct musical era of her career."
+                }
+            ]
+        }
+    ]
+}

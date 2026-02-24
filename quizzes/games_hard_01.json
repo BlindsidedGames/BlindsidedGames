@@ -1,0 +1,85 @@
+{
+    "id": "games_hard_01",
+    "title": "Hard Games Quiz 1",
+    "sections": [
+        {
+            "title": "Games",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "In the board game 'Twilight Imperium', what central planet do players fight to control?",
+                    "options": [
+                        "Coruscant",
+                        "Mecatol Rex",
+                        "Arrakis",
+                        "Earth"
+                    ],
+                    "a": "Mecatol Rex",
+                    "explanation": "Controlling the former capital of the Lazax empire grants powerful tactical advantages."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The famous Konami Code was first used in the arcade game 'Contra'.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "It was first used in the 1986 NES port of 'Gradius'."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In a standard game of chess, a player can legally promote a pawn into a second King.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "A pawn can only be promoted to a Queen, Rook, Bishop, or Knight."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What notoriously difficult 1991 NES game tasks the player with riding a hoverbike over a deadly obstacle course?",
+                    "a": "Battletoads.",
+                    "explanation": "The 'Turbo Tunnel' level is legendary for its extreme difficulty."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who created the staggeringly successful sandbox game 'Minecraft' before selling it to Microsoft?",
+                    "a": "Markus 'Notch' Persson.",
+                    "explanation": "He founded Mojang Studios to develop the game."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What complex tabletop strategy game famously involves pushing hundreds of painted Space Marines across a table?",
+                    "a": "Warhammer 40,000.",
+                    "explanation": "It is the most popular miniature wargame in the world."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the card game 'Magic: The Gathering', what is the name of the incredibly rare, highly powerful card artifact that costs zero mana to cast?",
+                    "a": "The Black Lotus.",
+                    "explanation": "It adds three mana of any single color to your mana pool."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What massive 2004 MMORPG was praised for its deep lore involving the Horde and the Alliance?",
+                    "a": "World of Warcraft.",
+                    "explanation": "It remains a cultural touchstone in the gaming industry."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which influential 1990 puzzle video game featured infectious Russian folk music playing as players cleared lines of blocks?",
+                    "a": "Tetris.",
+                    "explanation": "The 'Type A' music theme is based on the Russian song 'Korobeiniki'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What highly acclaimed 2017 action-adventure game features Link waking up from a 100-year slumber in Hyrule?",
+                    "a": "The Legend of Zelda: Breath of the Wild.",
+                    "explanation": "It redefined open-world game design."
+                }
+            ]
+        }
+    ]
+}

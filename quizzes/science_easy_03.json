@@ -1,0 +1,85 @@
+{
+  "id": "science_easy_03",
+  "title": "Easy Science Quiz 3",
+  "sections": [
+    {
+      "title": "Science",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "What is the closest planet to the Sun?",
+          "options": [
+            "Venus",
+            "Mars",
+            "Mercury",
+            "Earth"
+          ],
+          "a": "Mercury",
+          "explanation": "Mercury is the innermost planet of the solar system."
+        },
+        {
+          "type": "true-false",
+          "q": "Light travels faster than sound.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "Light is millions of times faster than sound in air."
+        },
+        {
+          "type": "true-false",
+          "q": "A tomato is a vegetable.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Botanically, a tomato is a fruit because it has seeds."
+        },
+        {
+          "type": "self-eval",
+          "q": "What forms when water droplets in clouds merge and grow?",
+          "a": "Rain",
+          "explanation": "Rain falls when the droplets get too heavy for updrafts."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the object that orbits Earth.",
+          "a": "The Moon",
+          "explanation": "The Moon is Earth's only natural satellite."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the process of a liquid turning into a gas?",
+          "a": "Evaporation",
+          "explanation": "This happens when the liquid absorbs enough heat."
+        },
+        {
+          "type": "self-eval",
+          "q": "What do bees collect to make honey?",
+          "a": "Nectar",
+          "explanation": "Bees collect nectar from flowers."
+        },
+        {
+          "type": "self-eval",
+          "q": "What type of animal is a frog?",
+          "a": "Amphibian",
+          "explanation": "Frogs live on both land and water."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which sense do ears provide?",
+          "a": "Hearing",
+          "explanation": "Ears capture sound waves and send them to the brain."
+        },
+        {
+          "type": "self-eval",
+          "q": "What part of the body pumps blood?",
+          "a": "Heart",
+          "explanation": "The heart acts as a pump for the circulatory system."
+        }
+      ]
+    }
+  ]
+}

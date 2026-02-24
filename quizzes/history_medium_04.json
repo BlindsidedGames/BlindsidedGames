@@ -1,0 +1,85 @@
+{
+  "id": "history_medium_04",
+  "title": "Medium History Quiz 4",
+  "sections": [
+    {
+      "title": "History",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Who was the primary architect of the mass extermination program during the Holocaust?",
+          "options": [
+            "Hermann G\u00f6ring",
+            "Heinrich Himmler",
+            "Erwin Rommel",
+            "Joseph Goebbels"
+          ],
+          "a": "Heinrich Himmler",
+          "explanation": "As head of the SS, Himmler was a leading member of the Nazi Party and deeply responsible for the Holocaust."
+        },
+        {
+          "type": "true-false",
+          "q": "The Industrial Revolution began in the United States.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "It began in Great Britain in the late 18th century."
+        },
+        {
+          "type": "true-false",
+          "q": "Joan of Arc fought in the Hundred Years' War.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "She led the French army to several important victories against the English."
+        },
+        {
+          "type": "self-eval",
+          "q": "What historical event in 1914 sparked the beginning of World War I?",
+          "a": "The assassination of Archduke Franz Ferdinand",
+          "explanation": "He was the heir to the Austro-Hungarian throne, killed in Sarajevo."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which US president is associated with the 'New Deal' programs?",
+          "a": "Franklin D. Roosevelt (FDR)",
+          "explanation": "They were designed to provide relief during the Great Depression."
+        },
+        {
+          "type": "self-eval",
+          "q": "What European empire was ruled by the Habsburg family for centuries?",
+          "a": "The Holy Roman Empire (or the Austro-Hungarian Empire)",
+          "explanation": "The Habsburgs were one of the most prominent royal houses of Europe."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the famous military leader who crowned himself Emperor of the French in 1804?",
+          "a": "Napoleon Bonaparte",
+          "explanation": "He built a massive empire across Europe before his eventual defeat."
+        },
+        {
+          "type": "self-eval",
+          "q": "What massive conflict in the US began with the attack on Fort Sumter?",
+          "a": "The American Civil War",
+          "explanation": "Confederate forces bombarded the US fort in South Carolina."
+        },
+        {
+          "type": "self-eval",
+          "q": "What Chinese philosophical system emphasizes piety, social harmony, and respect for elders?",
+          "a": "Confucianism",
+          "explanation": "It deeply influenced Chinese culture and government for millennia."
+        },
+        {
+          "type": "self-eval",
+          "q": "What was the code name for the US project to develop the first atomic bomb?",
+          "a": "The Manhattan Project",
+          "explanation": "It was led by J. Robert Oppenheimer."
+        }
+      ]
+    }
+  ]
+}

@@ -3,166 +3,825 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="hsl(240, 12%, 98%)" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="hsl(217.14, 91.3%, 4.5%)" media="(prefers-color-scheme: dark)">
-    <link rel="shortcut icon" href="./img/logo.jpg" type="image/jpg">
     <title>Quizzes | Blindsided Games</title>
     <link rel="stylesheet" href="./style.css">
     <script defer src="./quizzes.js"></script>
     <style>
-        /* Page-specific layout (kept scoped here to avoid global changes) */
-        html, body { height: 100%; overflow: hidden; }
-        .quiz-layout {
+        :root {
+            --app-bg: #090a0f;
+            --panel-bg: rgba(17, 20, 29, 0.4);
+            /* Used for sidebar */
+            --panel-bg-hover: rgba(255, 255, 255, 0.03);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --accent: #8b5cf6;
+            /* Sleek Violet/Indigo */
+            --accent-glow: rgba(139, 92, 246, 0.4);
+            --correct-btn: #10b981;
+            /* Emerald */
+            --correct-btn-hover: #059669;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --font-main: 'Inter', system-ui, sans-serif;
+            --font-head: 'Outfit', system-ui, sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: var(--app-bg) !important;
+            color: var(--text-main) !important;
+            font-family: var(--font-main) !important;
+            overflow: hidden !important;
+            /* Modern dark mesh gradient */
+            background-image:
+                radial-gradient(circle at 15% 50%, rgba(139, 92, 246, 0.08), transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(56, 189, 248, 0.06), transparent 25%),
+                radial-gradient(circle at 50% 80%, rgba(216, 69, 180, 0.05), transparent 40%) !important;
+            background-size: 200% 200% !important;
+            animation: breathe 20s ease-in-out infinite alternate !important;
+            background-attachment: fixed !important;
+        }
+
+        @keyframes breathe {
+            0% {
+                background-position: 0% 0%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 100%;
+            }
+        }
+
+        .home-btn {
+            position: absolute;
+            top: 24px;
+            left: 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            text-decoration: none;
+            z-index: 100;
+            transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .home-btn:hover {
+            background: var(--panel-bg-hover);
+            border-color: #3b435b;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .home-btn svg {
+            width: 22px;
+            height: 22px;
+            opacity: 0.9;
+        }
+
+        .app-layout {
             display: grid;
             grid-template-columns: 340px 1fr;
-            gap: 20px;
-            width: 100%;
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 12px 0; /* consistent top/bottom spacing under header/above footer */
-            height: calc(100vh - (var(--bar-height) * 2));
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
-            align-items: start;
+            max-width: none;
         }
-        @media (max-width: 920px) {
-            .quiz-layout { grid-template-columns: 1fr; }
+
+        @media (max-width: 960px) {
+            .app-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .home-btn {
+                top: 24px;
+                left: 24px;
+            }
         }
-        .quiz-scroll { height: 100%; overflow: auto; padding: 6px; }
-        /* Custom scrollbars for the quiz columns */
-        .quiz-scroll { scrollbar-width: thin; scrollbar-color: var(--glass-highlight) transparent; }
-        .quiz-scroll::-webkit-scrollbar { width: 12px; }
-        .quiz-scroll::-webkit-scrollbar-track { background: transparent; }
-        .quiz-scroll::-webkit-scrollbar-thumb {
-            background: color-mix(in hsl, var(--colour-accent), transparent 70%);
-            border: 3px solid transparent;
-            background-clip: content-box;
-            border-radius: 999px;
+
+        .panel {
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
         }
-        .quiz-scroll::-webkit-scrollbar-thumb:hover {
-            background: color-mix(in hsl, var(--colour-accent), transparent 55%);
-            background-clip: content-box;
+
+        .sidebar {
+            background: var(--panel-bg);
+            border-right: 1px solid var(--border-color);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 92px 0 0 0;
+            /* Space for home btn at the top only */
+            height: 100vh;
+            box-sizing: border-box;
         }
+
+        .main-content {
+            background: transparent;
+            padding: 0;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .scroll-area {
+            overflow-y: auto;
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            box-sizing: border-box;
+            scrollbar-width: thin;
+            scrollbar-color: var(--border-color) transparent;
+        }
+
+        /* Constrain right panel content width so it doesn't get too wide or jump */
+        #quizDetail {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .scroll-area::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .scroll-area::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .scroll-area::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 4px;
+        }
+
+        /* Left Sidebar UI */
         .quiz-list {
             display: flex;
             flex-direction: column;
             gap: 12px;
         }
+
         .quiz-list button {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid transparent;
+            color: var(--text-muted);
             text-align: left;
-            border-radius: 14px;
-            border: 1px solid var(--glass-border);
-            background: var(--glass-bg);
-            color: var(--colour-text);
-            padding: 12px 14px;
-            transition: transform 120ms ease, box-shadow 180ms ease, border-color 180ms ease, background-color 180ms ease;
-        }
-        .quiz-list button:hover { transform: translateX(2px); }
-        .quiz-list button.active {
-            border-color: var(--accent-glow);
-            box-shadow: 0 6px 20px var(--shadow-colour), 0 0 12px var(--accent-glow);
-            background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
-        }
-        .quiz-card {
-            border-radius: 16px;
-            border: 1px solid var(--glass-border);
-            background: var(--glass-bg);
             padding: 16px;
-        }
-        .quiz-questions { display: grid; gap: 12px; }
-        .question-card {
-            border-radius: 16px;
-            border: 1px solid var(--glass-border);
-            background: var(--glass-bg);
-            padding: 12px;
-        }
-        .answer {
-            margin-top: 10px;
             border-radius: 12px;
-            border: 1px solid color-mix(in hsl, var(--colour-text), transparent 80%);
-            background: color-mix(in hsl, var(--colour-text), transparent 92%);
-            padding: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: inherit;
         }
-        .progress-outer { height: 10px; border-radius: 999px; background: color-mix(in hsl, var(--colour-text), transparent 92%); }
-        .progress-inner { height: 10px; border-radius: 999px; background: color-mix(in hsl, var(--colour-accent), white 10%); width: 0%; transition: width 200ms ease; }
-        .progress-outer.small { height: 8px; }
-        .progress-outer.small > .progress-inner { height: 8px; }
-        .quiz-actions { display: flex; gap: 10px; flex-wrap: wrap; }
-        .btn-slim { height: 34px; padding: 0 12px; display: inline-flex; align-items: center; border-radius: 10px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--colour-text); transition: background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease, color 160ms ease; }
-        .btn-slim:focus-visible { outline: none; box-shadow: 0 0 0 2px var(--glass-highlight); }
-        .btn-good { /* neutral until active */ }
-        .btn-good.active { border-color: hsl(150 52% 45%); background: color-mix(in hsl, hsl(150 52% 45%), transparent 80%); color: white; box-shadow: 0 0 0 2px color-mix(in hsl, hsl(150 52% 45%), transparent 60%); }
-        .btn-bad { /* neutral until active */ }
-        .btn-bad.active { border-color: hsl(6 78% 50%); background: color-mix(in hsl, hsl(6 78% 50%), transparent 80%); color: white; box-shadow: 0 0 0 2px color-mix(in hsl, hsl(6 78% 50%), transparent 60%); }
-        .btn-toggle { border-color: var(--glass-border); background: var(--glass-bg); }
-        .btn-toggle.active { border-color: var(--colour-accent); background: color-mix(in hsl, var(--colour-accent), transparent 85%); box-shadow: 0 0 0 2px color-mix(in hsl, var(--colour-accent), transparent 70%); }
-        .pill-mono { font-size: 12px; opacity: 0.9; border: 1px solid var(--glass-border); border-radius: 8px; padding: 2px 8px; }
-        .tag-correct { color: hsl(150, 52%, 52%); background: color-mix(in hsl, hsl(150, 52%, 52%), transparent 88%); border-color: color-mix(in hsl, hsl(150,52%,52%), transparent 60%); }
-        .tag-wrong { color: hsl(6, 78%, 57%); background: color-mix(in hsl, hsl(6, 78%, 57%), transparent 88%); border-color: color-mix(in hsl, hsl(6,78%,57%), transparent 60%); }
+
+        .quiz-list button .title-text {
+            color: var(--text-main);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        .quiz-list button:hover {
+            background: var(--panel-bg-hover);
+        }
+
+        .quiz-list button.active {
+            background: rgba(255, 255, 255, 0.04);
+            color: var(--text-main);
+            position: relative;
+        }
+
+        .quiz-list button.active::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 50%;
+            width: 4px;
+            background: var(--accent);
+            border-radius: 0 4px 4px 0;
+            box-shadow: 0 0 12px var(--accent-glow);
+        }
+
+        .quiz-list button.active .title-text {
+            color: white;
+            font-weight: 700;
+        }
+
+        /* Quiz Header Info area (used in left sidebar OR top header) */
+        .quiz-meta-pill {
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #cbd5e1;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .progress-bar-container {
+            height: 8px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 8px;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #b03893, var(--accent));
+            width: 0%;
+            transition: width 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+            border-radius: 4px;
+        }
+
+        .progress-stats {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: #94a3b8;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Main View Header */
+        .quiz-header {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        .header-top h2 {
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: 700;
+            font-family: var(--font-head);
+            color: white;
+        }
+
+        .btn-reset {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-main);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-reset:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Questions Container */
+        .question-card {
+            background: rgba(26, 30, 41, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 20px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .question-meta-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        .question-meta-row span.dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            margin-right: 12px;
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        .tag-correct {
+            margin-left: auto;
+            color: #4ade80;
+            background: rgba(74, 222, 128, 0.1);
+            padding: 4px 10px;
+            border-radius: 6px;
+            border: 1px solid rgba(74, 222, 128, 0.2);
+        }
+
+        .tag-wrong {
+            margin-left: auto;
+            color: #f87171;
+            background: rgba(248, 113, 113, 0.1);
+            padding: 4px 10px;
+            border-radius: 6px;
+            border: 1px solid rgba(248, 113, 113, 0.2);
+        }
+
+        .question-card h3 {
+            margin: 0 0 32px 0;
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 1.5;
+            color: white;
+        }
+
+        /* Multiple Choice Options */
+        .mc-options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .mc-option {
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px 24px;
+            color: var(--text-main);
+            font-size: 1.05rem;
+            font-weight: 500;
+            cursor: pointer;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .mc-option:hover:not(:disabled) {
+            background: var(--panel-bg-hover);
+            border-color: #47516b;
+            transform: translateY(-2px);
+        }
+
+        .mc-option.correct {
+            border-color: var(--correct-btn);
+            background: rgba(44, 151, 100, 0.05);
+        }
+
+        .mc-option.correct .mc-option-label {
+            background: var(--correct-btn);
+            color: white;
+        }
+
+        .mc-option.wrong {
+            border-color: #ef4444;
+            background: rgba(239, 68, 68, 0.05);
+            opacity: 0.7;
+        }
+
+        .mc-option.wrong .mc-option-label {
+            background: #ef4444;
+            color: white;
+        }
+
+        .mc-option-label {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-main);
+            border-radius: 8px;
+            margin-right: 16px;
+            font-size: 1rem;
+            font-weight: 700;
+            font-family: var(--font-head);
+            line-height: 1;
+        }
+
+        .mc-option-hint {
+            font-size: 0.6rem;
+            font-weight: 600;
+            opacity: 0.6;
+            margin-top: 2px;
+            font-family: var(--font-main);
+        }
+
+        /* Self Evaluation Actions */
+        .self-eval-actions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .btn-reveal {
+            background: var(--accent);
+            color: white;
+            border: none;
+            height: 54px;
+            padding: 0 32px;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 6px 20px var(--accent-glow);
+        }
+
+        .btn-reveal:hover {
+            transform: translateY(-2px) scale(1.02);
+            filter: brightness(1.1);
+        }
+
+        .btn-reveal:active {
+            transform: scale(0.96);
+        }
+
+        .btn-correct {
+            background: var(--correct-btn);
+            color: white;
+            border: none;
+            height: 54px;
+            padding: 0 32px;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 6px 20px rgba(44, 151, 100, 0.4);
+            width: 220px;
+            justify-content: center;
+        }
+
+        .btn-correct:hover {
+            background: var(--correct-btn-hover);
+            transform: translateY(-2px) scale(1.02);
+        }
+
+        .btn-correct:active {
+            transform: scale(0.96);
+        }
+
+        .btn-incorrect {
+            background: #252a38;
+            color: #cbd5e1;
+            border: 1px solid var(--border-color);
+            height: 54px;
+            padding: 0 24px;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            width: 160px;
+            justify-content: center;
+        }
+
+        .btn-incorrect:hover {
+            background: #2d3345;
+            color: white;
+            border-color: #47516b;
+            transform: translateY(-2px);
+        }
+
+        .btn-incorrect:active {
+            transform: scale(0.96);
+        }
+
+        .kbd-hint {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.25);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-family: inherit;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-correct .kbd-hint {
+            background: rgba(0, 0, 0, 0.15);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Answer & Explanation */
+        .answer-box {
+            margin-top: 32px;
+            padding: 24px;
+            background: var(--app-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            text-align: center;
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: white;
+        }
+
+        .explanation-box {
+            margin-top: 20px;
+            padding: 24px;
+            background: linear-gradient(90deg, rgba(139, 92, 246, 0.08), rgba(139, 92, 246, 0.02));
+            border-left: 4px solid var(--accent);
+            border-radius: 4px 12px 12px 4px;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #cbd5e1;
+        }
+
+        .explanation-box strong {
+            display: block;
+            margin-bottom: 12px;
+            font-size: 0.85rem;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-family: var(--font-head);
+        }
+
+        /* Footer Nav inside Card (Only Next Button Now) */
+        .quiz-footer {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 32px;
+        }
+
+        .btn-back:hover {
+            color: white !important;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 4px 16px var(--accent-glow);
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            filter: brightness(1.1);
+            transform: translateY(-1px);
+        }
+
+        .btn-primary:disabled {
+            background: #252a38;
+            color: #64748b;
+            box-shadow: none;
+            cursor: not-allowed;
+        }
+
+        .btn-slim {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-main);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-slim:hover:not(:disabled) {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-slim:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Completion */
+        .completion-screen {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .completion-score {
+            font-size: 5rem;
+            font-weight: 800;
+            font-family: var(--font-head);
+            color: white;
+            margin: 24px 0;
+            text-shadow: 0 0 40px var(--accent-glow);
+        }
+
+        /* Setup Menu */
+        .setup-section {
+            margin-bottom: 32px;
+        }
+
+        .setup-section h4 {
+            font-size: 1.1rem;
+            color: white;
+            margin-bottom: 16px;
+            font-family: var(--font-head);
+            font-weight: 600;
+        }
+
+        .toggle-group {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .toggle-btn {
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .toggle-btn:hover {
+            background: var(--panel-bg-hover);
+            border-color: #47516b;
+        }
+
+        .toggle-btn.active {
+            background: rgba(139, 92, 246, 0.15);
+            border-color: var(--accent);
+            color: white;
+            box-shadow: 0 0 12px var(--accent-glow);
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 12px;
+        }
+
+        .category-card {
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            min-height: 80px;
+        }
+
+        .category-card:hover {
+            background: var(--panel-bg-hover);
+            border-color: #47516b;
+            transform: translateY(-2px);
+        }
+
+        .category-card.active {
+            background: rgba(139, 92, 246, 0.15);
+            border-color: var(--accent);
+            color: white;
+            box-shadow: 0 4px 12px var(--accent-glow);
+        }
+
+        .category-card.disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .setup-actions {
+            margin-top: 40px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 24px;
+        }
+
+        .setup-error {
+            color: #ef4444;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
     </style>
-    <!-- No external libs; vanilla JS in quizzes.js -->
-    <meta name="description" content="Quizzes by Blindsided Games. Pick a quiz and track your progress.">
-    <meta name="robots" content="index,follow">
-    <link rel="preload" href="./style.css" as="style">
-    <link rel="preload" href="./img/logo.jpg" as="image">
 </head>
 
 <body>
-    <header>
-        <a class="logo" href="./index.html"><img src="./img/logo.jpg" alt="Blindsided Games"></a>
-        <button class="menu-toggle" aria-label="Open navigation" onclick="document.body.dataset.navOpen = document.body.dataset.navOpen === 'true' ? 'false' : 'true'">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-        </button>
-        <div class="tabs">
-            <a href="./index.html">Games</a>
-            <a href="https://www.patreon.com/BlindsidedGames" target="_blank" rel="noopener noreferrer">Patreon
-                <svg class="icon-external" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path d="M14 3h7v7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M21 3L10 14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M14 7H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
-            <a href="./about.html">About</a>
-            <a href="./contact.html">Contact</a>
-            <a href="./quizzes.html" class="tab-active">Quizzes</a>
-        </div>
-    </header>
-    <nav class="mobile-nav" aria-label="Mobile navigation">
-        <a href="./index.html">Games</a>
-        <a href="https://www.patreon.com/BlindsidedGames" target="_blank" rel="noopener noreferrer">Patreon
-            <svg class="icon-external" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <path d="M14 3h7v7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M21 3L10 14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M14 7H5a 2 2 0 0 0-2 2v10a 2 2 0 0 0 2 2h10a 2 2 0 0 0 2-2v-9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
-        <a href="./quizzes.html" class="tab-active">Quizzes</a>
-    </nav>
+    <a href="./index.html" class="home-btn" aria-label="Home">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+            </path>
+        </svg>
+    </a>
 
-    <main>
-        <section aria-label="Quizzes" class="quiz-layout">
-            <aside class="quiz-card quiz-scroll">
+    <div class="app-layout">
+        <div class="panel sidebar">
+            <div class="scroll-area" style="padding: 0 24px 24px 24px;">
                 <div id="quizList" class="quiz-list"></div>
-            </aside>
-            <section id="quizDetail" class="quiz-card quiz-scroll">
-                <h2 style="margin-top:0">Pick a quiz from the list</h2>
-                <p>Nothing is selected yet. Choose a quiz on the left to load it here.</p>
-            </section>
-        </section>
-    </main>
-
-    <footer>
-        <p>All rights reserved &copy; Blindsided Games 2025 / <a class="link-nav" href="./policy.html">Policy</a></p>
-        <div class="footer-socials">
-            <a class="pill social-discord" href="https://discord.gg/dKaEy6MFCP" target="_blank" rel="noopener">Discord</a>
-            <a class="pill social-youtube" href="https://www.youtube.com/@blindsidedgames" target="_blank" rel="noopener">YouTube</a>
-            <a class="pill" href="https://twitter.com/BlindsidedGames" target="_blank" rel="noopener">Twitter</a>
-            <a class="pill" href="https://blindsidedgames.itch.io/" target="_blank" rel="noopener">itch.io</a>
+            </div>
         </div>
-    </footer>
+        <div class="panel main-content">
+            <div class="scroll-area" style="padding: 60px 40px;">
+                <div id="quizDetail">
+                    <div id="setupView" class="question-card" style="display: none;">
+                        <h3 style="margin-bottom: 24px;">Configure Quiz</h3>
+
+                        <div class="setup-section">
+                            <h4>1. Select Difficulty</h4>
+                            <div class="toggle-group" id="difficultyGroup">
+                                <button class="toggle-btn" data-val="Easy">Easy</button>
+                                <button class="toggle-btn" data-val="Medium">Medium</button>
+                                <button class="toggle-btn" data-val="Hard">Hard</button>
+                            </div>
+                        </div>
+
+                        <div class="setup-section">
+                            <h4>2. Select Length</h4>
+                            <div class="toggle-group" id="lengthGroup">
+                                <button class="toggle-btn" data-val="1">1 Category (10 Qs)</button>
+                                <button class="toggle-btn" data-val="3">3 Categories (30 Qs)</button>
+                                <button class="toggle-btn" data-val="5">5 Categories (50 Qs)</button>
+                            </div>
+                        </div>
+
+                        <div class="setup-section">
+                            <div
+                                style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
+                                <h4 style="margin-bottom: 0;">3. Select Categories <span id="catSelectCount"
+                                        style="color:var(--text-muted); font-size:0.9rem; font-weight:normal;">(0/0
+                                        selected)</span></h4>
+                                <button class="btn-slim" id="btnChooseForMe">Choose For Me</button>
+                            </div>
+                            <div class="category-grid" id="categoryGrid">
+                                <!-- Populated by JS -->
+                            </div>
+                        </div>
+
+                        <div class="setup-actions">
+                            <div id="setupError" class="setup-error"></div>
+                            <button id="btnStartQuiz" class="btn-primary" disabled>Start Quiz</button>
+                        </div>
+                    </div>
+                    <div id="activeQuizView"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,85 @@
+{
+  "id": "biology_medium_04",
+  "title": "Medium Biology Quiz 4",
+  "sections": [
+    {
+      "title": "Biology",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "What term is used for organisms that can interbreed and produce fertile offspring?",
+          "options": [
+            "Genus",
+            "Family",
+            "Species",
+            "Order"
+          ],
+          "a": "Species",
+          "explanation": "This is the most basic unit of biological classification."
+        },
+        {
+          "type": "true-false",
+          "q": "Only animals perform cellular respiration.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Plants must also perform cellular respiration to extract energy from the sugars they produce."
+        },
+        {
+          "type": "true-false",
+          "q": "Insulin is a hormone that regulates blood sugar levels.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "Insulin allows cells to take in glucose from the bloodstream."
+        },
+        {
+          "type": "self-eval",
+          "q": "What organ makes bile to aid in digesting fats?",
+          "a": "Liver",
+          "explanation": "The bile is stored in the gallbladder before being released into the intestine."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the jelly-like substance inside a cell where most chemical reactions take place?",
+          "a": "Cytoplasm",
+          "explanation": "It fills the cell and surrounds the organelles."
+        },
+        {
+          "type": "self-eval",
+          "q": "What do we call a trait that is controlled by a recessive allele?",
+          "a": "Recessive trait",
+          "explanation": "It only appears if the organism inherits two copies of the recessive allele."
+        },
+        {
+          "type": "self-eval",
+          "q": "In humans, where does fertilization of an egg cell normally occur?",
+          "a": "Fallopian tubes",
+          "explanation": "From there, the fertilized egg travels to the uterus."
+        },
+        {
+          "type": "self-eval",
+          "q": "What specific ecological role do fungi and many bacteria play?",
+          "a": "Decomposers",
+          "explanation": "They break down dead organisms and recycle nutrients."
+        },
+        {
+          "type": "self-eval",
+          "q": "What are the tiny air sacs in the lungs where gas exchange occurs?",
+          "a": "Alveoli",
+          "explanation": "Capillaries surround them to pick up oxygen."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which famous naturalist developed the theory of evolution by natural selection?",
+          "a": "Charles Darwin",
+          "explanation": "He is best known for his book 'On the Origin of Species'."
+        }
+      ]
+    }
+  ]
+}

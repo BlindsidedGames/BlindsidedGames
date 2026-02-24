@@ -1,0 +1,85 @@
+{
+    "id": "sports_medium_03",
+    "title": "Medium Sports Quiz 3",
+    "sections": [
+        {
+            "title": "Sports",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "In which sport might you execute a 'Fosbury Flop'?",
+                    "options": [
+                        "High Jump",
+                        "Pole Vault",
+                        "Long Jump",
+                        "Triple Jump"
+                    ],
+                    "a": "High Jump",
+                    "explanation": "Dick Fosbury popularized this revolutionary backwards high-jumping technique in the 1968 Olympics."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The core objective in the sport of curling is to slide stones closest to the center of a target called the 'house'.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Points are scored for every stone resting closer to the center than the opponent's closest stone."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In field hockey, players are allowed to use both sides of their stick to hit the ball.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Players may only use the flat side of the stick to touch or hit the ball."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the collective term for the three races that make up the prestigious 'Triple Crown' of thoroughbred horse racing in the US?",
+                    "a": "The Kentucky Derby, the Preakness Stakes, and the Belmont Stakes.",
+                    "explanation": "Winning all three in a single season is considered one of the rarest feats in sports."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In standard Major League Baseball, how many outs does a team get per inning collectively?",
+                    "a": "Six outs total.",
+                    "explanation": "Each team gets three offensive outs per half-inning."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which combat sport translates directly to 'empty hand' in Japanese?",
+                    "a": "Karate.",
+                    "explanation": "It is predominantly a striking art using punching, kicking, knee strikes, and elbow strikes."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the designated area extending from the baseline to the 10-foot (3m) line in volleyball called?",
+                    "a": "The back row.",
+                    "explanation": "Players in the back row cannot legally attack the ball effectively if they take off in front of the 3-meter line."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In fencing, which of the three weapons specifically targets only the opponent's torso with the tip?",
+                    "a": "The Foil.",
+                    "explanation": "The épée targets the entire body with the tip, while the sabre targets above the waist with both edge and tip."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is a 'hat trick' in ice hockey or soccer?",
+                    "a": "When a single player scores three goals in a single game.",
+                    "explanation": "In hockey, fans traditionally throw hats onto the ice to celebrate."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What event natively combines cross-country skiing and rifle shooting?",
+                    "a": "The Biathlon.",
+                    "explanation": "It requires immense cardiovascular endurance immediately followed by steady, precise marksmanship."
+                }
+            ]
+        }
+    ]
+}

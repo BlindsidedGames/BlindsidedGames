@@ -1,0 +1,85 @@
+{
+    "id": "geography_medium_02",
+    "title": "Medium Geography Quiz 2",
+    "sections": [
+        {
+            "title": "Geography",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which of these European countries is a landlocked nation?",
+                    "options": [
+                        "Norway",
+                        "Switzerland",
+                        "Greece",
+                        "Spain"
+                    ],
+                    "a": "Switzerland",
+                    "explanation": "Switzerland is completely enclosed by France, Germany, Austria, Liechtenstein, and Italy."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The Tropic of Capricorn lies north of the Equator.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The Tropic of Capricorn is south of the Equator; the Tropic of Cancer is north."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Antarctica is technically classified as a desert.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "A desert is defined by its low annual precipitation, not its temperature. Antarctica is incredibly dry."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the most populous city in the United Arab Emirates (UAE)?",
+                    "a": "Dubai.",
+                    "explanation": "It is famous for luxury shopping, modern architecture like the Burj Khalifa, and a lively nightlife scene."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What geographical line designated at 0 degrees longitude runs through Greenwich, England?",
+                    "a": "The Prime Meridian.",
+                    "explanation": "It bisects the eastern and western hemispheres."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which river runs through the Grand Canyon?",
+                    "a": "The Colorado River.",
+                    "explanation": "The river and its tributaries carved the dramatic geological features of the canyon over millions of years."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the immense coral reef located off the coast of Queensland, Australia.",
+                    "a": "The Great Barrier Reef.",
+                    "explanation": "It is the world's largest coral reef system, visible even from outer space."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is a 'strait'?",
+                    "a": "A strait is a naturally formed, narrow, typically navigable waterway that broadly connects two larger bodies of water.",
+                    "explanation": "The Strait of Gibraltar connects the Atlantic Ocean to the Mediterranean Sea."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which two European countries share the Iberian Peninsula?",
+                    "a": "Spain and Portugal.",
+                    "explanation": "They occupy almost the entirety of this peninsula in southwestern Europe."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the capital city of Japan?",
+                    "a": "Tokyo.",
+                    "explanation": "The Greater Tokyo Area is the most populous metropolitan area in the world."
+                }
+            ]
+        }
+    ]
+}

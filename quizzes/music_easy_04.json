@@ -1,0 +1,85 @@
+{
+    "id": "music_easy_04",
+    "title": "Easy Music Quiz 4",
+    "sections": [
+        {
+            "title": "Music",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which instrument is known for having a slide to change pitches?",
+                    "options": [
+                        "Saxophone",
+                        "Trombone",
+                        "Clarinet",
+                        "Oboe"
+                    ],
+                    "a": "Trombone",
+                    "explanation": "The player moves the slide back and forth to alter the length of the tubing, which changes the pitch."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A solo is a piece of music performed by three people.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "A solo is performed by a single person."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Pop music is generally written to appeal to a wide audience.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Pop music often features catchy melodies and relatable lyrics designed for commercial success."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Define 'acapella' singing.",
+                    "a": "Acapella singing is performing vocal music without any instrumental accompaniment.",
+                    "explanation": "The singers provide all the harmony and rhythm using only their voices."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is a symphony?",
+                    "a": "A symphony is a large-scale musical composition, typically divided into several movements, written for an orchestra.",
+                    "explanation": "It is a major form of classical music."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What makes a grand piano different in shape from an upright piano?",
+                    "a": "A grand piano's strings and soundboard are horizontal and extend outward from the keyboard, whereas an upright piano sits vertically against a wall.",
+                    "explanation": "The horizontal layout gives the grand piano a much larger footprint."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Briefly describe hip-hop music.",
+                    "a": "Hip-hop is a genre characterized by rhythmic, rhyming speech (rapping) over an instrumental background beat.",
+                    "explanation": "It originated in the Bronx, New York, in the 1970s."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is a concert?",
+                    "a": "A concert is a live music performance in front of an audience.",
+                    "explanation": "Concerts can range from small club shows to massive stadium tours."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is an instrumental track?",
+                    "a": "An instrumental track is a recorded song or piece of music that only features instruments, with no vocals or singing.",
+                    "explanation": "Instrumentals focus entirely on the musical arrangement."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Elvis Presley is often known by what royal nickname?",
+                    "a": "The King of Rock and Roll.",
+                    "explanation": "He was a pioneering figure in popularizing rockabilly and rock music."
+                }
+            ]
+        }
+    ]
+}

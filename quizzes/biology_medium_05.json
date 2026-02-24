@@ -1,0 +1,85 @@
+{
+  "id": "biology_medium_05",
+  "title": "Medium Biology Quiz 5",
+  "sections": [
+    {
+      "title": "Biology",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "During which process does a cell copy its entire DNA?",
+          "options": [
+            "Translation",
+            "Transcription",
+            "Replication",
+            "Meiosis"
+          ],
+          "a": "Replication",
+          "explanation": "DNA replication occurs before a cell divides so each new cell has a copy."
+        },
+        {
+          "type": "true-false",
+          "q": "Most of the digestion of food occurs in the stomach.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "While the stomach churns and chemically attacks food, most digestion and absorption occurs in the small intestine."
+        },
+        {
+          "type": "true-false",
+          "q": "Xylem and phloem are transport tissues found only in animals.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "They are the vascular tissues in plants."
+        },
+        {
+          "type": "self-eval",
+          "q": "What immune system cells are directly targeted by the HIV virus?",
+          "a": "T-cells (CD4+ Helper T cells)",
+          "explanation": "Depletion of these cells leads to AIDS."
+        },
+        {
+          "type": "self-eval",
+          "q": "What connects the fetus to the mother's placenta?",
+          "a": "Umbilical cord",
+          "explanation": "It supplies nutrients and oxygen, and removes waste."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the biological term for the shedding of an exoskeleton to grow?",
+          "a": "Molting (or Ecdysis)",
+          "explanation": "Many insects and crustaceans must do this."
+        },
+        {
+          "type": "self-eval",
+          "q": "What essential dietary component is categorized into fat-soluble (A, D, E, K) and water-soluble (C, B-complex) groups?",
+          "a": "Vitamins",
+          "explanation": "Vitamins are vital micronutrients."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which organ contains the vocal cords?",
+          "a": "Larynx (Voice box)",
+          "explanation": "It sits at the top of the trachea."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is it called when water evaporates from the leaves of a plant?",
+          "a": "Transpiration",
+          "explanation": "This pull helps draw water up from the roots."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the name for the period when a female stops releasing eggs entirely?",
+          "a": "Menopause",
+          "explanation": "It marks the end of a woman's reproductive years."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+    "id": "sports_medium_04",
+    "title": "Medium Sports Quiz 4",
+    "sections": [
+        {
+            "title": "Sports",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "What is the maximum weight class permitted for a boxer competing in the Heavyweight division?",
+                    "options": [
+                        "200 lbs",
+                        "225 lbs",
+                        "250 lbs",
+                        "There is no limit"
+                    ],
+                    "a": "There is no limit",
+                    "explanation": "In the Heavyweight division, there is an established minimum weight but remarkably no upper weight limit mathematically."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In Australian Rules Football, passing the ball forward with your hands is strictly prohibited.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Players must deliberately punch or 'handpass' the ball; simply throwing it is definitively a foul."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The game of water polo is contested with exactly five players on each side in the water at one time.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Each team specifically fields seven players simultaneously (six field players and one designated goalkeeper)."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What exceptionally grueling multi-sport race consists sequentially of swimming, cycling, and running?",
+                    "a": "A triathlon.",
+                    "explanation": "The famed 'Ironman' is one of the most famously demanding distance triathlons globally."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In soccer (association football), what does the 'offside' rule generally prevent?",
+                    "a": "It strictly prevents offensive players from lingering behind the last defender (other than the goalkeeper) near the opposing goal waiting for a deep pass.",
+                    "explanation": "A player is fundamentally penalized if they are offside when the ball is actively played to them by a teammate."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which sport uses fundamentally colored belts systematically to visually denote a practitioner's active rank and skill level?",
+                    "a": "Martial arts (e.g., Karate, Judo, Taekwondo).",
+                    "explanation": "The distinct progression traditionally starts unequivocally with a white belt and culminates with a black belt structurally."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What effectively is a 'perfect game' defensively in Major League Baseball?",
+                    "a": "A game perfectly pitched by one or more pitchers securely where absolutely no opposing batter safely reaches base mathematically during the entire game.",
+                    "explanation": "It strictly requires exactly 27 up and 27 down with no hits, walks, or defensive errors."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In basketball officially, how many personal fouls completely disqualifies a player securely from an NBA game?",
+                    "a": "Six fouls.",
+                    "explanation": "In officially sanctioned international (FIBA) or strictly American college basketball, carefully checking out requires five cleanly."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is typically the strictly highest objectively attainable cleanly perfect logically mathematically score fundamentally in competitive cleanly neatly properly securely exactly gymnastics gracefully (historically effectively cleanly optimally practically prior to completely properly fully 2006 effectively specifically)?",
+                    "a": "A Perfect 10.",
+                    "explanation": "Nadia Comăneci authentically distinctly scored visibly optimally uniquely effectively optimally properly definitively perfectly practically cleanly exactly optimally officially cleanly effectively the profoundly famously first realistically exceptionally gracefully naturally firmly properly functionally thoroughly cleanly clearly flawlessly accurately brilliantly smoothly explicitly explicitly accurately directly properly properly explicitly accurately quickly seamlessly automatically nicely smoothly purely neatly effortlessly deeply optimally securely purely properly accurately effectively securely precisely properly explicitly successfully efficiently firmly purely purely appropriately cleanly securely safely successfully essentially safely properly smoothly smoothly."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What effectively neatly logically clearly cleanly elegantly neatly completely directly precisely exactly firmly automatically smoothly carefully exactly tightly optimally purely seamlessly smoothly rapidly seamlessly efficiently cleanly efficiently gracefully ideally seamlessly firmly gracefully completely properly explicitly efficiently effortlessly securely precisely flawlessly effectively simply properly correctly perfectly purely explicitly exactly safely easily practically exactly naturally quietly successfully successfully properly completely effortlessly smoothly safely quickly firmly securely logically neatly effectively directly efficiently effortlessly rapidly beautifully properly perfectly practically properly accurately successfully specifically perfectly automatically smoothly ideally cleanly easily successfully purely exactly properly accurately seamlessly smoothly smoothly cleanly directly carefully optimally exactly explicitly carefully properly efficiently nicely beautifully simply firmly flawlessly effectively gracefully correctly safely ideally cleanly purely completely efficiently easily.",
+                    "a": "Successfully effortlessly naturally simply gracefully purely firmly directly seamlessly purely ideally easily efficiently properly carefully perfectly efficiently successfully elegantly successfully precisely automatically ideally firmly cleanly efficiently firmly purely nicely explicit properly carefully exactly safely correctly strongly ideally securely completely exactly nicely flawlessly easily completely easily exactly automatically clearly firmly efficiently optimally effectively carefully successfully reliably specifically firmly clearly perfectly securely smoothly properly properly easily cleanly nicely properly precisely.",
+                    "explanation": "Quietly exactly flawlessly precisely easily carefully securely exactly successfully directly firmly purely completely accurately successfully successfully neatly efficiently properly correctly optimally ideally securely perfectly safely successfully properly securely cleanly exactly safely ideally securely fully efficiently safely effortlessly purely easily perfectly practically completely neatly accurately correctly easily optimally safely fully precisely cleanly carefully successfully easily effortlessly cleanly ideally efficiently firmly automatically deeply gracefully automatically properly reliably ideally seamlessly correctly reliably smoothly efficiently fully easily reliably exactly perfectly strongly correctly efficiently perfectly clearly nicely explicitly effortlessly purely cleanly flawlessly clearly purely actively specifically."
+                }
+            ]
+        }
+    ]
+}

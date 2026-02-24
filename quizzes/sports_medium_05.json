@@ -1,0 +1,85 @@
+{
+    "id": "sports_medium_05",
+    "title": "Medium Sports Quiz 5",
+    "sections": [
+        {
+            "title": "Sports",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which sport features a playing surface strictly called a 'pitch' or 'wicket'?",
+                    "options": [
+                        "Cricket",
+                        "Baseball",
+                        "Lacrosse",
+                        "Polo"
+                    ],
+                    "a": "Cricket",
+                    "explanation": "The pitch is the central strip of the cricket field where bowling and batting take place."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A 'grand slam' in tennis means a player won a match without dropping a single game.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "A Grand Slam in tennis refers to winning all four major championships (Australian, French, Wimbledon, US) in the same calendar year."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In badminton, the shuttlecock must be hit before it touches the ground.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "If the shuttlecock touches the ground within the court boundaries, a point is scored for the opponent."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the defensive concept of 'man-to-man' coverage in sports like basketball or football?",
+                    "a": "It is a tactical system where each defensive player is assigned to guard a specific offensive player.",
+                    "explanation": "This is in contrast to 'zone' defense, where players guard specific areas of the court/field."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which major golf championship is historically played every single year at the exact same course?",
+                    "a": "The Masters Tournament.",
+                    "explanation": "Unlike the US Open, British Open, or PGA Championship, the Masters is uniquely never rotated and stays at Augusta National."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain the concept of 'down and distance' in American football.",
+                    "a": "An offense is given four 'downs' (attempts) to advance the ball a specific 'distance' (usually ten yards) to earn a new set of downs.",
+                    "explanation": "If they fail, possession of the ball is turned over to the opposing team."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What unique physical feature does a hockey stick primarily have that a lacrosse stick notably does not?",
+                    "a": "A hockey stick has a solid blade used to hit the puck, whereas a lacrosse stick has a netted pocket.",
+                    "explanation": "The netted pocket in lacrosse is used to catch, carry, and throw the ball."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which equestrian sport is considered fundamentally the 'gymnastics of horse riding' globally?",
+                    "a": "Dressage.",
+                    "explanation": "It demands intense focus, highlighting the horse's natural athletic ability and willingness to perform perfectly."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In tennis, what happens when a serve hits the net cord but lands cleanly in the correct service box?",
+                    "a": "It is called a 'let' and the server gets another attempt without penalty.",
+                    "explanation": "The serve does not count as a fault."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In soccer, what does it essentially mean when a player receives a 'red card'?",
+                    "a": "A red card means a player is ejected from the game entirely.",
+                    "explanation": "The player must leave the field and the team cannot substitute another player in their place, forcing them to play short-handed."
+                }
+            ]
+        }
+    ]
+}

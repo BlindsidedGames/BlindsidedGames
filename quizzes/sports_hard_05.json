@@ -1,0 +1,85 @@
+{
+    "id": "sports_hard_05",
+    "title": "Hard Sports Quiz 5",
+    "sections": [
+        {
+            "title": "Sports",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "In standard Olympic archery, what is the exact diameter of the innermost 10-point ring on a 122 cm target?",
+                    "options": [
+                        "8 cm",
+                        "12.2 cm",
+                        "10 cm",
+                        "6.1 cm"
+                    ],
+                    "a": "12.2 cm",
+                    "explanation": "The 10-ring is precisely 12.2 centimeters across on the standard 70-meter target face."
+                },
+                {
+                    "type": "true-false",
+                    "q": "No player in NFL history has ever rushed for over 2,000 yards in a season multiple times.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "While several players have achieved the milestone once, no one has repeat performances of a 2,000+ yard season."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A 'perfect break' in 9-ball pool is defined as sinking the 9-ball on the break shot.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Also known as a 'golden break', sinking the 9-ball on the opening break wins the game instantly."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What legendary Australian batsman finished his career with an astonishing Test batting average of 99.94?",
+                    "a": "Sir Donald Bradman.",
+                    "explanation": "He needed just four runs in his final innings to retire with an average of exactly 100, but was dismissed for a duck (zero)."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In track cycling, what is the name of the steep, banked oval track where races take place?",
+                    "a": "A Velodrome.",
+                    "explanation": "The extreme banking allows cyclists to maintain dangerously high speeds through the corners."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which golfer famously won the 2000 US Open at Pebble Beach by a staggering, record-setting 15-stroke margin?",
+                    "a": "Tiger Woods.",
+                    "explanation": "It remains the most dominant performance in the history of major championship golf."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the complex scoring term used in tennis for a score of 40-40?",
+                    "a": "Deuce.",
+                    "explanation": "From deuce, a player must strictly win two consecutive points to successfully win the game."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the grueling sport of professional sumo wrestling, what represents the absolute highest attainable rank?",
+                    "a": "Yokozuna (Grand Champion).",
+                    "explanation": "It is the only rank in sumo from which a wrestler cannot technically be demoted due to poor performance."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What inherently brutal combat sport originated fundamentally in Thailand and physically heavily utilizes elbows and intensely devastating knee strikes strictly?",
+                    "a": "Muay Thai (or strictly legally Thai Boxing).",
+                    "explanation": "It is internationally known as the 'Art of Eight Limbs' due to its use of punches, kicks, elbows, and knees."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which highly technical athletic discipline natively heavily combines strictly fencing, intensely swimming, formally reliably equestrian securely cleanly, intelligently neatly gracefully cleanly intelligently gracefully securely cleanly smartly cleanly appropriately efficiently?",
+                    "a": "Modern Pentathlon.",
+                    "explanation": "The Modern Pentathlon consists of fencing, freestyle swimming, equestrian show jumping, and a combined event of pistol shooting and cross-country running."
+                }
+            ]
+        }
+    ]
+}

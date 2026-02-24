@@ -1,0 +1,85 @@
+{
+  "id": "biology_medium_01",
+  "title": "Medium Biology Quiz 1",
+  "sections": [
+    {
+      "title": "Biology",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "What is the basic unit of life?",
+          "options": [
+            "Atom",
+            "Molecule",
+            "Organelle",
+            "Cell"
+          ],
+          "a": "Cell",
+          "explanation": "All living organisms are composed of one or more cells."
+        },
+        {
+          "type": "true-false",
+          "q": "Viruses can reproduce on their own.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Viruses must infect a host cell to hijack its machinery to replicate."
+        },
+        {
+          "type": "true-false",
+          "q": "Veins carry oxygen-rich blood away from the heart.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Arteries generally carry oxygen-rich blood away from the heart; veins return oxygen-poor blood."
+        },
+        {
+          "type": "self-eval",
+          "q": "What term describes animals that regulate their own body temperature internally?",
+          "a": "Endothermic (or Warm-blooded)",
+          "explanation": "Mammals and birds are endothermic."
+        },
+        {
+          "type": "self-eval",
+          "q": "What organ is primarily responsible for filtering alcohol and toxins from the blood?",
+          "a": "Liver",
+          "explanation": "The liver is vital for detoxification and metabolism."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the powerhouse of the cell?",
+          "a": "Mitochondria",
+          "explanation": "They produce most of the cell's supply of adenosine triphosphate (ATP)."
+        },
+        {
+          "type": "self-eval",
+          "q": "What kind of symbiotic relationship benefits both species involved?",
+          "a": "Mutualism",
+          "explanation": "An example is bees and flowers."
+        },
+        {
+          "type": "self-eval",
+          "q": "In a food web, what level do plants occupy?",
+          "a": "Producers (or autotrophs)",
+          "explanation": "They produce their own energy through photosynthesis."
+        },
+        {
+          "type": "self-eval",
+          "q": "What molecule carries genetic information?",
+          "a": "DNA (Deoxyribonucleic acid)",
+          "explanation": "It holds the instructions for the development and function of living things."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which human blood type is considered the universal donor (specifically for red blood cells)?",
+          "a": "O Negative",
+          "explanation": "It lacks the A and B antigens and the Rh factor."
+        }
+      ]
+    }
+  ]
+}

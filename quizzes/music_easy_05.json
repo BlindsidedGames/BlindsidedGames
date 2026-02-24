@@ -1,0 +1,85 @@
+{
+    "id": "music_easy_05",
+    "title": "Easy Music Quiz 5",
+    "sections": [
+        {
+            "title": "Music",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which instrument is typically the largest and lowest-pitched member of the brass family?",
+                    "options": [
+                        "Trumpet",
+                        "French Horn",
+                        "Trombone",
+                        "Tuba"
+                    ],
+                    "a": "Tuba",
+                    "explanation": "The tuba provides the low bass frequency and rhythm foundation in brass sections."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A grand piano has more keys than a standard upright piano.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Both standard grand and upright pianos have exactly 88 keys."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The lines and spaces on which music is written are called a staff.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "A musical staff typically consists of five lines and four spaces."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is meant by the 'pitch' of a sound?",
+                    "a": "Pitch is how high or low a note sounds.",
+                    "explanation": "It corresponds to the frequency of the sound waves produced."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the function of the pedals on a piano?",
+                    "a": "The pedals modify the sound. For example, the sustain pedal allows notes to ring out even after the keys are released.",
+                    "explanation": "Other pedals can soften the sound or sustain specific notes."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name a famous classical music composer known for writing 'The Nutcracker' ballet.",
+                    "a": "Pyotr Ilyich Tchaikovsky.",
+                    "explanation": "He is one of the most celebrated Russian composers."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe the general feel of Blues music.",
+                    "a": "Blues music is often deeply emotional, expressing feelings of sadness, hardship, or longing, typically using a specific chord progression and pentatonic scale.",
+                    "explanation": "It evolved from African-American work songs and spirituals."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What does a record label do?",
+                    "a": "A record label produces, manufactures, distributes, and promotes audio recordings and music videos.",
+                    "explanation": "They coordinate the commercial aspect of an artist's career."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is a 'live' recording?",
+                    "a": "A live recording is captured during a real performance in front of an audience, as opposed to a multi-track studio recording.",
+                    "explanation": "It captures the raw energy and interaction with the crowd."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who is the legendary female singer known as the 'Queen of Soul'?",
+                    "a": "Aretha Franklin.",
+                    "explanation": "She became a commercial success with hits like 'Respect' and 'Think'."
+                }
+            ]
+        }
+    ]
+}

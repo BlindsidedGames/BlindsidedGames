@@ -1,0 +1,85 @@
+{
+  "id": "science_hard_03",
+  "title": "Hard Science Quiz 3",
+  "sections": [
+    {
+      "title": "Science",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which scientist famously said 'God does not play dice with the universe'?",
+          "options": [
+            "Niels Bohr",
+            "Erwin Schr\u00f6dinger",
+            "Albert Einstein",
+            "Max Planck"
+          ],
+          "a": "Albert Einstein",
+          "explanation": "Einstein was expressing his dissatisfaction with quantum mechanics' reliance on probability."
+        },
+        {
+          "type": "true-false",
+          "q": "Enzymes are a type of lipid.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Enzymes are highly specific proteins that act as biological catalysts."
+        },
+        {
+          "type": "true-false",
+          "q": "Tectonic plates float on the Earth's solid inner core.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "They float on the asthenosphere, the ductile part of the mantle."
+        },
+        {
+          "type": "self-eval",
+          "q": "What rule states that electrons fill lower-energy atomic orbitals before filling higher-energy ones?",
+          "a": "Aufbau Principle",
+          "explanation": "It's a key rule in building electron configurations."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the term for the amount of heat required to raise the temperature of 1 gram of water by 1\u00b0C?",
+          "a": "Calorie",
+          "explanation": "A kilocalorie (food Calorie) is 1,000 of these."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the fundamental unit of length in the metric system?",
+          "a": "Meter",
+          "explanation": "Defined by the distance light travels in a specific fraction of a second."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who discovered penicillin?",
+          "a": "Alexander Fleming",
+          "explanation": "He noted mold killing bacteria in 1928."
+        },
+        {
+          "type": "self-eval",
+          "q": "What physical constant has the value 6.626 x 10^-34 J\u00b7s?",
+          "a": "Planck's constant",
+          "explanation": "It is denoted by 'h' in quantum mechanics equations."
+        },
+        {
+          "type": "self-eval",
+          "q": "What acid is found in the human stomach?",
+          "a": "Hydrochloric acid (HCl)",
+          "explanation": "It aids digestion and kills pathogens."
+        },
+        {
+          "type": "self-eval",
+          "q": "What biological structure is composed of RNA and proteins, and serves as the site of protein synthesis?",
+          "a": "Ribosome",
+          "explanation": "Ribosomes read mRNA to assemble amino acids."
+        }
+      ]
+    }
+  ]
+}

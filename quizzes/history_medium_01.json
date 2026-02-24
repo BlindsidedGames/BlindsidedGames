@@ -1,0 +1,85 @@
+{
+  "id": "history_medium_01",
+  "title": "Medium History Quiz 1",
+  "sections": [
+    {
+      "title": "History",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "In what year did the Berlin Wall fall?",
+          "options": [
+            "1987",
+            "1989",
+            "1991",
+            "1993"
+          ],
+          "a": "1989",
+          "explanation": "The fall of the wall officially began on November 9, 1989, paving the way for German reunification."
+        },
+        {
+          "type": "true-false",
+          "q": "The Magna Carta was signed by King John in 1215.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "It established the principle that everyone is subject to the law, even the king."
+        },
+        {
+          "type": "true-false",
+          "q": "Alexander the Great was a Spartan king.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "He was the king of the ancient Greek kingdom of Macedon."
+        },
+        {
+          "type": "self-eval",
+          "q": "What was the name of the route that connected China to the Mediterranean Sea through trade?",
+          "a": "The Silk Road",
+          "explanation": "It facilitated the exchange of goods and culture for centuries."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which US war was the battle of Gettysburg fought in?",
+          "a": "The American Civil War",
+          "explanation": "It is widely considered the turning point of the war."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the Soviet leader during the Cuban Missile Crisis?",
+          "a": "Nikita Khrushchev",
+          "explanation": "He agreed to remove Soviet missiles from Cuba in exchange for US concessions."
+        },
+        {
+          "type": "self-eval",
+          "q": "What famous ship sank in 1915 after being torpedoed by a German U-boat?",
+          "a": "RMS Lusitania",
+          "explanation": "This event shifted American public opinion against Germany in WWI."
+        },
+        {
+          "type": "self-eval",
+          "q": "What document did Martin Luther nail to a church door in 1517, sparking the Protestant Reformation?",
+          "a": "The Ninety-Five Theses",
+          "explanation": "It protested practices like the sale of indulgences."
+        },
+        {
+          "type": "self-eval",
+          "q": "What was the system of institutionalized racial segregation in South Africa called?",
+          "a": "Apartheid",
+          "explanation": "It was legally enforced until the early 1990s."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which empire built the city of Tenochtitlan?",
+          "a": "The Aztec Empire",
+          "explanation": "It was located on an island in Lake Texcoco where modern Mexico City is now."
+        }
+      ]
+    }
+  ]
+}

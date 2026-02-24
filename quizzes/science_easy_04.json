@@ -1,0 +1,85 @@
+{
+  "id": "science_easy_04",
+  "title": "Easy Science Quiz 4",
+  "sections": [
+    {
+      "title": "Science",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "How many states of matter are commonly taught in basic science?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "a": "3",
+          "explanation": "Solid, liquid, and gas are the three classic states."
+        },
+        {
+          "type": "true-false",
+          "q": "Dolphins are fish.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Dolphins are mammals."
+        },
+        {
+          "type": "true-false",
+          "q": "The core of the Earth is solid.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "The inner core is primarily solid iron and nickel."
+        },
+        {
+          "type": "self-eval",
+          "q": "What natural disaster is measured on the Richter scale?",
+          "a": "Earthquake",
+          "explanation": "The Richter scale calculates earthquake magnitude."
+        },
+        {
+          "type": "self-eval",
+          "q": "What pulls objects toward the ground?",
+          "a": "Gravity",
+          "explanation": "Earth's gravity pulls masses to its center."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is a baby dog called?",
+          "a": "Puppy",
+          "explanation": "A young canine is known as a puppy."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which season comes after winter?",
+          "a": "Spring",
+          "explanation": "The Northern hemisphere tilts toward the sun in spring."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is a large body of saltwater called?",
+          "a": "Ocean",
+          "explanation": "The Earth is dominated by interconnected oceans."
+        },
+        {
+          "type": "self-eval",
+          "q": "What tool helps us see very tiny things?",
+          "a": "Microscope",
+          "explanation": "Microscopes magnify objects too small for the naked eye."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is frozen water called?",
+          "a": "Ice",
+          "explanation": "Ice is the solid state of water."
+        }
+      ]
+    }
+  ]
+}

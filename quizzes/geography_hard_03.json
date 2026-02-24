@@ -1,0 +1,85 @@
+{
+    "id": "geography_hard_03",
+    "title": "Hard Geography Quiz 3",
+    "sections": [
+        {
+            "title": "Geography",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which African country is the most populous on the entire continent?",
+                    "options": [
+                        "Egypt",
+                        "South Africa",
+                        "Nigeria",
+                        "Ethiopia"
+                    ],
+                    "a": "Nigeria",
+                    "explanation": "Nigeria has a rapidly growing population that far exceeds any other nation in Africa."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Mount Kilimanjaro is the tallest mountain physically located in South America.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Mount Kilimanjaro is the tallest mountain in Africa (Tanzania). Aconcagua is the tallest in South America."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The country of Turkey is situated geographically in both Europe and Asia.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Turkey is a transcontinental country, with a small portion (East Thrace) in Southeast Europe."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the physical definition of a 'fjord'?",
+                    "a": "A fjord is a long, narrow, incredibly deep inlet of the sea between high cliffs, typically formed by submergence of a glaciated valley.",
+                    "explanation": "Norway and New Zealand are immensely famous for their fjords."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the profoundly arid desert region located in northern Chile that is considered the driest non-polar desert in the world.",
+                    "a": "The Atacama Desert.",
+                    "explanation": "Some weather stations in the Atacama have never reliably received a single drop of rain."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which two European nations fundamentally share the island of Hispaniola in the Caribbean?",
+                    "a": "Haiti and the Dominican Republic.",
+                    "explanation": "They are the only two sovereign nations occupying that specific island."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the capital city of the vast, landlocked central Asian country of Mongolia?",
+                    "a": "Ulaanbaatar.",
+                    "explanation": "It is historically known as one of the coldest capital cities in the world."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain what the 'Continental Divide' of the Americas means geographically.",
+                    "a": "It is the principal, largely mountainous hydrological divide of the Americas.",
+                    "explanation": "In North America, it functionally runs along the crest of the Rocky Mountains."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What incredibly small island nation in the Mediterranean Sea lies fundamentally between Sicily and the North African coast?",
+                    "a": "Malta.",
+                    "explanation": "It is a fiercely independent microstate boasting immense historical and strategic maritime importance."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which colossal mountain range physically separates the harshly cold Indian subcontinent from the Tibetan Plateau?",
+                    "a": "The Himalayas.",
+                    "explanation": "They contain many of Earth's highest peaks, including Mount Everest."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "id": "pop_culture_hard_02",
+    "title": "Hard Pop Culture Quiz 2",
+    "sections": [
+        {
+            "title": "Pop Culture",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which infamous 1980 movie directed by Michael Cimino was such a massive box office bomb that it functionally destroyed United Artists studio?",
+                    "options": [
+                        "Ishtar",
+                        "Heaven's Gate",
+                        "Waterworld",
+                        "Cleopatra"
+                    ],
+                    "a": "Heaven's Gate",
+                    "explanation": "Its vastly inflated budget and critical panning led to the collapse of the auteur-driven New Hollywood era."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the original Japanese release of Super Mario Bros. 2, the game was considered too difficult for American audiences, so a different game (Doki Doki Panic) was reskinned for the US release.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The true Japanese 'Super Mario Bros. 2' was later released internationally as 'The Lost Levels'."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The iconic ' Wilhelm scream' sound effect was first used in the 1977 film Star Wars.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "It was first used in the 1951 film 'Distant Drums', though Star Wars sound designer Ben Burtt popularized it."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What wildly influential 1988 anime film, directed by Katsuhiro Otomo, heavily popularized Japanese animation in the West?",
+                    "a": "Akira.",
+                    "explanation": "Its intricate, hand-drawn cyberpunk visuals remain a high-water mark for animation."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which musician's legendary, never-released 1967 album 'Smile' became the most famous unreleased album in pop music history?",
+                    "a": "Brian Wilson (of The Beach Boys).",
+                    "explanation": "He famously abandoned the visionary project due to severe mental health struggles and band pressures."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What was the officially documented name of the very first commercially successful arcade video game, created by Nolan Bushnell and Ted Dabney in 1971?",
+                    "a": "Computer Space.",
+                    "explanation": "While 'Pong' was massively popular, 'Computer Space' preceded it, though it was considered too complicated by many players."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which reclusive author wrote the seminal 1951 novel 'The Catcher in the Rye' and subsequently stopped publishing new work?",
+                    "a": "J.D. Salinger.",
+                    "explanation": "He famously retreated entirely from public life shortly after the novel's massive, generation-defining success."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What specific obscure, discontinued video game console famously featured the critically acclaimed title 'Panzer Dragoon Saga'?",
+                    "a": "The Sega Saturn.",
+                    "explanation": "The console struggled commercially against the PlayStation, making games like this incredibly rare today."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who directed the notoriously surreal, unsettling 1977 horror film 'Eraserhead'?",
+                    "a": "David Lynch.",
+                    "explanation": "It was his feature directorial debut and heavily established his signature bizarre, dreamlike visual style."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which legendary hip-hop producer famously revolutionized the use of the Akai MPC sampler while producing for acts like A Tribe Called Quest and Slum Village?",
+                    "a": "J Dilla.",
+                    "explanation": "His unique 'drunken' drum programming profoundly fundamentally altered the rhythmic fabric of modern hip-hop music."
+                }
+            ]
+        }
+    ]
+}

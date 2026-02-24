@@ -1,0 +1,85 @@
+{
+    "id": "games_hard_05",
+    "title": "Hard Games Quiz 5",
+    "sections": [
+        {
+            "title": "Games",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "In Magic: The Gathering, what does the keyword 'Trample' mechanically do?",
+                    "options": [
+                        "Destroys artifacts",
+                        "Forces discards",
+                        "Excess combat damage hits the defending player",
+                        "The creature cannot be blocked"
+                    ],
+                    "a": "Excess combat damage hits the defending player",
+                    "explanation": "If a 5/5 creature with Trample is blocked by a 2/2, the remaining 3 damage hits the opponent."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the board game 'Ticket to Ride', drawing destination tickets is risk-free.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Uncompleted destination tickets actively deduct points from your final score."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The classic board game 'Go' originated in ancient China over 2,500 years ago.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "It heavily involves deeply placing stones on a grid to securely surround territory."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What deeply influential 2001 game revolutionized open-world design by allowing players to freely explore a 3D city in cars?",
+                    "a": "Grand Theft Auto III.",
+                    "explanation": "It set the gold standard for adult-oriented sandbox games."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which brutally unforgiving 2011 action RPG popularized the 'Soulslike' genre?",
+                    "a": "Dark Souls.",
+                    "explanation": "Its punishing difficulty, stamina management, and deep lore created a devoted cult following."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the miniature wargame 'Warhammer 40,000', what psychic race famously devours entire planets in the Tyranid Hive Fleet?",
+                    "a": "Tyranids.",
+                    "explanation": "They adapt rapidly and consume all biological matter."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What complex 1999 PC game pioneered roller coaster simulation and massive theme park management?",
+                    "a": "RollerCoaster Tycoon.",
+                    "explanation": "Programmer Chris Sawyer wrote the incredibly optimized game almost entirely in assembly language."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which iconic Japanese arcade game famously features stages like 'Jungle', 'Beach', and 'Cloud' while rescuing a baby monkey?",
+                    "a": "Donkey Kong Jr.",
+                    "explanation": "It is unique because Mario acts as the villain."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What highly tactical tabletop board game involves moving wooden discs representing armies to control cities on a map of Europe?",
+                    "a": "Diplomacy.",
+                    "explanation": "It is notoriously famous for ruining friendships due to backstabbing."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In an RPG, what does the 'AC' usually stand for when discussing combat mechanics?",
+                    "a": "Armor Class.",
+                    "explanation": "It represents how difficult a character is to successfully hit or damage."
+                }
+            ]
+        }
+    ]
+}

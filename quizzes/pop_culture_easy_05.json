@@ -1,0 +1,85 @@
+{
+    "id": "pop_culture_easy_05",
+    "title": "Easy Pop Culture Quiz 5",
+    "sections": [
+        {
+            "title": "Pop Culture",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which artist had a massive hit in 2020 with the song 'Blinding Lights'?",
+                    "options": [
+                        "Drake",
+                        "The Weeknd",
+                        "Post Malone",
+                        "Justin Bieber"
+                    ],
+                    "a": "The Weeknd",
+                    "explanation": "The synth-heavy track dominated the Billboard charts globally."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Superman's primary weakness is a green radioactive rock from his home planet called Kryptonite.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Exposure to green Kryptonite drains his powers and causes him intense pain."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The first video game ever created was Super Mario Bros.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Games like 'Tennis for Two' or 'Pong' predated Mario by decades."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the name of the fictional, magical boarding school setting of the Harry Potter books?",
+                    "a": "Hogwarts School of Witchcraft and Wizardry.",
+                    "explanation": "The castle is located in the Scottish Highlands."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What 1985 movie features a time-traveling DeLorean car?",
+                    "a": "Back to the Future.",
+                    "explanation": "It stars Michael J. Fox as Marty McFly and Christopher Lloyd as Doc Brown."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who is the 'Princess of Pop' known for hits like 'Toxic' and '...Baby One More Time'?",
+                    "a": "Britney Spears.",
+                    "explanation": "She was one of the driving forces behind the teen pop revival in the late 1990s."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the DC Universe, what superhero operates out of the bat-filled city of Gotham?",
+                    "a": "Batman.",
+                    "explanation": "Billionaire Bruce Wayne fights crime as Batman to avenge his parents' murder."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the name of the coffee shop where the main characters frequently hang out in 'Friends'?",
+                    "a": "Central Perk.",
+                    "explanation": "Gunther is the iconic manager of the fictional Greenwich Village coffee house."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which famous rapper is married to Beyoncé and famously ran Roc-A-Fella Records?",
+                    "a": "Jay-Z.",
+                    "explanation": "He is one of the most critically and commercially successful rappers of all time."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the term for a passionately devoted fanbase of a singer or media franchise, like 'Swifties' or 'Directioners'?",
+                    "a": "A 'fandom' or 'stans'.",
+                    "explanation": "The term 'stan' originated from the Eminem song of the same name."
+                }
+            ]
+        }
+    ]
+}

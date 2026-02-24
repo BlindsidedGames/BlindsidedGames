@@ -1,0 +1,85 @@
+{
+    "id": "games_medium_04",
+    "title": "Medium Games Quiz 4",
+    "sections": [
+        {
+            "title": "Games",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "In the video game 'Overwatch', which character is a highly mobile British time-jumper who dual-wields pulse pistols?",
+                    "options": [
+                        "Widowmaker",
+                        "Mercy",
+                        "Tracer",
+                        "D.Va"
+                    ],
+                    "a": "Tracer",
+                    "explanation": "She became the primary mascot character for the multiplayer shooter."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The board game 'Mousetrap' is primarily won by having the largest piece of plastic cheese at the end.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The objective is to physically catch your opponents' mouse game pieces in the Rube Goldberg trap."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the card game 'Texas Hold'em', players receive exactly two private cards at the beginning of the hand.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "These are called hole cards, which are used alongside the five community cards."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What genre-defining 1996 video game heavily popularized 3D survival horror with fixed camera angles and tank controls?",
+                    "a": "Resident Evil.",
+                    "explanation": "The player explores a terrifying, puzzle-filled mansion infested with zombies."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What incredibly popular tabletop game uses highly detailed, painted plastic miniatures to fight grimdark sci-fi battles?",
+                    "a": "Warhammer 40,000.",
+                    "explanation": "The hobby involves both assembling and painting the models, and playing the game."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which highly influential massively multiplayer online role-playing game (MMORPG) was released by Blizzard in 2004?",
+                    "a": "World of Warcraft.",
+                    "explanation": "It became the most popular MMORPG in history by far."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the game 'Yahtzee', how many dice does a player roll to achieve specific scoring combinations?",
+                    "a": "Five.",
+                    "explanation": "Rolling five of the same number explicitly constitutes a 'Yahtzee'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What intense, stealth-heavy video game series features the protagonist Solid Snake dismantling nuclear mechs?",
+                    "a": "Metal Gear Solid.",
+                    "explanation": "Created by Hideo Kojima, it popularized deeply cinematic video game storytelling."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which classic board game involves answering trivia questions across six specific categories to fill a circular plastic token?",
+                    "a": "Trivial Pursuit.",
+                    "explanation": "The six categories originally included Geography, Entertainment, History, Art, Science, and Sports."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What notoriously difficult 2011 platformer asks the player to guide a creature made of meat past buzzsaws?",
+                    "a": "Super Meat Boy.",
+                    "explanation": "It requires precision platforming and quick reflexes."
+                }
+            ]
+        }
+    ]
+}

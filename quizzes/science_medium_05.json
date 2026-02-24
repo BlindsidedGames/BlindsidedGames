@@ -1,0 +1,85 @@
+{
+  "id": "science_medium_05",
+  "title": "Medium Science Quiz 4",
+  "sections": [
+    {
+      "title": "Science",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which type of blood cells are responsible for fighting infection?",
+          "options": [
+            "Red Blood Cells",
+            "White Blood Cells",
+            "Platelets",
+            "Plasma"
+          ],
+          "a": "White Blood Cells",
+          "explanation": "Leukocytes (white blood cells) are part of the immune system."
+        },
+        {
+          "type": "true-false",
+          "q": "Helium is lighter than air.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "Helium's low density allows it to float in Earth's atmosphere."
+        },
+        {
+          "type": "true-false",
+          "q": "Electrons have a positive charge.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Electrons are negatively charged particles."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the highest mountain on Earth?",
+          "a": "Mount Everest",
+          "explanation": "Everest's peak is the highest point above sea level."
+        },
+        {
+          "type": "self-eval",
+          "q": "What force prevents objects in motion from continuing forever on Earth?",
+          "a": "Friction (or air resistance)",
+          "explanation": "These forces oppose motion."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the most abundant metal in the Earth's crust?",
+          "a": "Aluminum",
+          "explanation": "Aluminum makes up about 8% of the crust by weight."
+        },
+        {
+          "type": "self-eval",
+          "q": "What kind of animal is a Komodo dragon?",
+          "a": "Lizard (Reptile)",
+          "explanation": "It is the largest living species of lizard."
+        },
+        {
+          "type": "self-eval",
+          "q": "What layer of the atmosphere contains the ozone layer?",
+          "a": "Stratosphere",
+          "explanation": "The ozone layer protects Earth from UV radiation."
+        },
+        {
+          "type": "self-eval",
+          "q": "What do we call the molten rock that erupts from a volcano?",
+          "a": "Lava",
+          "explanation": "It is called magma while still underground."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who proposed the theory of general relativity?",
+          "a": "Albert Einstein",
+          "explanation": "He published it in 1915."
+        }
+      ]
+    }
+  ]
+}

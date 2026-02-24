@@ -1,0 +1,85 @@
+{
+    "id": "music_easy_02",
+    "title": "Easy Music Quiz 2",
+    "sections": [
+        {
+            "title": "Music",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which of these is a brass instrument?",
+                    "options": [
+                        "Violin",
+                        "Trumpet",
+                        "Flute",
+                        "Cello"
+                    ],
+                    "a": "Trumpet",
+                    "explanation": "The trumpet is made of brass and requires the player to buzz their lips into a mouthpiece."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A drum set is considered a percussion instrument.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Percussion instruments are typically sounded by being struck, scraped, or rubbed by hand or against another similar instrument."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In sheet music, a whole note is held for exactly one beat.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "In common time (4/4), a whole note is held for four beats."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is a duet?",
+                    "a": "A duet is a musical composition or performance involving exactly two singers or instrumentalists.",
+                    "explanation": "Both performers generally have equal importance in the piece."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe the function of a metronome.",
+                    "a": "A metronome gives a steady beat or click to help a musician keep a consistent tempo while practicing.",
+                    "explanation": "It can be set to different speeds (beats per minute)."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What does a composer do?",
+                    "a": "A composer writes and creates original musical pieces.",
+                    "explanation": "They arrange the notes, melodies, and harmonies that make up a song or symphony."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the famous instrument that is played by drawing a bow across its strings and is tucked under the chin.",
+                    "a": "The violin.",
+                    "explanation": "It is the highest-pitched member of the string family in an orchestra."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is country music known for in terms of its lyrics?",
+                    "a": "Country music often tells a story, frequently focusing on themes of rural life, love, heartbreak, and everyday struggles.",
+                    "explanation": "It also heavily features instruments like the acoustic guitar, fiddle, and steel guitar."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is a chorus in a popular song?",
+                    "a": "The chorus is the repeating section of a song that usually contains the main theme and catchiest melody.",
+                    "explanation": "It serves as the focal point that listeners easily remember and sing along to."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which British band famously included members John, Paul, George, and Ringo?",
+                    "a": "The Beatles.",
+                    "explanation": "They remain one of the most influential and successful bands in history."
+                }
+            ]
+        }
+    ]
+}

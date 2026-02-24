@@ -1,0 +1,85 @@
+{
+    "id": "geography_easy_03",
+    "title": "Easy Geography Quiz 3",
+    "sections": [
+        {
+            "title": "Geography",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "How many continents are there on Earth?",
+                    "options": [
+                        "5",
+                        "6",
+                        "7",
+                        "8"
+                    ],
+                    "a": "7",
+                    "explanation": "The seven continents are Africa, Antarctica, Asia, Australia/Oceania, Europe, North America, and South America."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Greenland is the largest non-continental island in the world.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "While massive, Greenland is politically an autonomous territory of Denmark and geographically part of North America."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Mexico City is located in South America.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Mexico City, the capital of Mexico, is located in North America."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What famous monument is located in Paris, France?",
+                    "a": "The Eiffel Tower.",
+                    "explanation": "It was completed in 1889 as the entrance arch to the 1889 World's Fair."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which ocean borders the west coast of the United States?",
+                    "a": "The Pacific Ocean.",
+                    "explanation": "States like California, Oregon, and Washington have coastlines along the Pacific."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the capital of the United Kingdom?",
+                    "a": "London.",
+                    "explanation": "London sits on the River Thames and is famous for landmarks like Big Ben and Buckingham Palace."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the imaginary line that runs horizontally around the middle of the Earth.",
+                    "a": "The Equator.",
+                    "explanation": "Places near the equator generally experience hot, tropical climates all year round."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What two colors are on Canada's national flag?",
+                    "a": "Red and White.",
+                    "explanation": "It features a distinct red maple leaf in its center."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What do we call a giant body of slow-moving ice?",
+                    "a": "A glacier.",
+                    "explanation": "Glaciers move extremely slowly, carving and reshaping the landscape as they go."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the largest hot desert in the world, stretching across much of North Africa?",
+                    "a": "The Sahara Desert.",
+                    "explanation": "It is comparable in size to the entire land area of the United States."
+                }
+            ]
+        }
+    ]
+}

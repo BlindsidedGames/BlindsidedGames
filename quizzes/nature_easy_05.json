@@ -1,0 +1,85 @@
+{
+    "id": "nature_easy_05",
+    "title": "Easy Nature Quiz 5",
+    "sections": [
+        {
+            "title": "Nature",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "What precious stone is formed from carbon under extreme heat and pressure deep within the Earth?",
+                    "options": [
+                        "Ruby",
+                        "Emerald",
+                        "Sapphire",
+                        "Diamond"
+                    ],
+                    "a": "Diamond",
+                    "explanation": "Diamonds are the hardest known natural material on Earth, prized for their beauty and industrial uses."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The core of the Earth is mostly made of solid iron and nickel.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The inner core is believed to be solid, while the outer core is liquid iron and nickel."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Male seahorses, rather than females, carry and give birth to their young.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The female deposits her eggs into the male's brood pouch, where he fertilizes and incubates them until birth."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the tallest land animal?",
+                    "a": "The giraffe.",
+                    "explanation": "Their long necks allow them to reach high leaves on acacia trees."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What natural force keeps everything anchored to the ground and stops us from floating away into space?",
+                    "a": "Gravity.",
+                    "explanation": "Earth's mass creates a gravitational pull on all objects near its surface."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe what a desert is.",
+                    "a": "A desert is a very dry region of land that receives extremely low amounts of precipitation per year.",
+                    "explanation": "While many are hot and sandy, some deserts, like Antarctica, are cold and covered in ice."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What do we call falling water droplets that freeze into small ice pellets before hitting the ground?",
+                    "a": "Sleet or Hail.",
+                    "explanation": "Hail generally occurs during severe thunderstorms, while sleet forms when snow melts into rain and refreezes before landing."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which sense do dogs rely on most heavily to understand their environment?",
+                    "a": "Their sense of smell.",
+                    "explanation": "A dog's olfactory system is tens of thousands of times more sensitive than a human's."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the large, flowing body of water that usually empties into a sea or ocean.",
+                    "a": "A river.",
+                    "explanation": "Rivers collect water from precipitation and smaller streams as they flow continually downhill."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is molten rock called when it erupts out of a volcano?",
+                    "a": "Lava.",
+                    "explanation": "When the molten rock is still trapped below the Earth's surface, it is called magma."
+                }
+            ]
+        }
+    ]
+}

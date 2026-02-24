@@ -1,0 +1,85 @@
+{
+    "id": "geography_easy_02",
+    "title": "Easy Geography Quiz 2",
+    "sections": [
+        {
+            "title": "Geography",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which of these is the capital city of Japan?",
+                    "options": [
+                        "Seoul",
+                        "Beijing",
+                        "Tokyo",
+                        "Bangkok"
+                    ],
+                    "a": "Tokyo",
+                    "explanation": "Tokyo is one of the most populous metropolises in the world."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Canada is the second largest country in the world by land area.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Russia is the largest, followed directly by Canada."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The Amazon Rainforest is located in Africa.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The Amazon Rainforest is located in South America, primarily within Brazil."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the capital city of the United States?",
+                    "a": "Washington, D.C.",
+                    "explanation": "It is not geographically located within any U.S. state, functioning as a federal district."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the 50th state to join the United States.",
+                    "a": "Hawaii.",
+                    "explanation": "Hawaii was formally admitted as a state in August 1959."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What do you call a mountain that erupts with lava?",
+                    "a": "A volcano.",
+                    "explanation": "Volcanoes have vents that allow molten rock and gases from beneath the Earth's crust to erupt."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which continent is known for having penguins and very cold temperatures?",
+                    "a": "Antarctica.",
+                    "explanation": "It is the southernmost continent on Earth and contains the geographic South Pole."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is a 'peninsula'?",
+                    "a": "A piece of land almost entirely surrounded by water but connected to the mainland on one side.",
+                    "explanation": "Florida and Italy are well-known examples of peninsulas."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What currency is commonly used across many nations in Europe?",
+                    "a": "The Euro.",
+                    "explanation": "The Euro is the official currency of 20 of the 27 member states of the European Union."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which ocean lies directly between North America and Europe?",
+                    "a": "The Atlantic Ocean.",
+                    "explanation": "It separates the 'Old World' from the 'New World'."
+                }
+            ]
+        }
+    ]
+}

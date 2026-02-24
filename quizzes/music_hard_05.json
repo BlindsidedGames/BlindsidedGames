@@ -1,0 +1,85 @@
+{
+    "id": "music_hard_05",
+    "title": "Hard Music Quiz 5",
+    "sections": [
+        {
+            "title": "Music",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which composer is famous for his 24 Preludes and Fugues, published as 'The Well-Tempered Clavier'?",
+                    "options": [
+                        "Johann Sebastian Bach",
+                        "Frédéric Chopin",
+                        "Domenico Scarlatti",
+                        "Georg Philipp Telemann"
+                    ],
+                    "a": "Johann Sebastian Bach",
+                    "explanation": "Bach wrote these pieces in all 24 major and minor keys to demonstrate the benefits of a new tuning system."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The term 'bel canto' literally translates from Italian as 'beautiful singing'.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Bel canto was an Italian vocal style that dominated the 18th and early 19th centuries, emphasizing lyrical, florid singing."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Bebop jazz typically features slower tempos and less complex chord changes than swing jazz.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Bebop is characterized by fast tempos, complex chord progressions, and intricate, highly technical virtuoso improvisations."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is an 'arpeggio'?",
+                    "a": "An arpeggio is a type of broken chord in which the notes that compose a chord are played or sung in a rising or descending order rather than simultaneously.",
+                    "explanation": "The term comes from the Italian word 'arpeggiare', meaning 'to play on a harp'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe the function of 'melisma' in vocal performance.",
+                    "a": "Melisma is the singing of a single syllable of text while moving between several different notes in succession.",
+                    "explanation": "Music sung in this style is referred to as melismatic, as opposed to syllabic, where each syllable matches a single note."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What does 'Aleatoric music' refer to?",
+                    "a": "Aleatoric music is music in which some element of the composition is left to chance, and/or some primary element of a composed work's realization is left to the performer's absolute discretion.",
+                    "explanation": "John Cage famously utilized chance operations, such as throwing the I Ching, to compose works."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who wrote 'The Four Seasons' and from what era of music does it originate?",
+                    "a": "Antonio Vivaldi wrote The Four Seasons during the Baroque era.",
+                    "explanation": "It consists of a series of four violin concertos, each giving musical expression to a season of the year."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What distinguishes 'program music' from 'absolute music'?",
+                    "a": "Program music is intended to evoke an extra-musical idea, such as a story, painting, or poem, whereas absolute music has no explicit narrative and is intended to be appreciated simply for its formal musical structure.",
+                    "explanation": "Beethoven's 'Pastoral Symphony' is a famous example of program music."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain what a 'leitmotif' is.",
+                    "a": "A leitmotif is a frequently recurring, short musical phrase associated with a particular person, place, or idea.",
+                    "explanation": "Richard Wagner pioneered the extensive use of leitmotifs in his operas, heavily influencing modern film scoring."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who is known as the 'Father of the Symphony' and 'Father of the String Quartet'?",
+                    "a": "Joseph Haydn.",
+                    "explanation": "He established the structural models for both forms during the Classical era and composed over 100 symphonies."
+                }
+            ]
+        }
+    ]
+}

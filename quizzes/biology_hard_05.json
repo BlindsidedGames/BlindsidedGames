@@ -1,0 +1,85 @@
+{
+  "id": "biology_hard_05",
+  "title": "Hard Biology Quiz 5",
+  "sections": [
+    {
+      "title": "Biology",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which group of organisms belongs to the domain Archaea?",
+          "options": [
+            "Fungi",
+            "Extremophiles (like methanogens)",
+            "Cyanobacteria",
+            "Plants"
+          ],
+          "a": "Extremophiles (like methanogens)",
+          "explanation": "Archaea are single-celled organisms, often found in extreme environments."
+        },
+        {
+          "type": "true-false",
+          "q": "Restriction enzymes cut at random sequences within a DNA molecule.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "They cut at highly specific recognition sequences."
+        },
+        {
+          "type": "true-false",
+          "q": "Action potentials in neurons operate on an 'all-or-none' principle.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "If a stimulus reaches the threshold, a full action potential is fired; if not, nothing happens."
+        },
+        {
+          "type": "self-eval",
+          "q": "What specific hypothesis suggests that mitochondria and chloroplasts originated as free-living prokaryotes?",
+          "a": "Endosymbiotic theory",
+          "explanation": "These organelles have their own circular DNA similar to bacteria."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the effect called where a small population's gene pool is severely restricted due to an environmental disaster or human activity?",
+          "a": "Population bottleneck",
+          "explanation": "This drastically reduces genetic diversity."
+        },
+        {
+          "type": "self-eval",
+          "q": "What structures on the surface of the small intestine's inner lining significantly expand its surface area for absorption?",
+          "a": "Microvilli (on Villi)",
+          "explanation": "They form what is called the 'brush border'."
+        },
+        {
+          "type": "self-eval",
+          "q": "During DNA replication, which enzyme provides a starting point by laying down a short RNA primer?",
+          "a": "Primase",
+          "explanation": "DNA polymerase requires this primer to begin synthesis."
+        },
+        {
+          "type": "self-eval",
+          "q": "What biological phenomenon causes alleles located close together on the same chromosome to be inherited together?",
+          "a": "Genetic linkage",
+          "explanation": "They do not assort independently during meiosis."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the primary product of the Krebs cycle that feeds into the electron transport chain?",
+          "a": "NADH (and FADH2)",
+          "explanation": "These electron carriers donate electrons to generate the proton gradient."
+        },
+        {
+          "type": "self-eval",
+          "q": "In plant anatomy, what cells surround the stomata and control their opening and closing?",
+          "a": "Guard cells",
+          "explanation": "They regulate gas exchange and water loss."
+        }
+      ]
+    }
+  ]
+}

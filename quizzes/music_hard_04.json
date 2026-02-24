@@ -1,0 +1,85 @@
+{
+    "id": "music_hard_04",
+    "title": "Hard Music Quiz 4",
+    "sections": [
+        {
+            "title": "Music",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "In sonata-allegro form, what is the section called where themes presented earlier are developed, manipulated, and explored in new keys?",
+                    "options": [
+                        "Exposition",
+                        "Development",
+                        "Recapitulation",
+                        "Coda"
+                    ],
+                    "a": "Development",
+                    "explanation": "The development section creates musical tension that is later resolved in the recapitulation."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The oboe d'amore is pitched higher than a regular soprano oboe.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The oboe d'amore is a mezzo-soprano double reed, pitched a minor third lower than a standard oboe."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The Moog synthesizer popularized voltage-controlled analog synthesis in the late 1960s.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Created by Robert Moog, it utilized voltage variations to control pitch, volume, and timbre, becoming an industry standard."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain the concept of 'basso continuo'.",
+                    "a": "Basso continuo is a Baroque era performance practice and compositional structure where an underlying bass line is played continuously, typically by a cello or bassoon, with harmony improvised over it by a keyboard or lute instrument.",
+                    "explanation": "It provided the harmonic framework for much of Baroque music."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What defines the 'Lydian mode'?",
+                    "a": "The Lydian mode is a musical scale similar to the major scale (Ionian mode), but with a raised fourth scale degree.",
+                    "explanation": "This raised fourth gives it a bright, floating, and somewhat unresolved dreamlike quality."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who was the 'Empress of the Blues'?",
+                    "a": "Bessie Smith.",
+                    "explanation": "She was one of the most popular and influential mid-1920s to 1930s blues singers."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Define 'strophic form'.",
+                    "a": "Strophic form is a song structure where all verses or stanzas of the text are sung to exactly the same music.",
+                    "explanation": "It contrasts with through-composed form, where new music is written for every verse."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the purpose of 'reverb' in music production?",
+                    "a": "Reverberation (reverb) simulates the complex acoustic reflections of a physical space, such as a hall, room, or plate, adding spatial depth and sustain to dry audio signals.",
+                    "explanation": "It places the recorded sound in a psychoacoustic space."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which avant-garde composer famously wrote '4'33\"', a piece consisting of entirely resting, or 'silence'?",
+                    "a": "John Cage.",
+                    "explanation": "The piece encourages audiences to listen to the environmental sounds occurring in the space rather than traditional notes."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What does 'Sprechstimme' literally translate to, and what does it entail?",
+                    "a": "It translates to 'spoken voice' and is an expressionist vocal technique falling halfway between singing and speaking.",
+                    "explanation": "The performer approximates pitches rather than singing them perfectly in tune, an effect famously used by Schoenberg."
+                }
+            ]
+        }
+    ]
+}

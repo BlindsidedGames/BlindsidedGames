@@ -1,0 +1,85 @@
+{
+    "id": "entertainment_medium_02",
+    "title": "Medium Entertainment Quiz 2",
+    "sections": [
+        {
+            "title": "Entertainment",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which actor won their first Oscar for the movie 'The Revenant'?",
+                    "options": [
+                        "Brad Pitt",
+                        "Leonardo DiCaprio",
+                        "Matt Damon",
+                        "Christian Bale"
+                    ],
+                    "a": "Leonardo DiCaprio",
+                    "explanation": "He won Best Actor for his grueling performance as Hugh Glass."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The highest-grossing film of the 1990s was 'Jurassic Park'.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The highest-grossing film of the 1990s was 'Titanic' (1997)."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The first fully computer-animated feature film was 'Toy Story'.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Pixar released 'Toy Story' in 1995, revolutionizing animation."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the process of replacing dialogue in a film after shooting called?",
+                    "a": "ADR (Automated Dialogue Replacement) or dubbing.",
+                    "explanation": "It is done to improve audio quality or change lines."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which British rock band wrote the rock opera 'Tommy'?",
+                    "a": "The Who.",
+                    "explanation": "Released in 1969, it tells the story of a deaf, dumb, and blind boy."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What extremely popular fantasy franchise was created by J.R.R. Tolkien?",
+                    "a": "The Lord of the Rings / Middle-earth.",
+                    "explanation": "His books defined modern high fantasy."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In theater, what is the 'fourth wall'?",
+                    "a": "The imaginary wall separating the actors from the audience.",
+                    "explanation": "'Breaking the fourth wall' means an actor speaks directly to the viewers."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which pop superstar released the hit albums 'Purple Rain' and '1999'?",
+                    "a": "Prince.",
+                    "explanation": "He was a highly influential and prolific artist."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What critically acclaimed HBO series focuses on mobster Tony Soprano?",
+                    "a": "The Sopranos.",
+                    "explanation": "It is widely credited with starting the Golden Age of Television."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the film industry, what is an 'EGOT' winner?",
+                    "a": "Someone who has won an Emmy, Grammy, Oscar, and Tony award.",
+                    "explanation": "It is an incredibly rare achievement in entertainment."
+                }
+            ]
+        }
+    ]
+}

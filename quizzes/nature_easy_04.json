@@ -1,0 +1,85 @@
+{
+    "id": "nature_easy_04",
+    "title": "Easy Nature Quiz 4",
+    "sections": [
+        {
+            "title": "Nature",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which of these birds cannot fly?",
+                    "options": [
+                        "Eagle",
+                        "Pigeon",
+                        "Ostrich",
+                        "Sparrow"
+                    ],
+                    "a": "Ostrich",
+                    "explanation": "The ostrich is the largest living bird and is built for running on land rather than flying in the air."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A female lion is called a cub.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "A baby lion is a cub, but an adult female lion is called a lioness."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Coral is a rock, not a living thing.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Coral consists of tiny, living marine animals called polyps that secrete calcium carbonate to form hard structures."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the green substance in plants that absorbs sunlight?",
+                    "a": "Chlorophyll.",
+                    "explanation": "Chlorophyll is essential for photosynthesis and gives leaves their characteristic green color."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What forces create a rainbow?",
+                    "a": "A rainbow is created when sunlight is refracted (bent) and reflected by water droplets (like rain) in the atmosphere.",
+                    "explanation": "This splits the white light into a spectrum of varying colors."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is an earthquake?",
+                    "a": "An earthquake is a sudden shaking of the ground caused by the movement or breaking of rock beneath the Earth's surface along fault lines.",
+                    "explanation": "The sudden release of energy creates seismic waves that ripple outward."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Where does a beaver typically live?",
+                    "a": "A beaver lives in a lodge built from sticks, logs, and mud, usually situated in a pond or river.",
+                    "explanation": "Beavers famously build dams across streams to create deep, quiet pools around their lodges."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is an amphibian?",
+                    "a": "An amphibian is a cold-blooded vascular animal that typically starts its life in the water breathing through gills, but later develops lungs for breathing air on land.",
+                    "explanation": "Frogs, toads, and salamanders are common amphibians."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which planet is known as the 'Red Planet'?",
+                    "a": "Mars.",
+                    "explanation": "It appears reddish in the night sky due to iron oxide (rust) prevalent on its surface."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What natural disaster is characterized by a violent, rotating column of air extending from a thunderstorm to the ground?",
+                    "a": "A tornado.",
+                    "explanation": "Tornadoes can generate winds of over 300 mph and cause severe destruction."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "history_easy_02",
+  "title": "Easy History Quiz 2",
+  "sections": [
+    {
+      "title": "History",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Who was the first President of the United States?",
+          "options": [
+            "Abraham Lincoln",
+            "Thomas Jefferson",
+            "George Washington",
+            "John Adams"
+          ],
+          "a": "George Washington",
+          "explanation": "He served from 1789 to 1797."
+        },
+        {
+          "type": "true-false",
+          "q": "The Titanic sank on its maiden voyage.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "It hit an iceberg and sank in April 1912."
+        },
+        {
+          "type": "true-false",
+          "q": "Julius Caesar was an Emperor of China.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Julius Caesar was a Roman general and statesman."
+        },
+        {
+          "type": "self-eval",
+          "q": "What ancient civilization built the pyramids in Egypt?",
+          "a": "The Ancient Egyptians",
+          "explanation": "The pyramids served as monumental tombs for pharaohs."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who is known for discovering America in 1492 for Spain?",
+          "a": "Christopher Columbus",
+          "explanation": "His voyages led to the widespread European exploration of the Americas."
+        },
+        {
+          "type": "self-eval",
+          "q": "What wall was built across northern China to protect it from invaders?",
+          "a": "The Great Wall of China",
+          "explanation": "It was built and rebuilt over centuries."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the famous civil rights leader who delivered the 'I Have a Dream' speech?",
+          "a": "Martin Luther King Jr.",
+          "explanation": "He delivered it during the 1963 March on Washington."
+        },
+        {
+          "type": "self-eval",
+          "q": "What country gifted the Statue of Liberty to the United States?",
+          "a": "France",
+          "explanation": "It was a gift of friendship from the people of France."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the Queen of the United Kingdom for over 70 years, ending her reign in 2022?",
+          "a": "Queen Elizabeth II",
+          "explanation": "She was the longest-reigning British monarch."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which Native American woman helped the Lewis and Clark expedition?",
+          "a": "Sacagawea",
+          "explanation": "She acted as an interpreter and guide."
+        }
+      ]
+    }
+  ]
+}

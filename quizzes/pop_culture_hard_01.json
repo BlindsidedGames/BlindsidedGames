@@ -1,0 +1,85 @@
+{
+    "id": "pop_culture_hard_01",
+    "title": "Hard Pop Culture Quiz 1",
+    "sections": [
+        {
+            "title": "Pop Culture",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which actor won a posthumous Academy Award for Best Actor for his role in the 1976 film 'Network'?",
+                    "options": [
+                        "Peter Finch",
+                        "Heath Ledger",
+                        "James Dean",
+                        "Spencer Tracy"
+                    ],
+                    "a": "Peter Finch",
+                    "explanation": "He won the award for his iconic performance as the 'mad as hell' news anchor Howard Beale."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The Beatles' final live public performance took place on the roof of Apple Corps headquarters in London.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The legendary 1969 rooftop concert was shut down by the police."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the original 1996 'Resident Evil' game, the famously terrible live-action intro was directed by George A. Romero.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Romero directed a Japanese commercial for 'Resident Evil 2', but not the original game's intro."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What legendary jazz musician, known for his bent trumpet and puffed cheeks, recorded the influential 1959 album 'Kind of Blue'?",
+                    "a": "Miles Davis.",
+                    "explanation": "'Kind of Blue' remains the best-selling jazz record of all time."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which 1982 sci-fi film, starring Harrison Ford, notoriously bombed at the box office before becoming a highly influential cult classic?",
+                    "a": "Blade Runner.",
+                    "explanation": "Ridley Scott's dystopian masterpiece was initially misunderstood by audiences and critics alike."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What was the name of the highly publicized 1985 charity supergroup that recorded the massive hit single 'We Are the World'?",
+                    "a": "USA for Africa.",
+                    "explanation": "The song was written by Michael Jackson and Lionel Richie to raise funds for African famine relief."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the 'Metal Gear Solid' series, what specific stealth camo-wearing ninja is a cyborg reconstruction of Gray Fox?",
+                    "a": "Cyborg Ninja (or Null/Frank Jaeger).",
+                    "explanation": "He famously aids Solid Snake during the Shadow Moses incident."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What influential 1990s sketch comedy show, created by and starring Bob Odenkirk and David Cross, aired natively on HBO?",
+                    "a": "Mr. Show with Bob and David.",
+                    "explanation": "It heavily inspired a generation of alternative comedians with its seamless, flowing sketch transitions."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which critically acclaimed author wrote the cyberpunk classic 'Neuromancer', famously coined the term 'cyberspace'?",
+                    "a": "William Gibson.",
+                    "explanation": "The 1984 novel cemented many foundational tropes of the cyberpunk genre."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What British rock band famously recorded their fourth untitled album, commonly referred to as 'Led Zeppelin IV', in 1971?",
+                    "a": "Led Zeppelin.",
+                    "explanation": "The album features the iconic track 'Stairway to Heaven'."
+                }
+            ]
+        }
+    ]
+}

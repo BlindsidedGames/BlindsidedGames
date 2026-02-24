@@ -1,0 +1,85 @@
+{
+    "id": "geography_easy_01",
+    "title": "Easy Geography Quiz 1",
+    "sections": [
+        {
+            "title": "Geography",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which continent is the largest by landmass?",
+                    "options": [
+                        "North America",
+                        "Africa",
+                        "Asia",
+                        "Europe"
+                    ],
+                    "a": "Asia",
+                    "explanation": "Asia covers about 30% of Earth's total land area and is home to most of the world's population."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The Atlantic Ocean is the largest ocean on Earth.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The Pacific Ocean is the largest and deepest ocean on Earth."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Mount Everest is the highest mountain above sea level.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Located in the Himalayas on the border of Nepal and China, its peak is 8,848 meters (29,029 ft) above sea level."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the capital city of France?",
+                    "a": "Paris.",
+                    "explanation": "Paris is a major European city and a global center for art, fashion, gastronomy, and culture."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which country is both an island and a continent?",
+                    "a": "Australia.",
+                    "explanation": "It is the world's smallest continent and largest island."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the longest river in the world.",
+                    "a": "The Nile River.",
+                    "explanation": "Located in northeast Africa, the Nile is historically considered the longest river in the world."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is a 'desert'?",
+                    "a": "A desert is a very dry region of land that receives extremely low amounts of precipitation per year.",
+                    "explanation": "The Sahara is the largest hot desert, while Antarctica is the largest cold desert."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which imaginary line divides the Earth into the Northern and Southern Hemispheres?",
+                    "a": "The Equator.",
+                    "explanation": "It represents 0 degrees latitude."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What do we call a piece of land surrounded by water on all sides?",
+                    "a": "An island.",
+                    "explanation": "Examples include Hawaii, Madagascar, and Great Britain."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which country has the largest population in the world?",
+                    "a": "China (though India is increasingly comparable).",
+                    "explanation": "Both nations have populations exceeding 1.4 billion people."
+                }
+            ]
+        }
+    ]
+}

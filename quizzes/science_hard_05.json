@@ -1,0 +1,85 @@
+{
+  "id": "science_hard_05",
+  "title": "Hard Science Quiz 5",
+  "sections": [
+    {
+      "title": "Science",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "What particle mediates the strong nuclear force?",
+          "options": [
+            "Photon",
+            "Gluon",
+            "Boson",
+            "Graviton"
+          ],
+          "a": "Gluon",
+          "explanation": "Gluons act as the exchange particles for the strong force between quarks."
+        },
+        {
+          "type": "true-false",
+          "q": "Alkali metals, such as sodium and potassium, are highly reactive with water.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "They undergo vigorous exothermic reactions producing hydrogen gas."
+        },
+        {
+          "type": "true-false",
+          "q": "The half-life of Carbon-14 is roughly equal to the age of the Earth.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Carbon-14 half-life is about 5,730 years, much shorter than Earth's age of 4.5 billion years."
+        },
+        {
+          "type": "self-eval",
+          "q": "What equation relates the rest mass of an object to its energy equivalent?",
+          "a": "E = mc^2",
+          "explanation": "This Einstein's mass-energy equivalence formula."
+        },
+        {
+          "type": "self-eval",
+          "q": "What structure connects sister chromatids in a chromosome?",
+          "a": "Centromere",
+          "explanation": "Spindle fibers attach to the centromere during cell division."
+        },
+        {
+          "type": "self-eval",
+          "q": "What effect refers to the emission of electrons when light hits a material?",
+          "a": "Photoelectric effect",
+          "explanation": "Einstein's explanation of this won him the Nobel Prize."
+        },
+        {
+          "type": "self-eval",
+          "q": "What phylum do squid, snails, and octopuses belong to?",
+          "a": "Mollusca",
+          "explanation": "Molluscs are a diverse group of invertebrates."
+        },
+        {
+          "type": "self-eval",
+          "q": "What type of chemical reaction absorbs heat from its environment?",
+          "a": "Endothermic",
+          "explanation": "As opposed to exothermic, which releases heat."
+        },
+        {
+          "type": "self-eval",
+          "q": "In genetics, what term describes having two different alleles for a given trait?",
+          "a": "Heterozygous",
+          "explanation": "As opposed to homozygous, where both alleles are the same."
+        },
+        {
+          "type": "self-eval",
+          "q": "What type of star is the remnant of an exploded supernova, incredibly dense, and composed mostly of uncharged particles?",
+          "a": "Neutron star",
+          "explanation": "If it were more massive, it would collapse into a black hole."
+        }
+      ]
+    }
+  ]
+}

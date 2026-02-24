@@ -1,0 +1,85 @@
+{
+  "id": "history_easy_05",
+  "title": "Easy History Quiz 5",
+  "sections": [
+    {
+      "title": "History",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Who was the female pilot known for being the first woman to fly solo across the Atlantic Ocean?",
+          "options": [
+            "Bessie Coleman",
+            "Sally Ride",
+            "Amelia Earhart",
+            "Harriet Quimby"
+          ],
+          "a": "Amelia Earhart",
+          "explanation": "She achieved this historic flight in 1932."
+        },
+        {
+          "type": "true-false",
+          "q": "The primary language of the ancient Romans was Greek.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "The primary language of ancient Rome was Latin."
+        },
+        {
+          "type": "true-false",
+          "q": "Nelson Mandela was the first Black president of South Africa.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "He was elected in 1994 after the end of apartheid."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the Indian leader who used nonviolent resistance to lead India to independence from Britain?",
+          "a": "Mahatma Gandhi",
+          "explanation": "His methods inspired civil rights movements globally."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which state was the 50th and most recent to join the United States?",
+          "a": "Hawaii",
+          "explanation": "It was admitted as a state in 1959."
+        },
+        {
+          "type": "self-eval",
+          "q": "What European city was divided by a famous wall during the Cold War?",
+          "a": "Berlin",
+          "explanation": "The Berlin Wall separated East and West Berlin until 1989."
+        },
+        {
+          "type": "self-eval",
+          "q": "What were the series of religious wars fought between Christians and Muslims in the Middle Ages called?",
+          "a": "The Crusades",
+          "explanation": "They primarily sought control over holy sites."
+        },
+        {
+          "type": "self-eval",
+          "q": "What metal is the Eiffel Tower mostly made of?",
+          "a": "Iron (Puddled iron)",
+          "explanation": "It was completed in 1889 for the World's Fair."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who invented the light bulb and phonograph?",
+          "a": "Thomas Edison",
+          "explanation": "He held over a thousand patents in the US."
+        },
+        {
+          "type": "self-eval",
+          "q": "What ancient empire built a vast network of roads through the Andes mountains in South America?",
+          "a": "The Inca Empire",
+          "explanation": "Machu Picchu is one of their famous citadels."
+        }
+      ]
+    }
+  ]
+}

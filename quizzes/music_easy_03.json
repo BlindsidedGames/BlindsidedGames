@@ -1,0 +1,85 @@
+{
+    "id": "music_easy_03",
+    "title": "Easy Music Quiz 3",
+    "sections": [
+        {
+            "title": "Music",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "What tool do guitarists often use to pluck the strings instead of their fingers?",
+                    "options": [
+                        "A bow",
+                        "A drumstick",
+                        "A pick (or plectrum)",
+                        "A reed"
+                    ],
+                    "a": "A pick (or plectrum)",
+                    "explanation": "Picks are small, flat pieces of plastic used to strum or pluck guitar strings."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A flute produces sound when air is blown across a hole.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "This makes the flute a woodwind instrument, even if it is made of metal."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Jazz music originated in the United Kingdom.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Jazz originated in the African-American communities of New Orleans, USA."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What does a singer use a microphone stand for?",
+                    "a": "They use it to hold the microphone in place so their hands are free to play an instrument or dance.",
+                    "explanation": "It provides stability and maintains a consistent distance from the sound source."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the role of the bass instrument in a rock band?",
+                    "a": "The bass typically provides the rhythmic foundation and harmonic support for the rest of the band, working closely with the drums.",
+                    "explanation": "It bridging the gap between harmony and rhythm."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the genre of music heavily associated with Jamaica and artists like Bob Marley.",
+                    "a": "Reggae.",
+                    "explanation": "Reggae is characterized by its offbeat accents and relaxed groove."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is an album?",
+                    "a": "An album is a collection of recorded songs released together as a single item.",
+                    "explanation": "Albums can be released on CD, vinyl, or digital platforms."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain what a 'cover song' is.",
+                    "a": "A cover song is a new performance or recording of a song by an artist other than the original composer or original performer.",
+                    "explanation": "Artists often put their own unique spin on cover songs."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is an opera?",
+                    "a": "An opera is a theatrical presentation where a dramatic story is told primarily through singing and music.",
+                    "explanation": "It combines music, acting, costumes, and often dance."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What do the letters 'DJ' stand for in a music context?",
+                    "a": "Disc Jockey.",
+                    "explanation": "A DJ is a person who plays recorded music for an audience."
+                }
+            ]
+        }
+    ]
+}

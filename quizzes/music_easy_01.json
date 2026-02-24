@@ -1,0 +1,85 @@
+{
+    "id": "music_easy_01",
+    "title": "Easy Music Quiz 1",
+    "sections": [
+        {
+            "title": "Music",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which instrument has black and white keys and is often featured in classical music?",
+                    "options": [
+                        "Guitar",
+                        "Violin",
+                        "Piano",
+                        "Drums"
+                    ],
+                    "a": "Piano",
+                    "explanation": "The piano has 88 keys, typically colored black and white, and is a staple in many musical genres."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A guitar typically has 6 strings.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Standard acoustic and electric guitars have 6 strings, though variations exist."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Beethoven was famous for composing mostly hip-hop music.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Beethoven was a renowned composer of classical music."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain what a choir is in music.",
+                    "a": "A choir is a group of singers who perform together as a group.",
+                    "explanation": "Choirs often perform vocal music with multiple parts and harmonies."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the four main families of instruments found in a traditional symphony orchestra.",
+                    "a": "Strings, Woodwinds, Brass, and Percussion.",
+                    "explanation": "These four families form the core ensemble of a standard orchestra."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the purpose of a conductor in an orchestra?",
+                    "a": "A conductor leads the orchestra, setting the tempo, ensuring musicians play together, and guiding the interpretation of the music.",
+                    "explanation": "The conductor uses hand gestures or a baton to cue the musicians."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe what a microphone does.",
+                    "a": "A microphone captures sound waves from the air and converts them into electrical signals so they can be amplified or recorded.",
+                    "explanation": "Microphones are essential for live vocal performances and studio recordings."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What does 'tempo' mean in music?",
+                    "a": "Tempo refers to the speed or pace of a given piece of music.",
+                    "explanation": "It determines how fast or slow the music should be played."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the difference between an acoustic guitar and an electric guitar?",
+                    "a": "An acoustic guitar projects sound naturally through its hollow body, while an electric guitar requires an amplifier and speakers to produce sound at performance volumes.",
+                    "explanation": "Acoustic bodies act as a resonant soundboard."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who is often referred to as the 'King of Pop'?",
+                    "a": "Michael Jackson.",
+                    "explanation": "He earned this title due to his immense influence on music, dance, and popular culture."
+                }
+            ]
+        }
+    ]
+}

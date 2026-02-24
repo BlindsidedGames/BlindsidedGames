@@ -1,0 +1,85 @@
+{
+    "id": "entertainment_medium_05",
+    "title": "Medium Entertainment Quiz 5",
+    "sections": [
+        {
+            "title": "Entertainment",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Who composed the iconic musical scores for films like 'Star Wars', 'Jaws', and 'Indiana Jones'?",
+                    "options": [
+                        "Hans Zimmer",
+                        "John Williams",
+                        "Ennio Morricone",
+                        "Danny Elfman"
+                    ],
+                    "a": "John Williams",
+                    "explanation": "He is widely regarded as one of the greatest film composers in history."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The Hollywood Walk of Fame allows anyone to buy a star if they have enough money.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Nominees must be selected by a committee, though there is a large sponsorship fee afterward."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The video game industry currently generates more revenue globally than the film and music industries combined.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Video games have grown into the largest and most lucrative entertainment sector."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What hugely successful AMC television series followed survivors during a zombie apocalypse?",
+                    "a": "The Walking Dead.",
+                    "explanation": "Based on a comic book, it became one of the most-watched cable shows in history."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What ongoing reality competition follows entrepreneurs pitching ideas to a panel of wealthy investors?",
+                    "a": "Shark Tank.",
+                    "explanation": "The popular show has launched hundreds of successful modern businesses."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What iconic 1990s dance craze was created by Spanish duo Los Del Rio?",
+                    "a": "The Macarena.",
+                    "explanation": "The song and accompanying dance became a massive worldwide phenomenon in 1996."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which actor starred as Walter White in the critically acclaimed series 'Breaking Bad'?",
+                    "a": "Bryan Cranston.",
+                    "explanation": "His performance won multiple Emmy Awards for Outstanding Lead Actor in a Drama Series."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What highly influential sketch comedy show launched the careers of comedians like Eddie Murphy and Mike Myers?",
+                    "a": "Saturday Night Live (SNL).",
+                    "explanation": "The show has been a launchpad for comedic talent since its debut in 1975."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which animated movie studio released 'Shrek' as a direct competitor to Disney/Pixar's dominance?",
+                    "a": "DreamWorks Animation.",
+                    "explanation": "The film parodied classic fairy tales and established DreamWorks as a major animation powerhouse."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What was the name of the popular music video channel that revolutionized the music industry in the 1980s?",
+                    "a": "MTV (Music Television).",
+                    "explanation": "Its debut profoundly changed how artists marketed their music."
+                }
+            ]
+        }
+    ]
+}

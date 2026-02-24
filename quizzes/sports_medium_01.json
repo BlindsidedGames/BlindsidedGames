@@ -1,0 +1,85 @@
+{
+    "id": "sports_medium_01",
+    "title": "Medium Sports Quiz 1",
+    "sections": [
+        {
+            "title": "Sports",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "In golf, what is the term for completing a hole one stroke under par?",
+                    "options": [
+                        "Eagle",
+                        "Birdie",
+                        "Bogey",
+                        "Albatross"
+                    ],
+                    "a": "Birdie",
+                    "explanation": "An eagle is two strokes under par, and a bogey is one stroke over par."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In baseball, the distance between each base is exactly 90 feet.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The bases form a perfect square, mathematically placed 90 feet apart from one another."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The Tour de France bicycle race always finishes in the city of Lyon.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The traditional and iconic final stage of the Tour de France always concludes on the Champs-Élysées in Paris."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which sport features a 'scrum' to restart play?",
+                    "a": "Rugby.",
+                    "explanation": "It involves players packing closely together with their heads down and attempting to gain possession of the ball."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the maximum achievable break (score) in a single frame of professional snooker without any fouls by the opponent?",
+                    "a": "147.",
+                    "explanation": "This requires potting all 15 reds with 15 blacks, followed by all six colored balls in sequence."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In standard ten-pin bowling, how many frames constitute a single complete game?",
+                    "a": "10 frames.",
+                    "explanation": "Players have up to two rolls per frame to knock down the pins, with a potential bonus roll in the tenth frame."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which major tennis tournament is distinctively played on red clay courts?",
+                    "a": "The French Open (Roland Garros).",
+                    "explanation": "The clay surface slows down the ball and strictly favors baseline players with high stamina."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "How many players make up a standard curling team on the ice?",
+                    "a": "Four players.",
+                    "explanation": "The positions are the lead, second, third, and the skip (captain)."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What effectively is a 'triple-double' in the game of basketball?",
+                    "a": "A player recording double-digit totals in three of the five major statistical categories (points, rebounds, assists, steals, block) in a single game.",
+                    "explanation": "It demonstrates exceptional all-around contribution to the game."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In which physically demanding track and field event do athletes essentially hurl a heavy, long spear?",
+                    "a": "The javelin throw.",
+                    "explanation": "It requires significant upper body strength, technique, and incredible explosive power."
+                }
+            ]
+        }
+    ]
+}

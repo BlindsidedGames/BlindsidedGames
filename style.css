@@ -1,28 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root, * , *::before, *::after {
     box-sizing: border-box;
 }
 
 :root {
-    --colour-body: hsl(217.14, 91.3%, 4.5%);
+    --colour-body: hsl(220, 30%, 4%);
     --colour-text: hsl(240, 25%, 90%);
-    --colour-accent: hsl(300, 50%, 40%);
-    --colour-socials: hsl(240, 5%, 60%);
+    --colour-accent: hsl(300, 60%, 50%);
+    --colour-socials: hsl(240, 5%, 65%);
     --colour-navText: hsl(240, 25%, 95%);
     --page-pad-x: clamp(16px, 3.5vw, 28px);
-    --bar-height: 60px;
-    --accent-glow: color-mix(in hsl, var(--colour-accent), black 35%);
-    --glass-bg-strong: hsla(0, 0%, 100%, 0.14);
-    --glass-bg: hsla(0, 0%, 100%, 0.06);
-    --glass-border: hsla(0, 0%, 100%, 0.20);
-    --glass-highlight: hsla(0, 0%, 100%, 0.35);
-    --shadow-colour: rgba(0,0,0,0.35);
+    --bar-height: 64px;
+    --accent-glow: color-mix(in hsl, var(--colour-accent), transparent 40%);
+    --glass-bg-strong: hsla(240, 20%, 15%, 0.65);
+    --glass-bg: hsla(240, 20%, 15%, 0.45);
+    --glass-border: hsla(0, 0%, 100%, 0.12);
+    --glass-highlight: hsla(0, 0%, 100%, 0.25);
+    --shadow-colour: rgba(0,0,0,0.5);
 
-    --active-fontSize: 20px;
-    --alternate-fontSize: 12px;
-    --active-fontFamily: 'Open Sans', sans-serif;
+    --active-fontSize: 16px;
+    --alternate-fontSize: 14px;
+    --active-fontFamily: 'Inter', system-ui, -apple-system, sans-serif;
+    --heading-fontFamily: 'Outfit', system-ui, -apple-system, sans-serif;
 }
 
 @media (prefers-color-scheme: light) {
@@ -31,8 +32,8 @@
         --colour-text: hsl(240, 10%, 12%);
         --colour-navText: hsl(240, 8%, 15%);
         --colour-socials: hsl(240, 5%, 35%);
-        --glass-bg-strong: hsla(0, 0%, 100%, 0.92);
-        --glass-bg: hsla(0, 0%, 100%, 0.80);
+        --glass-bg-strong: hsla(0, 0%, 100%, 0.95);
+        --glass-bg: hsla(0, 0%, 100%, 0.85);
         --glass-border: hsla(240, 5%, 20%, 0.12);
         --glass-highlight: hsla(240, 5%, 30%, 0.18);
         --shadow-colour: rgba(0,0,0,0.12);
@@ -84,9 +85,10 @@ body {
     align-items: center;
     font-family: var(--active-fontFamily);
     font-size: var(--active-fontSize);
-    background-image: radial-gradient(1200px 600px at 10% -10%, rgba(255, 0, 204, 0.10), transparent 70%),
-                      radial-gradient(1200px 600px at 100% 0%, rgba(0, 140, 255, 0.10), transparent 70%),
-                      radial-gradient(1200px 800px at -10% 100%, rgba(255, 190, 0, 0.07), transparent 70%);
+    line-height: 1.6;
+    background-image: radial-gradient(1200px 600px at 10% -10%, rgba(255, 0, 204, 0.12), transparent 70%),
+                      radial-gradient(1200px 600px at 100% 0%, rgba(0, 140, 255, 0.12), transparent 70%),
+                      radial-gradient(1200px 800px at -10% 100%, rgba(255, 190, 0, 0.10), transparent 70%);
     background-attachment: fixed, fixed, fixed;
 }
 
@@ -120,6 +122,13 @@ header {
 header a, 
 .link-nav {
     color: var(--colour-navText);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: var(--heading-fontFamily);
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
 h3,
@@ -294,10 +303,21 @@ main {
 .glass {
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
-    box-shadow: 0 10px 30px var(--shadow-colour);
-    backdrop-filter: blur(16px) saturate(120%);
-    -webkit-backdrop-filter: blur(16px) saturate(120%);
-    border-radius: 16px;
+    box-shadow: 0 10px 40px var(--shadow-colour);
+    backdrop-filter: blur(28px) saturate(140%);
+    -webkit-backdrop-filter: blur(28px) saturate(140%);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.glass::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: -1;
 }
 
 /* Hero */

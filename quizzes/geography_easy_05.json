@@ -1,0 +1,85 @@
+{
+    "id": "geography_easy_05",
+    "title": "Easy Geography Quiz 5",
+    "sections": [
+        {
+            "title": "Geography",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "What is the name of the long mountain range running down the western side of South America?",
+                    "options": [
+                        "The Rockies",
+                        "The Alps",
+                        "The Andes",
+                        "The Himalayas"
+                    ],
+                    "a": "The Andes",
+                    "explanation": "The Andes are the longest continental mountain range in the world."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The sun rises in the West and sets in the East.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The Earth rotates eastward on its axis, so the sun appears to rise in the East and set in the West."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Spain and Portugal share the Iberian Peninsula.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The Iberian Peninsula is a mountainous region in southwestern Europe."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is a 'valley'?",
+                    "a": "A valley is a low area of land between hills or mountains, typically with a river or stream flowing through it.",
+                    "explanation": "Valleys are often carved down by water or ancient glaciers."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the large body of water that separates mainland Europe from the continent of Africa.",
+                    "a": "The Mediterranean Sea.",
+                    "explanation": "It is almost completely enclosed by land: Europe to the north, Africa to the south, and Asia to the east."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What determines whether an environment is considered a 'rainforest'?",
+                    "a": "A rainforest is a dense, warm, and highly biodiverse forest characterized by consistently heavy, year-round rainfall.",
+                    "explanation": "Tropical rainforests lie near the equator where the climate is hot."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "There are five Great Lakes in North America. Name at least two.",
+                    "a": "Huron, Ontario, Michigan, Erie, or Superior.",
+                    "explanation": "You can remember them using the acronym 'HOMES'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which country is directly north of the United States?",
+                    "a": "Canada.",
+                    "explanation": "The border between the US and Canada is the longest international border in the world."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What does a 'compass rose' on a map show you?",
+                    "a": "It displays the cardinal directions: North (N), South (S), East (E), and West (W).",
+                    "explanation": "It helps the user orient themselves correctly when reading the map."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the capital city of Australia?",
+                    "a": "Canberra.",
+                    "explanation": "Unlike Sydney or Melbourne, Canberra was purpose-built entirely inland to serve as the nation's capital."
+                }
+            ]
+        }
+    ]
+}

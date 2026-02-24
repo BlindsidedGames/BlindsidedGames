@@ -1,0 +1,85 @@
+{
+    "id": "entertainment_easy_02",
+    "title": "Easy Entertainment Quiz 2",
+    "sections": [
+        {
+            "title": "Entertainment",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "What is the main location of the US film industry, marked by a famous white sign on a hill?",
+                    "options": [
+                        "Broadway",
+                        "Hollywood",
+                        "Silicon Valley",
+                        "Las Vegas"
+                    ],
+                    "a": "Hollywood",
+                    "explanation": "The Hollywood sign in Los Angeles is a global symbol of the American entertainment industry."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A 'sitcom' is short for 'situational comedy'.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "It refers to a genre of comedy centered on a fixed set of characters in a common environment."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The Grammy Awards are the most prestigious awards in the film industry.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The Grammys are for music. The Academy Awards (Oscars) are for film."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the term for the people hired to play background characters with no spoken lines in a movie or TV show?",
+                    "a": "Extras (or Background Actors).",
+                    "explanation": "They help make a scene look active and realistic."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which massive entertainment company owns properties like Star Wars, Marvel, Pixar, and its own animation studios?",
+                    "a": "The Walt Disney Company.",
+                    "explanation": "They are one of the largest and most powerful media conglomerates in the world."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the title of the person who leads an orchestra, choir, or musical ensemble, directing the performance?",
+                    "a": "The Conductor.",
+                    "explanation": "They use a baton and hand gestures to dictate tempo, dynamics, and cues."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What wildly popular format of audio entertainment, similar to radio shows, can you download and listen to on-demand?",
+                    "a": "Podcasts.",
+                    "explanation": "The format exploded in popularity with shows like 'Serial' and 'The Joe Rogan Experience'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who is the legendary actor famous for playing Rocky Balboa and John Rambo?",
+                    "a": "Sylvester Stallone.",
+                    "explanation": "He wrote and starred in the original 'Rocky', which won Best Picture."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the term used to aggressively prevent spoilers by asking someone not to reveal the ending of a movie or book?",
+                    "a": "Saying 'No spoilers!'.",
+                    "explanation": "A spoiler gives away a critical plot twist or story resolution."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which New York City street is world-famous for its massive concentration of major professional theater productions?",
+                    "a": "Broadway.",
+                    "explanation": "A hit 'Broadway show' represents the pinnacle of commercial live theater in America."
+                }
+            ]
+        }
+    ]
+}

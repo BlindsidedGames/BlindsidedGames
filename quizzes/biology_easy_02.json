@@ -1,0 +1,85 @@
+{
+  "id": "biology_easy_02",
+  "title": "Easy Biology Quiz 2",
+  "sections": [
+    {
+      "title": "Biology",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which part of the body is responsible for pumping blood?",
+          "options": [
+            "Lungs",
+            "Brain",
+            "Heart",
+            "Stomach"
+          ],
+          "a": "Heart",
+          "explanation": "The heart acts as the central pump for the circulatory system."
+        },
+        {
+          "type": "true-false",
+          "q": "Bats are blind.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Bats can see, but rely heavily on echolocation in the dark."
+        },
+        {
+          "type": "true-false",
+          "q": "The main bone of the leg is called the femur.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "The femur is the longest and strongest bone in the human body."
+        },
+        {
+          "type": "self-eval",
+          "q": "What group of animals has dry, scaly skin and lays eggs?",
+          "a": "Reptiles",
+          "explanation": "Reptiles include snakes, lizards, turtles, and crocodiles."
+        },
+        {
+          "type": "self-eval",
+          "q": "What type of scientist studies animals?",
+          "a": "Zoologist",
+          "explanation": "Zoology is the branch of biology related to the animal kingdom."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the green substance in plants that helps them make food?",
+          "a": "Chlorophyll",
+          "explanation": "Chlorophyll absorbs energy from light."
+        },
+        {
+          "type": "self-eval",
+          "q": "What do bees produce that humans love to eat?",
+          "a": "Honey",
+          "explanation": "Bees create honey from the nectar of flowers."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the five basic human senses.",
+          "a": "Sight, hearing, smell, taste, touch",
+          "explanation": "These are the traditional five senses."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the hard, outer skeleton of insects called?",
+          "a": "Exoskeleton",
+          "explanation": "It protects and supports their bodies."
+        },
+        {
+          "type": "self-eval",
+          "q": "What kind of animal only eats meat?",
+          "a": "Carnivore",
+          "explanation": "Carnivores have a diet consisting primarily of animal tissue."
+        }
+      ]
+    }
+  ]
+}

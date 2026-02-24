@@ -1,0 +1,85 @@
+{
+    "id": "nature_easy_03",
+    "title": "Easy Nature Quiz 3",
+    "sections": [
+        {
+            "title": "Nature",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "What is the only mammal capable of sustained true flight?",
+                    "options": [
+                        "Flying squirrel",
+                        "Bat",
+                        "Sugar glider",
+                        "Lemur"
+                    ],
+                    "a": "Bat",
+                    "explanation": "While 'flying' squirrels can glide long distances, only bats have true wings that allow for powered flight."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The sun is a star.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The sun is a medium-sized star physically located at the center of our solar system."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A mushroom is a type of plant.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "A mushroom is a part of a fungus, which belongs to its own separate biological kingdom distinct from plants."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What does a thermometer measure?",
+                    "a": "A thermometer measures temperature, or how hot or cold something is.",
+                    "explanation": "It's essential for monitoring the weather or checking for fevers."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe what camouflage means in nature.",
+                    "a": "Camouflage is when an animal's coloration or pattern allows it to blend into its environment, helping it hide from predators or sneak up on prey.",
+                    "explanation": "Chameleons and some octopuses can actively change their color to match their surroundings."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Why do some trees lose their leaves in the autumn?",
+                    "a": "These deciduous trees drop their leaves to conserve water and energy during the cold winter months when there is less sunlight and frozen ground.",
+                    "explanation": "This natural cycle helps the tree survive until spring."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is an omnivore?",
+                    "a": "An animal or person that eats both plants and meat.",
+                    "explanation": "Humans, bears, and pigs are classic examples of omnivores."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which ocean is the largest on Earth?",
+                    "a": "The Pacific Ocean.",
+                    "explanation": "It covers more than 30% of the Earth's surface and is larger than all of Earth's landmass combined."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What do we call the young offspring of a frog?",
+                    "a": "A tadpole (or polliwog).",
+                    "explanation": "Tadpoles live entirely in water, breathe through gills, and have tails before they undergo metamorphosis."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the process by which liquid water becomes vapor in the atmosphere.",
+                    "a": "Evaporation.",
+                    "explanation": "Heat from the sun causes water from oceans, lakes, and soils to turn into gas and rise upward."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "id": "entertainment_hard_01",
+    "title": "Hard Entertainment Quiz 1",
+    "sections": [
+        {
+            "title": "Entertainment",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which silent film era director created the sci-fi epic 'Metropolis'?",
+                    "options": [
+                        "F.W. Murnau",
+                        "Fritz Lang",
+                        "D.W. Griffith",
+                        "Sergei Eisenstein"
+                    ],
+                    "a": "Fritz Lang",
+                    "explanation": "He directed the highly ambitious film in Germany."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the original Hans Christian Andersen fairy tale, the Little Mermaid marries the prince.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "She fails to win him and dissolves into sea foam."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The first official Academy Award ceremony in 1929 was broadcast on live television.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "It was a private dinner held long before widespread television."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What 1972 John Waters film starred the drag queen Divine and advertised itself as 'an exercise in poor taste'?",
+                    "a": "Pink Flamingos.",
+                    "explanation": "The shocking film became a classic of the midnight movie circuit."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which author originally wrote 'The Hitchhiker's Guide to the Galaxy' as a BBC radio comedy?",
+                    "a": "Douglas Adams.",
+                    "explanation": "He later adapted the popular radio show into a bestselling book series."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What influential 1966 album did The Beach Boys release as a response to The Beatles' 'Rubber Soul'?",
+                    "a": "Pet Sounds.",
+                    "explanation": "Brian Wilson produced the complex album to push the boundaries of pop music."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In film theory, what does 'mise-en-scène' refer to?",
+                    "a": "The arrangement of everything that appears in the framing of the camera.",
+                    "explanation": "This includes the actors, lighting, decor, props, and costume."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What famous 1938 radio broadcast, directed by Orson Welles, supposedly caused mass panic among listeners?",
+                    "a": "The War of the Worlds.",
+                    "explanation": "Listeners believed a real martian invasion was happening."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which notoriously reclusive director made the films 'The Tree of Life' and 'Days of Heaven'?",
+                    "a": "Terrence Malick.",
+                    "explanation": "He is known for his philosophical themes and visually stunning cinematography."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What classic 1950 film noir stars Gloria Swanson as faded silent movie star Norma Desmond?",
+                    "a": "Sunset Boulevard.",
+                    "explanation": "The film offers a dark and cynical look at Hollywood."
+                }
+            ]
+        }
+    ]
+}

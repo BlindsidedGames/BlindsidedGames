@@ -1,0 +1,85 @@
+{
+    "id": "nature_hard_02",
+    "title": "Hard Nature Quiz 2",
+    "sections": [
+        {
+            "title": "Nature",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "What is the study of trees and woody plants called?",
+                    "options": [
+                        "Arboriculture",
+                        "Dendrology",
+                        "Botany",
+                        "Silviculture"
+                    ],
+                    "a": "Dendrology",
+                    "explanation": "Dendrology focuses specifically on the taxonomy, identification, and ecological characteristics of trees and shrubs."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The giant squid is the largest invertebrate in the world.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The colossal squid is estimated to be heavier and slightly larger overall than the giant squid."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Tardigrades (water bears) can survive the vacuum of space.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "These microscopic extremophiles can enter a state of suspended animation (cryptobiosis) to survive extreme temperatures, radiation, and the vacuum of space."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain the difference between 'weathering' and 'erosion'.",
+                    "a": "Weathering is the breaking down of rocks, soil, and minerals in place, while erosion is the transportation of those broken-down materials by wind, water, or ice.",
+                    "explanation": "Weathering creates the debris that erosion moves."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is 'parthenogenesis'?",
+                    "a": "Parthenogenesis is a form of asexual reproduction where an embryo develops from an unfertilized egg cell.",
+                    "explanation": "It occurs naturally in some species of plants, invertebrates, and even some reptiles and fish."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe the geological formation known as a 'caldera'.",
+                    "a": "A caldera is a large designated depression formed when a volcano erupts and empties its magma chamber, causing the mountain above to collapse inward.",
+                    "explanation": "Crater Lake in Oregon is a famous example of a caldera."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is an 'oxbow lake' and how does it form?",
+                    "a": "An oxbow lake is a U-shaped body of water that forms when a wide meander of a river is cut off from the main channel, creating a freestanding pool of water.",
+                    "explanation": "Over time, deposition and erosion seal off the loop from the river's flow."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "How does 'upwelling' affect marine ecosystems?",
+                    "a": "Upwelling involves wind-driven motion of dense, cooler, and usually nutrient-rich water towards the ocean surface, replacing the warmer, usually nutrient-depleted surface water.",
+                    "explanation": "These nutrients stimulate the growth of phytoplankton, supporting massive marine food webs."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is a 'benthic' zone?",
+                    "a": "The benthic zone is the ecological region at the lowest level of a body of water, including the sediment surface and some subsurface layers.",
+                    "explanation": "Organisms living there are called benthos."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Define 'allopatric speciation'.",
+                    "a": "It is biological populations of the same species becoming isolated from each other to an extent that prevents or interferes with gene flow, eventually leading to them evolving into separate species.",
+                    "explanation": "Geographic barriers like mountains or rivers are common causes."
+                }
+            ]
+        }
+    ]
+}

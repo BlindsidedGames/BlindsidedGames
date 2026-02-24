@@ -1,0 +1,85 @@
+{
+    "id": "pop_culture_medium_03",
+    "title": "Medium Pop Culture Quiz 3",
+    "sections": [
+        {
+            "title": "Pop Culture",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which of these classic 1980s movies was directed by Steven Spielberg?",
+                    "options": [
+                        "E.T. the Extra-Terrestrial",
+                        "Back to the Future",
+                        "The Goonies",
+                        "Gremlins"
+                    ],
+                    "a": "E.T. the Extra-Terrestrial",
+                    "explanation": "Spielberg produced the other three, but he personally directed E.T."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the TV series 'The Office' (US), Jim Halpert originally started working at the Scranton branch as a temp.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Ryan Howard was the temp. Jim Halpert was a full-time salesman from the very first episode."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The iconic Nirvana album 'Nevermind' features a naked baby swimming towards a dollar bill on its cover.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The 1991 album cover is one of the most recognizable in rock history."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which author created the expansive fictional universe of 'A Song of Ice and Fire'?",
+                    "a": "George R.R. Martin.",
+                    "explanation": "The incredibly detailed fantasy novels were explicitly adapted into the HBO hit 'Game of Thrones'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What fast-paced 2015 action film featured famously practical stunts, heavily modified vehicles, and Tom Hardy replacing Mel Gibson?",
+                    "a": "Mad Max: Fury Road.",
+                    "explanation": "Directed by George Miller, it was universally critically championed for its relentless action."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In 'The Lord of the Rings', what is the name of the terrifying, fiery demon Gandalf battles in the mines of Moria?",
+                    "a": "A Balrog.",
+                    "explanation": "Gandalf famously commands the ancient beast 'You shall not pass!' before facing it."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What acclaimed AMC television series followed the complex life of 1960s advertising executive Don Draper?",
+                    "a": "Mad Men.",
+                    "explanation": "The critically lauded show rigorously explored office politics, changing social mores, and personal identity."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which rapper released the critically and commercially massive 2010 album 'My Beautiful Dark Twisted Fantasy'?",
+                    "a": "Kanye West.",
+                    "explanation": "It is widely considered his magnum opus and one of the greatest rap albums of the 21st century."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What extremely popular fantasy tabletop role-playing game experienced a massive cultural resurgence in the late 2010s?",
+                    "a": "Dungeons & Dragons (D&D).",
+                    "explanation": "Shows like 'Stranger Things' and live-play streams like 'Critical Role' heavily fueled its modern revival."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which actor fundamentally redefined the Joker with his posthumous Academy Award-winning performance in 'The Dark Knight'?",
+                    "a": "Heath Ledger.",
+                    "explanation": "His terrifying deeply anarchic portrayal remains heavily critically praised and iconic."
+                }
+            ]
+        }
+    ]
+}

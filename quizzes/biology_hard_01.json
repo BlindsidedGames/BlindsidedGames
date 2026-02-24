@@ -1,0 +1,85 @@
+{
+  "id": "biology_hard_01",
+  "title": "Hard Biology Quiz 1",
+  "sections": [
+    {
+      "title": "Biology",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which type of RNA brings amino acids to the ribosome during translation?",
+          "options": [
+            "mRNA",
+            "tRNA",
+            "rRNA",
+            "snRNA"
+          ],
+          "a": "tRNA",
+          "explanation": "Transfer RNA specifically matches an anticodon with an amino acid."
+        },
+        {
+          "type": "true-false",
+          "q": "The fluid mosaic model describes the structure of the Golgi apparatus.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "It describes the structure of the cell membrane (plasma membrane)."
+        },
+        {
+          "type": "true-false",
+          "q": "Arteries always carry oxygenated blood.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "The pulmonary artery carries deoxygenated blood to the lungs."
+        },
+        {
+          "type": "self-eval",
+          "q": "What specific phase of meiosis is responsible for crossing over (genetic recombination)?",
+          "a": "Prophase I",
+          "explanation": "Homologous chromosomes pair up and exchange genetic material."
+        },
+        {
+          "type": "self-eval",
+          "q": "What hormone, produced by the pineal gland, helps regulate the sleep-wake cycle?",
+          "a": "Melatonin",
+          "explanation": "Its levels rise in the evening to promote sleep."
+        },
+        {
+          "type": "self-eval",
+          "q": "In ecology, what principle states that two species competing for the exact same resources cannot stably coexist?",
+          "a": "Competitive Exclusion Principle (Gause's Law)",
+          "explanation": "One will eventually outcompete the other."
+        },
+        {
+          "type": "self-eval",
+          "q": "What enzyme found in saliva begins the chemical digestion of carbohydrates?",
+          "a": "Amylase",
+          "explanation": "It breaks starch into smaller sugars."
+        },
+        {
+          "type": "self-eval",
+          "q": "What cellular structure, found in both eukaryotes and prokaryotes, synthesizes proteins?",
+          "a": "Ribosome",
+          "explanation": "They are complex molecular machines essential to life."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the terminal electron acceptor in the electron transport chain during aerobic respiration?",
+          "a": "Oxygen",
+          "explanation": "It combines with electrons and protons to form water."
+        },
+        {
+          "type": "self-eval",
+          "q": "What specific class of antibodies is most commonly involved in allergic reactions?",
+          "a": "IgE (Immunoglobulin E)",
+          "explanation": "They bind to allergens and trigger histamine release from mast cells."
+        }
+      ]
+    }
+  ]
+}

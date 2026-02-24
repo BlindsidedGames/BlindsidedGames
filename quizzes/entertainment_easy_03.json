@@ -1,0 +1,85 @@
+{
+    "id": "entertainment_easy_03",
+    "title": "Easy Entertainment Quiz 3",
+    "sections": [
+        {
+            "title": "Entertainment",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which animated movie studio is famous for producing 'Toy Story', 'Finding Nemo', and 'Up'?",
+                    "options": [
+                        "DreamWorks Animation",
+                        "Illumination Entertainment",
+                        "Pixar",
+                        "Studio Ghibli"
+                    ],
+                    "a": "Pixar",
+                    "explanation": "Pixar revolutionized computer-animated feature films with 'Toy Story' in 1995."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In theater, the hidden area behind the stage where actors prepare to enter is called the 'wings'.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The wings are out of the audience's sightlines, allowing for seamless entrances and exits."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A 'box office bomb' is a movie that makes a massive amount of money and is highly successful.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "A 'bomb' or 'flop' means the movie failed commercially and lost money."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the name of the prestigious awards given to the best in television broadcasting in the US?",
+                    "a": "The Emmy Awards.",
+                    "explanation": "They are the TV equivalent of the Oscars or Grammys."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which famous theme park resort is located in Orlando, Florida, and features the Magic Kingdom and Epcot?",
+                    "a": "Walt Disney World.",
+                    "explanation": "It is the most visited vacation resort in the world."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What do you call a short video clip meant to advertise or preview an upcoming movie?",
+                    "a": "A trailer.",
+                    "explanation": "They were originally called trailers because they trailed at the end of feature films."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What legendary comic book writer famously co-created iconic Marvel characters like Spider-Man, the X-Men, and the Hulk?",
+                    "a": "Stan Lee.",
+                    "explanation": "He was renowned for giving superheroes complex, relatable human flaws."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the music industry, what does a DJ stand for?",
+                    "a": "Disc Jockey.",
+                    "explanation": "A DJ mixes recorded music for an audience, often in a club or on the radio."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What massive annual pop culture convention in Southern California is famous for major movie announcements and intense cosplay?",
+                    "a": "San Diego Comic-Con (SDCC).",
+                    "explanation": "It started as a small comic book convention but grew into a massive global entertainment event."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the term for a live performance by a comedian standing alone on stage holding a microphone, telling jokes?",
+                    "a": "Stand-up comedy.",
+                    "explanation": "The performer directly addresses the audience with prepared routines or improvised crowd work."
+                }
+            ]
+        }
+    ]
+}

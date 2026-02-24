@@ -1,0 +1,85 @@
+{
+    "id": "nature_medium_05",
+    "title": "Medium Nature Quiz 5",
+    "sections": [
+        {
+            "title": "Nature",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which type of rock is formed from the cooling and solidification of magma or lava?",
+                    "options": [
+                        "Sedimentary",
+                        "Metamorphic",
+                        "Igneous",
+                        "Fossilized"
+                    ],
+                    "a": "Igneous",
+                    "explanation": "Igneous rock is formed through the cooling and solidification of magma or lava, such as basalt or granite."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Worker bees, which gather nectar and pollen, are entirely female.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "All worker bees are female, while the male bees (drones) exist solely to mate with a queen."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The 'Ring of Fire' is a famous ring of active volcanoes surrounding the Atlantic Ocean.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The Ring of Fire surrounds the Pacific Ocean."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is 'pollination' and why is it important?",
+                    "a": "Pollination is the transfer of pollen from the male part of a plant to the female part, enabling fertilization.",
+                    "explanation": "It is crucial because it allows plants to produce seeds and fruit, driving the reproduction of many crops and ecosystems."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain what a 'food chain' represents.",
+                    "a": "A food chain represents the linear sequence of organisms through which nutrients and energy pass as one organism eats another.",
+                    "explanation": "It starts with a producer (like grass) and ends with apex predators."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the function of the 'stomata' on a plant's leaves?",
+                    "a": "Stomata are tiny pores that allow for gas exchange, letting carbon dioxide in and oxygen out, as well as regulating water loss.",
+                    "explanation": "They are primarily found on the underside of leaves."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe the difference between weather and climate.",
+                    "a": "Weather refers to short-term atmospheric conditions in a specific place, whereas climate refers to the long-term average of these weather patterns over an extended period.",
+                    "explanation": "'Climate is what you expect, weather is what you get.'"
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is a 'glacier'?",
+                    "a": "A glacier is a massive, long-lasting accumulation of ice, snow, water, and rock that slowly moves under its own weight and gravity.",
+                    "explanation": "They hold the vast majority of Earth's freshwater."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Why do woodpeckers peck at trees?",
+                    "a": "Woodpeckers peck at trees primarily to forage for insects living under the bark, to excavate nesting cavities, and to communicate territorially (drumming).",
+                    "explanation": "They have specialized skulls to absorb the intense shock of pecking."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What are 'canopy' and 'understory' in a forest?",
+                    "a": "The canopy is the upper layer or habitat zone formed by mature tree crowns, while the understory consists of the underlying layer of vegetation, like shrubs and younger trees, growing in the shade of the canopy.",
+                    "explanation": "Different species specialize in living in these distinct vertical zones."
+                }
+            ]
+        }
+    ]
+}

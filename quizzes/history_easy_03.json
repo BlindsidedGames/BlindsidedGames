@@ -1,0 +1,85 @@
+{
+  "id": "history_easy_03",
+  "title": "Easy History Quiz 3",
+  "sections": [
+    {
+      "title": "History",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which of these countries was part of the Allied Powers in World War II?",
+          "options": [
+            "Germany",
+            "Japan",
+            "Italy",
+            "Great Britain"
+          ],
+          "a": "Great Britain",
+          "explanation": "Britain stood against the Axis Powers along with the US, USSR, and others."
+        },
+        {
+          "type": "true-false",
+          "q": "Neil Armstrong was the first person to walk on the moon.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "He stepped onto the lunar surface in 1969."
+        },
+        {
+          "type": "true-false",
+          "q": "The American Civil War was fought between the United States and Great Britain.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "It was fought between the Northern states (Union) and the Southern states (Confederacy)."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the 16th President of the US, known for leading the country during the Civil War?",
+          "a": "Abraham Lincoln",
+          "explanation": "He is also famous for issuing the Emancipation Proclamation."
+        },
+        {
+          "type": "self-eval",
+          "q": "What historical period in Europe was characterized by a surge of interest in classical learning and values, meaning 'rebirth'?",
+          "a": "The Renaissance",
+          "explanation": "It started in Italy in the 14th century."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who is considered the founder of the Mongol Empire?",
+          "a": "Genghis Khan",
+          "explanation": "He united the nomadic tribes of the Mongol steppe."
+        },
+        {
+          "type": "self-eval",
+          "q": "What ship carried the Pilgrims to America in 1620?",
+          "a": "The Mayflower",
+          "explanation": "They established the Plymouth Colony."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which famous scientist developed the theory of relativity?",
+          "a": "Albert Einstein",
+          "explanation": "His work fundamentally changed physics in the 20th century."
+        },
+        {
+          "type": "self-eval",
+          "q": "What ancient empire was ruled from the city of Rome, Italy?",
+          "a": "The Roman Empire",
+          "explanation": "It dominated the Mediterranean for centuries."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who refused to give up her seat on a bus in Montgomery, Alabama in 1955?",
+          "a": "Rosa Parks",
+          "explanation": "Her action sparked the Montgomery bus boycott."
+        }
+      ]
+    }
+  ]
+}

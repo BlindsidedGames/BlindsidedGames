@@ -1,0 +1,85 @@
+{
+    "id": "music_medium_01",
+    "title": "Medium Music Quiz 1",
+    "sections": [
+        {
+            "title": "Music",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which composer wrote the 'Four Seasons'?",
+                    "options": [
+                        "Johann Sebastian Bach",
+                        "Wolfgang Amadeus Mozart",
+                        "Antonio Vivaldi",
+                        "Ludwig van Beethoven"
+                    ],
+                    "a": "Antonio Vivaldi",
+                    "explanation": "The Four Seasons is a group of four violin concerti by Italian composer Antonio Vivaldi."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The oboe is a single-reed woodwind instrument.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The oboe is a double-reed woodwind instrument."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In musical terminology, 'forte' means to play softly.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "'Forte' means to play loudly. 'Piano' means to play softly."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain what a time signature is in sheet music.",
+                    "a": "A time signature consists of two numbers stacked vertically at the start of a piece. The top number indicates how many beats are in each measure, and the bottom number indicates which note value gets one beat.",
+                    "explanation": "For example, in 4/4 time, there are four quarter-note beats per measure."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is polyphony?",
+                    "a": "Polyphony is a musical texture consisting of two or more simultaneous, independent melodic lines.",
+                    "explanation": "This contrasts with monophony (one melody) or homophony (one melody with chordal accompaniment)."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe the role of a synthesizer.",
+                    "a": "A synthesizer is an electronic instrument that generates audio signals to create various sounds, from imitating acoustic instruments to generating entirely synthetic noises.",
+                    "explanation": "They use oscillators and filters to shape sound waves."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who was the lead singer of the rock band Queen?",
+                    "a": "Freddie Mercury.",
+                    "explanation": "He was known for his flamboyant stage persona and four-octave vocal range."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What does 'a cappella' mean?",
+                    "a": "It means singing without instrumental accompaniment.",
+                    "explanation": "The term literally translates to 'in the manner of the chapel' in Italian."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe what a crescendo is.",
+                    "a": "A crescendo is a gradual increase in the volume or loudness of the music.",
+                    "explanation": "It builds tension and dynamic contrast in a piece."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What genre are artists like Biggie Smalls and Tupac Shakur famous for?",
+                    "a": "Hip-Hop / Rap.",
+                    "explanation": "Both were highly influential figures in the 1990s hip-hop scene."
+                }
+            ]
+        }
+    ]
+}

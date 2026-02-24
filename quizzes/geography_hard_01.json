@@ -1,0 +1,85 @@
+{
+    "id": "geography_hard_01",
+    "title": "Hard Geography Quiz 1",
+    "sections": [
+        {
+            "title": "Geography",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which country is the second-largest in South America by both land area and population?",
+                    "options": [
+                        "Colombia",
+                        "Argentina",
+                        "Peru",
+                        "Venezuela"
+                    ],
+                    "a": "Argentina",
+                    "explanation": "Argentina covers most of the southern portion of the continent, second only to Brazil in both categories."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The Gobi Desert covers parts of northern China and southern Mongolia.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "It is a vast, arid region famously known as a source of important dinosaur fossil discoveries."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Vatican City has exactly zero permanent natural rivers flowing through it.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "As it is entirely an urban enclave within Rome consisting of just 121 acres, it has no natural rivers or lakes."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain what the 'Ring of Fire' refers to geographically.",
+                    "a": "The Ring of Fire is a major area in the basin of the Pacific Ocean where many earthquakes and volcanic eruptions occur.",
+                    "explanation": "It visually forms a nearly continuous horseshoe shape of oceanic trenches and volcanic arcs."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which mountain peak is the highest structurally measured from its base on the ocean floor to its summit?",
+                    "a": "Mauna Kea in Hawaii.",
+                    "explanation": "While Mount Everest has the highest altitude above sea level, Mauna Kea's base is deeply underwater, making its total height significantly taller."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe the geopolitical difference between Great Britain and the United Kingdom.",
+                    "a": "Great Britain is the geographic island consisting of England, Scotland, and Wales. The United Kingdom is the sovereign state that includes Great Britain plus Northern Ireland.",
+                    "explanation": "Great Britain is purely geographical; the UK is political."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the capital city of the geographically unique island nation of Madagascar?",
+                    "a": "Antananarivo.",
+                    "explanation": "It is situated deeply inland within the central highlands region."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the historically vital narrow body of water connecting the Persian Gulf fundamentally to the Arabian Sea.",
+                    "a": "The Strait of Hormuz.",
+                    "explanation": "It is one of the world's most critically important and strategically sensitive maritime chokepoints."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the term 'Balkanization' derived from geographically?",
+                    "a": "It strongly derives from the Balkan Peninsula in Europe, an area historically characterized by fragmentation.",
+                    "explanation": "The violent breakup of Yugoslavia is the most prominent modern example."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which enormous river specifically flows through the heart of the Grand Canyon?",
+                    "a": "The Colorado River.",
+                    "explanation": "Its persistent flow over millions of years systematically eroded the rock to form the canyon."
+                }
+            ]
+        }
+    ]
+}

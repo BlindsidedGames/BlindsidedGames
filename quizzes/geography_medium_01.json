@@ -1,0 +1,85 @@
+{
+    "id": "geography_medium_01",
+    "title": "Medium Geography Quiz 1",
+    "sections": [
+        {
+            "title": "Geography",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which mountain range forms the natural border between Europe and Asia?",
+                    "options": [
+                        "The Alps",
+                        "The Urals",
+                        "The Pyrenees",
+                        "The Caucasus"
+                    ],
+                    "a": "The Urals",
+                    "explanation": "The Ural Mountains run from north to south through western Russia, conventionally separating Europe from Asia."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Iceland is covered entirely in ice, whereas Greenland is mostly green.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The reality is notoriously inverse; Iceland is surprisingly green due to the Gulf Stream, while Greenland is mostly covered in a massive ice sheet."
+                },
+                {
+                    "type": "true-false",
+                    "q": "South Africa is the only country in the world that has three official capital cities.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Its administrative capital is Pretoria, legislative is Cape Town, and judicial is Bloemfontein."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the capital city of Canada?",
+                    "a": "Ottawa.",
+                    "explanation": "Located in the province of Ontario, Ottawa sits on the south bank of the Ottawa River."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which crucial man-made canal connects the Mediterranean Sea to the Red Sea?",
+                    "a": "The Suez Canal.",
+                    "explanation": "Located in Egypt, it allows ships a much shorter route between Europe and Asia by avoiding navigation around Africa."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is an archipelago?",
+                    "a": "An archipelago is an extensive group or chain of closely scattered islands.",
+                    "explanation": "Japan, Indonesia, and the Philippines are examples of archipelago nations."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the smallest independent country in the world by both land area and population.",
+                    "a": "Vatican City.",
+                    "explanation": "It is an independent city-state enclaved entirely within Rome, Italy."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which South American country has the largest land area and population?",
+                    "a": "Brazil.",
+                    "explanation": "It is the fifth largest country in the world globally and is famous for the Amazon rainforest."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What two nations share the longest undefended international border in the world?",
+                    "a": "The United States and Canada.",
+                    "explanation": "The border stretches over 5,500 miles, including the borders across the Great Lakes."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which major river flows through London?",
+                    "a": "The River Thames.",
+                    "explanation": "It has been crucial to the development of London since Roman times."
+                }
+            ]
+        }
+    ]
+}

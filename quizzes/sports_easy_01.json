@@ -1,0 +1,85 @@
+{
+    "id": "sports_easy_01",
+    "title": "Easy Sports Quiz 1",
+    "sections": [
+        {
+            "title": "Sports",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "In which sport is a 'touchdown' scored?",
+                    "options": [
+                        "Basketball",
+                        "American Football",
+                        "Baseball",
+                        "Soccer"
+                    ],
+                    "a": "American Football",
+                    "explanation": "A touchdown in American football is worth six points."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A marathon is exactly 26.2 miles long.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The official distance is 26.2 miles (or 42.195 kilometers)."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In tennis, the term 'love' means a score of zero.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The term is thought to originate from the French word for egg ('l'oeuf'), which looks like a zero."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What object is hit back and forth in a game of badminton?",
+                    "a": "A shuttlecock (or birdie).",
+                    "explanation": "It is made of feathers (or synthetic materials) attached to a cork base."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "How many players are on the field for a single team during a standard soccer match?",
+                    "a": "11 players.",
+                    "explanation": "This includes 10 outfield players and one goalkeeper."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which sport uses terms like 'strike', 'spare', and 'gutter ball'?",
+                    "a": "Bowling.",
+                    "explanation": "Players roll a heavy ball down a lane attempting to knock down ten pins."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the maximum number of holes typically played in a standard round of golf?",
+                    "a": "18 holes.",
+                    "explanation": "A standard golf course consists of exactly 18 distinct holes."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which sport involves riding waves on a long, usually fiberglass, board?",
+                    "a": "Surfing.",
+                    "explanation": "Surfers paddle out into the ocean and ride the face of breaking waves back towards shore."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In basketball, how many points is a free throw worth?",
+                    "a": "1 point.",
+                    "explanation": "Free throws are awarded following certain fouls by the opposing team."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What kind of race is the Tour de France?",
+                    "a": "A bicycle race.",
+                    "explanation": "It is an annual multi-stage bicycle race held primarily in France."
+                }
+            ]
+        }
+    ]
+}

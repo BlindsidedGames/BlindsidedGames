@@ -1,0 +1,85 @@
+{
+    "id": "entertainment_medium_04",
+    "title": "Medium Entertainment Quiz 4",
+    "sections": [
+        {
+            "title": "Entertainment",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which of these famous actors was NOT part of the 'Brat Pack' in 1980s cinema?",
+                    "options": [
+                        "Molly Ringwald",
+                        "Emilio Estevez",
+                        "Tom Cruise",
+                        "Judd Nelson"
+                    ],
+                    "a": "Tom Cruise",
+                    "explanation": "Cruise was a rising 80s star, but was never considered a core member of the Brat Pack."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The first feature-length animated movie released by Disney was 'Snow White and the Seven Dwarfs'.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Released in 1937, it was a massive critical and commercial success."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In filmmaking, 'foley' refers to the process of adding computer-generated visual effects.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Foley is the reproduction of everyday sound effects added to films in post-production."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What legendary rock band was famously fronted by Freddie Mercury?",
+                    "a": "Queen.",
+                    "explanation": "They wrote classic anthems like 'Bohemian Rhapsody' and 'We Will Rock You'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What acclaimed 2008 film directed by Christopher Nolan famously features Heath Ledger as the Joker?",
+                    "a": "The Dark Knight.",
+                    "explanation": "It redefined the superhero movie genre and earned Ledger a posthumous Oscar."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What heavily influential synthesizer was incredibly popular in 1980s pop music, known for its distinct digital sound?",
+                    "a": "The Yamaha DX7.",
+                    "explanation": "It was one of the best-selling synthesizers of all time and defined the era's sound."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the music business, what is an 'A&R' representative responsible for?",
+                    "a": "Artists and Repertoire (scouting and developing talent).",
+                    "explanation": "They are the link between the artist and the record label."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which iconic television show was created by Matt Groening and James L. Brooks?",
+                    "a": "The Simpsons.",
+                    "explanation": "It debuted in 1989 and is the longest-running American animated series."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What critically acclaimed sci-fi franchise features the USS Enterprise exploring the galaxy?",
+                    "a": "Star Trek.",
+                    "explanation": "The original series spawned a massive, enduring entertainment franchise."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which celebrated film director is known for his gory, stylized violence in movies like 'Kill Bill' and 'Reservoir Dogs'?",
+                    "a": "Quentin Tarantino.",
+                    "explanation": "His unique style pays homage to classic exploitation films and spaghetti westerns."
+                }
+            ]
+        }
+    ]
+}

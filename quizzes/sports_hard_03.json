@@ -1,0 +1,85 @@
+{
+    "id": "sports_hard_03",
+    "title": "Hard Sports Quiz 3",
+    "sections": [
+        {
+            "title": "Sports",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "In what year were professional players first permitted to officially compete in men's Olympic ice hockey?",
+                    "options": [
+                        "1988",
+                        "1994",
+                        "1998",
+                        "2002"
+                    ],
+                    "a": "1998",
+                    "explanation": "The NHL allowed its players to participate starting with the Nagano games."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In professional tennis, a player is allowed a maximum of 25 seconds between standard points.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The 'shot clock' was introduced to strictly enforce this rule and speed up the pace of play."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The sport of polo requires a larger playing field strategically than any other officially recognized team sport.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "A full-size polo field measures a massive 300 by 160 yards (roughly the area of 9 American football fields)."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who uniquely is the only athlete to hit an MLB home run and score an NFL touchdown in the same week?",
+                    "a": "Deion Sanders.",
+                    "explanation": "He achieved this while playing for the Atlanta Falcons and the Atlanta Braves in 1989."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What specific term describes the defensive alignment in baseball where fielders radically shift entirely to one side of the field based on the batter's tendencies?",
+                    "a": "The Shift (or defensive shift).",
+                    "explanation": "MLB recently implemented severe rules significantly restricting extreme shifting to encourage more offense."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the heaviest strictly recognized weight class structurally in Olympic weightlifting for men?",
+                    "a": "+109 kg (Super Heavyweight).",
+                    "explanation": "Athletes in this division routinely lift structurally massive amounts exceeding fundamentally twice their incredibly own heavy bodyweight."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In competitive fencing, what happens when both épée fencers hit each other at exactly the same time?",
+                    "a": "They both score a point (a 'double touch').",
+                    "explanation": "In épée fencing, if both fencers register a touch within 40 milliseconds of each other, both are awarded a point."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who holds the record for the most goals scored in a single European Championship tournament?",
+                    "a": "Michel Platini.",
+                    "explanation": "He scored an incredible 9 goals in the 1984 European Championship for France."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the highest possible score in a single game of 10-pin bowling?",
+                    "a": "300 points.",
+                    "explanation": "A perfect game requires bowling 12 consecutive strikes."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the NFL, how many players are allowed on the field for one team at any given time?",
+                    "a": "11 players.",
+                    "explanation": "If a team has more than 11 players on the field during a play, they are penalized."
+                }
+            ]
+        }
+    ]
+}

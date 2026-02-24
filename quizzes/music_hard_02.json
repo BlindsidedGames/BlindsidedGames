@@ -1,0 +1,85 @@
+{
+    "id": "music_hard_02",
+    "title": "Hard Music Quiz 2",
+    "sections": [
+        {
+            "title": "Music",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which of these Italian dynamic markings directs a musician to play as loudly as possible?",
+                    "options": [
+                        "Fortissimo (ff)",
+                        "Forte (f)",
+                        "Fortississimo (fff)",
+                        "Mezzo-forte (mf)"
+                    ],
+                    "a": "Fortississimo (fff)",
+                    "explanation": "The more 'f's' added, the louder the dynamic level. FFF is commonly the maximum, though some composers have used further extremes."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A fugue is a type of composition entirely dependent on homophonic texture.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "A fugue is highly dependent on polyphonic texture, featuring multiple independent melodic lines weaving together."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The mellotron is an early, electro-mechanical polyphonic tape replay keyboard.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "It played back analogue tape loops of real instruments when keys were pressed, famously used by The Beatles and King Crimson."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain the concept of 'microtonality'.",
+                    "a": "Microtonality is the use in music of microtones, which are intervals smaller than a semitone (half-step), the smallest interval conventionally used in Western music.",
+                    "explanation": "Many non-Western music traditions, such as Indian classical music, rely heavily on microtonal structures."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is an 'appoggiatura'?",
+                    "a": "It is a musical ornament, typically a grace note that delays the resolution of an expected principal note, taking part of the principal note's time value.",
+                    "explanation": "It creates a brief, expressive dissonance before resolving."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who composed the massive 'Ring Cycle' (Der Ring des Nibelungen), taking 26 years to write?",
+                    "a": "Richard Wagner.",
+                    "explanation": "It consists of four epic music dramas based loosely on Germanic heroic legend."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In audio engineering crossover and mixing, what is 'compression'?",
+                    "a": "Dynamic range compression lessens the span between the loudest and softest parts of an audio signal, making quiet sounds louder and louder sounds quieter.",
+                    "explanation": "This helps instruments sit evenly in a mix."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Define 'ostinato'.",
+                    "a": "An ostinato is a motif or phrase that persistently repeats in the same musical voice, frequently in the same pitch.",
+                    "explanation": "It often serves as the rhythmic or harmonic foundation, notably as a 'basso ostinato' or ground bass."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is a 'glissando'?",
+                    "a": "A glissando is a smooth, continuous glide from one pitch to another.",
+                    "explanation": "It can be played individually on instruments like stringed instruments or a trombone, or as a rapid sweep across keys on a piano or harp."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the name for the wooden rod inside a violin that structurally supports the bridge and transmits vibrations to the back plate?",
+                    "a": "The soundpost.",
+                    "explanation": "Its exact placement is critical for the instrument's tone and volume."
+                }
+            ]
+        }
+    ]
+}

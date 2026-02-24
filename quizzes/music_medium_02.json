@@ -1,0 +1,85 @@
+{
+    "id": "music_medium_02",
+    "title": "Medium Music Quiz 2",
+    "sections": [
+        {
+            "title": "Music",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which album is the best-selling album of all time as of 2023?",
+                    "options": [
+                        "The Dark Side of the Moon",
+                        "Back in Black",
+                        "Thriller",
+                        "Rumours"
+                    ],
+                    "a": "Thriller",
+                    "explanation": "Michael Jackson's 'Thriller' remains the best-selling album worldwide, with estimated sales of over 70 million copies."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A diatonic scale typically consists of 7 different pitches.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The diatonic scale, like the standard major or minor scales, has seven distinct notes before repeating the octave."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Jimi Hendrix famously played his left-handed guitar strung for a right-handed player in reverse.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Hendrix was left-handed and famously played a right-handed guitar turned upside down, but restrung for left-handed playing."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What distinguishes an acoustic piano from a digital keyboard?",
+                    "a": "An acoustic piano creates sound physically by felt-covered hammers striking metal strings when keys are pressed, while a digital keyboard produces sound electronically using recorded samples or synthesis.",
+                    "explanation": "Digital keyboards require electricity, while acoustic pianos do not."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Define the term 'syncopation' in rhythm.",
+                    "a": "Syncopation is a rhythmic concept where the emphasis or accent is placed on the weak beats or offbeats, rather than the strong, expected beats.",
+                    "explanation": "This technique gives music, especially jazz and funk, a 'swing' or 'groove'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is a 'bridge' in modern pop or rock songwriting?",
+                    "a": "A bridge is a contrasting section of a song that breaks up the repetition of verses and choruses, providing new musical and lyrical material.",
+                    "explanation": "It builds tension that is usually resolved when returning to the final chorus."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the city known as the birthplace of grunge music in the early 1990s.",
+                    "a": "Seattle, Washington.",
+                    "explanation": "Bands like Nirvana, Pearl Jam, and Soundgarden emerged from the Seattle music scene."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain what 'vibrato' is.",
+                    "a": "Vibrato is a musical effect consisting of a regular, pulsating change of pitch.",
+                    "explanation": "Singers and instrumentalists use it to add expression and warmth to long notes."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the primary characteristic of a pentatonic scale?",
+                    "a": "A pentatonic scale consists of only five notes per octave instead of the usual seven.",
+                    "explanation": "It is widely used in folk music around the world and extensively in blues and rock solos."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who wrote the famous ballets 'Swan Lake' and 'The Sleeping Beauty'?",
+                    "a": "Pyotr Ilyich Tchaikovsky.",
+                    "explanation": "Tchaikovsky's ballets are among the most frequently performed in the classical repertoire."
+                }
+            ]
+        }
+    ]
+}

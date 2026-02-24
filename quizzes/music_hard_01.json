@@ -1,0 +1,85 @@
+{
+    "id": "music_hard_01",
+    "title": "Hard Music Quiz 1",
+    "sections": [
+        {
+            "title": "Music",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Who composed the groundbreaking orchestral piece 'The Rite of Spring', which famously caused a near-riot during its 1913 premiere?",
+                    "options": [
+                        "Igor Stravinsky",
+                        "Claude Debussy",
+                        "Béla Bartók",
+                        "Arnold Schoenberg"
+                    ],
+                    "a": "Igor Stravinsky",
+                    "explanation": "The ballet's avant-garde music and choreography challenged contemporary audiences' expectations profoundly."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In music theory, a 'Picardy third' is a compositional device where a minor key piece ends on a major chord.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "This technique was widely used in the Baroque and Renaissance periods to give a sense of finality and resolution."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A theremin is played by touching metal plates in a precise sequence.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "A theremin is famously played without physical contact; the performer moves their hands near antennas to manipulate electromagnetic fields."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain what 12-tone serialism is in musical composition.",
+                    "a": "It is a method of musical composition devised by Arnold Schoenberg that ensures all 12 notes of the chromatic scale are sounded as often as one another, preventing the emphasis of any one note through the use of tone rows.",
+                    "explanation": "It purposefully avoids being in a single key, creating atonal music."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is 'Timbre'?",
+                    "a": "Timbre, often called tone color or tone quality, is the perceived sound quality of a musical note, sound or tone.",
+                    "explanation": "It is what distinguishes different types of sound production, such as a violin from a flute playing the exact same note."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who was the legendary jazz saxophonist nicknamed 'Bird'?",
+                    "a": "Charlie Parker.",
+                    "explanation": "He was a highly influential soloist and a leading figure in the development of bebop."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Define the term 'rubato' roughly translated from Italian.",
+                    "a": "Rubato translates to 'stolen time' and refers to the expressive and rhythmic freedom of slightly speeding up and then slowing down the tempo of a piece.",
+                    "explanation": "It gives a piece a more relaxed, expressive, and human feel."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What does a 'hemiola' refer to in rhythm?",
+                    "a": "A hemiola is a rhythmic pattern of syncopated beats with two beats in the time of three or three beats in the time of two.",
+                    "explanation": "This briefly alters the meter perception without changing the actual time signature."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the function of the 'bridge' on stringed instruments like a violin or guitar?",
+                    "a": "The bridge physically supports the strings and transmits the vibration of those strings directly to the soundboard or body of the instrument, generating acoustic sound.",
+                    "explanation": "Its placement must be precise for proper intonation."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which album by Miles Davis, released in 1959, is widely considered one of the greatest and most influential jazz records ever made, pioneering modal jazz?",
+                    "a": "Kind of Blue.",
+                    "explanation": "The album featured jazz legends like John Coltrane and Bill Evans."
+                }
+            ]
+        }
+    ]
+}

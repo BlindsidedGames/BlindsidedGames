@@ -1,0 +1,85 @@
+{
+    "id": "pop_culture_hard_03",
+    "title": "Hard Pop Culture Quiz 3",
+    "sections": [
+        {
+            "title": "Pop Culture",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which famously reclusive author wrote the sprawling 1973 postmodern masterpiece 'Gravity's Rainbow'?",
+                    "options": [
+                        "Don DeLillo",
+                        "Thomas Pynchon",
+                        "David Foster Wallace",
+                        "Cormac McCarthy"
+                    ],
+                    "a": "Thomas Pynchon",
+                    "explanation": "Pynchon's dense, complex novel won the National Book Award but is famously difficult to read."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The iconic opening text crawl in 'Star Wars' was created by filming a physical model camera moving backward over physical text.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "It was shot traditionally on a motion control rig before the advent of accessible digital rendering."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The famous 'Missile Command' arcade game features a specific ending cutscene if the player reaches level 256.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "As a classic arcade game, it simply gets infinitely harder and faster until the player eventually inevitably loses."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What highly influential post-punk band, led by Ian Curtis, released the seminal album 'Unknown Pleasures' in 1979?",
+                    "a": "Joy Division.",
+                    "explanation": "The album's stark, atmospheric sound and iconic pulsar cover art became profoundly influential."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which famously disastrous live television music performance notably derailed Ashlee Simpson's music career in 2004?",
+                    "a": "Her lip-syncing failure on Saturday Night Live.",
+                    "explanation": "The wrong vocal track played, exposing that she was not singing live, leading to an awkward on-stage jig."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What specific underground comix series, created by Art Spiegelman, uniquely won a Pulitzer Prize in 1992?",
+                    "a": "Maus.",
+                    "explanation": "The profoundly moving graphic novel depicts the author interviewing his father about surviving the Holocaust."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What iconic, surreal 1990s television series co-created by Mark Frost and David Lynch heavily centered around the murder of Laura Palmer?",
+                    "a": "Twin Peaks.",
+                    "explanation": "It fundamentally changed the landscape of television serial melodrama with its bizarre and cinematic tone."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which infamous 1999 heavy metal music festival devolved entirely into riots, arson, and widespread horrific violence?",
+                    "a": "Woodstock '99.",
+                    "explanation": "It became notoriously infamous for its disastrously poor planning, oppressive heat, and aggressive crowd behavior."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What exceptionally rare Nintendo World Championships NES cartridge exists only in a specific, highly coveted colored shell?",
+                    "a": "The Gold Cartridge.",
+                    "explanation": "Only 26 were strictly officially given out during a Nintendo Power contest, making them incredible collector holy grails."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which independent movie studio, founded in 2012, is heavily renowned for prestige horror films like 'Hereditary' and 'The Witch'?",
+                    "a": "A24.",
+                    "explanation": "They have quickly built a massive cult following for their director-driven approach to genre cinema."
+                }
+            ]
+        }
+    ]
+}

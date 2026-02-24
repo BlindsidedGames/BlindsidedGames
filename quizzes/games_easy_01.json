@@ -1,0 +1,85 @@
+{
+    "id": "games_easy_01",
+    "title": "Easy Games Quiz 1",
+    "sections": [
+        {
+            "title": "Games",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "In the classic board game Monopoly, what color are the most expensive properties (Boardwalk and Park Place)?",
+                    "options": [
+                        "Dark Blue",
+                        "Green",
+                        "Red",
+                        "Yellow"
+                    ],
+                    "a": "Dark Blue",
+                    "explanation": "They are the two most expensive properties on the standard US Monopoly board."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the game of Rock, Paper, Scissors, Paper beats Rock.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Paper covers Rock, Rock smashes Scissors, Scissors cut Paper."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Minecraft is a game essentially about stacking falling blocks correctly to clear lines.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "That describes Tetris. Minecraft is an open-world survival and building game."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What incredibly famous video game plumber wears a red hat and overalls, and often rescues Princess Peach?",
+                    "a": "Mario.",
+                    "explanation": "He is the flagship mascot character for Nintendo."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In a standard deck of 52 playing cards, how many suits are there?",
+                    "a": "Four.",
+                    "explanation": "The suits are Hearts, Diamonds, Clubs, and Spades."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What classic Hasbro board game involves drawing pictures to help your team guess a specific word?",
+                    "a": "Pictionary.",
+                    "explanation": "It is essentially charades, but using drawing instead of acting."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which highly popular tile-matching puzzle video game was created by Alexey Pajitnov in 1984?",
+                    "a": "Tetris.",
+                    "explanation": "It became a global phenomenon, particularly when bundled with the Nintendo Game Boy."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the name of the popular tabletop role-playing game where players often roll twenty-sided dice to determine outcomes?",
+                    "a": "Dungeons & Dragons (D&D).",
+                    "explanation": "A Dungeon Master guides the players through a collaborative fantasy story."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the game of Chess, which piece can move exactly one square in any direction?",
+                    "a": "The King.",
+                    "explanation": "The primary objective of the game is to trap (checkmate) the opponent's King."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What incredibly successful mobile game involves slinging angry birds at green pigs hiding in structures?",
+                    "a": "Angry Birds.",
+                    "explanation": "It was one of the earliest massive viral hits of the smartphone era."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "id": "games_easy_03",
+    "title": "Easy Games Quiz 3",
+    "sections": [
+        {
+            "title": "Games",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "In the classic arcade game 'Donkey Kong', what is the main character (later known as Mario) originally named?",
+                    "options": [
+                        "Plumber Man",
+                        "Jumpman",
+                        "Red Hat",
+                        "Hammer Boy"
+                    ],
+                    "a": "Jumpman",
+                    "explanation": "His primary ability was jumping over barrels thrown by Donkey Kong."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The objective of the board game 'Risk' is to quietly build the longest train route across the United States.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "That describes 'Ticket to Ride'. The goal of 'Risk' is global domination."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In Chess, the Queen is the most powerful piece on the board.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "She can move any number of vacant squares diagonally, horizontally, or vertically."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What wildly popular life simulation video game series allows you to create people, build their homes, and manage their daily lives?",
+                    "a": "The Sims.",
+                    "explanation": "It is widely considered one of the best-selling video game franchises in history."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the classic physical game where players must contort their bodies to place hands and feet on colored circles plotted out on a large plastic mat?",
+                    "a": "Twister.",
+                    "explanation": "A spinner dictates which limb goes on which color, resulting in tangled limbs."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which Nintendo video game franchise features an elf-like hero named Link saving Princess Zelda?",
+                    "a": "The Legend of Zelda.",
+                    "explanation": "The series is famous for its exploration, puzzles, and action."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the card game 'Go Fish', what do you say when you don't have the card a player asks for?",
+                    "a": "Go Fish!",
+                    "explanation": "The player must then draw a card from the deck."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What board game involves scoring points by forming words on a board using lettered tiles, similar to a crossword puzzle?",
+                    "a": "Scrabble.",
+                    "explanation": "Different letters have different point values based on their rarity."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What extremely popular genre of video game involves dropping exactly 100 players onto an island to fight until only one remains?",
+                    "a": "Battle Royale.",
+                    "explanation": "Famous examples include 'Fortnite', 'PUBG', and 'Apex Legends'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What classic two-player board game is played with checkers and dice on a board with 24 narrow triangles called points?",
+                    "a": "Backgammon.",
+                    "explanation": "The goal is to move all your checkers off the board before your opponent."
+                }
+            ]
+        }
+    ]
+}

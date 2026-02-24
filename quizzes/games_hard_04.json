@@ -1,0 +1,85 @@
+{
+    "id": "games_hard_04",
+    "title": "Hard Games Quiz 4",
+    "sections": [
+        {
+            "title": "Games",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which tabletop RPG relies heavily on the 'Powered by the Apocalypse' engine designed by Meguey and Vincent Baker?",
+                    "options": [
+                        "Pathfinder",
+                        "Call of Cthulhu",
+                        "Apocalypse World",
+                        "Shadowrun"
+                    ],
+                    "a": "Apocalypse World",
+                    "explanation": "Its narrative-focused engine has been adapted into hundreds of other RPGs."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The objective of the board game 'Betrayal at House on the Hill' remains exactly the same every single time it is played.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The second half of the game 'The Haunt' randomly selects from 50 different betrayal scenarios."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the complex card game 'Netrunner', the active player is referred to as the Runner, while the passive player is the Corporation.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Runners try to steal corporate agendas, while Corporations try to score them or flatline the Runner."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What notoriously brutal early 2000s MMORPG features strict full loot PvP, where a dead player essentially loses everything?",
+                    "a": "EVE Online.",
+                    "explanation": "Its sprawling, player-driven economy is famously complex and unforgiving."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which highly influential designer spearheaded the creation of 'Sid Meier's Civilization'?",
+                    "a": "Sid Meier.",
+                    "explanation": "He is widely considered one of the founding fathers of PC strategy games."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What intense cooperative board game involves playing numbered cards strictly in ascending order without actively communicating?",
+                    "a": "The Mind.",
+                    "explanation": "Players must sync up their internal timing to succeed."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In chess terminology, what does 'en passant' specifically refer to?",
+                    "a": "A special pawn capture that only occurs immediately after a pawn moves two squares from its starting position.",
+                    "explanation": "An adjacent enemy pawn can capture it as if it had only moved one square."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What massively successful 2015 video game focuses strongly on physically building massive factories to perfectly automate production on an alien world?",
+                    "a": "Factorio.",
+                    "explanation": "Players affectionately refer to it as 'Cracktorio' due to its addictive optimization loop."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which classic bluffing tabletop game requires players to hold two hidden role cards, fundamentally allowing them to assassinate or steal from opponents?",
+                    "a": "Coup.",
+                    "explanation": "You can claim to have any role card, but you lose an influence if someone calls your bluff."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What highly acclaimed 2019 action game tasks players with creatively defeating heavily armed enemies using a prosthetic arm in Sengoku-era Japan?",
+                    "a": "Sekiro: Shadows Die Twice.",
+                    "explanation": "It won Game of the Year specifically for its brutally tight parry combat system."
+                }
+            ]
+        }
+    ]
+}

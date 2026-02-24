@@ -1,0 +1,85 @@
+{
+  "id": "science_medium_02",
+  "title": "Medium Science Quiz 1",
+  "sections": [
+    {
+      "title": "Science",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "What is the hardest natural substance on Earth?",
+          "options": [
+            "Gold",
+            "Iron",
+            "Diamond",
+            "Quartz"
+          ],
+          "a": "Diamond",
+          "explanation": "Diamond is an allotrope of carbon with a very rigid lattice structure."
+        },
+        {
+          "type": "true-false",
+          "q": "Sound can travel through a vacuum like space.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Sound requires a medium (like air or water) to travel."
+        },
+        {
+          "type": "true-false",
+          "q": "Jupiter has a ring system.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "Jupiter's rings are faint but they do exist."
+        },
+        {
+          "type": "self-eval",
+          "q": "What gas do plants primarily absorb from the air?",
+          "a": "Carbon dioxide",
+          "explanation": "Plants take in CO2 to perform photosynthesis."
+        },
+        {
+          "type": "self-eval",
+          "q": "What biological process converts food into energy in cells?",
+          "a": "Cellular Respiration",
+          "explanation": "Mitochondria carry out this process to produce ATP."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which element makes up the majority of the mass of the human body?",
+          "a": "Oxygen",
+          "explanation": "Since we are mostly water (H2O), and oxygen is much heavier than hydrogen, it dominates our mass."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the study of the weather called?",
+          "a": "Meteorology",
+          "explanation": "Meteorologists study atmospheric phenomena."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the longest bone in the human body.",
+          "a": "Femur",
+          "explanation": "The femur is located in the thigh."
+        },
+        {
+          "type": "self-eval",
+          "q": "What part of the cell contains genetic material?",
+          "a": "Nucleus",
+          "explanation": "The nucleus houses the DNA in eukaryotic cells."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the speed of light in a vacuum (approx)?",
+          "a": "300,000 km/s",
+          "explanation": "It's roughly 299,792 km/s."
+        }
+      ]
+    }
+  ]
+}

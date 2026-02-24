@@ -1,0 +1,85 @@
+{
+  "id": "biology_hard_04",
+  "title": "Hard Biology Quiz 4",
+  "sections": [
+    {
+      "title": "Biology",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "According to the Hardy-Weinberg principle, if the frequency of a recessive allele (q) is 0.4, what is the frequency of the dominant phenotype?",
+          "options": [
+            "0.16",
+            "0.36",
+            "0.48",
+            "0.84"
+          ],
+          "a": "0.84",
+          "explanation": "If q=0.4, p=0.6. Dominant phenotype is p^2 + 2pq = 0.36 + 0.48 = 0.84."
+        },
+        {
+          "type": "true-false",
+          "q": "Turgor pressure decreases when a plant cell is placed in a hypotonic solution.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "A hypotonic solution causes water to enter the cell, increasing turgor pressure."
+        },
+        {
+          "type": "true-false",
+          "q": "Epigenetics involves changes to the underlying DNA sequence.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Epigenetics involves modifications (like methylation) that affect expression, not the sequence itself."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the term for a species on which other species in an ecosystem largely depend, such that if it were removed the ecosystem would change drastically?",
+          "a": "Keystone species",
+          "explanation": "Sea otters and wolves are famous examples."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the specific region of an enzyme where the substrate binds called?",
+          "a": "Active site",
+          "explanation": "It has a specific shape and chemical environment for catalysis."
+        },
+        {
+          "type": "self-eval",
+          "q": "What type of immune disorder occurs when the immune system mistakenly attacks the body's own tissues?",
+          "a": "Autoimmune disease",
+          "explanation": "Examples include Rheumatoid arthritis and Type 1 Diabetes."
+        },
+        {
+          "type": "self-eval",
+          "q": "In standard Mendelian genetics, what is the expected phenotypic ratio of a dihybrid cross between two heterozygotes (AaBb x AaBb)?",
+          "a": "9:3:3:1",
+          "explanation": "This assumes independent assortment of the two genes."
+        },
+        {
+          "type": "self-eval",
+          "q": "What specialized tissue found only in birds is primarily responsible for gas exchange?",
+          "a": "Parabronchi",
+          "explanation": "Unlike human alveoli, parabronchi allow continuous airflow."
+        },
+        {
+          "type": "self-eval",
+          "q": "What process involves a cell engulfing large particles or whole cells?",
+          "a": "Phagocytosis",
+          "explanation": "Macrophages use this to destroy bacteria."
+        },
+        {
+          "type": "self-eval",
+          "q": "What organelle stores calcium ions in muscle cells?",
+          "a": "Sarcoplasmic reticulum",
+          "explanation": "The release of calcium triggers muscle contraction."
+        }
+      ]
+    }
+  ]
+}

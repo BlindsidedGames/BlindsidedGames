@@ -1,0 +1,85 @@
+{
+  "id": "history_medium_02",
+  "title": "Medium History Quiz 2",
+  "sections": [
+    {
+      "title": "History",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Who was the primary author of the US Declaration of Independence?",
+          "options": [
+            "James Madison",
+            "Benjamin Franklin",
+            "Thomas Jefferson",
+            "John Adams"
+          ],
+          "a": "Thomas Jefferson",
+          "explanation": "Jefferson drafted the document in 1776, outlining the colonies' reasons for rebelling."
+        },
+        {
+          "type": "true-false",
+          "q": "The French Revolution began with the storming of the Bastille.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "The Bastille was a state prison representing royal authority in Paris; it fell on July 14, 1789."
+        },
+        {
+          "type": "true-false",
+          "q": "Winston Churchill was the Prime Minister of the UK during World War I.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "He was the Prime Minister during World War II. David Lloyd George led during most of WWI."
+        },
+        {
+          "type": "self-eval",
+          "q": "What global organization was formed after World War I to promote international peace?",
+          "a": "The League of Nations",
+          "explanation": "It was a predecessor to the United Nations, though ultimately failed to prevent WWII."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who led the Bolsheviks to power during the Russian Revolution of 1917?",
+          "a": "Vladimir Lenin",
+          "explanation": "This established the world's first communist state."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which two Greek city-states fought the Peloponnesian War?",
+          "a": "Athens and Sparta",
+          "explanation": "Sparta ultimately won the conflict, ending Athenian dominance."
+        },
+        {
+          "type": "self-eval",
+          "q": "During the Cold War, what was the term for the invisible boundary dividing Europe?",
+          "a": "The Iron Curtain",
+          "explanation": "Coined by Winston Churchill, it represented the divide between democratic and communist blocs."
+        },
+        {
+          "type": "self-eval",
+          "q": "What famous code of law was established in ancient Babylon?",
+          "a": "The Code of Hammurabi",
+          "explanation": "It is famous for the principle of 'an eye for an eye'."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the first female Prime Minister of the United Kingdom?",
+          "a": "Margaret Thatcher",
+          "explanation": "She was known as the 'Iron Lady' for her uncompromising politics."
+        },
+        {
+          "type": "self-eval",
+          "q": "In which war did the United States fight against the Viet Cong?",
+          "a": "The Vietnam War",
+          "explanation": "It was a major Cold War proxy conflict."
+        }
+      ]
+    }
+  ]
+}

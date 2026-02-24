@@ -1,0 +1,85 @@
+{
+    "id": "entertainment_easy_01",
+    "title": "Easy Entertainment Quiz 1",
+    "sections": [
+        {
+            "title": "Entertainment",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Who is the famous mouse created by Walt Disney?",
+                    "options": [
+                        "Minnie Mouse",
+                        "Mickey Mouse",
+                        "Mighty Mouse",
+                        "Danger Mouse"
+                    ],
+                    "a": "Mickey Mouse",
+                    "explanation": "Mickey Mouse made his first public appearance in the 1928 short film 'Steamboat Willie'."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The award given for excellence in Broadway theatre is called the Tony Award.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The Antoinette Perry Award for Excellence in Broadway Theatre is commonly known as the Tony Award."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Tom Cruise performs almost all of his own dangerous stunts in the 'Mission: Impossible' films.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "He is famous for intensely committing to perilous stunts, including hanging on the outside of airplanes."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the highest grossing movie franchise of all time?",
+                    "a": "The Marvel Cinematic Universe (MCU).",
+                    "explanation": "It has grossed tens of billions of dollars across dozens of films."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which iconic streaming service originally started by mailing DVDs to people's homes in red envelopes?",
+                    "a": "Netflix.",
+                    "explanation": "They pivoted to streaming in 2007, fundamentally changing the entertainment industry."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What globally popular singing competition show famously featured Simon Cowell as a highly critical judge during its early seasons?",
+                    "a": "American Idol.",
+                    "explanation": "His harsh, blunt critiques became a central draw for the massive reality TV hit."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which legendary magician and escape artist was famous for freeing himself from handcuffs, straitjackets, and locked water tanks?",
+                    "a": "Harry Houdini.",
+                    "explanation": "He was arguably the world's most famous entertainer in the early 20th century."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the term for a movie that is a continuation of a previous movie's story?",
+                    "a": "A sequel.",
+                    "explanation": "Famous examples include 'The Empire Strikes Back' or 'Toy Story 2'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What iconic nighttime comedy sketch show has aired on NBC since 1975?",
+                    "a": "Saturday Night Live (SNL).",
+                    "explanation": "It has launched the careers of countless famous comedians over several decades."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the context of television ratings, what do the letters 'DVR' stand for?",
+                    "a": "Digital Video Recorder.",
+                    "explanation": "It replaced the VCR, allowing viewers to easily record and pause live television."
+                }
+            ]
+        }
+    ]
+}

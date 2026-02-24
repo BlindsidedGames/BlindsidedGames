@@ -1,0 +1,85 @@
+{
+    "id": "geography_hard_02",
+    "title": "Hard Geography Quiz 2",
+    "sections": [
+        {
+            "title": "Geography",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "What is the name of the microstate situated entirely within the city of Rome?",
+                    "options": [
+                        "San Marino",
+                        "Andorra",
+                        "Vatican City",
+                        "Monaco"
+                    ],
+                    "a": "Vatican City",
+                    "explanation": "It is the smallest internationally recognized independent state in the world by both area and population."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The Caspian Sea is technically classified as the world's largest lake.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Despite its name and saltwater content, it is entirely landlocked and thus defined as a lake."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The Prime Meridian passes directly through the city of Paris.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The Prime Meridian conventionally passes through the Royal Observatory in Greenwich, London, England."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the two landlocked countries in South America.",
+                    "a": "Bolivia and Paraguay.",
+                    "explanation": "Both lost their coastal access historically through various conflicts with neighbors."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the 'Horn of Africa'?",
+                    "a": "The Horn of Africa is a peninsula in East Africa that juts into the Arabian Sea and Indian Ocean.",
+                    "explanation": "It prominently includes countries like Somalia, Ethiopia, Eritrea, and Djibouti."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What significant geographical feature divides the continents of Antarctica effectively in two?",
+                    "a": "The Transantarctic Mountains.",
+                    "explanation": "They run across the entire continent, separating East and West Antarctica."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which US state is the only one to share a physical border with only a single other US state?",
+                    "a": "Maine.",
+                    "explanation": "Maine solely borders New Hampshire to the south and west; the rest of its borders are with Canada or the Atlantic Ocean."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Define what an 'exclave' is geographically.",
+                    "a": "An exclave is a portion of a state or territory geographically separated entirely from the main part by surrounding alien territory.",
+                    "explanation": "Alaska is an exclave of the United States, separated by Canada."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What extremely deep, narrow body of water separates the Arabian Peninsula strictly from the African continent?",
+                    "a": "The Red Sea.",
+                    "explanation": "It lies between Egypt, Sudan, and Eritrea to the west, and Saudi Arabia and Yemen to the east."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which major Asian river flows entirely within the physical borders of China from its source to its mouth?",
+                    "a": "The Yangtze River (or roughly, the Yellow River).",
+                    "explanation": "The Yangtze is the third longest river in the world, and entirely contained in China."
+                }
+            ]
+        }
+    ]
+}

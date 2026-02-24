@@ -1,0 +1,85 @@
+{
+    "id": "nature_medium_01",
+    "title": "Medium Nature Quiz 1",
+    "sections": [
+        {
+            "title": "Nature",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "What is the largest living lizard in the world?",
+                    "options": [
+                        "Iguana",
+                        "Gila Monster",
+                        "Komodo Dragon",
+                        "Monitor Lizard"
+                    ],
+                    "a": "Komodo Dragon",
+                    "explanation": "Found on several Indonesian islands, the Komodo Dragon can grow up to 10 feet long and weigh over 150 pounds."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Stalactites grow upwards from the cave floor.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Stalactites hang tight to the ceiling, growing downwards. Stalagmites 'might' reach the roof, growing upwards from the floor."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Bamboo is technically a type of grass, not a tree.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Despite resembling and sometimes feeling as hard as wood, bamboo belongs to the Poaceae family of grasses."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the term for animals that only primarily or exclusively eat fish?",
+                    "a": "Piscivore.",
+                    "explanation": "The osprey and the bald eagle are examples of piscivorous birds."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Explain what a 'keystone species' is in an ecosystem.",
+                    "a": "A keystone species is a plant or animal that plays a unique and crucial role in the way an ecosystem functions.",
+                    "explanation": "Without them, the ecosystem would be dramatically different or cease to exist altogether, like the role of sea otters controlling urchin populations."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Define 'deciduous'.",
+                    "a": "Deciduous describes trees and shrubs that seasonally shed leaves, usually in the autumn.",
+                    "explanation": "Oak and maple trees are classic examples."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the difference between a hurricane, a typhoon, and a cyclone?",
+                    "a": "They are the exact same weather phenomenon—a tropical cyclone—but they are given different names depending on where in the world they occur.",
+                    "explanation": "Hurricanes are in the North Atlantic and Northeast Pacific; typhoons in the Northwest Pacific; and cyclones in the South Pacific and Indian Ocean."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What geological process is primarily responsible for creating the deep valleys of the Grand Canyon?",
+                    "a": "Erosion by water (specifically the Colorado River).",
+                    "explanation": "Over millions of years, the flowing river carved through the rock layers."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What defines a 'marsupial' mammal?",
+                    "a": "Marsupials give birth to relatively undeveloped young that often reside in a pouch located on the mother's abdomen for a significant time.",
+                    "explanation": "Kangaroos, koalas, and opossums are well-known marsupials."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "How does a snake 'shed' its skin, and why?",
+                    "a": "A snake molts by rubbing its head against a rough surface to snag the old skin, then slowly peeling it entirely off in one inverted piece. This allows for growth and removes parasites.",
+                    "explanation": "The process is formally known as ecdysis."
+                }
+            ]
+        }
+    ]
+}

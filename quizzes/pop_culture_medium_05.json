@@ -1,0 +1,85 @@
+{
+    "id": "pop_culture_medium_05",
+    "title": "Medium Pop Culture Quiz 5",
+    "sections": [
+        {
+            "title": "Pop Culture",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which critically acclaimed TV series famously features the warring families of the Starks, Lannisters, and Targaryens?",
+                    "options": [
+                        "The Witcher",
+                        "Game of Thrones",
+                        "Succession",
+                        "Vikings"
+                    ],
+                    "a": "Game of Thrones",
+                    "explanation": "Based on George R.R. Martin's books, it became a massive global phenomenon for HBO."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The first Apple iPhone was officially released to the public in the year 2005.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The revolutionary first-generation iPhone was famously announced and released in 2007."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the hit video game 'Fortnite', players natively jump out of a flying 'Battle Bus' to start the match.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The Battle Bus is one of the most iconic elements of the massively popular battle royale game."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What legendary Japanese animation studio, co-founded by Hayao Miyazaki, produced classics like 'Spirited Away' and 'My Neighbor Totoro'?",
+                    "a": "Studio Ghibli.",
+                    "explanation": "Their films are universally beloved for their stunning hand-drawn art and deeply emotional storytelling."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which immensely popular open-world video game famously allows players to explore the fictional state of San Andreas as three distinct protagonists?",
+                    "a": "Grand Theft Auto V (GTA V).",
+                    "explanation": "It remains one of the fastest-selling and most financially successful entertainment products ever created."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the critically adored sitcom 'Parks and Recreation', what is the name of the fiercely libertarian, meat-loving department director played by Nick Offerman?",
+                    "a": "Ron Swanson.",
+                    "explanation": "He became one of the internet's most universally beloved and frequently quoted television characters."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What British rock band famously released the groundbreaking concept albums 'The Dark Side of the Moon' and 'The Wall'?",
+                    "a": "Pink Floyd.",
+                    "explanation": "They are widely considered pioneers of the massively influential progressive rock genre."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which iconic 1980s slasher villain notoriously attacks his teenage victims uniquely within their dreams?",
+                    "a": "Freddy Krueger.",
+                    "explanation": "He is the central antagonist of the 'A Nightmare on Elm Street' film series."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the Pokémon franchise, what is the electric-type mouse Pokémon that serves as the official mascot?",
+                    "a": "Pikachu.",
+                    "explanation": "Pikachu is the universally recognized flagship character of the global brand."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which American singer-songwriter released the massively successful critically acclaimed visual album 'Lemonade' in 2016?",
+                    "a": "Beyoncé.",
+                    "explanation": "The album debuted to widespread critical acclaim and cultural impact."
+                }
+            ]
+        }
+    ]
+}

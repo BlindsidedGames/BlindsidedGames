@@ -1,0 +1,85 @@
+{
+    "id": "games_easy_02",
+    "title": "Easy Games Quiz 2",
+    "sections": [
+        {
+            "title": "Games",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which card game involves trying to get a hand total as close to 21 as possible without going over?",
+                    "options": [
+                        "Poker",
+                        "Blackjack",
+                        "Bridge",
+                        "Solitaire"
+                    ],
+                    "a": "Blackjack",
+                    "explanation": "It is also commonly referred to simply as '21'."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The video game 'Pac-Man' involves eating dots while running away from colorful ghosts.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "It is one of the most recognizable and successful arcade games in history."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the game 'Candy Land', players must answer trivia questions to advance on the board.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Candy Land is a simple racing game for young children requiring no reading or trivia, only drawing color cards."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What word guessing game involves one player thinking of a word while the other tries to guess it before a stick figure is fully drawn?",
+                    "a": "Hangman.",
+                    "explanation": "Each incorrect letter guess adds a body part to the drawing."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What incredibly popular video game franchise involves catching and training creatures to battle each other, often storing them in small round balls?",
+                    "a": "Pokémon.",
+                    "explanation": "The tagline is famously 'Gotta catch 'em all!'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What classic family board game requires players to carefully remove rectangular wooden blocks from a tower without letting it fall over?",
+                    "a": "Jenga.",
+                    "explanation": "The game becomes increasingly tense as the tower gets taller and less stable."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the classic game 'Uno', what must a player yell when they only have exactly one card left in their hand?",
+                    "a": "Uno!",
+                    "explanation": "Failing to yell it can result in drawing penalty cards if caught."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What console created by Microsoft competes directly with Sony's PlayStation?",
+                    "a": "The Xbox.",
+                    "explanation": "The original Xbox was released in 2001, featuring games like 'Halo'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which popular sandbox video game lets players build anything out of textured 3D cubes?",
+                    "a": "Minecraft.",
+                    "explanation": "It is the best-selling video game of all time."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What classic Hasbro board game involves investigating a mansion to determine who committed a murder, with what weapon, and in what room?",
+                    "a": "Clue (or Cluedo).",
+                    "explanation": "Famous characters include Miss Scarlet and Colonel Mustard."
+                }
+            ]
+        }
+    ]
+}

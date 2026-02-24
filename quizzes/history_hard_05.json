@@ -1,0 +1,85 @@
+{
+  "id": "history_hard_05",
+  "title": "Hard History Quiz 5",
+  "sections": [
+    {
+      "title": "History",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which European explorer famously led the first expedition that successfully circumnavigated the globe, although he died en route?",
+          "options": [
+            "Vasco da Gama",
+            "Ferdinand Magellan",
+            "James Cook",
+            "Sir Francis Drake"
+          ],
+          "a": "Ferdinand Magellan",
+          "explanation": "The expedition started in 1519, and completed the journey in 1522 under Juan Sebasti\u00e1n Elcano."
+        },
+        {
+          "type": "true-false",
+          "q": "The defenestration of Prague in 1618 helped trigger the English Civil War.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "It triggered the Thirty Years' War in Central Europe."
+        },
+        {
+          "type": "true-false",
+          "q": "The famous Rosetta Stone was vital for deciphering ancient Egyptian hieroglyphs because it contained text in three different scripts.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "It contained Hieroglyphic, Demotic, and Ancient Greek."
+        },
+        {
+          "type": "self-eval",
+          "q": "What conflict between Great Britain and China in the 19th century was fought over trade imbalances and the importation of narcotics?",
+          "a": "The First Opium War",
+          "explanation": "It resulted in China ceding Hong Kong to Britain."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the Soviet architect of 'Glasnost' and 'Perestroika' ending the Cold War?",
+          "a": "Mikhail Gorbachev",
+          "explanation": "His reforms unintentionally led to the dissolution of the Soviet Union."
+        },
+        {
+          "type": "self-eval",
+          "q": "What massive pre-Columbian city in Mesoamerica is known for its Pyramid of the Sun and Avenue of the Dead?",
+          "a": "Teotihuacan",
+          "explanation": "It was already in ruins by the time of the Aztecs."
+        },
+        {
+          "type": "self-eval",
+          "q": "What was the radical Jacobin period during the French Revolution, characterized by mass executions, called?",
+          "a": "The Reign of Terror",
+          "explanation": "Robespierre was its most prominent leading figure."
+        },
+        {
+          "type": "self-eval",
+          "q": "What empire, centered in modern-day Cambodia, built the massive temple complex of Angkor Wat in the 12th century?",
+          "a": "The Khmer Empire",
+          "explanation": "It was originally built as a Hindu temple and later transformed into a Buddhist site."
+        },
+        {
+          "type": "self-eval",
+          "q": "What series of 20th-century trials prosecuted prominent members of the political and military leadership of Nazi Germany?",
+          "a": "The Nuremberg Trials",
+          "explanation": "It was a landmark event in international criminal law."
+        },
+        {
+          "type": "self-eval",
+          "q": "What was the name of the violent anti-Semitic pogrom across Nazi Germany on November 9-10, 1938?",
+          "a": "Kristallnacht (The Night of Broken Glass)",
+          "explanation": "SA paramilitaries and civilians destroyed Jewish businesses, homes, and synagogues."
+        }
+      ]
+    }
+  ]
+}

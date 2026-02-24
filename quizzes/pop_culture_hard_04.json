@@ -1,0 +1,85 @@
+{
+    "id": "pop_culture_hard_04",
+    "title": "Hard Pop Culture Quiz 4",
+    "sections": [
+        {
+            "title": "Pop Culture",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which notoriously grueling 1979 film production, directed by Francis Ford Coppola, faced typhoons, lead actor heart attacks, and rampant substance abuse in the Philippines?",
+                    "options": [
+                        "The Godfather Part II",
+                        "Apocalypse Now",
+                        "The Deer Hunter",
+                        "Platoon"
+                    ],
+                    "a": "Apocalypse Now",
+                    "explanation": "The chaotic production is as famous as the critically acclaimed Vietnam War film itself."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The critically acclaimed 1999 sci-fi film 'The Matrix' was originally conceptualized as a live-action stage play by the Wachowskis.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "It was originally conceptualized entirely as a sprawling comic book series."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The iconic album cover for The Beatles' 'Sgt. Pepper's Lonely Hearts Club Band' famously features a hidden image of a walrus.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "While it features dozens of famous figures and intricate details, there is no hidden walrus."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What deeply obscure, critically lauded late-1990s anime series, directed by Hideaki Anno, famously deconstructs the entire mecha genre?",
+                    "a": "Neon Genesis Evangelion.",
+                    "explanation": "The deeply psychological series focuses heavily on the severe mental trauma experienced by its teenage protagonists."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which pioneering 1980s hip-hop track, released by Grandmaster Flash and the Furious Five, is widely credited as the first politically conscious rap song?",
+                    "a": "The Message.",
+                    "explanation": "Its stark portrayal of inner-city poverty profoundly shifted the exclusively party-centric focus of early hip-hop."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What specific obscure interactive FMV (full-motion video) game, famously starring Mark Hamill, became a notoriously complex cult classic on the PC in 1995?",
+                    "a": "Wing Commander III: Heart of the Tiger.",
+                    "explanation": "It significantly pushed the massively expensive boundaries of live-action video seamlessly integrated into gameplay."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the seminal cyberpunk novel 'Snow Crash', what is the name of the central virtual reality internet space?",
+                    "a": "It is called the 'Metaverse'.",
+                    "explanation": "Author Neal Stephenson coined the term 'Metaverse' in this 1992 novel."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which extremely complex, largely unreadable novel natively written seamlessly by James Joyce is notoriously one of the most difficult works of fiction in the English language?",
+                    "a": "Finnegans Wake.",
+                    "explanation": "The novel blends languages, dream logic, and circular narratives."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What infamous 1982 Atari video game is widely blamed for the North American video game crash?",
+                    "a": "E.T. the Extra-Terrestrial.",
+                    "explanation": "Millions of unsold cartridges were notoriously buried in a New Mexico landfill."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What iconic 1997 album by Radiohead is frequently cited by critics as one of the greatest records of all time for its themes of modern alienation?",
+                    "a": "OK Computer.",
+                    "explanation": "The album pioneered experimental rock and electronica to critical acclaim."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "id": "games_medium_02",
+    "title": "Medium Games Quiz 2",
+    "sections": [
+        {
+            "title": "Games",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "In the board game 'Clue', which of these characters is NOT one of the original six suspects?",
+                    "options": [
+                        "Professor Plum",
+                        "Mrs. White",
+                        "Mr. Boddy",
+                        "Mr. Green"
+                    ],
+                    "a": "Mr. Boddy",
+                    "explanation": "Mr. Boddy is the victim whose murder the players are trying to solve."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The PlayStation 2 remains the best-selling video game console of all time.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "It sold over 155 million units worldwide."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the game 'Codenames', the Spymaster gives multi-word clues to help their team guess correctly.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The Spymaster is strictly limited to one-word clues."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What legendary 1998 video game revolutionized 3D adventure gameplay and featured a protagonist named Link?",
+                    "a": "The Legend of Zelda: Ocarina of Time.",
+                    "explanation": "It introduced mechanics like Z-targeting that became industry standards."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which classic bluffing card game involves getting rid of your cards by lying about what you are playing face-down?",
+                    "a": "Bullshit (or Cheat/I Doubt It).",
+                    "explanation": "If a player is caught lying, they must pick up the entire pile."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What massive online battle arena (MOBA) game created by Riot Games is one of the biggest esports in the world?",
+                    "a": "League of Legends.",
+                    "explanation": "Two teams of five battle to destroy the opponent's core structure, the Nexus."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In tabletop gaming terminology, what does 'meeple' refer to?",
+                    "a": "A small wooden, person-shaped playing piece.",
+                    "explanation": "The term was popularized by the board game Carcassonne."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What wildly successful party game uses black cards with prompts and white cards with offensive or humorous answers?",
+                    "a": "Cards Against Humanity.",
+                    "explanation": "It bills itself as 'a party game for horrible people'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which genre-defining sci-fi video game series features Commander Shepard fighting the Reapers?",
+                    "a": "Mass Effect.",
+                    "explanation": "It is famous for deep story branching based on player choices."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In a standard chess game, how many squares are on the board?",
+                    "a": "64.",
+                    "explanation": "There is an alternating 8x8 grid of light and dark squares."
+                }
+            ]
+        }
+    ]
+}

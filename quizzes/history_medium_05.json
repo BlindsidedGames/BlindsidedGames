@@ -1,0 +1,85 @@
+{
+  "id": "history_medium_05",
+  "title": "Medium History Quiz 5",
+  "sections": [
+    {
+      "title": "History",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which civilization is credited with inventing writing, specifically cuneiform?",
+          "options": [
+            "Ancient Egyptians",
+            "Sumerians",
+            "Indus Valley Civilization",
+            "Minoans"
+          ],
+          "a": "Sumerians",
+          "explanation": "Sumer, located in Mesopotamia, used a stylus on clay tablets."
+        },
+        {
+          "type": "true-false",
+          "q": "The Inquisition was a period of intense religious persecution initiated by the Catholic Church.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "The Spanish Inquisition is the most infamous example, aiming to root out heresy."
+        },
+        {
+          "type": "true-false",
+          "q": "Fidel Castro was forced out of power during the Bay of Pigs invasion.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "The CIA-sponsored invasion in 1961 failed, and Castro remained in power."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the name of the treaty that formally ended World War I?",
+          "a": "The Treaty of Versailles",
+          "explanation": "It placed heavy reparations and blame on Germany."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the longest-serving US President, elected to four terms?",
+          "a": "Franklin D. Roosevelt",
+          "explanation": "The 22nd Amendment later limited presidents to two terms."
+        },
+        {
+          "type": "self-eval",
+          "q": "What massive empire conquered Constantinople in 1453, ending the Byzantine Empire?",
+          "a": "The Ottoman Empire",
+          "explanation": "Under the leadership of Mehmed the Conqueror."
+        },
+        {
+          "type": "self-eval",
+          "q": "During which US historical era was alcohol illegal to sell or produce?",
+          "a": "Prohibition",
+          "explanation": "It was enforced by the 18th Amendment and lasted from 1920 to 1933."
+        },
+        {
+          "type": "self-eval",
+          "q": "What renowned general crossed the Alps with elephants to attack Rome?",
+          "a": "Hannibal (of Carthage)",
+          "explanation": "This occurred during the Second Punic War."
+        },
+        {
+          "type": "self-eval",
+          "q": "What was the name of the intellectual and cultural movement in the 18th century emphasizing reason over tradition?",
+          "a": "The Enlightenment",
+          "explanation": "It heavily influenced the American and French Revolutions."
+        },
+        {
+          "type": "self-eval",
+          "q": "In 1917, what message from Germany to Mexico proposed a military alliance against the US?",
+          "a": "The Zimmermann Telegram",
+          "explanation": "Its interception and publication helped draw the US into WWI."
+        }
+      ]
+    }
+  ]
+}

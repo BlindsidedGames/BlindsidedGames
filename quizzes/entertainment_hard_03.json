@@ -1,0 +1,85 @@
+{
+    "id": "entertainment_hard_03",
+    "title": "Hard Entertainment Quiz 3",
+    "sections": [
+        {
+            "title": "Entertainment",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which infamous 1932 horror film featuring real carnival sideshow performers was banned in the UK for decades?",
+                    "options": [
+                        "Nosferatu",
+                        "Freaks",
+                        "The Island of Lost Souls",
+                        "Vampyr"
+                    ],
+                    "a": "Freaks",
+                    "explanation": "Tod Browning's film shocked contemporary audiences and severely damaged his career."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The iconic 'Sgt. Pepper' album cover features the Beatles holding brass instruments.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "They pose in colorful marching band uniforms holding various brass and woodwind instruments."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Walt Disney personally won more Academy Awards than any other individual in history.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Disney won 22 competitive Oscars and several honorary ones."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the common cinematic term used to describe a story structure that begins in the middle of the action?",
+                    "a": "In media res.",
+                    "explanation": "It drops the audience directly into the plot without prior exposition."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who directed the deeply unsettling 1977 horror film 'Eraserhead'?",
+                    "a": "David Lynch.",
+                    "explanation": "The low-budget surrealist film established his signature bizarre style."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What experimental 1967 Velvet Underground album, featuring Nico, sold poorly initially but influenced countless punk bands?",
+                    "a": "The Velvet Underground & Nico.",
+                    "explanation": "It famously features the Andy Warhol banana print on the cover."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In theatrical stage directions, what does 'downstage' mean?",
+                    "a": "The area of the stage closest to the audience.",
+                    "explanation": "The term comes from historical stages that were physically raked downward toward the crowd."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which massive 1982 album by Michael Jackson remains the best-selling album of all time?",
+                    "a": "Thriller.",
+                    "explanation": "It produced seven top-ten singles and revolutionized music videos."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What pioneering 1993 game heavily popularized the first-person shooter genre on PC?",
+                    "a": "Doom.",
+                    "explanation": "Developed by id Software, it set the standard for 3D action games."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which influential playwright wrote 'Death of a Salesman' and 'The Crucible'?",
+                    "a": "Arthur Miller.",
+                    "explanation": "His plays rigorously critiqued the American Dream and political hysteria."
+                }
+            ]
+        }
+    ]
+}

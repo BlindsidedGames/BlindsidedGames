@@ -1,0 +1,85 @@
+{
+  "id": "biology_easy_01",
+  "title": "Easy Biology Quiz 1",
+  "sections": [
+    {
+      "title": "Biology",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which of these animals is not a mammal?",
+          "options": [
+            "Dog",
+            "Dolphin",
+            "Penguin",
+            "Bat"
+          ],
+          "a": "Penguin",
+          "explanation": "Penguins are birds, not mammals."
+        },
+        {
+          "type": "true-false",
+          "q": "All plants have flowers.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Many plants, such as ferns and mosses, do not produce flowers."
+        },
+        {
+          "type": "true-false",
+          "q": "Snakes are invertebrates.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Snakes are reptiles and they have backbones."
+        },
+        {
+          "type": "self-eval",
+          "q": "What part of the plant absorbs water and nutrients from the soil?",
+          "a": "Roots",
+          "explanation": "Roots anchor the plant and absorb essential materials."
+        },
+        {
+          "type": "self-eval",
+          "q": "What do we call the process of a caterpillar turning into a butterfly?",
+          "a": "Metamorphosis",
+          "explanation": "It's the physical transformation insects undergo."
+        },
+        {
+          "type": "self-eval",
+          "q": "What organ helps fish breathe underwater?",
+          "a": "Gills",
+          "explanation": "Gills extract dissolved oxygen from the water."
+        },
+        {
+          "type": "self-eval",
+          "q": "Are spiders insects?",
+          "a": "No, they are arachnids",
+          "explanation": "Insects have six legs; arachnids have eight."
+        },
+        {
+          "type": "self-eval",
+          "q": "What kind of animal has feathers?",
+          "a": "A bird",
+          "explanation": "Feathers are a distinguishing characteristic of birds."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the largest living animal?",
+          "a": "The blue whale",
+          "explanation": "Blue whales are enormous marine mammals."
+        },
+        {
+          "type": "self-eval",
+          "q": "What do plants need from the sun?",
+          "a": "Light energy",
+          "explanation": "Sunlight is vital for photosynthesis."
+        }
+      ]
+    }
+  ]
+}

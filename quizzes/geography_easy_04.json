@@ -1,0 +1,85 @@
+{
+    "id": "geography_easy_04",
+    "title": "Easy Geography Quiz 4",
+    "sections": [
+        {
+            "title": "Geography",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which of these countries is well known for producing a large amount of the world's maple syrup?",
+                    "options": [
+                        "Brazil",
+                        "Canada",
+                        "Australia",
+                        "Germany"
+                    ],
+                    "a": "Canada",
+                    "explanation": "The province of Quebec alone produces the vast majority of the world's maple syrup supply."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The Pyramids of Giza are located in India.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "The Pyramids of Giza are located in Egypt, near the capital city of Cairo."
+                },
+                {
+                    "type": "true-false",
+                    "q": "A globe is a spherical, three-dimensional model of the Earth.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Globes provide an accurate representation of the Earth’s surface, unlike 2D maps which introduce distortions."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the capital city of Italy?",
+                    "a": "Rome.",
+                    "explanation": "Rome is famously home to the Colosseum and completely surrounds the independent city-state of Vatican City."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What large landmass lies immediately to the south of the United States?",
+                    "a": "Mexico (or more broadly, Central/South America).",
+                    "explanation": "Mexico shares a long, continuous border with four southern U.S. states."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Describe what a map 'legend' or 'key' does.",
+                    "a": "A map legend explains the meaning of the various symbols, lines, and colors used on a particular map.",
+                    "explanation": "This makes decoding the map's information possible."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which state in the USA is completely surrounded by the Pacific Ocean?",
+                    "a": "Hawaii.",
+                    "explanation": "It is an archipelago comprised of numerous distinct volcanic islands."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is an oasis?",
+                    "a": "An oasis is a fertile spot in an otherwise dry desert environment where water surfaces from an underground aquifer.",
+                    "explanation": "Oases often serve as critical resting and watering hubs for desert travelers and wildlife."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which continent is Egypt located in?",
+                    "a": "Africa.",
+                    "explanation": "Egypt links northeast Africa with the Middle East (Asia), making it a transcontinental country."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What are the massive bodies of saltwater that cover most of the Earth called?",
+                    "a": "Oceans.",
+                    "explanation": "Nearly 71% of the Earth's surface is covered by marine oceans."
+                }
+            ]
+        }
+    ]
+}

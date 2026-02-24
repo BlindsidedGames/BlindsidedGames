@@ -1,0 +1,85 @@
+{
+  "id": "science_medium_06",
+  "title": "Medium Science Quiz 5",
+  "sections": [
+    {
+      "title": "Science",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which part of the eye controls the amount of light entering?",
+          "options": [
+            "Retina",
+            "Lens",
+            "Iris",
+            "Cornea"
+          ],
+          "a": "Iris",
+          "explanation": "The iris expands and contracts to alter the pupil size."
+        },
+        {
+          "type": "true-false",
+          "q": "All metals are solid at room temperature.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Mercury is a metal that is liquid at room temperature."
+        },
+        {
+          "type": "true-false",
+          "q": "Saturn is the only planet with rings.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Jupiter, Uranus, and Neptune also have ring systems."
+        },
+        {
+          "type": "self-eval",
+          "q": "What gas causes the greenhouse effect on Venus?",
+          "a": "Carbon dioxide",
+          "explanation": "Its thick CO2 atmosphere creates a runaway greenhouse effect."
+        },
+        {
+          "type": "self-eval",
+          "q": "What do we call an organism that feeds on dead material?",
+          "a": "Decomposer / Scavenger",
+          "explanation": "Fungi and bacteria are major decomposers."
+        },
+        {
+          "type": "self-eval",
+          "q": "What metric unit is used to measure force?",
+          "a": "Newton",
+          "explanation": "Named after Isaac Newton (N)."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the primary function of red blood cells?",
+          "a": "Transporting oxygen",
+          "explanation": "Hemoglobin in red blood cells binds to oxygen."
+        },
+        {
+          "type": "self-eval",
+          "q": "What type of wave is an earthquake's primary wave?",
+          "a": "Seismic wave (compressional/longitudinal)",
+          "explanation": "P-waves are the fastest seismic waves."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the phase of cell division where one cell divides into two identical cells.",
+          "a": "Mitosis",
+          "explanation": "Mitosis produces somatic cells."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the most common element in the universe?",
+          "a": "Hydrogen",
+          "explanation": "Hydrogen makes up about 75% of the universe's elemental mass."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+    "id": "entertainment_hard_05",
+    "title": "Hard Entertainment Quiz 5",
+    "sections": [
+        {
+            "title": "Entertainment",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which acclaimed author famously wrote the novel 'Fight Club', the basis for the 1999 film?",
+                    "options": [
+                        "Bret Easton Ellis",
+                        "Chuck Palahniuk",
+                        "Irvine Welsh",
+                        "Don DeLillo"
+                    ],
+                    "a": "Chuck Palahniuk",
+                    "explanation": "His transgressive novel formed the basis of David Fincher's film."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The iconic musical theme for 'The Twilight Zone' was originally composed specifically for the show.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "It was compiled from two existing stock music library tracks."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The original cut of 'Blade Runner' featured voiceover narration by Harrison Ford.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "Studio executives forced the inclusion to help audiences understand the plot."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What incredibly rare NES video game cartridge was distributed only as a prize for a 1990 contest?",
+                    "a": "Nintendo World Championships (Gold Cartridge).",
+                    "explanation": "Only 26 were officially given out in a specific gold shell."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which legendary experimental film director made the highly controversial 1929 surrealist short film 'Un Chien Andalou'?",
+                    "a": "Luis Buñuel.",
+                    "explanation": "He co-wrote it with Salvador Dalí."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What 1982 cult sci-fi film is famous for practically birthing the cyberpunk aesthetic on screen?",
+                    "a": "Blade Runner.",
+                    "explanation": "Its rainy, neon-drenched futuristic Los Angeles heavily defined the genre."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which infamous 1930s Hollywood censorship code strictly dictated moral guidelines for major studio films?",
+                    "a": "The Hays Code.",
+                    "explanation": "It heavily strictly regulated depictions of sex, violence, and crime."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the common term for a movie shot specifically to look exactly like a single, continuous, unbroken take?",
+                    "a": "A one-shot film (or long take).",
+                    "explanation": "Examples include 'Rope', 'Birdman', and '1917'."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which pioneering black filmmaker directed early 'race films' like 'Within Our Gates'?",
+                    "a": "Oscar Micheaux.",
+                    "explanation": "He was the first major African-American feature filmmaker."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What highly influential electronic music ensemble famously popularized the use of pure synthesizer-driven pop music from Germany?",
+                    "a": "Kraftwerk.",
+                    "explanation": "Their robotic image and sound laid the groundwork for modern electronic music."
+                }
+            ]
+        }
+    ]
+}

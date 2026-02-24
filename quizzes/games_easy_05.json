@@ -1,0 +1,85 @@
+{
+    "id": "games_easy_05",
+    "title": "Easy Games Quiz 5",
+    "sections": [
+        {
+            "title": "Games",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "In the board game 'Connect 4', how many tokens of the same color must a player line up horizontally, vertically, or diagonally to win?",
+                    "options": [
+                        "3",
+                        "4",
+                        "5",
+                        "6"
+                    ],
+                    "a": "4",
+                    "explanation": "The goal is to connect four pieces before your opponent does."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The classic arcade game 'Space Invaders' involves shooting descending rows of alien ships.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The game speeds up as you destroy more aliens."
+                },
+                {
+                    "type": "true-false",
+                    "q": "In the party game 'Charades', players are encouraged to speak loudly to help their team guess the word.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "Players must act out the word silently, using only gestures."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What popular 1980s puzzle toy features six faces, each made up of nine colored squares that can be rotated?",
+                    "a": "The Rubik's Cube.",
+                    "explanation": "The objective is to return the cube to its original state, with each face a single color."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which life simulation board game features small plastic cars that you fill with pink and blue pegs representing family members?",
+                    "a": "The Game of Life (or Life).",
+                    "explanation": "Players navigate the track, going to college, getting jobs, and retiring."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What globally popular card game uses cards numbered 1-9 in four colors, plus wild cards, reverses, and 'Draw 2' cards?",
+                    "a": "Uno.",
+                    "explanation": "The game was created in 1971 and is a staple in many households."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What classic Hasbro game involves trying to sink your opponent's plastic naval fleet on a pegged grid?",
+                    "a": "Battleship.",
+                    "explanation": "Players call out grid coordinates to find hidden ships."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In the video game 'Super Mario Bros.', what power-up allows Mario to throw fireballs?",
+                    "a": "The Fire Flower.",
+                    "explanation": "It changes Mario's outfit to white and red."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What popular 'hide and seek' style playground game formally involves one player closing their eyes, counting, and then finding others?",
+                    "a": "Hide and Seek.",
+                    "explanation": "The seeker counts at 'home base' while the hiders conceal themselves."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What incredibly successful Nintendo console featured a tablet-like controller with a built-in touchscreen?",
+                    "a": "The Wii U.",
+                    "explanation": "While it had a tablet, the later Nintendo Switch would perfect the hybrid concept."
+                }
+            ]
+        }
+    ]
+}

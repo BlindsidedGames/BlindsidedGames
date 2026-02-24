@@ -1,0 +1,85 @@
+{
+  "id": "history_hard_02",
+  "title": "Hard History Quiz 2",
+  "sections": [
+    {
+      "title": "History",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "The Taiping Rebellion was a massive civil war in which country?",
+          "options": [
+            "Japan",
+            "China",
+            "Russia",
+            "India"
+          ],
+          "a": "China",
+          "explanation": "Lasting from 1850 to 1864, it was one of the deadliest conflicts in history, fought against the Qing dynasty."
+        },
+        {
+          "type": "true-false",
+          "q": "The Meiji Restoration returned actual political power to and modernized the military of Japan in the mid-19th century.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "It moved Japan from an isolated feudal society to modern industrialized nation."
+        },
+        {
+          "type": "true-false",
+          "q": "The War of the Roses was fought between England and France.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "It was a series of English civil wars for control of the throne involving the Houses of Lancaster and York."
+        },
+        {
+          "type": "self-eval",
+          "q": "What global pandemic killed an estimated 50 million people worldwide between 1918 and 1920?",
+          "a": "The Spanish Flu (1918 influenza pandemic)",
+          "explanation": "Despite the name, it did not originate in Spain."
+        },
+        {
+          "type": "self-eval",
+          "q": "What agreement signed in 1648 is considered by scholars to mark the beginning of the modern system of sovereign states?",
+          "a": "The Peace of Westphalia",
+          "explanation": "It ended the Thirty Years' War and the Eighty Years' War."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the Ethiopian Emperor whose appeal to the League of Nations for help against Italian invasion in 1936 was famously ignored?",
+          "a": "Haile Selassie",
+          "explanation": "His speech warned that if action wasn't taken, other nations would fall next."
+        },
+        {
+          "type": "self-eval",
+          "q": "What ancient empire, centered in modern-day Iran, was eventually conquered by Alexander the Great?",
+          "a": "The Achaemenid Empire (First Persian Empire)",
+          "explanation": "It was founded by Cyrus the Great."
+        },
+        {
+          "type": "self-eval",
+          "q": "What economic philosophy regarding trade, prominent from the 16th to 18th century, emphasized maximizing exports and accumulating bullion?",
+          "a": "Mercantilism",
+          "explanation": "It drove European colonial expansion."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the female Prime Minister of India who was assassinated by her bodyguards in 1984?",
+          "a": "Indira Gandhi",
+          "explanation": "She led India during crucial moments, including the creation of Bangladesh."
+        },
+        {
+          "type": "self-eval",
+          "q": "What uprising by a secret society in China sought to drive out all foreigners and foreign influence in 1900?",
+          "a": "The Boxer Rebellion",
+          "explanation": "It was suppressed by an Eight-Nation Alliance of foreign powers."
+        }
+      ]
+    }
+  ]
+}

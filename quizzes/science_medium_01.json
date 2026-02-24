@@ -1,0 +1,85 @@
+{
+    "id": "science_medium_01",
+    "title": "Medium Science Quiz 1",
+    "sections": [
+        {
+            "title": "Science",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "What is the second most abundant element in the Earth's atmosphere?",
+                    "a": "Oxygen",
+                    "options": [
+                        "Nitrogen",
+                        "Oxygen",
+                        "Argon",
+                        "Carbon Dioxide"
+                    ],
+                    "explanation": "Nitrogen is first at ~78%, followed by oxygen at ~21%."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Electrons are smaller than atoms.",
+                    "a": "True",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "explanation": "Electrons are subatomic particles found in atoms."
+                },
+                {
+                    "type": "true-false",
+                    "q": "Sound travels faster in air than in water.",
+                    "a": "False",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "explanation": "Sound actually travels about four times faster in water."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What planet in our solar system is known for its prominent ring system?",
+                    "a": "Saturn",
+                    "explanation": "The rings are mostly made of ice chunks and rocks."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the hardest naturally occurring substance on Earth?",
+                    "a": "Diamond",
+                    "explanation": "It is formed by pure crystalline carbon."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "At what temperature are Celsius and Fahrenheit equal?",
+                    "a": "-40 degrees",
+                    "explanation": "The formulas for converting them intersect precisely at -40."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the process by which a caterpillar turns into a butterfly?",
+                    "a": "Metamorphosis",
+                    "explanation": "It undergoes four life stages: egg, larva, pupa, and adult."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What gas do plants primarily absorb during photosynthesis?",
+                    "a": "Carbon Dioxide (CO2)",
+                    "explanation": "They convert it into glucose, releasing oxygen."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Who developed the theory of general relativity?",
+                    "a": "Albert Einstein",
+                    "explanation": "He published it in 1915, revolutionizing physics."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What organ is primarily responsible for pumping blood throughout the human body?",
+                    "a": "The Heart",
+                    "explanation": "It averages about 100,000 beats per day."
+                }
+            ]
+        }
+    ]
+}

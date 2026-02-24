@@ -1,0 +1,85 @@
+{
+  "id": "history_hard_04",
+  "title": "Hard History Quiz 4",
+  "sections": [
+    {
+      "title": "History",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Who was the leader of the Haitian Revolution, which led to the first free colonial society rejecting race as the basis of social ranking?",
+          "options": [
+            "Sim\u00f3n Bol\u00edvar",
+            "Toussaint Louverture",
+            "Jean-Jacques Dessalines",
+            "Jos\u00e9 de San Mart\u00edn"
+          ],
+          "a": "Toussaint Louverture",
+          "explanation": "He successfully transformed a slave insurgency into a revolutionary movement."
+        },
+        {
+          "type": "true-false",
+          "q": "The Holy Roman Empire was effectively dissolved following the Napoleonic Wars in 1806.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "Emperor Francis II abdicated after the decisive Battle of Austerlitz."
+        },
+        {
+          "type": "true-false",
+          "q": "The Sepoy Mutiny (or First War of Indian Independence) occurred against French colonial rule in India.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "It was against the British East India Company in 1857."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the name of the period in Japanese history (794 to 1185) noted for its highly refined art, poetry, and literature at the imperial court?",
+          "a": "The Heian period",
+          "explanation": "The 'Tale of Genji' was written during this time."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the prominent Carthaginian commander known for his brilliant tactics at the Battle of Cannae during the Second Punic War?",
+          "a": "Hannibal Barca",
+          "explanation": "Cannae is considered one of the greatest tactical masterpieces in military history."
+        },
+        {
+          "type": "self-eval",
+          "q": "What conference in 1884-1885 regulated European colonization and trade in Africa, launching the 'Scramble for Africa'?",
+          "a": "The Berlin Conference",
+          "explanation": "It disregarded existing linguistic and cultural boundaries."
+        },
+        {
+          "type": "self-eval",
+          "q": "What was the system of forced labor imposed by the Spanish on indigenous peoples in the Americas?",
+          "a": "The Encomienda system",
+          "explanation": "It granted conquerors the right to extract tribute and labor."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who was the dominant figure of the Congress of Vienna, a conservative Austrian statesman seeking to restore pre-Napoleonic borders?",
+          "a": "Klemens von Metternich",
+          "explanation": "He architected the 'Concert of Europe'."
+        },
+        {
+          "type": "self-eval",
+          "q": "What was the name of the catastrophic famine in Ireland during the mid-19th century caused by potato blight?",
+          "a": "The Great Famine (or Irish Potato Famine)",
+          "explanation": "It caused massive emigration and up to a million deaths."
+        },
+        {
+          "type": "self-eval",
+          "q": "What was the final, decisive battle of the Vietnam War involving French forces in 1954?",
+          "a": "The Battle of Dien Bien Phu",
+          "explanation": "The French defeat led to their withdrawal from Indochina."
+        }
+      ]
+    }
+  ]
+}

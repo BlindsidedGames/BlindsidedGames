@@ -1,0 +1,85 @@
+{
+  "id": "science_hard_01",
+  "title": "Hard Science Quiz 1",
+  "sections": [
+    {
+      "title": "Science",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "What is the theoretical temperature at which all molecular motion stops?",
+          "options": [
+            "0 Fahrenheit",
+            "0 Celsius",
+            "0 Kelvin",
+            "-100 Celsius"
+          ],
+          "a": "0 Kelvin",
+          "explanation": "Absolute zero (0 K) is -273.15 degrees Celsius."
+        },
+        {
+          "type": "true-false",
+          "q": "There is no gravity on the International Space Station.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Gravity is approximately 90% as strong there; objects fall at the same rate the ISS orbits, causing weightlessness."
+        },
+        {
+          "type": "true-false",
+          "q": "Fungi perform photosynthesis to produce their own food.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Fungi are heterotrophs and absorb nutrients from other organisms."
+        },
+        {
+          "type": "self-eval",
+          "q": "What principle states that you cannot simultaneously know the exact position and momentum of a particle?",
+          "a": "Heisenberg Uncertainty Principle",
+          "explanation": "Introduced by Werner Heisenberg in quantum mechanics."
+        },
+        {
+          "type": "self-eval",
+          "q": "What type of chemical bond involves the sharing of electron pairs between atoms?",
+          "a": "Covalent bond",
+          "explanation": "This allows atoms to have a full outer shell."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the name of the most massive officially recognized dwarf planet?",
+          "a": "Pluto",
+          "explanation": "Eris is also extremely massive, but Pluto is slightly larger by volume."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the term for an organism's ability to maintain a stable internal environment?",
+          "a": "Homeostasis",
+          "explanation": "This involves regulating temperature, pH, etc."
+        },
+        {
+          "type": "self-eval",
+          "q": "What law states that for every action, there is an equal and opposite reaction?",
+          "a": "Newton's Third Law of Motion",
+          "explanation": "Forces always occur in pairs."
+        },
+        {
+          "type": "self-eval",
+          "q": "What organelle is known as the suicide sac of the cell?",
+          "a": "Lysosome",
+          "explanation": "It contains digestive enzymes that can break down the cell itself."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who first formulated the germ theory of disease?",
+          "a": "Louis Pasteur",
+          "explanation": "He linked microscopic pathogens to infectious diseases."
+        }
+      ]
+    }
+  ]
+}

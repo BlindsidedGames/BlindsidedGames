@@ -1,0 +1,85 @@
+{
+    "id": "geography_medium_03",
+    "title": "Medium Geography Quiz 3",
+    "sections": [
+        {
+            "title": "Geography",
+            "items": [
+                {
+                    "type": "multiple-choice",
+                    "q": "Which country has the longest natural coastline in the world?",
+                    "options": [
+                        "Russia",
+                        "Australia",
+                        "Canada",
+                        "Indonesia"
+                    ],
+                    "a": "Canada",
+                    "explanation": " Canada's intensely rugged and intricate geography gives it over 151,000 miles of coastline, vastly exceeding any other nation."
+                },
+                {
+                    "type": "true-false",
+                    "q": "The city of Istanbul uniquely sits on the landmasses of both Europe and Asia.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "True",
+                    "explanation": "The Bosphorus strait divides the city geographically between the two continents."
+                },
+                {
+                    "type": "true-false",
+                    "q": "New Zealand is comprised primarily of three main islands.",
+                    "options": [
+                        "True",
+                        "False"
+                    ],
+                    "a": "False",
+                    "explanation": "New Zealand's landmass is primarily comprised of two main islands: the North Island and the South Island."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What massive man-made structure in China was built primarily to protect its northern borders?",
+                    "a": "The Great Wall of China.",
+                    "explanation": "Its construction began as early as the 7th century BC and continued extensively during the Ming Dynasty."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Name the deepest known point in the Earth's oceans.",
+                    "a": "The Mariana Trench (specifically Challenger Deep).",
+                    "explanation": "It reaches a maximum known depth of nearly 36,000 feet in the western Pacific."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the difference between latitude and longitude?",
+                    "a": "Latitude lines run horizontally east-west and measure north-south position. Longitude lines run vertically north-south and measure east-west position.",
+                    "explanation": "Together, they form a grid that maps coordinates globally."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "Which large South American country is long and extremely narrow, dominating the continent's western edge?",
+                    "a": "Chile.",
+                    "explanation": "It lies wedged strictly between the Andes mountains to the east and the Pacific Ocean to the west."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is a 'tributary'?",
+                    "a": "A tributary is a smaller freshwater stream or river that flows into a larger main river, ocean, or lake.",
+                    "explanation": "Tributaries do not flow directly into an ocean or sea themselves."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "In which US state would you find the active volcano Mount Kilauea?",
+                    "a": "Hawaii.",
+                    "explanation": "It is one of the most active volcanoes in the world globally, constantly reshaping the Big Island."
+                },
+                {
+                    "type": "self-eval",
+                    "q": "What is the capital city of Germany?",
+                    "a": "Berlin.",
+                    "explanation": "It physically reunited as the capital following the fall of the Berlin Wall in 1989."
+                }
+            ]
+        }
+    ]
+}
