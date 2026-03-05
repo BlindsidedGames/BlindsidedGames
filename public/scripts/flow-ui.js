@@ -53,6 +53,12 @@ if (rail instanceof HTMLElement && railToggle instanceof HTMLButtonElement) {
     const currentlyCollapsed = rail.dataset.collapsed === 'true';
     setRailCollapsed(!currentlyCollapsed);
   });
+
+  rail.querySelectorAll('.rail-item').forEach((item) => {
+    item.addEventListener('click', () => {
+      setRailCollapsed(true);
+    });
+  });
 }
 
 const pieToggle = document.querySelector('[data-pie-toggle]');
@@ -105,48 +111,57 @@ const updateActiveSection = (activeId) => {
 };
 
 if (sectionElements.length > 0) {
-  if (prefersReducedMotion) {
-    const firstId = sectionElements[0].getAttribute('data-section-id') || '';
-    updateActiveSection(firstId);
-    sectionElements.forEach((section) => section.classList.add('is-current'));
-  } else {
-    const visibilityMap = new Map();
+  const syncActiveSection = () => {
+    // Keep active state tied to the section nearest the top anchor line.
+    const anchorY = window.scrollY + 96;
+    let activeId = sectionElements[0].getAttribute('data-section-id') || '';
 
-    const sectionObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const id = entry.target.getAttribute('data-section-id');
-          if (!id) return;
-          visibilityMap.set(id, entry.intersectionRatio);
-        });
-
-        let bestId = sectionElements[0].getAttribute('data-section-id') || '';
-        let bestRatio = -1;
-
-        visibilityMap.forEach((ratio, id) => {
-          if (ratio > bestRatio) {
-            bestRatio = ratio;
-            bestId = id;
-          }
-        });
-
-        if (bestId) updateActiveSection(bestId);
-      },
-      {
-        threshold: [0.2, 0.4, 0.55, 0.7],
-        rootMargin: '-12% 0px -32% 0px'
+    for (const section of sectionElements) {
+      const id = section.getAttribute('data-section-id');
+      if (!id) continue;
+      if (section.offsetTop <= anchorY) {
+        activeId = id;
+      } else {
+        break;
       }
-    );
+    }
 
-    sectionElements.forEach((section) => sectionObserver.observe(section));
-  }
+    if (activeId) updateActiveSection(activeId);
+  };
+
+  let activeSyncQueued = false;
+  const queueActiveSync = () => {
+    if (activeSyncQueued) return;
+    activeSyncQueued = true;
+    window.requestAnimationFrame(() => {
+      activeSyncQueued = false;
+      syncActiveSection();
+    });
+  };
+
+  window.addEventListener('scroll', queueActiveSync, { passive: true });
+  window.addEventListener('resize', queueActiveSync);
+  window.addEventListener('hashchange', queueActiveSync);
+
+  document.querySelectorAll('[data-nav-item]').forEach((item) => {
+    item.addEventListener('click', () => {
+      const targetId = item.getAttribute('data-nav-item');
+      if (targetId) updateActiveSection(targetId);
+      queueActiveSync();
+    });
+  });
+
+  queueActiveSync();
 }
 
 const modal = document.querySelector('[data-contact-modal]');
 const dialog = document.querySelector('[data-contact-dialog]');
 const openModalTriggers = document.querySelectorAll('[data-open-contact]');
 const closeModalTriggers = document.querySelectorAll('[data-contact-close]');
+const turnstileContainer = document.querySelector('[data-turnstile-widget]');
+const turnstileFieldError = document.querySelector('[data-field-error="turnstileToken"]');
 let lastFocusedElement = null;
+let turnstileWidgetId = null;
 
 const getFocusableElements = () => {
   if (!(dialog instanceof HTMLElement)) return [];
@@ -167,6 +182,36 @@ const syncContactUrl = (isOpen) => {
   window.history.replaceState({}, '', `${url.pathname}${url.search}${url.hash}`);
 };
 
+const setTurnstileFieldError = (message) => {
+  if (!(turnstileFieldError instanceof HTMLElement)) return;
+  turnstileFieldError.textContent = message;
+};
+
+const renderTurnstileIfNeeded = () => {
+  if (!(turnstileContainer instanceof HTMLElement)) return;
+  if (turnstileWidgetId !== null) return;
+  if (!(window.turnstile && typeof window.turnstile.render === 'function')) return;
+
+  const siteKey = turnstileContainer.dataset.sitekey;
+  if (!siteKey) {
+    setTurnstileFieldError('Turnstile is not configured for this environment.');
+    return;
+  }
+
+  try {
+    turnstileWidgetId = window.turnstile.render(turnstileContainer, {
+      sitekey: siteKey,
+      callback: window.onTurnstileSuccess,
+      'expired-callback': window.onTurnstileExpired,
+      'error-callback': window.onTurnstileError
+    });
+    setTurnstileFieldError('');
+  } catch {
+    turnstileWidgetId = null;
+    setTurnstileFieldError('Turnstile failed to load. Disable blockers and retry.');
+  }
+};
+
 const openContactModal = (updateUrl = true) => {
   if (!(modal instanceof HTMLElement) || !(dialog instanceof HTMLElement)) return;
   lastFocusedElement = document.activeElement;
@@ -174,6 +219,8 @@ const openContactModal = (updateUrl = true) => {
   modal.classList.add('is-open');
   document.body.classList.add('modal-open');
   if (updateUrl) syncContactUrl(true);
+
+  renderTurnstileIfNeeded();
 
   const focusable = getFocusableElements();
   if (focusable.length > 0 && focusable[0] instanceof HTMLElement) {
@@ -269,3 +316,21 @@ window.addEventListener('popstate', () => {
     closeContactModal(false);
   }
 });
+
+if (!(window.turnstile && typeof window.turnstile.render === 'function')) {
+  const waitForTurnstile = window.setInterval(() => {
+    if (window.turnstile && typeof window.turnstile.render === 'function') {
+      window.clearInterval(waitForTurnstile);
+      renderTurnstileIfNeeded();
+    }
+  }, 200);
+
+  window.setTimeout(() => {
+    window.clearInterval(waitForTurnstile);
+    if (turnstileWidgetId === null) {
+      setTurnstileFieldError('Turnstile failed to load. Disable blockers and retry.');
+    }
+  }, 5000);
+} else {
+  renderTurnstileIfNeeded();
+}

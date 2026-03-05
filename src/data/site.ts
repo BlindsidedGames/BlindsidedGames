@@ -82,9 +82,8 @@ export const SINGLE_FLOW_NAV_ITEMS: SingleFlowNavItem[] = [
   {
     id: 'contact',
     label: 'Contact',
-    kind: 'section',
-    href: '#contact',
-    sectionId: 'contact',
+    kind: 'action',
+    action: 'open-contact',
     iconClass: 'fa-solid fa-envelope'
   }
 ];

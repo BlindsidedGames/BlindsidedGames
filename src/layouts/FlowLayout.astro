@@ -85,7 +85,7 @@ const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '1x0000000
         if (tokenInput instanceof HTMLInputElement) tokenInput.value = '';
       };
     </script>
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
     <script type="module" src="/scripts/contact-form.js"></script>
     <script type="module" src="/scripts/flow-ui.js"></script>
     <script type="module" src="/scripts/dot-field.js"></script>

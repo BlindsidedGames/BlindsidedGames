@@ -275,8 +275,6 @@ li + li {
   min-height: clamp(20rem, 46svh, 31rem);
   display: grid;
   align-items: start;
-  scroll-snap-align: start;
-  scroll-snap-stop: normal;
   opacity: 0.58;
   transform: translateY(1.4vh) scale(0.992);
   transition: opacity 460ms ease, transform 460ms ease;
@@ -324,6 +322,22 @@ li + li {
   background: rgba(18, 20, 30, 0.92);
   box-shadow: 0 0 0 3px rgba(10, 12, 18, 0.74);
   pointer-events: none;
+}
+
+.flow-section[data-section-id='family'],
+.flow-section[data-section-id='vision'],
+.flow-section[data-section-id='ai'],
+.flow-section[data-section-id='support'],
+.flow-section[data-section-id='contact'] {
+  min-height: auto;
+}
+
+.flow-section[data-section-id='support'] {
+  padding-bottom: clamp(0.25rem, 0.8vh, 0.55rem);
+}
+
+.flow-section[data-section-id='contact'] {
+  padding-bottom: 0;
 }
 
 .section-shell {
@@ -438,7 +452,7 @@ li + li {
   border: 1px solid rgba(255, 255, 255, 0.1);
   min-height: 0;
   height: 118px;
-  align-self: start;
+  align-self: end;
 }
 
 .game-showcase-media img {
@@ -449,7 +463,9 @@ li + li {
 
 .game-showcase-copy {
   display: grid;
+  grid-template-rows: auto 1fr auto;
   gap: 0.48rem;
+  min-height: 100%;
 }
 
 .game-showcase-meta {
@@ -633,6 +649,11 @@ li + li {
   margin-bottom: 0.25rem;
 }
 
+.contact-form-title {
+  font-size: clamp(1.12rem, 1.6vw, 1.36rem);
+  color: var(--text-1);
+}
+
 .contact-form label {
   color: var(--text-1);
   font-weight: 700;
@@ -742,13 +763,6 @@ a:focus-visible {
   outline: none;
   border-color: color-mix(in srgb, var(--accent), transparent 20%);
   box-shadow: 0 0 0 3px rgba(171, 158, 224, 0.24);
-}
-
-@media (min-width: 861px) {
-  html {
-    scroll-snap-type: y proximity;
-    scroll-padding-top: 0;
-  }
 }
 
 @media (max-width: 1100px) {

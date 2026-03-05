@@ -4,6 +4,7 @@ import { SINGLE_FLOW_NAV_ITEMS, type SingleFlowNavItem } from '../data/site';
 const pieNavItems = SINGLE_FLOW_NAV_ITEMS.filter((item) => item.kind !== 'external');
 
 const isSection = (item: SingleFlowNavItem) => item.kind === 'section';
+const isAction = (item: SingleFlowNavItem) => item.kind === 'action';
 ---
 
 <aside class="side-rail" data-side-rail data-collapsed="true" aria-label="Primary navigation rail">

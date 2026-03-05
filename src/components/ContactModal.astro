@@ -19,7 +19,6 @@ const { turnstileSiteKey } = Astro.props;
   >
     <header class="contact-dialog-head">
       <div>
-        <p class="eyebrow">Contact</p>
         <h2 id="contact-dialog-title">Get in Touch</h2>
       </div>
       <button class="icon-button" type="button" aria-label="Close contact panel" data-contact-close>
@@ -34,13 +33,13 @@ const { turnstileSiteKey } = Astro.props;
       </a>
       <a class="panel contact-quick" href="mailto:support@blindsidedgames.com">
         <h3><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</h3>
-        <p>Contact me directly via the form below.</p>
+        <p>Email me from your preferred client.</p>
       </a>
     </div>
 
     <form class="panel contact-form" data-contact-form novalidate>
       <div class="contact-form-head">
-        <p class="eyebrow subtle">Form</p>
+        <h3 class="contact-form-title">Form</h3>
         <p>Use this form for support, business, or press enquiries.</p>
       </div>
 
@@ -64,6 +63,7 @@ const { turnstileSiteKey } = Astro.props;
 
       <div
         class="cf-turnstile"
+        data-turnstile-widget
         data-sitekey={turnstileSiteKey}
         data-callback="onTurnstileSuccess"
         data-expired-callback="onTurnstileExpired"
