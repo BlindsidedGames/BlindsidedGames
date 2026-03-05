@@ -13,6 +13,7 @@
   "vars": {
     "CONTACT_RATE_LIMIT_WINDOW_SECONDS": "600",
     "CONTACT_RATE_LIMIT_MAX_REQUESTS": "5",
-    "CONTACT_EMAIL_FROM": "Blindsided Games Contact <no-reply@blindsidedgames.com>"
+    "CONTACT_EMAIL_FROM": "Blindsided Games Contact <no-reply@blindsidedgames.com>",
+    "PUBLIC_TURNSTILE_SITE_KEY": "0x4AAAAAAACmqCS_r7tADhmKj"
   }
 }
