@@ -29,6 +29,7 @@
   --space-5: 1.7rem;
   --space-6: 2.35rem;
   --space-7: 3.4rem;
+  --flow-divider-gap: clamp(2.6rem, 5.8vh, 4.1rem);
 
   --shadow-sm: 0 12px 24px rgba(0, 0, 0, 0.35);
   --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.45);
@@ -288,13 +289,13 @@ li + li {
 }
 
 .flow-section + .flow-section {
-  margin-top: clamp(1.5rem, 3.2vh, 2.4rem);
+  margin-top: var(--flow-divider-gap);
 }
 
 .flow-section + .flow-section::before {
   content: '';
   position: absolute;
-  top: clamp(-1.1rem, -2.1vh, -1.65rem);
+  top: calc(var(--flow-divider-gap) * -0.5 + 0.14rem);
   left: clamp(0.55rem, 1.3vw, 1.1rem);
   right: clamp(0.55rem, 1.3vw, 1.1rem);
   height: 1px;
@@ -312,7 +313,7 @@ li + li {
 .flow-section + .flow-section::after {
   content: '';
   position: absolute;
-  top: clamp(-1.33rem, -2.45vh, -1.9rem);
+  top: calc(var(--flow-divider-gap) * -0.5 - 0.09rem);
   left: 50%;
   width: 0.42rem;
   height: 0.42rem;
@@ -443,19 +444,23 @@ li + li {
   display: grid;
   grid-template-columns: 118px minmax(0, 1fr);
   gap: 0.8rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .game-showcase-media {
+  display: block;
+  position: relative;
   border-radius: var(--radius-md);
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  min-height: 0;
-  height: 118px;
-  align-self: end;
+  min-height: 118px;
+  height: 100%;
+  align-self: stretch;
 }
 
 .game-showcase-media img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -778,8 +783,8 @@ a:focus-visible {
   }
 
   .game-showcase-media {
-    min-height: 0;
-    height: 104px;
+    min-height: 104px;
+    height: 100%;
   }
 
   .profile-aside-head {

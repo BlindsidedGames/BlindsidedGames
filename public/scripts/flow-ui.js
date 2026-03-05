@@ -91,9 +91,21 @@ if (pieToggle instanceof HTMLButtonElement && pieMenu instanceof HTMLElement) {
   });
 }
 
+const navItems = Array.from(document.querySelectorAll('[data-nav-item]'));
+const trackedSectionIds = Array.from(
+  new Set(
+    navItems
+      .map((item) => item.getAttribute('data-nav-item') || '')
+      .filter(Boolean)
+  )
+);
+const trackedSectionIdSet = new Set(trackedSectionIds);
 const sectionElements = Array.from(document.querySelectorAll('[data-flow-section]'));
+const trackedSections = sectionElements.filter((section) =>
+  trackedSectionIdSet.has(section.getAttribute('data-section-id') || '')
+);
 const updateActiveSection = (activeId) => {
-  document.querySelectorAll('[data-nav-item]').forEach((item) => {
+  navItems.forEach((item) => {
     const targetId = item.getAttribute('data-nav-item');
     const active = targetId === activeId;
     item.classList.toggle('is-active', active);
@@ -105,28 +117,34 @@ const updateActiveSection = (activeId) => {
   });
 
   sectionElements.forEach((section) => {
-    const isCurrent = section.getAttribute('data-section-id') === activeId;
+    const sectionId = section.getAttribute('data-section-id') || '';
+    const isCurrent = trackedSectionIdSet.has(sectionId) && sectionId === activeId;
     section.classList.toggle('is-current', isCurrent);
   });
 };
 
-if (sectionElements.length > 0) {
+if (trackedSections.length > 0) {
   const syncActiveSection = () => {
     // Keep active state tied to the section nearest the top anchor line.
     const anchorY = window.scrollY + 96;
-    let activeId = sectionElements[0].getAttribute('data-section-id') || '';
+    let activeId = trackedSections[0].getAttribute('data-section-id') || '';
+    const atPageBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
 
-    for (const section of sectionElements) {
-      const id = section.getAttribute('data-section-id');
-      if (!id) continue;
-      if (section.offsetTop <= anchorY) {
-        activeId = id;
-      } else {
-        break;
+    if (atPageBottom) {
+      activeId = trackedSectionIds[trackedSectionIds.length - 1] || activeId;
+    } else {
+      for (const section of trackedSections) {
+        const id = section.getAttribute('data-section-id');
+        if (!id) continue;
+        if (section.offsetTop <= anchorY) {
+          activeId = id;
+        } else {
+          break;
+        }
       }
     }
 
-    if (activeId) updateActiveSection(activeId);
+    updateActiveSection(activeId);
   };
 
   let activeSyncQueued = false;
@@ -143,7 +161,7 @@ if (sectionElements.length > 0) {
   window.addEventListener('resize', queueActiveSync);
   window.addEventListener('hashchange', queueActiveSync);
 
-  document.querySelectorAll('[data-nav-item]').forEach((item) => {
+  navItems.forEach((item) => {
     item.addEventListener('click', () => {
       const targetId = item.getAttribute('data-nav-item');
       if (targetId) updateActiveSection(targetId);
@@ -162,6 +180,10 @@ const turnstileContainer = document.querySelector('[data-turnstile-widget]');
 const turnstileFieldError = document.querySelector('[data-field-error="turnstileToken"]');
 let lastFocusedElement = null;
 let turnstileWidgetId = null;
+let turnstileWaitIntervalId = null;
+let turnstileWaitTimeoutId = null;
+const turnstilePollIntervalMs = 200;
+const turnstilePollTimeoutMs = 5000;
 
 const getFocusableElements = () => {
   if (!(dialog instanceof HTMLElement)) return [];
@@ -187,15 +209,31 @@ const setTurnstileFieldError = (message) => {
   turnstileFieldError.textContent = message;
 };
 
+const isContactModalOpen = () =>
+  modal instanceof HTMLElement && modal.classList.contains('is-open') && !modal.hidden;
+
+const clearTurnstileWaiters = () => {
+  if (turnstileWaitIntervalId !== null) {
+    window.clearInterval(turnstileWaitIntervalId);
+    turnstileWaitIntervalId = null;
+  }
+
+  if (turnstileWaitTimeoutId !== null) {
+    window.clearTimeout(turnstileWaitTimeoutId);
+    turnstileWaitTimeoutId = null;
+  }
+};
+
 const renderTurnstileIfNeeded = () => {
-  if (!(turnstileContainer instanceof HTMLElement)) return;
-  if (turnstileWidgetId !== null) return;
-  if (!(window.turnstile && typeof window.turnstile.render === 'function')) return;
+  if (!(turnstileContainer instanceof HTMLElement)) return false;
+  if (!isContactModalOpen()) return false;
+  if (turnstileWidgetId !== null) return true;
+  if (!(window.turnstile && typeof window.turnstile.render === 'function')) return false;
 
   const siteKey = turnstileContainer.dataset.sitekey;
   if (!siteKey) {
     setTurnstileFieldError('Turnstile is not configured for this environment.');
-    return;
+    return false;
   }
 
   try {
@@ -206,10 +244,40 @@ const renderTurnstileIfNeeded = () => {
       'error-callback': window.onTurnstileError
     });
     setTurnstileFieldError('');
+    clearTurnstileWaiters();
+    return true;
   } catch {
     turnstileWidgetId = null;
     setTurnstileFieldError('Turnstile failed to load. Disable blockers and retry.');
+    return false;
   }
+};
+
+const waitForTurnstileAndRender = () => {
+  if (turnstileWidgetId !== null) return;
+  if (!isContactModalOpen()) return;
+  if (renderTurnstileIfNeeded()) return;
+
+  setTurnstileFieldError('Loading verification challenge...');
+  if (turnstileWaitIntervalId !== null || turnstileWaitTimeoutId !== null) return;
+
+  turnstileWaitIntervalId = window.setInterval(() => {
+    if (!isContactModalOpen()) {
+      clearTurnstileWaiters();
+      return;
+    }
+
+    if (renderTurnstileIfNeeded()) {
+      clearTurnstileWaiters();
+    }
+  }, turnstilePollIntervalMs);
+
+  turnstileWaitTimeoutId = window.setTimeout(() => {
+    clearTurnstileWaiters();
+    if (turnstileWidgetId === null && isContactModalOpen()) {
+      setTurnstileFieldError('Turnstile failed to load. Disable blockers and retry.');
+    }
+  }, turnstilePollTimeoutMs);
 };
 
 const openContactModal = (updateUrl = true) => {
@@ -220,7 +288,7 @@ const openContactModal = (updateUrl = true) => {
   document.body.classList.add('modal-open');
   if (updateUrl) syncContactUrl(true);
 
-  renderTurnstileIfNeeded();
+  waitForTurnstileAndRender();
 
   const focusable = getFocusableElements();
   if (focusable.length > 0 && focusable[0] instanceof HTMLElement) {
@@ -232,6 +300,7 @@ const openContactModal = (updateUrl = true) => {
 
 const closeContactModal = (updateUrl = true) => {
   if (!(modal instanceof HTMLElement)) return;
+  clearTurnstileWaiters();
   modal.classList.remove('is-open');
   modal.hidden = true;
   document.body.classList.remove('modal-open');
@@ -316,21 +385,3 @@ window.addEventListener('popstate', () => {
     closeContactModal(false);
   }
 });
-
-if (!(window.turnstile && typeof window.turnstile.render === 'function')) {
-  const waitForTurnstile = window.setInterval(() => {
-    if (window.turnstile && typeof window.turnstile.render === 'function') {
-      window.clearInterval(waitForTurnstile);
-      renderTurnstileIfNeeded();
-    }
-  }, 200);
-
-  window.setTimeout(() => {
-    window.clearInterval(waitForTurnstile);
-    if (turnstileWidgetId === null) {
-      setTurnstileFieldError('Turnstile failed to load. Disable blockers and retry.');
-    }
-  }, 5000);
-} else {
-  renderTurnstileIfNeeded();
-}

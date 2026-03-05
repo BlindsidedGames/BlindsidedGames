@@ -21,6 +21,9 @@ if (!(canvas instanceof HTMLCanvasElement)) {
         x: -9999,
         y: -9999,
         active: false
+      },
+      sparkle: {
+        nextBurstAt: 0
       }
     };
 
@@ -29,17 +32,16 @@ if (!(canvas instanceof HTMLCanvasElement)) {
       const minDensity = state.width < 900 ? 520 : 720;
       const maxDensity = state.width < 900 ? 1240 : 2200;
       const density = Math.max(minDensity, Math.min(maxDensity, Math.floor(area / 1600)));
-      const starColors = [
-        'rgba(236, 233, 255, 1)',
-        'rgba(210, 201, 255, 1)',
-        'rgba(186, 177, 234, 1)'
-      ];
 
       state.particles = [];
       for (let index = 0; index < density; index += 1) {
         const baseX = Math.random() * state.width;
         const baseY = Math.random() * state.height;
         const isBright = Math.random() > 0.92;
+        const radiusBase = isBright ? 1.35 + Math.random() * 0.8 : 0.5 + Math.random() * 1.05;
+        const baseHue = 220 + Math.random() * 64;
+        const baseSat = isBright ? 52 + Math.random() * 20 : 44 + Math.random() * 24;
+        const baseLight = isBright ? 78 + Math.random() * 12 : 66 + Math.random() * 16;
 
         state.particles.push({
           baseX,
@@ -48,14 +50,32 @@ if (!(canvas instanceof HTMLCanvasElement)) {
           y: baseY,
           vx: 0,
           vy: 0,
-          radius: isBright ? 1.35 + Math.random() * 0.8 : 0.5 + Math.random() * 1.05,
+          radiusBase,
           alpha: isBright ? 0.34 + Math.random() * 0.24 : 0.12 + Math.random() * 0.18,
-          color: starColors[Math.floor(Math.random() * starColors.length)],
+          baseHue,
+          baseSat,
+          baseLight,
+          colorPhase: Math.random() * Math.PI * 2,
+          colorSpeed: 0.0005 + Math.random() * 0.0006,
+          colorShiftAmplitude: 14 + Math.random() * 18,
+          radiusPhase: Math.random() * Math.PI * 2,
+          radiusSpeed: 0.0012 + Math.random() * 0.0008,
+          radiusPulseAmplitude: 0.18 + Math.random() * 0.12,
+          burstStartAt: -1,
+          burstEndAt: -1,
+          burstIntensity: 0,
           depth: 0.35 + Math.random() * 0.9,
           twinklePhase: Math.random() * Math.PI * 2,
-          twinkleSpeed: 0.0006 + Math.random() * 0.0014
+          twinkleSpeed: 0.0006 + Math.random() * 0.0014,
+          driftPhaseX: Math.random() * Math.PI * 2,
+          driftPhaseY: Math.random() * Math.PI * 2,
+          driftSpeedX: 0.0014 + Math.random() * 0.001,
+          driftSpeedY: 0.00145 + Math.random() * 0.00095,
+          driftAmplitude: (isBright ? 1.5 : 1.05) + Math.random() * (isBright ? 1.5 : 1.35)
         });
       }
+
+      state.sparkle.nextBurstAt = 450 + Math.random() * 900;
     };
 
     const resize = () => {
@@ -87,15 +107,46 @@ if (!(canvas instanceof HTMLCanvasElement)) {
       state.pointer.y = -9999;
     };
 
-    const updateParticles = () => {
+    const triggerSparkleBurst = (timeMs) => {
+      if (state.particles.length === 0) return;
+      if (timeMs < state.sparkle.nextBurstAt) return;
+
+      // Trigger short flare windows on a handful of stars to create occasional bright pops.
+      const burstCount = Math.max(8, Math.min(20, Math.round(state.particles.length * 0.01)));
+      const burstDurationMs = 650 + Math.random() * 650;
+
+      for (let i = 0; i < burstCount; i += 1) {
+        const particle = state.particles[Math.floor(Math.random() * state.particles.length)];
+        if (!particle) continue;
+        particle.burstStartAt = timeMs;
+        particle.burstEndAt = timeMs + burstDurationMs;
+        particle.burstIntensity = 0.8 + Math.random() * 0.9;
+      }
+
+      state.sparkle.nextBurstAt = timeMs + 700 + Math.random() * 1500;
+    };
+
+    const updateParticles = (timeMs) => {
       const interactionRadius = Math.min(190, Math.max(95, state.width * 0.11));
       state.scroll.current += (state.scroll.target - state.scroll.current) * 0.08;
       state.scroll.parallaxY = reducedMotion ? 0 : state.scroll.current * 0.055;
       state.scroll.parallaxX = reducedMotion ? 0 : Math.sin(state.scroll.current * 0.0016) * 8;
 
+      if (!reducedMotion) {
+        triggerSparkleBurst(timeMs);
+      }
+
       state.particles.forEach((particle) => {
-        const toBaseX = particle.baseX - particle.x;
-        const toBaseY = particle.baseY - particle.y;
+        const driftX = reducedMotion
+          ? 0
+          : Math.sin(timeMs * particle.driftSpeedX + particle.driftPhaseX) * particle.driftAmplitude;
+        const driftY = reducedMotion
+          ? 0
+          : Math.cos(timeMs * particle.driftSpeedY + particle.driftPhaseY) * particle.driftAmplitude * 0.84;
+        const targetX = particle.baseX + driftX;
+        const targetY = particle.baseY + driftY;
+        const toBaseX = targetX - particle.x;
+        const toBaseY = targetY - particle.y;
 
         particle.vx += toBaseX * 0.014;
         particle.vy += toBaseY * 0.014;
@@ -143,21 +194,39 @@ if (!(canvas instanceof HTMLCanvasElement)) {
       state.particles.forEach((particle) => {
         const twinkle = reducedMotion
           ? 1
-          : 0.74 + Math.sin(timeMs * particle.twinkleSpeed + particle.twinklePhase) * 0.26;
+          : 0.86 + Math.sin(timeMs * particle.twinkleSpeed + particle.twinklePhase) * 0.14;
+        const pulseScale = reducedMotion
+          ? 1
+          : 1 + Math.sin(timeMs * particle.radiusSpeed + particle.radiusPhase) * particle.radiusPulseAmplitude;
+        const hue = reducedMotion
+          ? particle.baseHue
+          : particle.baseHue + Math.sin(timeMs * particle.colorSpeed + particle.colorPhase) * particle.colorShiftAmplitude;
+        const saturation = reducedMotion
+          ? particle.baseSat
+          : particle.baseSat + Math.sin(timeMs * (particle.colorSpeed * 0.64) + particle.colorPhase * 0.8) * 8;
+        const lightness = reducedMotion
+          ? particle.baseLight
+          : particle.baseLight + Math.sin(timeMs * (particle.colorSpeed * 0.82) + particle.colorPhase * 1.3) * 10;
+        let flareStrength = 0;
+        if (!reducedMotion && particle.burstEndAt > timeMs && particle.burstStartAt >= 0) {
+          const progress = (timeMs - particle.burstStartAt) / (particle.burstEndAt - particle.burstStartAt);
+          flareStrength = Math.sin(Math.max(0, Math.min(1, progress)) * Math.PI) * particle.burstIntensity;
+        }
         const drawX = ((particle.x + parallaxX * particle.depth) % state.width + state.width) % state.width;
         const drawY = ((particle.y + parallaxY * particle.depth) % state.height + state.height) % state.height;
-        context.fillStyle = particle.color;
-        context.globalAlpha = particle.alpha * twinkle;
+        context.fillStyle = `hsl(${hue} ${saturation}% ${lightness + flareStrength * 18}%)`;
+        context.globalAlpha = particle.alpha * twinkle * (1 + flareStrength * 1.4);
         context.beginPath();
-        context.arc(drawX, drawY, particle.radius, 0, Math.PI * 2);
+        context.arc(drawX, drawY, particle.radiusBase * pulseScale * (1 + flareStrength * 0.25), 0, Math.PI * 2);
         context.fill();
       });
+
       context.globalAlpha = 1;
     };
 
     let animationFrame = 0;
     const animate = (timeMs) => {
-      updateParticles();
+      updateParticles(timeMs);
       drawFrame(timeMs);
       animationFrame = window.requestAnimationFrame(animate);
     };

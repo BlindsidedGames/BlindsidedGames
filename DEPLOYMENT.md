@@ -26,6 +26,17 @@ Set these in Pages for both Production and Preview environments:
 - `CONTACT_RATE_LIMIT_WINDOW_SECONDS` (optional): Defaults to 600.
 - `CONTACT_RATE_LIMIT_MAX_REQUESTS` (optional): Defaults to 5.
 
+## Turnstile Production Verification Checklist
+Run this checklist after any Turnstile key/config update and after contact-flow deployments:
+
+1. Confirm `PUBLIC_TURNSTILE_SITE_KEY` (client) and `TURNSTILE_SECRET_KEY` (server) are a matching pair from the same Turnstile widget.
+2. In the Turnstile dashboard, confirm allowed hostnames include:
+   - `blindsidedgames.com`
+   - `www.blindsidedgames.com`
+   - preview hostname(s), if preview deploys should support contact submissions
+3. Open production homepage, launch the contact modal, and verify challenge renders.
+4. Complete challenge and submit a contact message; verify `/api/contact` accepts the token and returns success.
+
 ## KV Binding for Rate Limiting
 Create one KV namespace for contact rate limits, then update `wrangler.jsonc` IDs and bind it in Cloudflare Pages:
 - Binding name: `CONTACT_RATE_LIMIT_KV`
