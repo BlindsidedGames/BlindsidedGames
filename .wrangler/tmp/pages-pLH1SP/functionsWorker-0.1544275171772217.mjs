@@ -91,20 +91,31 @@ var enforceRateLimit = /* @__PURE__ */ __name(async (request, env) => {
   return { allowed: true };
 }, "enforceRateLimit");
 var verifyTurnstile = /* @__PURE__ */ __name(async (token, request, env) => {
+  const body = new URLSearchParams({
+    secret: env.TURNSTILE_SECRET_KEY,
+    response: token
+  });
+  const ip = request.headers.get("CF-Connecting-IP");
+  if (ip) body.set("remoteip", ip);
   const response = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded"
     },
-    body: new URLSearchParams({
-      secret: env.TURNSTILE_SECRET_KEY,
-      response: token,
-      remoteip: getClientIp(request)
-    })
+    body
   });
-  if (!response.ok) return false;
-  const result = await response.json();
-  return Boolean(result.success);
+  let result = {};
+  try {
+    result = await response.json();
+  } catch {
+    result = {};
+  }
+  const errorCodes = Array.isArray(result["error-codes"]) ? result["error-codes"].filter((code) => typeof code === "string") : [];
+  return {
+    success: response.ok && Boolean(result.success),
+    errorCodes,
+    httpStatus: response.status
+  };
 }, "verifyTurnstile");
 var sendContactEmail = /* @__PURE__ */ __name(async (payload, env) => {
   const from = env.CONTACT_EMAIL_FROM || "Blindsided Games Contact <no-reply@blindsidedgames.com>";
@@ -189,15 +200,21 @@ var onRequestPost = /* @__PURE__ */ __name(async (context) => {
       error: parsed.error
     });
   }
-  const isTurnstileValid = await verifyTurnstile(parsed.data.turnstileToken, request, env);
-  if (!isTurnstileValid) {
+  const turnstileResult = await verifyTurnstile(parsed.data.turnstileToken, request, env);
+  if (!turnstileResult.success) {
+    const firstErrorCode = turnstileResult.errorCodes[0] || "unknown";
+    console.warn("Turnstile verification failed", {
+      httpStatus: turnstileResult.httpStatus,
+      errorCodes: turnstileResult.errorCodes,
+      cfRay: request.headers.get("CF-Ray") || null
+    });
     return jsonResponse(400, {
       ok: false,
       error: {
         code: "turnstile_failed",
-        message: "Turnstile verification failed. Please retry.",
+        message: `Turnstile verification failed (${firstErrorCode}). Please retry.`,
         fields: {
-          turnstileToken: "Turnstile verification failed. Please retry."
+          turnstileToken: `Turnstile verification failed (${firstErrorCode}). Please retry.`
         }
       }
     });
@@ -731,7 +748,7 @@ var jsonError = /* @__PURE__ */ __name(async (request, env, _ctx, middlewareCtx)
 }, "jsonError");
 var middleware_miniflare3_json_error_default = jsonError;
 
-// ../.wrangler/tmp/bundle-cmmLxb/middleware-insertion-facade.js
+// ../.wrangler/tmp/bundle-NyYyMm/middleware-insertion-facade.js
 var __INTERNAL_WRANGLER_MIDDLEWARE__ = [
   middleware_ensure_req_body_drained_default,
   middleware_miniflare3_json_error_default
@@ -763,7 +780,7 @@ function __facade_invoke__(request, env, ctx, dispatch, finalMiddleware) {
 }
 __name(__facade_invoke__, "__facade_invoke__");
 
-// ../.wrangler/tmp/bundle-cmmLxb/middleware-loader.entry.ts
+// ../.wrangler/tmp/bundle-NyYyMm/middleware-loader.entry.ts
 var __Facade_ScheduledController__ = class ___Facade_ScheduledController__ {
   constructor(scheduledTime, cron, noRetry) {
     this.scheduledTime = scheduledTime;

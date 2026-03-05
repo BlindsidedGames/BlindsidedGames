@@ -93,20 +93,31 @@ var enforceRateLimit = /* @__PURE__ */ __name2(async (request, env) => {
   return { allowed: true };
 }, "enforceRateLimit");
 var verifyTurnstile = /* @__PURE__ */ __name2(async (token, request, env) => {
+  const body = new URLSearchParams({
+    secret: env.TURNSTILE_SECRET_KEY,
+    response: token
+  });
+  const ip = request.headers.get("CF-Connecting-IP");
+  if (ip) body.set("remoteip", ip);
   const response = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded"
     },
-    body: new URLSearchParams({
-      secret: env.TURNSTILE_SECRET_KEY,
-      response: token,
-      remoteip: getClientIp(request)
-    })
+    body
   });
-  if (!response.ok) return false;
-  const result = await response.json();
-  return Boolean(result.success);
+  let result = {};
+  try {
+    result = await response.json();
+  } catch {
+    result = {};
+  }
+  const errorCodes = Array.isArray(result["error-codes"]) ? result["error-codes"].filter((code) => typeof code === "string") : [];
+  return {
+    success: response.ok && Boolean(result.success),
+    errorCodes,
+    httpStatus: response.status
+  };
 }, "verifyTurnstile");
 var sendContactEmail = /* @__PURE__ */ __name2(async (payload, env) => {
   const from = env.CONTACT_EMAIL_FROM || "Blindsided Games Contact <no-reply@blindsidedgames.com>";
@@ -189,15 +200,21 @@ var onRequestPost = /* @__PURE__ */ __name2(async (context) => {
       error: parsed.error
     });
   }
-  const isTurnstileValid = await verifyTurnstile(parsed.data.turnstileToken, request, env);
-  if (!isTurnstileValid) {
+  const turnstileResult = await verifyTurnstile(parsed.data.turnstileToken, request, env);
+  if (!turnstileResult.success) {
+    const firstErrorCode = turnstileResult.errorCodes[0] || "unknown";
+    console.warn("Turnstile verification failed", {
+      httpStatus: turnstileResult.httpStatus,
+      errorCodes: turnstileResult.errorCodes,
+      cfRay: request.headers.get("CF-Ray") || null
+    });
     return jsonResponse(400, {
       ok: false,
       error: {
         code: "turnstile_failed",
-        message: "Turnstile verification failed. Please retry.",
+        message: `Turnstile verification failed (${firstErrorCode}). Please retry.`,
         fields: {
-          turnstileToken: "Turnstile verification failed. Please retry."
+          turnstileToken: `Turnstile verification failed (${firstErrorCode}). Please retry.`
         }
       }
     });

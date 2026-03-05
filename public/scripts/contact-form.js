@@ -74,6 +74,15 @@ if (form instanceof HTMLFormElement) {
           });
         }
 
+        // Tokens are single-use and can expire quickly; force a fresh challenge after verification errors.
+        if (fieldMap && typeof fieldMap === 'object' && 'turnstileToken' in fieldMap) {
+          const tokenInput = form.querySelector('#turnstileToken');
+          if (tokenInput instanceof HTMLInputElement) tokenInput.value = '';
+          if (window.turnstile && typeof window.turnstile.reset === 'function') {
+            window.turnstile.reset();
+          }
+        }
+
         setStatus(body?.error?.message || 'Message failed to send. Please try again.', 'error');
         return;
       }

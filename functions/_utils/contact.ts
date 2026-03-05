@@ -22,6 +22,12 @@ export type StructuredError = {
   fields?: Record<string, string>;
 };
 
+export type TurnstileVerificationResult = {
+  success: boolean;
+  errorCodes: string[];
+  httpStatus: number;
+};
+
 const inMemoryRateLimitState = new Map<string, { count: number; resetAt: number }>();
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -142,22 +148,39 @@ export const verifyTurnstile = async (
   token: string,
   request: Request,
   env: ContactEnv
-): Promise<boolean> => {
+): Promise<TurnstileVerificationResult> => {
+  const body = new URLSearchParams({
+    secret: env.TURNSTILE_SECRET_KEY,
+    response: token
+  });
+
+  const ip = request.headers.get('CF-Connecting-IP');
+  if (ip) body.set('remoteip', ip);
+
   const response = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded'
     },
-    body: new URLSearchParams({
-      secret: env.TURNSTILE_SECRET_KEY,
-      response: token,
-      remoteip: getClientIp(request)
-    })
+    body
   });
 
-  if (!response.ok) return false;
-  const result = await response.json() as { success?: boolean };
-  return Boolean(result.success);
+  let result: { success?: boolean; ['error-codes']?: unknown } = {};
+  try {
+    result = await response.json();
+  } catch {
+    result = {};
+  }
+
+  const errorCodes = Array.isArray(result['error-codes'])
+    ? result['error-codes'].filter((code): code is string => typeof code === 'string')
+    : [];
+
+  return {
+    success: response.ok && Boolean(result.success),
+    errorCodes,
+    httpStatus: response.status
+  };
 };
 
 export const sendContactEmail = async (payload: ContactRequest, env: ContactEnv): Promise<void> => {

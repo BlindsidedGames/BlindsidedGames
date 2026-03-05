@@ -66,15 +66,22 @@ export const onRequestPost: PagesFunction<ContactEnv> = async (context) => {
     });
   }
 
-  const isTurnstileValid = await verifyTurnstile(parsed.data.turnstileToken, request, env);
-  if (!isTurnstileValid) {
+  const turnstileResult = await verifyTurnstile(parsed.data.turnstileToken, request, env);
+  if (!turnstileResult.success) {
+    const firstErrorCode = turnstileResult.errorCodes[0] || 'unknown';
+    console.warn('Turnstile verification failed', {
+      httpStatus: turnstileResult.httpStatus,
+      errorCodes: turnstileResult.errorCodes,
+      cfRay: request.headers.get('CF-Ray') || null
+    });
+
     return jsonResponse(400, {
       ok: false,
       error: {
         code: 'turnstile_failed',
-        message: 'Turnstile verification failed. Please retry.',
+        message: `Turnstile verification failed (${firstErrorCode}). Please retry.`,
         fields: {
-          turnstileToken: 'Turnstile verification failed. Please retry.'
+          turnstileToken: `Turnstile verification failed (${firstErrorCode}). Please retry.`
         }
       }
     });
