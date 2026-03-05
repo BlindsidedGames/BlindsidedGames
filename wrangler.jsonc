@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "blindsidedgames",
+  "compatibility_date": "2026-03-05",
+  "pages_build_output_dir": "./dist",
+  "kv_namespaces": [
+    {
+      "binding": "CONTACT_RATE_LIMIT_KV",
+      "id": "replace-with-production-kv-id",
+      "preview_id": "replace-with-preview-kv-id"
+    }
+  ],
+  "vars": {
+    "CONTACT_RATE_LIMIT_WINDOW_SECONDS": "600",
+    "CONTACT_RATE_LIMIT_MAX_REQUESTS": "5",
+    "CONTACT_EMAIL_FROM": "Blindsided Games Contact <no-reply@blindsidedgames.com>"
+  }
+}

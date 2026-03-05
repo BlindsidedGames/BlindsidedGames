@@ -1,0 +1,88 @@
+---
+import { NAV_LINKS } from '../data/site';
+
+export type Props = {
+  currentPath: string;
+};
+
+const { currentPath } = Astro.props;
+const isActive = (href: string) =>
+  href === currentPath || (href !== '/' && currentPath.startsWith(href));
+---
+
+<header class="site-header">
+  <div class="container nav-wrapper">
+    <a class="brand" href="/" aria-label="Blindsided Games home">
+      <img src="/img/logo.jpg" alt="Blindsided Games logo" width="42" height="42" />
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+      <span class="sr-only">Toggle navigation</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </button>
+    <nav class="desktop-nav" aria-label="Primary">
+      {
+        NAV_LINKS.map((link) => (
+          <a
+            href={link.href}
+            target={link.external ? '_blank' : undefined}
+            rel={link.external ? 'noopener noreferrer' : undefined}
+            class:list={['nav-link', isActive(link.href) && !link.external && 'is-active']}
+          >
+            {link.label}
+            {link.external && (
+              <svg class="icon-external" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M14 3h7v7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M21 3L10 14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M14 7H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            )}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile">
+    {
+      NAV_LINKS.map((link) => (
+        <a
+          href={link.href}
+          target={link.external ? '_blank' : undefined}
+          rel={link.external ? 'noopener noreferrer' : undefined}
+          class:list={['nav-link', isActive(link.href) && !link.external && 'is-active']}
+        >
+          {link.label}
+          {link.external && (
+            <svg class="icon-external" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M14 3h7v7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M21 3L10 14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M14 7H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          )}
+        </a>
+      ))
+    }
+  </nav>
+</header>
+
+<script>
+  const header = document.querySelector('.site-header');
+  const toggle = header?.querySelector('.menu-toggle');
+  const mobileNav = header?.querySelector('#mobile-nav');
+
+  if (toggle && mobileNav) {
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      mobileNav.classList.toggle('is-open', !expanded);
+    });
+
+    mobileNav.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        toggle.setAttribute('aria-expanded', 'false');
+        mobileNav.classList.remove('is-open');
+      });
+    });
+  }
+</script>

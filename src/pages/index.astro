@@ -1,0 +1,137 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { FEATURED_RELEASE, GAME_PORTFOLIO, TRUST_SIGNALS } from '../data/site';
+
+const gameJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Blindsided Games Portfolio',
+  itemListElement: GAME_PORTFOLIO.slice(0, 10).map((game, index) => ({
+    '@type': 'VideoGame',
+    position: index + 1,
+    name: game.title,
+    description: game.description,
+    image: `https://blindsidedgames.com${game.image}`,
+    url: game.primaryHref.startsWith('http')
+      ? game.primaryHref
+      : `https://blindsidedgames.com${game.primaryHref}`
+  }))
+};
+---
+
+<BaseLayout
+  title="Independent Game Studio"
+  description="Blindsided Games builds premium incremental and strategy experiences across Steam, mobile, and web. Explore flagship releases, current portfolio titles, and studio updates."
+  path="/"
+  ogImage={FEATURED_RELEASE.image}
+>
+  <section class="hero-section section" data-reveal>
+    <div class="container hero-grid">
+      <article class="panel panel-elevated hero-content">
+        <p class="eyebrow">{FEATURED_RELEASE.badge}</p>
+        <h1>{FEATURED_RELEASE.title}</h1>
+        <p class="hero-lead">
+          Blindsided Games builds systems-driven releases with long-tail progression, precise feedback loops,
+          and polished interfaces that respect player time.
+        </p>
+        <p>{FEATURED_RELEASE.subtitle}</p>
+        <div class="button-row">
+          {FEATURED_RELEASE.links.map((link, index) => (
+            <a
+              href={link.href}
+              target={link.external ? '_blank' : undefined}
+              rel={link.external ? 'noopener noreferrer' : undefined}
+              class:list={['btn', index === 0 ? 'btn-primary' : 'btn-secondary']}
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+      </article>
+      <a
+        class="panel panel-media hero-art"
+        href="https://store.steampowered.com/app/2940000/Echoes_of_Vasteria/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="View Echoes of Vasteria on Steam"
+      >
+        <img src={FEATURED_RELEASE.image} alt={FEATURED_RELEASE.imageAlt} loading="eager" decoding="async" />
+      </a>
+    </div>
+  </section>
+
+  <section class="section" data-reveal>
+    <div class="container">
+      <div class="trust-strip panel">
+        {TRUST_SIGNALS.map((signal) => (
+          <p>{signal}</p>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-reveal>
+    <div class="container section-heading">
+      <p class="eyebrow">Curated Portfolio</p>
+      <h2>Shipped Titles and Active Experiments</h2>
+      <p>
+        A cross-platform portfolio spanning idle, strategy, and experimental prototypes. Every card links to
+        live builds or storefronts.
+      </p>
+    </div>
+    <div class="container game-grid">
+      {GAME_PORTFOLIO.map((game) => (
+        <article class="panel game-card">
+          <a
+            class="game-cover"
+            href={game.primaryHref}
+            target={game.primaryHref.startsWith('http') ? '_blank' : undefined}
+            rel={game.primaryHref.startsWith('http') ? 'noopener noreferrer' : undefined}
+            aria-label={`Open ${game.title}`}
+          >
+            <img src={game.image} alt={game.imageAlt} loading="lazy" decoding="async" />
+          </a>
+          <div class="game-content">
+            <p class="eyebrow subtle">{game.subtitle}</p>
+            <h3>{game.title}</h3>
+            <p>{game.description}</p>
+            <div class="button-row compact">
+              {game.links.map((link, index) => (
+                <a
+                  href={link.href}
+                  target={link.external ? '_blank' : undefined}
+                  rel={link.external ? 'noopener noreferrer' : undefined}
+                  class:list={['btn', index === 0 ? 'btn-primary' : 'btn-secondary']}
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section" data-reveal>
+    <div class="container cta-band panel panel-elevated">
+      <div>
+        <p class="eyebrow">Build With Us</p>
+        <h2>Follow Releases, Patch Notes, and Behind-the-Scenes Development</h2>
+        <p>
+          Join the Discord community for direct feedback loops, or support future releases through Patreon.
+        </p>
+      </div>
+      <div class="button-row">
+        <a class="btn btn-primary" href="https://discord.gg/dKaEy6MFCP" target="_blank" rel="noopener noreferrer">
+          Join Discord
+        </a>
+        <a class="btn btn-secondary" href="https://www.patreon.com/BlindsidedGames" target="_blank" rel="noopener noreferrer">
+          Support on Patreon
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify(gameJsonLd)}></script>
+</BaseLayout>

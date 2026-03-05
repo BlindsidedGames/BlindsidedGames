@@ -1,0 +1,23 @@
+---
+import { SOCIAL_LINKS } from '../data/site';
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container footer-layout">
+    <p>
+      All rights reserved &copy; Blindsided Games {currentYear}
+      <span aria-hidden="true"> / </span><a href="/policy">Policy</a>
+    </p>
+    <div class="social-list" aria-label="Social links">
+      {
+        SOCIAL_LINKS.map((socialLink) => (
+          <a class:list={['pill-link', socialLink.className]} href={socialLink.href} target="_blank" rel="noopener noreferrer">
+            {socialLink.label}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</footer>

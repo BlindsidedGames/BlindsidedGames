@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="About"
+  description="Learn about Blindsided Games, the studio principles behind its incremental and strategy portfolio, and the founder building the releases."
+  path="/about"
+>
+  <section class="section" data-reveal>
+    <div class="container split-layout">
+      <article class="panel panel-elevated">
+        <p class="eyebrow">Studio Profile</p>
+        <h1>Blindsided Games</h1>
+        <p>
+          Blindsided Games is an independent studio focused on systems-heavy incremental and strategy design.
+          The goal is consistent: ship games with strong progression clarity, responsive UI, and long-term
+          replay value across web, mobile, and desktop storefronts.
+        </p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="/contact">Contact</a>
+          <a class="btn btn-secondary" href="https://discord.gg/dKaEy6MFCP" target="_blank" rel="noopener noreferrer">
+            Discord
+          </a>
+          <a class="btn btn-secondary" href="https://www.youtube.com/@blindsidedgames" target="_blank" rel="noopener noreferrer">
+            YouTube
+          </a>
+        </div>
+      </article>
+      <aside class="panel profile-card">
+        <img src="/img/logo.jpg" alt="Blindsided Games logo" width="120" height="120" />
+        <h2>Release Focus</h2>
+        <ul>
+          <li>Layered progression loops that stay readable at scale</li>
+          <li>Fast-loading interfaces with low-friction navigation</li>
+          <li>Post-launch iteration guided by live community feedback</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" data-reveal>
+    <div class="container section-heading">
+      <p class="eyebrow">Operating Principles</p>
+      <h2>How the Studio Makes Decisions</h2>
+    </div>
+    <div class="container card-grid three-up">
+      <article class="panel">
+        <h3>Player Trust</h3>
+        <p>Monetization and progression are built to preserve player agency and avoid manipulative loops.</p>
+      </article>
+      <article class="panel">
+        <h3>Performance Discipline</h3>
+        <p>Features are measured against runtime cost, responsiveness, and maintainability before ship.</p>
+      </article>
+      <article class="panel">
+        <h3>Iteration Cadence</h3>
+        <p>Live feedback from Discord and patch telemetry directly informs tuning and content priorities.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" data-reveal>
+    <div class="container panel founder-note">
+      <p class="eyebrow">Founder</p>
+      <h2>Matthew Rushworth</h2>
+      <p>
+        I started Blindsided Games to turn systems design ideas into shipped products, not prototypes that stall.
+        Since 2022, that work has grown into a multi-platform catalog, including Steam launches and active live
+        updates for community-backed titles.
+      </p>
+      <p>
+        My focus is practical execution: clear information architecture, durable progression design, and fast
+        iteration cycles that keep each release improving after launch.
+      </p>
+      <p>
+        Outside development, I am a father building games around real-world time constraints. That perspective
+        shapes every product decision: the game should be rewarding, understandable, and respectful of player time.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

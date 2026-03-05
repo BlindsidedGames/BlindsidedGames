@@ -1,0 +1,83 @@
+---
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import { ORGANIZATION_JSON_LD } from '../data/site';
+import '../styles/core.css';
+
+export type Props = {
+  title: string;
+  description: string;
+  path: string;
+  ogImage?: string;
+};
+
+const { title, description, path, ogImage = '/img/logo.jpg' } = Astro.props;
+const siteOrigin = (import.meta.env.PUBLIC_SITE_URL || Astro.site || 'https://blindsidedgames.com').toString();
+const canonicalUrl = new URL(path, siteOrigin).toString();
+const pageTitle = `${title} | Blindsided Games`;
+const ogImageUrl = new URL(ogImage, siteOrigin).toString();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#0f141a" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#edf3f9" media="(prefers-color-scheme: light)" />
+    <meta name="description" content={description} />
+    <meta name="robots" content="index,follow" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Blindsided Games" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:url" content={canonicalUrl} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" type="image/jpg" href="/img/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>{pageTitle}</title>
+    <script type="application/ld+json" set:html={JSON.stringify(ORGANIZATION_JSON_LD)}></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="page-shell">
+      <SiteHeader currentPath={path} />
+      <main id="main-content">
+        <slot />
+      </main>
+      <SiteFooter />
+    </div>
+    <script>
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const revealElements = document.querySelectorAll('[data-reveal]');
+
+      if (prefersReducedMotion) {
+        revealElements.forEach((element) => element.classList.add('is-visible'));
+      } else if (revealElements.length > 0) {
+        const observer = new IntersectionObserver(
+          (entries, currentObserver) => {
+            for (const entry of entries) {
+              if (!entry.isIntersecting) continue;
+              entry.target.classList.add('is-visible');
+              currentObserver.unobserve(entry.target);
+            }
+          },
+          { rootMargin: '0px 0px -8% 0px', threshold: 0.1 }
+        );
+
+        revealElements.forEach((element) => observer.observe(element));
+      }
+    </script>
+  </body>
+</html>

@@ -1,16 +1,17 @@
-### Hello there 👋
+# Blindsided Games Website
 
-<!--
-**BlindsidedGames/BlindsidedGames** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Core routes are now implemented with Astro and deployed on Cloudflare Pages.
 
-Here are some ideas to get you started:
+## Architecture
+- Astro core pages: `/`, `/about`, `/contact`, `/policy`
+- Cloudflare Pages Function API: `POST /api/contact`
+- Legacy non-core surfaces (games, quizzes, moodboards) are preserved and copied into `dist` during build
+- Shared game/store link data contract: `src/data/site.ts`
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Local Development
+- Install dependencies: `npm install`
+- Start dev server: `npm run dev`
+- Build production output: `npm run build`
+
+## Cloudflare Deployment
+See [`DEPLOYMENT.md`](./DEPLOYMENT.md) for environment variables, KV setup, and GitHub-connected Pages settings.
