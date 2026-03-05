@@ -14,34 +14,106 @@ export type GameEntry = {
   links: StoreLink[];
 };
 
-export const NAV_LINKS = [
-  { label: 'Games', href: '/' },
-  {
-    label: 'Patreon',
-    href: 'https://www.patreon.com/BlindsidedGames',
-    external: true
-  },
-  { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' }
-] as const;
+export type SingleFlowNavItem = {
+  id: string;
+  label: string;
+  kind: 'section' | 'action' | 'external';
+  href?: string;
+  sectionId?: string;
+  action?: 'open-contact';
+  iconClass: string;
+};
 
-export const SOCIAL_LINKS = [
+export type SocialLink = {
+  label: string;
+  href: string;
+  iconClass: string;
+};
+
+export const SINGLE_FLOW_NAV_ITEMS: SingleFlowNavItem[] = [
+  {
+    id: 'profile',
+    label: 'Profile',
+    kind: 'section',
+    href: '#profile',
+    sectionId: 'profile',
+    iconClass: 'fa-solid fa-house'
+  },
+  {
+    id: 'family',
+    label: 'Family',
+    kind: 'section',
+    href: '#family',
+    sectionId: 'family',
+    iconClass: 'fa-solid fa-user'
+  },
+  {
+    id: 'vision',
+    label: 'Vision',
+    kind: 'section',
+    href: '#vision',
+    sectionId: 'vision',
+    iconClass: 'fa-solid fa-compass-drafting'
+  },
+  {
+    id: 'ai',
+    label: 'AI',
+    kind: 'section',
+    href: '#ai',
+    sectionId: 'ai',
+    iconClass: 'fa-solid fa-wand-magic-sparkles'
+  },
+  {
+    id: 'games',
+    label: 'Games',
+    kind: 'section',
+    href: '#games',
+    sectionId: 'games',
+    iconClass: 'fa-solid fa-gamepad'
+  },
+  {
+    id: 'support',
+    label: 'Support',
+    kind: 'section',
+    href: '#support',
+    sectionId: 'support',
+    iconClass: 'fa-brands fa-paypal'
+  },
+  {
+    id: 'contact',
+    label: 'Contact',
+    kind: 'section',
+    href: '#contact',
+    sectionId: 'contact',
+    iconClass: 'fa-solid fa-envelope'
+  }
+];
+
+export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Discord',
     href: 'https://discord.gg/dKaEy6MFCP',
-    className: 'social-discord'
+    iconClass: 'fa-brands fa-discord'
   },
   {
     label: 'YouTube',
     href: 'https://www.youtube.com/@blindsidedgames',
-    className: 'social-youtube'
+    iconClass: 'fa-brands fa-youtube'
   },
-  { label: 'Twitter', href: 'https://twitter.com/BlindsidedGames' },
-  { label: 'itch.io', href: 'https://blindsidedgames.itch.io/' }
-] as const;
+  {
+    label: 'X',
+    href: 'https://twitter.com/BlindsidedGames',
+    iconClass: 'fa-brands fa-x-twitter'
+  },
+  {
+    label: 'itch.io',
+    href: 'https://blindsidedgames.itch.io/',
+    iconClass: 'fa-brands fa-itch-io'
+  }
+];
 
 export const FEATURED_RELEASE = {
-  badge: 'Flagship Release',
+  badge: 'Featured Release',
   title: 'Echoes of Vasteria',
   subtitle: 'Pixel-art auto-adventure with idle depth and side-scrolling action.',
   image: '/img/Echoes of Vasteria.png',
@@ -52,26 +124,11 @@ export const FEATURED_RELEASE = {
       href: 'https://store.steampowered.com/app/2940000/Echoes_of_Vasteria/',
       external: true
     },
-    { label: 'Official Site', href: 'https://echoesofvasteria.com/', external: true },
-    {
-      label: 'Wiki',
-      href: 'https://echoesofvasteria.com/wiki/index.html',
-      external: true
-    }
+    { label: 'Official Site', href: 'https://echoesofvasteria.com/', external: true }
   ]
 } as const;
 
 export const GAME_PORTFOLIO: GameEntry[] = [
-  {
-    title: 'Idle Genesis',
-    subtitle: 'In-browser incremental prototype',
-    description:
-      'A lightweight browser testbed where new systems are explored before wider releases.',
-    image: '/img/logo.jpg',
-    imageAlt: 'Idle Genesis cover image',
-    primaryHref: '/games/idle-genesis/',
-    links: [{ label: 'Play', href: '/games/idle-genesis/' }]
-  },
   {
     title: 'Eternum Inc',
     subtitle: 'Idle incremental',
@@ -265,12 +322,6 @@ export const GAME_PORTFOLIO: GameEntry[] = [
     links: [{ label: 'Browse Quizzes', href: '/quizzes.html' }]
   }
 ];
-
-export const TRUST_SIGNALS = [
-  'Indie studio building systems-driven games since 2022',
-  'Shipping across Steam, iOS, Android, web, and itch.io',
-  'Community-first updates through Discord and direct player feedback'
-] as const;
 
 export const ORGANIZATION_JSON_LD = {
   '@context': 'https://schema.org',

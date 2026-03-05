@@ -1,0 +1,78 @@
+---
+
+type Props = {
+  turnstileSiteKey: string;
+};
+
+const { turnstileSiteKey } = Astro.props;
+---
+
+<div class="contact-modal" data-contact-modal hidden>
+  <div class="contact-backdrop" data-contact-close></div>
+  <section
+    class="contact-dialog panel"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="contact-dialog-title"
+    tabindex="-1"
+    data-contact-dialog
+  >
+    <header class="contact-dialog-head">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-dialog-title">Get in Touch</h2>
+      </div>
+      <button class="icon-button" type="button" aria-label="Close contact panel" data-contact-close>
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+    </header>
+
+    <div class="contact-quick-grid">
+      <a class="panel contact-quick" href="https://discord.gg/dKaEy6MFCP" target="_blank" rel="noopener noreferrer">
+        <h3><i class="fa-brands fa-discord" aria-hidden="true"></i> Discord</h3>
+        <p>Reach me near instantly on Discord.</p>
+      </a>
+      <a class="panel contact-quick" href="mailto:support@blindsidedgames.com">
+        <h3><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</h3>
+        <p>Contact me directly via the form below.</p>
+      </a>
+    </div>
+
+    <form class="panel contact-form" data-contact-form novalidate>
+      <div class="contact-form-head">
+        <p class="eyebrow subtle">Form</p>
+        <p>Use this form for support, business, or press enquiries.</p>
+      </div>
+
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" maxlength="120" autocomplete="name" required />
+      <p class="field-error" data-field-error="name"></p>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" maxlength="160" autocomplete="email" required />
+      <p class="field-error" data-field-error="email"></p>
+
+      <label for="subject">Subject</label>
+      <input id="subject" name="subject" type="text" maxlength="160" autocomplete="off" required />
+      <p class="field-error" data-field-error="subject"></p>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" maxlength="5000" required></textarea>
+      <p class="field-error" data-field-error="message"></p>
+
+      <input id="turnstileToken" name="turnstileToken" type="hidden" required />
+
+      <div
+        class="cf-turnstile"
+        data-sitekey={turnstileSiteKey}
+        data-callback="onTurnstileSuccess"
+        data-expired-callback="onTurnstileExpired"
+        data-error-callback="onTurnstileError"
+      ></div>
+      <p class="field-error" data-field-error="turnstileToken"></p>
+
+      <button class="btn btn-primary submit-button" type="submit">Send Message</button>
+      <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+    </form>
+  </section>
+</div>

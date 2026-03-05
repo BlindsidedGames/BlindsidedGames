@@ -1,0 +1,87 @@
+---
+import { SINGLE_FLOW_NAV_ITEMS, type SingleFlowNavItem } from '../data/site';
+
+const pieNavItems = SINGLE_FLOW_NAV_ITEMS.filter((item) => item.kind !== 'external');
+
+const isSection = (item: SingleFlowNavItem) => item.kind === 'section';
+---
+
+<aside class="side-rail" data-side-rail data-collapsed="true" aria-label="Primary navigation rail">
+  <button class="rail-toggle" type="button" aria-expanded="false" aria-label="Expand navigation" data-rail-toggle>
+    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    <span class="rail-label">Menu</span>
+  </button>
+
+  <nav class="rail-nav" aria-label="Primary">
+    {
+      SINGLE_FLOW_NAV_ITEMS.map((item) => (
+        isSection(item) ? (
+          <a
+            class="rail-item"
+            href={item.href}
+            data-nav-item={item.sectionId}
+            aria-label={item.label}
+          >
+            <i class:list={['rail-icon', item.iconClass]} aria-hidden="true"></i>
+            <span class="rail-label">{item.label}</span>
+          </a>
+        ) : isAction(item) ? (
+          <button
+            class="rail-item"
+            type="button"
+            data-open-contact
+            aria-label={item.label}
+          >
+            <i class:list={['rail-icon', item.iconClass]} aria-hidden="true"></i>
+            <span class="rail-label">{item.label}</span>
+          </button>
+        ) : (
+          <a
+            class="rail-item"
+            href={item.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={item.label}
+          >
+            <i class:list={['rail-icon', item.iconClass]} aria-hidden="true"></i>
+            <span class="rail-label">{item.label}</span>
+          </a>
+        )
+      ))
+    }
+  </nav>
+</aside>
+
+<button class="pie-fab" type="button" aria-expanded="false" aria-controls="pie-menu" data-pie-toggle>
+  <i class="fa-solid fa-bars pie-fab-open" aria-hidden="true"></i>
+  <i class="fa-solid fa-xmark pie-fab-close" aria-hidden="true"></i>
+  <span class="sr-only">Open navigation menu</span>
+</button>
+
+<nav id="pie-menu" class="pie-menu" aria-label="Mobile menu" data-pie-menu>
+  {
+    pieNavItems.map((item) =>
+      isSection(item) ? (
+        <a
+          class="pie-item"
+          href={item.href}
+          data-nav-item={item.sectionId}
+          aria-label={item.label}
+        >
+          <i class:list={[item.iconClass]} aria-hidden="true"></i>
+          <span>{item.label}</span>
+        </a>
+      ) : (
+        <button
+          class="pie-item"
+          type="button"
+          data-open-contact
+          aria-label={item.label}
+        >
+          <i class:list={[item.iconClass]} aria-hidden="true"></i>
+          <span>{item.label}</span>
+        </button>
+      )
+    )
+  }
+</nav>

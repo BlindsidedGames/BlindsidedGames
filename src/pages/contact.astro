@@ -1,92 +1,21 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-
-const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '1x00000000000000000000AA';
+const target = '/?contact=1';
 ---
 
-<BaseLayout
-  title="Contact"
-  description="Reach Blindsided Games for player support, partnership enquiries, and media requests through the official contact form or Discord."
-  path="/contact"
->
-  <section class="section" data-reveal>
-    <div class="container split-layout contact-layout">
-      <article class="panel panel-elevated">
-        <p class="eyebrow">Contact Blindsided Games</p>
-        <h1>Support, Business, and Press Enquiries</h1>
-        <p>
-          Use the form for structured requests with tracking. For urgent community support, Discord is still the
-          fastest path.
-        </p>
-        <div class="card-grid">
-          <div class="panel tone-soft">
-            <h3>Community Support</h3>
-            <p>Bug reports, feature feedback, and patch questions.</p>
-            <a class="btn btn-secondary" href="https://discord.gg/dKaEy6MFCP" target="_blank" rel="noopener noreferrer">
-              Open Discord
-            </a>
-          </div>
-          <div class="panel tone-soft">
-            <h3>Direct Email</h3>
-            <p>Fallback channel if the form is unavailable.</p>
-            <a class="btn btn-secondary" href="mailto:support@blindsidedgames.com">support@blindsidedgames.com</a>
-          </div>
-        </div>
-      </article>
-
-      <form class="panel contact-form" data-contact-form novalidate>
-        <p class="eyebrow">Secure Contact Form</p>
-        <h2>Send a Message</h2>
-
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" maxlength="120" autocomplete="name" required />
-        <p class="field-error" data-field-error="name"></p>
-
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" maxlength="160" autocomplete="email" required />
-        <p class="field-error" data-field-error="email"></p>
-
-        <label for="subject">Subject</label>
-        <input id="subject" name="subject" type="text" maxlength="160" autocomplete="off" required />
-        <p class="field-error" data-field-error="subject"></p>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6" maxlength="5000" required></textarea>
-        <p class="field-error" data-field-error="message"></p>
-
-        <input id="turnstileToken" name="turnstileToken" type="hidden" required />
-
-        <div
-          class="cf-turnstile"
-          data-sitekey={turnstileSiteKey}
-          data-callback="onTurnstileSuccess"
-          data-expired-callback="onTurnstileExpired"
-          data-error-callback="onTurnstileError"
-        ></div>
-        <p class="field-error" data-field-error="turnstileToken"></p>
-
-        <button class="btn btn-primary submit-button" type="submit">Send Message</button>
-        <p class="form-status" data-form-status role="status" aria-live="polite"></p>
-      </form>
-    </div>
-  </section>
-
-  <script is:inline>
-    window.onTurnstileSuccess = (token) => {
-      const tokenInput = document.getElementById('turnstileToken');
-      if (tokenInput) tokenInput.value = token;
-    };
-
-    window.onTurnstileExpired = () => {
-      const tokenInput = document.getElementById('turnstileToken');
-      if (tokenInput) tokenInput.value = '';
-    };
-
-    window.onTurnstileError = () => {
-      const tokenInput = document.getElementById('turnstileToken');
-      if (tokenInput) tokenInput.value = '';
-    };
-  </script>
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-  <script type="module" src="/scripts/contact-form.js"></script>
-</BaseLayout>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content={`0;url=${target}`} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://blindsidedgames.com/" />
+    <title>Redirecting to Contact</title>
+    <script is:inline>
+      window.location.replace('/?contact=1');
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to <a href={target}>Contact</a>...</p>
+  </body>
+</html>

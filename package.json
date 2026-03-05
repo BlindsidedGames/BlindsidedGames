@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
+    "dev:host": "astro dev --host",
     "build": "astro build && node scripts/postbuild.mjs",
     "preview": "astro preview",
+    "preview:pages": "npm run build && wrangler pages dev ./dist",
     "check": "astro check",
     "deploy:pages": "npm run build && wrangler pages deploy ./dist --project-name blindsidedgames",
     "deploy:pages:preview": "npm run build && wrangler pages deploy ./dist --project-name blindsidedgames --branch preview"

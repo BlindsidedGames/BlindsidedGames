@@ -5,16 +5,19 @@ const currentYear = new Date().getFullYear();
 ---
 
 <footer class="site-footer">
-  <div class="container footer-layout">
+  <div class="footer-layout">
     <p>
-      All rights reserved &copy; Blindsided Games {currentYear}
-      <span aria-hidden="true"> / </span><a href="/policy">Policy</a>
+      Blindsided Games &copy; {currentYear}
+      <span aria-hidden="true"> / </span>
+      <a href="/policy">Policy</a>
     </p>
+
     <div class="social-list" aria-label="Social links">
       {
         SOCIAL_LINKS.map((socialLink) => (
-          <a class:list={['pill-link', socialLink.className]} href={socialLink.href} target="_blank" rel="noopener noreferrer">
-            {socialLink.label}
+          <a class="social-pill" href={socialLink.href} target="_blank" rel="noopener noreferrer" aria-label={socialLink.label}>
+            <i class:list={[socialLink.iconClass]} aria-hidden="true"></i>
+            <span>{socialLink.label}</span>
           </a>
         ))
       }
