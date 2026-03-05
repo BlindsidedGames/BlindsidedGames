@@ -1,0 +1,85 @@
+{
+  "id": "language_medium_01",
+  "title": "Medium Language Quiz 1",
+  "sections": [
+    {
+      "title": "Language",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which definition best matches 'metaphor'?",
+          "a": "A figure of speech that compares without using like or as",
+          "options": [
+            "A group of words with a subject and a verb",
+            "The part of a sentence that performs the action",
+            "A figure of speech that compares without using like or as",
+            "A word with the opposite meaning"
+          ],
+          "explanation": "'metaphor' means: A figure of speech that compares without using like or as."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'simile' in simple terms.",
+          "a": "A comparison using like or as",
+          "explanation": "Use the standard language arts definition of simile."
+        },
+        {
+          "type": "true-false",
+          "q": "Active voice usually makes sentences more direct.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "The actor appears as the subject."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'metaphor' in simple terms.",
+          "a": "A figure of speech that compares without using like or as",
+          "explanation": "Use the standard language arts definition of metaphor."
+        },
+        {
+          "type": "true-false",
+          "q": "A dependent clause can stand as a full sentence by itself.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "It requires an independent clause."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'antonym' in simple terms.",
+          "a": "A word with the opposite meaning",
+          "explanation": "Use the standard language arts definition of antonym."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'synonym' in simple terms.",
+          "a": "A word with a similar meaning",
+          "explanation": "Use the standard language arts definition of synonym."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'alliteration' in simple terms.",
+          "a": "Repetition of starting consonant sounds",
+          "explanation": "Use the standard language arts definition of alliteration."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'idiom' in simple terms.",
+          "a": "A phrase whose meaning is not literal",
+          "explanation": "Use the standard language arts definition of idiom."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'subject' in simple terms.",
+          "a": "The part of a sentence that performs the action",
+          "explanation": "Use the standard language arts definition of subject."
+        }
+      ]
+    }
+  ]
+}

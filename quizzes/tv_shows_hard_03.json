@@ -1,0 +1,85 @@
+{
+  "id": "tv_shows_hard_03",
+  "title": "Hard TV Shows Quiz 3",
+  "sections": [
+    {
+      "title": "TV Shows",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Jim Hacker.",
+          "a": "Yes Minister",
+          "explanation": "Jim Hacker is strongly linked to Yes Minister."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show NYPD Blue?",
+          "a": "Andy Sipowicz",
+          "explanation": "Andy Sipowicz is one of the defining characters in NYPD Blue."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Malcolm Tucker.",
+          "a": "The Thick of It",
+          "explanation": "Malcolm Tucker is strongly linked to The Thick of It."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Saga Noren.",
+          "a": "The Bridge",
+          "explanation": "Saga Noren is strongly linked to The Bridge."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which tv show features the character Mark Corrigan?",
+          "a": "Peep Show",
+          "options": [
+            "Peep Show",
+            "Borgen",
+            "Happy Valley",
+            "Gomorrah"
+          ],
+          "explanation": "Mark Corrigan is associated with Peep Show."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show MASH?",
+          "a": "Hawkeye Pierce",
+          "explanation": "Hawkeye Pierce is one of the defining characters in MASH."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Number Six appears in Call My Agent!.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Number Six appears in The Prisoner, not Call My Agent!."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show Blackadder?",
+          "a": "Edmund Blackadder",
+          "explanation": "Edmund Blackadder is one of the defining characters in Blackadder."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Maurice Moss appears in The IT Crowd.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Maurice Moss is a key character in The IT Crowd."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Kathryn Janeway.",
+          "a": "Star Trek: Voyager",
+          "explanation": "Kathryn Janeway is strongly linked to Star Trek: Voyager."
+        }
+      ]
+    }
+  ]
+}

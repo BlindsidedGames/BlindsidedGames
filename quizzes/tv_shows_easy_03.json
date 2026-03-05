@@ -1,0 +1,85 @@
+{
+  "id": "tv_shows_easy_03",
+  "title": "Easy TV Shows Quiz 3",
+  "sections": [
+    {
+      "title": "TV Shows",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Ted Mosby.",
+          "a": "How I Met Your Mother",
+          "explanation": "Ted Mosby is strongly linked to How I Met Your Mother."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Billy Butcher.",
+          "a": "The Boys",
+          "explanation": "Billy Butcher is strongly linked to The Boys."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Ted Lasso appears in Dexter.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Ted Lasso appears in Ted Lasso, not Dexter."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Geralt of Rivia.",
+          "a": "The Witcher",
+          "explanation": "Geralt of Rivia is strongly linked to The Witcher."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show Lupin?",
+          "a": "Assane Diop",
+          "explanation": "Assane Diop is one of the defining characters in Lupin."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Queen Elizabeth II.",
+          "a": "The Crown",
+          "explanation": "Queen Elizabeth II is strongly linked to The Crown."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show The Office (US)?",
+          "a": "Michael Scott",
+          "explanation": "Michael Scott is one of the defining characters in The Office (US)."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which tv show features the character Sheldon Cooper?",
+          "a": "The Big Bang Theory",
+          "options": [
+            "The Big Bang Theory",
+            "Narcos",
+            "Modern Family",
+            "The Last of Us"
+          ],
+          "explanation": "Sheldon Cooper is associated with The Big Bang Theory."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show Narcos?",
+          "a": "Pablo Escobar",
+          "explanation": "Pablo Escobar is one of the defining characters in Narcos."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Leslie Knope appears in Parks and Recreation.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Leslie Knope is a key character in Parks and Recreation."
+        }
+      ]
+    }
+  ]
+}

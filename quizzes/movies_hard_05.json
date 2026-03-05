@@ -1,0 +1,85 @@
+{
+  "id": "movies_hard_05",
+  "title": "Hard Movies Quiz 5",
+  "sections": [
+    {
+      "title": "Movies",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie Ran?",
+          "a": "Akira Kurosawa",
+          "explanation": "Akira Kurosawa is one of the defining characters in Ran."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Sergio Leone appears in Once Upon a Time in the West.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Sergio Leone is a key character in Once Upon a Time in the West."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Fernando Meirelles appears in The Lives of Others.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Fernando Meirelles appears in City of God, not The Lives of Others."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Wong Kar-wai.",
+          "a": "In the Mood for Love",
+          "explanation": "Wong Kar-wai is strongly linked to In the Mood for Love."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which movie features the character Fritz Lang?",
+          "a": "Metropolis",
+          "options": [
+            "Phantom Thread",
+            "A Clockwork Orange",
+            "Oldboy",
+            "Metropolis"
+          ],
+          "explanation": "Fritz Lang is associated with Metropolis."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Carol Reed.",
+          "a": "The Third Man",
+          "explanation": "Carol Reed is strongly linked to The Third Man."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Coen Brothers.",
+          "a": "Fargo",
+          "explanation": "Coen Brothers is strongly linked to Fargo."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie The Passion of Joan of Arc?",
+          "a": "Carl Theodor Dreyer",
+          "explanation": "Carl Theodor Dreyer is one of the defining characters in The Passion of Joan of Arc."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie Citizen Kane?",
+          "a": "Orson Welles",
+          "explanation": "Orson Welles is one of the defining characters in Citizen Kane."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie Memories of Murder?",
+          "a": "Bong Joon-ho",
+          "explanation": "Bong Joon-ho is one of the defining characters in Memories of Murder."
+        }
+      ]
+    }
+  ]
+}

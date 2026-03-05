@@ -1,0 +1,85 @@
+{
+  "id": "language_easy_05",
+  "title": "Easy Language Quiz 5",
+  "sections": [
+    {
+      "title": "Language",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "What language is most commonly spoken in Turkey?",
+          "a": "Turkish",
+          "explanation": "Turkish is widely used in Turkey."
+        },
+        {
+          "type": "self-eval",
+          "q": "What language is most commonly spoken in Japan?",
+          "a": "Japanese",
+          "explanation": "Japanese is widely used in Japan."
+        },
+        {
+          "type": "self-eval",
+          "q": "What language is most commonly spoken in France?",
+          "a": "French",
+          "explanation": "French is widely used in France."
+        },
+        {
+          "type": "true-false",
+          "q": "Its always means it is.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This follows standard English usage."
+        },
+        {
+          "type": "self-eval",
+          "q": "What language is most commonly spoken in Norway?",
+          "a": "Norwegian",
+          "explanation": "Norwegian is widely used in Norway."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What does 'ola' most commonly mean in English?",
+          "a": "hello",
+          "options": [
+            "hello",
+            "thank you",
+            "hello beautiful",
+            "greeting"
+          ],
+          "explanation": "'ola' is commonly translated as 'hello'."
+        },
+        {
+          "type": "self-eval",
+          "q": "What language is most commonly spoken in South Korea?",
+          "a": "Korean",
+          "explanation": "Korean is widely used in South Korea."
+        },
+        {
+          "type": "self-eval",
+          "q": "What language is most commonly spoken in Israel?",
+          "a": "Hebrew",
+          "explanation": "Hebrew is widely used in Israel."
+        },
+        {
+          "type": "true-false",
+          "q": "Who's is a contraction of who is.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This follows standard English usage."
+        },
+        {
+          "type": "self-eval",
+          "q": "What language is most commonly spoken in Indonesia?",
+          "a": "Indonesian",
+          "explanation": "Indonesian is widely used in Indonesia."
+        }
+      ]
+    }
+  ]
+}

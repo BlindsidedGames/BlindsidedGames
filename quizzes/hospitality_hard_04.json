@@ -1,0 +1,85 @@
+{
+  "id": "hospitality_hard_04",
+  "title": "Hard Hospitality Quiz 4",
+  "sections": [
+    {
+      "title": "Hospitality",
+      "items": [
+        {
+          "type": "true-false",
+          "q": "Smoke point has no practical relevance in commercial kitchens.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This aligns with common culinary science understanding."
+        },
+        {
+          "type": "self-eval",
+          "q": "Explain the culinary science concept: emulsion breaking in sauces. (set 2)",
+          "a": "fat and water phases separate",
+          "explanation": "Core explanation: fat and water phases separate."
+        },
+        {
+          "type": "true-false",
+          "q": "Brining can improve perceived juiciness in cooked meats.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This aligns with common culinary science understanding."
+        },
+        {
+          "type": "self-eval",
+          "q": "Explain the culinary science concept: difference between stock and broth. (set 2)",
+          "a": "stock is simmered from bones; broth is from meat and seasoning",
+          "explanation": "Core explanation: stock is simmered from bones; broth is from meat and seasoning."
+        },
+        {
+          "type": "self-eval",
+          "q": "Explain the culinary science concept: gelatinization in starch cooking. (set 2)",
+          "a": "starch granules absorb water and thicken when heated",
+          "explanation": "Core explanation: starch granules absorb water and thicken when heated."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "In food science, what best defines 'denaturation of proteins'?",
+          "a": "protein structure unfolds due to heat, acid, or agitation",
+          "options": [
+            "protein structure unfolds due to heat, acid, or agitation",
+            "butterfat with milk solids and water removed",
+            "fat and water phases separate",
+            "roasting uses dry heat; braising combines sear and moist heat"
+          ],
+          "explanation": "This concept is defined as: protein structure unfolds due to heat, acid, or agitation."
+        },
+        {
+          "type": "self-eval",
+          "q": "Explain the culinary science concept: autolyse in bread making. (set 2)",
+          "a": "resting flour and water before kneading to improve dough development",
+          "explanation": "Core explanation: resting flour and water before kneading to improve dough development."
+        },
+        {
+          "type": "self-eval",
+          "q": "Explain the culinary science concept: tempering chocolate purpose. (set 2)",
+          "a": "stabilize cocoa butter crystals for gloss and snap",
+          "explanation": "Core explanation: stabilize cocoa butter crystals for gloss and snap."
+        },
+        {
+          "type": "self-eval",
+          "q": "Explain the culinary science concept: smoke point meaning. (set 2)",
+          "a": "temperature at which fat begins to visibly smoke and degrade",
+          "explanation": "Core explanation: temperature at which fat begins to visibly smoke and degrade."
+        },
+        {
+          "type": "self-eval",
+          "q": "Explain the culinary science concept: denaturation of proteins. (set 2)",
+          "a": "protein structure unfolds due to heat, acid, or agitation",
+          "explanation": "Core explanation: protein structure unfolds due to heat, acid, or agitation."
+        }
+      ]
+    }
+  ]
+}

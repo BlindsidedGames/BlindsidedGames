@@ -1,0 +1,85 @@
+{
+  "id": "general_knowledge_hard_04",
+  "title": "Hard General Knowledge Quiz 4",
+  "sections": [
+    {
+      "title": "General Knowledge",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Which strait separates Australia and Tasmania? (set 2)",
+          "a": "Bass Strait",
+          "explanation": "Standard answer: Bass Strait."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which Australian state has the capital Darwin? (set 2)",
+          "a": "Northern Territory",
+          "explanation": "Standard answer: Northern Territory."
+        },
+        {
+          "type": "true-false",
+          "q": "Pretoria is one of South Africa's capitals.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is an advanced general-knowledge point."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the headquarters city of the United Nations? (set 2)",
+          "a": "New York City",
+          "explanation": "Standard answer: New York City."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the longest river in South America by flow volume? (set 2)",
+          "a": "Amazon River",
+          "explanation": "Standard answer: Amazon River."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which city is the administrative capital of South Africa?",
+          "a": "Pretoria",
+          "options": [
+            "International Criminal Court",
+            "Pretoria",
+            "New York City",
+            "Treaty of Rome"
+          ],
+          "explanation": "The correct answer is Pretoria."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which sea lies between Europe and Africa? (set 2)",
+          "a": "Mediterranean Sea",
+          "explanation": "Standard answer: Mediterranean Sea."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which Australian territory is home to Uluru? (set 2)",
+          "a": "Northern Territory",
+          "explanation": "Standard answer: Northern Territory."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which city is the administrative capital of South Africa? (set 2)",
+          "a": "Pretoria",
+          "explanation": "Standard answer: Pretoria."
+        },
+        {
+          "type": "true-false",
+          "q": "The Pacific is smaller than the Arctic Ocean.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is an advanced general-knowledge point."
+        }
+      ]
+    }
+  ]
+}

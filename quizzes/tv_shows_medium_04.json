@@ -1,0 +1,85 @@
+{
+  "id": "tv_shows_medium_04",
+  "title": "Medium TV Shows Quiz 4",
+  "sections": [
+    {
+      "title": "TV Shows",
+      "items": [
+        {
+          "type": "true-false",
+          "q": "The character Don Draper appears in Fleabag.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Don Draper appears in Mad Men, not Fleabag."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show Derry Girls?",
+          "a": "Erin Quinn",
+          "explanation": "Erin Quinn is one of the defining characters in Derry Girls."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show The Sopranos?",
+          "a": "Tony Soprano",
+          "explanation": "Tony Soprano is one of the defining characters in The Sopranos."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Raylan Givens.",
+          "a": "Justified",
+          "explanation": "Raylan Givens is strongly linked to Justified."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Liz Lemon appears in 30 Rock.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Liz Lemon is a key character in 30 Rock."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show The Handmaids Tale?",
+          "a": "June Osborne",
+          "explanation": "June Osborne is one of the defining characters in The Handmaids Tale."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which tv show features the character Seth Bullock?",
+          "a": "Deadwood",
+          "options": [
+            "Deadwood",
+            "Ozark",
+            "Veep",
+            "The West Wing"
+          ],
+          "explanation": "Seth Bullock is associated with Deadwood."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Seong Gi-hun.",
+          "a": "Squid Game",
+          "explanation": "Seong Gi-hun is strongly linked to Squid Game."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show The Leftovers?",
+          "a": "Kevin Garvey",
+          "explanation": "Kevin Garvey is one of the defining characters in The Leftovers."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Uhtred.",
+          "a": "The Last Kingdom",
+          "explanation": "Uhtred is strongly linked to The Last Kingdom."
+        }
+      ]
+    }
+  ]
+}

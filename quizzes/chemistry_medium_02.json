@@ -1,0 +1,85 @@
+{
+  "id": "chemistry_medium_02",
+  "title": "Medium Chemistry Quiz 2",
+  "sections": [
+    {
+      "title": "Chemistry",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Name the compound with formula H2O.",
+          "a": "water",
+          "explanation": "H2O is commonly called water."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the compound with formula HCl.",
+          "a": "hydrochloric acid",
+          "explanation": "HCl is commonly called hydrochloric acid."
+        },
+        {
+          "type": "self-eval",
+          "q": "What type of bond usually forms between non-metals sharing electrons?",
+          "a": "Covalent bond",
+          "explanation": "Shared electron pairs define covalent bonding."
+        },
+        {
+          "type": "true-false",
+          "q": "Oxidation is the loss of electrons.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is a standard mid-level chemistry concept."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the approximate molar mass of NaCl (g/mol)?",
+          "a": "58.5",
+          "explanation": "Add atomic masses multiplied by each atom count."
+        },
+        {
+          "type": "self-eval",
+          "q": "What type of bond usually forms between non-metals sharing electrons? (set 12)",
+          "a": "Covalent bond",
+          "explanation": "Shared electron pairs define covalent bonding."
+        },
+        {
+          "type": "true-false",
+          "q": "Reduction is the gain of electrons.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is a standard mid-level chemistry concept."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the approximate molar mass of HCl (g/mol)?",
+          "a": "36.5",
+          "explanation": "Add atomic masses multiplied by each atom count."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What compound name matches the formula NaCl?",
+          "a": "sodium chloride",
+          "options": [
+            "hydrochloric acid",
+            "ammonia",
+            "sodium chloride",
+            "potassium nitrate"
+          ],
+          "explanation": "NaCl is sodium chloride."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the approximate molar mass of O2 (g/mol)?",
+          "a": "32.0",
+          "explanation": "Add atomic masses multiplied by each atom count."
+        }
+      ]
+    }
+  ]
+}

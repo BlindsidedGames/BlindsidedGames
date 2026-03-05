@@ -1,0 +1,85 @@
+{
+  "id": "movies_hard_02",
+  "title": "Hard Movies Quiz 2",
+  "sections": [
+    {
+      "title": "Movies",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Orson Welles.",
+          "a": "Citizen Kane",
+          "explanation": "Orson Welles is strongly linked to Citizen Kane."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Stanley Kubrick appears in Ran.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Stanley Kubrick appears in A Clockwork Orange, not Ran."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Jean-Pierre Jeunet appears in Amelie.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Jean-Pierre Jeunet is a key character in Amelie."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie The Third Man?",
+          "a": "Carol Reed",
+          "explanation": "Carol Reed is one of the defining characters in The Third Man."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie In the Mood for Love?",
+          "a": "Wong Kar-wai",
+          "explanation": "Wong Kar-wai is one of the defining characters in In the Mood for Love."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie Spirited Away?",
+          "a": "Hayao Miyazaki",
+          "explanation": "Hayao Miyazaki is one of the defining characters in Spirited Away."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which movie features the character Andrei Tarkovsky?",
+          "a": "Solaris",
+          "options": [
+            "City of God",
+            "Solaris",
+            "Apocalypse Now",
+            "The Seventh Seal"
+          ],
+          "explanation": "Andrei Tarkovsky is associated with Solaris."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Ingmar Bergman.",
+          "a": "Persona",
+          "explanation": "Ingmar Bergman is strongly linked to Persona."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Akira Kurosawa.",
+          "a": "Ran",
+          "explanation": "Akira Kurosawa is strongly linked to Ran."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie Rashomon?",
+          "a": "Akira Kurosawa",
+          "explanation": "Akira Kurosawa is one of the defining characters in Rashomon."
+        }
+      ]
+    }
+  ]
+}

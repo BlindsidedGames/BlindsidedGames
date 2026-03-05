@@ -1,0 +1,85 @@
+{
+  "id": "movies_easy_01",
+  "title": "Easy Movies Quiz 1",
+  "sections": [
+    {
+      "title": "Movies",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Forrest Gump.",
+          "a": "Forrest Gump",
+          "explanation": "Forrest Gump is strongly linked to Forrest Gump."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie Frozen?",
+          "a": "Elsa",
+          "explanation": "Elsa is one of the defining characters in Frozen."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Woody.",
+          "a": "Toy Story",
+          "explanation": "Woody is strongly linked to Toy Story."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Belle.",
+          "a": "Beauty and the Beast",
+          "explanation": "Belle is strongly linked to Beauty and the Beast."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie Black Panther?",
+          "a": "T'Challa",
+          "explanation": "T'Challa is one of the defining characters in Black Panther."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Chief Brody appears in Toy Story.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Chief Brody appears in Jaws, not Toy Story."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Ethan Hunt.",
+          "a": "Mission: Impossible - Fallout",
+          "explanation": "Ethan Hunt is strongly linked to Mission: Impossible - Fallout."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie Deadpool?",
+          "a": "Deadpool",
+          "explanation": "Deadpool is one of the defining characters in Deadpool."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which movie features the character Diana Prince?",
+          "a": "Wonder Woman",
+          "options": [
+            "The Avengers",
+            "Wonder Woman",
+            "Star Wars",
+            "Finding Nemo"
+          ],
+          "explanation": "Diana Prince is associated with Wonder Woman."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Shrek appears in Shrek.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Shrek is a key character in Shrek."
+        }
+      ]
+    }
+  ]
+}

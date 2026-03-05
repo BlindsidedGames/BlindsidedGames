@@ -1,0 +1,85 @@
+{
+  "id": "tv_shows_medium_01",
+  "title": "Medium TV Shows Quiz 1",
+  "sections": [
+    {
+      "title": "TV Shows",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which tv show features the character Light Yagami?",
+          "a": "Death Note",
+          "options": [
+            "Derry Girls",
+            "Homeland",
+            "Death Note",
+            "The Queen's Gambit"
+          ],
+          "explanation": "Light Yagami is associated with Death Note."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show The Newsroom?",
+          "a": "Will McAvoy",
+          "explanation": "Will McAvoy is one of the defining characters in The Newsroom."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Valery Legasov appears in Chernobyl.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Valery Legasov is a key character in Chernobyl."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Lester Nygaard.",
+          "a": "Fargo",
+          "explanation": "Lester Nygaard is strongly linked to Fargo."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character June Osborne.",
+          "a": "The Handmaids Tale",
+          "explanation": "June Osborne is strongly linked to The Handmaids Tale."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Sookie Stackhouse appears in Fargo.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Sookie Stackhouse appears in True Blood, not Fargo."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show Squid Game?",
+          "a": "Seong Gi-hun",
+          "explanation": "Seong Gi-hun is one of the defining characters in Squid Game."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Nate Fisher.",
+          "a": "Six Feet Under",
+          "explanation": "Nate Fisher is strongly linked to Six Feet Under."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show Rome?",
+          "a": "Lucius Vorenus",
+          "explanation": "Lucius Vorenus is one of the defining characters in Rome."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Kevin Garvey.",
+          "a": "The Leftovers",
+          "explanation": "Kevin Garvey is strongly linked to The Leftovers."
+        }
+      ]
+    }
+  ]
+}

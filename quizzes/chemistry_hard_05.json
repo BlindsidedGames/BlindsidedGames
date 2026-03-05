@@ -1,0 +1,85 @@
+{
+  "id": "chemistry_hard_05",
+  "title": "Hard Chemistry Quiz 5",
+  "sections": [
+    {
+      "title": "Chemistry",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Define 'buffer solution' in chemistry. (set 29)",
+          "a": "Resists pH change when small acid/base amounts are added",
+          "explanation": "Core definition: Resists pH change when small acid/base amounts are added."
+        },
+        {
+          "type": "true-false",
+          "q": "Entropy generally decreases when gas molecules disperse into a larger volume.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This statement follows advanced chemistry principles."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which chemistry concept matches this definition: Rate proportional to product of concentrations or squared concentration? (set 32)",
+          "a": "second-order kinetics",
+          "explanation": "This definition refers to second-order kinetics."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which definition best matches 'standard enthalpy change'?",
+          "a": "Heat change at constant pressure under standard conditions",
+          "options": [
+            "Heat change at constant pressure under standard conditions",
+            "Thermodynamic potential predicting reaction spontaneity",
+            "Energy needed to convert liquid to gas at boiling point",
+            "Resists pH change when small acid/base amounts are added"
+          ],
+          "explanation": "standard enthalpy change means: Heat change at constant pressure under standard conditions."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'first-order kinetics' in chemistry. (set 31)",
+          "a": "Rate proportional to concentration of one reactant",
+          "explanation": "Core definition: Rate proportional to concentration of one reactant."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which chemistry concept matches this definition: Voltage associated with a redox half-cell? (set 34)",
+          "a": "electrode potential",
+          "explanation": "This definition refers to electrode potential."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which chemistry concept matches this definition: Two species differing by one proton? (set 30)",
+          "a": "conjugate acid-base pair",
+          "explanation": "This definition refers to conjugate acid-base pair."
+        },
+        {
+          "type": "true-false",
+          "q": "Le Chatelier's principle predicts direction of equilibrium shifts after disturbance.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This statement follows advanced chemistry principles."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'nucleophile' in chemistry. (set 35)",
+          "a": "Electron-pair donor in a reaction",
+          "explanation": "Core definition: Electron-pair donor in a reaction."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'half-life' in chemistry. (set 33)",
+          "a": "Time for reactant concentration to fall to half",
+          "explanation": "Core definition: Time for reactant concentration to fall to half."
+        }
+      ]
+    }
+  ]
+}

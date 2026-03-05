@@ -1,0 +1,85 @@
+{
+  "id": "tv_shows_easy_05",
+  "title": "Easy TV Shows Quiz 5",
+  "sections": [
+    {
+      "title": "TV Shows",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which tv show features the character Wednesday Addams?",
+          "a": "Wednesday",
+          "options": [
+            "Better Call Saul",
+            "Wednesday",
+            "Lost",
+            "Seinfeld"
+          ],
+          "explanation": "Wednesday Addams is associated with Wednesday."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show The Walking Dead?",
+          "a": "Rick Grimes",
+          "explanation": "Rick Grimes is one of the defining characters in The Walking Dead."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Sherlock Holmes.",
+          "a": "Sherlock",
+          "explanation": "Sherlock Holmes is strongly linked to Sherlock."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Jack Shephard appears in Lost.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Jack Shephard is a key character in Lost."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Meredith Grey.",
+          "a": "Greys Anatomy",
+          "explanation": "Meredith Grey is strongly linked to Greys Anatomy."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Eleven.",
+          "a": "Stranger Things",
+          "explanation": "Eleven is strongly linked to Stranger Things."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Homer Simpson.",
+          "a": "The Simpsons",
+          "explanation": "Homer Simpson is strongly linked to The Simpsons."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Joel Miller appears in The Boys.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Joel Miller appears in The Last of Us, not The Boys."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show Game of Thrones?",
+          "a": "Jon Snow",
+          "explanation": "Jon Snow is one of the defining characters in Game of Thrones."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show Brooklyn Nine-Nine?",
+          "a": "Jake Peralta",
+          "explanation": "Jake Peralta is one of the defining characters in Brooklyn Nine-Nine."
+        }
+      ]
+    }
+  ]
+}

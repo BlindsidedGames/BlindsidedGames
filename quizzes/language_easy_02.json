@@ -1,0 +1,85 @@
+{
+  "id": "language_easy_02",
+  "title": "Easy Language Quiz 2",
+  "sections": [
+    {
+      "title": "Language",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "What language is most commonly spoken in Finland?",
+          "a": "Finnish",
+          "explanation": "Finnish is widely used in Finland."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which word is the contraction of do not?",
+          "a": "don't",
+          "explanation": "Contractions combine two words with an apostrophe."
+        },
+        {
+          "type": "true-false",
+          "q": "An adjective modifies a noun.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This follows standard English usage."
+        },
+        {
+          "type": "true-false",
+          "q": "A sentence fragment is a complete sentence.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This follows standard English usage."
+        },
+        {
+          "type": "self-eval",
+          "q": "What language is most commonly spoken in Poland?",
+          "a": "Polish",
+          "explanation": "Polish is widely used in Poland."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What does 'danke' most commonly mean in English?",
+          "a": "thank you",
+          "options": [
+            "hello",
+            "sorry",
+            "thank you",
+            "good night"
+          ],
+          "explanation": "'danke' is commonly translated as 'thank you'."
+        },
+        {
+          "type": "self-eval",
+          "q": "Translate 'do svidaniya' into English.",
+          "a": "goodbye",
+          "explanation": "Use the common conversational meaning."
+        },
+        {
+          "type": "self-eval",
+          "q": "What part of speech names a person, place, or thing?",
+          "a": "Noun",
+          "explanation": "Nouns identify people, places, things, or ideas."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the plural form of child?",
+          "a": "Children",
+          "explanation": "This is an irregular plural noun."
+        },
+        {
+          "type": "self-eval",
+          "q": "Translate 'bonjour' into English.",
+          "a": "hello",
+          "explanation": "Use the common conversational meaning."
+        }
+      ]
+    }
+  ]
+}

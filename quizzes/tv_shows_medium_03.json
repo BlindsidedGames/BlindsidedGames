@@ -1,0 +1,85 @@
+{
+  "id": "tv_shows_medium_03",
+  "title": "Medium TV Shows Quiz 3",
+  "sections": [
+    {
+      "title": "TV Shows",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Monkey D. Luffy.",
+          "a": "One Piece",
+          "explanation": "Monkey D. Luffy is strongly linked to One Piece."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show Money Heist?",
+          "a": "The Professor",
+          "explanation": "The Professor is one of the defining characters in Money Heist."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Dolores Abernathy appears in Westworld.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Dolores Abernathy is a key character in Westworld."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Edward Elric.",
+          "a": "Fullmetal Alchemist: Brotherhood",
+          "explanation": "Edward Elric is strongly linked to Fullmetal Alchemist: Brotherhood."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show Mindhunter?",
+          "a": "Holden Ford",
+          "explanation": "Holden Ford is one of the defining characters in Mindhunter."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which tv show features the character Kara Thrace?",
+          "a": "Battlestar Galactica",
+          "options": [
+            "Veep",
+            "Battlestar Galactica",
+            "The Wire",
+            "The Sopranos"
+          ],
+          "explanation": "Kara Thrace is associated with Battlestar Galactica."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Nucky Thompson.",
+          "a": "Boardwalk Empire",
+          "explanation": "Nucky Thompson is strongly linked to Boardwalk Empire."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show The West Wing?",
+          "a": "Josiah Bartlet",
+          "explanation": "Josiah Bartlet is one of the defining characters in The West Wing."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Olivia Dunham.",
+          "a": "Fringe",
+          "explanation": "Olivia Dunham is strongly linked to Fringe."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Elizabeth Jennings appears in Veep.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Elizabeth Jennings appears in The Americans, not Veep."
+        }
+      ]
+    }
+  ]
+}

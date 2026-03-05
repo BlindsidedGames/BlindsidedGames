@@ -1,0 +1,85 @@
+{
+  "id": "chemistry_easy_02",
+  "title": "Easy Chemistry Quiz 2",
+  "sections": [
+    {
+      "title": "Chemistry",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "What is the symbol for Silver?",
+          "a": "Ag",
+          "explanation": "The standard symbol for Silver is Ag."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the symbol for Iodine?",
+          "a": "I",
+          "explanation": "The standard symbol for Iodine is I."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the atomic number of Fluorine?",
+          "a": "9",
+          "explanation": "Fluorine is element number 9."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the atomic number of Sodium?",
+          "a": "11",
+          "explanation": "Sodium is element number 11."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the symbol for Lead?",
+          "a": "Pb",
+          "explanation": "The standard symbol for Lead is Pb."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the atomic number of Aluminium?",
+          "a": "13",
+          "explanation": "Aluminium is element number 13."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the symbol for Oxygen?",
+          "a": "O",
+          "explanation": "The standard symbol for Oxygen is O."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What is the chemical symbol for Gold?",
+          "a": "Au",
+          "options": [
+            "Au",
+            "Li",
+            "Ne",
+            "Mg"
+          ],
+          "explanation": "Gold has the symbol Au."
+        },
+        {
+          "type": "true-false",
+          "q": "Na is the chemical symbol for nitrogen.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is standard introductory chemistry knowledge."
+        },
+        {
+          "type": "true-false",
+          "q": "Oxygen has the symbol O.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is standard introductory chemistry knowledge."
+        }
+      ]
+    }
+  ]
+}

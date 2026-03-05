@@ -1,0 +1,85 @@
+{
+  "id": "hospitality_easy_03",
+  "title": "Easy Hospitality Quiz 3",
+  "sections": [
+    {
+      "title": "Hospitality",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "In basic kitchen terms, what is 'tool used to check doneness temperature'?",
+          "a": "probe thermometer",
+          "explanation": "tool used to check doneness temperature corresponds to probe thermometer."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "In kitchen basics, what is 'base mixture of chopped onion, carrot, and celery'?",
+          "a": "mirepoix",
+          "options": [
+            "mirepoix",
+            "redistributes juices",
+            "5 mL",
+            "bacterial growth"
+          ],
+          "explanation": "The expected answer is mirepoix."
+        },
+        {
+          "type": "self-eval",
+          "q": "In basic kitchen terms, what is '1 tablespoon in metric volume'?",
+          "a": "15 mL",
+          "explanation": "1 tablespoon in metric volume corresponds to 15 mL."
+        },
+        {
+          "type": "self-eval",
+          "q": "In basic kitchen terms, what is 'to cook in liquid just below boiling'? (set 2)",
+          "a": "poach",
+          "explanation": "to cook in liquid just below boiling corresponds to poach."
+        },
+        {
+          "type": "true-false",
+          "q": "A probe thermometer helps verify doneness.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This reflects standard culinary practice."
+        },
+        {
+          "type": "self-eval",
+          "q": "In basic kitchen terms, what is 'dry heat cooking in an oven'?",
+          "a": "baking or roasting",
+          "explanation": "dry heat cooking in an oven corresponds to baking or roasting."
+        },
+        {
+          "type": "self-eval",
+          "q": "In basic kitchen terms, what is 'safe internal temperature for chicken'?",
+          "a": "75C",
+          "explanation": "safe internal temperature for chicken corresponds to 75C."
+        },
+        {
+          "type": "self-eval",
+          "q": "In basic kitchen terms, what is 'rapid cooling of hot food prevents'?",
+          "a": "bacterial growth",
+          "explanation": "rapid cooling of hot food prevents corresponds to bacterial growth."
+        },
+        {
+          "type": "self-eval",
+          "q": "In basic kitchen terms, what is 'emulsion of oil and vinegar'?",
+          "a": "vinaigrette",
+          "explanation": "emulsion of oil and vinegar corresponds to vinaigrette."
+        },
+        {
+          "type": "true-false",
+          "q": "Sauteing uses low heat and lots of liquid.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This reflects standard culinary practice."
+        }
+      ]
+    }
+  ]
+}

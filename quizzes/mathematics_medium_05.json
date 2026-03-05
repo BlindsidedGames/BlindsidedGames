@@ -1,0 +1,85 @@
+{
+  "id": "mathematics_medium_05",
+  "title": "Medium Mathematics Quiz 5",
+  "sections": [
+    {
+      "title": "Mathematics",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Find the mean of 33, 22, 17, and 28.",
+          "a": "25",
+          "explanation": "Add all values and divide by the count."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Evaluate: 2(8) + 1",
+          "a": "17",
+          "options": [
+            "15",
+            "19",
+            "17",
+            "22"
+          ],
+          "explanation": "Multiply first, then add."
+        },
+        {
+          "type": "self-eval",
+          "q": "Find the mean of 25, 9, 29, and 14.",
+          "a": "19.25",
+          "explanation": "Add all values and divide by the count."
+        },
+        {
+          "type": "true-false",
+          "q": "If y = 7x + 7, then when x = 3, y = 28.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Substitute x into the expression."
+        },
+        {
+          "type": "self-eval",
+          "q": "Evaluate 5^4.",
+          "a": "625",
+          "explanation": "Multiply the base by itself p times."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the area of a triangle with base 10 cm and height 13 cm?",
+          "a": "65",
+          "explanation": "Area of triangle is (base x height) / 2."
+        },
+        {
+          "type": "self-eval",
+          "q": "Simplify the ratio 24:72.",
+          "a": "3:9",
+          "explanation": "Divide both terms by the common factor."
+        },
+        {
+          "type": "true-false",
+          "q": "If y = 8x + 9, then when x = 2, y = 21.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Substitution gives a different value."
+        },
+        {
+          "type": "self-eval",
+          "q": "A value is 155. It has a 5% increase. What is the new value?",
+          "a": "162.75",
+          "explanation": "Apply the percentage change to the starting value."
+        },
+        {
+          "type": "self-eval",
+          "q": "Simplify the ratio 60:54.",
+          "a": "10:9",
+          "explanation": "Divide both terms by the common factor."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "mathematics_easy_04",
+  "title": "Easy Mathematics Quiz 4",
+  "sections": [
+    {
+      "title": "Mathematics",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "What is 10 x 10?",
+          "a": "100",
+          "explanation": "Use multiplication facts."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is 10% of 75?",
+          "a": "7.5",
+          "explanation": "Convert the percent to a decimal and multiply."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What is 20 + 23?",
+          "a": "43",
+          "options": [
+            "40",
+            "43",
+            "44",
+            "50"
+          ],
+          "explanation": "Add the two whole numbers."
+        },
+        {
+          "type": "true-false",
+          "q": "11 x 11 = 121.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Multiplication confirms the statement."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is 7 x 7?",
+          "a": "49",
+          "explanation": "Use multiplication facts."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is 130 / 10?",
+          "a": "13",
+          "explanation": "Division is the inverse of multiplication."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is 22 / 11?",
+          "a": "2",
+          "explanation": "Division is the inverse of multiplication."
+        },
+        {
+          "type": "true-false",
+          "q": "4 x 4 = 18.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "The product does not match the multiplication result."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is 6 x 9?",
+          "a": "54",
+          "explanation": "Use multiplication facts."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is 48 / 6?",
+          "a": "8",
+          "explanation": "Division is the inverse of multiplication."
+        }
+      ]
+    }
+  ]
+}

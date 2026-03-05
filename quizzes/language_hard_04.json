@@ -1,0 +1,85 @@
+{
+  "id": "language_hard_04",
+  "title": "Hard Language Quiz 4",
+  "sections": [
+    {
+      "title": "Language",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Which linguistic term matches this definition: The smallest distinctive sound unit in a language? (set 26)",
+          "a": "phoneme",
+          "explanation": "The matching term is phoneme."
+        },
+        {
+          "type": "true-false",
+          "q": "All languages use identical sentence order patterns.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Word order differs across languages."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which definition best matches 'etymology'?",
+          "a": "The origin and historical development of words",
+          "options": [
+            "The origin and historical development of words",
+            "The smallest distinctive sound unit in a language",
+            "Replacing something with a related term",
+            "How context contributes to meaning in communication"
+          ],
+          "explanation": "etymology means The origin and historical development of words."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'digraph'. (set 23)",
+          "a": "Two letters that represent one sound",
+          "explanation": "Use the linguistic definition of digraph."
+        },
+        {
+          "type": "true-false",
+          "q": "Register refers to situational language style choices.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Formality and tone shift by context."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which linguistic term matches this definition: The origin and historical development of words? (set 24)",
+          "a": "etymology",
+          "explanation": "The matching term is etymology."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which linguistic term matches this definition: Alternating between language varieties based on context? (set 22)",
+          "a": "code-switching",
+          "explanation": "The matching term is code-switching."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which linguistic term matches this definition: Rules governing sentence structure? (set 28)",
+          "a": "syntax",
+          "explanation": "The matching term is syntax."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'morphology'. (set 27)",
+          "a": "Study of word formation and structure",
+          "explanation": "Use the linguistic definition of morphology."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'pragmatics'. (set 25)",
+          "a": "How context contributes to meaning in communication",
+          "explanation": "Use the linguistic definition of pragmatics."
+        }
+      ]
+    }
+  ]
+}

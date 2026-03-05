@@ -1,0 +1,85 @@
+{
+  "id": "tv_shows_medium_05",
+  "title": "Medium TV Shows Quiz 5",
+  "sections": [
+    {
+      "title": "TV Shows",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Elliot Alderson.",
+          "a": "Mr. Robot",
+          "explanation": "Elliot Alderson is strongly linked to Mr. Robot."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Will McAvoy.",
+          "a": "The Newsroom",
+          "explanation": "Will McAvoy is strongly linked to The Newsroom."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Jeff Winger.",
+          "a": "Community",
+          "explanation": "Jeff Winger is strongly linked to Community."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show Fargo?",
+          "a": "Lester Nygaard",
+          "explanation": "Lester Nygaard is one of the defining characters in Fargo."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Eleanor Shellstrop appears in Fullmetal Alchemist: Brotherhood.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Eleanor Shellstrop appears in The Good Place, not Fullmetal Alchemist: Brotherhood."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Eren Yeager appears in Attack on Titan.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Eren Yeager is a key character in Attack on Titan."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which tv show features the character Marty Byrde?",
+          "a": "Ozark",
+          "options": [
+            "30 Rock",
+            "Westworld",
+            "Downton Abbey",
+            "Ozark"
+          ],
+          "explanation": "Marty Byrde is associated with Ozark."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show The Wire?",
+          "a": "Jimmy McNulty",
+          "explanation": "Jimmy McNulty is one of the defining characters in The Wire."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show Six Feet Under?",
+          "a": "Nate Fisher",
+          "explanation": "Nate Fisher is one of the defining characters in Six Feet Under."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Lucius Vorenus.",
+          "a": "Rome",
+          "explanation": "Lucius Vorenus is strongly linked to Rome."
+        }
+      ]
+    }
+  ]
+}

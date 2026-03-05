@@ -1,0 +1,85 @@
+{
+  "id": "general_knowledge_hard_05",
+  "title": "Hard General Knowledge Quiz 5",
+  "sections": [
+    {
+      "title": "General Knowledge",
+      "items": [
+        {
+          "type": "true-false",
+          "q": "Australia federated in the 19th century.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is an advanced general-knowledge point."
+        },
+        {
+          "type": "true-false",
+          "q": "The Suez Canal links the Mediterranean Sea and Red Sea.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is an advanced general-knowledge point."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the name of the line of latitude at 0 degrees? (set 2)",
+          "a": "Equator",
+          "explanation": "Standard answer: Equator."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the world's most widely used language family by native speakers. (set 2)",
+          "a": "Sino-Tibetan",
+          "explanation": "Standard answer: Sino-Tibetan."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What is the headquarters city of the United Nations?",
+          "a": "New York City",
+          "options": [
+            "Sahara",
+            "New York City",
+            "Mediterranean Sea",
+            "House of Commons"
+          ],
+          "explanation": "The correct answer is New York City."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which ocean is the largest by surface area? (set 2)",
+          "a": "Pacific Ocean",
+          "explanation": "Standard answer: Pacific Ocean."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the smallest continent by land area? (set 2)",
+          "a": "Australia",
+          "explanation": "Standard answer: Australia."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the tallest mountain above sea level? (set 2)",
+          "a": "Mount Everest",
+          "explanation": "Standard answer: Mount Everest."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the official name of the UK's lower legislative chamber? (set 2)",
+          "a": "House of Commons",
+          "explanation": "Standard answer: House of Commons."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the only continent that has no permanent human population? (set 2)",
+          "a": "Antarctica",
+          "explanation": "Standard answer: Antarctica."
+        }
+      ]
+    }
+  ]
+}

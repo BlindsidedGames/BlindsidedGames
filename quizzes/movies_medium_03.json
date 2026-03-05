@@ -1,0 +1,85 @@
+{
+  "id": "movies_medium_03",
+  "title": "Medium Movies Quiz 3",
+  "sections": [
+    {
+      "title": "Movies",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character The Dude.",
+          "a": "The Big Lebowski",
+          "explanation": "The Dude is strongly linked to The Big Lebowski."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Anton Chigurh.",
+          "a": "No Country for Old Men",
+          "explanation": "Anton Chigurh is strongly linked to No Country for Old Men."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie Inception?",
+          "a": "Dom Cobb",
+          "explanation": "Dom Cobb is one of the defining characters in Inception."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie Alien?",
+          "a": "Ellen Ripley",
+          "explanation": "Ellen Ripley is one of the defining characters in Alien."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Kim Ki-taek appears in Terminator 2: Judgment Day.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Kim Ki-taek appears in Parasite, not Terminator 2: Judgment Day."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which movie features the character Yu Shu Lien?",
+          "a": "Crouching Tiger, Hidden Dragon",
+          "options": [
+            "Fight Club",
+            "Casablanca",
+            "Parasite",
+            "Crouching Tiger, Hidden Dragon"
+          ],
+          "explanation": "Yu Shu Lien is associated with Crouching Tiger, Hidden Dragon."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Amelie Poulain.",
+          "a": "Amelie",
+          "explanation": "Amelie Poulain is strongly linked to Amelie."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Paul Edgecomb appears in The Green Mile.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Paul Edgecomb is a key character in The Green Mile."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie Casablanca?",
+          "a": "Rick Blaine",
+          "explanation": "Rick Blaine is one of the defining characters in Casablanca."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Henry Hill.",
+          "a": "Goodfellas",
+          "explanation": "Henry Hill is strongly linked to Goodfellas."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "tv_shows_hard_05",
+  "title": "Hard TV Shows Quiz 5",
+  "sections": [
+    {
+      "title": "TV Shows",
+      "items": [
+        {
+          "type": "true-false",
+          "q": "The character Jessica Hyde appears in Utopia (UK).",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Jessica Hyde is a key character in Utopia (UK)."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Dale Cooper.",
+          "a": "Twin Peaks",
+          "explanation": "Dale Cooper is strongly linked to Twin Peaks."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Martin Rauch.",
+          "a": "Deutschland 83",
+          "explanation": "Martin Rauch is strongly linked to Deutschland 83."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Frank Pembleton appears in Star Trek: Voyager.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Frank Pembleton appears in Homicide: Life on the Street, not Star Trek: Voyager."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Basil Fawlty.",
+          "a": "Fawlty Towers",
+          "explanation": "Basil Fawlty is strongly linked to Fawlty Towers."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show The Fall?",
+          "a": "Stella Gibson",
+          "explanation": "Stella Gibson is one of the defining characters in The Fall."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Jean-Luc Picard.",
+          "a": "Star Trek: The Next Generation",
+          "explanation": "Jean-Luc Picard is strongly linked to Star Trek: The Next Generation."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show The Shield?",
+          "a": "Vic Mackey",
+          "explanation": "Vic Mackey is one of the defining characters in The Shield."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show Orphan Black?",
+          "a": "Sarah Manning",
+          "explanation": "Sarah Manning is one of the defining characters in Orphan Black."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which tv show features the character Eve Polastri?",
+          "a": "Killing Eve",
+          "options": [
+            "Killing Eve",
+            "Deutschland 83",
+            "Line of Duty",
+            "The Twilight Zone"
+          ],
+          "explanation": "Eve Polastri is associated with Killing Eve."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "general_knowledge_hard_02",
+  "title": "Hard General Knowledge Quiz 2",
+  "sections": [
+    {
+      "title": "General Knowledge",
+      "items": [
+        {
+          "type": "true-false",
+          "q": "The Equator is located at 90 degrees latitude.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is an advanced general-knowledge point."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the tallest mountain above sea level?",
+          "a": "Mount Everest",
+          "explanation": "Standard answer: Mount Everest."
+        },
+        {
+          "type": "true-false",
+          "q": "UNESCO is a specialized agency focused on education, science, and culture.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is an advanced general-knowledge point."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which Australian state has the capital Darwin?",
+          "a": "Northern Territory",
+          "options": [
+            "Mediterranean Sea",
+            "Northern Territory",
+            "Pacific Ocean",
+            "Amazon River"
+          ],
+          "explanation": "The correct answer is Northern Territory."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which strait separates Australia and Tasmania?",
+          "a": "Bass Strait",
+          "explanation": "Standard answer: Bass Strait."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the world's most widely used language family by native speakers.",
+          "a": "Sino-Tibetan",
+          "explanation": "Standard answer: Sino-Tibetan."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the smallest continent by land area?",
+          "a": "Australia",
+          "explanation": "Standard answer: Australia."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the name of the line of latitude at 0 degrees?",
+          "a": "Equator",
+          "explanation": "Standard answer: Equator."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the only continent that has no permanent human population?",
+          "a": "Antarctica",
+          "explanation": "Standard answer: Antarctica."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which ocean is the largest by surface area?",
+          "a": "Pacific Ocean",
+          "explanation": "Standard answer: Pacific Ocean."
+        }
+      ]
+    }
+  ]
+}

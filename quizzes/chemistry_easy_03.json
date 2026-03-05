@@ -1,0 +1,85 @@
+{
+  "id": "chemistry_easy_03",
+  "title": "Easy Chemistry Quiz 3",
+  "sections": [
+    {
+      "title": "Chemistry",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "What is the symbol for Magnesium?",
+          "a": "Mg",
+          "explanation": "The standard symbol for Magnesium is Mg."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the atomic number of Chlorine?",
+          "a": "17",
+          "explanation": "Chlorine is element number 17."
+        },
+        {
+          "type": "true-false",
+          "q": "A molecule of water is H2O.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is standard introductory chemistry knowledge."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the symbol for Carbon?",
+          "a": "C",
+          "explanation": "The standard symbol for Carbon is C."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the atomic number of Zinc?",
+          "a": "30",
+          "explanation": "Zinc is element number 30."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the atomic number of Lithium?",
+          "a": "3",
+          "explanation": "Lithium is element number 3."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What is the chemical symbol for Phosphorus?",
+          "a": "P",
+          "options": [
+            "P",
+            "I",
+            "Zn",
+            "H"
+          ],
+          "explanation": "Phosphorus has the symbol P."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the symbol for Copper?",
+          "a": "Cu",
+          "explanation": "The standard symbol for Copper is Cu."
+        },
+        {
+          "type": "true-false",
+          "q": "Gold has the symbol Go.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is standard introductory chemistry knowledge."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the atomic number of Uranium?",
+          "a": "92",
+          "explanation": "Uranium is element number 92."
+        }
+      ]
+    }
+  ]
+}

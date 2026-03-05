@@ -1,0 +1,85 @@
+{
+  "id": "mathematics_medium_04",
+  "title": "Medium Mathematics Quiz 4",
+  "sections": [
+    {
+      "title": "Mathematics",
+      "items": [
+        {
+          "type": "true-false",
+          "q": "If y = 2x + 9, then when x = 4, y = 21.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Substitution gives a different value."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Evaluate: 7(7) + 4",
+          "a": "53",
+          "options": [
+            "53",
+            "58",
+            "51",
+            "55"
+          ],
+          "explanation": "Multiply first, then add."
+        },
+        {
+          "type": "self-eval",
+          "q": "Find the mean of 18, 32, 8, and 28.",
+          "a": "21.5",
+          "explanation": "Add all values and divide by the count."
+        },
+        {
+          "type": "self-eval",
+          "q": "A value is 132. It has a 20% decrease. What is the new value?",
+          "a": "105.6",
+          "explanation": "Apply the percentage change to the starting value."
+        },
+        {
+          "type": "self-eval",
+          "q": "A bag has 13 red marbles and 10 blue marbles. What is the probability of drawing a red marble?",
+          "a": "13/23",
+          "explanation": "Probability is favorable outcomes over total outcomes."
+        },
+        {
+          "type": "self-eval",
+          "q": "Find the mean of 22, 34, 33, and 30.",
+          "a": "29.75",
+          "explanation": "Add all values and divide by the count."
+        },
+        {
+          "type": "self-eval",
+          "q": "Simplify the ratio 80:80.",
+          "a": "10:10",
+          "explanation": "Divide both terms by the common factor."
+        },
+        {
+          "type": "true-false",
+          "q": "If y = 8x + 12, then when x = 3, y = 36.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Substitute x into the expression."
+        },
+        {
+          "type": "self-eval",
+          "q": "Simplify the ratio 88:80.",
+          "a": "11:10",
+          "explanation": "Divide both terms by the common factor."
+        },
+        {
+          "type": "self-eval",
+          "q": "Find the mean of 35, 32, 13, and 10.",
+          "a": "22.5",
+          "explanation": "Add all values and divide by the count."
+        }
+      ]
+    }
+  ]
+}

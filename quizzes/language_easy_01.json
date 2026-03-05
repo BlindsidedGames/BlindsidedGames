@@ -1,0 +1,85 @@
+{
+  "id": "language_easy_01",
+  "title": "Easy Language Quiz 1",
+  "sections": [
+    {
+      "title": "Language",
+      "items": [
+        {
+          "type": "true-false",
+          "q": "A noun names a person, place, thing, or idea.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This follows standard English usage."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which punctuation mark ends a direct question?",
+          "a": "Question mark",
+          "explanation": "Questions end with a question mark."
+        },
+        {
+          "type": "self-eval",
+          "q": "What language is most commonly spoken in Brazil?",
+          "a": "Portuguese",
+          "explanation": "Portuguese is widely used in Brazil."
+        },
+        {
+          "type": "self-eval",
+          "q": "What language is most commonly spoken in Greece?",
+          "a": "Greek",
+          "explanation": "Greek is widely used in Greece."
+        },
+        {
+          "type": "self-eval",
+          "q": "Translate 'konnichiwa' into English.",
+          "a": "hello",
+          "explanation": "Use the common conversational meaning."
+        },
+        {
+          "type": "true-false",
+          "q": "A verb describes an action or a state.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This follows standard English usage."
+        },
+        {
+          "type": "self-eval",
+          "q": "What language is most commonly spoken in Germany?",
+          "a": "German",
+          "explanation": "German is widely used in Germany."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What does 'konnichiwa' most commonly mean in English?",
+          "a": "hello",
+          "options": [
+            "hello",
+            "good morning",
+            "thank you",
+            "thank you"
+          ],
+          "explanation": "'konnichiwa' is commonly translated as 'hello'."
+        },
+        {
+          "type": "self-eval",
+          "q": "Translate 'sayonara' into English.",
+          "a": "goodbye",
+          "explanation": "Use the common conversational meaning."
+        },
+        {
+          "type": "self-eval",
+          "q": "Translate 'gracias' into English.",
+          "a": "thank you",
+          "explanation": "Use the common conversational meaning."
+        }
+      ]
+    }
+  ]
+}

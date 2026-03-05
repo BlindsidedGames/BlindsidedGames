@@ -1,0 +1,85 @@
+{
+  "id": "movies_medium_05",
+  "title": "Medium Movies Quiz 5",
+  "sections": [
+    {
+      "title": "Movies",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Truman Burbank.",
+          "a": "The Truman Show",
+          "explanation": "Truman Burbank is strongly linked to The Truman Show."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie Whiplash?",
+          "a": "Andrew Neiman",
+          "explanation": "Andrew Neiman is one of the defining characters in Whiplash."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which movie features the character Rick Deckard?",
+          "a": "Blade Runner",
+          "options": [
+            "The Big Lebowski",
+            "The Green Mile",
+            "Blade Runner",
+            "The Truman Show"
+          ],
+          "explanation": "Rick Deckard is associated with Blade Runner."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Michael Corleone.",
+          "a": "The Godfather",
+          "explanation": "Michael Corleone is strongly linked to The Godfather."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie Pulp Fiction?",
+          "a": "Jules Winnfield",
+          "explanation": "Jules Winnfield is one of the defining characters in Pulp Fiction."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Wladyslaw Szpilman.",
+          "a": "The Pianist",
+          "explanation": "Wladyslaw Szpilman is strongly linked to The Pianist."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie The Silence of the Lambs?",
+          "a": "Clarice Starling",
+          "explanation": "Clarice Starling is one of the defining characters in The Silence of the Lambs."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Jordan Belfort appears in The Wolf of Wall Street.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Jordan Belfort is a key character in The Wolf of Wall Street."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Monsieur Gustave.",
+          "a": "The Grand Budapest Hotel",
+          "explanation": "Monsieur Gustave is strongly linked to The Grand Budapest Hotel."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Jamal Malik appears in Goodfellas.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Jamal Malik appears in Slumdog Millionaire, not Goodfellas."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "movies_easy_02",
+  "title": "Easy Movies Quiz 2",
+  "sections": [
+    {
+      "title": "Movies",
+      "items": [
+        {
+          "type": "true-false",
+          "q": "The character Carl Fredricksen appears in Men in Black.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Carl Fredricksen appears in Up, not Men in Black."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie Avatar?",
+          "a": "Jake Sully",
+          "explanation": "Jake Sully is one of the defining characters in Avatar."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character E.T..",
+          "a": "E.T. the Extra-Terrestrial",
+          "explanation": "E.T. is strongly linked to E.T. the Extra-Terrestrial."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Moana appears in Moana.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Moana is a key character in Moana."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Agent J.",
+          "a": "Men in Black",
+          "explanation": "Agent J is strongly linked to Men in Black."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Captain Jack Sparrow.",
+          "a": "Pirates of the Caribbean: The Curse of the Black Pearl",
+          "explanation": "Captain Jack Sparrow is strongly linked to Pirates of the Caribbean: The Curse of the Black Pearl."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie Iron Man?",
+          "a": "Tony Stark",
+          "explanation": "Tony Stark is one of the defining characters in Iron Man."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie Harry Potter and the Philosopher's Stone?",
+          "a": "Harry Potter",
+          "explanation": "Harry Potter is one of the defining characters in Harry Potter and the Philosopher's Stone."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which movie features the character Tony Stark?",
+          "a": "The Avengers",
+          "options": [
+            "Home Alone",
+            "Mission: Impossible - Fallout",
+            "The Avengers",
+            "Iron Man"
+          ],
+          "explanation": "Tony Stark is associated with The Avengers."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie The Incredibles?",
+          "a": "Mr. Incredible",
+          "explanation": "Mr. Incredible is one of the defining characters in The Incredibles."
+        }
+      ]
+    }
+  ]
+}

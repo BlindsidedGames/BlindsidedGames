@@ -1,0 +1,85 @@
+{
+  "id": "hospitality_medium_05",
+  "title": "Medium Hospitality Quiz 5",
+  "sections": [
+    {
+      "title": "Hospitality",
+      "items": [
+        {
+          "type": "true-false",
+          "q": "Cross-contact with allergens can still occur even with tiny transfer amounts.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is a standard hospitality and kitchen principle."
+        },
+        {
+          "type": "self-eval",
+          "q": "What culinary term or concept matches: deglazing means? (set 2)",
+          "a": "adding liquid to lift browned bits from pan",
+          "explanation": "Hospitality training commonly defines this as adding liquid to lift browned bits from pan."
+        },
+        {
+          "type": "self-eval",
+          "q": "What culinary term or concept matches: bain-marie in baking? (set 2)",
+          "a": "water bath",
+          "explanation": "Hospitality training commonly defines this as water bath."
+        },
+        {
+          "type": "self-eval",
+          "q": "What culinary term or concept matches: ratio for basic shortcrust pastry fat to flour? (set 2)",
+          "a": "about 1:2",
+          "explanation": "Hospitality training commonly defines this as about 1:2."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which answer best fits this culinary concept: protein network formed when kneading wheat dough?",
+          "a": "gluten",
+          "options": [
+            "monter au beurre",
+            "lightens mixture",
+            "tough texture",
+            "gluten"
+          ],
+          "explanation": "This concept maps to gluten."
+        },
+        {
+          "type": "self-eval",
+          "q": "What culinary term or concept matches: HACCP stands for? (set 2)",
+          "a": "Hazard Analysis and Critical Control Points",
+          "explanation": "Hospitality training commonly defines this as Hazard Analysis and Critical Control Points."
+        },
+        {
+          "type": "self-eval",
+          "q": "What culinary term or concept matches: mother sauce from milk thickened with roux? (set 2)",
+          "a": "bechamel",
+          "explanation": "Hospitality training commonly defines this as bechamel."
+        },
+        {
+          "type": "self-eval",
+          "q": "What culinary term or concept matches: dough overworked effect on pastry texture? (set 2)",
+          "a": "tough texture",
+          "explanation": "Hospitality training commonly defines this as tough texture."
+        },
+        {
+          "type": "true-false",
+          "q": "A bain-marie is a water-bath technique used for gentle heating.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is a standard hospitality and kitchen principle."
+        },
+        {
+          "type": "self-eval",
+          "q": "What culinary term or concept matches: vacuum-sealed low-temperature water bath cooking? (set 2)",
+          "a": "sous vide",
+          "explanation": "Hospitality training commonly defines this as sous vide."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "tv_shows_easy_04",
+  "title": "Easy TV Shows Quiz 4",
+  "sections": [
+    {
+      "title": "TV Shows",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which tv show features the character Phil Dunphy?",
+          "a": "Modern Family",
+          "options": [
+            "Modern Family",
+            "Greys Anatomy",
+            "The Walking Dead",
+            "Peaky Blinders"
+          ],
+          "explanation": "Phil Dunphy is associated with Modern Family."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Rachel Green.",
+          "a": "Friends",
+          "explanation": "Rachel Green is strongly linked to Friends."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show The Mandalorian?",
+          "a": "Din Djarin",
+          "explanation": "Din Djarin is one of the defining characters in The Mandalorian."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Logan Roy appears in Succession.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Logan Roy is a key character in Succession."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Rust Cohle.",
+          "a": "True Detective",
+          "explanation": "Rust Cohle is strongly linked to True Detective."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show Peaky Blinders?",
+          "a": "Tommy Shelby",
+          "explanation": "Tommy Shelby is one of the defining characters in Peaky Blinders."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Harvey Specter appears in House of the Dragon.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Harvey Specter appears in Suits, not House of the Dragon."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the tv show that features the character Jerry Seinfeld.",
+          "a": "Seinfeld",
+          "explanation": "Jerry Seinfeld is strongly linked to Seinfeld."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show The X-Files?",
+          "a": "Fox Mulder",
+          "explanation": "Fox Mulder is one of the defining characters in The X-Files."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the tv show Better Call Saul?",
+          "a": "Jimmy McGill",
+          "explanation": "Jimmy McGill is one of the defining characters in Better Call Saul."
+        }
+      ]
+    }
+  ]
+}

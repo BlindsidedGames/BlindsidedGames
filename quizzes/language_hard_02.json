@@ -1,0 +1,85 @@
+{
+  "id": "language_hard_02",
+  "title": "Hard Language Quiz 2",
+  "sections": [
+    {
+      "title": "Language",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Which linguistic term matches this definition: Rules governing sentence structure?",
+          "a": "syntax",
+          "explanation": "The matching term is syntax."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which linguistic term matches this definition: Using a part to represent the whole or vice versa?",
+          "a": "synecdoche",
+          "explanation": "The matching term is synecdoche."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which linguistic term matches this definition: Conventional spelling system of a language?",
+          "a": "orthography",
+          "explanation": "The matching term is orthography."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which linguistic term matches this definition: Change in formality based on audience or purpose?",
+          "a": "register shift",
+          "explanation": "The matching term is register shift."
+        },
+        {
+          "type": "true-false",
+          "q": "A phoneme is a full word with dictionary meaning.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "A phoneme is a sound unit."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which definition best matches 'code-switching'?",
+          "a": "Alternating between language varieties based on context",
+          "options": [
+            "Alternating between language varieties based on context",
+            "Rules governing sentence structure",
+            "A morpheme that can stand alone as a word",
+            "Using a part to represent the whole or vice versa"
+          ],
+          "explanation": "code-switching means Alternating between language varieties based on context."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'semantics'.",
+          "a": "Study of meaning in language",
+          "explanation": "Use the linguistic definition of semantics."
+        },
+        {
+          "type": "true-false",
+          "q": "Code-switching can occur within the same sentence.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Bilingual speakers may switch mid-sentence."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'metonymy'.",
+          "a": "Replacing something with a related term",
+          "explanation": "Use the linguistic definition of metonymy."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'deixis'.",
+          "a": "Words whose meaning depends on context like here or now",
+          "explanation": "Use the linguistic definition of deixis."
+        }
+      ]
+    }
+  ]
+}

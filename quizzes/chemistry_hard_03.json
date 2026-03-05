@@ -1,0 +1,85 @@
+{
+  "id": "chemistry_hard_03",
+  "title": "Hard Chemistry Quiz 3",
+  "sections": [
+    {
+      "title": "Chemistry",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Which chemistry concept matches this definition: Relates rate constant to temperature and activation energy?",
+          "a": "Arrhenius equation",
+          "explanation": "This definition refers to Arrhenius equation."
+        },
+        {
+          "type": "true-false",
+          "q": "Resonance structures represent electron delocalization, not rapidly switching molecules.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This statement follows advanced chemistry principles."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'entropy' in chemistry.",
+          "a": "Measure of disorder or number of microstates",
+          "explanation": "Core definition: Measure of disorder or number of microstates."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'resonance' in chemistry.",
+          "a": "Multiple valid Lewis structures for electron delocalization",
+          "explanation": "Core definition: Multiple valid Lewis structures for electron delocalization."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which chemistry concept matches this definition: Electron-pair acceptor in a reaction?",
+          "a": "electrophile",
+          "explanation": "This definition refers to electrophile."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'Le Chatelier's principle' in chemistry. (set 21)",
+          "a": "A system at equilibrium shifts to oppose imposed changes",
+          "explanation": "Core definition: A system at equilibrium shifts to oppose imposed changes."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which chemistry concept matches this definition: Energy needed to convert liquid to gas at boiling point?",
+          "a": "enthalpy of vaporization",
+          "explanation": "This definition refers to enthalpy of vaporization."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'nucleophile' in chemistry.",
+          "a": "Electron-pair donor in a reaction",
+          "explanation": "Core definition: Electron-pair donor in a reaction."
+        },
+        {
+          "type": "true-false",
+          "q": "Increasing temperature always decreases reaction rate.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This statement follows advanced chemistry principles."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which definition best matches 'equilibrium constant K'?",
+          "a": "Ratio of product activities to reactant activities at equilibrium",
+          "options": [
+            "Ratio of product activities to reactant activities at equilibrium",
+            "Minimum energy required for a reaction to proceed",
+            "Measure of disorder or number of microstates",
+            "Formal charge assigned to atoms for electron bookkeeping"
+          ],
+          "explanation": "equilibrium constant K means: Ratio of product activities to reactant activities at equilibrium."
+        }
+      ]
+    }
+  ]
+}

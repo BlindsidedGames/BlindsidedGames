@@ -1,0 +1,85 @@
+{
+  "id": "hospitality_hard_01",
+  "title": "Hard Hospitality Quiz 1",
+  "sections": [
+    {
+      "title": "Hospitality",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Explain the culinary science concept: water activity in food science.",
+          "a": "measure of free water available for microbes",
+          "explanation": "Core explanation: measure of free water available for microbes."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "In food science, what best defines 'water activity in food science'?",
+          "a": "measure of free water available for microbes",
+          "options": [
+            "measure of free water available for microbes",
+            "stabilize cocoa butter crystals for gloss and snap",
+            "concentrate flavor and thicken via evaporation",
+            "helps inhibit pathogens and maintain color"
+          ],
+          "explanation": "This concept is defined as: measure of free water available for microbes."
+        },
+        {
+          "type": "self-eval",
+          "q": "Explain the culinary science concept: tempering chocolate purpose.",
+          "a": "stabilize cocoa butter crystals for gloss and snap",
+          "explanation": "Core explanation: stabilize cocoa butter crystals for gloss and snap."
+        },
+        {
+          "type": "true-false",
+          "q": "Tempering chocolate controls cocoa butter crystal structure.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This aligns with common culinary science understanding."
+        },
+        {
+          "type": "self-eval",
+          "q": "Explain the culinary science concept: denaturation of proteins.",
+          "a": "protein structure unfolds due to heat, acid, or agitation",
+          "explanation": "Core explanation: protein structure unfolds due to heat, acid, or agitation."
+        },
+        {
+          "type": "self-eval",
+          "q": "Explain the culinary science concept: smoke point meaning.",
+          "a": "temperature at which fat begins to visibly smoke and degrade",
+          "explanation": "Core explanation: temperature at which fat begins to visibly smoke and degrade."
+        },
+        {
+          "type": "self-eval",
+          "q": "Explain the culinary science concept: difference between stock and broth.",
+          "a": "stock is simmered from bones; broth is from meat and seasoning",
+          "explanation": "Core explanation: stock is simmered from bones; broth is from meat and seasoning."
+        },
+        {
+          "type": "self-eval",
+          "q": "Explain the culinary science concept: emulsion breaking in sauces.",
+          "a": "fat and water phases separate",
+          "explanation": "Core explanation: fat and water phases separate."
+        },
+        {
+          "type": "self-eval",
+          "q": "Explain the culinary science concept: gelatinization in starch cooking.",
+          "a": "starch granules absorb water and thicken when heated",
+          "explanation": "Core explanation: starch granules absorb water and thicken when heated."
+        },
+        {
+          "type": "true-false",
+          "q": "A broken emulsion means the sauce phases have separated.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This aligns with common culinary science understanding."
+        }
+      ]
+    }
+  ]
+}

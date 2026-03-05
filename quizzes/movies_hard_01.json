@@ -1,0 +1,85 @@
+{
+  "id": "movies_hard_01",
+  "title": "Hard Movies Quiz 1",
+  "sections": [
+    {
+      "title": "Movies",
+      "items": [
+        {
+          "type": "true-false",
+          "q": "The character Francis Ford Coppola appears in The Passion of Joan of Arc.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Francis Ford Coppola appears in Apocalypse Now, not The Passion of Joan of Arc."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Fritz Lang.",
+          "a": "M",
+          "explanation": "Fritz Lang is strongly linked to M."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Federico Fellini.",
+          "a": "8 1/2",
+          "explanation": "Federico Fellini is strongly linked to 8 1/2."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie Oldboy?",
+          "a": "Park Chan-wook",
+          "explanation": "Park Chan-wook is one of the defining characters in Oldboy."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Bong Joon-ho.",
+          "a": "Memories of Murder",
+          "explanation": "Bong Joon-ho is strongly linked to Memories of Murder."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which movie features the character Paul Thomas Anderson?",
+          "a": "Phantom Thread",
+          "options": [
+            "The Shape of Water",
+            "Phantom Thread",
+            "Psycho",
+            "Rashomon"
+          ],
+          "explanation": "Paul Thomas Anderson is associated with Phantom Thread."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the movie that features the character Carl Theodor Dreyer.",
+          "a": "The Passion of Joan of Arc",
+          "explanation": "Carl Theodor Dreyer is strongly linked to The Passion of Joan of Arc."
+        },
+        {
+          "type": "true-false",
+          "q": "The character Guillermo del Toro appears in Pans Labyrinth.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Guillermo del Toro is a key character in Pans Labyrinth."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie Fargo?",
+          "a": "Coen Brothers",
+          "explanation": "Coen Brothers is one of the defining characters in Fargo."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which character is strongly associated with the movie There Will Be Blood?",
+          "a": "Paul Thomas Anderson",
+          "explanation": "Paul Thomas Anderson is one of the defining characters in There Will Be Blood."
+        }
+      ]
+    }
+  ]
+}

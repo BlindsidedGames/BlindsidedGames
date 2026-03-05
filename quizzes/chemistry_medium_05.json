@@ -1,0 +1,85 @@
+{
+  "id": "chemistry_medium_05",
+  "title": "Medium Chemistry Quiz 5",
+  "sections": [
+    {
+      "title": "Chemistry",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "What type of bond forms when electrons are transferred?",
+          "a": "Ionic bond",
+          "explanation": "Electron transfer forms ions that attract."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the approximate molar mass of NaCl (g/mol)? (set 35)",
+          "a": "58.5",
+          "explanation": "Add atomic masses multiplied by each atom count."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the approximate molar mass of NH3 (g/mol)? (set 29)",
+          "a": "17.0",
+          "explanation": "Add atomic masses multiplied by each atom count."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the compound with formula KNO3.",
+          "a": "potassium nitrate",
+          "explanation": "KNO3 is commonly called potassium nitrate."
+        },
+        {
+          "type": "true-false",
+          "q": "Ionic bonds involve sharing electron pairs equally.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is a standard mid-level chemistry concept."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What compound name matches the formula CH4?",
+          "a": "methane",
+          "options": [
+            "potassium nitrate",
+            "sodium chloride",
+            "sulfuric acid",
+            "methane"
+          ],
+          "explanation": "CH4 is methane."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the compound with formula CH4.",
+          "a": "methane",
+          "explanation": "CH4 is commonly called methane."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the approximate molar mass of HCl (g/mol)? (set 32)",
+          "a": "36.5",
+          "explanation": "Add atomic masses multiplied by each atom count."
+        },
+        {
+          "type": "true-false",
+          "q": "A mole is approximately 6.022 x 10^23 particles.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is a standard mid-level chemistry concept."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the pH range of acidic solutions?",
+          "a": "Below 7",
+          "explanation": "Acids have pH values lower than neutral 7."
+        }
+      ]
+    }
+  ]
+}

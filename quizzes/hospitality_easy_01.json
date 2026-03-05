@@ -1,0 +1,85 @@
+{
+  "id": "hospitality_easy_01",
+  "title": "Easy Hospitality Quiz 1",
+  "sections": [
+    {
+      "title": "Hospitality",
+      "items": [
+        {
+          "type": "true-false",
+          "q": "Boiling and simmering are exactly the same heat level.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This reflects standard culinary practice."
+        },
+        {
+          "type": "self-eval",
+          "q": "In basic kitchen terms, what is 'cooking food briefly in boiling water then cooling'?",
+          "a": "blanching",
+          "explanation": "cooking food briefly in boiling water then cooling corresponds to blanching."
+        },
+        {
+          "type": "self-eval",
+          "q": "In basic kitchen terms, what is 'to cut ingredients into very small cubes'?",
+          "a": "brunoise",
+          "explanation": "to cut ingredients into very small cubes corresponds to brunoise."
+        },
+        {
+          "type": "self-eval",
+          "q": "In basic kitchen terms, what is 'resting cooked meat does what'?",
+          "a": "redistributes juices",
+          "explanation": "resting cooked meat does what corresponds to redistributes juices."
+        },
+        {
+          "type": "self-eval",
+          "q": "In basic kitchen terms, what is 'base mixture of chopped onion, carrot, and celery'?",
+          "a": "mirepoix",
+          "explanation": "base mixture of chopped onion, carrot, and celery corresponds to mirepoix."
+        },
+        {
+          "type": "true-false",
+          "q": "Chicken is considered safely cooked at an internal temperature of 75C.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This reflects standard culinary practice."
+        },
+        {
+          "type": "self-eval",
+          "q": "In basic kitchen terms, what is 'French term for place and prep before service'?",
+          "a": "mise en place",
+          "explanation": "French term for place and prep before service corresponds to mise en place."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "In kitchen basics, what is 'to cook in liquid just below boiling'?",
+          "a": "poach",
+          "options": [
+            "baking or roasting",
+            "poach",
+            "about 85C to 96C",
+            "5 mL"
+          ],
+          "explanation": "The expected answer is poach."
+        },
+        {
+          "type": "self-eval",
+          "q": "In basic kitchen terms, what is 'to cook in liquid just below boiling'?",
+          "a": "poach",
+          "explanation": "to cook in liquid just below boiling corresponds to poach."
+        },
+        {
+          "type": "self-eval",
+          "q": "In basic kitchen terms, what is 'the browning reaction on meat and bread'?",
+          "a": "Maillard reaction",
+          "explanation": "the browning reaction on meat and bread corresponds to Maillard reaction."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "mathematics_medium_03",
+  "title": "Medium Mathematics Quiz 3",
+  "sections": [
+    {
+      "title": "Mathematics",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "A value is 147. It has a 20% increase. What is the new value?",
+          "a": "176.4",
+          "explanation": "Apply the percentage change to the starting value."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Evaluate: 9(8) + 1",
+          "a": "73",
+          "options": [
+            "75",
+            "78",
+            "71",
+            "73"
+          ],
+          "explanation": "Multiply first, then add."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the area of a triangle with base 20 cm and height 7 cm?",
+          "a": "70",
+          "explanation": "Area of triangle is (base x height) / 2."
+        },
+        {
+          "type": "self-eval",
+          "q": "Evaluate 6^2.",
+          "a": "36",
+          "explanation": "Multiply the base by itself p times."
+        },
+        {
+          "type": "self-eval",
+          "q": "A value is 129. It has a 20% decrease. What is the new value?",
+          "a": "103.2",
+          "explanation": "Apply the percentage change to the starting value."
+        },
+        {
+          "type": "self-eval",
+          "q": "Solve for x: 3x = 6.",
+          "a": "2",
+          "explanation": "Divide both sides by the coefficient."
+        },
+        {
+          "type": "self-eval",
+          "q": "A bag has 58 red marbles and 5 blue marbles. What is the probability of drawing a red marble?",
+          "a": "58/63",
+          "explanation": "Probability is favorable outcomes over total outcomes."
+        },
+        {
+          "type": "true-false",
+          "q": "If y = 6x + 9, then when x = 8, y = 60.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Substitution gives a different value."
+        },
+        {
+          "type": "true-false",
+          "q": "If y = 8x + 13, then when x = 3, y = 33.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Substitution gives a different value."
+        },
+        {
+          "type": "self-eval",
+          "q": "A value is 45. It has a 20% decrease. What is the new value?",
+          "a": "36",
+          "explanation": "Apply the percentage change to the starting value."
+        }
+      ]
+    }
+  ]
+}

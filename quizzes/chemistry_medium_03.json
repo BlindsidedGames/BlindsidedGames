@@ -1,0 +1,85 @@
+{
+  "id": "chemistry_medium_03",
+  "title": "Medium Chemistry Quiz 3",
+  "sections": [
+    {
+      "title": "Chemistry",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "What particle determines an element's atomic number? (set 21)",
+          "a": "Proton",
+          "explanation": "Atomic number equals the number of protons."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the compound with formula NH3.",
+          "a": "ammonia",
+          "explanation": "NH3 is commonly called ammonia."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name one common strong acid used in labs.",
+          "a": "Hydrochloric acid or sulfuric acid",
+          "explanation": "Both are standard examples."
+        },
+        {
+          "type": "true-false",
+          "q": "A catalyst is consumed permanently in a reaction.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is a standard mid-level chemistry concept."
+        },
+        {
+          "type": "self-eval",
+          "q": "What type of bond usually forms between non-metals sharing electrons? (set 15)",
+          "a": "Covalent bond",
+          "explanation": "Shared electron pairs define covalent bonding."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the approximate molar mass of H2O (g/mol)?",
+          "a": "18.0",
+          "explanation": "Add atomic masses multiplied by each atom count."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What compound name matches the formula NH3?",
+          "a": "ammonia",
+          "options": [
+            "calcium carbonate",
+            "ethanol",
+            "ammonia",
+            "sulfuric acid"
+          ],
+          "explanation": "NH3 is ammonia."
+        },
+        {
+          "type": "self-eval",
+          "q": "Name the compound with formula CaCO3.",
+          "a": "calcium carbonate",
+          "explanation": "CaCO3 is commonly called calcium carbonate."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is the approximate molar mass of CH4 (g/mol)?",
+          "a": "16.0",
+          "explanation": "Add atomic masses multiplied by each atom count."
+        },
+        {
+          "type": "true-false",
+          "q": "NaCl in water is an example of an electrolyte solution.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is a standard mid-level chemistry concept."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "mathematics_easy_02",
+  "title": "Easy Mathematics Quiz 2",
+  "sections": [
+    {
+      "title": "Mathematics",
+      "items": [
+        {
+          "type": "true-false",
+          "q": "15 x 12 = 183.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "The product does not match the multiplication result."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is 19 x 4?",
+          "a": "76",
+          "explanation": "Use multiplication facts."
+        },
+        {
+          "type": "self-eval",
+          "q": "A rectangle has length 5 cm and width 7 cm. What is its perimeter in cm?",
+          "a": "24",
+          "explanation": "Perimeter of a rectangle is 2 x (length + width)."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is 19 x 6?",
+          "a": "114",
+          "explanation": "Use multiplication facts."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is 15 x 5?",
+          "a": "75",
+          "explanation": "Use multiplication facts."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is 30% of 199?",
+          "a": "59.7",
+          "explanation": "Convert the percent to a decimal and multiply."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is 63 - 23?",
+          "a": "40",
+          "explanation": "Subtract the second number from the first."
+        },
+        {
+          "type": "true-false",
+          "q": "5 x 10 = 50.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Multiplication confirms the statement."
+        },
+        {
+          "type": "self-eval",
+          "q": "What is 40% of 26?",
+          "a": "10.4",
+          "explanation": "Convert the percent to a decimal and multiply."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What is 28 + 17?",
+          "a": "45",
+          "options": [
+            "44",
+            "45",
+            "48",
+            "52"
+          ],
+          "explanation": "Add the two whole numbers."
+        }
+      ]
+    }
+  ]
+}

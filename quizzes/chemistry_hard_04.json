@@ -1,0 +1,85 @@
+{
+  "id": "chemistry_hard_04",
+  "title": "Hard Chemistry Quiz 4",
+  "sections": [
+    {
+      "title": "Chemistry",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Define 'standard enthalpy change' in chemistry. (set 25)",
+          "a": "Heat change at constant pressure under standard conditions",
+          "explanation": "Core definition: Heat change at constant pressure under standard conditions."
+        },
+        {
+          "type": "true-false",
+          "q": "Oxidation number can help track electron transfer in redox reactions.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This statement follows advanced chemistry principles."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which definition best matches 'reaction quotient Q'?",
+          "a": "Calculated like K but for current concentrations",
+          "options": [
+            "Ratio of product activities to reactant activities at equilibrium",
+            "Calculated like K but for current concentrations",
+            "Mixing of atomic orbitals to form new equivalent orbitals",
+            "Energy needed to convert liquid to gas at boiling point"
+          ],
+          "explanation": "reaction quotient Q means: Calculated like K but for current concentrations."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which chemistry concept matches this definition: Thermodynamic potential predicting reaction spontaneity? (set 26)",
+          "a": "Gibbs free energy",
+          "explanation": "This definition refers to Gibbs free energy."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which chemistry concept matches this definition: Mixing of atomic orbitals to form new equivalent orbitals? (set 28)",
+          "a": "hybridization",
+          "explanation": "This definition refers to hybridization."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'oxidation state' in chemistry. (set 27)",
+          "a": "Formal charge assigned to atoms for electron bookkeeping",
+          "explanation": "Core definition: Formal charge assigned to atoms for electron bookkeeping."
+        },
+        {
+          "type": "true-false",
+          "q": "A strong acid has a very low tendency to dissociate in water.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This statement follows advanced chemistry principles."
+        },
+        {
+          "type": "self-eval",
+          "q": "Define 'equilibrium constant K' in chemistry. (set 23)",
+          "a": "Ratio of product activities to reactant activities at equilibrium",
+          "explanation": "Core definition: Ratio of product activities to reactant activities at equilibrium."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which chemistry concept matches this definition: Minimum energy required for a reaction to proceed? (set 22)",
+          "a": "activation energy",
+          "explanation": "This definition refers to activation energy."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which chemistry concept matches this definition: Calculated like K but for current concentrations? (set 24)",
+          "a": "reaction quotient Q",
+          "explanation": "This definition refers to reaction quotient Q."
+        }
+      ]
+    }
+  ]
+}
