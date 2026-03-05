@@ -6,8 +6,8 @@
   "kv_namespaces": [
     {
       "binding": "CONTACT_RATE_LIMIT_KV",
-      "id": "replace-with-production-kv-id",
-      "preview_id": "replace-with-preview-kv-id"
+      "id": "f7b63e6223a740deade82f846171d09f",
+      "preview_id": "d335b715a7b540e08c0ccdd1758d08d1"
     }
   ],
   "vars": {
