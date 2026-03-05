@@ -3,6 +3,7 @@ import SideRail from '../components/SideRail.astro';
 import ContactModal from '../components/ContactModal.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import { ORGANIZATION_JSON_LD } from '../data/site';
+import wranglerConfigText from '../../wrangler.jsonc?raw';
 import '../styles/core.css';
 
 export type Props = {
@@ -17,7 +18,16 @@ const siteOrigin = (import.meta.env.PUBLIC_SITE_URL || Astro.site || 'https://bl
 const canonicalUrl = new URL(path, siteOrigin).toString();
 const pageTitle = `${title} | Blindsided Games`;
 const ogImageUrl = new URL(ogImage, siteOrigin).toString();
-const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '1x00000000000000000000AA';
+
+const getWranglerTurnstileSiteKey = () => {
+  const match = wranglerConfigText.match(/"PUBLIC_TURNSTILE_SITE_KEY"\s*:\s*"([^"]+)"/);
+  return match?.[1]?.trim() || '';
+};
+
+const turnstileSiteKey =
+  import.meta.env.PUBLIC_TURNSTILE_SITE_KEY ||
+  getWranglerTurnstileSiteKey() ||
+  '1x00000000000000000000AA';
 ---
 
 <!doctype html>
