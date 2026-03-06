@@ -13,19 +13,17 @@ const featuredGames = GAME_PORTFOLIO;
 >
   <div class="flow-sections">
     <section id="profile" class="flow-section" data-flow-section data-section-id="profile" data-reveal>
-      <div class="section-shell single-column">
+      <div class="section-shell single-column profile-shell">
         <aside class="panel profile-aside" data-reveal style="--reveal-delay: 80ms">
           <div class="profile-aside-head">
             <img src="/img/logo.jpg" alt="Blindsided Games logo" width="108" height="108" />
             <div class="profile-aside-copy">
               <h2 class="profile-title">Blindsided Games</h2>
-              <p>Independent studio founded in 2022, focused on long-tail systems and fast practical iteration.</p>
+              <p>
+                Independent studio building readable, progression-heavy incremental games across mobile, desktop,
+                and browser.
+              </p>
             </div>
-          </div>
-          <div class="tag-row">
-            <span>Incremental design</span>
-            <span>UI-first development</span>
-            <span>Cross-platform</span>
           </div>
           <div class="social-inline" aria-label="Social channels">
             {SOCIAL_LINKS.map((social) => (
@@ -36,12 +34,36 @@ const featuredGames = GAME_PORTFOLIO;
           </div>
         </aside>
 
+        <aside class="panel profile-photo-panel" data-reveal style="--reveal-delay: 140ms">
+          <figure class="profile-photo-frame">
+            <img
+              src="/img/Matt.jpg"
+              alt="Matthew Rushworth, founder of Blindsided Games"
+              width="720"
+              height="960"
+            />
+          </figure>
+          <div class="profile-photo-copy">
+            <p>Matthew Rushworth, founder of Blindsided Games.</p>
+          </div>
+        </aside>
+
         <article class="panel hero-panel">
-          <h2>My passion lies with incremental games.</h2>
-          <p class="hero-copy">
-            I am legally blind, so building traditional 2D or 3D action spaces can be limiting. I focus on dense,
-            readable UI-driven game systems where clarity, progression, and momentum are the core experience.
-          </p>
+          <h2 class="profile-hero-title">I have a passion for Incremental Games</h2>
+          <div class="profile-hero-copy-stack">
+            <p class="hero-copy">
+              I care deeply about systems design, and I build incremental games around clear feedback, readable
+              interface hierarchy, and progression loops that are satisfying from minute one to long-term play.
+            </p>
+            <p class="hero-copy">
+              Monetization has to stay ethical. My standard is no predatory pressure, transparent value for every
+              optional purchase, and game balance that still feels complete and enjoyable for players who never spend.
+            </p>
+            <p class="hero-copy">
+              That quality bar is grounded in shipped work like Idle Dyson Swarm and Echoes of Vasteria. The goal is
+              simple: make games that are genuinely fun at the core and worth returning to because the design holds up.
+            </p>
+          </div>
           <div class="button-row">
             <a class="btn btn-primary" href="#games">Explore Games</a>
             <button class="btn btn-secondary" type="button" data-open-contact>Contact Me</button>
@@ -94,17 +116,41 @@ const featuredGames = GAME_PORTFOLIO;
     </section>
 
     <section id="ai" class="flow-section" data-flow-section data-section-id="ai" data-reveal>
-      <div class="section-shell single-column">
-        <article class="panel narrative-panel">
+      <div class="section-shell split-column ai-shell">
+        <article class="panel narrative-panel ai-narrative-panel">
           <h2>AI helps me ship faster and experiment further.</h2>
           <p>
-            I use AI as a practical multiplier for research, drafting, and iteration loops. It does not replace game
-            direction. It helps me move from idea to playable version quickly so I can focus on design choices and
-            player experience.
+            I use AI as a quality-first force multiplier. It accelerates research, prototyping, and implementation
+            loops so I can iterate faster without lowering standards on systems design, polish, or player experience.
           </p>
           <p>
-            The goal is disciplined execution: better tools, clearer workflows, and more shipped improvements.
+            For coding, the tooling is now too strong to ignore, especially as a legally blind developer where
+            high-leverage assistance materially improves execution speed and practical output quality.
           </p>
+          <p>
+            My boundary is direct: I use AI to make better games, not just more games. Final quality ownership stays
+            with me, and visual craft still follows human artist standards, including the pixel art quality bar set by
+            creators like Kenmi.
+          </p>
+        </article>
+        <article class="panel narrative-panel ai-principles-panel">
+          <h3>AI principles in practice</h3>
+          <div class="ai-principles-group">
+            <h4>AI helps with</h4>
+            <ul>
+              <li>Faster research and idea validation</li>
+              <li>Coding acceleration and debugging support</li>
+              <li>Iteration loops that turn concepts into playable versions quickly</li>
+            </ul>
+          </div>
+          <div class="ai-principles-group">
+            <h4>AI never replaces</h4>
+            <ul>
+              <li>Final quality decisions and design ownership</li>
+              <li>Fair, player-first monetization standards</li>
+              <li>Human-led artistic direction and craft quality</li>
+            </ul>
+          </div>
         </article>
       </div>
     </section>
