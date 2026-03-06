@@ -1,0 +1,85 @@
+{
+  "id": "tv_shows_medium_05",
+  "title": "Medium TV Shows Quiz 5",
+  "sections": [
+    {
+      "title": "TV Shows",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Who created Community?",
+          "a": "Dan Harmon",
+          "explanation": "Dan Harmon is credited with creating Community."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which network originally aired The Wire?",
+          "a": "HBO",
+          "explanation": "The Wire originally aired on HBO."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year did The Newsroom premiere?",
+          "a": "2012",
+          "explanation": "The Newsroom first aired in 2012."
+        },
+        {
+          "type": "true-false",
+          "q": "Community premiered in 2013.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Community premiered in 2009."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year did The Handmaid's Tale premiere?",
+          "a": "2017",
+          "explanation": "The Handmaid's Tale first aired in 2017."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Who created Squid Game?",
+          "a": "Hwang Dong-hyuk",
+          "options": [
+            "Hwang Dong-hyuk",
+            "David Chase",
+            "Sam Esmail",
+            "Scott Frank and Allan Scott"
+          ],
+          "explanation": "Hwang Dong-hyuk created Squid Game."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which decade did Mindhunter premiere in?",
+          "a": "2010s",
+          "explanation": "Mindhunter began in 2017, placing it in the 2010s."
+        },
+        {
+          "type": "true-false",
+          "q": "Graham Yost created Justified.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Justified was created by Graham Yost."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which decade did Rome premiere in?",
+          "a": "2000s",
+          "explanation": "Rome began in 2005, placing it in the 2000s."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who created Justified?",
+          "a": "Graham Yost",
+          "explanation": "Graham Yost is credited with creating Justified."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "movies_hard_04",
+  "title": "Hard Movies Quiz 4",
+  "sections": [
+    {
+      "title": "Movies",
+      "items": [
+        {
+          "type": "true-false",
+          "q": "Orson Welles directed Rashomon.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Rashomon was directed by Akira Kurosawa."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Who directed Chungking Express?",
+          "a": "Wong Kar-wai",
+          "options": [
+            "Carol Reed",
+            "Michael Powell and Emeric Pressburger",
+            "Wong Kar-wai",
+            "Bong Joon-ho"
+          ],
+          "explanation": "Wong Kar-wai directed Chungking Express."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which decade was Memories of Murder released in?",
+          "a": "2000s",
+          "explanation": "Memories of Murder came out in 2003, which is the 2000s."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year was Fargo released?",
+          "a": "1996",
+          "explanation": "Fargo was released in 1996."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who directed The Red Shoes?",
+          "a": "Michael Powell and Emeric Pressburger",
+          "explanation": "Michael Powell and Emeric Pressburger directed The Red Shoes."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which decade was Chungking Express released in?",
+          "a": "1990s",
+          "explanation": "Chungking Express came out in 1994, which is the 1990s."
+        },
+        {
+          "type": "true-false",
+          "q": "Memories of Murder was released in 2003.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Memories of Murder was released in 2003."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year was Stalker released?",
+          "a": "1979",
+          "explanation": "Stalker was released in 1979."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who directed Citizen Kane?",
+          "a": "Orson Welles",
+          "explanation": "Orson Welles directed Citizen Kane."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year was Psycho released?",
+          "a": "1960",
+          "explanation": "Psycho was released in 1960."
+        }
+      ]
+    }
+  ]
+}

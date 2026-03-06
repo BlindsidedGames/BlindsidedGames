@@ -1,0 +1,85 @@
+{
+  "id": "tv_shows_easy_03",
+  "title": "Easy TV Shows Quiz 3",
+  "sections": [
+    {
+      "title": "TV Shows",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Who created The Bear?",
+          "a": "Christopher Storer",
+          "options": [
+            "David Crane and Marta Kauffman",
+            "Christopher Storer",
+            "Frank Darabont",
+            "Mark Gatiss and Steven Moffat"
+          ],
+          "explanation": "Christopher Storer created The Bear."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which network originally aired Stranger Things?",
+          "a": "Netflix",
+          "explanation": "Stranger Things originally aired on Netflix."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who created The X-Files?",
+          "a": "Chris Carter",
+          "explanation": "Chris Carter is credited with creating The X-Files."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who created Lupin?",
+          "a": "George Kay and Francois Uzan",
+          "explanation": "George Kay and Francois Uzan is credited with creating Lupin."
+        },
+        {
+          "type": "true-false",
+          "q": "Prison Break premiered in 2005.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Prison Break premiered in 2005."
+        },
+        {
+          "type": "true-false",
+          "q": "Chris Brancato, Carlo Bernard, and Doug Miro created Narcos.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Narcos was created by Chris Brancato, Carlo Bernard, and Doug Miro."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which decade did Game of Thrones premiere in?",
+          "a": "2010s",
+          "explanation": "Game of Thrones began in 2011, placing it in the 2010s."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which decade did Better Call Saul premiere in?",
+          "a": "2010s",
+          "explanation": "Better Call Saul began in 2015, placing it in the 2010s."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year did Sherlock premiere?",
+          "a": "2010",
+          "explanation": "Sherlock first aired in 2010."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year did The Mandalorian premiere?",
+          "a": "2019",
+          "explanation": "The Mandalorian first aired in 2019."
+        }
+      ]
+    }
+  ]
+}

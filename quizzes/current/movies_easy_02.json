@@ -1,0 +1,85 @@
+{
+  "id": "movies_easy_02",
+  "title": "Easy Movies Quiz 2",
+  "sections": [
+    {
+      "title": "Movies",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Which decade was Iron Man released in?",
+          "a": "2000s",
+          "explanation": "Iron Man came out in 2008, which is the 2000s."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which decade was Black Panther released in?",
+          "a": "2010s",
+          "explanation": "Black Panther came out in 2018, which is the 2010s."
+        },
+        {
+          "type": "true-false",
+          "q": "Ghostbusters was released in 2021.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Ghostbusters was released in 1984."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year was Toy Story released?",
+          "a": "1995",
+          "explanation": "Toy Story was released in 1995."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who directed Finding Nemo?",
+          "a": "Andrew Stanton",
+          "explanation": "Andrew Stanton directed Finding Nemo."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year was Star Wars released?",
+          "a": "1977",
+          "explanation": "Star Wars was released in 1977."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Who directed Jurassic Park?",
+          "a": "Steven Spielberg",
+          "options": [
+            "Steven Spielberg",
+            "George Lucas",
+            "Andrew Stanton",
+            "Brad Bird"
+          ],
+          "explanation": "Steven Spielberg directed Jurassic Park."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year was Jurassic Park released?",
+          "a": "1993",
+          "explanation": "Jurassic Park was released in 1993."
+        },
+        {
+          "type": "true-false",
+          "q": "Robert Zemeckis directed Back to the Future.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Back to the Future was directed by Robert Zemeckis."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who directed Deadpool?",
+          "a": "Tim Miller",
+          "explanation": "Tim Miller directed Deadpool."
+        }
+      ]
+    }
+  ]
+}

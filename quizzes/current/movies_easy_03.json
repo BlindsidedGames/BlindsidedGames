@@ -1,0 +1,85 @@
+{
+  "id": "movies_easy_03",
+  "title": "Easy Movies Quiz 3",
+  "sections": [
+    {
+      "title": "Movies",
+      "items": [
+        {
+          "type": "true-false",
+          "q": "John Lasseter directed Toy Story.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Toy Story was directed by John Lasseter."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which decade was Mission: Impossible - Fallout released in?",
+          "a": "2010s",
+          "explanation": "Mission: Impossible - Fallout came out in 2018, which is the 2010s."
+        },
+        {
+          "type": "true-false",
+          "q": "The Incredibles was released in 2004.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "The Incredibles was released in 2004."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year was The Matrix released?",
+          "a": "1999",
+          "explanation": "The Matrix was released in 1999."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year was Toy Story released?",
+          "a": "1995",
+          "explanation": "Toy Story was released in 1995."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year was Deadpool released?",
+          "a": "2016",
+          "explanation": "Deadpool was released in 2016."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which decade was Forrest Gump released in?",
+          "a": "1990s",
+          "explanation": "Forrest Gump came out in 1994, which is the 1990s."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who directed Star Wars?",
+          "a": "George Lucas",
+          "explanation": "George Lucas directed Star Wars."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Who directed Mission: Impossible - Fallout?",
+          "a": "Christopher McQuarrie",
+          "options": [
+            "The Wachowskis",
+            "Jon Favreau",
+            "Ivan Reitman",
+            "Christopher McQuarrie"
+          ],
+          "explanation": "Christopher McQuarrie directed Mission: Impossible - Fallout."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who directed Avatar?",
+          "a": "James Cameron",
+          "explanation": "James Cameron directed Avatar."
+        }
+      ]
+    }
+  ]
+}

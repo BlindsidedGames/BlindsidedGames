@@ -1,0 +1,85 @@
+{
+  "id": "tv_shows_easy_02",
+  "title": "Easy TV Shows Quiz 2",
+  "sections": [
+    {
+      "title": "TV Shows",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Who created The X-Files?",
+          "a": "Chris Carter",
+          "explanation": "Chris Carter is credited with creating The X-Files."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Who created Brooklyn Nine-Nine?",
+          "a": "Dan Goor and Michael Schur",
+          "options": [
+            "Steven Knight",
+            "George Kay and Francois Uzan",
+            "Christopher Storer",
+            "Dan Goor and Michael Schur"
+          ],
+          "explanation": "Dan Goor and Michael Schur created Brooklyn Nine-Nine."
+        },
+        {
+          "type": "true-false",
+          "q": "Better Call Saul premiered in 2005.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Better Call Saul premiered in 2015."
+        },
+        {
+          "type": "true-false",
+          "q": "George Kay and Francois Uzan created Lupin.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Lupin was created by George Kay and Francois Uzan."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which decade did Friends premiere in?",
+          "a": "1990s",
+          "explanation": "Friends began in 1994, placing it in the 1990s."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year did Prison Break premiere?",
+          "a": "2005",
+          "explanation": "Prison Break first aired in 2005."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year did Sherlock premiere?",
+          "a": "2010",
+          "explanation": "Sherlock first aired in 2010."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which decade did Better Call Saul premiere in?",
+          "a": "2010s",
+          "explanation": "Better Call Saul began in 2015, placing it in the 2010s."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which network originally aired The Simpsons?",
+          "a": "Fox",
+          "explanation": "The Simpsons originally aired on Fox."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who created Peaky Blinders?",
+          "a": "Steven Knight",
+          "explanation": "Steven Knight is credited with creating Peaky Blinders."
+        }
+      ]
+    }
+  ]
+}

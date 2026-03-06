@@ -1,0 +1,85 @@
+{
+  "id": "movies_easy_01",
+  "title": "Easy Movies Quiz 1",
+  "sections": [
+    {
+      "title": "Movies",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Which decade was Harry Potter and the Philosopher's Stone released in?",
+          "a": "2000s",
+          "explanation": "Harry Potter and the Philosopher's Stone came out in 2001, which is the 2000s."
+        },
+        {
+          "type": "true-false",
+          "q": "Brad Bird directed Frozen.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Frozen was directed by Chris Buck and Jennifer Lee."
+        },
+        {
+          "type": "true-false",
+          "q": "The Incredibles was released in 1984.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "The Incredibles was released in 2004."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year was Ghostbusters released?",
+          "a": "1984",
+          "explanation": "Ghostbusters was released in 1984."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Who directed Toy Story?",
+          "a": "John Lasseter",
+          "options": [
+            "John Lasseter",
+            "Chris Buck and Jennifer Lee",
+            "Christopher McQuarrie",
+            "Robert Zemeckis"
+          ],
+          "explanation": "John Lasseter directed Toy Story."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who directed Frozen?",
+          "a": "Chris Buck and Jennifer Lee",
+          "explanation": "Chris Buck and Jennifer Lee directed Frozen."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which decade was The Matrix released in?",
+          "a": "1990s",
+          "explanation": "The Matrix came out in 1999, which is the 1990s."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who directed Back to the Future?",
+          "a": "Robert Zemeckis",
+          "explanation": "Robert Zemeckis directed Back to the Future."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year was Spider-Man: No Way Home released?",
+          "a": "2021",
+          "explanation": "Spider-Man: No Way Home was released in 2021."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year was Iron Man released?",
+          "a": "2008",
+          "explanation": "Iron Man was released in 2008."
+        }
+      ]
+    }
+  ]
+}

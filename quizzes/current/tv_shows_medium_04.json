@@ -1,0 +1,85 @@
+{
+  "id": "tv_shows_medium_04",
+  "title": "Medium TV Shows Quiz 4",
+  "sections": [
+    {
+      "title": "TV Shows",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Which decade did The Handmaid's Tale premiere in?",
+          "a": "2010s",
+          "explanation": "The Handmaid's Tale began in 2017, placing it in the 2010s."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who created Mindhunter?",
+          "a": "Joe Penhall",
+          "explanation": "Joe Penhall is credited with creating Mindhunter."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Who created Mr. Robot?",
+          "a": "Sam Esmail",
+          "options": [
+            "Hwang Dong-hyuk",
+            "David Milch",
+            "Sam Esmail",
+            "Noah Hawley"
+          ],
+          "explanation": "Sam Esmail created Mr. Robot."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which network originally aired The Queen's Gambit?",
+          "a": "Netflix",
+          "explanation": "The Queen's Gambit originally aired on Netflix."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year did Rome premiere?",
+          "a": "2005",
+          "explanation": "Rome first aired in 2005."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who created Deadwood?",
+          "a": "David Milch",
+          "explanation": "David Milch is credited with creating Deadwood."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year did The Newsroom premiere?",
+          "a": "2012",
+          "explanation": "The Newsroom first aired in 2012."
+        },
+        {
+          "type": "true-false",
+          "q": "Six Feet Under premiered in 2010.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Six Feet Under premiered in 2001."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which decade did Six Feet Under premiere in?",
+          "a": "2000s",
+          "explanation": "Six Feet Under began in 2001, placing it in the 2000s."
+        },
+        {
+          "type": "true-false",
+          "q": "Dan Harmon created The West Wing.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "The West Wing was created by Aaron Sorkin."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "movies_hard_01",
+  "title": "Hard Movies Quiz 1",
+  "sections": [
+    {
+      "title": "Movies",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Who directed A Separation?",
+          "a": "Asghar Farhadi",
+          "explanation": "Asghar Farhadi directed A Separation."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year was Rashomon released?",
+          "a": "1950",
+          "explanation": "Rashomon was released in 1950."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which decade was Oldboy released in?",
+          "a": "2000s",
+          "explanation": "Oldboy came out in 2003, which is the 2000s."
+        },
+        {
+          "type": "true-false",
+          "q": "Orson Welles directed Citizen Kane.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Citizen Kane was directed by Orson Welles."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Who directed The Third Man?",
+          "a": "Carol Reed",
+          "options": [
+            "Vittorio De Sica",
+            "Francois Truffaut",
+            "Carol Reed",
+            "Akira Kurosawa"
+          ],
+          "explanation": "Carol Reed directed The Third Man."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year was Memories of Murder released?",
+          "a": "2003",
+          "explanation": "Memories of Murder was released in 2003."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which decade was Fargo released in?",
+          "a": "1990s",
+          "explanation": "Fargo came out in 1996, which is the 1990s."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year was Parasite released?",
+          "a": "2019",
+          "explanation": "Parasite was released in 2019."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who directed In the Mood for Love?",
+          "a": "Wong Kar-wai",
+          "explanation": "Wong Kar-wai directed In the Mood for Love."
+        },
+        {
+          "type": "true-false",
+          "q": "8 1/2 was released in 1963.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "8 1/2 was released in 1963."
+        }
+      ]
+    }
+  ]
+}

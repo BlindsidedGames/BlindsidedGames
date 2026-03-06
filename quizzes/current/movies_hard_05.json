@@ -1,0 +1,85 @@
+{
+  "id": "movies_hard_05",
+  "title": "Hard Movies Quiz 5",
+  "sections": [
+    {
+      "title": "Movies",
+      "items": [
+        {
+          "type": "self-eval",
+          "q": "Who directed Memories of Murder?",
+          "a": "Bong Joon-ho",
+          "explanation": "Bong Joon-ho directed Memories of Murder."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which decade was Chungking Express released in?",
+          "a": "1990s",
+          "explanation": "Chungking Express came out in 1994, which is the 1990s."
+        },
+        {
+          "type": "true-false",
+          "q": "The Third Man was released in 1963.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "The Third Man was released in 1949."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year was Vertigo released?",
+          "a": "1958",
+          "explanation": "Vertigo was released in 1958."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year was The 400 Blows released?",
+          "a": "1959",
+          "explanation": "The 400 Blows was released in 1959."
+        },
+        {
+          "type": "true-false",
+          "q": "Carl Theodor Dreyer directed Vertigo.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Vertigo was directed by Alfred Hitchcock."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year was A Separation released?",
+          "a": "2011",
+          "explanation": "A Separation was released in 2011."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which decade was Ran released in?",
+          "a": "1980s",
+          "explanation": "Ran came out in 1985, which is the 1980s."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Who directed Vertigo?",
+          "a": "Alfred Hitchcock",
+          "options": [
+            "Carol Reed",
+            "Fritz Lang",
+            "Alfred Hitchcock",
+            "Michael Powell and Emeric Pressburger"
+          ],
+          "explanation": "Alfred Hitchcock directed Vertigo."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who directed Citizen Kane?",
+          "a": "Orson Welles",
+          "explanation": "Orson Welles directed Citizen Kane."
+        }
+      ]
+    }
+  ]
+}

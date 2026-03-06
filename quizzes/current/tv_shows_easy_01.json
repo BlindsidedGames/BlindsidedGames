@@ -1,0 +1,85 @@
+{
+  "id": "tv_shows_easy_01",
+  "title": "Easy TV Shows Quiz 1",
+  "sections": [
+    {
+      "title": "TV Shows",
+      "items": [
+        {
+          "type": "true-false",
+          "q": "Shonda Rhimes created The Simpsons.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "The Simpsons was created by Matt Groening."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which decade did Friends premiere in?",
+          "a": "1990s",
+          "explanation": "Friends began in 1994, placing it in the 1990s."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who created The X-Files?",
+          "a": "Chris Carter",
+          "explanation": "Chris Carter is credited with creating The X-Files."
+        },
+        {
+          "type": "true-false",
+          "q": "The Office (US) premiered in 2021.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "The Office (US) premiered in 2005."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Who created Doctor Who?",
+          "a": "Russell T Davies",
+          "options": [
+            "George Kay and Francois Uzan",
+            "Alfred Gough and Miles Millar",
+            "Russell T Davies",
+            "Mark Gatiss and Steven Moffat"
+          ],
+          "explanation": "Russell T Davies created Doctor Who."
+        },
+        {
+          "type": "self-eval",
+          "q": "Who created Grey's Anatomy?",
+          "a": "Shonda Rhimes",
+          "explanation": "Shonda Rhimes is credited with creating Grey's Anatomy."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year did House premiere?",
+          "a": "2004",
+          "explanation": "House first aired in 2004."
+        },
+        {
+          "type": "self-eval",
+          "q": "In what year did Better Call Saul premiere?",
+          "a": "2015",
+          "explanation": "Better Call Saul first aired in 2015."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which decade did Narcos premiere in?",
+          "a": "2010s",
+          "explanation": "Narcos began in 2015, placing it in the 2010s."
+        },
+        {
+          "type": "self-eval",
+          "q": "Which network originally aired Doctor Who?",
+          "a": "BBC One",
+          "explanation": "Doctor Who originally aired on BBC One."
+        }
+      ]
+    }
+  ]
+}
