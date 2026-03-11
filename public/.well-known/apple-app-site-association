@@ -9,10 +9,10 @@
         ],
         "components": [
           {
-            "/": "/share/*"
+            "/": "/thedailyquiz/share/*"
           },
           {
-            "/": "/clip"
+            "/": "/thedailyquiz/clip"
           }
         ]
       }

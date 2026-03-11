@@ -1,20 +1,24 @@
-import {
-  fetchShareMetadata,
-  htmlResponse,
-  renderSharePage,
-  type QuizShareEnv
-} from '../_utils/quiz-shares';
-
-export const onRequestGet: PagesFunction<QuizShareEnv> = async (context) => {
-  const shareID = String(context.params.id ?? '').trim();
-  if (!shareID) {
-    return htmlResponse(400, renderSharePage(new URL(context.request.url).origin, null));
-  }
-
-  const metadata = await fetchShareMetadata(context.env, shareID);
-  if (!metadata) {
-    return htmlResponse(404, renderSharePage(new URL(context.request.url).origin, null));
-  }
-
-  return htmlResponse(200, renderSharePage(new URL(context.request.url).origin, metadata));
+const headers = {
+  'Content-Type': 'text/html; charset=utf-8',
+  'Cache-Control': 'no-store',
+  'X-Robots-Tag': 'noindex'
 };
+
+export const onRequestGet: PagesFunction = async () =>
+  new Response(
+    `<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gone</title>
+  </head>
+  <body>
+    <p>This shared quiz route has moved.</p>
+  </body>
+</html>`,
+    {
+      status: 410,
+      headers
+    }
+  );
