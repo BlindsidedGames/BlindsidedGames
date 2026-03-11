@@ -1,0 +1,127 @@
+{
+  "id": "geography_hard_04",
+  "title": "Hard Geography Quiz 4",
+  "sections": [
+    {
+      "title": "Geography",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which of these seas is almost enclosed by Europe and Asia and connected to the Mediterranean through the Bosphorus and Dardanelles?",
+          "options": [
+            "The Black Sea",
+            "Arabian Sea",
+            "Red Sea",
+            "Caspian Sea"
+          ],
+          "a": "The Black Sea",
+          "explanation": "The Black Sea connects to the Mediterranean through a chain of narrow waterways including the Bosphorus and Dardanelles."
+        },
+        {
+          "type": "true-false",
+          "q": "Indonesia is spread across more than 17,000 islands.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "Indonesia is the world's largest archipelagic state and stretches across a wide span of Southeast Asia."
+        },
+        {
+          "type": "true-false",
+          "q": "The Equator passes through mainland Australia.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Australia lies entirely south of the Equator, while the line passes north of it through countries such as Indonesia."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What is the name of the major rift system that runs through eastern Africa?",
+          "options": [
+            "The Great Rift Valley",
+            "Rhine Rift Valley",
+            "Jordan Rift Valley",
+            "Baikal Rift Zone"
+          ],
+          "a": "The Great Rift Valley",
+          "explanation": "This rift system extends from the Levant into eastern Africa and reflects ongoing tectonic movement."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which US state borders both the Pacific Ocean and Mexico?",
+          "options": [
+            "California",
+            "Texas",
+            "Arizona",
+            "Florida"
+          ],
+          "a": "California",
+          "explanation": "California shares an international border with the Mexican state of Baja California and has a long Pacific coastline."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which lake lies on the border between Peru and Bolivia?",
+          "options": [
+            "Lake Victoria",
+            "Lake Baikal",
+            "Lake Superior",
+            "Lake Titicaca"
+          ],
+          "a": "Lake Titicaca",
+          "explanation": "Lake Titicaca sits high in the Andes and is often noted as the highest commercially navigable lake in the world."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What is a basin in physical geography?",
+          "options": [
+            "A basin is a broad low area of land where water drains and collects.",
+            "An isthmus is a narrow strip of land connecting two larger landmasses.",
+            "A fjord is a steep-sided coastal inlet carved by glaciers.",
+            "A mesa is a flat-topped elevated landform with steep sides."
+          ],
+          "a": "A basin is a broad low area of land where water drains and collects.",
+          "explanation": "Drainage basins are defined by the area where precipitation flows toward a common river, lake, or inland outlet."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which landlocked country borders Germany, Austria, Slovakia, and Poland?",
+          "options": [
+            "Czech Republic",
+            "Hungary",
+            "Switzerland",
+            "Slovenia"
+          ],
+          "a": "Czech Republic",
+          "explanation": "The Czech Republic sits in central Europe and has no coastline despite bordering several nearby states."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What best describes the tundra biome?",
+          "options": [
+            "A cold treeless biome with permafrost and a short growing season",
+            "A hot desert biome with year-round drought and shifting dunes",
+            "A temperate grassland biome dominated by deep-rooted prairie vegetation",
+            "A tropical forest biome with heavy rainfall and a dense canopy"
+          ],
+          "a": "A cold treeless biome with permafrost and a short growing season",
+          "explanation": "Tundra environments are common in the Arctic and at very high elevations where soils remain frozen for much of the year."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What ancient city in modern-day Jordan is famous for buildings carved into rose-red rock?",
+          "options": [
+            "Petra",
+            "Palmyra",
+            "Persepolis",
+            "Angkor Wat"
+          ],
+          "a": "Petra",
+          "explanation": "Petra was the capital of the Nabataean Kingdom and is one of the best-known archaeological sites in the Middle East."
+        }
+      ]
+    }
+  ]
+}

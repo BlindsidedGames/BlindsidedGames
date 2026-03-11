@@ -10,6 +10,8 @@
     "preview": "astro preview",
     "preview:pages": "npm run build && wrangler pages dev ./dist",
     "check": "astro check",
+    "sync:genai-prompt": "python3 scripts/sync_genai_prompt.py",
+    "check:genai-prompt": "python3 scripts/sync_genai_prompt.py --check",
     "deploy:pages": "npm run build && wrangler pages deploy ./dist --project-name blindsidedgames",
     "deploy:pages:preview": "npm run build && wrangler pages deploy ./dist --project-name blindsidedgames --branch preview"
   },

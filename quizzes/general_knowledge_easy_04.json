@@ -1,0 +1,127 @@
+{
+  "id": "general_knowledge_easy_04",
+  "title": "Easy General Knowledge Quiz 4",
+  "sections": [
+    {
+      "title": "General Knowledge",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Name the capital city of Germany.",
+          "a": "Berlin",
+          "explanation": "The capital of Germany is Berlin.",
+          "options": [
+            "Wellington",
+            "Berlin",
+            "New Delhi",
+            "Copenhagen"
+          ]
+        },
+        {
+          "type": "true-false",
+          "q": "Tokyo is the capital of China.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is standard world geography knowledge."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Name the capital city of India.",
+          "a": "New Delhi",
+          "explanation": "The capital of India is New Delhi.",
+          "options": [
+            "New Delhi",
+            "Copenhagen",
+            "Wellington",
+            "Berlin"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Name the capital city of Indonesia.",
+          "a": "Jakarta",
+          "explanation": "The capital of Indonesia is Jakarta.",
+          "options": [
+            "Jakarta",
+            "Wellington",
+            "Berlin",
+            "New Delhi"
+          ]
+        },
+        {
+          "type": "true-false",
+          "q": "Abuja is the capital of Sweden.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is standard world geography knowledge."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Name the capital city of Vietnam.",
+          "a": "Hanoi",
+          "explanation": "The capital of Vietnam is Hanoi.",
+          "options": [
+            "Berlin",
+            "New Delhi",
+            "Wellington",
+            "Hanoi"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What is the largest ocean on Earth?",
+          "a": "Pacific Ocean",
+          "explanation": "It has the greatest surface area.",
+          "options": [
+            "Atlantic Ocean",
+            "Indian Ocean",
+            "Arctic Ocean",
+            "Pacific Ocean"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What is the capital of New Zealand?",
+          "a": "Wellington",
+          "options": [
+            "Berlin",
+            "New Delhi",
+            "Wellington",
+            "Copenhagen"
+          ],
+          "explanation": "Wellington sits at the southern end of New Zealand's North Island and serves as the country's political center."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Name the capital city of Denmark.",
+          "a": "Copenhagen",
+          "explanation": "The capital of Denmark is Copenhagen.",
+          "options": [
+            "Copenhagen",
+            "Berlin",
+            "New Delhi",
+            "Wellington"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Name the capital city of Norway.",
+          "a": "Oslo",
+          "explanation": "The capital of Norway is Oslo.",
+          "options": [
+            "Wellington",
+            "New Delhi",
+            "Oslo",
+            "Berlin"
+          ]
+        }
+      ]
+    }
+  ]
+}

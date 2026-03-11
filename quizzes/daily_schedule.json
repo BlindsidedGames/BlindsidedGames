@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "date": "2026-03-09",
+      "id": "daily.general_knowledge_easy_04",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "difficulty": "Easy",
+      "file": "general_knowledge_easy_04.json"
+    },
+    {
+      "date": "2026-03-10",
+      "id": "daily.entertainment_medium_01",
+      "title": "Entertainment Daily Challenge",
+      "category": "Entertainment",
+      "difficulty": "Medium",
+      "file": "entertainment_medium_01.json"
+    },
+    {
+      "date": "2026-03-11",
+      "id": "daily.geography_hard_04",
+      "title": "Geography Daily Challenge",
+      "category": "Geography",
+      "difficulty": "Hard",
+      "file": "geography_hard_04.json"
+    },
+    {
+      "date": "2026-03-12",
+      "id": "daily.history_easy_04",
+      "title": "History Daily Challenge",
+      "category": "History",
+      "difficulty": "Easy",
+      "file": "history_easy_04.json"
+    },
+    {
+      "date": "2026-03-13",
+      "id": "daily.science_medium_04",
+      "title": "Science Daily Challenge",
+      "category": "Science",
+      "difficulty": "Medium",
+      "file": "science_medium_04.json"
+    },
+    {
+      "date": "2026-03-14",
+      "id": "daily.general_knowledge_hard_04",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "difficulty": "Hard",
+      "file": "general_knowledge_hard_04.json"
+    },
+    {
+      "date": "2026-03-15",
+      "id": "daily.entertainment_easy_02",
+      "title": "Entertainment Daily Challenge",
+      "category": "Entertainment",
+      "difficulty": "Easy",
+      "file": "entertainment_easy_02.json"
+    },
+    {
+      "date": "2026-03-16",
+      "id": "daily.geography_medium_04",
+      "title": "Geography Daily Challenge",
+      "category": "Geography",
+      "difficulty": "Medium",
+      "file": "geography_medium_04.json"
+    },
+    {
+      "date": "2026-03-17",
+      "id": "daily.history_hard_04",
+      "title": "History Daily Challenge",
+      "category": "History",
+      "difficulty": "Hard",
+      "file": "history_hard_04.json"
+    },
+    {
+      "date": "2026-03-18",
+      "id": "daily.science_easy_04",
+      "title": "Science Daily Challenge",
+      "category": "Science",
+      "difficulty": "Easy",
+      "file": "science_easy_04.json"
+    },
+    {
+      "date": "2026-03-19",
+      "id": "daily.general_knowledge_medium_04",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "difficulty": "Medium",
+      "file": "general_knowledge_medium_04.json"
+    },
+    {
+      "date": "2026-03-20",
+      "id": "daily.entertainment_hard_02",
+      "title": "Entertainment Daily Challenge",
+      "category": "Entertainment",
+      "difficulty": "Hard",
+      "file": "entertainment_hard_02.json"
+    },
+    {
+      "date": "2026-03-21",
+      "id": "daily.geography_easy_04",
+      "title": "Geography Daily Challenge",
+      "category": "Geography",
+      "difficulty": "Easy",
+      "file": "geography_easy_04.json"
+    },
+    {
+      "date": "2026-03-22",
+      "id": "daily.history_medium_04",
+      "title": "History Daily Challenge",
+      "category": "History",
+      "difficulty": "Medium",
+      "file": "history_medium_04.json"
+    },
+    {
+      "date": "2026-03-23",
+      "id": "daily.science_hard_04",
+      "title": "Science Daily Challenge",
+      "category": "Science",
+      "difficulty": "Hard",
+      "file": "science_hard_04.json"
+    },
+    {
+      "date": "2026-03-24",
+      "id": "daily.general_knowledge_easy_05",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "difficulty": "Easy",
+      "file": "general_knowledge_easy_05.json"
+    },
+    {
+      "date": "2026-03-25",
+      "id": "daily.entertainment_medium_03",
+      "title": "Entertainment Daily Challenge",
+      "category": "Entertainment",
+      "difficulty": "Medium",
+      "file": "entertainment_medium_03.json"
+    },
+    {
+      "date": "2026-03-26",
+      "id": "daily.geography_hard_05",
+      "title": "Geography Daily Challenge",
+      "category": "Geography",
+      "difficulty": "Hard",
+      "file": "geography_hard_05.json"
+    },
+    {
+      "date": "2026-03-27",
+      "id": "daily.history_easy_05",
+      "title": "History Daily Challenge",
+      "category": "History",
+      "difficulty": "Easy",
+      "file": "history_easy_05.json"
+    },
+    {
+      "date": "2026-03-28",
+      "id": "daily.science_medium_05",
+      "title": "Science Daily Challenge",
+      "category": "Science",
+      "difficulty": "Medium",
+      "file": "science_medium_05.json"
+    },
+    {
+      "date": "2026-03-29",
+      "id": "daily.general_knowledge_hard_05",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "difficulty": "Hard",
+      "file": "general_knowledge_hard_05.json"
+    }
+  ]
+}

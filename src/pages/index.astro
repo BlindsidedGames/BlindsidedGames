@@ -165,30 +165,42 @@ const featuredGames = GAME_PORTFOLIO;
         <div class="games-grid">
           {featuredGames.map((game) => (
             <article class="panel game-showcase">
-              <a
-                class="game-showcase-media"
-                href={game.primaryHref}
-                target={game.primaryHref.startsWith('http') ? '_blank' : undefined}
-                rel={game.primaryHref.startsWith('http') ? 'noopener noreferrer' : undefined}
-                aria-label={`Open ${game.title}`}
-              >
-                <img src={game.image} alt={game.imageAlt} loading="lazy" decoding="async" />
-              </a>
+              {game.primaryHref ? (
+                <a
+                  class="game-showcase-media"
+                  href={game.primaryHref}
+                  target={game.primaryHref.startsWith('http') ? '_blank' : undefined}
+                  rel={game.primaryHref.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  aria-label={`Open ${game.title}`}
+                >
+                  <img src={game.image} alt={game.imageAlt} loading="lazy" decoding="async" />
+                </a>
+              ) : (
+                <div class="game-showcase-media" aria-label={game.title}>
+                  <img src={game.image} alt={game.imageAlt} loading="lazy" decoding="async" />
+                </div>
+              )}
               <div class="game-showcase-copy">
                 <h3>{game.title}</h3>
                 <p>{game.description}</p>
                 <div class="game-showcase-meta">
                   <div class="button-row compact">
-                    {game.links.map((link) => (
-                      <a
-                        href={link.href}
-                        target={link.external ? '_blank' : undefined}
-                        rel={link.external ? 'noopener noreferrer' : undefined}
-                        class="btn btn-secondary"
-                      >
-                        {link.label}
-                      </a>
-                    ))}
+                    {game.links.map((link) =>
+                      link.href && !link.disabled ? (
+                        <a
+                          href={link.href}
+                          target={link.external ? '_blank' : undefined}
+                          rel={link.external ? 'noopener noreferrer' : undefined}
+                          class="btn btn-secondary"
+                        >
+                          {link.label}
+                        </a>
+                      ) : (
+                        <span class="btn btn-secondary" aria-disabled="true">
+                          {link.label}
+                        </span>
+                      )
+                    )}
                   </div>
                   <p class="eyebrow subtle game-tag">{game.subtitle}</p>
                 </div>

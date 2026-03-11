@@ -1,7 +1,8 @@
 export type StoreLink = {
   label: string;
-  href: string;
+  href?: string;
   external?: boolean;
+  disabled?: boolean;
 };
 
 export type GameEntry = {
@@ -10,7 +11,7 @@ export type GameEntry = {
   description: string;
   image: string;
   imageAlt: string;
-  primaryHref: string;
+  primaryHref?: string;
   links: StoreLink[];
 };
 
@@ -128,6 +129,15 @@ export const FEATURED_RELEASE = {
 } as const;
 
 export const GAME_PORTFOLIO: GameEntry[] = [
+  {
+    title: 'The Daily Quiz',
+    subtitle: 'Coming soon on mobile',
+    description:
+      'A polished daily trivia app with official packs, quick-start runs, self-eval or multi-choice play, and a rotating daily challenge feed.',
+    image: '/img/the-daily-quiz-icon.png',
+    imageAlt: 'The Daily Quiz app icon',
+    links: [{ label: 'Coming Soon', disabled: true }]
+  },
   {
     title: 'Eternum Inc',
     subtitle: 'Idle incremental',
@@ -309,16 +319,6 @@ export const GAME_PORTFOLIO: GameEntry[] = [
     imageAlt: 'Edge-Spawn TD prototype cover image',
     primaryHref: '/games/edge-spawn-td.html',
     links: [{ label: 'Play Prototype', href: '/games/edge-spawn-td.html' }]
-  },
-  {
-    title: 'Quiz Night',
-    subtitle: 'Party and solo trivia collections',
-    description:
-      'Eight themed volumes with 50-question packs covering pop culture, history, science, and more.',
-    image: '/img/logo.jpg',
-    imageAlt: 'Quiz Night artwork',
-    primaryHref: '/quizzes.html',
-    links: [{ label: 'Browse Quizzes', href: '/quizzes.html' }]
   }
 ];
 

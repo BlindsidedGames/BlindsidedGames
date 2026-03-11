@@ -9,8 +9,6 @@ const filesToCopy = [
   'app-ads.txt',
   'newsTicker',
   'style.css',
-  'quizzes.html',
-  'quizzes.js',
   'questing.html'
 ];
 

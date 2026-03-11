@@ -1,0 +1,127 @@
+{
+  "id": "science_medium_05",
+  "title": "Medium Science Quiz 4",
+  "sections": [
+    {
+      "title": "Science",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Which type of blood cells are responsible for fighting infection?",
+          "options": [
+            "Platelets",
+            "Red blood cells",
+            "Stem cells",
+            "White Blood Cells"
+          ],
+          "a": "White Blood Cells",
+          "explanation": "Leukocytes (white blood cells) are part of the immune system."
+        },
+        {
+          "type": "true-false",
+          "q": "Helium is lighter than air.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "True",
+          "explanation": "Helium's low density allows it to float in Earth's atmosphere."
+        },
+        {
+          "type": "true-false",
+          "q": "Electrons have a positive charge.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "a": "False",
+          "explanation": "Electrons are negatively charged particles."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What is the highest mountain on Earth?",
+          "a": "Mount Everest",
+          "explanation": "Everest's peak is the highest point above sea level.",
+          "options": [
+            "Kilimanjaro",
+            "Denali",
+            "K2",
+            "Mount Everest"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What force opposes motion when two surfaces rub against each other?",
+          "a": "Friction",
+          "explanation": "Friction converts some motion into heat and slows moving objects.",
+          "options": [
+            "Buoyancy",
+            "Gravity",
+            "Magnetism",
+            "Friction"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What is the most abundant metal in the Earth's crust?",
+          "a": "Aluminum",
+          "explanation": "Aluminum makes up about 8% of the crust by weight.",
+          "options": [
+            "Aluminum",
+            "Calcium",
+            "Carbon",
+            "Oxygen"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What kind of animal is a Komodo dragon?",
+          "a": "Lizard (Reptile)",
+          "explanation": "It is the largest living species of lizard.",
+          "options": [
+            "Snake",
+            "Amphibian",
+            "Bird",
+            "Lizard (Reptile)"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What layer of the atmosphere contains the ozone layer?",
+          "a": "Stratosphere",
+          "explanation": "The ozone layer protects Earth from UV radiation.",
+          "options": [
+            "Stratosphere",
+            "Thermosphere",
+            "Troposphere",
+            "Mesosphere"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What do we call the molten rock that erupts from a volcano?",
+          "a": "Lava",
+          "explanation": "It is called magma while still underground.",
+          "options": [
+            "Ash",
+            "Magma",
+            "Basalt",
+            "Lava"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Who proposed the theory of general relativity?",
+          "a": "Albert Einstein",
+          "explanation": "He published it in 1915.",
+          "options": [
+            "Albert Einstein",
+            "Galileo Galilei",
+            "Isaac Newton",
+            "Niels Bohr"
+          ]
+        }
+      ]
+    }
+  ]
+}

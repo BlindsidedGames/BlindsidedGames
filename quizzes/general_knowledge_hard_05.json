@@ -1,0 +1,127 @@
+{
+  "id": "general_knowledge_hard_05",
+  "title": "Hard General Knowledge Quiz 5",
+  "sections": [
+    {
+      "title": "General Knowledge",
+      "items": [
+        {
+          "type": "true-false",
+          "q": "Australia federated in the 19th century.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is an advanced general-knowledge point."
+        },
+        {
+          "type": "true-false",
+          "q": "The Suez Canal links the Mediterranean Sea and Red Sea.",
+          "a": "True",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is an advanced general-knowledge point."
+        },
+        {
+          "q": "Which city is South Africa's legislative capital?",
+          "a": "Cape Town",
+          "type": "multiple-choice",
+          "explanation": "Cape Town is the legislative capital of South Africa. It is the country's oldest city and the seat of the Parliament of South Africa.",
+          "options": [
+            "Berlin",
+            "Wellington",
+            "Cape Town",
+            "New Delhi"
+          ]
+        },
+        {
+          "q": "What is the name of the line of longitude at 0 degrees?",
+          "a": "Prime Meridian",
+          "type": "multiple-choice",
+          "explanation": "A prime meridian is a meridian in a geographic coordinate system at which longitude is defined to be 0. On a spheroid, a prime meridian and its anti-meridian form a great ellipse.",
+          "options": [
+            "Prime Meridian",
+            "Tropic of Cancer",
+            "Equator",
+            "International Date Line"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What is the headquarters city of the United Nations?",
+          "a": "New York City",
+          "options": [
+            "The Hague",
+            "Brussels",
+            "New York City",
+            "Jakarta"
+          ],
+          "explanation": "The correct answer is New York City."
+        },
+        {
+          "q": "Which city hosts the International Atomic Energy Agency headquarters?",
+          "a": "Vienna",
+          "type": "multiple-choice",
+          "explanation": "The International Atomic Energy Agency (IAEA) is an intergovernmental organization that seeks to promote the peaceful use of nuclear energy and to inhibit its use for any military purpose, including nuclear weapons.",
+          "options": [
+            "Brussels",
+            "Jakarta",
+            "Vienna",
+            "The Hague"
+          ]
+        },
+        {
+          "q": "What is the title of the head of government in Germany?",
+          "a": "Chancellor",
+          "type": "multiple-choice",
+          "explanation": "The chancellor of Germany, officially the federal chancellor of the Federal Republic of Germany, is the head of the federal government of Germany. The chancellor is the chief executive of the Federal Cabinet and heads the executive branch.",
+          "options": [
+            "Premier",
+            "Prime Minister",
+            "President",
+            "Chancellor"
+          ]
+        },
+        {
+          "q": "Which city is the seat of the European Parliament in France?",
+          "a": "Strasbourg",
+          "type": "multiple-choice",
+          "explanation": "The European Parliament (EP) is one of the two legislative bodies of the European Union (EU) and one of its seven institutions.",
+          "options": [
+            "Brussels",
+            "Strasbourg",
+            "The Hague",
+            "Jakarta"
+          ]
+        },
+        {
+          "q": "Which city is South Africa's judicial capital?",
+          "a": "Bloemfontein",
+          "type": "multiple-choice",
+          "explanation": "Bloemfontein, also known as Bloem, is the capital and the largest city of the Free State province in South Africa and it is often, and has been traditionally, referred to as the country's \"judicial capital\", alongside the legislative.",
+          "options": [
+            "Bloemfontein",
+            "Wellington",
+            "Berlin",
+            "New Delhi"
+          ]
+        },
+        {
+          "q": "What is the upper house of Canada's Parliament called?",
+          "a": "Senate",
+          "type": "multiple-choice",
+          "explanation": "The Senate of Canada is the upper house of the Parliament of Canada. Together with the Crown and the House of Commons, they compose the bicameral legislature of Canada.",
+          "options": [
+            "House of Commons",
+            "Privy Council",
+            "National Assembly",
+            "Senate"
+          ]
+        }
+      ]
+    }
+  ]
+}

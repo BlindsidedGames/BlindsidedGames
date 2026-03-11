@@ -1,0 +1,127 @@
+{
+  "id": "general_knowledge_easy_05",
+  "title": "Easy General Knowledge Quiz 5",
+  "sections": [
+    {
+      "title": "General Knowledge",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "Name the capital city of China.",
+          "a": "Beijing",
+          "explanation": "The capital of China is Beijing.",
+          "options": [
+            "Beijing",
+            "Wellington",
+            "Berlin",
+            "New Delhi"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Name the capital city of South Africa.",
+          "a": "Pretoria",
+          "explanation": "The capital of South Africa is Pretoria.",
+          "options": [
+            "Pretoria",
+            "New Delhi",
+            "Wellington",
+            "Berlin"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Name the capital city of Singapore.",
+          "a": "Singapore",
+          "explanation": "The capital of Singapore is Singapore.",
+          "options": [
+            "Berlin",
+            "Singapore",
+            "Wellington",
+            "New Delhi"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Name the capital city of Australia.",
+          "a": "Canberra",
+          "explanation": "The capital of Australia is Canberra.",
+          "options": [
+            "Berlin",
+            "Wellington",
+            "Canberra",
+            "New Delhi"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Name the capital city of Nigeria.",
+          "a": "Abuja",
+          "explanation": "The capital of Nigeria is Abuja.",
+          "options": [
+            "Wellington",
+            "Abuja",
+            "Berlin",
+            "New Delhi"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "What is the capital of Finland?",
+          "a": "Helsinki",
+          "options": [
+            "Helsinki",
+            "Wellington",
+            "Berlin",
+            "New Delhi"
+          ],
+          "explanation": "Helsinki is the capital and most populous city in Finland. It is on the shore of the Gulf of Finland and is the seat of southern Finland's Uusimaa region."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Name the capital city of Netherlands.",
+          "a": "Amsterdam",
+          "explanation": "The capital of Netherlands is Amsterdam.",
+          "options": [
+            "Amsterdam",
+            "New Delhi",
+            "Berlin",
+            "Wellington"
+          ]
+        },
+        {
+          "type": "true-false",
+          "q": "Canberra is the capital of New Zealand.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is standard world geography knowledge."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Name the capital city of Egypt.",
+          "a": "Cairo",
+          "explanation": "The capital of Egypt is Cairo.",
+          "options": [
+            "Berlin",
+            "Cairo",
+            "Wellington",
+            "New Delhi"
+          ]
+        },
+        {
+          "type": "true-false",
+          "q": "Warsaw is the capital of South Korea.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "This is standard world geography knowledge."
+        }
+      ]
+    }
+  ]
+}

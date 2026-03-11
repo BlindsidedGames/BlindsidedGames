@@ -1,0 +1,127 @@
+{
+  "id": "entertainment_medium_01",
+  "title": "Medium Entertainment Quiz 1",
+  "sections": [
+    {
+      "title": "Entertainment",
+      "items": [
+        {
+          "type": "multiple-choice",
+          "q": "In what year was No Country for Old Men released?",
+          "a": "2007",
+          "explanation": "No Country for Old Men is a 2007 American neo-Western crime thriller film written, directed, produced, and edited by Joel and Ethan Coen, based on Cormac McCarthy's 2005 novel.",
+          "options": [
+            "2006",
+            "2010",
+            "2008",
+            "2007"
+          ]
+        },
+        {
+          "type": "true-false",
+          "q": "Spirited Away was released in 2007.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Spirited Away was released in 2001."
+        },
+        {
+          "type": "true-false",
+          "q": "Joel Coen and Ethan Coen directed Spirited Away.",
+          "a": "False",
+          "options": [
+            "True",
+            "False"
+          ],
+          "explanation": "Spirited Away was directed by Hayao Miyazaki."
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Who directed The Grand Budapest Hotel?",
+          "a": "Wes Anderson",
+          "explanation": "The Grand Budapest Hotel is a 2014 comedy-drama film written and directed by Wes Anderson.",
+          "options": [
+            "Wes Anderson",
+            "Danny Boyle",
+            "Guillermo del Toro",
+            "Sofia Coppola"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which decade was Fight Club released in?",
+          "a": "1990s",
+          "explanation": "Fight Club came out in 1999, which is the 1990s.",
+          "options": [
+            "2010s",
+            "1980s",
+            "1990s",
+            "2000s"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "In what year was Inception released?",
+          "a": "2010",
+          "explanation": "Inception is a 2010 science fiction action film written and directed by Christopher Nolan, who also produced it with Emma Thomas, his wife.",
+          "options": [
+            "2010",
+            "2011",
+            "2009",
+            "2013"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Which decade was Interstellar released in?",
+          "a": "2010s",
+          "explanation": "Interstellar came out in 2014, which is the 2010s.",
+          "options": [
+            "2020s",
+            "2010s",
+            "2000s",
+            "2030s"
+          ]
+        },
+        {
+          "q": "Who directed Pan's Labyrinth?",
+          "a": "Guillermo del Toro",
+          "type": "multiple-choice",
+          "explanation": "Pan's Labyrinth is a 2006 Spanish-language dark fantasy film written, directed and co-produced by Guillermo del Toro. The film stars Ivana Baquero, Sergi Lopez, Maribel Verdu, Doug Jones, and Ariadna Gil.",
+          "options": [
+            "Guillermo del Toro",
+            "Wes Anderson",
+            "Sofia Coppola",
+            "Danny Boyle"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Who was one of the directors of City of God?",
+          "a": "Fernando Meirelles",
+          "explanation": "City of God was co-directed by Fernando Meirelles and Katia Lund.",
+          "options": [
+            "Fernando Meirelles",
+            "Wes Anderson",
+            "Guillermo del Toro",
+            "Danny Boyle"
+          ]
+        },
+        {
+          "type": "multiple-choice",
+          "q": "Who directed Trainspotting?",
+          "a": "Danny Boyle",
+          "options": [
+            "Wes Anderson",
+            "Guillermo del Toro",
+            "Sofia Coppola",
+            "Danny Boyle"
+          ],
+          "explanation": "Trainspotting is a 1996 British black comedy drama film directed by Danny Boyle, and starring Ewan McGregor, Ewen Bremner, Jonny Lee Miller, Kevin McKidd, Robert Carlyle and Kelly Macdonald in her film debut."
+        }
+      ]
+    }
+  ]
+}

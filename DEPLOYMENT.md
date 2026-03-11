@@ -1,7 +1,7 @@
 # Blindsided Games Cloudflare Pages Deployment
 
 ## Overview
-This repository now uses Astro for core routes (`/`, `/about`, `/contact`, `/policy`) and keeps legacy surfaces (`/games`, `/quizzes`, `/moodboards`) through a post-build copy step.
+This repository now uses Astro for core routes (`/`, `/about`, `/contact`, `/policy`) and keeps legacy surfaces (`/games`, `/moodboards`) through a post-build copy step. The website no longer ships a public quizzes browser; the `quizzes/` directory is kept only for the app-facing daily feed.
 
 ## Build Commands
 - Install: `npm install`
