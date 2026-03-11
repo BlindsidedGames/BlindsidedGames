@@ -5,7 +5,7 @@
       {
         "appIDs": [
           "AVX7SUF8Y6.com.blindsidedgames.quizzing",
-          "AVX7SUF8Y6.com.blindsidedgames.quizzing.Clip"
+          "AVX7SUF8Y6.com.blindsidedgames.quizzing.clip"
         ],
         "components": [
           {
@@ -20,7 +20,7 @@
   },
   "appclips": {
     "apps": [
-      "AVX7SUF8Y6.com.blindsidedgames.quizzing.Clip"
+      "AVX7SUF8Y6.com.blindsidedgames.quizzing.clip"
     ]
   }
 }
