@@ -1,0 +1,26 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "AVX7SUF8Y6.com.blindsidedgames.quizzing",
+          "AVX7SUF8Y6.com.blindsidedgames.quizzing.Clip"
+        ],
+        "components": [
+          {
+            "/": "/share/*"
+          },
+          {
+            "/": "/clip"
+          }
+        ]
+      }
+    ]
+  },
+  "appclips": {
+    "apps": [
+      "AVX7SUF8Y6.com.blindsidedgames.quizzing.Clip"
+    ]
+  }
+}

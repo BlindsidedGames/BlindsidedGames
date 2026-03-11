@@ -8,12 +8,27 @@
       "binding": "CONTACT_RATE_LIMIT_KV",
       "id": "f7b63e6223a740deade82f846171d09f",
       "preview_id": "d335b715a7b540e08c0ccdd1758d08d1"
+    },
+    {
+      "binding": "QUIZ_SHARE_RATE_LIMIT_KV",
+      "id": "82ffe246045447068db82d2e49623731",
+      "preview_id": "be6151627a1943ddab5603c364664793"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "QUIZ_SHARE_BUCKET",
+      "bucket_name": "blindsidedgames-quiz-shares",
+      "preview_bucket_name": "blindsidedgames-quiz-shares-preview"
     }
   ],
   "vars": {
     "CONTACT_RATE_LIMIT_WINDOW_SECONDS": "600",
     "CONTACT_RATE_LIMIT_MAX_REQUESTS": "5",
     "CONTACT_EMAIL_FROM": "Blindsided Games Contact <no-reply@blindsidedgames.com>",
-    "PUBLIC_TURNSTILE_SITE_KEY": "0x4AAAAAACmqCS_r7tADhmKj"
+    "PUBLIC_TURNSTILE_SITE_KEY": "0x4AAAAAACmqCS_r7tADhmKj",
+    "QUIZ_SHARE_MAX_BYTES": "1000000",
+    "QUIZ_SHARE_CREATE_WINDOW_SECONDS": "600",
+    "QUIZ_SHARE_CREATE_MAX_REQUESTS": "20"
   }
 }
