@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_07",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_07",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What is the name of the girl who leaves a glass slipper behind at the ball?",
+              "a": "Cinderella",
+              "options": [
+                "Cinderella",
+                "Rapunzel",
+                "Snow White",
+                "Sleeping Beauty"
+              ],
+              "explanation": "The glass slipper version became especially famous through Charles Perrault's retelling and later stage and film adaptations."
+            },
+            {
+              "type": "true-false",
+              "q": "Bats are mammals.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Bats are the only mammals capable of sustained powered flight, and like other mammals they feed their young with milk."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which bird is well known for mimicking human speech?",
+              "a": "Parrot",
+              "options": [
+                "Parrot",
+                "Penguin",
+                "Ostrich",
+                "Pelican"
+              ],
+              "explanation": "Several parrot species can imitate speech because they are skilled vocal learners, not because they understand language the way humans do."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What material forms the core of most wooden pencils?",
+              "a": "Graphite",
+              "options": [
+                "Graphite",
+                "Charcoal",
+                "Chalk",
+                "Slate"
+              ],
+              "explanation": "Pencil cores are usually made from graphite mixed with clay, which is why modern pencils contain no lead despite the common nickname."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What fruit is the main ingredient in guacamole?",
+              "a": "Avocado",
+              "options": [
+                "Avocado",
+                "Tomato",
+                "Mango",
+                "Lime"
+              ],
+              "explanation": "Guacamole originated in Mesoamerica, where avocados were cultivated long before the dish spread internationally."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Who leads an orchestra during a performance?",
+              "a": "Conductor",
+              "options": [
+                "Conductor",
+                "Composer",
+                "Soloist",
+                "Librettist"
+              ],
+              "explanation": "Conductors use hand movements and rehearsed interpretation to coordinate tempo, entries, balance, and phrasing across the ensemble."
+            },
+            {
+              "type": "true-false",
+              "q": "A leap year has 366 days.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Leap years add February 29 to keep the calendar aligned with Earth's orbit around the Sun, which is slightly longer than 365 days."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which country is often described as being shaped like a boot?",
+              "a": "Italy",
+              "options": [
+                "Italy",
+                "Greece",
+                "Portugal",
+                "Croatia"
+              ],
+              "explanation": "Italy's long peninsula extends into the Mediterranean, with Sicily often compared to a ball near the boot's toe."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What grain is most commonly used to make popcorn?",
+              "a": "Corn",
+              "options": [
+                "Corn",
+                "Rice",
+                "Barley",
+                "Oats"
+              ],
+              "explanation": "Popcorn kernels pop because their tough outer hull traps moisture that turns to steam when heated."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What do you call a word with the opposite meaning of another word?",
+              "a": "Antonym",
+              "options": [
+                "Synonym",
+                "Antonym",
+                "Homophone",
+                "Acronym"
+              ],
+              "explanation": "Pairs like 'hot' and 'cold' are classic antonyms and are often taught alongside synonyms in basic vocabulary lessons."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_07",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What term is used for the brightness scale of stars as seen from Earth?",
+              "a": "Magnitude",
+              "options": [
+                "Magnitude",
+                "Parallax",
+                "Luminosity",
+                "Redshift"
+              ],
+              "explanation": "Apparent magnitude works on a logarithmic scale, so a lower number means a brighter object in the night sky."
+            },
+            {
+              "type": "true-false",
+              "q": "A group of crows is commonly called a murder.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Collective nouns for animals often come from older hunting or folklore traditions, which is why many of them sound unusually dramatic."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which part of a flower develops into fruit after fertilization?",
+              "a": "Ovary",
+              "options": [
+                "Ovary",
+                "Petal",
+                "Stamen",
+                "Sepal"
+              ],
+              "explanation": "As seeds develop from ovules, the ovary wall matures into the surrounding fruit tissue in flowering plants."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which major key has no sharps or flats?",
+              "a": "C major",
+              "options": [
+                "C major",
+                "G major",
+                "F major",
+                "D major"
+              ],
+              "explanation": "C major uses only the natural notes on the piano, which is why it is often the first major scale students learn."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which architectural style is known for pointed arches and flying buttresses?",
+              "a": "Gothic",
+              "options": [
+                "Gothic",
+                "Baroque",
+                "Romanesque",
+                "Neoclassical"
+              ],
+              "explanation": "Gothic builders used structural innovations such as ribbed vaults and flying buttresses to support taller walls and larger stained-glass windows."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which artist painted The Persistence of Memory?",
+              "a": "Salvador Dali",
+              "options": [
+                "Pablo Picasso",
+                "Henri Matisse",
+                "Salvador Dali",
+                "Joan Miro"
+              ],
+              "explanation": "The 1931 painting is famous for its melting clocks and is housed at the Museum of Modern Art in New York."
+            },
+            {
+              "type": "true-false",
+              "q": "The Pacific Ring of Fire surrounds the Atlantic Ocean.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The Ring of Fire traces tectonically active regions around much of the Pacific basin, including major earthquake and volcano zones."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the name for a rocky object that reaches Earth's surface after passing through the atmosphere?",
+              "a": "Meteorite",
+              "options": [
+                "Meteor",
+                "Comet",
+                "Meteorite",
+                "Nebula"
+              ],
+              "explanation": "The same object is usually called a meteoroid in space and a meteor while it is glowing in the atmosphere."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which scale is used to rank the hardness of minerals?",
+              "a": "Mohs scale",
+              "options": [
+                "Richter scale",
+                "Mohs scale",
+                "Beaufort scale",
+                "Celsius scale"
+              ],
+              "explanation": "Friedrich Mohs introduced the scale in 1812, placing talc at 1 and diamond at 10."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which chamber is the lower house of the Parliament of the United Kingdom?",
+              "a": "House of Commons",
+              "options": [
+                "House of Lords",
+                "Senate",
+                "House of Commons",
+                "National Assembly"
+              ],
+              "explanation": "Members of the House of Commons are elected MPs, while the House of Lords serves as the upper chamber."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_07",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which scientist organized the first widely recognized periodic table?",
+              "a": "Dmitri Mendeleev",
+              "options": [
+                "Dmitri Mendeleev",
+                "Antoine Lavoisier",
+                "Niels Bohr",
+                "Erwin Schrodinger"
+              ],
+              "explanation": "Mendeleev famously left gaps in his table for elements that had not yet been discovered and predicted some of their properties."
+            },
+            {
+              "type": "true-false",
+              "q": "Basalt is an intrusive igneous rock.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Basalt forms from rapidly cooling lava at or near the surface, while intrusive igneous rocks such as gabbro cool more slowly underground."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What branch of mathematics studies properties preserved under continuous deformation?",
+              "a": "Topology",
+              "options": [
+                "Topology",
+                "Combinatorics",
+                "Calculus",
+                "Number theory"
+              ],
+              "explanation": "Topology is sometimes nicknamed rubber-sheet geometry because stretching or bending a shape does not change its topological properties."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which musical mode is represented by the white keys from D to D on a piano?",
+              "a": "Dorian mode",
+              "options": [
+                "Dorian mode",
+                "Phrygian mode",
+                "Mixolydian mode",
+                "Lydian mode"
+              ],
+              "explanation": "The Dorian mode resembles a natural minor scale with a raised sixth, which gives it a distinctive sound in jazz and folk music."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which plateau lies between the Western Ghats and Eastern Ghats in India?",
+              "a": "Deccan Plateau",
+              "options": [
+                "Deccan Plateau",
+                "Tibetan Plateau",
+                "Anatolian Plateau",
+                "Loess Plateau"
+              ],
+              "explanation": "The Deccan Plateau covers much of peninsular India and is largely composed of ancient volcanic rock known as the Deccan Traps."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which enzyme synthesizes short RNA primers during DNA replication?",
+              "a": "Primase",
+              "options": [
+                "Primase",
+                "Helicase",
+                "Ligase",
+                "Topoisomerase"
+              ],
+              "explanation": "DNA polymerases cannot begin a new strand from nothing, so primase lays down a short RNA primer that provides the starting point for DNA synthesis."
+            },
+            {
+              "type": "true-false",
+              "q": "The Treaty of Tordesillas divided newly claimed lands outside Europe between Spain and Portugal.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Signed in 1494, the treaty drew a meridian that influenced why Portugal later claimed Brazil while Spain dominated much of the rest of the Americas."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which blood vessel carries oxygenated blood from the lungs to the heart?",
+              "a": "Pulmonary vein",
+              "options": [
+                "Pulmonary artery",
+                "Aorta",
+                "Pulmonary vein",
+                "Vena cava"
+              ],
+              "explanation": "Pulmonary veins are unusual because they carry oxygen-rich blood, whereas most veins carry oxygen-poor blood."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which mountain pass historically linked trade routes through the Hindu Kush between Afghanistan and Pakistan?",
+              "a": "Khyber Pass",
+              "options": [
+                "Karakoram Pass",
+                "Salang Pass",
+                "Khyber Pass",
+                "Bolan Pass"
+              ],
+              "explanation": "For centuries the Khyber Pass served as a strategic corridor between the Indian subcontinent and Central Asia."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "In legal theory, what Latin phrase means 'the thing speaks for itself' when negligence is inferred from the nature of an accident?",
+              "a": "Res ipsa loquitur",
+              "options": [
+                "Habeas corpus",
+                "Mens rea",
+                "Prima facie",
+                "Res ipsa loquitur"
+              ],
+              "explanation": "The doctrine is often invoked when the accident ordinarily would not happen without negligence and the defendant controlled the instrumentality."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

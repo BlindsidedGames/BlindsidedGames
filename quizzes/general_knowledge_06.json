@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_06",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_06",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What board game uses properties such as Boardwalk and Park Place?",
+              "a": "Monopoly",
+              "options": [
+                "Monopoly",
+                "Clue",
+                "Risk",
+                "Scrabble"
+              ],
+              "explanation": "Monopoly was based on an earlier game called The Landlord's Game and centers on buying streets and collecting rent."
+            },
+            {
+              "type": "true-false",
+              "q": "Sound travels faster in water than in air.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Because water particles are packed more closely than air particles, vibrations move through water more quickly."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What punctuation mark ends a direct question in English?",
+              "a": "Question mark",
+              "options": [
+                "Question mark",
+                "Comma",
+                "Semicolon",
+                "Colon"
+              ],
+              "explanation": "A question mark signals interrogative phrasing and is one of the most recognizable marks in English punctuation."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the Japanese art of paper folding called?",
+              "a": "Origami",
+              "options": [
+                "Origami",
+                "Ikebana",
+                "Calligraphy",
+                "Haiku"
+              ],
+              "explanation": "Traditional origami starts from a square sheet and creates forms through folds rather than cuts."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which fruit is traditionally dried to make prunes?",
+              "a": "Plum",
+              "options": [
+                "Plum",
+                "Apricot",
+                "Pear",
+                "Peach"
+              ],
+              "explanation": "Prunes are usually made from specific plum varieties that dry well while keeping a sweet flavor."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which desert covers much of northern Africa?",
+              "a": "Sahara Desert",
+              "options": [
+                "Sahara Desert",
+                "Gobi Desert",
+                "Kalahari Desert",
+                "Atacama Desert"
+              ],
+              "explanation": "The Sahara stretches across many countries and is one of the largest hot deserts in the world."
+            },
+            {
+              "type": "true-false",
+              "q": "The treble clef is also known as the G clef.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The symbol curls around the second line of the staff, which marks the note G above middle C."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "In baseball, how many strikes usually make a strikeout?",
+              "a": "Three",
+              "options": [
+                "One",
+                "Two",
+                "Three",
+                "Four"
+              ],
+              "explanation": "A batter who reaches three strikes is out unless a dropped third strike rule allows a play to continue."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the largest land animal living today?",
+              "a": "African elephant",
+              "options": [
+                "African elephant",
+                "Giraffe",
+                "Hippopotamus",
+                "White rhinoceros"
+              ],
+              "explanation": "African elephants can weigh several tonnes and use their trunks for breathing, grasping, and communication."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the name of the symbol & in English?",
+              "a": "Ampersand",
+              "options": [
+                "Ampersand",
+                "Apostrophe",
+                "Hyphen",
+                "Semicolon"
+              ],
+              "explanation": "The word ampersand comes from a historical rendering of 'and per se and,' which was once recited when teaching the alphabet."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_06",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which Dutch painter created The Night Watch?",
+              "a": "Rembrandt",
+              "options": [
+                "Rembrandt",
+                "Johannes Vermeer",
+                "Piet Mondrian",
+                "Frans Hals"
+              ],
+              "explanation": "The painting is famous for its dramatic use of light and its large group portrait of a civic militia."
+            },
+            {
+              "type": "true-false",
+              "q": "Venus rotates in the opposite direction to most planets in the Solar System.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Its slow retrograde spin means the Sun would appear to rise in the west and set in the east from Venus's surface."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "In English algebraic chess notation, what letter represents the knight?",
+              "a": "N",
+              "options": [
+                "K",
+                "N",
+                "H",
+                "C"
+              ],
+              "explanation": "The king already uses K, so the knight takes N to avoid confusion in recorded moves."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which Mughal emperor commissioned the Taj Mahal?",
+              "a": "Shah Jahan",
+              "options": [
+                "Shah Jahan",
+                "Akbar",
+                "Babur",
+                "Aurangzeb"
+              ],
+              "explanation": "He built the mausoleum in memory of Mumtaz Mahal, and the site later became one of India's most famous landmarks."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which writing system is used in Japanese mainly for loanwords?",
+              "a": "Katakana",
+              "options": [
+                "Katakana",
+                "Hiragana",
+                "Kanji",
+                "Romaji"
+              ],
+              "explanation": "Katakana is also often used for emphasis, scientific names, and many imported modern terms."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which composer wrote the opera The Magic Flute?",
+              "a": "Wolfgang Amadeus Mozart",
+              "options": [
+                "Wolfgang Amadeus Mozart",
+                "Giuseppe Verdi",
+                "Richard Wagner",
+                "Giacomo Puccini"
+              ],
+              "explanation": "The opera premiered in Vienna in 1791 and mixes comic scenes with Masonic symbolism."
+            },
+            {
+              "type": "true-false",
+              "q": "The Dead Sea lies below sea level.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Its shoreline is one of the lowest exposed land elevations on Earth, and the lake is known for very high salinity."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What kind of rock forms when existing rock is changed by heat and pressure?",
+              "a": "Metamorphic rock",
+              "options": [
+                "Metamorphic rock",
+                "Igneous rock",
+                "Sedimentary rock",
+                "Volcanic glass"
+              ],
+              "explanation": "Slate and marble are common examples of metamorphic rock formed from older rock altered deep within Earth's crust."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What term describes animals that are mainly active at dawn and dusk?",
+              "a": "Crepuscular",
+              "options": [
+                "Crepuscular",
+                "Nocturnal",
+                "Diurnal",
+                "Aquatic"
+              ],
+              "explanation": "Many rabbits and deer follow crepuscular patterns to balance feeding opportunities with lower predation risk."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which poker hand ranks directly above a flush in standard poker?",
+              "a": "Full house",
+              "options": [
+                "Full house",
+                "Straight",
+                "Three of a kind",
+                "Two pair"
+              ],
+              "explanation": "A full house combines three cards of one rank with two of another, placing it above a flush but below four of a kind."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_06",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which Baroque composer wrote the Goldberg Variations?",
+              "a": "Johann Sebastian Bach",
+              "options": [
+                "Johann Sebastian Bach",
+                "George Frideric Handel",
+                "Antonio Vivaldi",
+                "Domenico Scarlatti"
+              ],
+              "explanation": "The work was published as the final part of Bach's Clavier-Ubung series and is built around an aria and variations."
+            },
+            {
+              "type": "true-false",
+              "q": "The Rosetta Stone presents the same decree in three scripts.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Its parallel inscriptions in hieroglyphic, Demotic, and Greek were crucial to deciphering ancient Egyptian writing."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which molecule carries amino acids to the ribosome during translation?",
+              "a": "tRNA",
+              "options": [
+                "tRNA",
+                "mRNA",
+                "rRNA",
+                "DNA polymerase"
+              ],
+              "explanation": "Each transfer RNA has an anticodon that pairs with a codon on messenger RNA while delivering a specific amino acid."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What branch of linguistics studies sentence structure?",
+              "a": "Syntax",
+              "options": [
+                "Syntax",
+                "Phonetics",
+                "Pragmatics",
+                "Etymology"
+              ],
+              "explanation": "Syntax focuses on how words combine into phrases and clauses, while semantics and pragmatics focus more on meaning and use."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What theorem states that every non-constant polynomial with complex coefficients has at least one complex root?",
+              "a": "Fundamental Theorem of Algebra",
+              "options": [
+                "Fundamental Theorem of Algebra",
+                "Binomial Theorem",
+                "Intermediate Value Theorem",
+                "Euclidean Algorithm"
+              ],
+              "explanation": "A key consequence is that such polynomials can be fully factored into linear factors over the complex numbers."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What economic term describes a market dominated by a small number of large sellers?",
+              "a": "Oligopoly",
+              "options": [
+                "Oligopoly",
+                "Monopsony",
+                "Perfect competition",
+                "Arbitrage"
+              ],
+              "explanation": "Airlines and telecommunications are often used as examples because a few firms can strongly influence pricing and output."
+            },
+            {
+              "type": "true-false",
+              "q": "The Chandrasekhar limit describes the maximum mass of a stable white dwarf.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Above that threshold, electron degeneracy pressure can no longer support the star, leading to collapse or explosion."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which desert lies mostly in northern Chile and is among the driest places on Earth?",
+              "a": "Atacama Desert",
+              "options": [
+                "Atacama Desert",
+                "Namib Desert",
+                "Patagonian Desert",
+                "Great Victoria Desert"
+              ],
+              "explanation": "Parts of the Atacama receive so little rain that some weather stations there have recorded years without measurable precipitation."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which architect engineered the dome of Florence Cathedral?",
+              "a": "Filippo Brunelleschi",
+              "options": [
+                "Filippo Brunelleschi",
+                "Donato Bramante",
+                "Andrea Palladio",
+                "Gian Lorenzo Bernini"
+              ],
+              "explanation": "Brunelleschi used a double-shell design and innovative hoisting methods to build the vast dome without traditional centering."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which medieval work includes storytellers such as the Wife of Bath and the Pardoner?",
+              "a": "The Canterbury Tales",
+              "options": [
+                "The Canterbury Tales",
+                "Piers Plowman",
+                "Le Morte d'Arthur",
+                "The Decameron"
+              ],
+              "explanation": "Geoffrey Chaucer structured the work as a storytelling contest among pilgrims traveling toward Canterbury."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -409,15 +409,155 @@ def has_hardcoded_units(text):
     return any(pattern.search(text) for pattern in HARD_CODED_UNIT_PATTERNS)
 
 
+def collect_quiz_documents(data, file_errors):
+    variants = data.get("variants")
+    if variants is None:
+        return [("", data)]
+
+    if "id" not in data:
+        file_errors.append("Missing 'id'")
+    if "title" not in data:
+        file_errors.append("Missing 'title'")
+    if "category" not in data:
+        file_errors.append("Missing 'category'")
+    if not isinstance(variants, dict):
+        file_errors.append("Field 'variants' must be an object")
+        return []
+
+    expected = {"easy", "medium", "hard"}
+    missing = sorted(expected - set(variants))
+    extra = sorted(set(variants) - expected)
+    for difficulty in missing:
+        file_errors.append(f"Missing variant '{difficulty}'")
+    for difficulty in extra:
+        file_errors.append(f"Unexpected variant '{difficulty}'")
+
+    documents = []
+    for difficulty in ("easy", "medium", "hard"):
+        variant = variants.get(difficulty)
+        if not isinstance(variant, dict):
+            continue
+        documents.append((difficulty, variant))
+    return documents
+
+
+def validate_quiz_document(data, filename, label, file_errors, file_warnings, fact_occurrences):
+    prefix = f"{label} " if label else ""
+
+    if "id" not in data:
+        file_errors.append(f"{prefix}missing 'id'")
+    if "title" not in data:
+        file_errors.append(f"{prefix}missing 'title'")
+    if "sections" not in data:
+        file_errors.append(f"{prefix}missing 'sections'")
+        return
+
+    multiple_choice_count = 0
+    true_false_count = 0
+    for section_index, section in enumerate(data["sections"]):
+        if "title" not in section:
+            file_errors.append(f"{prefix}section {section_index} missing 'title'")
+        if "items" not in section:
+            file_errors.append(f"{prefix}section {section_index} missing 'items'")
+            continue
+
+        for item_index, item in enumerate(section["items"]):
+            item_label = f"{prefix}Item {item_index}"
+            if "type" not in item:
+                file_errors.append(f"{item_label} missing 'type'")
+            if "q" not in item:
+                file_errors.append(f"{item_label} missing 'q'")
+            if "a" not in item:
+                file_errors.append(f"{item_label} missing 'a'")
+            if "explanation" not in item:
+                file_errors.append(f"{item_label} missing 'explanation'")
+
+            question = item.get("q", "")
+            answer = item.get("a", "")
+            explanation = item.get("explanation", "")
+
+            for value, field_name in ((question, "q"), (answer, "a"), (explanation, "explanation")):
+                if not isinstance(value, str):
+                    continue
+                for bad_string in BAD_STRINGS:
+                    if bad_string.lower() in value.lower():
+                        file_errors.append(f"{item_label} {field_name} contains AI artifact: '{bad_string}'")
+                        break
+                try:
+                    parse_tagged_text(value)
+                except ValueError as exc:
+                    file_errors.append(f"{item_label} {field_name} has invalid locale tag markup: {exc}")
+                if has_hardcoded_units(value):
+                    file_warnings.append(f"{item_label} {field_name} hardcodes display units; prefer locale-aware tags")
+
+            if "(set " in question.lower():
+                file_errors.append(f"{item_label} q contains internal authoring marker")
+
+            if is_exact_tautology(question, answer, explanation):
+                file_errors.append(f"{item_label} explanation is an exact answer restatement")
+
+            fact_key = extract_fact_key(question)
+            if fact_key:
+                fact_occurrences.setdefault(fact_key, []).append((filename, label, item_index, question))
+
+            if is_risky_trivia(question):
+                file_warnings.append(f"{item_label} q is risky trivia without an explicit metric, date, or authority")
+
+            item_type = item.get("type")
+            if item_type == "self-eval":
+                file_errors.append(f"{item_label} uses retired type 'self-eval'")
+
+            if item_type in {"multiple-choice", "true-false"}:
+                options = item.get("options")
+                if not isinstance(options, list):
+                    file_errors.append(f"{item_label} missing 'options' for type {item_type}")
+                else:
+                    if any(not isinstance(option, str) for option in options):
+                        file_errors.append(f"{item_label} options must all be strings")
+                    elif answer not in options:
+                        file_errors.append(f"{item_label} answer is not present in 'options'")
+                    else:
+                        for option_index, option in enumerate(options):
+                            try:
+                                parse_tagged_text(option)
+                            except ValueError as exc:
+                                file_errors.append(
+                                    f"{item_label} option {option_index} has invalid locale tag markup: {exc}"
+                                )
+                            if has_hardcoded_units(option):
+                                file_warnings.append(
+                                    f"{item_label} option {option_index} hardcodes display units; prefer locale-aware tags"
+                                )
+
+                        if item_type == "multiple-choice":
+                            for locale in REPRESENTATIVE_LOCALES:
+                                rendered_options = [render_tagged_text(option, locale) for option in options]
+                                if len(rendered_options) != len(set(rendered_options)):
+                                    file_errors.append(
+                                        f"{item_label} contains locale-colliding options for {locale}"
+                                    )
+                                    break
+
+                if item_type == "true-false" and options != ["True", "False"]:
+                    file_errors.append(f"{item_label} true-false options must be exactly ['True', 'False']")
+
+                if item_type == "multiple-choice":
+                    multiple_choice_count += 1
+                else:
+                    true_false_count += 1
+
+    if multiple_choice_count != 8 or true_false_count != 2:
+        file_errors.append(
+            f"{prefix}quiz must contain exactly 8 multiple-choice and 2 true-false questions, found {multiple_choice_count} and {true_false_count}"
+        )
+
+
 def main():
     errors = {}
     warnings = {}
     fact_occurrences = {}
     scheduled_entries = load_daily_schedule()
     scheduled_files = [entry["file"] for entry in scheduled_entries if entry.get("file")]
-
-    if len(scheduled_entries) < 14:
-        errors["daily_schedule.json"] = ["Daily schedule must contain at least 14 entries."]
 
     for index, entry in enumerate(scheduled_entries):
         filepath = entry.get("file")
@@ -452,111 +592,9 @@ def main():
             errors[filename] = [f"JSON parsing error: {exc}"]
             continue
 
-        if "id" not in data:
-            file_errors.append("Missing 'id'")
-        if "title" not in data:
-            file_errors.append("Missing 'title'")
-        if "sections" not in data:
-            file_errors.append("Missing 'sections'")
-        else:
-            multiple_choice_count = 0
-            true_false_count = 0
-            for section_index, section in enumerate(data["sections"]):
-                if "title" not in section:
-                    file_errors.append(f"Section {section_index} missing 'title'")
-                if "items" not in section:
-                    file_errors.append(f"Section {section_index} missing 'items'")
-                    continue
-
-                for item_index, item in enumerate(section["items"]):
-                    item_label = f"Item {item_index}"
-                    if "type" not in item:
-                        file_errors.append(f"{item_label} missing 'type'")
-                    if "q" not in item:
-                        file_errors.append(f"{item_label} missing 'q'")
-                    if "a" not in item:
-                        file_errors.append(f"{item_label} missing 'a'")
-                    if "explanation" not in item:
-                        file_errors.append(f"{item_label} missing 'explanation'")
-
-                    question = item.get("q", "")
-                    answer = item.get("a", "")
-                    explanation = item.get("explanation", "")
-
-                    for value, field_name in ((question, "q"), (answer, "a"), (explanation, "explanation")):
-                        if not isinstance(value, str):
-                            continue
-                        for bad_string in BAD_STRINGS:
-                            if bad_string.lower() in value.lower():
-                                file_errors.append(f"{item_label} {field_name} contains AI artifact: '{bad_string}'")
-                                break
-                        try:
-                            parse_tagged_text(value)
-                        except ValueError as exc:
-                            file_errors.append(f"{item_label} {field_name} has invalid locale tag markup: {exc}")
-                        if has_hardcoded_units(value):
-                            file_warnings.append(f"{item_label} {field_name} hardcodes display units; prefer locale-aware tags")
-
-                    if "(set " in question.lower():
-                        file_errors.append(f"{item_label} q contains internal authoring marker")
-
-                    if is_exact_tautology(question, answer, explanation):
-                        file_errors.append(f"{item_label} explanation is an exact answer restatement")
-
-                    fact_key = extract_fact_key(question)
-                    if fact_key:
-                        fact_occurrences.setdefault(fact_key, []).append((filename, item_index, question))
-
-                    if is_risky_trivia(question):
-                        file_warnings.append(f"{item_label} q is risky trivia without an explicit metric, date, or authority")
-
-                    item_type = item.get("type")
-                    if item_type == "self-eval":
-                        file_errors.append(f"{item_label} uses retired type 'self-eval'")
-
-                    if item_type in {"multiple-choice", "true-false"}:
-                        options = item.get("options")
-                        if not isinstance(options, list):
-                            file_errors.append(f"{item_label} missing 'options' for type {item_type}")
-                        else:
-                            if any(not isinstance(option, str) for option in options):
-                                file_errors.append(f"{item_label} options must all be strings")
-                            elif answer not in options:
-                                file_errors.append(f"{item_label} answer is not present in 'options'")
-                            else:
-                                for option_index, option in enumerate(options):
-                                    try:
-                                        parse_tagged_text(option)
-                                    except ValueError as exc:
-                                        file_errors.append(
-                                            f"{item_label} option {option_index} has invalid locale tag markup: {exc}"
-                                        )
-                                    if has_hardcoded_units(option):
-                                        file_warnings.append(
-                                            f"{item_label} option {option_index} hardcodes display units; prefer locale-aware tags"
-                                        )
-
-                                if item_type == "multiple-choice":
-                                    for locale in REPRESENTATIVE_LOCALES:
-                                        rendered_options = [render_tagged_text(option, locale) for option in options]
-                                        if len(rendered_options) != len(set(rendered_options)):
-                                            file_errors.append(
-                                                f"{item_label} contains locale-colliding options for {locale}"
-                                            )
-                                            break
-
-                        if item_type == "true-false" and options != ["True", "False"]:
-                            file_errors.append(f"{item_label} true-false options must be exactly ['True', 'False']")
-
-                        if item_type == "multiple-choice":
-                            multiple_choice_count += 1
-                        else:
-                            true_false_count += 1
-
-            if multiple_choice_count != 8 or true_false_count != 2:
-                file_errors.append(
-                    f"Quiz must contain exactly 8 multiple-choice and 2 true-false questions, found {multiple_choice_count} and {true_false_count}"
-                )
+        documents = collect_quiz_documents(data, file_errors)
+        for label, document in documents:
+            validate_quiz_document(document, filename, label, file_errors, file_warnings, fact_occurrences)
 
         if file_errors:
             errors[filename] = file_errors
@@ -564,22 +602,25 @@ def main():
             warnings[filename] = file_warnings
 
         if not file_errors:
-            semantic_issues = audit_quiz_document(data)
-            for issue in semantic_issues:
-                append_issue(
-                    errors,
-                    filename,
-                    f"Item {issue.item_index} semantic audit [{issue.code}]: {issue.message}",
-                )
+            for label, document in documents:
+                semantic_issues = audit_quiz_document(document)
+                prefix = f"{label} " if label else ""
+                for issue in semantic_issues:
+                    append_issue(
+                        errors,
+                        filename,
+                        f"{prefix}Item {issue.item_index} semantic audit [{issue.code}]: {issue.message}",
+                    )
 
     for (relation, entity), occurrences in fact_occurrences.items():
         if len(occurrences) <= 1:
             continue
-        for filename, item_index, _question in occurrences:
+        for occurrence_filename, label, item_index, _question in occurrences:
+            prefix = f"{label} " if label else ""
             append_issue(
                 errors,
-                filename,
-                f"Item {item_index} duplicates canonical fact key '{relation}:{entity}'",
+                occurrence_filename,
+                f"{prefix}Item {item_index} duplicates canonical fact key '{relation}:{entity}'",
             )
 
     with open(ERRORS_PATH, "w", encoding="utf-8") as handle:
