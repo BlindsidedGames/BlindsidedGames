@@ -1,0 +1,137 @@
+---
+const defaultConfig = {
+  width: 0,
+  height: 0
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="data:," />
+    <title>OBS Camera Border</title>
+    <style>
+      :root {
+        --overlay-width: 100vw;
+        --overlay-height: 100vh;
+        --frame-inset: 30px;
+        --frame-thickness: 72px;
+        --frame-radius: 28px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        background: transparent;
+      }
+
+      body {
+        font-family: 'Sora', 'Segoe UI', sans-serif;
+      }
+
+      .overlay-shell {
+        position: relative;
+        width: var(--overlay-width);
+        height: var(--overlay-height);
+        margin: 0 auto;
+        pointer-events: none;
+      }
+
+      .camera-frame {
+        position: absolute;
+        inset: var(--frame-inset);
+        border-radius: var(--frame-radius);
+      }
+
+      .camera-frame::before,
+      .camera-frame::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        pointer-events: none;
+      }
+
+      .camera-frame::before {
+        padding: var(--frame-thickness);
+        background:
+          linear-gradient(180deg, rgb(114, 128, 155) 0%, rgb(76, 89, 115) 24%, rgb(40, 49, 67) 62%, rgb(24, 30, 42) 100%);
+        border: 1px solid rgb(214, 223, 242);
+        box-shadow:
+          inset 0 1px 0 rgb(255, 255, 255),
+          0 12px 24px rgba(0, 0, 0, 0.36);
+        mask:
+          linear-gradient(#fff 0 0) content-box,
+          linear-gradient(#fff 0 0);
+        mask-composite: exclude;
+        -webkit-mask:
+          linear-gradient(#fff 0 0) content-box,
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+      }
+
+      .camera-frame::after {
+        inset: calc(var(--frame-thickness) * 0.16);
+        border: 1px solid rgb(214, 223, 242);
+        border-radius: calc(var(--frame-radius) - (var(--frame-thickness) * 0.16));
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <main
+      class="overlay-shell"
+      data-default-width={defaultConfig.width}
+      data-default-height={defaultConfig.height}
+    >
+      <div class="camera-frame" aria-hidden="true"></div>
+    </main>
+
+    <script>
+      const overlay = document.querySelector('.overlay-shell');
+
+      if (overlay) {
+        const parsePositiveInt = (value, fallback, minimum, maximum) => {
+          const parsed = Number.parseInt(value ?? '', 10);
+          if (!Number.isFinite(parsed)) return fallback;
+          return Math.min(Math.max(parsed, minimum), maximum);
+        };
+
+        const defaults = {
+          width: Number.parseInt(overlay.dataset.defaultWidth ?? '0', 10),
+          height: Number.parseInt(overlay.dataset.defaultHeight ?? '0', 10)
+        };
+
+        const params = new URLSearchParams(window.location.search);
+        const explicitWidth = parsePositiveInt(params.get('width'), defaults.width, 0, 3840);
+        const explicitHeight = parsePositiveInt(params.get('height'), defaults.height, 0, 2160);
+        const width = explicitWidth || window.innerWidth;
+        const height = explicitHeight || window.innerHeight;
+        const rootStyle = document.documentElement.style;
+        const setLength = (name, value) => rootStyle.setProperty(name, `${value}px`);
+        const scale = Math.min(Math.max(Math.min(width / 1920, height / 1080), 0.42), 1.28);
+
+        setLength('--overlay-width', width);
+        setLength('--overlay-height', height);
+        setLength('--frame-inset', Math.round(Math.max(10, 30 * scale)));
+        setLength('--frame-thickness', Math.round(Math.max(26, 72 * scale)));
+        setLength('--frame-radius', Math.round(Math.max(12, 28 * scale)));
+
+        if (!explicitWidth && !explicitHeight) {
+          window.addEventListener('resize', () => window.location.reload(), { passive: true });
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,237 @@
+---
+const defaultConfig = {
+  width: 1400,
+  height: 220,
+  bronze: 0,
+  silver: 0,
+  gold: 0,
+  platinum: 0
+};
+
+const trophyIcons = [
+  { key: 'platinum', src: '/img/40-platinum.png', alt: 'Platinum trophy' },
+  { key: 'gold', src: '/img/40-gold.png', alt: 'Gold trophy' },
+  { key: 'silver', src: '/img/40-silver.png', alt: 'Silver trophy' },
+  { key: 'bronze', src: '/img/40-bronze.png', alt: 'Bronze trophy' }
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="data:," />
+    <title>OBS Trophy Panel</title>
+    <style>
+      :root {
+        --overlay-width: 1400px;
+        --overlay-height: 220px;
+        --panel-width: 840px;
+        --panel-height: 189px;
+        --panel-radius: 30px;
+        --panel-padding-inline: 14px;
+        --panel-padding-block: 13px;
+        --row-gap: 62px;
+        --icon-size: 163px;
+        --count-size: 146px;
+        --pill-gap: 12px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        background: transparent;
+      }
+
+      body {
+        font-family: 'Sora', 'Segoe UI', sans-serif;
+        color: #f6f8ff;
+      }
+
+      .overlay-shell {
+        position: relative;
+        width: var(--overlay-width);
+        height: var(--overlay-height);
+        pointer-events: none;
+      }
+
+      .glass-panel {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: var(--panel-width);
+        height: var(--panel-height);
+        padding: var(--panel-padding-block) var(--panel-padding-inline);
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: var(--panel-radius);
+        background: linear-gradient(180deg, rgba(120, 136, 166, 0.92) 0%, rgba(82, 97, 126, 0.92) 32%, rgba(36, 45, 63, 0.94) 100%);
+        border: 1px solid rgba(214, 223, 242, 0.74);
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.16),
+          0 -4px 10px rgba(95, 128, 187, 0.06);
+      }
+
+      .glass-panel::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 20%);
+        opacity: 0.58;
+        pointer-events: none;
+      }
+
+      .trophy-row {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--row-gap);
+        width: 100%;
+        min-height: 100%;
+      }
+
+      .trophy-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--pill-gap);
+        min-width: 0;
+        white-space: nowrap;
+        filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.42));
+      }
+
+      .trophy-pill img {
+        width: var(--icon-size);
+        height: var(--icon-size);
+        display: block;
+        filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.68));
+      }
+
+      .trophy-count {
+        font-size: var(--count-size);
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -0.04em;
+        text-shadow: 0 2px 12px rgba(0, 0, 0, 0.88);
+        font-variant-numeric: tabular-nums lining-nums;
+      }
+    </style>
+  </head>
+  <body>
+    <main
+      class="overlay-shell"
+      data-default-width={defaultConfig.width}
+      data-default-height={defaultConfig.height}
+      data-default-bronze={defaultConfig.bronze}
+      data-default-silver={defaultConfig.silver}
+      data-default-gold={defaultConfig.gold}
+      data-default-platinum={defaultConfig.platinum}
+    >
+      <section class="glass-panel" aria-label="Trophy counts">
+        <div class="trophy-row">
+          {
+            trophyIcons.map((trophy) => (
+              <div class="trophy-pill">
+                <img src={trophy.src} alt={trophy.alt} loading="eager" decoding="async" />
+                <span class="trophy-count" data-count={trophy.key}>0</span>
+              </div>
+            ))
+          }
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const overlay = document.querySelector('.overlay-shell');
+      const trophyRow = document.querySelector('.trophy-row');
+
+      if (overlay && trophyRow) {
+        const numberFormatter = new Intl.NumberFormat('en-US');
+
+        const parsePositiveInt = (value, fallback, minimum, maximum) => {
+          const parsed = Number.parseInt(value ?? '', 10);
+          if (!Number.isFinite(parsed)) return fallback;
+          return Math.min(Math.max(parsed, minimum), maximum);
+        };
+
+        const defaults = {
+          width: Number.parseInt(overlay.dataset.defaultWidth ?? '0', 10),
+          height: Number.parseInt(overlay.dataset.defaultHeight ?? '0', 10),
+          bronze: Number.parseInt(overlay.dataset.defaultBronze ?? '0', 10),
+          silver: Number.parseInt(overlay.dataset.defaultSilver ?? '0', 10),
+          gold: Number.parseInt(overlay.dataset.defaultGold ?? '0', 10),
+          platinum: Number.parseInt(overlay.dataset.defaultPlatinum ?? '0', 10)
+        };
+
+        const params = new URLSearchParams(window.location.search);
+        const explicitWidth = parsePositiveInt(params.get('width'), defaults.width, 0, 3840);
+        const explicitHeight = parsePositiveInt(params.get('height'), defaults.height, 0, 2160);
+        const width = explicitWidth || defaults.width;
+        const height = explicitHeight || defaults.height;
+        const counts = {
+          bronze: parsePositiveInt(params.get('bronze'), defaults.bronze, 0, 999999),
+          silver: parsePositiveInt(params.get('silver'), defaults.silver, 0, 999999),
+          gold: parsePositiveInt(params.get('gold'), defaults.gold, 0, 999999),
+          platinum: parsePositiveInt(params.get('platinum'), defaults.platinum, 0, 999999)
+        };
+
+        const rootStyle = document.documentElement.style;
+        const setLength = (name, value) => rootStyle.setProperty(name, `${value}px`);
+        const scale = Math.min(Math.max(Math.min(width / 1920, height / 1080), 0.42), 1.28);
+        const panelRadius = Math.round(Math.max(16, 30 * scale));
+        const panelPaddingBlock = Math.round(Math.max(6, 13 * scale));
+        const rowGap = Math.round(Math.max(22, 62 * scale));
+        const iconSize = Math.round(Math.max(58, 163 * scale));
+        const countSize = Math.round(Math.max(55, 146 * scale));
+        const pillGap = Math.round(Math.max(8, 18 * scale));
+
+        setLength('--overlay-width', width);
+        setLength('--overlay-height', height);
+        setLength('--panel-radius', panelRadius);
+        setLength('--panel-padding-block', panelPaddingBlock);
+        setLength('--row-gap', rowGap);
+        setLength('--icon-size', iconSize);
+        setLength('--count-size', countSize);
+        setLength('--pill-gap', pillGap);
+
+        Object.entries(counts).forEach(([key, value]) => {
+          const target = document.querySelector(`[data-count="${key}"]`);
+          if (!target) return;
+          target.textContent = numberFormatter.format(value);
+        });
+
+        const syncLayout = () => {
+          const rowWidth = trophyRow.offsetWidth;
+          const rowHeight = trophyRow.offsetHeight;
+          const panelPaddingInline = Math.round(Math.max(8, 14 * scale));
+          const panelWidth = Math.min(width, rowWidth + panelPaddingInline * 2 + Math.round(Math.max(24, 48 * scale)));
+          const panelHeight = Math.max(rowHeight + panelPaddingBlock * 2, Math.round(Math.max(80, 189 * scale)));
+
+          setLength('--panel-width', panelWidth);
+          setLength('--panel-height', panelHeight);
+          setLength('--panel-padding-inline', panelPaddingInline);
+        };
+
+        syncLayout();
+
+        if (!explicitWidth && !explicitHeight) {
+          window.addEventListener('resize', () => window.location.reload(), { passive: true });
+        }
+      }
+    </script>
+  </body>
+</html>
