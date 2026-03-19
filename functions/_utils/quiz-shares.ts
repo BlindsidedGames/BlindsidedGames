@@ -24,16 +24,30 @@ interface QuizTransferEntryPayload {
   documentID: string;
   title: string;
   category: string;
-  difficulty: string;
   source: string;
-  document: {
-    id: string;
-    title: string;
-    sections: Array<{
-      title: string;
-      items: unknown[];
-    }>;
+  difficulty?: string;
+  document?: QuizTransferDocumentPayload;
+  family?: QuizTransferFamilyPayload;
+}
+
+interface QuizTransferFamilyPayload {
+  id: string;
+  title: string;
+  category: string;
+  variants: {
+    easy?: QuizTransferDocumentPayload | null;
+    medium?: QuizTransferDocumentPayload | null;
+    hard?: QuizTransferDocumentPayload | null;
   };
+}
+
+interface QuizTransferDocumentPayload {
+  id: string;
+  title: string;
+  sections: Array<{
+    title: string;
+    items: unknown[];
+  }>;
 }
 
 const QUIZPACK_CONTENT_TYPE = 'application/vnd.blindsidedgames.quizpack';
@@ -533,20 +547,14 @@ function isValidTransferEntry(value: unknown): value is QuizTransferEntryPayload
     return false;
   }
 
-  const document = value.document;
   return (
     typeof value.documentID === 'string' &&
     typeof value.title === 'string' &&
     typeof value.category === 'string' &&
-    typeof value.difficulty === 'string' &&
-    ALLOWED_DIFFICULTIES.has(value.difficulty) &&
     typeof value.source === 'string' &&
     ALLOWED_SOURCES.has(value.source) &&
-    isRecord(document) &&
-    typeof document.id === 'string' &&
-    typeof document.title === 'string' &&
-    Array.isArray(document.sections) &&
-    document.sections.every((section) => isRecord(section) && typeof section.title === 'string' && Array.isArray(section.items))
+    // The app now uploads whole quiz families, but legacy single-document shares remain valid.
+    (isValidLegacyTransferEntry(value) || isValidFamilyTransferEntry(value))
   );
 }
 
@@ -555,8 +563,83 @@ function firstMeaningfulTitle(entry: QuizTransferEntryPayload): string {
   if (title.length > 0) {
     return title;
   }
-  const documentTitle = entry.document.title.trim();
+
+  const familyTitle = entry.family?.title?.trim() ?? '';
+  if (familyTitle.length > 0) {
+    return familyTitle;
+  }
+
+  const familyDocumentTitle = firstMeaningfulFamilyDocumentTitle(entry.family);
+  if (familyDocumentTitle.length > 0) {
+    return familyDocumentTitle;
+  }
+
+  const documentTitle = entry.document?.title?.trim() ?? '';
   return documentTitle.length > 0 ? documentTitle : 'Shared Quiz Pack';
+}
+
+function isValidLegacyTransferEntry(value: Record<string, any>): boolean {
+  return typeof value.difficulty === 'string' &&
+    ALLOWED_DIFFICULTIES.has(value.difficulty) &&
+    isValidTransferDocument(value.document);
+}
+
+function isValidFamilyTransferEntry(value: Record<string, any>): boolean {
+  const family = value.family;
+  if (!isRecord(family)) {
+    return false;
+  }
+
+  if (
+    typeof family.id !== 'string' ||
+    typeof family.title !== 'string' ||
+    typeof family.category !== 'string' ||
+    !isRecord(family.variants)
+  ) {
+    return false;
+  }
+
+  let hasDocumentVariant = false;
+  for (const difficulty of ['easy', 'medium', 'hard'] as const) {
+    const variant = family.variants[difficulty];
+    if (variant == null) {
+      continue;
+    }
+    if (!isValidTransferDocument(variant)) {
+      return false;
+    }
+    hasDocumentVariant = true;
+  }
+
+  return hasDocumentVariant;
+}
+
+function isValidTransferDocument(value: unknown): value is QuizTransferDocumentPayload {
+  if (!isRecord(value)) {
+    return false;
+  }
+
+  return (
+    typeof value.id === 'string' &&
+    typeof value.title === 'string' &&
+    Array.isArray(value.sections) &&
+    value.sections.every((section) => isRecord(section) && typeof section.title === 'string' && Array.isArray(section.items))
+  );
+}
+
+function firstMeaningfulFamilyDocumentTitle(family: QuizTransferFamilyPayload | undefined): string {
+  if (!family) {
+    return '';
+  }
+
+  for (const difficulty of ['easy', 'medium', 'hard'] as const) {
+    const title = family.variants[difficulty]?.title?.trim() ?? '';
+    if (title.length > 0) {
+      return title;
+    }
+  }
+
+  return '';
 }
 
 function invalidPackage(code: string, message: string) {
