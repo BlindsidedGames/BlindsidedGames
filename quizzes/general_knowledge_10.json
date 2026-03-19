@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_10",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_10",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What tool uses a magnetized needle to show direction?",
+              "a": "Compass",
+              "options": [
+                "Compass",
+                "Barometer",
+                "Telescope",
+                "Caliper"
+              ],
+              "explanation": "A magnetic compass aligns with Earth's magnetic field, which is why it became such an important navigation tool."
+            },
+            {
+              "type": "true-false",
+              "q": "Koalas are marsupials.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Koalas carry their young in a pouch, which is a defining trait of marsupials."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What musical symbol raises a note by one semitone?",
+              "a": "Sharp",
+              "options": [
+                "Sharp",
+                "Flat",
+                "Rest",
+                "Clef"
+              ],
+              "explanation": "A sharp sign raises a pitch by one semitone, while a flat lowers it by one semitone."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the largest planet in the Solar System?",
+              "a": "Jupiter",
+              "options": [
+                "Jupiter",
+                "Saturn",
+                "Neptune",
+                "Earth"
+              ],
+              "explanation": "Jupiter is so large that more than 1,000 Earths could fit inside it by volume."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What sport is played at the Masters Tournament?",
+              "a": "Golf",
+              "options": [
+                "Golf",
+                "Tennis",
+                "Cricket",
+                "Swimming"
+              ],
+              "explanation": "The Masters is one of golf's four major men's championships and is played each year at Augusta National."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What sweet substance do bees make from nectar?",
+              "a": "Honey",
+              "options": [
+                "Honey",
+                "Wax",
+                "Pollen",
+                "Sap"
+              ],
+              "explanation": "Honeybees store honey in the hive as food, while beeswax is the material they use to build honeycomb cells."
+            },
+            {
+              "type": "true-false",
+              "q": "An octopus has five hearts.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Octopuses have three hearts, with two pumping blood to the gills and one pumping it to the rest of the body."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the name of the wooden puppet whose nose grows when he lies?",
+              "a": "Pinocchio",
+              "options": [
+                "Pinocchio",
+                "Dumbo",
+                "Bambi",
+                "Tarzan"
+              ],
+              "explanation": "Pinocchio comes from Carlo Collodi's 19th-century story, and the growing nose became the character's best-known visual trait."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What do you call a baby frog after it hatches?",
+              "a": "Tadpole",
+              "options": [
+                "Tadpole",
+                "Pup",
+                "Calf",
+                "Larva"
+              ],
+              "explanation": "A frog begins life as a tadpole with gills and a tail before metamorphosing into its adult form."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What collection of stars forms a recognizable pattern in the night sky?",
+              "a": "Constellation",
+              "options": [
+                "Constellation",
+                "Crater",
+                "Comet",
+                "Glacier"
+              ],
+              "explanation": "Constellations are named star patterns that help map the sky, though the stars in them are often far apart in space."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_10",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What type of rice is traditionally used in risotto?",
+              "a": "Arborio",
+              "options": [
+                "Arborio",
+                "Basmati",
+                "Jasmine",
+                "Wild rice"
+              ],
+              "explanation": "Arborio rice releases starch as it cooks, which helps give risotto its characteristic creamy texture."
+            },
+            {
+              "type": "true-false",
+              "q": "A traditional sonnet has 14 lines.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Both Shakespearean and Petrarchan sonnets use 14 lines, though they organize rhyme and structure differently."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which sea lies east of Italy and west of the Balkan Peninsula?",
+              "a": "Adriatic Sea",
+              "options": [
+                "Adriatic Sea",
+                "Aegean Sea",
+                "Tyrrhenian Sea",
+                "Baltic Sea"
+              ],
+              "explanation": "The Adriatic Sea separates the Italian Peninsula from the Balkans and connects southward to the Ionian Sea."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What term describes animals that regulate their body temperature internally?",
+              "a": "Endotherms",
+              "options": [
+                "Endotherms",
+                "Herbivores",
+                "Arthropods",
+                "Carnivores"
+              ],
+              "explanation": "Birds and mammals are classic examples of endotherms because they maintain relatively stable internal temperatures."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What does RAM stand for in computing?",
+              "a": "Random Access Memory",
+              "options": [
+                "Random Access Memory",
+                "Remote Access Module",
+                "Rapid Application Method",
+                "Read Archive Map"
+              ],
+              "explanation": "RAM stores data that a computer needs quickly while programs are running, unlike long-term storage such as solid-state drives."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which sculptor created The Thinker?",
+              "a": "Auguste Rodin",
+              "options": [
+                "Auguste Rodin",
+                "Constantin Brancusi",
+                "Henry Moore",
+                "Gian Lorenzo Bernini"
+              ],
+              "explanation": "Rodin originally conceived The Thinker as part of his larger Gates of Hell project before it became a famous sculpture in its own right."
+            },
+            {
+              "type": "true-false",
+              "q": "The Richter scale is used to classify hurricane wind speed.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Hurricanes are rated by the Saffir-Simpson scale, while the Richter scale was developed for earthquake magnitude."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which empire was ruled by Justinian I?",
+              "a": "Byzantine Empire",
+              "options": [
+                "Byzantine Empire",
+                "Ottoman Empire",
+                "Mongol Empire",
+                "Holy Roman Empire"
+              ],
+              "explanation": "Justinian I ruled the Byzantine Empire in the sixth century and is remembered for legal reforms and ambitious building projects such as Hagia Sophia."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What branch of Earth science studies earthquakes?",
+              "a": "Seismology",
+              "options": [
+                "Seismology",
+                "Cartography",
+                "Mycology",
+                "Hydrology"
+              ],
+              "explanation": "Seismology analyzes earthquakes and the waves they send through Earth, helping scientists study both hazards and the planet's interior."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What sauce is traditionally served with eggs Benedict?",
+              "a": "Hollandaise",
+              "options": [
+                "Hollandaise",
+                "Bechamel",
+                "Pesto",
+                "Chimichurri"
+              ],
+              "explanation": "Eggs Benedict is usually built from poached eggs, an English muffin base, and hollandaise sauce."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_10",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What index tracks price changes in a standard basket of consumer goods and services?",
+              "a": "Consumer Price Index",
+              "options": [
+                "Consumer Price Index",
+                "Human Development Index",
+                "Producer Price Index",
+                "Purchasing Managers' Index"
+              ],
+              "explanation": "The Consumer Price Index is a widely used inflation measure because it follows changes in prices paid by households."
+            },
+            {
+              "type": "true-false",
+              "q": "The Bayeux Tapestry is a woven tapestry rather than an embroidery.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Despite its name, the Bayeux Tapestry is an embroidered cloth that depicts the events leading to the Norman Conquest."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the term for the Sun's apparent yearly path across the celestial sphere?",
+              "a": "Ecliptic",
+              "options": [
+                "Ecliptic",
+                "Celestial equator",
+                "Meridian",
+                "Prime vertical"
+              ],
+              "explanation": "The ecliptic reflects the plane of Earth's orbit around the Sun and marks the route through the zodiac constellations."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which 1807 law abolished the British transatlantic slave trade?",
+              "a": "Slave Trade Act",
+              "options": [
+                "Slave Trade Act",
+                "Factory Act",
+                "Reform Act",
+                "Corn Law"
+              ],
+              "explanation": "The 1807 Slave Trade Act ended the legal British trade in enslaved people, although slavery itself in most of the empire persisted until 1833."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What market structure describes one buyer dealing with many sellers?",
+              "a": "Monopsony",
+              "options": [
+                "Monopsony",
+                "Monopoly",
+                "Oligopoly",
+                "Cartel"
+              ],
+              "explanation": "A monopsony concentrates buying power on one side of the market, in contrast to a monopoly, which concentrates selling power."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What logical fallacy attacks the person making an argument rather than the argument itself?",
+              "a": "Ad hominem",
+              "options": [
+                "Ad hominem",
+                "Straw man",
+                "Red herring",
+                "False dilemma"
+              ],
+              "explanation": "An ad hominem shifts attention from the claim being debated to the character or motives of the speaker."
+            },
+            {
+              "type": "true-false",
+              "q": "The Doppler effect affects light waves as well as sound waves.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Astronomers use Doppler shifts in light to measure whether stars and galaxies are moving toward or away from Earth."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What branch of linguistics studies word formation and internal word structure?",
+              "a": "Morphology",
+              "options": [
+                "Morphology",
+                "Phonetics",
+                "Semantics",
+                "Pragmatics"
+              ],
+              "explanation": "Morphology examines how words are built from meaningful units such as roots, prefixes, and suffixes."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What theorem states that there are infinitely many prime numbers?",
+              "a": "Euclid's theorem",
+              "options": [
+                "Euclid's theorem",
+                "Taylor's theorem",
+                "Bayes' theorem",
+                "Green's theorem"
+              ],
+              "explanation": "Euclid proved the result in antiquity with a classic argument showing any finite list of primes can be extended."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What musical term means gradually slowing down?",
+              "a": "Ritardando",
+              "options": [
+                "Ritardando",
+                "Crescendo",
+                "Staccato",
+                "Legato"
+              ],
+              "explanation": "Ritardando tells performers to slow the tempo gradually rather than changing speed abruptly."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

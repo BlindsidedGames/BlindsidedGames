@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_08",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_08",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What country gave the Statue of Liberty to the United States?",
+              "a": "France",
+              "options": [
+                "Spain",
+                "France",
+                "Italy",
+                "Belgium"
+              ],
+              "explanation": "The statue was designed by Frederic Auguste Bartholdi and dedicated in New York Harbor in 1886."
+            },
+            {
+              "type": "true-false",
+              "q": "Penguins are birds.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Penguins are flightless birds, but they still have feathers, beaks, and lay eggs like other birds."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What sport uses a pommel horse?",
+              "a": "Gymnastics",
+              "options": [
+                "Gymnastics",
+                "Fencing",
+                "Rowing",
+                "Sailing"
+              ],
+              "explanation": "The pommel horse is one of the men's artistic gymnastics apparatus events in international competition."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Who sculpted David?",
+              "a": "Michelangelo",
+              "options": [
+                "Donatello",
+                "Michelangelo",
+                "Bernini",
+                "Rodin"
+              ],
+              "explanation": "Michelangelo carved the famous marble statue in Florence in the early 1500s from a single block of stone."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "In everyday online language, what is the common name for the symbol @?",
+              "a": "At sign",
+              "options": [
+                "Hashtag",
+                "Ampersand",
+                "At sign",
+                "Slash"
+              ],
+              "explanation": "The @ symbol became even more familiar with email addresses, where it separates the user name from the domain."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the name of Earth's natural satellite?",
+              "a": "Moon",
+              "options": [
+                "Titan",
+                "Moon",
+                "Europa",
+                "Ganymede"
+              ],
+              "explanation": "The Moon is unusually large relative to Earth and strongly influences ocean tides through gravity."
+            },
+            {
+              "type": "true-false",
+              "q": "A rainbow forms when light is refracted and reflected in water droplets.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The colors separate because different wavelengths of light bend by different amounts inside each droplet."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which tool is used to view very small objects such as cells?",
+              "a": "Microscope",
+              "options": [
+                "Telescope",
+                "Microscope",
+                "Compass",
+                "Thermometer"
+              ],
+              "explanation": "Microscopes use lenses to magnify tiny structures that cannot be seen clearly with the naked eye."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What do you call a young cat?",
+              "a": "Kitten",
+              "options": [
+                "Puppy",
+                "Kitten",
+                "Foal",
+                "Calf"
+              ],
+              "explanation": "Domestic cats are typically called kittens until about one year of age, after which they are considered adult cats."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What sport is played at Wimbledon?",
+              "a": "Tennis",
+              "options": [
+                "Tennis",
+                "Cricket",
+                "Rugby",
+                "Squash"
+              ],
+              "explanation": "The Wimbledon Championships are the oldest major tennis tournament and are famous for their grass courts."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_08",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which spice comes from the dried stigmas of a crocus flower?",
+              "a": "Saffron",
+              "options": [
+                "Saffron",
+                "Paprika",
+                "Nutmeg",
+                "Clove"
+              ],
+              "explanation": "Each saffron flower produces only a few stigmas, which is why saffron is among the most expensive spices by weight."
+            },
+            {
+              "type": "true-false",
+              "q": "Mary Shelley wrote Frankenstein.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Shelley published the novel in 1818 after conceiving the story during a famous ghost-story challenge in Switzerland."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the term for a word formed from the initial letters of a phrase, such as NASA?",
+              "a": "Acronym",
+              "options": [
+                "Palindrome",
+                "Acronym",
+                "Euphemism",
+                "Homonym"
+              ],
+              "explanation": "Some acronyms, including laser and scuba, became everyday words that many speakers no longer spell out mentally."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What branch of mathematics is devoted to chance and uncertainty?",
+              "a": "Probability",
+              "options": [
+                "Algebra",
+                "Probability",
+                "Topology",
+                "Calculus"
+              ],
+              "explanation": "Probability provides the mathematical foundation for statistics, risk modeling, and many forms of data analysis."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which Italian tempo marking usually indicates a moderately slow walking pace?",
+              "a": "Andante",
+              "options": [
+                "Largo",
+                "Allegro",
+                "Andante",
+                "Presto"
+              ],
+              "explanation": "Andante literally suggests walking, placing it slower than allegro but generally faster than largo."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What part of an atom has no electric charge?",
+              "a": "Neutron",
+              "options": [
+                "Proton",
+                "Neutron",
+                "Electron",
+                "Ion"
+              ],
+              "explanation": "Neutrons sit in the atomic nucleus with protons, and different numbers of neutrons create isotopes of the same element."
+            },
+            {
+              "type": "true-false",
+              "q": "Coral reefs are built mainly by colonies of tiny animals called polyps.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Over time, the limestone skeletons secreted by coral polyps accumulate to form reef structures."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What branch of biology studies fungi?",
+              "a": "Mycology",
+              "options": [
+                "Entomology",
+                "Mycology",
+                "Ornithology",
+                "Ecology"
+              ],
+              "explanation": "Mycology covers organisms such as yeasts, molds, and mushrooms, many of which are important in medicine and food production."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which modern country is home to the ancient city of Petra?",
+              "a": "Jordan",
+              "options": [
+                "Lebanon",
+                "Jordan",
+                "Syria",
+                "Oman"
+              ],
+              "explanation": "Petra was the capital of the Nabataean Kingdom and is famous for rock-cut monuments such as Al-Khazneh."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What 1803 deal doubled the size of the United States?",
+              "a": "Louisiana Purchase",
+              "options": [
+                "Louisiana Purchase",
+                "Missouri Compromise",
+                "Oregon Treaty",
+                "Homestead Act"
+              ],
+              "explanation": "The United States bought the Louisiana territory from France during Thomas Jefferson's presidency, greatly expanding the nation westward."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_08",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which Russian novelist wrote The Brothers Karamazov?",
+              "a": "Fyodor Dostoevsky",
+              "options": [
+                "Leo Tolstoy",
+                "Anton Chekhov",
+                "Fyodor Dostoevsky",
+                "Ivan Turgenev"
+              ],
+              "explanation": "The Brothers Karamazov was Dostoevsky's final major novel and centers on the murder of the brothers' father."
+            },
+            {
+              "type": "true-false",
+              "q": "A sidereal day on Earth is slightly shorter than a solar day.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "A sidereal day measures one Earth rotation relative to distant stars and lasts about 23 hours 56 minutes."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What logical principle states that a proposition cannot be both true and false in the same respect at the same time?",
+              "a": "Law of noncontradiction",
+              "options": [
+                "Law of identity",
+                "Law of noncontradiction",
+                "Principle of sufficient reason",
+                "Law of excluded middle"
+              ],
+              "explanation": "Aristotle treated noncontradiction as one of the basic principles needed for coherent reasoning."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What musical interval spans six semitones and is traditionally nicknamed diabolus in musica?",
+              "a": "Tritone",
+              "options": [
+                "Perfect fifth",
+                "Minor sixth",
+                "Tritone",
+                "Major third"
+              ],
+              "explanation": "In equal temperament the tritone divides the octave exactly in half, which gives it its unusually tense sound."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What term describes the point in an orbit where an object is closest to the Sun?",
+              "a": "Perihelion",
+              "options": [
+                "Aphelion",
+                "Perihelion",
+                "Apogee",
+                "Perigee"
+              ],
+              "explanation": "Earth reaches perihelion in early January each year, when it is slightly closer to the Sun than average."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which branch of the Celtic languages includes Welsh, Breton, and Cornish?",
+              "a": "Brythonic",
+              "options": [
+                "Goidelic",
+                "Brythonic",
+                "Germanic",
+                "Romance"
+              ],
+              "explanation": "Welsh, Breton, and Cornish form the Brittonic or Brythonic branch, distinct from Goidelic languages such as Irish and Scottish Gaelic."
+            },
+            {
+              "type": "true-false",
+              "q": "The Council of Nicaea took place before the fall of the Western Roman Empire.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The council met in AD 325, while the Western Roman Empire conventionally fell in AD 476."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What term describes a bond that pays no periodic interest and is sold at a discount to face value?",
+              "a": "Zero-coupon bond",
+              "options": [
+                "Convertible bond",
+                "Junk bond",
+                "Zero-coupon bond",
+                "Callable bond"
+              ],
+              "explanation": "Investors in a zero-coupon bond earn their return from the difference between the purchase price and the amount repaid at maturity."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which composer wrote the opera Wozzeck?",
+              "a": "Alban Berg",
+              "options": [
+                "Arnold Schoenberg",
+                "Alban Berg",
+                "Anton Webern",
+                "Dmitri Shostakovich"
+              ],
+              "explanation": "Berg based Wozzeck on Georg Buchner's unfinished play Woyzeck, creating one of the landmark operas of the 20th century."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which functional group defines alcohols in organic chemistry?",
+              "a": "Hydroxyl group",
+              "options": [
+                "Carbonyl group",
+                "Hydroxyl group",
+                "Amino group",
+                "Sulfhydryl group"
+              ],
+              "explanation": "Alcohol molecules are characterized by an -OH group bonded to carbon, which affects their polarity and reactivity."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

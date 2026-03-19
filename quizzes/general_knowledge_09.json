@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_09",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_09",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What color do you get by mixing blue and yellow paint?",
+              "a": "Green",
+              "options": [
+                "Orange",
+                "Purple",
+                "Green",
+                "Red"
+              ],
+              "explanation": "In subtractive color mixing, blue and yellow pigments combine to reflect wavelengths that we perceive as green."
+            },
+            {
+              "type": "true-false",
+              "q": "A heptagon has seven sides.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The prefix \"hepta-\" comes from Greek and means seven, just as \"octa-\" means eight."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What do the letters USB stand for in computing?",
+              "a": "Universal Serial Bus",
+              "options": [
+                "Unified System Base",
+                "Universal Serial Bus",
+                "User Storage Block",
+                "Universal Signal Bridge"
+              ],
+              "explanation": "USB became a standard way to connect peripherals because it allowed many devices to use the same kind of port."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the surname of detective Sherlock in Arthur Conan Doyle's stories?",
+              "a": "Holmes",
+              "options": [
+                "Holmes",
+                "Marple",
+                "Poirot",
+                "Maigret"
+              ],
+              "explanation": "Sherlock Holmes first appeared in A Study in Scarlet in 1887, and Dr. Watson narrates many of the stories."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What nut is traditionally ground to make marzipan?",
+              "a": "Almond",
+              "options": [
+                "Almond",
+                "Pecan",
+                "Pistachio",
+                "Cashew"
+              ],
+              "explanation": "Classic marzipan is an almond-and-sugar confection often shaped into small fruits or used as cake decoration."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "How many lines are on a standard musical staff?",
+              "a": "Five",
+              "options": [
+                "Four",
+                "Five",
+                "Six",
+                "Seven"
+              ],
+              "explanation": "Notes are placed on the five lines and the four spaces of the staff in standard Western notation."
+            },
+            {
+              "type": "true-false",
+              "q": "The Pacific Ocean is deeper on average than the Arctic Ocean.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The Pacific contains some of the deepest ocean trenches on Earth, while the Arctic is the shallowest major ocean basin."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What do you call a life story written by someone other than the subject?",
+              "a": "Biography",
+              "options": [
+                "Biography",
+                "Autobiography",
+                "Anthology",
+                "Bibliography"
+              ],
+              "explanation": "An autobiography is written by the subject, while a biography is written by another author."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What sport uses a foil, epee, or sabre?",
+              "a": "Fencing",
+              "options": [
+                "Fencing",
+                "Archery",
+                "Rowing",
+                "Cricket"
+              ],
+              "explanation": "Modern fencing has three main weapon disciplines: foil, epee, and sabre, each with its own target and scoring rules."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What ancient wall once marked the northern frontier of Roman Britain?",
+              "a": "Hadrian's Wall",
+              "options": [
+                "Hadrian's Wall",
+                "Antonine Wall",
+                "Berlin Wall",
+                "Great Wall of China"
+              ],
+              "explanation": "Hadrian's Wall was built under Emperor Hadrian in the second century and stretched across what is now northern England."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_09",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What fermented tea drink is made with a SCOBY?",
+              "a": "Kombucha",
+              "options": [
+                "Kombucha",
+                "Kefir",
+                "Kvass",
+                "Sake"
+              ],
+              "explanation": "A SCOBY is a symbiotic culture of bacteria and yeast that ferments sweetened tea into kombucha."
+            },
+            {
+              "type": "true-false",
+              "q": "The chemical symbol Fe stands for iron.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Fe comes from the Latin word ferrum, which is also the source of terms such as ferrous and ferric."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which playwright wrote Waiting for Godot?",
+              "a": "Samuel Beckett",
+              "options": [
+                "Samuel Beckett",
+                "Harold Pinter",
+                "Eugene Ionesco",
+                "Tom Stoppard"
+              ],
+              "explanation": "Waiting for Godot premiered in the 1950s and became one of the defining works of absurdist theatre."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What pH value is considered neutral under standard conditions?",
+              "a": "7",
+              "options": [
+                "6",
+                "7",
+                "8",
+                "9"
+              ],
+              "explanation": "Pure water is neutral at pH 7 at around room temperature, sitting between acidic values below 7 and alkaline values above 7."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What internet term describes a fraudulent attempt to trick users into revealing passwords or banking details?",
+              "a": "Phishing",
+              "options": [
+                "Phishing",
+                "Rendering",
+                "Defragmenting",
+                "Caching"
+              ],
+              "explanation": "Phishing attacks often imitate trusted websites or messages to make people enter sensitive information voluntarily."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the architectural term for the triangular gable above the columns on a classical temple front?",
+              "a": "Pediment",
+              "options": [
+                "Pediment",
+                "Pilaster",
+                "Apse",
+                "Transept"
+              ],
+              "explanation": "In classical architecture, the pediment sits above the entablature and often contains sculpture in its central space."
+            },
+            {
+              "type": "true-false",
+              "q": "The Great Sphinx is located in Luxor.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The Great Sphinx stands on the Giza Plateau near the major pyramids, not in Luxor farther south along the Nile."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which novelist wrote One Hundred Years of Solitude?",
+              "a": "Gabriel Garcia Marquez",
+              "options": [
+                "Gabriel Garcia Marquez",
+                "Jorge Luis Borges",
+                "Mario Vargas Llosa",
+                "Isabel Allende"
+              ],
+              "explanation": "One Hundred Years of Solitude helped make magical realism internationally famous and is set in the fictional town of Macondo."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What does CAPTCHA stand for?",
+              "a": "Completely Automated Public Turing test to tell Computers and Humans Apart",
+              "options": [
+                "Completely Automated Public Turing test to tell Computers and Humans Apart",
+                "Computer Access Protocol That Checks Human Typing Activity",
+                "Centralized Anti-Phishing Test for Human Authentication",
+                "Certified Automated Password Tool for Human Approval"
+              ],
+              "explanation": "CAPTCHAs are designed to block automated bots by asking people to complete tasks that are harder for software to solve reliably."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which artist painted Guernica?",
+              "a": "Pablo Picasso",
+              "options": [
+                "Pablo Picasso",
+                "Joan Miro",
+                "Salvador Dali",
+                "Diego Velazquez"
+              ],
+              "explanation": "Picasso painted Guernica in response to the bombing of the Basque town during the Spanish Civil War."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_09",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What type of vault is formed by the intersection of two barrel vaults at right angles?",
+              "a": "Groin vault",
+              "options": [
+                "Rib vault",
+                "Groin vault",
+                "Dome",
+                "Flying buttress"
+              ],
+              "explanation": "A groin vault channels weight toward the corners, which helped builders open up more wall space than a simple barrel vault allowed."
+            },
+            {
+              "type": "true-false",
+              "q": "The Lascaux cave paintings are in Spain.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Lascaux is in southwestern France and is renowned for Paleolithic paintings of animals such as horses, bulls, and deer."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What celestial coordinate is analogous to longitude on the sky?",
+              "a": "Right ascension",
+              "options": [
+                "Declination",
+                "Right ascension",
+                "Altitude",
+                "Azimuth"
+              ],
+              "explanation": "Right ascension is usually measured eastward along the celestial equator, while declination plays the role of latitude."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What interval spans an octave plus a perfect fifth?",
+              "a": "Twelfth",
+              "options": [
+                "Ninth",
+                "Tenth",
+                "Eleventh",
+                "Twelfth"
+              ],
+              "explanation": "A twelfth covers 19 semitones, which is why compound intervals are counted beyond the initial octave."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What term describes a matrix with determinant zero?",
+              "a": "Singular matrix",
+              "options": [
+                "Singular matrix",
+                "Orthogonal matrix",
+                "Diagonal matrix",
+                "Symmetric matrix"
+              ],
+              "explanation": "A singular matrix has no inverse, which is one reason its determinant being zero matters in linear algebra."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the term for the point in the Moon's orbit where it is closest to Earth?",
+              "a": "Perigee",
+              "options": [
+                "Perigee",
+                "Apogee",
+                "Perihelion",
+                "Zenith"
+              ],
+              "explanation": "The Moon appears slightly larger at perigee than at apogee, leading to what is popularly called a supermoon when full."
+            },
+            {
+              "type": "true-false",
+              "q": "The Edict of Nantes was issued by Henry IV of France.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Henry IV issued the edict in 1598 to grant substantial rights to French Protestants after decades of religious conflict."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which diplomatic gathering of 1814 and 1815 redrew much of Europe's map after Napoleon's first defeat?",
+              "a": "Congress of Vienna",
+              "options": [
+                "Congress of Vienna",
+                "Peace of Augsburg",
+                "Treaty of Utrecht",
+                "Congress of Berlin"
+              ],
+              "explanation": "The Congress of Vienna aimed to restore stability after the Napoleonic Wars and shaped European diplomacy for decades."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What grammatical case typically marks the direct object in Latin?",
+              "a": "Accusative",
+              "options": [
+                "Accusative",
+                "Dative",
+                "Ablative",
+                "Vocative"
+              ],
+              "explanation": "In Latin, the accusative commonly marks the direct object and also appears in certain expressions of motion and duration."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which ancient Greek playwright wrote the Oresteia trilogy?",
+              "a": "Aeschylus",
+              "options": [
+                "Aeschylus",
+                "Sophocles",
+                "Euripides",
+                "Aristophanes"
+              ],
+              "explanation": "The Oresteia is the only surviving complete trilogy from ancient Greek tragedy, centered on the house of Atreus."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

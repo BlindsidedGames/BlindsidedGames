@@ -21,6 +21,27 @@
       "title": "General Knowledge Daily Challenge",
       "category": "General Knowledge",
       "file": "general_knowledge_07.json"
+    },
+    {
+      "date": "2026-03-19",
+      "id": "daily.general_knowledge_08",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_08.json"
+    },
+    {
+      "date": "2026-03-20",
+      "id": "daily.general_knowledge_09",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_09.json"
+    },
+    {
+      "date": "2026-03-21",
+      "id": "daily.general_knowledge_10",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_10.json"
     }
   ]
 }
