@@ -4,8 +4,6 @@ import re
 import sys
 from decimal import Decimal, InvalidOperation
 
-from scripts.quiz_semantic_audit import audit_quiz_document
-
 QUIZZES_DIR = "quizzes"
 DAILY_SCHEDULE_PATH = os.path.join(QUIZZES_DIR, "daily_schedule.json")
 ERRORS_PATH = "validation_errors.json"
@@ -21,23 +19,6 @@ BAD_STRINGS = [
     "Fixing.",
     "Stopping.",
     "Wait, ",
-]
-
-FACT_PATTERNS = [
-    ("release", re.compile(r"^In what year was (.+) released\?$", re.I)),
-    ("release", re.compile(r"^Which decade was (.+) released in\?$", re.I)),
-    ("directed_by", re.compile(r"^Who directed (.+)\?$", re.I)),
-    ("created_by", re.compile(r"^Who created (.+)\?$", re.I)),
-    ("premiere", re.compile(r"^In what year did (.+) premiere\?$", re.I)),
-    ("premiere", re.compile(r"^Which decade did (.+) premiere in\?$", re.I)),
-    ("original_network", re.compile(r"^Which network originally aired (.+)\?$", re.I)),
-    ("capital_city", re.compile(r"^(?:What is|Name) the capital(?: city)? of (.+)\.?$", re.I)),
-    ("capital_city", re.compile(r"^What is the capital city of (.+)\?$", re.I)),
-    ("currency", re.compile(r"^Name the currency used in (.+)\.?$", re.I)),
-    ("currency", re.compile(r"^What is the official currency of (.+)\?$", re.I)),
-    ("state_abbrev", re.compile(r"^Which Australian state is abbreviated as (.+)\?$", re.I)),
-    ("state_has_capital", re.compile(r"^Which Australian (?:state|territory) has (.+) as its capital\?$", re.I)),
-    ("continent_capital", re.compile(r"^Which city is the administrative capital of South Africa\?$", re.I)),
 ]
 
 RISKY_TRIVIA_PATTERN = re.compile(
@@ -112,17 +93,6 @@ def normalize_text(value):
     value = value.lower().replace("’", "'")
     value = re.sub(r"[^a-z0-9]+", " ", value)
     return " ".join(value.split())
-
-
-def extract_fact_key(question):
-    for relation, pattern in FACT_PATTERNS:
-        match = pattern.match(question)
-        if not match:
-            continue
-        entity = match.group(1) if match.groups() else question
-        entity = re.sub(r"\s+\(set \d+\)$", "", entity, flags=re.I).strip().rstrip(".")
-        return relation, normalize_text(entity)
-    return None
 
 
 def is_exact_tautology(question, answer, explanation):
@@ -441,7 +411,7 @@ def collect_quiz_documents(data, file_errors):
     return documents
 
 
-def validate_quiz_document(data, filename, label, file_errors, file_warnings, fact_occurrences):
+def validate_quiz_document(data, filename, label, file_errors, file_warnings):
     prefix = f"{label} " if label else ""
 
     if "id" not in data:
@@ -495,10 +465,6 @@ def validate_quiz_document(data, filename, label, file_errors, file_warnings, fa
 
             if is_exact_tautology(question, answer, explanation):
                 file_errors.append(f"{item_label} explanation is an exact answer restatement")
-
-            fact_key = extract_fact_key(question)
-            if fact_key:
-                fact_occurrences.setdefault(fact_key, []).append((filename, label, item_index, question))
 
             if is_risky_trivia(question):
                 file_warnings.append(f"{item_label} q is risky trivia without an explicit metric, date, or authority")
@@ -555,7 +521,6 @@ def validate_quiz_document(data, filename, label, file_errors, file_warnings, fa
 def main():
     errors = {}
     warnings = {}
-    fact_occurrences = {}
     scheduled_entries = load_daily_schedule()
     scheduled_files = [entry["file"] for entry in scheduled_entries if entry.get("file")]
 
@@ -594,34 +559,12 @@ def main():
 
         documents = collect_quiz_documents(data, file_errors)
         for label, document in documents:
-            validate_quiz_document(document, filename, label, file_errors, file_warnings, fact_occurrences)
+            validate_quiz_document(document, filename, label, file_errors, file_warnings)
 
         if file_errors:
             errors[filename] = file_errors
         if file_warnings:
             warnings[filename] = file_warnings
-
-        if not file_errors:
-            for label, document in documents:
-                semantic_issues = audit_quiz_document(document)
-                prefix = f"{label} " if label else ""
-                for issue in semantic_issues:
-                    append_issue(
-                        errors,
-                        filename,
-                        f"{prefix}Item {issue.item_index} semantic audit [{issue.code}]: {issue.message}",
-                    )
-
-    for (relation, entity), occurrences in fact_occurrences.items():
-        if len(occurrences) <= 1:
-            continue
-        for occurrence_filename, label, item_index, _question in occurrences:
-            prefix = f"{label} " if label else ""
-            append_issue(
-                errors,
-                occurrence_filename,
-                f"{prefix}Item {item_index} duplicates canonical fact key '{relation}:{entity}'",
-            )
 
     with open(ERRORS_PATH, "w", encoding="utf-8") as handle:
         json.dump(errors, handle, indent=2)

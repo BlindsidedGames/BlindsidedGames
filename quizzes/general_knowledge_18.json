@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_18",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_18",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What punctuation mark shows missing letters in contractions such as can't?",
+              "a": "Apostrophe",
+              "options": [
+                "Apostrophe",
+                "Colon",
+                "Semicolon",
+                "Hyphen"
+              ],
+              "explanation": "In English, the apostrophe often marks omitted letters in contractions like don't and it's."
+            },
+            {
+              "type": "true-false",
+              "q": "A starfish is a fish.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Starfish are echinoderms, a group that also includes sea urchins and sea cucumbers, so they are not fish at all."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which fabric is traditionally produced by silkworms?",
+              "a": "Silk",
+              "options": [
+                "Silk",
+                "Linen",
+                "Denim",
+                "Velvet"
+              ],
+              "explanation": "Silk fibers come from the cocoons of silkworms, especially the domesticated species Bombyx mori."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What part of a plant usually grows underground and absorbs water?",
+              "a": "Roots",
+              "options": [
+                "Roots",
+                "Petals",
+                "Seeds",
+                "Thorns"
+              ],
+              "explanation": "Roots also help anchor a plant in place and can store nutrients for later growth."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What kind of house do Hansel and Gretel find in the forest?",
+              "a": "Gingerbread house",
+              "options": [
+                "Gingerbread house",
+                "Stone castle",
+                "Glass house",
+                "Tree house"
+              ],
+              "explanation": "The story was recorded by the Brothers Grimm, who published many well-known European folk tales."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What line circles Earth halfway between the North and South Poles?",
+              "a": "Equator",
+              "options": [
+                "Equator",
+                "Prime Meridian",
+                "Tropic of Cancer",
+                "Arctic Circle"
+              ],
+              "explanation": "The equator is located at 0 degrees latitude and divides Earth into the Northern and Southern Hemispheres."
+            },
+            {
+              "type": "true-false",
+              "q": "The Statue of Liberty was a gift from France.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "France presented the statue to the United States in the nineteenth century, and the pedestal was funded largely through American fundraising."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What board game uses black and white pieces on a board of 64 squares?",
+              "a": "Chess",
+              "options": [
+                "Chess",
+                "Checkers",
+                "Backgammon",
+                "Dominoes"
+              ],
+              "explanation": "Standard chess uses an 8x8 board and six different piece types for each side."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What color do red and blue typically make when mixed as paint?",
+              "a": "Purple",
+              "options": [
+                "Purple",
+                "Green",
+                "Orange",
+                "Brown"
+              ],
+              "explanation": "In traditional subtractive color mixing used with paints, red and blue combine to produce purple or violet tones."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What bean is the main ingredient in traditional hummus?",
+              "a": "Chickpea",
+              "options": [
+                "Chickpea",
+                "Lentil",
+                "Black bean",
+                "Soybean"
+              ],
+              "explanation": "Traditional hummus is a Levantine dip usually blended with tahini, lemon juice, garlic, and chickpeas."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_18",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which country first used paper money on a large scale during the medieval period?",
+              "a": "China",
+              "options": [
+                "China",
+                "India",
+                "Persia",
+                "Egypt"
+              ],
+              "explanation": "Paper money was used during the Song dynasty, long before it became common in Europe."
+            },
+            {
+              "type": "true-false",
+              "q": "The Great Fire of London happened in the eighteenth century.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The fire began in 1666, in the seventeenth century, and destroyed much of the medieval City of London."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which empire used a road network centered on Cuzco and relay runners called chasquis?",
+              "a": "Inca Empire",
+              "options": [
+                "Inca Empire",
+                "Aztec Empire",
+                "Mali Empire",
+                "Ottoman Empire"
+              ],
+              "explanation": "The Inca road system stretched for thousands of kilometers across the Andes and helped govern a vast mountain empire."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What grammatical term names the verb form ending in -ing when it functions as a noun, as in Swimming is fun?",
+              "a": "Gerund",
+              "options": [
+                "Gerund",
+                "Infinitive",
+                "Participle",
+                "Clause"
+              ],
+              "explanation": "Gerunds behave like nouns in a sentence even though they are built from verbs."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What literary term describes a reference to another work, event, or person?",
+              "a": "Allusion",
+              "options": [
+                "Allusion",
+                "Allegory",
+                "Hyperbole",
+                "Irony"
+              ],
+              "explanation": "Writers use allusion to add meaning by relying on the reader's recognition of outside material."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What term refers to a government ruled by a small group of powerful people?",
+              "a": "Oligarchy",
+              "options": [
+                "Oligarchy",
+                "Theocracy",
+                "Monarchy",
+                "Anarchy"
+              ],
+              "explanation": "The word oligarchy comes from Greek roots meaning rule by the few."
+            },
+            {
+              "type": "true-false",
+              "q": "Glass is a true crystal under ordinary conditions.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Ordinary glass lacks the repeating atomic structure that defines a crystal, so it is classified as an amorphous solid."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What artistic technique creates depth using parallel lines that meet at a vanishing point?",
+              "a": "Linear perspective",
+              "options": [
+                "Linear perspective",
+                "Chiaroscuro",
+                "Pointillism",
+                "Impasto"
+              ],
+              "explanation": "Renaissance artists used linear perspective to organize space mathematically on a flat surface."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which country is home to the rock-hewn churches of Lalibela?",
+              "a": "Ethiopia",
+              "options": [
+                "Ethiopia",
+                "Eritrea",
+                "Kenya",
+                "Sudan"
+              ],
+              "explanation": "Lalibela became famous for monolithic churches carved from rock and remains an important pilgrimage site."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which scientist led the team that developed the first widely used polio vaccine?",
+              "a": "Jonas Salk",
+              "options": [
+                "Jonas Salk",
+                "Alexander Fleming",
+                "Louis Pasteur",
+                "Niels Bohr"
+              ],
+              "explanation": "Salk's inactivated polio vaccine was announced in 1955 and became a major public-health milestone."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_18",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What legal doctrine requires courts to follow binding precedent from higher courts?",
+              "a": "Stare decisis",
+              "options": [
+                "Stare decisis",
+                "Mens rea",
+                "Voir dire",
+                "Res judicata"
+              ],
+              "explanation": "Common-law systems use stare decisis to promote consistency, though higher courts can still overrule earlier decisions."
+            },
+            {
+              "type": "true-false",
+              "q": "A red giant is typically smaller than a white dwarf.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "A white dwarf is extremely dense but physically compact, while a red giant has expanded into a vastly larger star."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which 1571 naval battle checked Ottoman expansion in the Mediterranean?",
+              "a": "Battle of Lepanto",
+              "options": [
+                "Battle of Lepanto",
+                "Battle of Salamis",
+                "Battle of Actium",
+                "Battle of Navarino"
+              ],
+              "explanation": "The Holy League's victory at Lepanto destroyed much of the Ottoman fleet and became a major symbolic turning point for Christian Europe."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What effect describes the voltage produced when two different conductors are joined at different temperatures?",
+              "a": "Seebeck effect",
+              "options": [
+                "Seebeck effect",
+                "Hall effect",
+                "Zeeman effect",
+                "Doppler effect"
+              ],
+              "explanation": "The Seebeck effect underlies thermocouples, which measure temperature by converting heat differences into electrical voltage."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What metrical foot consists of two unstressed syllables followed by a stressed syllable?",
+              "a": "Anapest",
+              "options": [
+                "Anapest",
+                "Dactyl",
+                "Trochee",
+                "Spondee"
+              ],
+              "explanation": "Anapests create a rising rhythm and often appear in light verse or passages meant to feel quick and driving."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which island group in the Atlantic includes Sao Miguel and Terceira?",
+              "a": "Azores",
+              "options": [
+                "Azores",
+                "Canary Islands",
+                "Balearic Islands",
+                "Faroe Islands"
+              ],
+              "explanation": "The Azores are an autonomous region of Portugal and sit far out in the North Atlantic."
+            },
+            {
+              "type": "true-false",
+              "q": "An injective function maps distinct inputs to distinct outputs.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Injective means one-to-one, so no two different inputs can share the same output value."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What figure of speech repeats the last word of one clause at the beginning of the next clause?",
+              "a": "Anadiplosis",
+              "options": [
+                "Anadiplosis",
+                "Chiasmus",
+                "Litotes",
+                "Metonymy"
+              ],
+              "explanation": "Writers use anadiplosis to create a linked chain of emphasis from one phrase or clause to the next."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which composer wrote the opera Peter Grimes?",
+              "a": "Benjamin Britten",
+              "options": [
+                "Benjamin Britten",
+                "Ralph Vaughan Williams",
+                "William Walton",
+                "Michael Tippett"
+              ],
+              "explanation": "Peter Grimes helped reestablish English opera on the international stage after its 1945 premiere."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What ore is the principal commercial source of aluminum?",
+              "a": "Bauxite",
+              "options": [
+                "Bauxite",
+                "Hematite",
+                "Galena",
+                "Cassiterite"
+              ],
+              "explanation": "Bauxite is refined into alumina before being smelted to produce metallic aluminum."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_17",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_17",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which painter is famous for a series of works titled Sunflowers?",
+              "a": "Vincent van Gogh",
+              "options": [
+                "Vincent van Gogh",
+                "Claude Monet",
+                "Henri Matisse",
+                "Paul Cezanne"
+              ],
+              "explanation": "Van Gogh painted multiple Sunflowers versions in Arles while preparing a room for Paul Gauguin."
+            },
+            {
+              "type": "true-false",
+              "q": "A standard piano has 88 keys.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The modern concert piano spans 88 keys, covering a wide range from low A to high C."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What sauce is traditionally made with basil, pine nuts, Parmesan, garlic, and olive oil?",
+              "a": "Pesto",
+              "options": [
+                "Pesto",
+                "Tapenade",
+                "Aioli",
+                "Chimichurri"
+              ],
+              "explanation": "Classic pesto alla genovese comes from Genoa and is usually pounded or blended into a bright green paste."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What kind of craft did the Wright brothers fly at Kitty Hawk in 1903?",
+              "a": "Airplane",
+              "options": [
+                "Airplane",
+                "Airship",
+                "Glider",
+                "Helicopter"
+              ],
+              "explanation": "The Wright Flyer is widely credited as the first successful powered, controlled, sustained heavier-than-air aircraft."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What punctuation mark joins words in a compound such as mother-in-law?",
+              "a": "Hyphen",
+              "options": [
+                "Hyphen",
+                "Semicolon",
+                "Colon",
+                "Apostrophe"
+              ],
+              "explanation": "Hyphens can also join some prefixes and compound modifiers, although style guides differ on when they are required."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What animation studio uses a hopping desk lamp in its logo?",
+              "a": "Pixar",
+              "options": [
+                "Pixar",
+                "DreamWorks",
+                "Laika",
+                "Studio Ghibli"
+              ],
+              "explanation": "The lamp is Luxo Jr., the star of Pixar's 1986 short film that helped define the studio's early identity."
+            },
+            {
+              "type": "true-false",
+              "q": "Bamboo is a type of grass.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Although it can look tree-like, bamboo belongs to the grass family and grows from segmented stems called culms."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which fairy-tale character is known for spinning straw into gold?",
+              "a": "Rumpelstiltskin",
+              "options": [
+                "Rumpelstiltskin",
+                "Puss in Boots",
+                "Hansel",
+                "Pinocchio"
+              ],
+              "explanation": "In the tale, the miller's daughter survives only because the mysterious little man spins the straw for her."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which sport is played with a puck on ice?",
+              "a": "Ice hockey",
+              "options": [
+                "Ice hockey",
+                "Curling",
+                "Figure skating",
+                "Speed skating"
+              ],
+              "explanation": "Ice hockey uses a hard rubber puck instead of a ball, allowing fast play on a frozen rink."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which spice comes from the dried bark of a tree?",
+              "a": "Cinnamon",
+              "options": [
+                "Cinnamon",
+                "Nutmeg",
+                "Clove",
+                "Saffron"
+              ],
+              "explanation": "Cinnamon is harvested from the inner bark of several Cinnamomum tree species and curled into quills as it dries."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_17",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What title is given to the elected head of government of Ireland?",
+              "a": "Taoiseach",
+              "options": [
+                "Taoiseach",
+                "Chancellor",
+                "Tanaiste",
+                "First Minister"
+              ],
+              "explanation": "The Taoiseach is nominated by the Dail and then formally appointed by the President of Ireland."
+            },
+            {
+              "type": "true-false",
+              "q": "The Gregorian calendar was introduced before the Julian calendar.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The Julian calendar dates to Julius Caesar's reform in 45 BCE, while the Gregorian revision was introduced in 1582 to correct accumulated drift."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which novelist wrote Rebecca?",
+              "a": "Daphne du Maurier",
+              "options": [
+                "Daphne du Maurier",
+                "Iris Murdoch",
+                "Virginia Woolf",
+                "Mary Renault"
+              ],
+              "explanation": "Rebecca opens with the famous line 'Last night I dreamt I went to Manderley again.' and became one of du Maurier's best-known works."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which sport awards an ippon for a decisive throwing or grappling score?",
+              "a": "Judo",
+              "options": [
+                "Judo",
+                "Taekwondo",
+                "Karate",
+                "Fencing"
+              ],
+              "explanation": "An ippon ends a judo contest immediately because it represents a full point from a clean scoring technique."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which shogunate ruled Japan from Edo for more than two centuries?",
+              "a": "Tokugawa shogunate",
+              "options": [
+                "Tokugawa shogunate",
+                "Kamakura shogunate",
+                "Ashikaga shogunate",
+                "Heike government"
+              ],
+              "explanation": "The Tokugawa regime oversaw the Edo period and kept political power centered in Edo, now Tokyo."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What does the abbreviation DVD commonly stand for?",
+              "a": "Digital Versatile Disc",
+              "options": [
+                "Digital Versatile Disc",
+                "Data Video Device",
+                "Digital Visual Drive",
+                "Direct Viewing Disc"
+              ],
+              "explanation": "The format was originally marketed for both movie playback and computer data storage, which is why 'versatile' won out over 'video'."
+            },
+            {
+              "type": "true-false",
+              "q": "Mercury is denser than lead.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Liquid mercury is extremely dense at room temperature, which is why even a small amount feels much heavier than most people expect."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which sculptor is most associated with the mobile as a hanging artwork?",
+              "a": "Alexander Calder",
+              "options": [
+                "Alexander Calder",
+                "Henry Moore",
+                "Auguste Rodin",
+                "Constantin Brancusi"
+              ],
+              "explanation": "Calder's suspended mobiles moved with air currents, bringing real motion into modern sculpture."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What phenomenon bends light as it passes from air into water?",
+              "a": "Refraction",
+              "options": [
+                "Refraction",
+                "Reflection",
+                "Diffusion",
+                "Conduction"
+              ],
+              "explanation": "Refraction happens because light changes speed when it moves between materials with different optical densities."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What musical term tells performers to play smoothly connected notes?",
+              "a": "Legato",
+              "options": [
+                "Legato",
+                "Marcato",
+                "Fermata",
+                "Vivace"
+              ],
+              "explanation": "Legato phrasing minimizes separation between notes, creating a flowing line rather than a detached one."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_17",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which Charles Dickens novel features Pip, Magwitch, and Miss Havisham?",
+              "a": "Great Expectations",
+              "options": [
+                "Great Expectations",
+                "Bleak House",
+                "David Copperfield",
+                "A Tale of Two Cities"
+              ],
+              "explanation": "Pip's encounters with the escaped convict Magwitch drive one of the novel's major reversals."
+            },
+            {
+              "type": "true-false",
+              "q": "In standard logic, a biconditional is true whenever both propositions have the same truth value.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "A biconditional fails only when one statement is true and the other is false, which is why it behaves like logical equivalence."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What legal doctrine says courts should generally follow earlier judicial decisions in similar cases?",
+              "a": "Stare decisis",
+              "options": [
+                "Stare decisis",
+                "Mens rea",
+                "Ultra vires",
+                "Voir dire"
+              ],
+              "explanation": "Stare decisis promotes consistency in common-law systems by giving weight to precedent."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which protein is the main building block of microtubules?",
+              "a": "Tubulin",
+              "options": [
+                "Tubulin",
+                "Keratin",
+                "Collagen",
+                "Myosin"
+              ],
+              "explanation": "Microtubules grow by adding tubulin dimers, and they play major roles in mitosis, transport, and cell shape."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What epistemological term describes knowledge claimed to be independent of experience?",
+              "a": "A priori",
+              "options": [
+                "A priori",
+                "Empirical",
+                "Utilitarian",
+                "Dialectical"
+              ],
+              "explanation": "In philosophy, a priori knowledge is often contrasted with a posteriori knowledge gained through observation."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What name is given to the Tokugawa-era policy of Japanese national seclusion?",
+              "a": "Sakoku",
+              "options": [
+                "Sakoku",
+                "Bushido",
+                "Bakufu",
+                "Sankin-kotai"
+              ],
+              "explanation": "Under sakoku, foreign trade and travel were tightly restricted for more than two centuries, though not completely eliminated."
+            },
+            {
+              "type": "true-false",
+              "q": "A parsec is a unit of distance rather than time.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The term comes from \"parallax-second,\" and one parsec equals about 3.26 light-years."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What term describes a good whose appeal increases because its high price signals status?",
+              "a": "Veblen good",
+              "options": [
+                "Veblen good",
+                "Public good",
+                "Inferior good",
+                "Giffen good"
+              ],
+              "explanation": "The concept is named after economist Thorstein Veblen, who wrote about conspicuous consumption."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which architect is most closely associated with the design of Brasilia's major civic buildings?",
+              "a": "Oscar Niemeyer",
+              "options": [
+                "Oscar Niemeyer",
+                "Le Corbusier",
+                "Frank Lloyd Wright",
+                "Lina Bo Bardi"
+              ],
+              "explanation": "Niemeyer's modernist concrete designs helped define Brasilia after the city plan was laid out by Lucio Costa."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What musical form alternates a recurring main theme with contrasting episodes?",
+              "a": "Rondo",
+              "options": [
+                "Rondo",
+                "Fugue",
+                "Sonata",
+                "Canon"
+              ],
+              "explanation": "A rondo keeps returning to its main refrain-like idea, often labelled A, between contrasting sections."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_24",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_24",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which instrument usually has six strings and is often strummed?",
+              "a": "Guitar",
+              "options": [
+                "Guitar",
+                "Cello",
+                "Harp",
+                "Viola"
+              ],
+              "explanation": "Standard guitars commonly have six strings and can be played by strumming or plucking."
+            },
+            {
+              "type": "true-false",
+              "q": "Saturn is a gas giant.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Saturn is composed mostly of hydrogen and helium and is known for its extensive ring system."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What household safety device detects smoke and sounds an alarm?",
+              "a": "Smoke detector",
+              "options": [
+                "Smoke detector",
+                "Thermostat",
+                "Air purifier",
+                "Carbon filter"
+              ],
+              "explanation": "Most home smoke alarms use either ionization or photoelectric sensors to detect signs of fire."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What do you call the line where the sky appears to meet the land or sea?",
+              "a": "Horizon",
+              "options": [
+                "Horizon",
+                "Equator",
+                "Meridian",
+                "Hemisphere"
+              ],
+              "explanation": "The horizon is an apparent boundary, and its distance depends on the observer's height and local terrain."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What household device is commonly used to boil water quickly for tea?",
+              "a": "Electric kettle",
+              "options": [
+                "Electric kettle",
+                "Toaster",
+                "Blender",
+                "Rice cooker"
+              ],
+              "explanation": "Electric kettles heat water with an internal element and usually switch off automatically at boiling point."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which chess piece moves in an L shape?",
+              "a": "Knight",
+              "options": [
+                "Knight",
+                "Bishop",
+                "Rook",
+                "King"
+              ],
+              "explanation": "The knight is the only chess piece that can jump over other pieces, moving two squares in one direction and one square perpendicular."
+            },
+            {
+              "type": "true-false",
+              "q": "The Olympic symbol includes five interlocking rings.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The five rings were designed to represent the participation of athletes from the inhabited continents."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which brass instrument changes pitch with a slide instead of valves?",
+              "a": "Trombone",
+              "options": [
+                "Trumpet",
+                "French horn",
+                "Trombone",
+                "Tuba"
+              ],
+              "explanation": "The trombone's slide lets players move smoothly between notes, which is why glissandos are one of its signature effects."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "In a standard deck of playing cards, which suit is black and marked with clover-shaped symbols?",
+              "a": "Clubs",
+              "options": [
+                "Hearts",
+                "Clubs",
+                "Diamonds",
+                "Spades"
+              ],
+              "explanation": "Clubs and spades are the two black suits in a standard 52-card deck, while hearts and diamonds are red."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which pirate captain obsessively hunts the white whale in Moby-Dick?",
+              "a": "Captain Ahab",
+              "options": [
+                "Ishmael",
+                "Captain Ahab",
+                "Long John Silver",
+                "Captain Nemo"
+              ],
+              "explanation": "Ahab's pursuit of the whale drives the novel's plot and turns the voyage into a study of obsession and revenge."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_24",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which country uses the krona as its currency?",
+              "a": "Sweden",
+              "options": [
+                "Sweden",
+                "Poland",
+                "Switzerland",
+                "Hungary"
+              ],
+              "explanation": "Sweden's currency is the Swedish krona (SEK), distinct from the euro used by many EU states."
+            },
+            {
+              "type": "true-false",
+              "q": "Water boils at a lower temperature at high altitudes than at sea level.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Lower atmospheric pressure at higher elevations reduces the temperature at which liquid water turns to vapor."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which U.S. city is famous for large Mardi Gras celebrations?",
+              "a": "New Orleans",
+              "options": [
+                "New Orleans",
+                "Savannah",
+                "Miami",
+                "Charleston"
+              ],
+              "explanation": "New Orleans hosts major Mardi Gras parades tied to the city's long French and Creole traditions."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which British site served as the main codebreaking center during World War II?",
+              "a": "Bletchley Park",
+              "options": [
+                "Bletchley Park",
+                "Scapa Flow",
+                "Porton Down",
+                "Whitehall"
+              ],
+              "explanation": "Bletchley Park housed teams that decrypted German ciphers, including work on Enigma traffic."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which city is home to the Blue Mosque, also called the Sultan Ahmed Mosque?",
+              "a": "Istanbul",
+              "options": [
+                "Istanbul",
+                "Cairo",
+                "Tehran",
+                "Damascus"
+              ],
+              "explanation": "The Blue Mosque is a seventeenth-century Ottoman imperial mosque located in Istanbul."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which string instrument in an orchestra most commonly reads alto clef?",
+              "a": "Viola",
+              "options": [
+                "Viola",
+                "Violin",
+                "Cello",
+                "Double bass"
+              ],
+              "explanation": "The viola usually reads alto clef because its range sits between violin and cello."
+            },
+            {
+              "type": "true-false",
+              "q": "Mercury is named after the Roman messenger god.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The planet was named for the swift Roman god because it moves quickly across the sky compared with the more distant planets."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which element commonly gives rubies their red color through trace impurities?",
+              "a": "Chromium",
+              "options": [
+                "Chromium",
+                "Copper",
+                "Cobalt",
+                "Manganese"
+              ],
+              "explanation": "Rubies are the red variety of corundum, and their color comes primarily from small amounts of chromium."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which city hosts the headquarters of OPEC?",
+              "a": "Vienna",
+              "options": [
+                "Vienna",
+                "Geneva",
+                "Brussels",
+                "The Hague"
+              ],
+              "explanation": "OPEC's Secretariat has been based in Vienna, Austria, since 1965."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which city is home to Spain's Prado Museum?",
+              "a": "Madrid",
+              "options": [
+                "Madrid",
+                "Barcelona",
+                "Seville",
+                "Valencia"
+              ],
+              "explanation": "The Prado in Madrid is one of Europe's major art museums, known for works by Velazquez and Goya."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_24",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What principle states that a system at equilibrium shifts to oppose a change imposed on it?",
+              "a": "Le Chatelier's principle",
+              "options": [
+                "Pauli exclusion principle",
+                "Le Chatelier's principle",
+                "Bernoulli's principle",
+                "Aufbau principle"
+              ],
+              "explanation": "Chemists use Le Chatelier's principle to predict how equilibria respond to changes in concentration, pressure, or temperature."
+            },
+            {
+              "type": "true-false",
+              "q": "The Rosetta Stone helped scholars decipher Egyptian hieroglyphs.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Because the inscription appeared in multiple scripts, the stone was crucial in the work of decoding hieroglyphic writing."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What term describes the ocean layer where temperature changes rapidly with depth?",
+              "a": "Thermocline",
+              "options": [
+                "Thermocline",
+                "Halocline",
+                "Estuary",
+                "Abyssal plain"
+              ],
+              "explanation": "A thermocline often separates warmer surface water from colder deep water and can strongly affect marine life and mixing."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What plateau region of Slovenia gave the geological term karst its name?",
+              "a": "Karst Plateau",
+              "options": [
+                "Karst Plateau",
+                "Deccan Plateau",
+                "Altiplano",
+                "Tibetan Plateau"
+              ],
+              "explanation": "The limestone landscape of the Karst region became so influential in geology that its name is now used worldwide for sinkhole and cave terrain."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which philosopher wrote Tractatus Logico-Philosophicus?",
+              "a": "Ludwig Wittgenstein",
+              "options": [
+                "Ludwig Wittgenstein",
+                "Bertrand Russell",
+                "G. E. Moore",
+                "Karl Popper"
+              ],
+              "explanation": "Wittgenstein published the Tractatus in the early twentieth century as an attempt to map the limits of language and logic."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What term describes the apparent backward motion of a planet against the background stars?",
+              "a": "Retrograde motion",
+              "options": [
+                "Retrograde motion",
+                "Parallax",
+                "Precession",
+                "Occultation"
+              ],
+              "explanation": "Retrograde motion is an apparent effect caused by the changing positions of Earth and the other planet in their orbits."
+            },
+            {
+              "type": "true-false",
+              "q": "An isosceles triangle always has at least two equal sides.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "In many school definitions an equilateral triangle also counts as isosceles because it has at least two equal sides."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which philosopher founded the Lyceum in ancient Athens?",
+              "a": "Aristotle",
+              "options": [
+                "Aristotle",
+                "Zeno",
+                "Epicurus",
+                "Parmenides"
+              ],
+              "explanation": "Aristotle taught there after studying in Plato's Academy and tutoring the future Alexander the Great."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What branch of linguistics studies how context shapes meaning beyond the literal words spoken?",
+              "a": "Pragmatics",
+              "options": [
+                "Pragmatics",
+                "Morphology",
+                "Phonology",
+                "Lexicography"
+              ],
+              "explanation": "Pragmatics looks at implication, shared knowledge, and situational context in how speakers convey meaning."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which document published in 95 theses in 1517 is closely associated with Martin Luther?",
+              "a": "Ninety-five Theses",
+              "options": [
+                "Ninety-five Theses",
+                "Edict of Worms",
+                "Augsburg Confession",
+                "Peace of Augsburg"
+              ],
+              "explanation": "Luther's theses criticized the sale of indulgences and became an early flashpoint in the Protestant Reformation."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

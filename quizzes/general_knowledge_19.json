@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_19",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_19",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What winter sport features players sliding heavy stones toward a target while teammates sweep the ice?",
+              "a": "Curling",
+              "options": [
+                "Curling",
+                "Luge",
+                "Figure skating",
+                "Bobsleigh"
+              ],
+              "explanation": "Curling originated in Scotland, and Olympic teams score by placing stones closest to the center of the house."
+            },
+            {
+              "type": "true-false",
+              "q": "Venus is the hottest planet in the Solar System.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Venus stays hotter than Mercury because its dense carbon dioxide atmosphere traps heat very effectively."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What comic-strip character is famous for pulling the football away from Charlie Brown?",
+              "a": "Lucy",
+              "options": [
+                "Lucy",
+                "Snoopy",
+                "Linus",
+                "Peppermint Patty"
+              ],
+              "explanation": "Lucy van Pelt is one of the central Peanuts characters created by Charles M. Schulz."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What red liquid carries oxygen around the human body?",
+              "a": "Blood",
+              "options": [
+                "Blood",
+                "Sweat",
+                "Saliva",
+                "Mucus"
+              ],
+              "explanation": "Red blood cells contain hemoglobin, the protein that binds oxygen and helps transport it through the body."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which sport uses a bow to shoot arrows at a target?",
+              "a": "Archery",
+              "options": [
+                "Archery",
+                "Fencing",
+                "Rowing",
+                "Lacrosse"
+              ],
+              "explanation": "Archery has been practiced for hunting and warfare for thousands of years and remains an Olympic sport."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What title was given to the rulers of ancient Egypt?",
+              "a": "Pharaoh",
+              "options": [
+                "Pharaoh",
+                "Caesar",
+                "Sultan",
+                "Tsar"
+              ],
+              "explanation": "The term pharaoh originally referred to the royal palace before becoming a title for the king of Egypt."
+            },
+            {
+              "type": "true-false",
+              "q": "Braille is designed to be read by touch.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Standard Braille characters are arranged in cells made from up to six raised dots."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What toy is flown on a string in the wind?",
+              "a": "Kite",
+              "options": [
+                "Kite",
+                "Yo-yo",
+                "Puzzle cube",
+                "Spinning top"
+              ],
+              "explanation": "Kites have been used for recreation, signaling, and scientific experiments in many cultures for centuries."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What baked dessert is traditionally topped with candles on birthdays?",
+              "a": "Cake",
+              "options": [
+                "Cake",
+                "Pie",
+                "Muffin",
+                "Brownie"
+              ],
+              "explanation": "Birthday cakes appear in many cultures, and candles are often linked to wishes made before blowing them out."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What object with teeth is used to untangle or arrange hair?",
+              "a": "Comb",
+              "options": [
+                "Comb",
+                "Mirror",
+                "Ribbon",
+                "Glove"
+              ],
+              "explanation": "Combs have been made from wood, bone, metal, and plastic in cultures around the world."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_19",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "In Roman mythology, who is the counterpart of the Greek god Ares?",
+              "a": "Mars",
+              "options": [
+                "Mars",
+                "Mercury",
+                "Neptune",
+                "Apollo"
+              ],
+              "explanation": "Mars was associated with war and also held an important place in Roman state religion."
+            },
+            {
+              "type": "true-false",
+              "q": "The Mercator projection preserves local compass bearings.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "That property made Mercator maps useful for navigation, even though they greatly distort area near the poles."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What legal protection shields diplomats from prosecution under the host country's ordinary laws?",
+              "a": "Diplomatic immunity",
+              "options": [
+                "Diplomatic immunity",
+                "Extradition",
+                "Naturalization",
+                "Arbitration"
+              ],
+              "explanation": "Diplomatic immunity is grounded in international agreements such as the Vienna Convention on Diplomatic Relations."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What dramatic term describes a speech a character delivers alone on stage to reveal thoughts?",
+              "a": "Soliloquy",
+              "options": [
+                "Soliloquy",
+                "Epilogue",
+                "Prologue",
+                "Satire"
+              ],
+              "explanation": "Soliloquies are a well-known feature of many Shakespeare plays and can reveal motives or inner conflict directly to the audience."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which playwright wrote Hamlet?",
+              "a": "William Shakespeare",
+              "options": [
+                "William Shakespeare",
+                "Christopher Marlowe",
+                "Ben Jonson",
+                "George Bernard Shaw"
+              ],
+              "explanation": "Hamlet is one of Shakespeare's major tragedies and centers on the prince of Denmark."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which scientist introduced the concept of natural selection as a mechanism of evolution?",
+              "a": "Charles Darwin",
+              "options": [
+                "Charles Darwin",
+                "Gregor Mendel",
+                "Antoine Lavoisier",
+                "Carl Linnaeus"
+              ],
+              "explanation": "Darwin presented natural selection most famously in On the Origin of Species, published in 1859."
+            },
+            {
+              "type": "true-false",
+              "q": "A leap second is added to UTC to keep it close to Earth's rotation.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Leap seconds are inserted irregularly because Earth's rotation is not perfectly uniform."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What style of architecture is associated with rounded arches and thick masonry walls in medieval Europe?",
+              "a": "Romanesque",
+              "options": [
+                "Romanesque",
+                "Gothic",
+                "Rococo",
+                "Art Deco"
+              ],
+              "explanation": "Romanesque churches often used barrel vaults and massive walls before Gothic architecture developed taller forms and pointed arches."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What art term describes strong contrast between light and dark used to model form?",
+              "a": "Chiaroscuro",
+              "options": [
+                "Chiaroscuro",
+                "Fresco",
+                "Collage",
+                "Pastiche"
+              ],
+              "explanation": "Renaissance and Baroque artists used chiaroscuro to give paintings and drawings a dramatic sense of volume."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "In Norse mythology, what is the name of the rainbow bridge leading to Asgard?",
+              "a": "Bifrost",
+              "options": [
+                "Bifrost",
+                "Valhalla",
+                "Yggdrasil",
+                "Gjallarhorn"
+              ],
+              "explanation": "Bifrost links the world of humans with the realm of the gods and is guarded by Heimdall in many tellings."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_19",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What writ orders a public official or lower court to perform a required duty?",
+              "a": "Mandamus",
+              "options": [
+                "Mandamus",
+                "Certiorari",
+                "Subpoena",
+                "Injunction"
+              ],
+              "explanation": "A writ of mandamus commands the performance of an obligation that the law treats as mandatory rather than discretionary."
+            },
+            {
+              "type": "true-false",
+              "q": "A finite group of prime order is always cyclic.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "In such a group, every non-identity element generates the whole group because its order must divide the group's prime size."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What term describes the philosophical view that only one's own mind is certain to exist?",
+              "a": "Solipsism",
+              "options": [
+                "Solipsism",
+                "Empiricism",
+                "Utilitarianism",
+                "Stoicism"
+              ],
+              "explanation": "Solipsism pushes skepticism to an extreme by questioning whether any external world or other minds can be known."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which Persian king founded Persepolis as a ceremonial capital of the Achaemenid Empire?",
+              "a": "Darius I",
+              "options": [
+                "Darius I",
+                "Xerxes I",
+                "Cyrus the Great",
+                "Artaxerxes I"
+              ],
+              "explanation": "Darius began Persepolis in the late 6th century BCE, and later Achaemenid rulers expanded the complex."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which medieval theologian wrote Summa Theologica?",
+              "a": "Thomas Aquinas",
+              "options": [
+                "Thomas Aquinas",
+                "Peter Abelard",
+                "Anselm of Canterbury",
+                "John Duns Scotus"
+              ],
+              "explanation": "Aquinas composed the work as a systematic presentation of theology, philosophy, and moral reasoning."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What term describes a positive integer equal to the sum of its proper divisors?",
+              "a": "Perfect number",
+              "options": [
+                "Perfect number",
+                "Prime number",
+                "Square number",
+                "Imaginary number"
+              ],
+              "explanation": "The smallest perfect number is 6 because its proper divisors 1, 2, and 3 add up to 6."
+            },
+            {
+              "type": "true-false",
+              "q": "A valid argument can have false premises and a false conclusion.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Validity concerns whether the conclusion follows from the premises, not whether the premises or conclusion are actually true."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which architect is associated with the phrase Less is more?",
+              "a": "Ludwig Mies van der Rohe",
+              "options": [
+                "Ludwig Mies van der Rohe",
+                "Le Corbusier",
+                "Frank Lloyd Wright",
+                "Antoni Gaudi"
+              ],
+              "explanation": "Mies used the phrase to express a minimalist approach that shaped much of twentieth-century modernist architecture."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which church council resolved the Western Schism in 1417 by electing Pope Martin V?",
+              "a": "Council of Constance",
+              "options": [
+                "Council of Constance",
+                "Council of Trent",
+                "Fourth Lateran Council",
+                "Council of Nicaea"
+              ],
+              "explanation": "The council met from 1414 to 1418 and helped end a period in which rival popes claimed authority."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which fourteenth-century story collection is framed around young people sheltering from the Black Death outside Florence?",
+              "a": "The Decameron",
+              "options": [
+                "The Decameron",
+                "The Divine Comedy",
+                "The Canterbury Tales",
+                "Orlando Furioso"
+              ],
+              "explanation": "Giovanni Boccaccio organized The Decameron as one hundred stories told over ten days."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

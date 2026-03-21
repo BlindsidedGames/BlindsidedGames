@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_22",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_22",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What is the name of Peter Pan's fairy companion?",
+              "a": "Tinker Bell",
+              "options": [
+                "Tinker Bell",
+                "Blue Fairy",
+                "Glinda",
+                "Silvermist"
+              ],
+              "explanation": "Tinker Bell first appeared in J. M. Barrie's Peter Pan stories and later became one of Disney's most recognizable fairy characters."
+            },
+            {
+              "type": "true-false",
+              "q": "The longest side of a right triangle is called the hypotenuse.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The hypotenuse is always opposite the right angle and is the side used in the Pythagorean theorem."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which instrument family does the violin belong to?",
+              "a": "String family",
+              "options": [
+                "String family",
+                "Brass family",
+                "Woodwind family",
+                "Percussion family"
+              ],
+              "explanation": "Violins produce sound when their strings vibrate, whether the player uses a bow or plucks the strings by hand."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What instrument measures temperature?",
+              "a": "Thermometer",
+              "options": [
+                "Thermometer",
+                "Barometer",
+                "Compass",
+                "Stopwatch"
+              ],
+              "explanation": "Thermometers can use expanding liquids or electronic sensors to register changes in temperature."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which continent contains the Amazon rainforest?",
+              "a": "South America",
+              "options": [
+                "Africa",
+                "Asia",
+                "South America",
+                "North America"
+              ],
+              "explanation": "Most of the Amazon lies in Brazil, but the rainforest also extends into countries such as Peru, Colombia, and Bolivia."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which instrument family does the trumpet belong to?",
+              "a": "Brass family",
+              "options": [
+                "Woodwind family",
+                "String family",
+                "Brass family",
+                "Percussion family"
+              ],
+              "explanation": "Trumpets make sound when the player buzzes their lips into a mouthpiece, which is the defining feature of brass instruments."
+            },
+            {
+              "type": "true-false",
+              "q": "Russian is commonly written using the Cyrillic alphabet.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The Cyrillic script is also used by several other languages in Eastern Europe and Central Asia."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which ancient civilization built the pyramids at Giza?",
+              "a": "Ancient Egyptians",
+              "options": [
+                "Ancient Romans",
+                "Ancient Egyptians",
+                "Maya",
+                "Phoenicians"
+              ],
+              "explanation": "The Great Pyramid at Giza was built as a royal tomb during Egypt's Old Kingdom, more than 4,000 years ago."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is a picture made from many small pieces of colored tile or glass called?",
+              "a": "Mosaic",
+              "options": [
+                "Mosaic",
+                "Fresco",
+                "Etching",
+                "Collage"
+              ],
+              "explanation": "Mosaics have been used since antiquity on floors, walls, and domes, with tiny pieces called tesserae forming the image."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What do you call a scientist who studies stars and planets?",
+              "a": "Astronomer",
+              "options": [
+                "Astronomer",
+                "Geologist",
+                "Botanist",
+                "Meteorologist"
+              ],
+              "explanation": "Astronomers study celestial objects such as planets, stars, galaxies, and the wider structure of the universe."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_22",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What communication device did Samuel Morse help develop for sending coded messages over long distances?",
+              "a": "Telegraph",
+              "options": [
+                "Telegraph",
+                "Phonograph",
+                "Microscope",
+                "Barometer"
+              ],
+              "explanation": "Morse code let operators send letters as timed pulses across telegraph wires."
+            },
+            {
+              "type": "true-false",
+              "q": "The modern concert flute is classified as a woodwind instrument.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Woodwinds are grouped by how sound is produced, so the metal flute stays in the woodwind family."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which novel introduced the character Atticus Finch?",
+              "a": "To Kill a Mockingbird",
+              "options": [
+                "To Kill a Mockingbird",
+                "The Grapes of Wrath",
+                "The Catcher in the Rye",
+                "Of Mice and Men"
+              ],
+              "explanation": "Harper Lee's 1960 novel won the Pulitzer Prize and helped make Atticus Finch one of American literature's most discussed fictional lawyers."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which city was divided by a wall from 1961 to 1989?",
+              "a": "Berlin",
+              "options": [
+                "Berlin",
+                "Vienna",
+                "Prague",
+                "Warsaw"
+              ],
+              "explanation": "The Berlin Wall separated East and West Berlin during the Cold War until its opening in November 1989 became a symbol of political change in Europe."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which mountain range separates the Iberian Peninsula from the rest of Europe?",
+              "a": "Pyrenees",
+              "options": [
+                "Pyrenees",
+                "Apennines",
+                "Carpathians",
+                "Balkans"
+              ],
+              "explanation": "The Pyrenees form a natural border between Spain and France, stretching from the Bay of Biscay to the Mediterranean Sea."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which sea connects to the Atlantic Ocean through the Strait of Gibraltar?",
+              "a": "Mediterranean Sea",
+              "options": [
+                "Black Sea",
+                "North Sea",
+                "Mediterranean Sea",
+                "Baltic Sea"
+              ],
+              "explanation": "The narrow strait lies between southern Spain and northern Morocco and has long been a key maritime gateway."
+            },
+            {
+              "type": "true-false",
+              "q": "The Richter scale was originally developed to measure earthquake magnitude.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Charles Richter introduced the scale in 1935, though seismologists now often use moment magnitude for large earthquakes."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which city hosted the 2016 Summer Olympics?",
+              "a": "Rio de Janeiro",
+              "options": [
+                "Athens",
+                "Rio de Janeiro",
+                "Tokyo",
+                "Beijing"
+              ],
+              "explanation": "Rio became the first South American city to host the Summer Olympics when it staged the games in 2016."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which United States Supreme Court case established judicial review?",
+              "a": "Marbury v. Madison",
+              "options": [
+                "Brown v. Board of Education",
+                "Marbury v. Madison",
+                "Miranda v. Arizona",
+                "Roe v. Wade"
+              ],
+              "explanation": "The 1803 decision confirmed that the Supreme Court could strike down laws that conflict with the Constitution."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which epic poem begins with an invocation to sing of the anger of Achilles?",
+              "a": "The Iliad",
+              "options": [
+                "The Odyssey",
+                "The Aeneid",
+                "The Iliad",
+                "Metamorphoses"
+              ],
+              "explanation": "The Iliad focuses on a short span late in the Trojan War rather than telling the entire story of the conflict."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_22",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which Italian poet wrote The Divine Comedy?",
+              "a": "Dante Alighieri",
+              "options": [
+                "Dante Alighieri",
+                "Petrarch",
+                "Torquato Tasso",
+                "Ludovico Ariosto"
+              ],
+              "explanation": "The poem's three-part journey through Hell, Purgatory, and Paradise shaped later Italian literature and language."
+            },
+            {
+              "type": "true-false",
+              "q": "In music theory, a diminished fifth spans six semitones.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Because it divides the octave into two equal parts, the interval is also known as a tritone."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What rhetorical device is the deliberate omission of conjunctions in a series?",
+              "a": "Asyndeton",
+              "options": [
+                "Asyndeton",
+                "Anaphora",
+                "Litotes",
+                "Chiasmus"
+              ],
+              "explanation": "Classical examples such as 'veni, vidi, vici' use asyndeton to speed the rhythm and create a forceful effect."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which classical architectural order is identified by scroll-shaped volutes on its capital?",
+              "a": "Ionic order",
+              "options": [
+                "Ionic order",
+                "Doric order",
+                "Tuscan order",
+                "Composite order"
+              ],
+              "explanation": "Ionic capitals are best known for their paired spiral volutes, a feature that distinguishes them from the plainer Doric order."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which treaty signed in 1713 helped end the War of the Spanish Succession?",
+              "a": "Treaty of Utrecht",
+              "options": [
+                "Treaty of Tordesillas",
+                "Treaty of Utrecht",
+                "Treaty of Brest-Litovsk",
+                "Treaty of Verdun"
+              ],
+              "explanation": "The Utrecht settlements recognized a Bourbon king in Spain but blocked a union of the French and Spanish crowns."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which philosopher wrote Critique of Pure Reason?",
+              "a": "Immanuel Kant",
+              "options": [
+                "G. W. F. Hegel",
+                "Immanuel Kant",
+                "Baruch Spinoza",
+                "John Locke"
+              ],
+              "explanation": "Kant's book tried to explain how experience and reason interact, and it became one of the central works of modern philosophy."
+            },
+            {
+              "type": "true-false",
+              "q": "In heraldry, gules refers to the color red.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Heraldic color names also include azure for blue, vert for green, and sable for black."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which treaty ended the Great Northern War in 1721?",
+              "a": "Treaty of Nystad",
+              "options": [
+                "Treaty of Utrecht",
+                "Treaty of Nystad",
+                "Treaty of Karlowitz",
+                "Treaty of Aix-la-Chapelle"
+              ],
+              "explanation": "The treaty confirmed Russia's rise as a major Baltic power after Peter the Great's victory over Sweden."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which gas law states that gas pressure is inversely proportional to volume at constant temperature?",
+              "a": "Boyle's law",
+              "options": [
+                "Boyle's law",
+                "Charles's law",
+                "Avogadro's law",
+                "Dalton's law"
+              ],
+              "explanation": "Boyle's law describes an inverse pressure-volume relationship for a fixed amount of gas when temperature does not change."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which novel centers on the character Raskolnikov?",
+              "a": "Crime and Punishment",
+              "options": [
+                "Crime and Punishment",
+                "Fathers and Sons",
+                "Dead Souls",
+                "The Brothers Karamazov"
+              ],
+              "explanation": "Fyodor Dostoevsky's Crime and Punishment follows Raskolnikov through guilt, poverty, and moral debate in St. Petersburg."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

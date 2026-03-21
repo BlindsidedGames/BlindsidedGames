@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_12",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_12",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What dried fruit is made from a plum?",
+              "a": "Prune",
+              "options": [
+                "Prune",
+                "Raisin",
+                "Date",
+                "Apricot"
+              ],
+              "explanation": "Prunes are dried plums, while raisins are dried grapes."
+            },
+            {
+              "type": "true-false",
+              "q": "A cube has six faces.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "A cube is a three-dimensional solid with six equal square faces, twelve edges, and eight vertices."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which day of the week comes after Tuesday?",
+              "a": "Wednesday",
+              "options": [
+                "Wednesday",
+                "Monday",
+                "Thursday",
+                "Friday"
+              ],
+              "explanation": "In the standard seven-day week sequence, Wednesday follows Tuesday."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the name of the imaginary line at 0 degrees latitude?",
+              "a": "Equator",
+              "options": [
+                "Equator",
+                "Prime Meridian",
+                "Tropic of Cancer",
+                "Arctic Circle"
+              ],
+              "explanation": "The Equator divides Earth into the Northern and Southern Hemispheres and is the reference line for latitude."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is water called when it is in solid form?",
+              "a": "Ice",
+              "options": [
+                "Ice",
+                "Steam",
+                "Mist",
+                "Vapor"
+              ],
+              "explanation": "When water molecules freeze into a crystalline structure, the solid phase is called ice."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What appliance is designed to brown slices of bread?",
+              "a": "Toaster",
+              "options": [
+                "Toaster",
+                "Blender",
+                "Kettle",
+                "Mixer"
+              ],
+              "explanation": "A toaster applies radiant heat to sliced bread and can brown each side in separate slots."
+            },
+            {
+              "type": "true-false",
+              "q": "Owls are mammals.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Owls are birds of prey, so they have feathers, beaks, and lay eggs rather than nursing their young."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What tool is commonly used to cut paper?",
+              "a": "Scissors",
+              "options": [
+                "Scissors",
+                "Spatula",
+                "Ladle",
+                "Whisk"
+              ],
+              "explanation": "Scissors use two pivoted blades to shear materials such as paper and thin cardboard."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is a baby goat called?",
+              "a": "Kid",
+              "options": [
+                "Kid",
+                "Calf",
+                "Foal",
+                "Cub"
+              ],
+              "explanation": "Kid is the standard term for a young goat in animal husbandry and zoology."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What do you call a person whose profession is writing books?",
+              "a": "Author",
+              "options": [
+                "Author",
+                "Editor",
+                "Publisher",
+                "Illustrator"
+              ],
+              "explanation": "An author creates the original text of a work, while editors and publishers handle revision and production."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_12",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which empire was ruled by Mansa Musa in the 14th century?",
+              "a": "Mali Empire",
+              "options": [
+                "Mali Empire",
+                "Songhai Empire",
+                "Ottoman Empire",
+                "Aksumite Empire"
+              ],
+              "explanation": "Mansa Musa, famous for his wealth and pilgrimage to Mecca, ruled the Mali Empire in West Africa."
+            },
+            {
+              "type": "true-false",
+              "q": "A palindrome reads the same backward and forward.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Words such as level and racecar are common examples of palindromes because their letters reverse symmetrically."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which playwright wrote A Doll's House?",
+              "a": "Henrik Ibsen",
+              "options": [
+                "Henrik Ibsen",
+                "Anton Chekhov",
+                "August Strindberg",
+                "George Bernard Shaw"
+              ],
+              "explanation": "A Doll's House premiered in 1879 and is one of Ibsen's best-known realist dramas."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What term describes precipitation made acidic by atmospheric sulfur and nitrogen compounds?",
+              "a": "Acid rain",
+              "options": [
+                "Acid rain",
+                "Black ice",
+                "Thermal inversion",
+                "Ground fog"
+              ],
+              "explanation": "Acid rain forms when sulfur dioxide and nitrogen oxides react with water vapor in the atmosphere."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which type of blood cell carries most oxygen in human blood?",
+              "a": "Red blood cells",
+              "options": [
+                "Red blood cells",
+                "White blood cells",
+                "Platelets",
+                "Plasma cells"
+              ],
+              "explanation": "Red blood cells contain hemoglobin, the protein that binds and transports oxygen."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What data structure processes items in first-in, first-out order?",
+              "a": "Queue",
+              "options": [
+                "Queue",
+                "Stack",
+                "Tree",
+                "Graph"
+              ],
+              "explanation": "A queue removes elements in the same order they were added, which models waiting-line behavior."
+            },
+            {
+              "type": "true-false",
+              "q": "The ISBN system is used to identify books.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "An ISBN is an International Standard Book Number used by publishers and retailers to identify a specific edition of a book."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What strait at the southern tip of South America is named after Ferdinand Magellan?",
+              "a": "Strait of Magellan",
+              "options": [
+                "Strait of Magellan",
+                "Strait of Gibraltar",
+                "Bering Strait",
+                "Strait of Hormuz"
+              ],
+              "explanation": "The Strait of Magellan provided an early navigational route between the Atlantic and Pacific before the Panama Canal."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What famous ancient library was located in Alexandria, Egypt?",
+              "a": "Library of Alexandria",
+              "options": [
+                "Library of Alexandria",
+                "Library of Pergamum",
+                "Imperial Library of Constantinople",
+                "House of Wisdom"
+              ],
+              "explanation": "The Library of Alexandria became a symbol of classical scholarship and large-scale manuscript collection."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What 1967 agreement bans placing nuclear weapons in Earth's orbit?",
+              "a": "Outer Space Treaty",
+              "options": [
+                "Outer Space Treaty",
+                "Nuclear Non-Proliferation Treaty",
+                "Comprehensive Nuclear-Test-Ban Treaty",
+                "Antarctic Treaty"
+              ],
+              "explanation": "The Outer Space Treaty set foundational rules for peaceful use of outer space and prohibited WMDs in orbit."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_12",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which legal principle bars a second trial for the same offense after an acquittal?",
+              "a": "Double jeopardy",
+              "options": [
+                "Double jeopardy",
+                "Habeas corpus",
+                "Stare decisis",
+                "Mens rea"
+              ],
+              "explanation": "Double jeopardy protections are embedded in criminal law systems to prevent repeated prosecution for one offense."
+            },
+            {
+              "type": "true-false",
+              "q": "The Peace of Augsburg established the principle cuius regio, eius religio in the Holy Roman Empire.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The 1555 Peace of Augsburg allowed rulers within the Holy Roman Empire to determine whether their territories would follow Catholicism or Lutheranism."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which philosopher wrote Being and Time?",
+              "a": "Martin Heidegger",
+              "options": [
+                "Martin Heidegger",
+                "Edmund Husserl",
+                "Karl Jaspers",
+                "Jean-Paul Sartre"
+              ],
+              "explanation": "Being and Time was published in 1927 and became a major work in 20th-century continental philosophy."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the name of the point in an Earth orbit that is farthest from Earth?",
+              "a": "Apogee",
+              "options": [
+                "Apogee",
+                "Perigee",
+                "Aphelion",
+                "Periapsis"
+              ],
+              "explanation": "For Earth-centered orbits, apogee is the farthest point and perigee is the nearest point."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "In molecular biology, what are non-coding sequences removed from pre-mRNA called?",
+              "a": "Introns",
+              "options": [
+                "Introns",
+                "Exons",
+                "Codons",
+                "Operons"
+              ],
+              "explanation": "Introns are spliced out during RNA processing, while exons are joined to form mature mRNA."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which 1648 settlement ended the Thirty Years' War in Europe?",
+              "a": "Peace of Westphalia",
+              "options": [
+                "Peace of Westphalia",
+                "Treaty of Utrecht",
+                "Treaty of Augsburg",
+                "Peace of Basel"
+              ],
+              "explanation": "The settlement included treaties signed at Munster and Osnabruck and reshaped European state sovereignty."
+            },
+            {
+              "type": "true-false",
+              "q": "Bayes' theorem concerns conditional probability.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Bayes' theorem updates the probability of a hypothesis based on new evidence by relating conditional probabilities."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "In music theory, what interval spans three whole tones?",
+              "a": "Tritone",
+              "options": [
+                "Tritone",
+                "Perfect fourth",
+                "Minor sixth",
+                "Major third"
+              ],
+              "explanation": "A tritone equals six semitones and historically earned the nickname diabolus in musica in some contexts."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the SI base unit of luminous intensity?",
+              "a": "Candela",
+              "options": [
+                "Candela",
+                "Lumen",
+                "Lux",
+                "Watt"
+              ],
+              "explanation": "Candela is an SI base unit, while lumen and lux are derived photometric units."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What term describes words made from initials that are pronounced letter by letter, such as FBI?",
+              "a": "Initialism",
+              "options": [
+                "Initialism",
+                "Acronym",
+                "Portmanteau",
+                "Eponym"
+              ],
+              "explanation": "Initialisms are spoken as individual letters, while acronyms are usually pronounced as words."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

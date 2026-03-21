@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_11",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_11",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What food is made by fermenting milk with bacterial cultures?",
+              "a": "Yogurt",
+              "options": [
+                "Yogurt",
+                "Butter",
+                "Jam",
+                "Vinegar"
+              ],
+              "explanation": "Yogurt forms when specific bacteria ferment milk sugars into lactic acid, thickening the milk and giving it a tangy flavor."
+            },
+            {
+              "type": "true-false",
+              "q": "Spiders have six legs.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Spiders are arachnids, and arachnids have eight legs rather than six."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the name of the school in the Harry Potter series?",
+              "a": "Hogwarts",
+              "options": [
+                "Hogwarts",
+                "Narnia",
+                "Neverland",
+                "Westeros"
+              ],
+              "explanation": "Hogwarts School of Witchcraft and Wizardry is where Harry, Hermione, and Ron study in J. K. Rowling's series."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What sport is played with a cue ball on a table with pockets?",
+              "a": "Pool",
+              "options": [
+                "Pool",
+                "Bowling",
+                "Darts",
+                "Lacrosse"
+              ],
+              "explanation": "In pool, players use cues to strike a cue ball and pocket the object balls on a cloth-covered table."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What board game features suspects, rooms, and murder weapons to solve a mystery?",
+              "a": "Clue",
+              "options": [
+                "Clue",
+                "Risk",
+                "Scrabble",
+                "Sorry!"
+              ],
+              "explanation": "Clue, called Cluedo in some regions, revolves around deducing the culprit, location, and weapon."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Who wrote the children's novel Charlotte's Web?",
+              "a": "E. B. White",
+              "options": [
+                "E. B. White",
+                "Roald Dahl",
+                "A. A. Milne",
+                "Beverly Cleary"
+              ],
+              "explanation": "Charlotte's Web was published in 1952 and follows Wilbur the pig and the spider Charlotte."
+            },
+            {
+              "type": "true-false",
+              "q": "A rectangle always has four right angles.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Having four right angles is part of the definition of a rectangle, whether or not all four sides are equal."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What material is folded to create traditional origami models?",
+              "a": "Paper",
+              "options": [
+                "Paper",
+                "Fabric",
+                "Clay",
+                "Wood"
+              ],
+              "explanation": "Origami is the Japanese art of paper folding and typically avoids cuts and glue in traditional practice."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the name of the process where water vapor cools and becomes liquid droplets?",
+              "a": "Condensation",
+              "options": [
+                "Condensation",
+                "Evaporation",
+                "Sublimation",
+                "Combustion"
+              ],
+              "explanation": "Condensation forms dew and clouds when moist air cools to its dew point."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What family board game asks players to draw and guess words or phrases?",
+              "a": "Pictionary",
+              "options": [
+                "Pictionary",
+                "Connect Four",
+                "Jenga",
+                "Operation"
+              ],
+              "explanation": "Pictionary is a party game where teams earn points by correctly identifying sketches before time runs out."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_11",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What is the medical term for fear of enclosed spaces?",
+              "a": "Claustrophobia",
+              "options": [
+                "Claustrophobia",
+                "Agoraphobia",
+                "Arachnophobia",
+                "Acrophobia"
+              ],
+              "explanation": "Claustrophobia is a specific phobia involving enclosed or cramped spaces such as elevators, tunnels, or small rooms."
+            },
+            {
+              "type": "true-false",
+              "q": "Mercury is the only metal that is liquid at standard room temperature.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Mercury is liquid at ordinary room temperature, while metals such as gallium melt only at slightly warmer temperatures."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which novel features Captain Ahab's pursuit of a white whale?",
+              "a": "Moby-Dick",
+              "options": [
+                "Moby-Dick",
+                "Treasure Island",
+                "The Old Man and the Sea",
+                "Robinson Crusoe"
+              ],
+              "explanation": "Herman Melville's Moby-Dick was published in 1851 and centers on Ahab's obsessive quest."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which painter is best known for the Water Lilies series?",
+              "a": "Claude Monet",
+              "options": [
+                "Claude Monet",
+                "Pierre-Auguste Renoir",
+                "Paul Cezanne",
+                "Camille Pissarro"
+              ],
+              "explanation": "Monet painted many Water Lilies works at his garden in Giverny over several decades."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which chemical element has the atomic number 47?",
+              "a": "Silver",
+              "options": [
+                "Silver",
+                "Tin",
+                "Cadmium",
+                "Antimony"
+              ],
+              "explanation": "Silver's symbol is Ag, from the Latin word argentum."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What secure web protocol is indicated by a padlock icon in modern browsers?",
+              "a": "HTTPS",
+              "options": [
+                "HTTPS",
+                "FTP",
+                "SMTP",
+                "POP3"
+              ],
+              "explanation": "HTTPS uses TLS encryption to protect data in transit between browser and server."
+            },
+            {
+              "type": "true-false",
+              "q": "Absolute zero is the theoretical temperature at which molecular motion reaches a minimum.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Absolute zero is defined as 0 kelvin, the lower limit of thermodynamic temperature."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which sea lies between Jordan and Israel?",
+              "a": "Dead Sea",
+              "options": [
+                "Dead Sea",
+                "Red Sea",
+                "Black Sea",
+                "Caspian Sea"
+              ],
+              "explanation": "The Dead Sea is a hypersaline lake in the Jordan Rift Valley and its shoreline is one of the lowest land elevations on Earth."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which artist created The Great Wave off Kanagawa?",
+              "a": "Hokusai",
+              "options": [
+                "Hokusai",
+                "Hiroshige",
+                "Sesshu Toyo",
+                "Utamaro"
+              ],
+              "explanation": "The woodblock print is part of Hokusai's series Thirty-six Views of Mount Fuji."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which country won the first FIFA World Cup in 1930?",
+              "a": "Uruguay",
+              "options": [
+                "Uruguay",
+                "Argentina",
+                "Brazil",
+                "Italy"
+              ],
+              "explanation": "Uruguay hosted the inaugural tournament and defeated Argentina in the final."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_11",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What branch of theology seeks to justify divine goodness in the face of evil?",
+              "a": "Theodicy",
+              "options": [
+                "Theodicy",
+                "Eschatology",
+                "Hermeneutics",
+                "Soteriology"
+              ],
+              "explanation": "Theodicy addresses the problem of evil by asking how suffering and evil can coexist with an all-good, all-powerful deity."
+            },
+            {
+              "type": "true-false",
+              "q": "The Domesday Book was compiled after the Norman Conquest of England.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "William the Conqueror ordered the Domesday survey in 1085 to record landholding and resources in England."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What musical form typically consists of an exposition, development, and recapitulation?",
+              "a": "Sonata form",
+              "options": [
+                "Sonata form",
+                "Rondo",
+                "Fugue",
+                "Canon"
+              ],
+              "explanation": "Sonata form became central to many first movements in the Classical period, especially in symphonies and sonatas."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What astronomical term describes the point where the Moon crosses the ecliptic moving northward?",
+              "a": "Ascending node",
+              "options": [
+                "Ascending node",
+                "Aphelion",
+                "Zenith",
+                "Solstice"
+              ],
+              "explanation": "The Moon's ascending node is one of the two points where its orbit crosses the ecliptic plane from south to north."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What rhetorical term means deliberate understatement for effect?",
+              "a": "Litotes",
+              "options": [
+                "Litotes",
+                "Hyperbole",
+                "Metonymy",
+                "Synecdoche"
+              ],
+              "explanation": "Litotes often creates emphasis by expressing an idea through negation, such as saying not bad to mean very good."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which philosopher wrote Leviathan?",
+              "a": "Thomas Hobbes",
+              "options": [
+                "Thomas Hobbes",
+                "John Locke",
+                "David Hume",
+                "Baruch Spinoza"
+              ],
+              "explanation": "Hobbes published Leviathan in 1651 as a foundational work of political philosophy centered on sovereignty and social order."
+            },
+            {
+              "type": "true-false",
+              "q": "A quasar is powered by matter falling into a supermassive black hole.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Quasars are extremely bright active galactic nuclei fueled by accretion onto supermassive black holes."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What economic condition combines inflation with stagnant growth?",
+              "a": "Stagflation",
+              "options": [
+                "Stagflation",
+                "Deflation",
+                "Recession",
+                "Arbitrage"
+              ],
+              "explanation": "Stagflation is especially difficult for policymakers because inflation and weak growth usually call for conflicting responses."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which painter created Las Meninas?",
+              "a": "Diego Velazquez",
+              "options": [
+                "Diego Velazquez",
+                "Francisco Goya",
+                "El Greco",
+                "Bartolome Murillo"
+              ],
+              "explanation": "Las Meninas, painted in 1656, is housed in the Prado Museum and is known for its complex perspective."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "In economics, what term means the value of the next best alternative forgone?",
+              "a": "Opportunity cost",
+              "options": [
+                "Opportunity cost",
+                "Marginal utility",
+                "Comparative advantage",
+                "Sunk cost"
+              ],
+              "explanation": "Opportunity cost captures trade-offs by measuring what is given up when one option is chosen over another."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

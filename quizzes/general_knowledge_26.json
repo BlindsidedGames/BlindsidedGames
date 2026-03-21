@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_26",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_26",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which instrument has rows of pipes and is often played in churches?",
+              "a": "Organ",
+              "options": [
+                "Organ",
+                "Clarinet",
+                "Accordion",
+                "Trombone"
+              ],
+              "explanation": "A pipe organ sends air through tuned pipes and can fill a large space with sound from a single keyboard instrument."
+            },
+            {
+              "type": "true-false",
+              "q": "In chess, the queen can move diagonally.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The queen combines the movement powers of the rook and bishop, so it can move along ranks, files, and diagonals."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What breed of dog is Scooby-Doo?",
+              "a": "Great Dane",
+              "options": [
+                "Great Dane",
+                "Saint Bernard",
+                "Dalmatian",
+                "Bloodhound"
+              ],
+              "explanation": "Scooby-Doo was designed as a comic, lanky Great Dane rather than an accurately proportioned show dog."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What tool is used to check whether a surface is perfectly level?",
+              "a": "Spirit level",
+              "options": [
+                "Spirit level",
+                "Protractor",
+                "Compass",
+                "Clamp"
+              ],
+              "explanation": "A spirit level uses a bubble in liquid to show when a surface is exactly horizontal or vertical."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What writing system used picture-like symbols in ancient Egypt?",
+              "a": "Hieroglyphics",
+              "options": [
+                "Hieroglyphics",
+                "Cuneiform",
+                "Hangul",
+                "Braille"
+              ],
+              "explanation": "Egyptian hieroglyphs combined picture signs with phonetic symbols and were used for more than three millennia."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which author created Paddington Bear?",
+              "a": "Michael Bond",
+              "options": [
+                "Michael Bond",
+                "Judith Kerr",
+                "A. A. Milne",
+                "Dick King-Smith"
+              ],
+              "explanation": "Paddington first appeared in 1958 and was named after the London station where the bear was found."
+            },
+            {
+              "type": "true-false",
+              "q": "Venus is hotter on average than Mercury.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Mercury is closer to the Sun, but Venus has a thick carbon dioxide atmosphere that traps far more heat."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is a baby swan called?",
+              "a": "Cygnet",
+              "options": [
+                "Cygnet",
+                "Gosling",
+                "Foal",
+                "Leveret"
+              ],
+              "explanation": "Young swans are called cygnets, from the Latin word cygnus, meaning swan."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What device gives musicians a steady beat for practice?",
+              "a": "Metronome",
+              "options": [
+                "Metronome",
+                "Tuning fork",
+                "Capo",
+                "Mute"
+              ],
+              "explanation": "A metronome marks regular beats at a set tempo, helping players keep consistent timing."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What toy goes up and down on a string wound around an axle?",
+              "a": "Yo-yo",
+              "options": [
+                "Yo-yo",
+                "Spinning top",
+                "Kite",
+                "Frisbee"
+              ],
+              "explanation": "A yo-yo works by unwinding and rewinding its string around the axle, which lets it climb back up after spinning."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_26",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What printmaking technique uses acid to bite lines into a metal plate?",
+              "a": "Etching",
+              "options": [
+                "Etching",
+                "Fresco",
+                "Tempera",
+                "Collage"
+              ],
+              "explanation": "Artists typically coat the plate with a resistant ground, draw through it, and then let acid cut the exposed lines."
+            },
+            {
+              "type": "true-false",
+              "q": "In baseball, a sacrifice fly counts as an official at-bat.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "A sacrifice fly can produce a run, but it does not count as an at-bat when batting average is calculated."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which author wrote The Old Man and the Sea?",
+              "a": "Ernest Hemingway",
+              "options": [
+                "Ernest Hemingway",
+                "John Steinbeck",
+                "F. Scott Fitzgerald",
+                "William Faulkner"
+              ],
+              "explanation": "The novella won the Pulitzer Prize in 1953 and helped cement Hemingway's later Nobel reputation."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which city is home to the Acropolis?",
+              "a": "Athens",
+              "options": [
+                "Athens",
+                "Sparta",
+                "Alexandria",
+                "Ephesus"
+              ],
+              "explanation": "The Acropolis of Athens includes the Parthenon, a temple dedicated to the goddess Athena."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What laboratory device separates substances by spinning samples at high speed?",
+              "a": "Centrifuge",
+              "options": [
+                "Centrifuge",
+                "Calorimeter",
+                "Periscope",
+                "Oscilloscope"
+              ],
+              "explanation": "Laboratories use centrifuges to separate components such as blood plasma from blood cells by density."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which novel follows the governess who works at Thornfield Hall?",
+              "a": "Jane Eyre",
+              "options": [
+                "Jane Eyre",
+                "Middlemarch",
+                "Wuthering Heights",
+                "Rebecca"
+              ],
+              "explanation": "Charlotte Bronte published Jane Eyre in 1847 under the pen name Currer Bell."
+            },
+            {
+              "type": "true-false",
+              "q": "Mercury is the Roman name for the Greek god Hermes.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Roman mythology often identified its gods with Greek counterparts, pairing Mercury with Hermes as a messenger deity."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What scale is traditionally used to describe wind force at sea?",
+              "a": "Beaufort scale",
+              "options": [
+                "Beaufort scale",
+                "Mercalli scale",
+                "Mohs scale",
+                "Kelvin scale"
+              ],
+              "explanation": "The Beaufort scale links observed sea and land conditions with ranges of wind speed."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What instrument measures humidity in the air?",
+              "a": "Hygrometer",
+              "options": [
+                "Hygrometer",
+                "Barometer",
+                "Altimeter",
+                "Anemometer"
+              ],
+              "explanation": "Hygrometers are used in meteorology and in environments where moisture control matters, such as museums or greenhouses."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which city stands on the Bosporus strait between Europe and Asia?",
+              "a": "Istanbul",
+              "options": [
+                "Istanbul",
+                "Athens",
+                "Cairo",
+                "Venice"
+              ],
+              "explanation": "Istanbul spans two continents and grew from earlier settlements known as Byzantium and Constantinople."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_26",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which Elizabethan poet wrote the sonnet sequence Astrophil and Stella?",
+              "a": "Sir Philip Sidney",
+              "options": [
+                "Sir Philip Sidney",
+                "Edmund Spenser",
+                "Christopher Marlowe",
+                "John Donne"
+              ],
+              "explanation": "Published after Sidney's death, Astrophil and Stella helped shape the English sonnet tradition before Shakespeare's sonnets appeared in print."
+            },
+            {
+              "type": "true-false",
+              "q": "On a logarithmic scale, equal distances represent equal additive changes.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Logarithmic scales use equal spacing for equal multiplicative ratios, which is why they are useful for values spanning many orders of magnitude."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What statistical measure is the square root of variance?",
+              "a": "Standard deviation",
+              "options": [
+                "Standard deviation",
+                "Median",
+                "Coefficient of variation",
+                "Percentile"
+              ],
+              "explanation": "Standard deviation describes typical spread around the mean and is expressed in the same units as the original data."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What term describes a recurring musical idea linked to a character, place, or theme?",
+              "a": "Leitmotif",
+              "options": [
+                "Leitmotif",
+                "Ostinato",
+                "Cadence",
+                "Countermelody"
+              ],
+              "explanation": "Composers such as Wagner used leitmotifs so listeners could recognize dramatic ideas as they returned in different forms."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the atmospheric boundary between the troposphere and the stratosphere called?",
+              "a": "Tropopause",
+              "options": [
+                "Tropopause",
+                "Stratopause",
+                "Mesopause",
+                "Thermopause"
+              ],
+              "explanation": "Most weather happens below the tropopause in the troposphere, while the stratosphere above it is comparatively stable."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What type of writing system mainly records consonants, as in Arabic and Hebrew?",
+              "a": "Abjad",
+              "options": [
+                "Abjad",
+                "Abugida",
+                "Syllabary",
+                "Alphabet"
+              ],
+              "explanation": "In an abjad, consonants are primary and short vowels may be omitted or marked only in certain contexts."
+            },
+            {
+              "type": "true-false",
+              "q": "Pseudoscorpions have a stinging tail like true scorpions.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Pseudoscorpions have pincer-like pedipalps, but they lack the long segmented tail and stinger of true scorpions."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What legal doctrine bars a dispute from being litigated again after a final judgment on the merits?",
+              "a": "Res judicata",
+              "options": [
+                "Res judicata",
+                "Stare decisis",
+                "Double jeopardy",
+                "Strict liability"
+              ],
+              "explanation": "Res judicata promotes finality by preventing parties from reopening the same claim once a competent court has already decided it."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which illuminated manuscript kept at Trinity College Dublin is one of Ireland's best-known medieval treasures?",
+              "a": "Book of Kells",
+              "options": [
+                "Book of Kells",
+                "Lindisfarne Gospels",
+                "Domesday Book",
+                "Book of Hours"
+              ],
+              "explanation": "The Book of Kells is famous for its richly decorated Gospel text and intricate Insular-style illumination."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What architectural feature is the roughly triangular space between the curve of an arch and its rectangular frame?",
+              "a": "Spandrel",
+              "options": [
+                "Spandrel",
+                "Pediment",
+                "Cornice",
+                "Mullion"
+              ],
+              "explanation": "Spandrels appear above arches in arcades and fa\u00e7ades, and they are often filled with decorative carving or mosaic work."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_25",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_25",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What puzzle game is built around falling shapes called tetrominoes?",
+              "a": "Tetris",
+              "options": [
+                "Tetris",
+                "Minesweeper",
+                "Sudoku",
+                "Checkers"
+              ],
+              "explanation": "The seven tetromino shapes in Tetris are each made from four square blocks."
+            },
+            {
+              "type": "true-false",
+              "q": "GPS satellites orbit Earth.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "GPS satellites circle Earth in medium Earth orbit so receivers can compare signals from multiple satellites and calculate location."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What percussion instrument is a three-sided metal bar struck with a beater?",
+              "a": "Triangle",
+              "options": [
+                "Triangle",
+                "Tambourine",
+                "Maraca",
+                "Xylophone"
+              ],
+              "explanation": "Despite its simple shape, the triangle can cut clearly through an orchestra because of its bright metallic tone."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which novel introduces the red-haired orphan Anne Shirley at Green Gables?",
+              "a": "Anne of Green Gables",
+              "options": [
+                "Anne of Green Gables",
+                "Little Women",
+                "The Secret Garden",
+                "Heidi"
+              ],
+              "explanation": "Lucy Maud Montgomery's 1908 novel became the first book in a long-running series set on Prince Edward Island."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which party game uses a mat with colored circles and a spinner?",
+              "a": "Twister",
+              "options": [
+                "Twister",
+                "Operation",
+                "Boggle",
+                "Guess Who?"
+              ],
+              "explanation": "Twister turned people into the playing pieces, which helped make it a novelty hit in the 1960s."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What type of animal is a seahorse?",
+              "a": "Fish",
+              "options": [
+                "Fish",
+                "Crustacean",
+                "Mammal",
+                "Mollusc"
+              ],
+              "explanation": "Seahorses are fish, but they swim upright and use their curled tails to grip seagrass and coral."
+            },
+            {
+              "type": "true-false",
+              "q": "Glass is made mainly from sand.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Most common glass starts with silica from sand, then adds materials such as soda ash and limestone to change how it melts and hardens."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which instrument has a tall frame and many strings that are plucked with both hands?",
+              "a": "Harp",
+              "options": [
+                "Harp",
+                "Cello",
+                "Bassoon",
+                "Trumpet"
+              ],
+              "explanation": "Concert harps use pedals to change pitch classes, letting one instrument play in many different keys."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What animal is known for building dams across streams?",
+              "a": "Beaver",
+              "options": [
+                "Beaver",
+                "Otter",
+                "Badger",
+                "Fox"
+              ],
+              "explanation": "Beavers build dams and lodges from wood and mud, creating ponds that can reshape local habitats."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which instrument usually has four strings and is closely associated with Hawaiian music?",
+              "a": "Ukulele",
+              "options": [
+                "Ukulele",
+                "Banjo",
+                "Mandolin",
+                "Harp"
+              ],
+              "explanation": "The ukulele developed in Hawaii from small Portuguese string instruments and became central to the islands' popular music traditions."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_25",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which woodwind instrument usually gives the tuning note A to an orchestra before a performance?",
+              "a": "Oboe",
+              "options": [
+                "Clarinet",
+                "Flute",
+                "Oboe",
+                "Bassoon"
+              ],
+              "explanation": "The oboe's bright, penetrating tone is easy for the rest of the orchestra to hear when matching pitch."
+            },
+            {
+              "type": "true-false",
+              "q": "Stalactites hang from cave ceilings.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Mineral-rich water leaves deposits behind as it drips, so stalactites grow downward while stalagmites grow upward from the cave floor."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which painting technique uses small dots of pure color to form an image?",
+              "a": "Pointillism",
+              "options": [
+                "Fresco",
+                "Pointillism",
+                "Etching",
+                "Collage"
+              ],
+              "explanation": "Pointillist painters placed many tiny touches of color side by side so the viewer's eye blends them at a distance."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which city was buried alongside Pompeii by the eruption of Mount Vesuvius in 79 CE?",
+              "a": "Herculaneum",
+              "options": [
+                "Herculaneum",
+                "Ravenna",
+                "Carthage",
+                "Syracuse"
+              ],
+              "explanation": "Herculaneum was buried by volcanic material that preserved wood and other organic remains better than at Pompeii."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which instrument family includes the oboe and bassoon?",
+              "a": "Woodwind family",
+              "options": [
+                "Woodwind family",
+                "Brass family",
+                "String family",
+                "Percussion family"
+              ],
+              "explanation": "Both instruments use reeds, and the bassoon uses a double reed like the oboe but at a much lower pitch."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What term describes a plant that completes its life cycle over two growing seasons?",
+              "a": "Biennial",
+              "options": [
+                "Biennial",
+                "Annual",
+                "Perennial",
+                "Deciduous"
+              ],
+              "explanation": "Many biennials grow leaves in the first year and flower and set seed in the second."
+            },
+            {
+              "type": "true-false",
+              "q": "Copper is a magnetic metal.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Copper conducts electricity very well, but strong everyday magnetism is characteristic of metals such as iron, cobalt, and nickel instead."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which element has the chemical symbol Sn?",
+              "a": "Tin",
+              "options": [
+                "Tin",
+                "Silver",
+                "Sodium",
+                "Zinc"
+              ],
+              "explanation": "The symbol comes from the Latin word stannum, which is why it does not match the English spelling."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which play features Vladimir and Estragon waiting beside a tree?",
+              "a": "Waiting for Godot",
+              "options": [
+                "Waiting for Godot",
+                "Six Characters in Search of an Author",
+                "Rosencrantz and Guildenstern Are Dead",
+                "No Exit"
+              ],
+              "explanation": "Samuel Beckett's play became one of the defining works of absurdist theatre in the twentieth century."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which double-reed woodwind instrument usually sounds lower than the oboe?",
+              "a": "Bassoon",
+              "options": [
+                "Bassoon",
+                "Oboe",
+                "Clarinet",
+                "Piccolo"
+              ],
+              "explanation": "The bassoon covers a much lower range than the oboe and often plays bass lines or dry comic figures in orchestral music."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_25",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which scientist proposed the theory of continental drift?",
+              "a": "Alfred Wegener",
+              "options": [
+                "Alfred Wegener",
+                "James Hutton",
+                "Charles Lyell",
+                "Louis Agassiz"
+              ],
+              "explanation": "Wegener proposed that continents had once been joined together, an idea later supported and refined through plate tectonics."
+            },
+            {
+              "type": "true-false",
+              "q": "A lunar eclipse can occur only at full moon.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "A lunar eclipse happens when Earth lies between the Sun and the Moon, a geometry that is possible only when the Moon is full."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What musical term means singing without instrumental accompaniment?",
+              "a": "A cappella",
+              "options": [
+                "A cappella",
+                "Ostinato",
+                "Rubato",
+                "Sforzando"
+              ],
+              "explanation": "A cappella comes from Italian usage and refers to voices performing alone, whether in choral, sacred, or contemporary arrangements."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which poem begins with the line \"April is the cruellest month\"?",
+              "a": "The Waste Land",
+              "options": [
+                "The Waste Land",
+                "Four Quartets",
+                "Howl",
+                "The Cantos"
+              ],
+              "explanation": "T. S. Eliot published The Waste Land in 1922, and its fractured voices helped define literary modernism in English."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What 1884-1885 meeting set rules for European colonization and trade claims in Africa?",
+              "a": "Berlin Conference",
+              "options": [
+                "Berlin Conference",
+                "Congress of Vienna",
+                "Yalta Conference",
+                "Treaty of Tordesillas"
+              ],
+              "explanation": "The Berlin Conference formalized principles used during the Scramble for Africa without meaningful African representation in the negotiations."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What architectural term describes a high row of windows above eye level that brings light into a large interior?",
+              "a": "Clerestory",
+              "options": [
+                "Clerestory",
+                "Portico",
+                "Cornice",
+                "Pediment"
+              ],
+              "explanation": "Clerestory windows are especially important in churches, halls, and industrial buildings because they admit light while leaving wall space free below."
+            },
+            {
+              "type": "true-false",
+              "q": "A muon is heavier than an electron.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Muons are leptons like electrons, but each muon has much more mass and decays quickly into lighter particles."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What term in Hindu and Buddhist thought refers to the cycle of birth, death, and rebirth?",
+              "a": "Samsara",
+              "options": [
+                "Samsara",
+                "Nirvana",
+                "Dharma",
+                "Moksha"
+              ],
+              "explanation": "Samsara describes continued rebirth, while concepts such as moksha or nirvana concern liberation from that cycle."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which language family includes Hindi, Bengali, and Marathi?",
+              "a": "Indo-Aryan",
+              "options": [
+                "Indo-Aryan",
+                "Dravidian",
+                "Turkic",
+                "Uralic"
+              ],
+              "explanation": "Indo-Aryan languages form a major branch of the Indo-European family and are spoken across much of northern South Asia."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What legal term refers to the guilty mind required for many criminal offenses?",
+              "a": "Mens rea",
+              "options": [
+                "Mens rea",
+                "Voir dire",
+                "Estoppel",
+                "Certiorari"
+              ],
+              "explanation": "Mens rea concerns the defendant's mental state, such as intent, knowledge, or recklessness, rather than just the outward act."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

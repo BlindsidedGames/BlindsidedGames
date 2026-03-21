@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_13",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_13",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What do you call a young sheep?",
+              "a": "Lamb",
+              "options": [
+                "Lamb",
+                "Calf",
+                "Foal",
+                "Kid"
+              ],
+              "explanation": "Lamb specifically refers to juvenile sheep, while calf, foal, and kid refer to young cattle, horses, and goats."
+            },
+            {
+              "type": "true-false",
+              "q": "Honey can spoil quickly if left unopened at room temperature.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Honey's low moisture and acidity help preserve it for long periods when stored properly."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What fruit has fuzzy brown skin and usually bright green flesh?",
+              "a": "Kiwi",
+              "options": [
+                "Kiwi",
+                "Pear",
+                "Lime",
+                "Avocado"
+              ],
+              "explanation": "Kiwifruit was commercially developed in New Zealand and became widely exported worldwide in the twentieth century."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the term for words that have similar meanings, like tiny and small?",
+              "a": "Synonyms",
+              "options": [
+                "Synonyms",
+                "Antonyms",
+                "Homophones",
+                "Acronyms"
+              ],
+              "explanation": "Synonyms share closely related meanings, while antonyms express opposite meanings."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What substance do bees secrete to build the hexagonal cells of a honeycomb?",
+              "a": "Beeswax",
+              "options": [
+                "Beeswax",
+                "Pollen",
+                "Propolis",
+                "Nectar"
+              ],
+              "explanation": "Worker bees produce wax from glands on their abdomen and shape it into comb for brood and honey storage."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What kitchen appliance has rotating blades and is used to puree ingredients?",
+              "a": "Blender",
+              "options": [
+                "Blender",
+                "Toaster",
+                "Kettle",
+                "Mixer"
+              ],
+              "explanation": "A blender's fast-spinning blades can liquefy or puree foods, unlike a toaster or kettle."
+            },
+            {
+              "type": "true-false",
+              "q": "A dodecahedron has 12 faces.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "In geometry, a regular dodecahedron is a Platonic solid with 12 pentagonal faces."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the largest moon in the Solar System?",
+              "a": "Ganymede",
+              "options": [
+                "Ganymede",
+                "Titan",
+                "Callisto",
+                "Europa"
+              ],
+              "explanation": "Ganymede, a moon of Jupiter, is larger than the planet Mercury by diameter."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which herb is the main ingredient that gives pesto its green flavor base?",
+              "a": "Basil",
+              "options": [
+                "Basil",
+                "Parsley",
+                "Cilantro",
+                "Mint"
+              ],
+              "explanation": "Traditional pesto alla Genovese uses fresh basil with pine nuts, garlic, Parmesan, and olive oil."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which painter is associated with The Starry Night and post-impressionism?",
+              "a": "Vincent van Gogh",
+              "options": [
+                "Vincent van Gogh",
+                "Claude Monet",
+                "Pablo Picasso",
+                "Salvador Dali"
+              ],
+              "explanation": "Van Gogh painted The Starry Night in 1889 while staying at an asylum in Saint-Remy-de-Provence."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_13",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What do we call the event when the Sun reaches its farthest north or south point in the sky?",
+              "a": "Solstice",
+              "options": [
+                "Solstice",
+                "Equinox",
+                "Perihelion",
+                "Eclipse"
+              ],
+              "explanation": "Solstices occur twice each year and mark the longest and shortest daylight periods in each hemisphere."
+            },
+            {
+              "type": "true-false",
+              "q": "A standard violin has four strings.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Modern violins are tuned in fifths to G, D, A, and E."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What writing material in the ancient Mediterranean was made from a Nile plant?",
+              "a": "Papyrus",
+              "options": [
+                "Papyrus",
+                "Parchment",
+                "Vellum",
+                "Slate"
+              ],
+              "explanation": "Papyrus sheets were made by layering strips from the papyrus plant and pressing them into writing surfaces."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What unit measures electrical resistance?",
+              "a": "Ohm",
+              "options": [
+                "Ohm",
+                "Volt",
+                "Watt",
+                "Ampere"
+              ],
+              "explanation": "Ohm's law links resistance to voltage and current through the relationship V = I x R."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which scholar's Latinized name gave rise to the modern word algorithm?",
+              "a": "Al-Khwarizmi",
+              "options": [
+                "Al-Khwarizmi",
+                "Ibn Sina",
+                "Averroes",
+                "Al-Biruni"
+              ],
+              "explanation": "The term algorithm derives from Latin forms of Al-Khwarizmi's name in medieval mathematical texts."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What typographic term describes the small finishing strokes on some letterforms?",
+              "a": "Serifs",
+              "options": [
+                "Serifs",
+                "Ligatures",
+                "Glyphs",
+                "Ascenders"
+              ],
+              "explanation": "Serif typefaces include small strokes at letter ends, while sans-serif designs omit them."
+            },
+            {
+              "type": "true-false",
+              "q": "The printing press was invented before the steam engine.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Gutenberg's movable-type press appeared in the mid-1400s, centuries before industrial steam engines."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which organelle is the main site of ATP production in eukaryotic cells?",
+              "a": "Mitochondrion",
+              "options": [
+                "Mitochondrion",
+                "Golgi apparatus",
+                "Lysosome",
+                "Nucleus"
+              ],
+              "explanation": "Mitochondria produce most cellular ATP through oxidative phosphorylation on the inner mitochondrial membrane."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which key is the relative minor of C major?",
+              "a": "A minor",
+              "options": [
+                "A minor",
+                "E minor",
+                "D minor",
+                "G minor"
+              ],
+              "explanation": "Relative major and minor keys share the same key signature; C major and A minor both use no sharps or flats."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which playwright wrote The Importance of Being Earnest?",
+              "a": "Oscar Wilde",
+              "options": [
+                "Oscar Wilde",
+                "George Bernard Shaw",
+                "Henrik Ibsen",
+                "Samuel Beckett"
+              ],
+              "explanation": "Oscar Wilde's comedy premiered in 1895 and satirizes social conventions in late Victorian England."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_13",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What legal writ requires authorities to justify a person's detention before a court?",
+              "a": "Habeas corpus",
+              "options": [
+                "Habeas corpus",
+                "Mandamus",
+                "Certiorari",
+                "Injunction"
+              ],
+              "explanation": "Habeas corpus is a safeguard against unlawful detention by requiring judicial review of custody."
+            },
+            {
+              "type": "true-false",
+              "q": "Euler's identity can be written as e^(i*pi) + 1 = 0.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "This identity links the constants e, i, pi, 1, and 0 in one equation and follows from Euler's formula."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which current is the northeastward extension of the Gulf Stream across the Atlantic?",
+              "a": "North Atlantic Drift",
+              "options": [
+                "North Atlantic Drift",
+                "Canary Current",
+                "Labrador Current",
+                "Benguela Current"
+              ],
+              "explanation": "The North Atlantic Drift transports relatively warm water toward western Europe."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which political philosopher introduced the veil of ignorance thought experiment?",
+              "a": "John Rawls",
+              "options": [
+                "John Rawls",
+                "Robert Nozick",
+                "Thomas Hobbes",
+                "Jean-Jacques Rousseau"
+              ],
+              "explanation": "Rawls presented the veil of ignorance in A Theory of Justice as a way to reason about fair principles."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which equation gives photon energy as Planck's constant times frequency?",
+              "a": "E = h nu",
+              "options": [
+                "E = h nu",
+                "F = ma",
+                "PV = nRT",
+                "V = IR"
+              ],
+              "explanation": "In quantum physics, photon energy is proportional to frequency, with Planck's constant as the proportionality factor."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which Roman emperor issued the Edict of Milan in 313 CE with Licinius?",
+              "a": "Constantine I",
+              "options": [
+                "Constantine I",
+                "Theodosius I",
+                "Diocletian",
+                "Hadrian"
+              ],
+              "explanation": "The Edict of Milan granted legal tolerance for Christianity in the Roman Empire after earlier persecutions."
+            },
+            {
+              "type": "true-false",
+              "q": "The Congress of Vienna began after Napoleon's final defeat at Waterloo.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The congress began in 1814, while Waterloo occurred in June 1815."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What linguistic term describes a word formed by combining parts of two words, such as brunch?",
+              "a": "Blend",
+              "options": [
+                "Blend",
+                "Anagram",
+                "Palindrome",
+                "Euphemism"
+              ],
+              "explanation": "A blend compresses source words into a new form, unlike compounds that usually retain complete word units."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What industrial process synthesizes ammonia from nitrogen and hydrogen under high pressure?",
+              "a": "Haber-Bosch process",
+              "options": [
+                "Haber-Bosch process",
+                "Contact process",
+                "Hall-Heroult process",
+                "Bessemer process"
+              ],
+              "explanation": "The Haber-Bosch process enabled large-scale fertilizer production and significantly increased global food output."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What stellar classification best describes the Sun?",
+              "a": "G-type main-sequence star",
+              "options": [
+                "G-type main-sequence star",
+                "Red giant",
+                "White dwarf",
+                "Neutron star"
+              ],
+              "explanation": "The Sun is a main-sequence star of spectral type G2V and is still fusing hydrogen in its core."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

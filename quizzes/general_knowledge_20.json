@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_20",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_20",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What tool is used to pound nails into wood?",
+              "a": "Hammer",
+              "options": [
+                "Hammer",
+                "Wrench",
+                "Saw",
+                "Level"
+              ],
+              "explanation": "Most hammers have a flat striking face, and many claw hammers also have a split end for pulling nails."
+            },
+            {
+              "type": "true-false",
+              "q": "Iceland lies in the North Atlantic Ocean.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The island sits between Greenland, Norway, and the British Isles near the meeting of North Atlantic and Arctic waters."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which continent is home to the Nile River?",
+              "a": "Africa",
+              "options": [
+                "Africa",
+                "Asia",
+                "Europe",
+                "South America"
+              ],
+              "explanation": "The Nile flows north through northeastern Africa and empties into the Mediterranean Sea."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What material are most drinking glasses and many windows made from?",
+              "a": "Glass",
+              "options": [
+                "Glass",
+                "Clay",
+                "Wool",
+                "Rubber"
+              ],
+              "explanation": "Common glass is produced by heating silica-rich materials until they melt and then cool into a rigid transparent solid."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What sign of the zodiac is represented by a crab?",
+              "a": "Cancer",
+              "options": [
+                "Cancer",
+                "Leo",
+                "Aries",
+                "Libra"
+              ],
+              "explanation": "Cancer is one of the twelve zodiac signs and is traditionally associated with dates from late June to late July."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What vehicle has two wheels and is powered by pedaling?",
+              "a": "Bicycle",
+              "options": [
+                "Bicycle",
+                "Scooter",
+                "Skateboard",
+                "Wheelbarrow"
+              ],
+              "explanation": "Modern bicycles became widespread in the late nineteenth century and remain a common form of personal transport."
+            },
+            {
+              "type": "true-false",
+              "q": "The national flag of Japan features a red circle.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The flag, called the Nisshoki or Hinomaru, represents the sun with a centered crimson disc on a white field."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What kind of home is traditionally made from blocks of packed snow?",
+              "a": "Igloo",
+              "options": [
+                "Igloo",
+                "Barn",
+                "Pagoda",
+                "Cottage"
+              ],
+              "explanation": "Igloos are associated with Arctic peoples and can provide effective insulation against extreme cold."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What insect is often recognized by its red shell with black spots?",
+              "a": "Ladybug",
+              "options": [
+                "Ladybug",
+                "Dragonfly",
+                "Grasshopper",
+                "Firefly"
+              ],
+              "explanation": "Ladybugs are beetles, and many species are useful in gardens because they eat plant pests such as aphids."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What tree is known for producing acorns?",
+              "a": "Oak",
+              "options": [
+                "Oak",
+                "Pine",
+                "Maple",
+                "Willow"
+              ],
+              "explanation": "Oak trees support many ecosystems, and their acorns are an important food source for wildlife."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_20",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which cloud type is most strongly associated with thunderstorms?",
+              "a": "Cumulonimbus",
+              "options": [
+                "Cumulonimbus",
+                "Cirrus",
+                "Stratus",
+                "Altocumulus"
+              ],
+              "explanation": "Cumulonimbus clouds grow vertically through a deep layer of the atmosphere and can produce thunder, lightning, hail, and heavy rain."
+            },
+            {
+              "type": "true-false",
+              "q": "The Odyssey is traditionally attributed to Homer.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Ancient Greek tradition pairs Homer with both the Iliad and the Odyssey, though modern scholarship debates authorship details."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the general term for a grouped set of lines in a poem, often separated by a blank line?",
+              "a": "Stanza",
+              "options": [
+                "Stanza",
+                "Couplet",
+                "Sonnet",
+                "Enjambment"
+              ],
+              "explanation": "Poets use stanzas to organize rhythm and ideas, much as paragraphs organize prose."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which Roman emperor wrote the work now known as Meditations?",
+              "a": "Marcus Aurelius",
+              "options": [
+                "Marcus Aurelius",
+                "Trajan",
+                "Hadrian",
+                "Nero"
+              ],
+              "explanation": "Meditations was written as a series of personal reflections and is one of the best-known surviving texts of Stoic philosophy."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What visual signaling system uses standard flag positions to represent letters of the alphabet?",
+              "a": "Semaphore",
+              "options": [
+                "Semaphore",
+                "Braille",
+                "Morse code",
+                "Stenography"
+              ],
+              "explanation": "Semaphore lets a sender encode letters by holding two flags in specific positions, making it useful where distant visual communication is possible."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the point on Earth's surface directly above an earthquake's focus called?",
+              "a": "Epicenter",
+              "options": [
+                "Epicenter",
+                "Fault line",
+                "Ridge",
+                "Crater"
+              ],
+              "explanation": "The focus, or hypocenter, is underground where rupture begins, while the epicenter marks the position directly above it at the surface."
+            },
+            {
+              "type": "true-false",
+              "q": "The Caspian Sea is landlocked.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Despite its name, the Caspian has no natural outlet to the ocean and is bordered by five countries."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which Egyptian god of embalming and the afterlife is commonly shown with a jackal head?",
+              "a": "Anubis",
+              "options": [
+                "Anubis",
+                "Horus",
+                "Thoth",
+                "Osiris"
+              ],
+              "explanation": "Anubis was closely linked to mummification rites and the protection of the dead in ancient Egyptian belief."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the name of the tower attached to a mosque from which the call to prayer is traditionally given?",
+              "a": "Minaret",
+              "options": [
+                "Minaret",
+                "Nave",
+                "Cloister",
+                "Belfry"
+              ],
+              "explanation": "Minarets became a recognizable feature of mosque architecture and served both practical and symbolic purposes in Islamic cities."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What branch of astronomy studies the origin and evolution of the universe as a whole?",
+              "a": "Cosmology",
+              "options": [
+                "Cosmology",
+                "Seismology",
+                "Taxonomy",
+                "Optics"
+              ],
+              "explanation": "Cosmology examines questions such as the Big Bang, cosmic expansion, and the large-scale structure of the universe."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_20",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "In fencing, what convention determines which fencer has priority to score in foil and sabre?",
+              "a": "Right of way",
+              "options": [
+                "Right of way",
+                "Advantage rule",
+                "Sudden death",
+                "Neutral guard"
+              ],
+              "explanation": "The convention helps judges decide which touch counts when both fencers land nearly simultaneously."
+            },
+            {
+              "type": "true-false",
+              "q": "A sestina traditionally ends with a three-line envoi after six six-line stanzas.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The form is defined by an intricate end-word repetition pattern rather than by rhyme."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which Chinese dynasty ruled during Zheng He's treasure voyages?",
+              "a": "Ming dynasty",
+              "options": [
+                "Ming dynasty",
+                "Song dynasty",
+                "Yuan dynasty",
+                "Qing dynasty"
+              ],
+              "explanation": "Zheng He sailed in the early fifteenth century under emperors of the Ming dynasty."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which Persian poet wrote the Shahnameh?",
+              "a": "Ferdowsi",
+              "options": [
+                "Ferdowsi",
+                "Rumi",
+                "Hafez",
+                "Saadi"
+              ],
+              "explanation": "The Shahnameh, or Book of Kings, is one of the longest epic poems ever written by a single author."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "In chemistry, what name is given to compounds that share a molecular formula but differ in structure?",
+              "a": "Isomers",
+              "options": [
+                "Isomers",
+                "Catalysts",
+                "Allotropes",
+                "Polymers"
+              ],
+              "explanation": "Structural differences can give isomers different physical properties and very different biological effects."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What astronomical term describes the point on the celestial sphere directly above an observer?",
+              "a": "Zenith",
+              "options": [
+                "Zenith",
+                "Nadir",
+                "Aphelion",
+                "Perigee"
+              ],
+              "explanation": "The opposite point beneath the observer is the nadir, and both are defined relative to local position on Earth."
+            },
+            {
+              "type": "true-false",
+              "q": "The Hanseatic League was primarily a network of trading cities in northern Europe.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Its merchants dominated Baltic and North Sea trade for centuries through commercial privileges and mutual protection."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which painter created The Garden of Earthly Delights?",
+              "a": "Hieronymus Bosch",
+              "options": [
+                "Hieronymus Bosch",
+                "Pieter Bruegel the Elder",
+                "Jan van Eyck",
+                "El Greco"
+              ],
+              "explanation": "Bosch's triptych is famous for its dense symbolic imagery and is now housed in Madrid's Prado Museum."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which mathematician wrote Arithmetica, a work later linked to Fermat's Last Theorem?",
+              "a": "Diophantus",
+              "options": [
+                "Diophantus",
+                "Euclid",
+                "Archimedes",
+                "Pappus"
+              ],
+              "explanation": "Fermat wrote his famous marginal note beside a problem in a Latin edition of Arithmetica."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which dynasty commissioned the Terracotta Army for the tomb of China's first emperor?",
+              "a": "Qin dynasty",
+              "options": [
+                "Qin dynasty",
+                "Han dynasty",
+                "Tang dynasty",
+                "Song dynasty"
+              ],
+              "explanation": "The Terracotta Army was buried near the mausoleum of Qin Shi Huang in the third century BCE."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

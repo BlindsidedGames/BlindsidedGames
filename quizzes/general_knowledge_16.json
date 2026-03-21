@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_16",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_16",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which Greek goddess is associated with wisdom?",
+              "a": "Athena",
+              "options": [
+                "Athena",
+                "Hera",
+                "Demeter",
+                "Aphrodite"
+              ],
+              "explanation": "Athena was also the patron goddess of Athens, whose mythic naming contest she won against Poseidon."
+            },
+            {
+              "type": "true-false",
+              "q": "The Atlantic Ocean is the smallest ocean on Earth.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The Arctic Ocean is the smallest by surface area; the Atlantic is much larger."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What liquid from trees is boiled down to make maple syrup?",
+              "a": "Sap",
+              "options": [
+                "Sap",
+                "Nectar",
+                "Resin",
+                "Pulp"
+              ],
+              "explanation": "Maple syrup is usually made from sugar maple sap collected in late winter or early spring."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What do you call a short story that teaches a lesson, often using animals as characters?",
+              "a": "Fable",
+              "options": [
+                "Fable",
+                "Sonnet",
+                "Atlas",
+                "Memoir"
+              ],
+              "explanation": "Many classic fables are associated with Aesop and end with an explicit moral."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which sport uses the terms birdie and eagle?",
+              "a": "Golf",
+              "options": [
+                "Golf",
+                "Tennis",
+                "Cricket",
+                "Baseball"
+              ],
+              "explanation": "In golf, a birdie is one stroke under par on a hole and an eagle is two under par."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which clef is commonly used for lower-pitched notes in piano left-hand music?",
+              "a": "Bass clef",
+              "options": [
+                "Bass clef",
+                "Treble clef",
+                "Alto clef",
+                "Tenor clef"
+              ],
+              "explanation": "Standard piano notation usually pairs bass clef for the left hand with treble clef for the right."
+            },
+            {
+              "type": "true-false",
+              "q": "A regular hexagon has six equal sides.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "By definition, a regular hexagon has all sides equal and all interior angles equal."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What part of the body contains the hammer, anvil, and stirrup bones?",
+              "a": "Middle ear",
+              "options": [
+                "Middle ear",
+                "Elbow joint",
+                "Knee joint",
+                "Wrist"
+              ],
+              "explanation": "These three tiny ossicles help transmit sound vibrations, and they are the smallest bones in the human body."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the name of decorative handwriting often used on certificates and invitations?",
+              "a": "Calligraphy",
+              "options": [
+                "Calligraphy",
+                "Origami",
+                "Cartography",
+                "Typography"
+              ],
+              "explanation": "Calligraphy focuses on the artistic form of letters, and many traditions use broad or pointed pens for different stroke styles."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the hard outer covering of an insect called?",
+              "a": "Exoskeleton",
+              "options": [
+                "Exoskeleton",
+                "Endoskeleton",
+                "Carapace",
+                "Hide"
+              ],
+              "explanation": "An insect's exoskeleton protects the body, supports movement, and must be shed when the insect grows."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_16",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What term describes a batter striking out four times in one baseball game?",
+              "a": "Golden sombrero",
+              "options": [
+                "Golden sombrero",
+                "Cycle",
+                "Balk",
+                "Shutout"
+              ],
+              "explanation": "The expression extends the older term sombrero for three strikeouts in a game."
+            },
+            {
+              "type": "true-false",
+              "q": "ISO 8601 commonly represents calendar dates as year-month-day.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The standard extended form is YYYY-MM-DD, which sorts naturally in chronological order."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which dynasty followed the Tudors on the English throne in 1603?",
+              "a": "Stuart dynasty",
+              "options": [
+                "Stuart dynasty",
+                "Plantagenet dynasty",
+                "Hanover dynasty",
+                "York dynasty"
+              ],
+              "explanation": "The Stuart line began when James VI of Scotland also became James I of England, uniting the crowns."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What architectural term describes a sculpted female figure used as a supporting column?",
+              "a": "Caryatid",
+              "options": [
+                "Caryatid",
+                "Gargoyle",
+                "Fresco",
+                "Pilaster"
+              ],
+              "explanation": "The most famous caryatids are found on the Erechtheion on the Acropolis in Athens."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which United States Supreme Court case ended legally mandated racial segregation in public schools?",
+              "a": "Brown v. Board of Education",
+              "options": [
+                "Brown v. Board of Education",
+                "Plessy v. Ferguson",
+                "Miranda v. Arizona",
+                "Roe v. Wade"
+              ],
+              "explanation": "The Court ruled in 1954 that separate educational facilities are inherently unequal, overturning school segregation doctrine."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What process describes water vapor leaving a plant through tiny openings in its leaves?",
+              "a": "Transpiration",
+              "options": [
+                "Transpiration",
+                "Germination",
+                "Fermentation",
+                "Pollination"
+              ],
+              "explanation": "Most transpiration happens through stomata, and the process helps pull water upward from a plant's roots."
+            },
+            {
+              "type": "true-false",
+              "q": "The Great Barrier Reef lies in the Indian Ocean.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The reef system is off Queensland in the Coral Sea, which is part of the Pacific Ocean basin."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which empire built the Andean road network known as the Qhapaq Nan?",
+              "a": "Inca Empire",
+              "options": [
+                "Inca Empire",
+                "Aztec Empire",
+                "Maya civilization",
+                "Moche culture"
+              ],
+              "explanation": "The Qhapaq Nan linked settlements across the Andes and supported administration across the Inca state."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which painting by Edvard Munch shows a figure clutching its face beneath a swirling sky?",
+              "a": "The Scream",
+              "options": [
+                "The Scream",
+                "The Kiss",
+                "Girl with a Pearl Earring",
+                "The Gleaners"
+              ],
+              "explanation": "Munch created several versions of The Scream, including painted and pastel versions from the 1890s."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which sport uses terms such as scrum, try, and conversion?",
+              "a": "Rugby union",
+              "options": [
+                "Rugby union",
+                "Field hockey",
+                "Water polo",
+                "Lacrosse"
+              ],
+              "explanation": "A try is the main scoring play in rugby union, and the conversion kick follows a successful grounding of the ball."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_16",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What term denotes a word in two languages that shares a common origin and similar meaning?",
+              "a": "Cognate",
+              "options": [
+                "Cognate",
+                "Idiom",
+                "Shibboleth",
+                "Epithet"
+              ],
+              "explanation": "Cognates can help reveal language families, although some similar-looking words are false friends rather than true cognates."
+            },
+            {
+              "type": "true-false",
+              "q": "In Roman numerals, L represents 100.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "L is 50 in Roman numerals, while C is 100."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What orbital type has angular momentum quantum number l = 3?",
+              "a": "f orbital",
+              "options": [
+                "p orbital",
+                "d orbital",
+                "f orbital",
+                "g orbital"
+              ],
+              "explanation": "The familiar sequence is s, p, d, then f, and each higher orbital type allows more complex shapes and more electrons across a subshell."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What doctrine bars a person from being tried twice for the same offense in the same jurisdiction?",
+              "a": "Double jeopardy",
+              "options": [
+                "Double jeopardy",
+                "Strict scrutiny",
+                "Promissory estoppel",
+                "Res judicata"
+              ],
+              "explanation": "The principle limits repeated prosecution for the same offense, though its exact scope depends on the legal system involved."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What name is given to a star that suddenly brightens because of a thermonuclear eruption on a white dwarf's surface?",
+              "a": "Nova",
+              "options": [
+                "Nova",
+                "Nebula",
+                "Pulsar",
+                "Quasar"
+              ],
+              "explanation": "In a typical nova system, a white dwarf pulls matter from a companion star until surface fusion flares dramatically."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which writer created the character Leopold Bloom?",
+              "a": "James Joyce",
+              "options": [
+                "James Joyce",
+                "Samuel Beckett",
+                "W. B. Yeats",
+                "Seamus Heaney"
+              ],
+              "explanation": "Leopold Bloom is the central figure of Ulysses, Joyce's modernist novel set during a single day in Dublin."
+            },
+            {
+              "type": "true-false",
+              "q": "Godel's first incompleteness theorem applies to sufficiently expressive formal systems.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "It states that any consistent formal system rich enough for arithmetic contains true statements that cannot be proven within the system."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What structural curve is traced by an ideal hanging chain and often referenced in arch design?",
+              "a": "Catenary",
+              "options": [
+                "Parabola",
+                "Ellipse",
+                "Catenary",
+                "Cycloid"
+              ],
+              "explanation": "A catenary describes the natural curve of a flexible chain under its own weight when supported at both ends."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the term for a recurring orchestral passage in Baroque concerto form?",
+              "a": "Ritornello",
+              "options": [
+                "Ritornello",
+                "Cadenza",
+                "Appoggiatura",
+                "Recitative"
+              ],
+              "explanation": "In ritornello form, the recurring orchestral material alternates with contrasting solo episodes."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What name is given to molecules that are non-superimposable mirror images of each other?",
+              "a": "Enantiomers",
+              "options": [
+                "Enantiomers",
+                "Isotopes",
+                "Polymers",
+                "Colloids"
+              ],
+              "explanation": "Enantiomers often behave differently in biological systems because many biomolecules are themselves chiral."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

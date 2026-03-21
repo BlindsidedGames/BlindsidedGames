@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_27",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_27",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What do you call a baby kangaroo?",
+              "a": "Joey",
+              "options": [
+                "Joey",
+                "Cub",
+                "Chick",
+                "Fawn"
+              ],
+              "explanation": "A joey develops first in its mother's womb and then continues growing in the pouch after birth."
+            },
+            {
+              "type": "true-false",
+              "q": "A square has five sides.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "A square is a four-sided polygon with all sides equal and all interior angles at 90 degrees."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What piece of safety gear protects a worker's head on a construction site?",
+              "a": "Hard hat",
+              "options": [
+                "Hard hat",
+                "Safety goggles",
+                "Work gloves",
+                "Steel-toe boots"
+              ],
+              "explanation": "Hard hats are designed to reduce injury from falling objects and other head impacts on building sites."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What card game uses terms such as hit, stand, and bust?",
+              "a": "Blackjack",
+              "options": [
+                "Blackjack",
+                "Bridge",
+                "Gin rummy",
+                "Canasta"
+              ],
+              "explanation": "Blackjack players try to reach 21 without going over, while beating the dealer's hand."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which author created Winnie-the-Pooh?",
+              "a": "A. A. Milne",
+              "options": [
+                "A. A. Milne",
+                "Beatrix Potter",
+                "Kenneth Grahame",
+                "C. S. Lewis"
+              ],
+              "explanation": "Milne based the Pooh stories partly on the stuffed animals belonging to his son Christopher Robin."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What animal is famous for changing color to help it blend with surroundings?",
+              "a": "Chameleon",
+              "options": [
+                "Chameleon",
+                "Iguana",
+                "Koala",
+                "Penguin"
+              ],
+              "explanation": "Chameleons can shift skin color for camouflage, temperature regulation, and communication."
+            },
+            {
+              "type": "true-false",
+              "q": "Sharks are fish.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Sharks are fish with skeletons made of cartilage rather than bone, but they still belong to the fish group."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What heavy object is dropped from a ship to hold it in place?",
+              "a": "Anchor",
+              "options": [
+                "Anchor",
+                "Mast",
+                "Rudder",
+                "Buoy"
+              ],
+              "explanation": "An anchor grips the seabed so a vessel can remain in one place instead of drifting with wind or current."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What tool with rungs is used for climbing up to a roof or high shelf?",
+              "a": "Ladder",
+              "options": [
+                "Ladder",
+                "Shovel",
+                "Anvil",
+                "Trowel"
+              ],
+              "explanation": "A ladder provides spaced rungs or steps so a person can climb safely to a higher level."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What device measures short intervals of time with sand flowing between two glass bulbs?",
+              "a": "Hourglass",
+              "options": [
+                "Hourglass",
+                "Compass",
+                "Lantern",
+                "Thermostat"
+              ],
+              "explanation": "An hourglass tracks time as sand falls at a steady rate from one bulb to the other."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_27",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which color model do most computer screens use to display images?",
+              "a": "RGB",
+              "options": [
+                "RGB",
+                "CMYK",
+                "Pantone",
+                "Grayscale"
+              ],
+              "explanation": "Screens emit light, so they build color additively with red, green, and blue rather than mixing inks on paper."
+            },
+            {
+              "type": "true-false",
+              "q": "A kilometer is longer than a mile.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "A mile is about {{measure|1.60934|km|2}}, so a kilometer is shorter than a mile."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What was the capital of the Aztec Empire on the site of present-day Mexico City?",
+              "a": "Tenochtitlan",
+              "options": [
+                "Tenochtitlan",
+                "Teotihuacan",
+                "Cusco",
+                "Chichen Itza"
+              ],
+              "explanation": "Tenochtitlan stood on an island in Lake Texcoco and was joined to the mainland by causeways before the Spanish conquest."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which strait separates Sicily from mainland Italy?",
+              "a": "Strait of Messina",
+              "options": [
+                "Strait of Messina",
+                "Strait of Otranto",
+                "Strait of Gibraltar",
+                "Bosporus"
+              ],
+              "explanation": "The Strait of Messina is a narrow channel between northeastern Sicily and Calabria at the toe of Italy's mainland."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What legal order requires a person to appear in court or produce documents?",
+              "a": "Subpoena",
+              "options": [
+                "Subpoena",
+                "Summons",
+                "Warrant",
+                "Injunction"
+              ],
+              "explanation": "A subpoena can compel testimony or documents, and ignoring one can lead to penalties for contempt of court."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which painter created The Birth of Venus?",
+              "a": "Sandro Botticelli",
+              "options": [
+                "Sandro Botticelli",
+                "Titian",
+                "Raphael",
+                "Caravaggio"
+              ],
+              "explanation": "Botticelli's painting of Venus emerging from the sea is one of the most famous works of the Italian Renaissance."
+            },
+            {
+              "type": "true-false",
+              "q": "Saturn is the only planet with rings.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Jupiter, Uranus, and Neptune also have ring systems, although Saturn's are the most prominent."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What instrument measures the angle between a celestial object and the horizon for navigation?",
+              "a": "Sextant",
+              "options": [
+                "Sextant",
+                "Barometer",
+                "Theodolite",
+                "Astrolabe"
+              ],
+              "explanation": "Navigators use a sextant with time data to help determine position at sea by measuring celestial angles."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which engineer designed the internal framework of the Statue of Liberty?",
+              "a": "Gustave Eiffel",
+              "options": [
+                "Gustave Eiffel",
+                "Isambard Kingdom Brunel",
+                "Joseph Paxton",
+                "Alexandre Dumas"
+              ],
+              "explanation": "Before his tower made him famous worldwide, Eiffel contributed the iron support structure inside the Statue of Liberty."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which gulf lies between the Baja California Peninsula and mainland Mexico?",
+              "a": "Gulf of California",
+              "options": [
+                "Gulf of California",
+                "Gulf of Mexico",
+                "Gulf of Aden",
+                "Gulf of Bothnia"
+              ],
+              "explanation": "The Gulf of California, also called the Sea of Cortez, separates the Baja California Peninsula from the Mexican mainland."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_27",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What branch of linguistics studies meaning in words and sentences?",
+              "a": "Semantics",
+              "options": [
+                "Semantics",
+                "Syntax",
+                "Phonology",
+                "Orthography"
+              ],
+              "explanation": "Semantics examines meaning, while syntax focuses on structure and pragmatics considers meaning in context and use."
+            },
+            {
+              "type": "true-false",
+              "q": "The empty set is a subset of every set.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "In set theory, there is no element in the empty set that could violate the condition for being a subset."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What type of galaxy is the Milky Way commonly classified as?",
+              "a": "Barred spiral galaxy",
+              "options": [
+                "Barred spiral galaxy",
+                "Elliptical galaxy",
+                "Irregular galaxy",
+                "Lenticular galaxy"
+              ],
+              "explanation": "Astronomers classify the Milky Way as a spiral galaxy with a central bar-shaped structure crossing its bulge."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What grammatical case commonly marks the indirect object in Latin?",
+              "a": "Dative",
+              "options": [
+                "Dative",
+                "Genitive",
+                "Ablative",
+                "Vocative"
+              ],
+              "explanation": "The dative case in Latin often marks the recipient or beneficiary of an action rather than the direct object."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What philosophical school was founded by Zeno of Citium?",
+              "a": "Stoicism",
+              "options": [
+                "Stoicism",
+                "Epicureanism",
+                "Skepticism",
+                "Empiricism"
+              ],
+              "explanation": "Stoicism began in Athens and later shaped Roman thinkers such as Seneca, Epictetus, and Marcus Aurelius."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which political work by Niccolo Machiavelli offers advice to rulers on power and statecraft?",
+              "a": "The Prince",
+              "options": [
+                "The Prince",
+                "Utopia",
+                "The Social Contract",
+                "Leviathan"
+              ],
+              "explanation": "Written in the early sixteenth century, The Prince became one of the most debated works of political theory in Europe."
+            },
+            {
+              "type": "true-false",
+              "q": "Every continuous function is differentiable.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "A function can be continuous everywhere yet fail to have a derivative at some points, as with the absolute value function at zero."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What legal term describes a law that punishes an act retroactively?",
+              "a": "Ex post facto law",
+              "options": [
+                "Ex post facto law",
+                "Injunction",
+                "Subpoena",
+                "Res judicata"
+              ],
+              "explanation": "Ex post facto laws are generally prohibited in many legal systems because they punish conduct that was not illegal when it occurred."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What theological term refers to God becoming human in Jesus Christ?",
+              "a": "Incarnation",
+              "options": [
+                "Incarnation",
+                "Atonement",
+                "Predestination",
+                "Transubstantiation"
+              ],
+              "explanation": "In Christian theology, the Incarnation refers to the Word taking on human nature in the person of Jesus."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What manuscript discovery near Qumran included ancient Jewish texts on scrolls?",
+              "a": "Dead Sea Scrolls",
+              "options": [
+                "Dead Sea Scrolls",
+                "Nag Hammadi library",
+                "Rosetta Stone",
+                "Book of Kells"
+              ],
+              "explanation": "The Dead Sea Scrolls were found in caves near Qumran and include biblical manuscripts and other Second Temple texts."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

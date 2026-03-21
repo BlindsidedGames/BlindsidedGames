@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_14",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_14",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which ocean lies between Africa and Australia?",
+              "a": "Indian Ocean",
+              "options": [
+                "Indian Ocean",
+                "Atlantic Ocean",
+                "Arctic Ocean",
+                "Southern Ocean"
+              ],
+              "explanation": "The Indian Ocean is the world's third-largest ocean, bounded by Africa, Asia, Australia, and the Southern Ocean."
+            },
+            {
+              "type": "true-false",
+              "q": "The Roman numeral X represents ten.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Roman numerals use letters for values, and X is the symbol for 10."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What term describes animals that eat both plants and animals?",
+              "a": "Omnivores",
+              "options": [
+                "Omnivores",
+                "Herbivores",
+                "Carnivores",
+                "Detritivores"
+              ],
+              "explanation": "Omnivores have diets that can include plant matter and animal matter, with proportions varying by species."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What word describes a term formed by rearranging the letters of another word?",
+              "a": "Anagram",
+              "options": [
+                "Anagram",
+                "Palindrome",
+                "Acronym",
+                "Synonym"
+              ],
+              "explanation": "Anagrams use exactly the same letters as the source word but in a different order, such as listen and silent."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What type of animal is a Komodo dragon?",
+              "a": "Lizard",
+              "options": [
+                "Snake",
+                "Lizard",
+                "Crocodile",
+                "Turtle"
+              ],
+              "explanation": "The Komodo dragon is the largest living lizard and is native to a small group of Indonesian islands."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What craft uses a hooked tool to pull loops of yarn into fabric?",
+              "a": "Crochet",
+              "options": [
+                "Embroidery",
+                "Crochet",
+                "Weaving",
+                "Quilting"
+              ],
+              "explanation": "Crochet is commonly worked with a single hook, unlike knitting, which usually uses needles to hold multiple live stitches."
+            },
+            {
+              "type": "true-false",
+              "q": "A dozen means twelve items.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Dozen is a counting unit equal to 12 and is commonly used for foods and packaged goods."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which company launched the Game Boy handheld console?",
+              "a": "Nintendo",
+              "options": [
+                "Atari",
+                "Sony",
+                "Nintendo",
+                "Sega"
+              ],
+              "explanation": "Nintendo released the original Game Boy in 1989, and its long battery life helped it stand out against rival handhelds."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which ancient wonder stood on the island of Rhodes?",
+              "a": "Colossus of Rhodes",
+              "options": [
+                "Lighthouse of Alexandria",
+                "Colossus of Rhodes",
+                "Hanging Gardens of Babylon",
+                "Temple of Artemis"
+              ],
+              "explanation": "The Colossus was a giant bronze statue associated with the harbor of Rhodes and was toppled by an earthquake in antiquity."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What are accent marks such as the one in cafe called?",
+              "a": "Diacritics",
+              "options": [
+                "Ligatures",
+                "Diacritics",
+                "Initialisms",
+                "Digraphs"
+              ],
+              "explanation": "Diacritics can change pronunciation, stress, or meaning, and many languages use them far more regularly than English."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_14",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which empire used satraps as provincial governors?",
+              "a": "Achaemenid Empire",
+              "options": [
+                "Roman Empire",
+                "Achaemenid Empire",
+                "Ottoman Empire",
+                "Mughal Empire"
+              ],
+              "explanation": "The Persian Empire divided its territory into satrapies, allowing local administration while the central court kept overall control."
+            },
+            {
+              "type": "true-false",
+              "q": "A standard concert flute is pitched in C.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Most orchestral flutes are non-transposing C instruments, unlike common transposing clarinets."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which strait separates Tasmania from mainland Australia?",
+              "a": "Bass Strait",
+              "options": [
+                "Torres Strait",
+                "Cook Strait",
+                "Bass Strait",
+                "Bering Strait"
+              ],
+              "explanation": "Bass Strait lies between Tasmania and Victoria, and its shallow waters can combine with rough weather to produce very challenging seas."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which novelist created the detective Inspector Morse?",
+              "a": "Colin Dexter",
+              "options": [
+                "Ruth Rendell",
+                "P. D. James",
+                "Ian Rankin",
+                "Colin Dexter"
+              ],
+              "explanation": "Inspector Morse first appeared in Colin Dexter's novel Last Bus to Woodstock before the television series made the character internationally famous."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which punctuation mark can join two independent clauses without a conjunction?",
+              "a": "Semicolon",
+              "options": [
+                "Colon",
+                "Semicolon",
+                "Apostrophe",
+                "Hyphen"
+              ],
+              "explanation": "A semicolon links closely related clauses while keeping them grammatically separate, creating a softer break than a full stop."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What Italian dessert is layered with mascarpone and commonly flavored with coffee?",
+              "a": "Tiramisu",
+              "options": [
+                "Cannoli",
+                "Panna cotta",
+                "Tiramisu",
+                "Zabaglione"
+              ],
+              "explanation": "The name tiramisu is often translated as \"pick me up,\" reflecting the dessert's combination of coffee and sweet cream."
+            },
+            {
+              "type": "true-false",
+              "q": "Neptune was discovered before Uranus.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Uranus was identified as a planet in 1781, while Neptune was discovered later in 1846."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What image file format uses lossless compression and supports transparent backgrounds in web graphics?",
+              "a": "PNG",
+              "options": [
+                "JPEG",
+                "PNG",
+                "BMP",
+                "TIFF"
+              ],
+              "explanation": "PNG was introduced in the 1990s as a patent-free alternative to GIF and became a standard format for sharp web images with transparency."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which African lake is the source of the Blue Nile?",
+              "a": "Lake Tana",
+              "options": [
+                "Lake Tanganyika",
+                "Lake Victoria",
+                "Lake Tana",
+                "Lake Malawi"
+              ],
+              "explanation": "The Blue Nile begins at Lake Tana in Ethiopia and supplies most of the Nile's water during the rainy season."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which Italian word tells musicians to gradually get louder?",
+              "a": "Crescendo",
+              "options": [
+                "Legato",
+                "Staccato",
+                "Crescendo",
+                "Adagio"
+              ],
+              "explanation": "Crescendo describes a gradual increase in volume and is often shown in notation with a widening wedge."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_14",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What term names the angle between true north and magnetic north at a location?",
+              "a": "Magnetic declination",
+              "options": [
+                "Magnetic declination",
+                "Axial precession",
+                "Magnetic inclination",
+                "Solar azimuth"
+              ],
+              "explanation": "Magnetic declination varies by place and time, so navigational charts include updates to keep bearings accurate."
+            },
+            {
+              "type": "true-false",
+              "q": "In binary notation, decimal 10 is written as 1010.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The binary place values of 8 and 2 sum to 10, which gives the representation 1010."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What logical fallacy assumes that because one event follows another, the first event caused the second?",
+              "a": "Post hoc ergo propter hoc",
+              "options": [
+                "Post hoc ergo propter hoc",
+                "Straw man",
+                "False dilemma",
+                "Begging the question"
+              ],
+              "explanation": "This fallacy mistakes sequence for causation and appears frequently in weak historical and scientific arguments."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What paradox concerns the set of all sets that do not contain themselves?",
+              "a": "Russell's paradox",
+              "options": [
+                "Russell's paradox",
+                "Banach-Tarski paradox",
+                "Monty Hall problem",
+                "Simpson's paradox"
+              ],
+              "explanation": "Russell's paradox exposed contradictions in naive set theory and motivated more formal axiomatic systems."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which reaction adds hydrogen across a carbon-carbon double bond to form an alkane?",
+              "a": "Hydrogenation",
+              "options": [
+                "Hydrogenation",
+                "Hydrolysis",
+                "Halogenation",
+                "Esterification"
+              ],
+              "explanation": "Catalytic hydrogenation converts unsaturated hydrocarbons to saturated ones using hydrogen gas and a metal catalyst."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which coefficient summarizes income inequality on a scale from 0 to 1?",
+              "a": "Gini coefficient",
+              "options": [
+                "Gini coefficient",
+                "Lorenz index",
+                "Okun coefficient",
+                "Atkinson ratio"
+              ],
+              "explanation": "A Gini coefficient of 0 represents perfect equality, while values closer to 1 indicate greater inequality."
+            },
+            {
+              "type": "true-false",
+              "q": "Avogadro's number is approximately 6.022 times ten to the power of 23 per mole.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "This constant gives the number of entities in one mole and is central to stoichiometric calculations."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which Byzantine emperor ordered the codification known as the Corpus Juris Civilis?",
+              "a": "Justinian I",
+              "options": [
+                "Justinian I",
+                "Heraclius",
+                "Basil II",
+                "Constantine XI"
+              ],
+              "explanation": "Justinian's legal compilation in the 6th century became foundational for later civil law traditions."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which speech sound category is produced without vocal fold vibration?",
+              "a": "Voiceless consonants",
+              "options": [
+                "Voiceless consonants",
+                "Voiced consonants",
+                "Diphthongs",
+                "Nasal vowels"
+              ],
+              "explanation": "Voiceless consonants such as /p/ and /s/ are articulated without vibrating the vocal folds."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which tuning system divides an octave into 12 equal semitone steps?",
+              "a": "Equal temperament",
+              "options": [
+                "Equal temperament",
+                "Just intonation",
+                "Pythagorean tuning",
+                "Meantone temperament"
+              ],
+              "explanation": "Modern keyboard instruments are usually tuned in 12-tone equal temperament, making intervals consistent across keys."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

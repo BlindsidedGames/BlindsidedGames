@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_15",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_15",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which seed is ground to make tahini?",
+              "a": "Sesame",
+              "options": [
+                "Sesame",
+                "Sunflower",
+                "Mustard",
+                "Poppy"
+              ],
+              "explanation": "Tahini is a smooth paste made from sesame seeds and is a key ingredient in foods such as hummus and halva."
+            },
+            {
+              "type": "true-false",
+              "q": "Lightning is seen before thunder is heard because light travels faster than sound.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Light reaches observers almost instantly over typical storm distances, while sound waves move much more slowly through air."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "In bowling, what is the name for three strikes in a row?",
+              "a": "Turkey",
+              "options": [
+                "Spare",
+                "Turkey",
+                "Split",
+                "Frame"
+              ],
+              "explanation": "The term turkey is an old prize-based nickname that stuck long after actual holiday birds stopped being awarded."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What spice is made from dried flower buds of a tropical tree?",
+              "a": "Cloves",
+              "options": [
+                "Cloves",
+                "Paprika",
+                "Cumin",
+                "Pepper"
+              ],
+              "explanation": "Cloves come from the flower buds of an evergreen tree in the myrtle family and have a strong, warm flavor used in both sweet and savory dishes."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What art technique arranges cut or torn paper pieces onto a surface to make an image?",
+              "a": "Collage",
+              "options": [
+                "Mosaic",
+                "Collage",
+                "Origami",
+                "Fresco"
+              ],
+              "explanation": "Collage became especially prominent in early twentieth-century modern art, where artists combined paper with photographs, labels, and other materials."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which explorer is associated with the first expedition to circumnavigate the globe, even though he died before it was completed?",
+              "a": "Ferdinand Magellan",
+              "options": [
+                "Christopher Columbus",
+                "James Cook",
+                "Ferdinand Magellan",
+                "Vasco da Gama"
+              ],
+              "explanation": "Magellan did not survive the voyage, but the expedition he began completed the first recorded circumnavigation in 1522."
+            },
+            {
+              "type": "true-false",
+              "q": "Bananas are classified as berries in botanical terms.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "In botany, berries develop from a single ovary and can contain multiple seeds, which includes bananas."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which company created the Walkman portable cassette player?",
+              "a": "Sony",
+              "options": [
+                "Philips",
+                "Sony",
+                "Panasonic",
+                "Toshiba"
+              ],
+              "explanation": "Sony's Walkman line helped make personal portable music listening a global habit long before digital players appeared."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What do you call a person who translates spoken language in real time?",
+              "a": "Interpreter",
+              "options": [
+                "Interpreter",
+                "Editor",
+                "Publisher",
+                "Archivist"
+              ],
+              "explanation": "Interpreters work with spoken language, while translators usually work with written text."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What plant tissue carries water from the roots to the leaves?",
+              "a": "Xylem",
+              "options": [
+                "Phloem",
+                "Xylem",
+                "Pollen",
+                "Cambium"
+              ],
+              "explanation": "Xylem moves water and dissolved minerals upward, while phloem mainly distributes sugars made by photosynthesis."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_15",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What fermented Korean side dish is commonly made from napa cabbage and chili?",
+              "a": "Kimchi",
+              "options": [
+                "Kimchi",
+                "Tempura",
+                "Miso",
+                "Pho"
+              ],
+              "explanation": "Kimchi has many regional varieties, but cabbage-based versions seasoned with chili are among the most widely known."
+            },
+            {
+              "type": "true-false",
+              "q": "The metric prefix kilo means one hundred.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "In SI units, kilo denotes a factor of one thousand, while hecto denotes one hundred."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What term describes a word borrowed from another language?",
+              "a": "Loanword",
+              "options": [
+                "Loanword",
+                "Palindrome",
+                "Couplet",
+                "Homograph"
+              ],
+              "explanation": "English contains many loanwords, ranging from algebra and karaoke to bungalow and safari."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What name is given to the line dividing Earth's daylight side from its night side at a given moment?",
+              "a": "Terminator",
+              "options": [
+                "Zenith",
+                "Equinox",
+                "Terminator",
+                "Meridian"
+              ],
+              "explanation": "Astronomers use terminator for the moving boundary between light and darkness on a planetary body."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which novelist created the spy George Smiley?",
+              "a": "John le Carre",
+              "options": [
+                "Ian Fleming",
+                "John le Carre",
+                "Frederick Forsyth",
+                "Graham Greene"
+              ],
+              "explanation": "George Smiley appears across several of le Carre's Cold War novels, including Tinker Tailor Soldier Spy."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What web image format stands for Scalable Vector Graphics?",
+              "a": "SVG",
+              "options": [
+                "GIF",
+                "PNG",
+                "SVG",
+                "WebP"
+              ],
+              "explanation": "Because SVG stores shapes and paths as vectors rather than pixels, it can scale cleanly without becoming blurry."
+            },
+            {
+              "type": "true-false",
+              "q": "Pure water has a pH of 7 at 25 degrees Celsius.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "At standard laboratory temperature, pure water is neutral because hydrogen and hydroxide ion concentrations are equal."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What universal character standard is used in computing to encode scripts such as Arabic, Devanagari, and Korean?",
+              "a": "Unicode",
+              "options": [
+                "Unicode",
+                "ASCII",
+                "Boolean logic",
+                "Ethernet"
+              ],
+              "explanation": "Unicode assigns code points to characters so the same text can be represented consistently across platforms and languages."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which playwright wrote The Cherry Orchard?",
+              "a": "Anton Chekhov",
+              "options": [
+                "Anton Chekhov",
+                "Henrik Ibsen",
+                "George Bernard Shaw",
+                "August Strindberg"
+              ],
+              "explanation": "The Cherry Orchard premiered in 1904 and was the last play Chekhov completed."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What term describes a written statement confirmed by oath for use as evidence?",
+              "a": "Affidavit",
+              "options": [
+                "Affidavit",
+                "Indictment",
+                "Injunction",
+                "Verdict"
+              ],
+              "explanation": "Affidavits are commonly used in court filings and administrative proceedings when formal sworn testimony is not taken in person."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_15",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which musical mode matches a natural minor scale with a raised sixth degree?",
+              "a": "Dorian",
+              "options": [
+                "Phrygian",
+                "Mixolydian",
+                "Dorian",
+                "Locrian"
+              ],
+              "explanation": "Dorian often appears in folk and jazz because the raised sixth gives it a brighter color than the natural minor."
+            },
+            {
+              "type": "true-false",
+              "q": "The Sargasso Sea is defined by surrounding ocean currents rather than coastlines.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Unlike most seas, the Sargasso Sea lies in the North Atlantic and is bounded mainly by circulating currents."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What boundary marks the point around a black hole beyond which light cannot escape?",
+              "a": "Event horizon",
+              "options": [
+                "Roche limit",
+                "Photon sphere",
+                "Magnetopause",
+                "Event horizon"
+              ],
+              "explanation": "An event horizon is not a solid surface; it is the threshold beyond which every future path leads inward."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which philosopher wrote Discourse on Method?",
+              "a": "Rene Descartes",
+              "options": [
+                "Baruch Spinoza",
+                "David Hume",
+                "Rene Descartes",
+                "John Locke"
+              ],
+              "explanation": "Descartes published Discourse on Method in 1637 as a preface to scientific essays, linking philosophical method with mathematical reasoning."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What principle in contract law requires that something of value be exchanged between parties?",
+              "a": "Consideration",
+              "options": [
+                "Estoppel",
+                "Consideration",
+                "Indemnity",
+                "Novation"
+              ],
+              "explanation": "Under common-law contract doctrine, consideration is the bargained-for exchange that distinguishes an enforceable promise from a mere gift."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which novelist created the fictional Yoknapatawpha County?",
+              "a": "William Faulkner",
+              "options": [
+                "William Faulkner",
+                "Thomas Wolfe",
+                "Sinclair Lewis",
+                "Sherwood Anderson"
+              ],
+              "explanation": "Faulkner returned to Yoknapatawpha across novels and stories, turning the county into a richly layered fictional version of Mississippi."
+            },
+            {
+              "type": "true-false",
+              "q": "In SQL, an INNER JOIN returns all rows from the left table even when there is no match in the right table.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "An INNER JOIN returns only rows where the join condition matches in both tables; unmatched left rows require a LEFT JOIN."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which Roman magistrate was normally one of two officials who jointly held the Republic's highest annual office?",
+              "a": "Consul",
+              "options": [
+                "Quaestor",
+                "Tribune",
+                "Consul",
+                "Aedile"
+              ],
+              "explanation": "The consulship combined military and civic authority, and the paired office was meant to limit the power of any one officeholder."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the smallest meaningful unit of language called?",
+              "a": "Morpheme",
+              "options": [
+                "Phoneme",
+                "Morpheme",
+                "Grapheme",
+                "Syllable"
+              ],
+              "explanation": "A word can contain more than one morpheme, such as the plural ending in cats or the prefix and suffix in unhappiness."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which emperor presided over the Diet of Worms in 1521?",
+              "a": "Charles V",
+              "options": [
+                "Maximilian I",
+                "Charles V",
+                "Ferdinand I",
+                "Francis II"
+              ],
+              "explanation": "Martin Luther was summoned before the assembly during Charles V's reign, making the Diet of Worms a defining moment of the Reformation."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,7 +1,4 @@
 {
-  "games_01.json": [
-    "easy Item 5 q is risky trivia without an explicit metric, date, or authority"
-  ],
   "general_knowledge_06.json": [
     "easy Item 8 q is risky trivia without an explicit metric, date, or authority",
     "medium Item 1 q is risky trivia without an explicit metric, date, or authority",
@@ -14,5 +11,71 @@
   ],
   "general_knowledge_10.json": [
     "easy Item 3 q is risky trivia without an explicit metric, date, or authority"
+  ],
+  "general_knowledge_11.json": [
+    "medium Item 1 q is risky trivia without an explicit metric, date, or authority"
+  ],
+  "general_knowledge_12.json": [
+    "medium Item 4 q is risky trivia without an explicit metric, date, or authority",
+    "medium Item 5 q is risky trivia without an explicit metric, date, or authority"
+  ],
+  "general_knowledge_13.json": [
+    "easy Item 7 q is risky trivia without an explicit metric, date, or authority",
+    "hard Item 2 q is risky trivia without an explicit metric, date, or authority"
+  ],
+  "general_knowledge_14.json": [
+    "hard Item 2 q is risky trivia without an explicit metric, date, or authority"
+  ],
+  "general_knowledge_15.json": [
+    "easy Item 5 q is risky trivia without an explicit metric, date, or authority",
+    "medium Item 6 q hardcodes display units; prefer locale-aware tags",
+    "hard Item 7 q is risky trivia without an explicit metric, date, or authority",
+    "hard Item 8 q is risky trivia without an explicit metric, date, or authority"
+  ],
+  "general_knowledge_16.json": [
+    "easy Item 1 q is risky trivia without an explicit metric, date, or authority",
+    "hard Item 6 q is risky trivia without an explicit metric, date, or authority"
+  ],
+  "general_knowledge_17.json": [
+    "medium Item 7 q is risky trivia without an explicit metric, date, or authority",
+    "hard Item 8 q is risky trivia without an explicit metric, date, or authority"
+  ],
+  "general_knowledge_18.json": [
+    "medium Item 0 q is risky trivia without an explicit metric, date, or authority",
+    "medium Item 9 q is risky trivia without an explicit metric, date, or authority"
+  ],
+  "general_knowledge_19.json": [
+    "hard Item 2 q is risky trivia without an explicit metric, date, or authority"
+  ],
+  "general_knowledge_20.json": [
+    "easy Item 3 q is risky trivia without an explicit metric, date, or authority",
+    "medium Item 0 q is risky trivia without an explicit metric, date, or authority",
+    "hard Item 9 q is risky trivia without an explicit metric, date, or authority"
+  ],
+  "general_knowledge_21.json": [
+    "medium Item 7 q is risky trivia without an explicit metric, date, or authority"
+  ],
+  "general_knowledge_22.json": [
+    "easy Item 1 q is risky trivia without an explicit metric, date, or authority",
+    "medium Item 6 q is risky trivia without an explicit metric, date, or authority"
+  ],
+  "general_knowledge_23.json": [
+    "medium Item 1 q is risky trivia without an explicit metric, date, or authority",
+    "medium Item 5 q is risky trivia without an explicit metric, date, or authority",
+    "hard Item 1 q is risky trivia without an explicit metric, date, or authority",
+    "hard Item 2 q is risky trivia without an explicit metric, date, or authority",
+    "hard Item 7 q is risky trivia without an explicit metric, date, or authority"
+  ],
+  "general_knowledge_24.json": [
+    "medium Item 5 q is risky trivia without an explicit metric, date, or authority",
+    "hard Item 6 q is risky trivia without an explicit metric, date, or authority"
+  ],
+  "general_knowledge_25.json": [
+    "hard Item 1 q is risky trivia without an explicit metric, date, or authority"
+  ],
+  "general_knowledge_27.json": [
+    "medium Item 0 q is risky trivia without an explicit metric, date, or authority",
+    "medium Item 2 q is risky trivia without an explicit metric, date, or authority",
+    "medium Item 6 q is risky trivia without an explicit metric, date, or authority"
   ]
 }

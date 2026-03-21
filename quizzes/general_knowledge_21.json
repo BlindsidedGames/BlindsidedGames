@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_21",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_21",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What object is used to unlock a locked door?",
+              "a": "Key",
+              "options": [
+                "Key",
+                "Mirror",
+                "Ribbon",
+                "Thimble"
+              ],
+              "explanation": "Many keys work by aligning the pins or other internal parts of a lock so it can turn."
+            },
+            {
+              "type": "true-false",
+              "q": "Madagascar is an island off the east coast of Africa.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Madagascar lies in the Indian Ocean and is separated from mainland Africa by the Mozambique Channel."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What spread is traditionally made from chickpeas and tahini?",
+              "a": "Hummus",
+              "options": [
+                "Hummus",
+                "Guacamole",
+                "Salsa",
+                "Tapenade"
+              ],
+              "explanation": "Hummus is a Middle Eastern dip usually blended from chickpeas, tahini, lemon juice, garlic, and olive oil."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which superhero uses Bruce Wayne as his civilian identity?",
+              "a": "Batman",
+              "options": [
+                "Batman",
+                "Superman",
+                "Spider-Man",
+                "Iron Man"
+              ],
+              "explanation": "Bruce Wayne is the wealthy Gotham City philanthropist behind Batman's vigilante persona in DC Comics."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which artist painted the ceiling of the Sistine Chapel?",
+              "a": "Michelangelo",
+              "options": [
+                "Michelangelo",
+                "Raphael",
+                "Donatello",
+                "Leonardo da Vinci"
+              ],
+              "explanation": "Michelangelo painted the famous ceiling frescoes in Vatican City between 1508 and 1512, including the scene of the Creation of Adam."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What type of large painting is made directly on a wall or ceiling?",
+              "a": "Mural",
+              "options": [
+                "Mural",
+                "Mosaic",
+                "Tapestry",
+                "Fresco"
+              ],
+              "explanation": "Murals are designed for architectural surfaces, which is why they often become part of a building's public identity."
+            },
+            {
+              "type": "true-false",
+              "q": "Jellyfish are fish.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Jellyfish are invertebrates related to corals and sea anemones, not true fish with backbones and gills."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the Japanese art of arranging flowers called?",
+              "a": "Ikebana",
+              "options": [
+                "Ikebana",
+                "Origami",
+                "Calligraphy",
+                "Haiku"
+              ],
+              "explanation": "Ikebana emphasizes line, balance, and negative space rather than simply placing many flowers into a container."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What kind of poem traditionally has three lines?",
+              "a": "Haiku",
+              "options": [
+                "Haiku",
+                "Sonnet",
+                "Limerick",
+                "Ballad"
+              ],
+              "explanation": "A classic Japanese haiku is compact and is often associated with a focus on nature or a single vivid moment."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What cheese is traditionally used on pizza Margherita?",
+              "a": "Mozzarella",
+              "options": [
+                "Mozzarella",
+                "Cheddar",
+                "Brie",
+                "Gouda"
+              ],
+              "explanation": "Classic pizza Margherita pairs mozzarella with tomato and basil, a combination often linked to the colors of the Italian flag."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_21",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What printmaking technique uses a design carved into linoleum?",
+              "a": "Linocut",
+              "options": [
+                "Linocut",
+                "Etching",
+                "Woodcut",
+                "Lithograph"
+              ],
+              "explanation": "Linocut is similar to woodcut, but the softer linoleum surface allows clean carving without wood grain."
+            },
+            {
+              "type": "true-false",
+              "q": "Sharks have skeletons made of cartilage rather than bone.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Cartilage makes shark skeletons lighter and more flexible than bone, which helps with buoyancy and movement."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which composer wrote Pictures at an Exhibition?",
+              "a": "Modest Mussorgsky",
+              "options": [
+                "Modest Mussorgsky",
+                "Claude Debussy",
+                "Hector Berlioz",
+                "Bedrich Smetana"
+              ],
+              "explanation": "Mussorgsky wrote the piano suite in memory of artist Viktor Hartmann, and Ravel later created its famous orchestral version."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which poet wrote The Love Song of J. Alfred Prufrock?",
+              "a": "T. S. Eliot",
+              "options": [
+                "T. S. Eliot",
+                "W. B. Yeats",
+                "Ezra Pound",
+                "W. H. Auden"
+              ],
+              "explanation": "Published in 1915, Prufrock helped establish Eliot as a leading voice of literary modernism."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "In standard Scrabble, what is the point value of the letter Q?",
+              "a": "10",
+              "options": [
+                "10",
+                "8",
+                "6",
+                "4"
+              ],
+              "explanation": "Q is one of the game's highest-value letters because it is difficult to place without help from a U or premium square."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What rhetorical term means deliberate exaggeration for effect?",
+              "a": "Hyperbole",
+              "options": [
+                "Hyperbole",
+                "Irony",
+                "Allegory",
+                "Allusion"
+              ],
+              "explanation": "Hyperbole emphasizes a point by overstating it in a way listeners are not meant to take literally."
+            },
+            {
+              "type": "true-false",
+              "q": "Madagascar lies in the Indian Ocean.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The island sits off southeastern Africa in the western Indian Ocean and is one of the world's largest islands."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which doctor pioneered the first successful smallpox vaccine?",
+              "a": "Edward Jenner",
+              "options": [
+                "Edward Jenner",
+                "Alexander Fleming",
+                "Louis Pasteur",
+                "Robert Koch"
+              ],
+              "explanation": "Jenner's 1796 experiment with cowpox laid the groundwork for vaccination and later smallpox eradication."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which Roman goddess of wisdom corresponds to Athena in Greek mythology?",
+              "a": "Minerva",
+              "options": [
+                "Minerva",
+                "Diana",
+                "Vesta",
+                "Juno"
+              ],
+              "explanation": "Minerva was associated with wisdom, strategy, and crafts in Roman religion, paralleling Athena's role in Greek myth."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What process do yeast use to convert sugar into alcohol?",
+              "a": "Fermentation",
+              "options": [
+                "Fermentation",
+                "Oxidation",
+                "Condensation",
+                "Filtration"
+              ],
+              "explanation": "Yeast fermentation produces alcohol and carbon dioxide, which is why it is important in brewing and breadmaking."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_21",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What musical instruction means return to the beginning, often abbreviated D.C.?",
+              "a": "Da capo",
+              "options": [
+                "Da capo",
+                "Dal segno",
+                "A tempo",
+                "Coda"
+              ],
+              "explanation": "Da capo literally means from the head in Italian and directs the performer back to the start of the piece."
+            },
+            {
+              "type": "true-false",
+              "q": "A nova is the same phenomenon as a supernova.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "A nova is a surface eruption on a star, while a supernova is a far more violent stellar explosion or collapse."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which seventeenth-century writer authored the allegory The Pilgrim's Progress?",
+              "a": "John Bunyan",
+              "options": [
+                "John Bunyan",
+                "John Donne",
+                "Andrew Marvell",
+                "Thomas Hobbes"
+              ],
+              "explanation": "The Pilgrim's Progress became one of the most widely read works in English religious literature."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What astronomical term describes the point in an orbit farthest from the Sun?",
+              "a": "Aphelion",
+              "options": [
+                "Aphelion",
+                "Perihelion",
+                "Zenith",
+                "Nadir"
+              ],
+              "explanation": "For bodies orbiting Earth, the corresponding farthest-point term is apogee rather than aphelion."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which mathematician is credited with creating logarithms?",
+              "a": "John Napier",
+              "options": [
+                "John Napier",
+                "Blaise Pascal",
+                "Pierre de Fermat",
+                "Leonhard Euler"
+              ],
+              "explanation": "Napier introduced logarithms in the early seventeenth century to simplify lengthy calculations."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What musical term marks the sign from which a performer should resume when told to repeat from a symbol?",
+              "a": "Dal segno",
+              "options": [
+                "Dal segno",
+                "Da capo",
+                "Rubato",
+                "Sforzando"
+              ],
+              "explanation": "Dal segno means from the sign in Italian and sends the performer back to a specific marked point rather than to the beginning."
+            },
+            {
+              "type": "true-false",
+              "q": "The Inca used wheeled vehicles extensively across their empire.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "The Inca built impressive roads and used llamas as pack animals, but wheeled transport was not a major part of their empire."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What term in chemistry describes the amount of substance equal to Avogadro's number of entities?",
+              "a": "Mole",
+              "options": [
+                "Mole",
+                "Titrant",
+                "Radical",
+                "Isotope"
+              ],
+              "explanation": "One mole corresponds to approximately 6.022 x 10^23 elementary entities such as atoms or molecules."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which scientist discovered the neutron in 1932?",
+              "a": "James Chadwick",
+              "options": [
+                "James Chadwick",
+                "Ernest Rutherford",
+                "Niels Bohr",
+                "Enrico Fermi"
+              ],
+              "explanation": "Chadwick's discovery of the neutron helped explain atomic structure and won him the Nobel Prize in Physics in 1935."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What law states that the electric flux through a closed surface is proportional to the charge enclosed within it?",
+              "a": "Gauss's law",
+              "options": [
+                "Gauss's law",
+                "Snell's law",
+                "Hooke's law",
+                "Ampere's law"
+              ],
+              "explanation": "Gauss's law is one of Maxwell's equations and is especially powerful for finding electric fields in highly symmetric situations."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

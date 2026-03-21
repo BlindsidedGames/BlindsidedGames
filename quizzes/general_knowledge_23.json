@@ -1,0 +1,388 @@
+{
+  "id": "general_knowledge_23",
+  "title": "General Knowledge Daily Challenge",
+  "category": "General Knowledge",
+  "variants": {
+    "easy": {
+      "id": "general_knowledge_easy_23",
+      "title": "Easy General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "What do you call words that sound alike but have different meanings, such as 'sea' and 'see'?",
+              "a": "Homophones",
+              "options": [
+                "Homophones",
+                "Antonyms",
+                "Prefixes",
+                "Metaphors"
+              ],
+              "explanation": "Homophones share pronunciation but differ in meaning and often in spelling, which is why they can cause confusion in writing."
+            },
+            {
+              "type": "true-false",
+              "q": "Mars is closer to the Sun than Venus.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Venus is the second planet from the Sun, while Mars is the fourth after Earth."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which city is famous for the Colosseum?",
+              "a": "Rome",
+              "options": [
+                "Rome",
+                "Athens",
+                "Cairo",
+                "Istanbul"
+              ],
+              "explanation": "The Colosseum was built in ancient Rome as a vast amphitheater for gladiatorial contests and public spectacles."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which city is famous for the Eiffel Tower?",
+              "a": "Paris",
+              "options": [
+                "Paris",
+                "Vienna",
+                "Madrid",
+                "Prague"
+              ],
+              "explanation": "The Eiffel Tower was built in Paris for the 1889 Exposition Universelle and remains one of the city's most recognizable landmarks."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What precious metal is commonly used for wedding rings?",
+              "a": "Gold",
+              "options": [
+                "Gold",
+                "Copper",
+                "Tin",
+                "Nickel"
+              ],
+              "explanation": "Gold has long been favored for jewelry because it resists corrosion and can be alloyed into different colors and strengths."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What device is used to show wind direction on rooftops and barns?",
+              "a": "Weather vane",
+              "options": [
+                "Weather vane",
+                "Anvil",
+                "Tripod",
+                "Hourglass"
+              ],
+              "explanation": "A weather vane turns to point into the wind, which is why it has long been used as a simple outdoor weather indicator."
+            },
+            {
+              "type": "true-false",
+              "q": "Shadows are created when light is blocked.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "An opaque object blocks light rays, leaving a darker area on the surface behind it."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What instrument is commonly used in classical music and has black and white keys plus pedals?",
+              "a": "Piano",
+              "options": [
+                "Piano",
+                "Violin",
+                "Trumpet",
+                "Clarinet"
+              ],
+              "explanation": "A standard concert piano has 88 keys and is used as both a solo and accompanying instrument."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which city is nicknamed the Big Apple?",
+              "a": "New York City",
+              "options": [
+                "New York City",
+                "Chicago",
+                "Los Angeles",
+                "Boston"
+              ],
+              "explanation": "The nickname became widely popular in the 20th century and is now strongly associated with New York City."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "On a map, what is the box called that explains symbols and colors?",
+              "a": "Legend",
+              "options": [
+                "Legend",
+                "Scale",
+                "Grid",
+                "Compass rose"
+              ],
+              "explanation": "A map legend, also called a key, explains the meaning of visual symbols used on the map."
+            }
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "id": "general_knowledge_medium_23",
+      "title": "Medium General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which scale is used in the United States to rate tornado intensity based on observed damage?",
+              "a": "Enhanced Fujita scale",
+              "options": [
+                "Richter scale",
+                "Beaufort scale",
+                "Enhanced Fujita scale",
+                "Mohs scale"
+              ],
+              "explanation": "The Enhanced Fujita scale estimates tornado strength by examining the kinds of structural and environmental damage left behind."
+            },
+            {
+              "type": "true-false",
+              "q": "Carbon dioxide is the most abundant gas in Earth's atmosphere.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Nitrogen makes up most of the atmosphere, with oxygen second and carbon dioxide present only in a much smaller proportion."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What instrument is Yo-Yo Ma best known for playing?",
+              "a": "Cello",
+              "options": [
+                "Cello",
+                "Violin",
+                "Clarinet",
+                "Trumpet"
+              ],
+              "explanation": "Yo-Yo Ma is a celebrated cellist whose career includes solo recordings, chamber music, and the Silkroad project."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which river flows through Budapest, dividing Buda from Pest?",
+              "a": "Danube",
+              "options": [
+                "Danube",
+                "Rhine",
+                "Elbe",
+                "Dnieper"
+              ],
+              "explanation": "Budapest was formed from the union of Buda, Pest, and Obuda, with the Danube still defining the city's geography."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which 1928 agreement sought to renounce war as an instrument of national policy?",
+              "a": "Kellogg-Briand Pact",
+              "options": [
+                "Kellogg-Briand Pact",
+                "Treaty of Brest-Litovsk",
+                "Congress of Vienna",
+                "Potsdam Agreement"
+              ],
+              "explanation": "The Kellogg-Briand Pact was signed by many nations, though it ultimately failed to prevent the conflicts of the 1930s and 1940s."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which brass instrument is usually the lowest-pitched in a standard symphony orchestra?",
+              "a": "Tuba",
+              "options": [
+                "Trumpet",
+                "French horn",
+                "Trombone",
+                "Tuba"
+              ],
+              "explanation": "The tuba provides the lowest regular brass voice in the orchestra and often underpins the harmonic bass line."
+            },
+            {
+              "type": "true-false",
+              "q": "The equinox occurs twice each year.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Earth experiences a March equinox and a September equinox, when day and night are close to equal in length worldwide."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which composer wrote The Four Seasons?",
+              "a": "Antonio Vivaldi",
+              "options": [
+                "Antonio Vivaldi",
+                "George Frideric Handel",
+                "Arcangelo Corelli",
+                "Joseph Haydn"
+              ],
+              "explanation": "The Four Seasons is a set of violin concertos by Vivaldi and remains one of the best-known works of the Baroque era."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which city was once known as Constantinople?",
+              "a": "Istanbul",
+              "options": [
+                "Istanbul",
+                "Athens",
+                "Cairo",
+                "Belgrade"
+              ],
+              "explanation": "Constantinople was the historic capital of the Byzantine Empire before the modern city became internationally known as Istanbul."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which strait separates the European and Asian sides of Istanbul?",
+              "a": "Bosporus",
+              "options": [
+                "Bosporus",
+                "Dardanelles",
+                "Strait of Gibraltar",
+                "Bering Strait"
+              ],
+              "explanation": "The Bosporus links the Black Sea to the Sea of Marmara and runs through Istanbul."
+            }
+          ]
+        }
+      ]
+    },
+    "hard": {
+      "id": "general_knowledge_hard_23",
+      "title": "Hard General Knowledge Daily Challenge",
+      "sections": [
+        {
+          "title": "General Knowledge",
+          "items": [
+            {
+              "type": "multiple-choice",
+              "q": "Which 1748 treaty ended the War of the Austrian Succession?",
+              "a": "Treaty of Aix-la-Chapelle",
+              "options": [
+                "Treaty of Aix-la-Chapelle",
+                "Treaty of Utrecht",
+                "Treaty of Paris",
+                "Peace of Westphalia"
+              ],
+              "explanation": "The Treaty of Aix-la-Chapelle largely restored prewar territories and brought the War of the Austrian Succession to an end."
+            },
+            {
+              "type": "true-false",
+              "q": "In genetics, mitochondrial DNA is inherited only from the father.",
+              "a": "False",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "Human mitochondrial DNA is ordinarily inherited through the mother because the egg contributes the embryo's mitochondria."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which law states that an induced current opposes the change in magnetic flux that produced it?",
+              "a": "Lenz's law",
+              "options": [
+                "Lenz's law",
+                "Faraday's law",
+                "Gauss's law",
+                "Snell's law"
+              ],
+              "explanation": "Lenz's law determines the direction of induced current and expresses conservation of energy in electromagnetic induction."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which architect designed the house known as Fallingwater?",
+              "a": "Frank Lloyd Wright",
+              "options": [
+                "Frank Lloyd Wright",
+                "Le Corbusier",
+                "Ludwig Mies van der Rohe",
+                "Walter Gropius"
+              ],
+              "explanation": "Completed in 1939 in Pennsylvania, Fallingwater is known for cantilevers integrated with a waterfall site."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which treaty signed in 1919 dealt with Austria after World War I?",
+              "a": "Treaty of Saint-Germain",
+              "options": [
+                "Treaty of Saint-Germain",
+                "Treaty of Lausanne",
+                "Treaty of Brest-Litovsk",
+                "Treaty of Rapallo"
+              ],
+              "explanation": "The Treaty of Saint-Germain reorganized former Austro-Hungarian territories and restricted Austria's military."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What is the common nickname of Beethoven's Piano Sonata No. 14 in C-sharp minor, Op. 27 No. 2?",
+              "a": "Moonlight Sonata",
+              "options": [
+                "Moonlight Sonata",
+                "Pathetique Sonata",
+                "Waldstein Sonata",
+                "Appassionata"
+              ],
+              "explanation": "The nickname was popularized after Beethoven's death and is not a title the composer used himself."
+            },
+            {
+              "type": "true-false",
+              "q": "A geostationary satellite matches Earth's rotation and appears fixed above one point on the equator.",
+              "a": "True",
+              "options": [
+                "True",
+                "False"
+              ],
+              "explanation": "To stay geostationary, a satellite must orbit once per sidereal day in a circular orbit above the equator."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "What theorem proves that any planar map can be colored using at most four colors so adjacent regions differ?",
+              "a": "Four color theorem",
+              "options": [
+                "Four color theorem",
+                "Pythagorean theorem",
+                "Noether's theorem",
+                "Euler's theorem"
+              ],
+              "explanation": "The four color theorem was the first major theorem to be proven with substantial computer-assisted case checking."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which 1856 treaty formally ended the Crimean War?",
+              "a": "Treaty of Paris",
+              "options": [
+                "Treaty of Paris",
+                "Treaty of San Stefano",
+                "Treaty of Adrianople",
+                "Treaty of Brest-Litovsk"
+              ],
+              "explanation": "The 1856 Treaty of Paris neutralized the Black Sea and concluded hostilities between Russia and the allied powers."
+            },
+            {
+              "type": "multiple-choice",
+              "q": "Which dwarf planet is orbited by the moon Charon?",
+              "a": "Pluto",
+              "options": [
+                "Pluto",
+                "Eris",
+                "Haumea",
+                "Makemake"
+              ],
+              "explanation": "Charon is so large relative to Pluto that the pair is often described as a binary system."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

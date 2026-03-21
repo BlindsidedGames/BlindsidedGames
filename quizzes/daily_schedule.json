@@ -2,13 +2,6 @@
   "version": 1,
   "entries": [
     {
-      "date": "2026-03-16",
-      "id": "daily.games_01",
-      "title": "Games Daily Challenge",
-      "category": "Games",
-      "file": "games_01.json"
-    },
-    {
       "date": "2026-03-17",
       "id": "daily.general_knowledge_06",
       "title": "General Knowledge Daily Challenge",
@@ -42,6 +35,125 @@
       "title": "General Knowledge Daily Challenge",
       "category": "General Knowledge",
       "file": "general_knowledge_10.json"
+    },
+    {
+      "date": "2026-03-22",
+      "id": "daily.general_knowledge_11",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_11.json"
+    },
+    {
+      "date": "2026-03-23",
+      "id": "daily.general_knowledge_12",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_12.json"
+    },
+    {
+      "date": "2026-03-24",
+      "id": "daily.general_knowledge_13",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_13.json"
+    },
+    {
+      "date": "2026-03-25",
+      "id": "daily.general_knowledge_14",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_14.json"
+    },
+    {
+      "date": "2026-03-26",
+      "id": "daily.general_knowledge_15",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_15.json"
+    },
+    {
+      "date": "2026-03-27",
+      "id": "daily.general_knowledge_16",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_16.json"
+    },
+    {
+      "date": "2026-03-28",
+      "id": "daily.general_knowledge_17",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_17.json"
+    },
+    {
+      "date": "2026-03-29",
+      "id": "daily.general_knowledge_18",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_18.json"
+    },
+    {
+      "date": "2026-03-30",
+      "id": "daily.general_knowledge_19",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_19.json"
+    },
+    {
+      "date": "2026-03-31",
+      "id": "daily.general_knowledge_20",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_20.json"
+    },
+    {
+      "date": "2026-04-01",
+      "id": "daily.general_knowledge_21",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_21.json"
+    },
+    {
+      "date": "2026-04-02",
+      "id": "daily.general_knowledge_22",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_22.json"
+    },
+    {
+      "date": "2026-04-03",
+      "id": "daily.general_knowledge_23",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_23.json"
+    },
+    {
+      "date": "2026-04-04",
+      "id": "daily.general_knowledge_24",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_24.json"
+    },
+    {
+      "date": "2026-04-05",
+      "id": "daily.general_knowledge_25",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_25.json"
+    },
+    {
+      "date": "2026-04-06",
+      "id": "daily.general_knowledge_26",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_26.json"
+    },
+    {
+      "date": "2026-04-07",
+      "id": "daily.general_knowledge_27",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_27.json"
     }
   ]
 }
