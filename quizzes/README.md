@@ -1,22 +1,37 @@
 Quizzes folder layout
 
 - Only the quiz files referenced by `daily_schedule.json` should live directly in this folder.
-- `daily_schedule.json` is the app-facing daily schedule feed.
+- `daily_schedule.json` is the app-facing daily feed manifest.
 - There is no public website quiz catalog or `manifest.json`.
 
-Daily schedule shape
+Daily feed shapes
+
+The app supports both the legacy scheduled feed and the current curated pool feed.
+
+Current pool feed:
+
+```json
+{
+  "version": 2,
+  "mode": "pool",
+  "entries": [
+    {
+      "id": "daily.general_knowledge_06",
+      "title": "General Knowledge Daily Challenge",
+      "category": "General Knowledge",
+      "file": "general_knowledge_06.json",
+      "publishedAt": "2026-03-17T00:00:00Z"
+    }
+  ]
+}
+```
+
+Legacy scheduled feed:
 
 ```json
 {
   "version": 1,
   "entries": [
-    {
-      "date": "2026-03-16",
-      "id": "daily.games_01",
-      "title": "Games Daily Challenge",
-      "category": "Games",
-      "file": "games_01.json"
-    },
     {
       "date": "2026-03-17",
       "id": "daily.general_knowledge_06",
@@ -80,7 +95,9 @@ Each difficulty variant must contain exactly 10 questions with this mix:
 
 Notes
 
-- The app reads `quizzes/daily_schedule.json` and resolves the current daily by the device's local date.
+- The app reads `quizzes/daily_schedule.json`.
+- `version: 1` feeds resolve the current daily by the device's local date.
+- `version: 2` / `mode: "pool"` feeds let the app choose one unseen daily locally from the curated pool.
 - `validate_quizzes.py` validates the quiz files referenced by `daily_schedule.json`.
 - The validator checks tag syntax, supported units, and locale-specific option collisions across representative locales.
-- There is no minimum queue length. The queue can be short while new daily families are being staged.
+- There is no minimum pool size, but a larger pool gives newer users more backlog to collect before the app reports exhaustion.

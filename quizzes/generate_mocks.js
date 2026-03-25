@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const categories = ['History', 'Science', 'Sport', 'Biology', 'Geography'];
 const difficulties = ['Easy', 'Medium', 'Hard'];
-const dailySchedule = { version: 1, entries: [] };
+const dailySchedule = { version: 2, mode: 'pool', entries: [] };
 const generatedFiles = [];
 const MAX_DAILY_FILES = 21;
 
@@ -77,12 +77,12 @@ generatedFiles.forEach((entry, index) => {
     const date = new Date(startDate);
     date.setUTCDate(startDate.getUTCDate() + index);
     dailySchedule.entries.push({
-        date: date.toISOString().slice(0, 10),
         id: `daily.${entry.id}`,
         title: `${entry.category} Daily Challenge`,
         category: entry.category,
         difficulty: entry.difficulty,
-        file: entry.file
+        file: entry.file,
+        publishedAt: date.toISOString()
     });
 });
 

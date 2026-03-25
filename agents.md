@@ -9,4 +9,4 @@
 - **Canonical quiz prompt guide.** The canonical GenAI prompt guide lives at `quizzes/genai_prompt.md`. Do not maintain a separate rule set elsewhere.
 - **Prompt sync rule.** When quiz-generation rules change, update `quizzes/genai_prompt.md` first, then run `npm run sync:genai-prompt` and `npm run check:genai-prompt`.
 - **App mirror path.** The mirrored app copy lives at `/Users/matthewrushworth/Projects/The Quiz/The Quiz/SeedData/genai_prompt.md` and must not be hand-edited independently.
-- **Cross-repo quiz workflow.** Any quiz-content or quiz-prompt edit must review both the app seed corpus and the currently scheduled website daily quiz corpus defined in `quizzes/daily_schedule.json`.
+- **Cross-repo quiz workflow.** Any quiz-content or quiz-prompt edit must review both the app seed corpus and the website daily quiz pool defined in `quizzes/daily_schedule.json`.

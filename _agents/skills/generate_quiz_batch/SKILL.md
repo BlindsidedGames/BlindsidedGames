@@ -63,6 +63,6 @@ For **EACH** quiz requested in the batch (repeat this process N times):
 ```
 
 ## Post-Generation Steps
-- Do not create or update a website quiz manifest.
-- If the generated quizzes are intended for the app-facing daily feed, update `quizzes/daily_schedule.json` only with the specific files the user wants scheduled.
-- If the user does not ask to schedule the quizzes, leave `daily_schedule.json` unchanged.
+- Do not update the website daily pool manifest unless the user explicitly asks.
+- If the generated quizzes are intended for the app-facing daily feed, add only the specific files the user wants published to `quizzes/daily_schedule.json`.
+- If the user does not ask to publish the quizzes into the pool, leave `daily_schedule.json` unchanged.

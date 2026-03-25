@@ -1124,8 +1124,8 @@ def build_records():
     records = []
     for path in sorted(APP_QUIZ_DIR.glob("*.json")):
         records.append(("app", path))
-    daily_schedule = json.loads((WEBSITE_QUIZ_DIR / "daily_schedule.json").read_text(encoding="utf-8"))
-    for entry in daily_schedule["entries"]:
+    daily_feed = json.loads((WEBSITE_QUIZ_DIR / "daily_schedule.json").read_text(encoding="utf-8"))
+    for entry in daily_feed.get("entries", []):
         records.append(("website", WEBSITE_QUIZ_DIR / entry["file"]))
     return records
 

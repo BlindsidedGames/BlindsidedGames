@@ -85,8 +85,14 @@ def dict_raise_on_duplicates(ordered_pairs):
 
 def load_daily_schedule():
     with open(DAILY_SCHEDULE_PATH, "r", encoding="utf-8") as handle:
-        data = json.load(handle)
-    return data.get("entries", [])
+        return json.load(handle)
+
+
+def load_daily_entries(data):
+    if not isinstance(data, dict):
+        return []
+    entries = data.get("entries", [])
+    return entries if isinstance(entries, list) else []
 
 
 def normalize_text(value):
@@ -521,14 +527,37 @@ def validate_quiz_document(data, filename, label, file_errors, file_warnings):
 def main():
     errors = {}
     warnings = {}
-    scheduled_entries = load_daily_schedule()
-    scheduled_files = [entry["file"] for entry in scheduled_entries if entry.get("file")]
+    daily_feed = load_daily_schedule()
+    daily_entries = load_daily_entries(daily_feed)
+    feed_version = daily_feed.get("version")
+    feed_mode = daily_feed.get("mode")
 
-    for index, entry in enumerate(scheduled_entries):
+    if feed_version not in {1, 2}:
+        append_issue(errors, "daily_schedule.json", "Feed must declare version 1 or 2")
+
+    if not isinstance(daily_feed, dict):
+        append_issue(errors, "daily_schedule.json", "Feed root must be a JSON object")
+
+    if "entries" in daily_feed and not isinstance(daily_feed.get("entries"), list):
+        append_issue(errors, "daily_schedule.json", "Feed 'entries' must be an array")
+
+    if feed_version == 1 and feed_mode not in {None, "schedule"}:
+        append_issue(errors, "daily_schedule.json", "Version 1 daily feeds must omit mode or use 'schedule'")
+
+    if feed_version == 2 and feed_mode != "pool":
+        append_issue(errors, "daily_schedule.json", "Version 2 daily feeds must use mode 'pool'")
+
+    scheduled_files = [entry["file"] for entry in daily_entries if entry.get("file")]
+
+    for index, entry in enumerate(daily_entries):
         filepath = entry.get("file")
         if not filepath:
             append_issue(errors, "daily_schedule.json", f"Entry {index} is missing 'file'")
             continue
+        if not entry.get("id"):
+            append_issue(errors, "daily_schedule.json", f"Entry {index} is missing 'id'")
+        if feed_version == 1 and not entry.get("date"):
+            append_issue(errors, "daily_schedule.json", f"Entry {index} is missing 'date'")
         if not os.path.exists(os.path.join(QUIZZES_DIR, filepath)):
             append_issue(errors, "daily_schedule.json", f"Entry {index} points to missing file '{filepath}'")
 
@@ -542,7 +571,7 @@ def main():
     unexpected_files = sorted(root_quiz_files - scheduled_file_set)
     if unexpected_files:
         errors["daily_schedule.json"] = errors.get("daily_schedule.json", []) + [
-            f"Unexpected quiz file present outside daily schedule: {name}" for name in unexpected_files
+            f"Unexpected quiz file present outside the daily feed manifest: {name}" for name in unexpected_files
         ]
 
     for filename in scheduled_files:
