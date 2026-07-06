@@ -1,0 +1,25 @@
+{
+  "name": "Whitecell Beta",
+  "short_name": "Whitecell",
+  "description": "Whitecell beta test build.",
+  "start_url": "/games/beta/whitecell/",
+  "scope": "/games/beta/whitecell/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#111315",
+  "theme_color": "#111315",
+  "icons": [
+    {
+      "src": "./icons/whitecell-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/whitecell-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

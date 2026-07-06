@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Eternum Inc promo artwork</title>
+  <desc id="desc">An imposing corporate tower with gold production lines.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#17191d"/>
+      <stop offset="1" stop-color="#332817"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0" stop-color="#f6d36b"/>
+      <stop offset="1" stop-color="#b77b2a"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <path d="M240 436h480v42H240z" fill="#101214"/>
+  <path d="M370 430V116h220v314z" fill="#242b30"/>
+  <path d="M416 430V190h128v240z" fill="#14191d"/>
+  <path d="M334 430V242h72v188zm220 0V242h72v188z" fill="#303941"/>
+  <path d="M405 116h150l-28-54h-94z" fill="url(#gold)"/>
+  <g fill="#f6d36b" opacity=".82">
+    <rect x="402" y="152" width="30" height="16"/><rect x="462" y="152" width="30" height="16"/><rect x="522" y="152" width="30" height="16"/>
+    <rect x="402" y="218" width="30" height="16"/><rect x="462" y="218" width="30" height="16"/><rect x="522" y="218" width="30" height="16"/>
+    <rect x="402" y="284" width="30" height="16"/><rect x="462" y="284" width="30" height="16"/><rect x="522" y="284" width="30" height="16"/>
+  </g>
+  <text x="44" y="84" fill="#ffffff" font-family="Arial, sans-serif" font-size="54" font-weight="900">Eternum Inc</text>
+  <text x="46" y="128" fill="#d2c4a1" font-family="Arial, sans-serif" font-size="24" font-weight="700">scale forever</text>
+</svg>

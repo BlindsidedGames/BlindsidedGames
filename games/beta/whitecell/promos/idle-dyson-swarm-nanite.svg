@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Idle Dyson Swarm Nanite promo artwork</title>
+  <desc id="desc">A branching nanite lattice spreading through a dark field.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#101719"/>
+      <stop offset="1" stop-color="#1b2330"/>
+    </linearGradient>
+    <linearGradient id="nano" x1="0" x2="1">
+      <stop offset="0" stop-color="#74f0c2"/>
+      <stop offset="1" stop-color="#70a6ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <g stroke="url(#nano)" stroke-width="10" stroke-linecap="round">
+    <path d="M382 298l86-58 94 36 86-72"/>
+    <path d="M468 240l-34-96m128 132l22 108m-202-86l-100 74m366-168l112-38"/>
+  </g>
+  <g fill="#eafff8">
+    <circle cx="382" cy="298" r="34"/><circle cx="468" cy="240" r="28"/><circle cx="562" cy="276" r="32"/><circle cx="648" cy="204" r="28"/>
+    <circle cx="434" cy="144" r="20"/><circle cx="584" cy="384" r="20"/><circle cx="282" cy="372" r="22"/><circle cx="760" cy="166" r="20"/>
+  </g>
+  <text x="44" y="84" fill="#ffffff" font-family="Arial, sans-serif" font-size="44" font-weight="900">Idle Dyson Swarm</text>
+  <text x="46" y="126" fill="#9fe8d3" font-family="Arial, sans-serif" font-size="28" font-weight="900">Nanite</text>
+</svg>

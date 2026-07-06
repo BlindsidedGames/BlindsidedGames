@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Pulse Citadel promo artwork</title>
+  <desc id="desc">A neon citadel radiating defensive pulse rings.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#101824"/>
+      <stop offset="1" stop-color="#251232"/>
+    </linearGradient>
+    <linearGradient id="pulse" x1="0" x2="1">
+      <stop offset="0" stop-color="#65d9ff"/>
+      <stop offset="1" stop-color="#ff7ac8"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <circle cx="480" cy="286" r="218" fill="none" stroke="#65d9ff" stroke-opacity=".18" stroke-width="18"/>
+  <circle cx="480" cy="286" r="156" fill="none" stroke="#ff7ac8" stroke-opacity=".24" stroke-width="12"/>
+  <path d="M318 392h324l-32-166-72-48-58-86-58 86-72 48-32 166z" fill="#dcecff"/>
+  <path d="M382 392l22-128 76-58 76 58 22 128z" fill="#172234"/>
+  <path d="M450 392V258h60v134z" fill="url(#pulse)"/>
+  <text x="44" y="84" fill="#ffffff" font-family="Arial, sans-serif" font-size="54" font-weight="900">Pulse Citadel</text>
+  <text x="46" y="128" fill="#b7c9d3" font-family="Arial, sans-serif" font-size="24" font-weight="700">defend the core</text>
+</svg>

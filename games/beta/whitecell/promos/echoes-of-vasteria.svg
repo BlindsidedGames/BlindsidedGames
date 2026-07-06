@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Echoes of Vasteria promo artwork</title>
+  <desc id="desc">A glowing fantasy portal over layered mountains.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#171326"/>
+      <stop offset="1" stop-color="#263022"/>
+    </linearGradient>
+    <linearGradient id="portal" x1="0" x2="1">
+      <stop offset="0" stop-color="#c38cff"/>
+      <stop offset="1" stop-color="#70e0a5"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <path d="M0 400l180-116 130 80 156-128 146 120 122-86 226 126v144H0z" fill="#18201f"/>
+  <path d="M0 458l240-104 164 84 168-116 388 130v88H0z" fill="#101615"/>
+  <ellipse cx="592" cy="246" rx="94" ry="140" fill="none" stroke="url(#portal)" stroke-width="20"/>
+  <ellipse cx="592" cy="246" rx="50" ry="84" fill="#ffffff" opacity=".18"/>
+  <path d="M566 376h52l-16-112h-20z" fill="#e9fff4"/>
+  <text x="44" y="84" fill="#ffffff" font-family="Arial, sans-serif" font-size="48" font-weight="900">Echoes of Vasteria</text>
+  <text x="46" y="128" fill="#c6bdd5" font-family="Arial, sans-serif" font-size="24" font-weight="700">power through echoes</text>
+</svg>
