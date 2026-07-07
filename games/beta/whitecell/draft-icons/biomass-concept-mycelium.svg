@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Biomass mycelium icon">
+  <g fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M64 101V65"/>
+    <path d="M64 74c-20 0-34-11-39-29"/>
+    <path d="M64 74c22 0 35-11 40-31"/>
+    <path d="M64 89c-13 0-24 6-33 18"/>
+    <path d="M64 89c14 0 25 6 34 18"/>
+  </g>
+  <g fill="#fff">
+    <circle cx="64" cy="52" r="15"/>
+    <circle cx="28" cy="38" r="13"/>
+    <circle cx="103" cy="36" r="13"/>
+    <circle cx="28" cy="108" r="10"/>
+    <circle cx="100" cy="108" r="10"/>
+  </g>
+  <g fill="#0c0e0f">
+    <circle cx="64" cy="52" r="6"/>
+    <circle cx="28" cy="38" r="5"/>
+    <circle cx="103" cy="36" r="5"/>
+  </g>
+</svg>

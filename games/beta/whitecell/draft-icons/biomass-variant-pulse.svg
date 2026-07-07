@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Biomass pulse icon">
+  <defs>
+    <mask id="pulse-cutouts">
+      <rect width="128" height="128" fill="black"/>
+      <path fill="white" d="M25 77c0-27 18-47 43-47 21 0 36 12 36 30 0 9-4 17-11 23 6 2 10 8 10 15 0 11-9 20-22 20-8 0-16-3-21-9-5 5-12 8-20 8-15 0-25-10-25-24 0-7 4-13 10-16Z"/>
+      <circle cx="36" cy="56" r="14" fill="white"/>
+      <circle cx="91" cy="55" r="16" fill="white"/>
+      <circle cx="66" cy="92" r="18" fill="white"/>
+      <g fill="black">
+        <circle cx="43" cy="67" r="8"/>
+        <circle cx="69" cy="52" r="10"/>
+        <circle cx="88" cy="83" r="8"/>
+        <path d="M42 95c11 3 22 1 31-6 3-2 6 2 3 5-10 11-26 15-40 9-4-2-1-10 6-8Z"/>
+        <circle cx="85" cy="38" r="4"/>
+        <circle cx="101" cy="67" r="4"/>
+        <circle cx="58" cy="78" r="4"/>
+      </g>
+    </mask>
+  </defs>
+  <rect width="128" height="128" fill="none"/>
+  <g mask="url(#pulse-cutouts)">
+    <rect width="128" height="128" fill="#ffffff"/>
+  </g>
+</svg>

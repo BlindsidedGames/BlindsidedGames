@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Biomass bioreactor icon">
+  <path fill="#fff" d="M30 22h68v15H30V22Zm7 15h54v56c0 16-12 27-27 27S37 109 37 93V37Z"/>
+  <path fill="#0c0e0f" d="M47 53c8 0 11 7 17 7s10-7 18-7c3 0 6 1 9 3v20c-5-4-9-5-13-5-8 0-11 7-17 7s-10-7-18-7c-2 0-4 0-6 1V57c3-3 6-4 10-4Zm18 41c-10 0-18-5-20-13 12 5 26 5 39 0-3 8-10 13-19 13Z"/>
+  <g fill="#fff">
+    <circle cx="50" cy="64" r="6"/>
+    <circle cx="75" cy="64" r="5"/>
+    <circle cx="63" cy="82" r="5"/>
+  </g>
+</svg>

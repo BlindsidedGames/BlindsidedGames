@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Biomass culture dish icon">
+  <ellipse cx="64" cy="82" rx="48" ry="25" fill="#fff"/>
+  <path fill="#fff" d="M17 78c0-18 21-33 47-33s47 15 47 33H96c-5-9-17-16-32-16s-28 7-32 16H17Z"/>
+  <g fill="#0c0e0f">
+    <ellipse cx="64" cy="82" rx="31" ry="12"/>
+    <circle cx="43" cy="51" r="12"/>
+    <circle cx="67" cy="42" r="14"/>
+    <circle cx="88" cy="56" r="11"/>
+  </g>
+  <g fill="#fff">
+    <circle cx="43" cy="51" r="5"/>
+    <circle cx="67" cy="42" r="6"/>
+    <circle cx="88" cy="56" r="5"/>
+    <circle cx="56" cy="80" r="5"/>
+    <circle cx="75" cy="84" r="4"/>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Biomass cluster icon">
+  <defs>
+    <mask id="cluster-cutouts">
+      <rect width="128" height="128" fill="black"/>
+      <g fill="white">
+        <circle cx="48" cy="68" r="27"/>
+        <circle cx="78" cy="42" r="23"/>
+        <circle cx="82" cy="82" r="24"/>
+        <circle cx="61" cy="62" r="12"/>
+      </g>
+      <g fill="black">
+        <circle cx="46" cy="66" r="13"/>
+        <circle cx="79" cy="41" r="10"/>
+        <circle cx="83" cy="82" r="11"/>
+        <circle cx="67" cy="34" r="4"/>
+        <circle cx="91" cy="50" r="4"/>
+        <circle cx="33" cy="58" r="4"/>
+        <circle cx="52" cy="88" r="4"/>
+        <circle cx="74" cy="100" r="4"/>
+        <circle cx="101" cy="72" r="4"/>
+      </g>
+    </mask>
+  </defs>
+  <rect width="128" height="128" fill="none"/>
+  <g mask="url(#cluster-cutouts)">
+    <rect width="128" height="128" fill="#ffffff"/>
+  </g>
+</svg>
