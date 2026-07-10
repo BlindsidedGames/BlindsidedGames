@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Biomass culture bud icon">
+  <path fill="#fff" d="M8 42c0-9 8-16 18-16 2-8 9-13 17-13 8 0 14 5 16 12 5 2 8 6 8 11 0 8-7 13-15 13H20C13 49 8 47 8 42Z"/>
+  <path fill="#fff" d="M20 24c-1-8 3-14 10-18 3 7 0 14-7 18H20Zm26 2c1-8 6-13 13-15 1 8-3 14-11 17l-2-2Z"/>
+  <path fill="#0c0e0f" d="M17 42c7-7 17-9 25-5 6 3 10 3 15 0 4-2 7 4 3 7-7 5-14 5-22 2-6-2-11-1-16 3-4 3-8-3-5-7Z"/>
+  <circle cx="25" cy="32" r="4.5" fill="#0c0e0f"/>
+  <circle cx="43" cy="28" r="4" fill="#0c0e0f"/>
+  <circle cx="25" cy="32" r="1.8" fill="#fff"/>
+  <circle cx="43" cy="28" r="1.6" fill="#fff"/>
+</svg>
