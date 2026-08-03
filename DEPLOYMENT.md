@@ -4,7 +4,7 @@
 This repository now uses Astro for core routes (`/`, `/about`, `/contact`, `/policy`) and keeps legacy surfaces (`/games`, `/moodboards`) through a post-build copy step. The website no longer ships a public quizzes browser; the `quizzes/` directory is kept only for the app-facing daily feed.
 
 ## Build Commands
-- Install: `npm install`
+- Reproducible install: `npm ci`
 - Local dev: `npm run dev`
 - Production build: `npm run build`
 - Cloudflare direct deploy: `npm run deploy:pages`
@@ -25,6 +25,39 @@ Set these in Pages for both Production and Preview environments:
 - `CONTACT_EMAIL_FROM` (optional): Sender address override.
 - `CONTACT_RATE_LIMIT_WINDOW_SECONDS` (optional): Defaults to 600.
 - `CONTACT_RATE_LIMIT_MAX_REQUESTS` (optional): Defaults to 5.
+
+## Idle Dyson Swarm Web deployment
+
+Idle Dyson Swarm is served from this Pages project at the canonical URL
+`https://ids.blindsidedgames.com/play/`. Its source and checksummed promotion
+tooling live in `BlindsidedGames/IdleDysonSwarm`; this repository owns the
+promoted `public/play` package, Stripe Pages Functions, live price bindings,
+and the final Pages deployment.
+
+The authoritative operational runbook is
+[`Web/docs/website-deployment-rules.md`](https://github.com/BlindsidedGames/IdleDysonSwarm/blob/main/Web/docs/website-deployment-rules.md).
+Keep source publication, website promotion, merge, production deployment, and
+live verification as separate checkpoints.
+
+Production invariants:
+
+- `ids.blindsidedgames.com/` and `ids.blindsidedgames.com/play` redirect with
+  status `308` to `https://ids.blindsidedgames.com/play/`.
+- Host-specific routing must not redirect the main `blindsidedgames.com` or
+  `www.blindsidedgames.com` homepages.
+- `STRIPE_SECRET_KEY` and `IDS_STRIPE_TOKEN_SECRET` are production secrets and
+  must never be committed.
+- The five `IDS_STRIPE_PRICE_*` values in `wrangler.jsonc` are live Stripe
+  price IDs. Never combine them with a Sandbox key.
+- The existing Pages custom domain, DNS record, TLS certificate, Stripe
+  products, and unchanged secrets are reused during ordinary deployments.
+- The `/play/` origin, PWA scope, browser save identifiers, and entitlement
+  storage require an explicit migration plan before they may change.
+
+After deployment, verify the three canonical routes, five available catalog
+entries, existing save continuity, and—when Store or backend code changed—one
+unpaid `cs_live_` Checkout session. Do not complete a real payment as a smoke
+test.
 
 ## Turnstile Production Verification Checklist
 Run this checklist after any Turnstile key/config update and after contact-flow deployments:
