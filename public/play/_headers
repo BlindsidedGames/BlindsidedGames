@@ -1,8 +1,3 @@
-/.well-known/apple-app-site-association
-  Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=0, must-revalidate
-
-# BEGIN IDLE DYSON SWARM WEB
 /play/*
   Content-Security-Policy: default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; media-src 'self'; upgrade-insecure-requests; frame-ancestors 'none'
   Cross-Origin-Opener-Policy: same-origin
@@ -11,4 +6,3 @@
   Referrer-Policy: no-referrer
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
-# END IDLE DYSON SWARM WEB

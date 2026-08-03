@@ -1,0 +1,895 @@
+{
+  "../Assets/Sprites/MenuIcons/icons-menu-12_Debug Options.png": {
+    "file": "assets/icons-menu-12_Debug Options-D17Gw9Mj.png",
+    "src": "../Assets/Sprites/MenuIcons/icons-menu-12_Debug Options.png"
+  },
+  "../Assets/Sprites/MenuIcons/icons-menu-12_Quantum Management.png": {
+    "file": "assets/icons-menu-12_Quantum Management-krllV_Xf.png",
+    "src": "../Assets/Sprites/MenuIcons/icons-menu-12_Quantum Management.png"
+  },
+  "_react-intl-CvUpOu7C.js": {
+    "file": "assets/react-intl-CvUpOu7C.js",
+    "name": "react-intl"
+  },
+  "index.html": {
+    "file": "assets/index-DebwQZGV.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "imports": [
+      "_react-intl-CvUpOu7C.js"
+    ],
+    "dynamicImports": [
+      "src/ui/i18n/catalogs/compiled/en.json",
+      "src/ui/i18n/catalogs/compiled/en-XA.json",
+      "src/ui/i18n/catalogs/compiled/ar-XB.json",
+      "src/ui/gameplay/facilities/index.ts",
+      "src/ui/gameplay/research/index.ts",
+      "src/ui/gameplay/skills/index.ts",
+      "src/ui/gameplay/infinity/index.ts",
+      "src/ui/gameplay/reality/index.ts",
+      "src/ui/gameplay/simulations/index.ts",
+      "src/ui/gameplay/quantum/index.ts",
+      "src/ui/gameplay/offline-time/index.ts",
+      "src/ui/gameplay/statistics/index.ts",
+      "src/ui/gameplay/store/index.ts",
+      "src/ui/gameplay/story/index.ts",
+      "src/ui/gameplay/wiki/index.ts"
+    ],
+    "css": [
+      "assets/index-yOaHZfOt.css"
+    ],
+    "assets": [
+      "assets/nav-bots-B5iVjOY0.png",
+      "assets/icons-menu-12_Debug Options-D17Gw9Mj.png",
+      "assets/nav-infinity-C0LZUnwT.png",
+      "assets/nav-offline-time-DiQWCKTP.png",
+      "assets/icons-menu-12_Quantum Management-krllV_Xf.png",
+      "assets/nav-reality-Cva4Yxnr.png",
+      "assets/nav-research-Cs9EmlfD.png",
+      "assets/nav-simulations-vr-Dzf9pRq7.png",
+      "assets/nav-settings-DSCVEeeI.png",
+      "assets/nav-skills-CnuA7FHM.png",
+      "assets/nav-statistics-growth-CiKnxRBQ.png",
+      "assets/nav-store-CV9jk6N4.png",
+      "assets/nav-story-J3TGREs0.png",
+      "assets/nav-wiki-jqi-CUeA.png",
+      "assets/galaxy-edge-on-CUyAeVEH.png",
+      "assets/galaxy-face-on-c18KeUPj.png",
+      "assets/galaxy-oblique-Cbtprob-.png",
+      "assets/galaxy-shallow-inclined-C2PCoutl.png",
+      "assets/citadelCouncil-Cmr5DV9g.png",
+      "assets/higgsBoson-BESShMKW.png",
+      "assets/avotation-dabbing-avocado-BpY8yKTC.png",
+      "assets/avotation-meditation-eJM2XXJf.png",
+      "assets/quantum-shards-B3NHZlEz.png",
+      "assets/Lexend-Regular-CTjGI_9W.ttf",
+      "assets/Lexend-SemiBold-BXV3K30k.ttf",
+      "assets/Lexend-Bold-CVXNoQ86.ttf"
+    ]
+  },
+  "src/ui/assets/Lexend-Bold.ttf": {
+    "file": "assets/Lexend-Bold-CVXNoQ86.ttf",
+    "src": "src/ui/assets/Lexend-Bold.ttf"
+  },
+  "src/ui/assets/Lexend-Regular.ttf": {
+    "file": "assets/Lexend-Regular-CTjGI_9W.ttf",
+    "src": "src/ui/assets/Lexend-Regular.ttf"
+  },
+  "src/ui/assets/Lexend-SemiBold.ttf": {
+    "file": "assets/Lexend-SemiBold-BXV3K30k.ttf",
+    "src": "src/ui/assets/Lexend-SemiBold.ttf"
+  },
+  "src/ui/assets/avotation-dabbing-avocado.png": {
+    "file": "assets/avotation-dabbing-avocado-BpY8yKTC.png",
+    "src": "src/ui/assets/avotation-dabbing-avocado.png"
+  },
+  "src/ui/assets/avotation-meditation.png": {
+    "file": "assets/avotation-meditation-eJM2XXJf.png",
+    "src": "src/ui/assets/avotation-meditation.png"
+  },
+  "src/ui/assets/galaxy-field/galaxy-edge-on.png": {
+    "file": "assets/galaxy-edge-on-CUyAeVEH.png",
+    "src": "src/ui/assets/galaxy-field/galaxy-edge-on.png"
+  },
+  "src/ui/assets/galaxy-field/galaxy-face-on.png": {
+    "file": "assets/galaxy-face-on-c18KeUPj.png",
+    "src": "src/ui/assets/galaxy-field/galaxy-face-on.png"
+  },
+  "src/ui/assets/galaxy-field/galaxy-oblique.png": {
+    "file": "assets/galaxy-oblique-Cbtprob-.png",
+    "src": "src/ui/assets/galaxy-field/galaxy-oblique.png"
+  },
+  "src/ui/assets/galaxy-field/galaxy-shallow-inclined.png": {
+    "file": "assets/galaxy-shallow-inclined-C2PCoutl.png",
+    "src": "src/ui/assets/galaxy-field/galaxy-shallow-inclined.png"
+  },
+  "src/ui/assets/nav-bots.png": {
+    "file": "assets/nav-bots-B5iVjOY0.png",
+    "src": "src/ui/assets/nav-bots.png"
+  },
+  "src/ui/assets/nav-infinity.png": {
+    "file": "assets/nav-infinity-C0LZUnwT.png",
+    "src": "src/ui/assets/nav-infinity.png"
+  },
+  "src/ui/assets/nav-offline-time.png": {
+    "file": "assets/nav-offline-time-DiQWCKTP.png",
+    "src": "src/ui/assets/nav-offline-time.png"
+  },
+  "src/ui/assets/nav-reality.png": {
+    "file": "assets/nav-reality-Cva4Yxnr.png",
+    "src": "src/ui/assets/nav-reality.png"
+  },
+  "src/ui/assets/nav-research.png": {
+    "file": "assets/nav-research-Cs9EmlfD.png",
+    "src": "src/ui/assets/nav-research.png"
+  },
+  "src/ui/assets/nav-settings.png": {
+    "file": "assets/nav-settings-DSCVEeeI.png",
+    "src": "src/ui/assets/nav-settings.png"
+  },
+  "src/ui/assets/nav-simulations-vr.png": {
+    "file": "assets/nav-simulations-vr-Dzf9pRq7.png",
+    "src": "src/ui/assets/nav-simulations-vr.png"
+  },
+  "src/ui/assets/nav-skills.png": {
+    "file": "assets/nav-skills-CnuA7FHM.png",
+    "src": "src/ui/assets/nav-skills.png"
+  },
+  "src/ui/assets/nav-statistics-growth.png": {
+    "file": "assets/nav-statistics-growth-CiKnxRBQ.png",
+    "src": "src/ui/assets/nav-statistics-growth.png"
+  },
+  "src/ui/assets/nav-store.png": {
+    "file": "assets/nav-store-CV9jk6N4.png",
+    "src": "src/ui/assets/nav-store.png"
+  },
+  "src/ui/assets/nav-story.png": {
+    "file": "assets/nav-story-J3TGREs0.png",
+    "src": "src/ui/assets/nav-story.png"
+  },
+  "src/ui/assets/nav-wiki.png": {
+    "file": "assets/nav-wiki-jqi-CUeA.png",
+    "src": "src/ui/assets/nav-wiki.png"
+  },
+  "src/ui/assets/quantum-shards.png": {
+    "file": "assets/quantum-shards-B3NHZlEz.png",
+    "src": "src/ui/assets/quantum-shards.png"
+  },
+  "src/ui/assets/skill-icons/addictionToPower.png": {
+    "file": "assets/addictionToPower-B6Dl0uyw.png",
+    "src": "src/ui/assets/skill-icons/addictionToPower.png"
+  },
+  "src/ui/assets/skill-icons/agressiveAlgorithms.png": {
+    "file": "assets/agressiveAlgorithms-ByoXkKSq.png",
+    "src": "src/ui/assets/skill-icons/agressiveAlgorithms.png"
+  },
+  "src/ui/assets/skill-icons/aiManagerTree.png": {
+    "file": "assets/aiManagerTree-COuVWqoc.png",
+    "src": "src/ui/assets/skill-icons/aiManagerTree.png"
+  },
+  "src/ui/assets/skill-icons/androids.png": {
+    "file": "assets/androids-DaCj5N3u.png",
+    "src": "src/ui/assets/skill-icons/androids.png"
+  },
+  "src/ui/assets/skill-icons/artificiallyEnhancedPanels.png": {
+    "file": "assets/artificiallyEnhancedPanels-CpYOOkCW.png",
+    "src": "src/ui/assets/skill-icons/artificiallyEnhancedPanels.png"
+  },
+  "src/ui/assets/skill-icons/assemblyLineTree.png": {
+    "file": "assets/assemblyLineTree-DsLeghiM.png",
+    "src": "src/ui/assets/skill-icons/assemblyLineTree.png"
+  },
+  "src/ui/assets/skill-icons/assemblyMegaLines.png": {
+    "file": "assets/assemblyMegaLines-e0R3OnsB.png",
+    "src": "src/ui/assets/skill-icons/assemblyMegaLines.png"
+  },
+  "src/ui/assets/skill-icons/avocados.png": {
+    "file": "assets/avocados-wbesH9oc.png",
+    "src": "src/ui/assets/skill-icons/avocados.png"
+  },
+  "src/ui/assets/skill-icons/banking.png": {
+    "file": "assets/banking-nt7az1tE.png",
+    "src": "src/ui/assets/skill-icons/banking.png"
+  },
+  "src/ui/assets/skill-icons/burnOut.png": {
+    "file": "assets/burnOut-CJAPFqfe.png",
+    "src": "src/ui/assets/skill-icons/burnOut.png"
+  },
+  "src/ui/assets/skill-icons/citadelCouncil.png": {
+    "file": "assets/citadelCouncil-Cmr5DV9g.png",
+    "src": "src/ui/assets/skill-icons/citadelCouncil.png"
+  },
+  "src/ui/assets/skill-icons/clusterNetworking.png": {
+    "file": "assets/clusterNetworking-DBn-HPQa.png",
+    "src": "src/ui/assets/skill-icons/clusterNetworking.png"
+  },
+  "src/ui/assets/skill-icons/coldFusion.png": {
+    "file": "assets/coldFusion-DAbL9uPA.png",
+    "src": "src/ui/assets/skill-icons/coldFusion.png"
+  },
+  "src/ui/assets/skill-icons/dataCenterTree.png": {
+    "file": "assets/dataCenterTree-BQf2_HTa.png",
+    "src": "src/ui/assets/skill-icons/dataCenterTree.png"
+  },
+  "src/ui/assets/skill-icons/dimensionalCatCables.png": {
+    "file": "assets/dimensionalCatCables-DDBaKcrz.png",
+    "src": "src/ui/assets/skill-icons/dimensionalCatCables.png"
+  },
+  "src/ui/assets/skill-icons/doubleScienceTree.png": {
+    "file": "assets/doubleScienceTree-DzNA6EBy.png",
+    "src": "src/ui/assets/skill-icons/doubleScienceTree.png"
+  },
+  "src/ui/assets/skill-icons/dysonSubsidies.png": {
+    "file": "assets/dysonSubsidies-CywdKC7Z.png",
+    "src": "src/ui/assets/skill-icons/dysonSubsidies.png"
+  },
+  "src/ui/assets/skill-icons/economicDominance.png": {
+    "file": "assets/economicDominance-CYP2N1au.png",
+    "src": "src/ui/assets/skill-icons/economicDominance.png"
+  },
+  "src/ui/assets/skill-icons/economicRevolution.png": {
+    "file": "assets/economicRevolution-ClzVmX0s.png",
+    "src": "src/ui/assets/skill-icons/economicRevolution.png"
+  },
+  "src/ui/assets/skill-icons/endOfTheLine.png": {
+    "file": "assets/endOfTheLine-DhXKKeyS.png",
+    "src": "src/ui/assets/skill-icons/endOfTheLine.png"
+  },
+  "src/ui/assets/skill-icons/fragmentAssembly.png": {
+    "file": "assets/fragmentAssembly-DXDzWCEp.png",
+    "src": "src/ui/assets/skill-icons/fragmentAssembly.png"
+  },
+  "src/ui/assets/skill-icons/fusionReactors.png": {
+    "file": "assets/fusionReactors-CeWxIUGn.png",
+    "src": "src/ui/assets/skill-icons/fusionReactors.png"
+  },
+  "src/ui/assets/skill-icons/galacticPradigmShift.png": {
+    "file": "assets/galacticPradigmShift-BiXQufgO.png",
+    "src": "src/ui/assets/skill-icons/galacticPradigmShift.png"
+  },
+  "src/ui/assets/skill-icons/higgsBoson.png": {
+    "file": "assets/higgsBoson-BESShMKW.png",
+    "src": "src/ui/assets/skill-icons/higgsBoson.png"
+  },
+  "src/ui/assets/skill-icons/hubbleTelescope.png": {
+    "file": "assets/hubbleTelescope-_iTRw3P0.png",
+    "src": "src/ui/assets/skill-icons/hubbleTelescope.png"
+  },
+  "src/ui/assets/skill-icons/hypercubeNetworks.png": {
+    "file": "assets/hypercubeNetworks-C7nNRLtl.png",
+    "src": "src/ui/assets/skill-icons/hypercubeNetworks.png"
+  },
+  "src/ui/assets/skill-icons/idleElectricSheep.png": {
+    "file": "assets/idleElectricSheep-CYKfMPCi.png",
+    "src": "src/ui/assets/skill-icons/idleElectricSheep.png"
+  },
+  "src/ui/assets/skill-icons/idleSpaceFlight.png": {
+    "file": "assets/idleSpaceFlight-Q9X3RPe6.png",
+    "src": "src/ui/assets/skill-icons/idleSpaceFlight.png"
+  },
+  "src/ui/assets/skill-icons/indulgingInPower.png": {
+    "file": "assets/indulgingInPower-bJtOCnod.png",
+    "src": "src/ui/assets/skill-icons/indulgingInPower.png"
+  },
+  "src/ui/assets/skill-icons/investmentPortfolio.png": {
+    "file": "assets/investmentPortfolio-BTWHlGB2.png",
+    "src": "src/ui/assets/skill-icons/investmentPortfolio.png"
+  },
+  "src/ui/assets/skill-icons/jamesWebbTelescope.png": {
+    "file": "assets/jamesWebbTelescope-BAZR2jYL.png",
+    "src": "src/ui/assets/skill-icons/jamesWebbTelescope.png"
+  },
+  "src/ui/assets/skill-icons/manualLabour.png": {
+    "file": "assets/manualLabour-DnXf3ara.png",
+    "src": "src/ui/assets/skill-icons/manualLabour.png"
+  },
+  "src/ui/assets/skill-icons/megaSwarm.png": {
+    "file": "assets/megaSwarm-DVnIG3RC.png",
+    "src": "src/ui/assets/skill-icons/megaSwarm.png"
+  },
+  "src/ui/assets/skill-icons/monetaryPolicy.png": {
+    "file": "assets/monetaryPolicy-BpL0BHl9.png",
+    "src": "src/ui/assets/skill-icons/monetaryPolicy.png"
+  },
+  "src/ui/assets/skill-icons/oneMinutePlan.png": {
+    "file": "assets/oneMinutePlan-L_QrCNJk.png",
+    "src": "src/ui/assets/skill-icons/oneMinutePlan.png"
+  },
+  "src/ui/assets/skill-icons/panelLifetime20Tree.png": {
+    "file": "assets/panelLifetime20Tree-CGdzHVn9.png",
+    "src": "src/ui/assets/skill-icons/panelLifetime20Tree.png"
+  },
+  "src/ui/assets/skill-icons/panelMaintenance.png": {
+    "file": "assets/panelMaintenance-D4DpymGG.png",
+    "src": "src/ui/assets/skill-icons/panelMaintenance.png"
+  },
+  "src/ui/assets/skill-icons/panelWarranty.png": {
+    "file": "assets/panelWarranty-BF6hrIKA.png",
+    "src": "src/ui/assets/skill-icons/panelWarranty.png"
+  },
+  "src/ui/assets/skill-icons/paragon.png": {
+    "file": "assets/paragon-BBDbhKKW.png",
+    "src": "src/ui/assets/skill-icons/paragon.png"
+  },
+  "src/ui/assets/skill-icons/parallelComputation.png": {
+    "file": "assets/parallelComputation-DT0ky9oD.png",
+    "src": "src/ui/assets/skill-icons/parallelComputation.png"
+  },
+  "src/ui/assets/skill-icons/parallelProcessing.png": {
+    "file": "assets/parallelProcessing-D0hGp3FY.png",
+    "src": "src/ui/assets/skill-icons/parallelProcessing.png"
+  },
+  "src/ui/assets/skill-icons/planetAssembly.png": {
+    "file": "assets/planetAssembly-Bvf946B0.png",
+    "src": "src/ui/assets/skill-icons/planetAssembly.png"
+  },
+  "src/ui/assets/skill-icons/planetsTree.png": {
+    "file": "assets/planetsTree-BaTQWmiB.png",
+    "src": "src/ui/assets/skill-icons/planetsTree.png"
+  },
+  "src/ui/assets/skill-icons/pocketAndroids.png": {
+    "file": "assets/pocketAndroids-Cp4OYFSU.png",
+    "src": "src/ui/assets/skill-icons/pocketAndroids.png"
+  },
+  "src/ui/assets/skill-icons/pocketDimensions.png": {
+    "file": "assets/pocketDimensions-C9NNGMlI.png",
+    "src": "src/ui/assets/skill-icons/pocketDimensions.png"
+  },
+  "src/ui/assets/skill-icons/pocketMultiverse.png": {
+    "file": "assets/pocketMultiverse-CTcxh40V.png",
+    "src": "src/ui/assets/skill-icons/pocketMultiverse.png"
+  },
+  "src/ui/assets/skill-icons/pocketProtectors.png": {
+    "file": "assets/pocketProtectors-CUXp7GY9.png",
+    "src": "src/ui/assets/skill-icons/pocketProtectors.png"
+  },
+  "src/ui/assets/skill-icons/powerOverwhelming.png": {
+    "file": "assets/powerOverwhelming-Bmv14cA0.png",
+    "src": "src/ui/assets/skill-icons/powerOverwhelming.png"
+  },
+  "src/ui/assets/skill-icons/powerUnderwhelming.png": {
+    "file": "assets/powerUnderwhelming-Caw6lGy2.png",
+    "src": "src/ui/assets/skill-icons/powerUnderwhelming.png"
+  },
+  "src/ui/assets/skill-icons/producedAsScienceTree.png": {
+    "file": "assets/producedAsScienceTree-8ZOklcX0.png",
+    "src": "src/ui/assets/skill-icons/producedAsScienceTree.png"
+  },
+  "src/ui/assets/skill-icons/productionScaling.png": {
+    "file": "assets/productionScaling-BrgQvZ_1.png",
+    "src": "src/ui/assets/skill-icons/productionScaling.png"
+  },
+  "src/ui/assets/skill-icons/progressiveAssembly.png": {
+    "file": "assets/progressiveAssembly-CfT9DFWe.png",
+    "src": "src/ui/assets/skill-icons/progressiveAssembly.png"
+  },
+  "src/ui/assets/skill-icons/purityOfBody.png": {
+    "file": "assets/purityOfBody-BwZalpR_.png",
+    "src": "src/ui/assets/skill-icons/purityOfBody.png"
+  },
+  "src/ui/assets/skill-icons/purityOfMind.png": {
+    "file": "assets/purityOfMind-Bai7iT1d.png",
+    "src": "src/ui/assets/skill-icons/purityOfMind.png"
+  },
+  "src/ui/assets/skill-icons/purityOfSEssence.png": {
+    "file": "assets/purityOfSEssence-DmE-V6Vv.png",
+    "src": "src/ui/assets/skill-icons/purityOfSEssence.png"
+  },
+  "src/ui/assets/skill-icons/quantumComputing.png": {
+    "file": "assets/quantumComputing-C4RtYcGD.png",
+    "src": "src/ui/assets/skill-icons/quantumComputing.png"
+  },
+  "src/ui/assets/skill-icons/reapers.png": {
+    "file": "assets/reapers-_eyydpLx.png",
+    "src": "src/ui/assets/skill-icons/reapers.png"
+  },
+  "src/ui/assets/skill-icons/regulatedAcademia.png": {
+    "file": "assets/regulatedAcademia-Co9_R3uP.png",
+    "src": "src/ui/assets/skill-icons/regulatedAcademia.png"
+  },
+  "src/ui/assets/skill-icons/renegade.png": {
+    "file": "assets/renegade-BlGnqgp4.png",
+    "src": "src/ui/assets/skill-icons/renegade.png"
+  },
+  "src/ui/assets/skill-icons/renewableEnergy.png": {
+    "file": "assets/renewableEnergy-Bi09cSCZ.png",
+    "src": "src/ui/assets/skill-icons/renewableEnergy.png"
+  },
+  "src/ui/assets/skill-icons/repeatableResearch.png": {
+    "file": "assets/repeatableResearch-B4MWKGTx.png",
+    "src": "src/ui/assets/skill-icons/repeatableResearch.png"
+  },
+  "src/ui/assets/skill-icons/rocketMania.png": {
+    "file": "assets/rocketMania-CqZ1ry4k.png",
+    "src": "src/ui/assets/skill-icons/rocketMania.png"
+  },
+  "src/ui/assets/skill-icons/rudimentarySingularity.png": {
+    "file": "assets/rudimentarySingularity-YOAmYXAA.png",
+    "src": "src/ui/assets/skill-icons/rudimentarySingularity.png"
+  },
+  "src/ui/assets/skill-icons/saren.png": {
+    "file": "assets/saren-Ckvnmpog.png",
+    "src": "src/ui/assets/skill-icons/saren.png"
+  },
+  "src/ui/assets/skill-icons/scientificDominance.png": {
+    "file": "assets/stellarDominance-BMwdhp29.png",
+    "src": "src/ui/assets/skill-icons/scientificDominance.png"
+  },
+  "src/ui/assets/skill-icons/scientificPlanets.png": {
+    "file": "assets/scientificPlanets-D1Znji7m.png",
+    "src": "src/ui/assets/skill-icons/scientificPlanets.png"
+  },
+  "src/ui/assets/skill-icons/scientificRevolution.png": {
+    "file": "assets/scientificRevolution-D9eVH7Ww.png",
+    "src": "src/ui/assets/skill-icons/scientificRevolution.png"
+  },
+  "src/ui/assets/skill-icons/serverTree.png": {
+    "file": "assets/serverTree-BGNEjeWB.png",
+    "src": "src/ui/assets/skill-icons/serverTree.png"
+  },
+  "src/ui/assets/skill-icons/shellWorlds.png": {
+    "file": "assets/shellWorlds-CF9uMqUj.png",
+    "src": "src/ui/assets/skill-icons/shellWorlds.png"
+  },
+  "src/ui/assets/skill-icons/shepherd.png": {
+    "file": "assets/shepherd-BaDISTJp.png",
+    "src": "src/ui/assets/skill-icons/shepherd.png"
+  },
+  "src/ui/assets/skill-icons/shoulderSurgery.png": {
+    "file": "assets/shoulderSurgery-DyhtfkHP.png",
+    "src": "src/ui/assets/skill-icons/shoulderSurgery.png"
+  },
+  "src/ui/assets/skill-icons/shouldersOfGiants.png": {
+    "file": "assets/shouldersOfGiants-BfxbD1XA.png",
+    "src": "src/ui/assets/skill-icons/shouldersOfGiants.png"
+  },
+  "src/ui/assets/skill-icons/shouldersOfPrecursors.png": {
+    "file": "assets/shouldersOfPrecursors-CtdTOI5a.png",
+    "src": "src/ui/assets/skill-icons/shouldersOfPrecursors.png"
+  },
+  "src/ui/assets/skill-icons/shouldersOfTheEnlightened.png": {
+    "file": "assets/shouldersOfTheEnlightened-4bAoVBOd.png",
+    "src": "src/ui/assets/skill-icons/shouldersOfTheEnlightened.png"
+  },
+  "src/ui/assets/skill-icons/shouldersOfTheFallen.png": {
+    "file": "assets/shouldersOfTheFallen-WFqp6jYR.png",
+    "src": "src/ui/assets/skill-icons/shouldersOfTheFallen.png"
+  },
+  "src/ui/assets/skill-icons/shouldersOfTheRevolution.png": {
+    "file": "assets/shouldersOfTheRevolution-DAiaBBS2.png",
+    "src": "src/ui/assets/skill-icons/shouldersOfTheRevolution.png"
+  },
+  "src/ui/assets/skill-icons/solarBubbles.png": {
+    "file": "assets/solarBubbles-BlaDRAuB.png",
+    "src": "src/ui/assets/skill-icons/solarBubbles.png"
+  },
+  "src/ui/assets/skill-icons/startHereTree.png": {
+    "file": "assets/startHereTree-DiHUbHUh.png",
+    "src": "src/ui/assets/skill-icons/startHereTree.png"
+  },
+  "src/ui/assets/skill-icons/stayingPower.png": {
+    "file": "assets/stayingPower-B69LlLBK.png",
+    "src": "src/ui/assets/skill-icons/stayingPower.png"
+  },
+  "src/ui/assets/skill-icons/stellarDominance.png": {
+    "file": "assets/stellarDominance-BMwdhp29.png",
+    "src": "src/ui/assets/skill-icons/scientificDominance.png"
+  },
+  "src/ui/assets/skill-icons/stellarImprovements.png": {
+    "file": "assets/stellarImprovements-BjHaV4ZA.png",
+    "src": "src/ui/assets/skill-icons/stellarImprovements.png"
+  },
+  "src/ui/assets/skill-icons/stellarObliteration.png": {
+    "file": "assets/stellarObliteration-DW8fKk1v.png",
+    "src": "src/ui/assets/skill-icons/stellarObliteration.png"
+  },
+  "src/ui/assets/skill-icons/stellarSacrifices.png": {
+    "file": "assets/stellarSacrifices-DEVmJVv8.png",
+    "src": "src/ui/assets/skill-icons/stellarSacrifices.png"
+  },
+  "src/ui/assets/skill-icons/superRadiantScattering.png": {
+    "file": "assets/superRadiantScattering-Qcme6-SL.png",
+    "src": "src/ui/assets/skill-icons/superRadiantScattering.png"
+  },
+  "src/ui/assets/skill-icons/superSwarm.png": {
+    "file": "assets/superSwarm-Bg6dlV7c.png",
+    "src": "src/ui/assets/skill-icons/superSwarm.png"
+  },
+  "src/ui/assets/skill-icons/superchargedPower.png": {
+    "file": "assets/superchargedPower-C3a_BevW.png",
+    "src": "src/ui/assets/skill-icons/superchargedPower.png"
+  },
+  "src/ui/assets/skill-icons/supernova.png": {
+    "file": "assets/supernova-D9OIhvJk.png",
+    "src": "src/ui/assets/skill-icons/supernova.png"
+  },
+  "src/ui/assets/skill-icons/tasteOfPower.png": {
+    "file": "assets/tasteOfPower-DjpcCkks.png",
+    "src": "src/ui/assets/skill-icons/tasteOfPower.png"
+  },
+  "src/ui/assets/skill-icons/terraEculeo.png": {
+    "file": "assets/terraEculeo-Q-E4zcdb.png",
+    "src": "src/ui/assets/skill-icons/terraEculeo.png"
+  },
+  "src/ui/assets/skill-icons/terraFirma.png": {
+    "file": "assets/terraFirma-CWnwI_XQ.png",
+    "src": "src/ui/assets/skill-icons/terraFirma.png"
+  },
+  "src/ui/assets/skill-icons/terraGloriae.png": {
+    "file": "assets/terraGloriae-DeDZj8kw.png",
+    "src": "src/ui/assets/skill-icons/terraGloriae.png"
+  },
+  "src/ui/assets/skill-icons/terraInfirma.png": {
+    "file": "assets/terraInfirma-C3EIb9Vm.png",
+    "src": "src/ui/assets/skill-icons/terraInfirma.png"
+  },
+  "src/ui/assets/skill-icons/terraIrradiant.png": {
+    "file": "assets/terraIrradiant-DUw_qyY8.png",
+    "src": "src/ui/assets/skill-icons/terraIrradiant.png"
+  },
+  "src/ui/assets/skill-icons/terraNova.png": {
+    "file": "assets/terraNova-CwIgC0OR.png",
+    "src": "src/ui/assets/skill-icons/terraNova.png"
+  },
+  "src/ui/assets/skill-icons/terraNullius.png": {
+    "file": "assets/terraNullius-CxbPyeTs.png",
+    "src": "src/ui/assets/skill-icons/terraNullius.png"
+  },
+  "src/ui/assets/skill-icons/terraformingProtocols.png": {
+    "file": "assets/terraformingProtocols-DYNyRrVO.png",
+    "src": "src/ui/assets/skill-icons/terraformingProtocols.png"
+  },
+  "src/ui/assets/skill-icons/ultimateSwarm.png": {
+    "file": "assets/ultimateSwarm-BN8KP2k3.png",
+    "src": "src/ui/assets/skill-icons/ultimateSwarm.png"
+  },
+  "src/ui/assets/skill-icons/unsuspiciousAlgorithms.png": {
+    "file": "assets/unsuspiciousAlgorithms-DrwlG6EW.png",
+    "src": "src/ui/assets/skill-icons/unsuspiciousAlgorithms.png"
+  },
+  "src/ui/assets/skill-icons/versatileProductionTactics.png": {
+    "file": "assets/versatileProductionTactics-Bu2ifUi0.png",
+    "src": "src/ui/assets/skill-icons/versatileProductionTactics.png"
+  },
+  "src/ui/assets/skill-icons/whatCouldHaveBeen.png": {
+    "file": "assets/whatCouldHaveBeen-CjSSxWIF.png",
+    "src": "src/ui/assets/skill-icons/whatCouldHaveBeen.png"
+  },
+  "src/ui/assets/skill-icons/whatWillComeToPass.png": {
+    "file": "assets/whatWillComeToPass-B-9FBuKN.png",
+    "src": "src/ui/assets/skill-icons/whatWillComeToPass.png"
+  },
+  "src/ui/assets/skill-icons/workerBoost.png": {
+    "file": "assets/workerBoost-CM_LVY43.png",
+    "src": "src/ui/assets/skill-icons/workerBoost.png"
+  },
+  "src/ui/assets/skill-icons/workerEfficiencyTree.png": {
+    "file": "assets/workerEfficiencyTree-B_i-rAEX.png",
+    "src": "src/ui/assets/skill-icons/workerEfficiencyTree.png"
+  },
+  "src/ui/assets/skill-icons/worthySacrifice.png": {
+    "file": "assets/worthySacrifice-C60dwvmW.png",
+    "src": "src/ui/assets/skill-icons/worthySacrifice.png"
+  },
+  "src/ui/assets/symbol-influence.png": {
+    "file": "assets/citadelCouncil-Cmr5DV9g.png",
+    "src": "src/ui/assets/skill-icons/citadelCouncil.png"
+  },
+  "src/ui/assets/symbol-strange-matter.png": {
+    "file": "assets/higgsBoson-BESShMKW.png",
+    "src": "src/ui/assets/skill-icons/higgsBoson.png"
+  },
+  "src/ui/gameplay/facilities/index.ts": {
+    "file": "assets/facilities-CY3wgESX.js",
+    "name": "facilities",
+    "src": "src/ui/gameplay/facilities/index.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_react-intl-CvUpOu7C.js",
+      "index.html"
+    ]
+  },
+  "src/ui/gameplay/infinity/index.ts": {
+    "file": "assets/infinity-Cc838nVS.js",
+    "name": "infinity",
+    "src": "src/ui/gameplay/infinity/index.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_react-intl-CvUpOu7C.js",
+      "index.html"
+    ],
+    "css": [
+      "assets/infinity-DY0VAzzh.css"
+    ],
+    "assets": [
+      "assets/Lexend-Regular-CTjGI_9W.ttf",
+      "assets/Lexend-SemiBold-BXV3K30k.ttf",
+      "assets/Lexend-Bold-CVXNoQ86.ttf"
+    ]
+  },
+  "src/ui/gameplay/offline-time/index.ts": {
+    "file": "assets/offline-time-CFIECLpF.js",
+    "name": "offline-time",
+    "src": "src/ui/gameplay/offline-time/index.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_react-intl-CvUpOu7C.js",
+      "index.html"
+    ],
+    "css": [
+      "assets/offline-time-dcabc4sd.css"
+    ],
+    "assets": [
+      "assets/Lexend-Regular-CTjGI_9W.ttf",
+      "assets/Lexend-SemiBold-BXV3K30k.ttf",
+      "assets/Lexend-Bold-CVXNoQ86.ttf"
+    ]
+  },
+  "src/ui/gameplay/quantum/index.ts": {
+    "file": "assets/quantum-DsoisJ8J.js",
+    "name": "quantum",
+    "src": "src/ui/gameplay/quantum/index.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_react-intl-CvUpOu7C.js",
+      "index.html"
+    ],
+    "assets": [
+      "assets/avocados-wbesH9oc.png"
+    ]
+  },
+  "src/ui/gameplay/reality/index.ts": {
+    "file": "assets/reality-heBZtjhu.js",
+    "name": "reality",
+    "src": "src/ui/gameplay/reality/index.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_react-intl-CvUpOu7C.js",
+      "index.html"
+    ],
+    "css": [
+      "assets/reality-rSoJ6nUi.css"
+    ],
+    "assets": [
+      "assets/Lexend-Regular-CTjGI_9W.ttf",
+      "assets/Lexend-SemiBold-BXV3K30k.ttf",
+      "assets/Lexend-Bold-CVXNoQ86.ttf"
+    ]
+  },
+  "src/ui/gameplay/research/index.ts": {
+    "file": "assets/research-Di94wyau.js",
+    "name": "research",
+    "src": "src/ui/gameplay/research/index.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_react-intl-CvUpOu7C.js",
+      "index.html"
+    ],
+    "css": [
+      "assets/research-CAJuRP9O.css"
+    ],
+    "assets": [
+      "assets/Lexend-Regular-CTjGI_9W.ttf",
+      "assets/Lexend-SemiBold-BXV3K30k.ttf",
+      "assets/Lexend-Bold-CVXNoQ86.ttf"
+    ]
+  },
+  "src/ui/gameplay/simulations/index.ts": {
+    "file": "assets/simulations-CMkZ39Gp.js",
+    "name": "simulations",
+    "src": "src/ui/gameplay/simulations/index.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/ui/gameplay/skills/index.ts": {
+    "file": "assets/skills-6gp028FE.js",
+    "name": "skills",
+    "src": "src/ui/gameplay/skills/index.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_react-intl-CvUpOu7C.js",
+      "index.html"
+    ],
+    "css": [
+      "assets/skills-CcPAytvX.css"
+    ],
+    "assets": [
+      "assets/addictionToPower-B6Dl0uyw.png",
+      "assets/agressiveAlgorithms-ByoXkKSq.png",
+      "assets/aiManagerTree-COuVWqoc.png",
+      "assets/androids-DaCj5N3u.png",
+      "assets/artificiallyEnhancedPanels-CpYOOkCW.png",
+      "assets/assemblyLineTree-DsLeghiM.png",
+      "assets/assemblyMegaLines-e0R3OnsB.png",
+      "assets/avocados-wbesH9oc.png",
+      "assets/banking-nt7az1tE.png",
+      "assets/burnOut-CJAPFqfe.png",
+      "assets/citadelCouncil-Cmr5DV9g.png",
+      "assets/clusterNetworking-DBn-HPQa.png",
+      "assets/coldFusion-DAbL9uPA.png",
+      "assets/dataCenterTree-BQf2_HTa.png",
+      "assets/dimensionalCatCables-DDBaKcrz.png",
+      "assets/doubleScienceTree-DzNA6EBy.png",
+      "assets/dysonSubsidies-CywdKC7Z.png",
+      "assets/economicDominance-CYP2N1au.png",
+      "assets/economicRevolution-ClzVmX0s.png",
+      "assets/endOfTheLine-DhXKKeyS.png",
+      "assets/fragmentAssembly-DXDzWCEp.png",
+      "assets/fusionReactors-CeWxIUGn.png",
+      "assets/galacticPradigmShift-BiXQufgO.png",
+      "assets/higgsBoson-BESShMKW.png",
+      "assets/hubbleTelescope-_iTRw3P0.png",
+      "assets/hypercubeNetworks-C7nNRLtl.png",
+      "assets/idleElectricSheep-CYKfMPCi.png",
+      "assets/idleSpaceFlight-Q9X3RPe6.png",
+      "assets/indulgingInPower-bJtOCnod.png",
+      "assets/investmentPortfolio-BTWHlGB2.png",
+      "assets/jamesWebbTelescope-BAZR2jYL.png",
+      "assets/manualLabour-DnXf3ara.png",
+      "assets/megaSwarm-DVnIG3RC.png",
+      "assets/monetaryPolicy-BpL0BHl9.png",
+      "assets/oneMinutePlan-L_QrCNJk.png",
+      "assets/panelLifetime20Tree-CGdzHVn9.png",
+      "assets/panelMaintenance-D4DpymGG.png",
+      "assets/panelWarranty-BF6hrIKA.png",
+      "assets/paragon-BBDbhKKW.png",
+      "assets/parallelComputation-DT0ky9oD.png",
+      "assets/parallelProcessing-D0hGp3FY.png",
+      "assets/planetAssembly-Bvf946B0.png",
+      "assets/planetsTree-BaTQWmiB.png",
+      "assets/pocketAndroids-Cp4OYFSU.png",
+      "assets/pocketDimensions-C9NNGMlI.png",
+      "assets/pocketMultiverse-CTcxh40V.png",
+      "assets/pocketProtectors-CUXp7GY9.png",
+      "assets/powerOverwhelming-Bmv14cA0.png",
+      "assets/powerUnderwhelming-Caw6lGy2.png",
+      "assets/producedAsScienceTree-8ZOklcX0.png",
+      "assets/productionScaling-BrgQvZ_1.png",
+      "assets/progressiveAssembly-CfT9DFWe.png",
+      "assets/purityOfBody-BwZalpR_.png",
+      "assets/purityOfMind-Bai7iT1d.png",
+      "assets/purityOfSEssence-DmE-V6Vv.png",
+      "assets/quantumComputing-C4RtYcGD.png",
+      "assets/reapers-_eyydpLx.png",
+      "assets/regulatedAcademia-Co9_R3uP.png",
+      "assets/renegade-BlGnqgp4.png",
+      "assets/renewableEnergy-Bi09cSCZ.png",
+      "assets/repeatableResearch-B4MWKGTx.png",
+      "assets/rocketMania-CqZ1ry4k.png",
+      "assets/rudimentarySingularity-YOAmYXAA.png",
+      "assets/saren-Ckvnmpog.png",
+      "assets/stellarDominance-BMwdhp29.png",
+      "assets/scientificPlanets-D1Znji7m.png",
+      "assets/scientificRevolution-D9eVH7Ww.png",
+      "assets/serverTree-BGNEjeWB.png",
+      "assets/shellWorlds-CF9uMqUj.png",
+      "assets/shepherd-BaDISTJp.png",
+      "assets/shoulderSurgery-DyhtfkHP.png",
+      "assets/shouldersOfGiants-BfxbD1XA.png",
+      "assets/shouldersOfPrecursors-CtdTOI5a.png",
+      "assets/shouldersOfTheEnlightened-4bAoVBOd.png",
+      "assets/shouldersOfTheFallen-WFqp6jYR.png",
+      "assets/shouldersOfTheRevolution-DAiaBBS2.png",
+      "assets/solarBubbles-BlaDRAuB.png",
+      "assets/startHereTree-DiHUbHUh.png",
+      "assets/stayingPower-B69LlLBK.png",
+      "assets/stellarImprovements-BjHaV4ZA.png",
+      "assets/stellarObliteration-DW8fKk1v.png",
+      "assets/stellarSacrifices-DEVmJVv8.png",
+      "assets/superRadiantScattering-Qcme6-SL.png",
+      "assets/superSwarm-Bg6dlV7c.png",
+      "assets/superchargedPower-C3a_BevW.png",
+      "assets/supernova-D9OIhvJk.png",
+      "assets/tasteOfPower-DjpcCkks.png",
+      "assets/terraEculeo-Q-E4zcdb.png",
+      "assets/terraFirma-CWnwI_XQ.png",
+      "assets/terraGloriae-DeDZj8kw.png",
+      "assets/terraInfirma-C3EIb9Vm.png",
+      "assets/terraIrradiant-DUw_qyY8.png",
+      "assets/terraNova-CwIgC0OR.png",
+      "assets/terraNullius-CxbPyeTs.png",
+      "assets/terraformingProtocols-DYNyRrVO.png",
+      "assets/ultimateSwarm-BN8KP2k3.png",
+      "assets/unsuspiciousAlgorithms-DrwlG6EW.png",
+      "assets/versatileProductionTactics-Bu2ifUi0.png",
+      "assets/whatCouldHaveBeen-CjSSxWIF.png",
+      "assets/whatWillComeToPass-B-9FBuKN.png",
+      "assets/workerBoost-CM_LVY43.png",
+      "assets/workerEfficiencyTree-B_i-rAEX.png",
+      "assets/worthySacrifice-C60dwvmW.png"
+    ]
+  },
+  "src/ui/gameplay/statistics/index.ts": {
+    "file": "assets/statistics-DhQmQYAp.js",
+    "name": "statistics",
+    "src": "src/ui/gameplay/statistics/index.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_react-intl-CvUpOu7C.js",
+      "index.html"
+    ],
+    "css": [
+      "assets/statistics-X6udGxWk.css"
+    ],
+    "assets": [
+      "assets/Lexend-Regular-CTjGI_9W.ttf",
+      "assets/Lexend-SemiBold-BXV3K30k.ttf",
+      "assets/Lexend-Bold-CVXNoQ86.ttf"
+    ]
+  },
+  "src/ui/gameplay/store/index.ts": {
+    "file": "assets/store-DVQTPYrq.js",
+    "name": "store",
+    "src": "src/ui/gameplay/store/index.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_react-intl-CvUpOu7C.js",
+      "index.html"
+    ],
+    "css": [
+      "assets/store-KUa5da3p.css"
+    ],
+    "assets": [
+      "assets/Lexend-Regular-CTjGI_9W.ttf",
+      "assets/Lexend-SemiBold-BXV3K30k.ttf",
+      "assets/Lexend-Bold-CVXNoQ86.ttf"
+    ]
+  },
+  "src/ui/gameplay/story/index.ts": {
+    "file": "assets/story-vhVRUqp-.js",
+    "name": "story",
+    "src": "src/ui/gameplay/story/index.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_react-intl-CvUpOu7C.js",
+      "index.html"
+    ],
+    "css": [
+      "assets/story-CDjGOcHy.css"
+    ],
+    "assets": [
+      "assets/Lexend-Regular-CTjGI_9W.ttf",
+      "assets/Lexend-SemiBold-BXV3K30k.ttf",
+      "assets/Lexend-Bold-CVXNoQ86.ttf"
+    ]
+  },
+  "src/ui/gameplay/wiki/index.ts": {
+    "file": "assets/wiki-wi2Rn9f8.js",
+    "name": "wiki",
+    "src": "src/ui/gameplay/wiki/index.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_react-intl-CvUpOu7C.js",
+      "index.html"
+    ],
+    "css": [
+      "assets/wiki-BK93G9S_.css"
+    ],
+    "assets": [
+      "assets/Lexend-Regular-CTjGI_9W.ttf",
+      "assets/Lexend-SemiBold-BXV3K30k.ttf",
+      "assets/Lexend-Bold-CVXNoQ86.ttf"
+    ]
+  },
+  "src/ui/i18n/catalogs/compiled/ar-XB.json": {
+    "file": "assets/ar-XB-C-WBGvRq.js",
+    "name": "ar-XB",
+    "src": "src/ui/i18n/catalogs/compiled/ar-XB.json",
+    "isDynamicEntry": true
+  },
+  "src/ui/i18n/catalogs/compiled/en-XA.json": {
+    "file": "assets/en-XA-BEx4jlI8.js",
+    "name": "en-XA",
+    "src": "src/ui/i18n/catalogs/compiled/en-XA.json",
+    "isDynamicEntry": true
+  },
+  "src/ui/i18n/catalogs/compiled/en.json": {
+    "file": "assets/en-DZmp5py1.js",
+    "name": "en",
+    "src": "src/ui/i18n/catalogs/compiled/en.json",
+    "isDynamicEntry": true
+  }
+}
