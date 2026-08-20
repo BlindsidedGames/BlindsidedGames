@@ -4,11 +4,11 @@
   "canonicalUrl": "https://ids.blindsidedgames.com/play/",
   "source": {
     "repository": "BlindsidedGames/IdleDysonSwarm",
-    "commitSha": "0286ca1dd1d044a2daf4c556a82d900729bc4ef1"
+    "commitSha": "69c630be7a1932a1109aa413e0c2f247d73c7e5b"
   },
   "website": {
     "repository": "BlindsidedGames/BlindsidedGames",
-    "pinnedCommitSha": "ebcb10c254417365186d4bf5d51ac6e27ebd48c7",
+    "pinnedCommitSha": "b1fb25f9392384d775f7b08e365a66360aa47d58",
     "baseBranch": "main",
     "destinationDirectory": "public/play"
   },
