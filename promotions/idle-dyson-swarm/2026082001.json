@@ -4,11 +4,11 @@
   "canonicalUrl": "https://ids.blindsidedgames.com/play/",
   "source": {
     "repository": "BlindsidedGames/IdleDysonSwarm",
-    "commitSha": "6164cb3edea4606d9c25cc523f68d1dbfba2553b"
+    "commitSha": "0286ca1dd1d044a2daf4c556a82d900729bc4ef1"
   },
   "website": {
     "repository": "BlindsidedGames/BlindsidedGames",
-    "pinnedCommitSha": "85c5da18e13412e9198dc9e269963bcd59dd372f",
+    "pinnedCommitSha": "ebcb10c254417365186d4bf5d51ac6e27ebd48c7",
     "baseBranch": "main",
     "destinationDirectory": "public/play"
   },
@@ -69,9 +69,9 @@
       "sha256": "b86621b76804032afa14c13c9d02d821499103db153efbf3e11676cc3e7fe843"
     },
     {
-      "path": "assets/AvotationProgress-Bwf9CuJP.js",
+      "path": "assets/AvotationProgress-DA4vMeC8.js",
       "bytes": 9584,
-      "sha256": "2c539cfa4091f36a7f9c87ad5a1e1f494b6f1371071d27f56b15d0b23dc98428"
+      "sha256": "e4ea6d0578d2bbcea6bfc0cd5d00cfde387e81d87187d8e5626aa04a128f0fff"
     },
     {
       "path": "assets/burnOut-5jrxLfpb.webp",
@@ -109,9 +109,9 @@
       "sha256": "de9b16cc37b6281e64c0f03abd0d015dbfef4dbfea723aeaaa14eee46ddb536f"
     },
     {
-      "path": "assets/debug-DteuXCl6.js",
+      "path": "assets/debug-l0ZQG70U.js",
       "bytes": 7771,
-      "sha256": "e950649eaa4f118a4193d1ce2b2b90c0d58e65b62cc18a7e08fb34125a0ee8ab"
+      "sha256": "bf24592c35dda921ab671ec728e5a4613953c42219a54b707ad70df96ba15a34"
     },
     {
       "path": "assets/dimensionalCatCables-DS5_NMhI.webp",
@@ -154,9 +154,9 @@
       "sha256": "fea8a6dc63206fdba6bfc0b65f3c8fc6b8968c5ec6477e800a257b22f956dd99"
     },
     {
-      "path": "assets/facilities-CYMAgfdT.js",
+      "path": "assets/facilities-CQgG2uth.js",
       "bytes": 14432,
-      "sha256": "bf5b647444e9c1a4edc49b2d4c8a676f2d49e2945bee5ec2a7b63c33c175a1ea"
+      "sha256": "bb29ca059eed9e5cca7e37648adb88cdb6d007bd4162c3bc83fa0b8ddf52b280"
     },
     {
       "path": "assets/fusionReactors-BqHUvULV.webp",
@@ -224,9 +224,9 @@
       "sha256": "283ba5ebdbed39cac374ed0a01e538b97c6419b26acc47c2eab0e4090c6b0693"
     },
     {
-      "path": "assets/index-Bd4XHSn8.js",
-      "bytes": 863022,
-      "sha256": "68a755534b51a9b2c2fd8376a9458b7f17253c2a7efbbb43cbf52b9e243f7527"
+      "path": "assets/index-BzqL-fUi.js",
+      "bytes": 863163,
+      "sha256": "7197cccd628a6b6ed131034c034a8535bf89e1d8b16b6c5f85e7690abb38aebc"
     },
     {
       "path": "assets/index-DynZGjYF.css",
@@ -234,9 +234,9 @@
       "sha256": "5908345fb556b20c8499d84b2d91e59a1d4b36521415a2c6b71805e8287b4499"
     },
     {
-      "path": "assets/infinity-Cjjiy6S4.js",
+      "path": "assets/infinity-C_XFzUgf.js",
       "bytes": 9937,
-      "sha256": "191ee61aa93a89316f01d7ad7f74f51a24701de4662d15650311885c4e721ad6"
+      "sha256": "02b3b8f39cf974ddc572fe1833bb4dab19357ad3bfa414103fe37f1285f61618"
     },
     {
       "path": "assets/infinity-jnm5aAfI.css",
@@ -339,9 +339,9 @@
       "sha256": "3b67b48f39e3d578953d8c0768d11c443f8c7af683dabf07d9b2540cb21c257d"
     },
     {
-      "path": "assets/offline-time-DJ4FnJxw.js",
+      "path": "assets/offline-time-BZ_gsMj6.js",
       "bytes": 8510,
-      "sha256": "9d74933c67a4e4159f673302118fce71f55378929617e91b2bf4bb274aaa35c3"
+      "sha256": "7149669a447a415facce69ee9652a51dbaeab864213915bcb80e5d6ac8efa599"
     },
     {
       "path": "assets/offline-time-DjQAo4CB.css",
@@ -439,14 +439,14 @@
       "sha256": "80d6490d26d395622b0f0b76b9824ac77d0a668cd1928f514cd79d67fdfc80c4"
     },
     {
-      "path": "assets/quantum-BcsbwNvY.js",
-      "bytes": 3917,
-      "sha256": "511c1cf2d222b1ec9b046a230eea6eeb8a64a46ff9941cea486d075422d8add7"
-    },
-    {
       "path": "assets/quantum-shards-B3NHZlEz.png",
       "bytes": 14193,
       "sha256": "7a3dfac83b31025119225b66c2e3e665b224411094489f9e4c0cbc1cf2bedea3"
+    },
+    {
+      "path": "assets/quantum-XqmzmW6i.js",
+      "bytes": 3917,
+      "sha256": "97fbc73fd0e25e7075cdc66fa050824a72bae99ecd4127941a2cab59ca8dd91c"
     },
     {
       "path": "assets/quantumComputing-7UUGvcmy.webp",
@@ -454,9 +454,9 @@
       "sha256": "210697f16522d5f0f378d11b0e2ef619f9ea07adf60ce50394d616e13fc52d3d"
     },
     {
-      "path": "assets/QuantumSurface-B-t4aOr7.js",
+      "path": "assets/QuantumSurface-C3wHO1hr.js",
       "bytes": 11012,
-      "sha256": "265e4bb5025dbab964cd354813d36ed520c9547532eaf76ff26f714bc96593cc"
+      "sha256": "d667652ca6eec006eb5446005ae8398151f1a04105f26ee26c8dc3720d26f108"
     },
     {
       "path": "assets/QuantumSurface-DhcUmyQf.css",
@@ -469,14 +469,14 @@
       "sha256": "ec164bf8aefe5cfad2e0d93f99fa1db22c307652a7deff3ee2a7729fae188e95"
     },
     {
-      "path": "assets/reality-cczuf4SS.js",
-      "bytes": 24904,
-      "sha256": "bfe926c5ef8c66ec15bb3140fe598f154ce06aed317cc72de15fee2c53d9dc17"
-    },
-    {
       "path": "assets/reality-CDA1kaFT.css",
       "bytes": 18334,
       "sha256": "285d0c0e35c5d00e1f23c2421a54a177ce3253889689a81668a53d4a66842c6a"
+    },
+    {
+      "path": "assets/reality-Cmsjuwnr.js",
+      "bytes": 24904,
+      "sha256": "43ff0a9dabc958e4d838aefa2ed4b3fba07b777b2b0fbbaaeb8434d7976a4fae"
     },
     {
       "path": "assets/renegade-BsgR0lzg.webp",
@@ -494,9 +494,9 @@
       "sha256": "ed01be8f39f17b7c29a0c70184647d2ed490959df6e310f9b46235b79f7e3edf"
     },
     {
-      "path": "assets/research-BgOlsoz_.js",
+      "path": "assets/research-C_h_DsnD.js",
       "bytes": 13395,
-      "sha256": "d758a9a8700a3d5cd1572e2b8b65b7c9d972a81316175d17daaa7797ca36eae5"
+      "sha256": "b9b14979486d5357fa3e7b936a4bd19f065502f0cf2cc7f0b70ae5cca3e6ee6e"
     },
     {
       "path": "assets/research-CAJuRP9O.css",
@@ -524,14 +524,14 @@
       "sha256": "e80019bad31a809012b21b801f710502db67e1df19583dcb276e1afdc30b89bb"
     },
     {
+      "path": "assets/settings-Brh2bUUX.js",
+      "bytes": 19455,
+      "sha256": "3328b633eb40e2d81bc9c2108bea99f4b6657154a0dc097bb34c034d295eee49"
+    },
+    {
       "path": "assets/settings-DQDWmHQp.css",
       "bytes": 11007,
       "sha256": "4852a2cb76a3e5971796c9b377229a81c03db56fd9b14848439d4cfe14eb7db0"
-    },
-    {
-      "path": "assets/settings-NKunj2wj.js",
-      "bytes": 19455,
-      "sha256": "ec73804d5722d1134356690cce6f212298720814d64fab84fe3e3d19d7208919"
     },
     {
       "path": "assets/shellWorlds-B5xN-rDq.webp",
@@ -574,14 +574,14 @@
       "sha256": "2e27cfd8844928c88f4b254bacd843851dd1cfdb253672c7c1c258c62d86373a"
     },
     {
-      "path": "assets/simulations-BfeVZK7U.js",
+      "path": "assets/simulations-CA3b_T9s.js",
       "bytes": 156,
-      "sha256": "c2bb69de4ac35373a904db605542c66607cab83e519a70284fb83f411165e698"
+      "sha256": "13cbb294bcf3e37774596a99b0807e568b67005b9b54342f44316abdfeb525b0"
     },
     {
-      "path": "assets/SimulationsSurface-BCytJyLC.js",
+      "path": "assets/SimulationsSurface-cAX2p44z.js",
       "bytes": 30769,
-      "sha256": "b7b2a47bc477c324ed5f99e7bc066efadfa2cc7ec4ba07382dd3a5eb4fbc6a9f"
+      "sha256": "05027fe12845957d7ad087a94b59c47fa8b54b557c2c7147f09a15d5a9428a08"
     },
     {
       "path": "assets/SimulationsSurface-CINu3Uxl.css",
@@ -594,9 +594,9 @@
       "sha256": "3ee0fe76f04ad473fc3be4dcdadcf30eaffb1b5161d72362436cc46467199a56"
     },
     {
-      "path": "assets/skills-CO1ktX5M.js",
+      "path": "assets/skills-BVnCjvD0.js",
       "bytes": 212712,
-      "sha256": "7914bd68d56213a691e39365b49730e30578e9b0fefd64f605fcd76f4292755d"
+      "sha256": "508848f9eec2a4cb2f7b53e93536bbd5c87131199f5091e51e64f6a16233abc7"
     },
     {
       "path": "assets/solarBubbles-D8cKodf6.webp",
@@ -614,9 +614,9 @@
       "sha256": "96fb3fb525e52f19d23d8140114b9077a57f755e6e311f1089c592a140f7563f"
     },
     {
-      "path": "assets/statistics-D_057j4G.js",
+      "path": "assets/statistics-TBtAdU75.js",
       "bytes": 8002,
-      "sha256": "b148f3a7aecf0fc66c71837b078ce185c8df0a71282df44feac58c07d47282f3"
+      "sha256": "ba0e32647a42ec4483ead90694885caceb7a8a678ed8ec55ed11ce019c67fb67"
     },
     {
       "path": "assets/stellarDominance-DqXj1f3t.webp",
@@ -629,14 +629,14 @@
       "sha256": "d9f3562c916d9498a56771b19a5928f3b1a054c5a606b435fd8330c6caec4e3b"
     },
     {
+      "path": "assets/store-CV9NrK90.js",
+      "bytes": 11453,
+      "sha256": "c1ba0c27923d3f2ee13f7ee8186093b714d3be08d3984f41e0e75f6692102cd3"
+    },
+    {
       "path": "assets/store-DvASWDWk.css",
       "bytes": 5839,
       "sha256": "191a47219d77c283881343afb96262117290cd095d59a5e1f95911cf60274050"
-    },
-    {
-      "path": "assets/store-s2c2Hn-g.js",
-      "bytes": 11453,
-      "sha256": "307d59c85a4c807a7a85310c0221a73af053f56c16c865dc4b80c7c515d9da6e"
     },
     {
       "path": "assets/storedTimeWorker-DUoFFQ50.js",
@@ -649,9 +649,9 @@
       "sha256": "2af121beeb1c505a16ec9f75eb3c8c39cad9c58e02d203b3f46381ba2604f33f"
     },
     {
-      "path": "assets/story-f1i0F8OG.js",
+      "path": "assets/story-U0CMwuH9.js",
       "bytes": 4770,
-      "sha256": "05fe08cc265cc59be7c43675161bd71e2d88a4a624a8cb72731d83618f2b8759"
+      "sha256": "a9d62a47c1434b8d7280e0aeeb4607a1cbac17a63e7566462158be87b4cd1a6a"
     },
     {
       "path": "assets/superchargedPower-CxC7g9G9.webp",
@@ -749,9 +749,9 @@
       "sha256": "e9ffa4d9036aec9c2228a932bc7e1e832308fc59d762872d41769a8ff85fe8dc"
     },
     {
-      "path": "assets/wiki-CeDJfuZ9.js",
+      "path": "assets/wiki-DRZ2q2Ax.js",
       "bytes": 87867,
-      "sha256": "7b0a427c452004fc155801ca779056899ef97a8d5985fb3d78a17ce2bb3d6505"
+      "sha256": "d23daa9eae2f53deda571da20f5bdc24da2c364e2dd4fb4a5d4ca31a7af13673"
     },
     {
       "path": "assets/workerBoost-P5F8-ILa.webp",
@@ -806,7 +806,7 @@
     {
       "path": "index.html",
       "bytes": 1789,
-      "sha256": "6ae918e9c279abd62dbc32bce4af57176979ccdb6d908233dd98169ec8aca583"
+      "sha256": "860729023d41f40e75309b8ef4cbe6d2d6cc8e55b37d9df4ff5c28beb45e2374"
     },
     {
       "path": "manifest.webmanifest",
@@ -816,7 +816,7 @@
     {
       "path": "service-worker.js",
       "bytes": 8700,
-      "sha256": "853654d8616cc0260777e9c9769f3443edbed1fc9eaf27d25520e08a46c2f9c9"
+      "sha256": "60a3c72e4174ff16dd92160b2e690fd0e2b30b4bd7fe29004f059ff1295df719"
     }
   ]
 }
