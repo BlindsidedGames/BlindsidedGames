@@ -2,11 +2,10 @@ import {
   deviceHash,
   issueEntitlementToken,
   jsonResponse,
-  productDetails,
   requireSameOrigin,
+  resolveEntitlementTokens,
   retrieveCheckoutSession,
   sessionPurchasedProduct,
-  verifyEntitlementToken,
   type IdsStripeEnv
 } from '../../../_utils/ids-stripe';
 
@@ -52,30 +51,22 @@ export const onRequestPost: PagesFunction<IdsStripeEnv> = async ({ env, request 
         });
       }
       completedProductId = productId;
-      if (productDetails(productId).durable) {
-        const durableProductId = productId as 'ids.devoptions' | 'ids.doubleip';
-        tokens.push(await issueEntitlementToken(env, {
-          sessionId: session.id,
-          productId: durableProductId,
-          deviceHash: expectedDeviceHash
-        }));
-      }
+      tokens.push(await issueEntitlementToken(env, {
+        sessionId: session.id,
+        productId,
+        deviceHash: expectedDeviceHash
+      }));
     }
 
-    const validTokens = [] as string[];
-    let developerOptions = false;
-    let doubleInfinityPoints = false;
-    for (const token of [...new Set(tokens)]) {
-      const payload = await verifyEntitlementToken(env, token, expectedDeviceHash);
-      if (payload === null) continue;
-      validTokens.push(token);
-      if (payload.productId === 'ids.devoptions') developerOptions = true;
-      if (payload.productId === 'ids.doubleip') doubleInfinityPoints = true;
-    }
+    const resolved = await resolveEntitlementTokens(
+      env,
+      tokens,
+      expectedDeviceHash
+    );
 
     return jsonResponse(200, {
-      ownership: { developerOptions, doubleInfinityPoints },
-      tokens: validTokens,
+      ownership: resolved.ownership,
+      tokens: resolved.tokens,
       completedProductId
     });
   } catch (error) {
