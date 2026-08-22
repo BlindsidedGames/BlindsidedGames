@@ -1,0 +1,1 @@
+var e=[`cyan`,`orange`,`gold`,`rose`,`pink`];function t(t){return typeof t==`string`&&e.includes(t)}function n(t){return e[t-1]??`cyan`}export{n,t as r,e as t};
