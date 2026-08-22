@@ -34,32 +34,35 @@ export interface StripeCheckoutSession {
 
 const PRODUCT_DETAILS: Record<IdsProductId, {
   readonly localizedPrice: string;
-  readonly durable: boolean;
+  readonly entitlementGrant:
+    | 'supporterCatGallery'
+    | 'developerOptions'
+    | 'doubleInfinityPoints';
   readonly priceKey: keyof IdsStripeEnv;
 }> = {
   'ids.tiptier1': {
     localizedPrice: 'A$1.49',
-    durable: false,
+    entitlementGrant: 'supporterCatGallery',
     priceKey: 'IDS_STRIPE_PRICE_TIP_TIER_1'
   },
   'ids.tiptier2': {
     localizedPrice: 'A$6.99',
-    durable: false,
+    entitlementGrant: 'supporterCatGallery',
     priceKey: 'IDS_STRIPE_PRICE_TIP_TIER_2'
   },
   'ids.tiptier3': {
     localizedPrice: 'A$30.99',
-    durable: false,
+    entitlementGrant: 'supporterCatGallery',
     priceKey: 'IDS_STRIPE_PRICE_TIP_TIER_3'
   },
   'ids.devoptions': {
     localizedPrice: 'A$15.99',
-    durable: true,
+    entitlementGrant: 'developerOptions',
     priceKey: 'IDS_STRIPE_PRICE_DEVELOPER_OPTIONS'
   },
   'ids.doubleip': {
     localizedPrice: 'A$4.99',
-    durable: true,
+    entitlementGrant: 'doubleInfinityPoints',
     priceKey: 'IDS_STRIPE_PRICE_DOUBLE_INFINITY_POINTS'
   }
 };
@@ -175,9 +178,15 @@ export function sessionPurchasedProduct(
 interface EntitlementTokenPayload {
   readonly version: 1;
   readonly sessionId: string;
-  readonly productId: 'ids.devoptions' | 'ids.doubleip';
+  readonly productId: IdsProductId;
   readonly deviceHash: string;
   readonly issuedAt: number;
+}
+
+export interface IdsEntitlementOwnership {
+  readonly developerOptions: boolean;
+  readonly doubleInfinityPoints: boolean;
+  readonly supporterCatGallery: boolean;
 }
 
 export async function issueEntitlementToken(
@@ -209,7 +218,7 @@ export async function verifyEntitlementToken(
     if (
       parsed.version !== 1 ||
       parsed.deviceHash !== expectedDeviceHash ||
-      (parsed.productId !== 'ids.devoptions' && parsed.productId !== 'ids.doubleip') ||
+      !isIdsProductId(parsed.productId) ||
       typeof parsed.sessionId !== 'string' ||
       typeof parsed.issuedAt !== 'number'
     ) {
@@ -219,6 +228,39 @@ export async function verifyEntitlementToken(
   } catch {
     return null;
   }
+}
+
+/**
+ * Verifies browser-local receipts and returns at most one token for each
+ * entitlement grant. Supporter purchases remain repeatable Stripe products,
+ * while any one of the three tiers permanently unlocks the same gallery on
+ * the purchasing browser installation.
+ */
+export async function resolveEntitlementTokens(
+  env: IdsStripeEnv,
+  tokens: readonly string[],
+  expectedDeviceHash: string
+): Promise<{
+  readonly ownership: IdsEntitlementOwnership;
+  readonly tokens: readonly string[];
+}> {
+  const tokenByGrant = new Map<
+    (typeof PRODUCT_DETAILS)[IdsProductId]['entitlementGrant'],
+    string
+  >();
+  for (const token of [...new Set(tokens)]) {
+    const payload = await verifyEntitlementToken(env, token, expectedDeviceHash);
+    if (payload === null) continue;
+    tokenByGrant.set(PRODUCT_DETAILS[payload.productId].entitlementGrant, token);
+  }
+  return {
+    ownership: {
+      developerOptions: tokenByGrant.has('developerOptions'),
+      doubleInfinityPoints: tokenByGrant.has('doubleInfinityPoints'),
+      supporterCatGallery: tokenByGrant.has('supporterCatGallery')
+    },
+    tokens: [...tokenByGrant.values()]
+  };
 }
 
 async function stripeRequest<T>(
