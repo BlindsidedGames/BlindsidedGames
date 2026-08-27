@@ -1,0 +1,1 @@
+var e=`/play/assets/nav-skills-CnuA7FHM.png`;export{e as t};

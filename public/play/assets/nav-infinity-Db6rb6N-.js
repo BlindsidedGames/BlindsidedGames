@@ -1,0 +1,1 @@
+var e=`/play/assets/nav-infinity-C0LZUnwT.png`;export{e as t};
