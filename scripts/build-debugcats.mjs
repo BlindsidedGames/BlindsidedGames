@@ -22,7 +22,9 @@ await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 const template = await readFile(path.join(source, 'index.html'), 'utf8');
 await writeFile(path.join(output, 'index.html'), template.replace('<!-- FEATURE -->', picture(photos[16], true)).replace('<!-- PHOTOS -->', batches).replace('</body>', `<script id="photo-data" type="application/json">${JSON.stringify(photos).replace(/</g, '\\u003c')}</script></body>`));
-for (const file of ['gallery.css', 'gallery.js', 'noscript.css', 'favicon.svg', 'assets']) await cp(path.join(source, file), path.join(output, file), { recursive: true });
+for (const file of ['gallery.css', 'gallery.js', 'noscript.css', 'assets']) await cp(path.join(source, file), path.join(output, file), { recursive: true });
+// Reuse the main website logo directly so branding has one source of truth.
+await cp(path.join(root, 'img/logo.jpg'), path.join(output, 'brand.jpg'));
 await writeFile(path.join(output, '_headers'), '/*\n  X-Robots-Tag: noindex, nofollow, noimageindex\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: no-referrer\n  Content-Security-Policy: default-src \'self\'; img-src \'self\'; style-src \'self\'; script-src \'self\'; object-src \'none\'; base-uri \'none\'; frame-ancestors \'none\'\n\n/\n  Cache-Control: public, max-age=0, must-revalidate\n\n/*.html\n  Cache-Control: public, max-age=0, must-revalidate\n\n/assets/*\n  Cache-Control: public, max-age=31536000, immutable\n');
 await writeFile(path.join(output, 'robots.txt'), 'User-agent: *\nAllow: /\n');
 await writeFile(path.join(output, '404.html'), '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="robots" content="noindex"><meta name="viewport" content="width=device-width"><title>Photo not found · Debug Cats</title><body style="background:#101115;color:#f0eee9;font-family:system-ui;padding:3rem"><h1>This cat wandered off.</h1><a style="color:#bca9eb" href="/">Back to Debug Cats</a></body></html>');
