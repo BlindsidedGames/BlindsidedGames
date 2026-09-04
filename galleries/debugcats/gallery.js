@@ -4,12 +4,45 @@ const more = document.querySelector('#load-more');
 const progress = document.querySelector('#progress');
 let visible = Math.min(24, photos.length);
 links.forEach((link, index) => { link.hidden = index >= visible; });
+
+const grid = document.querySelector('#grid');
+// Keep source/keyboard order while placing each new photo in the shortest column.
+// Intrinsic dimensions reserve the full tile before lazy-loaded pixels arrive.
+grid.replaceChildren(...links);
+grid.classList.add('masonry');
+let lastLayout = '';
+function layoutPhotos() {
+  const style = getComputedStyle(grid);
+  const columns = Number(style.getPropertyValue('--columns'));
+  const gap = Number.parseFloat(style.getPropertyValue('--gap'));
+  const width = grid.clientWidth;
+  const key = `${width}:${columns}:${gap}:${visible}`;
+  if (!width || key === lastLayout) return;
+  lastLayout = key;
+  const tileWidth = (width - gap * (columns - 1)) / columns;
+  const heights = Array(columns).fill(0);
+  links.slice(0, visible).forEach(link => {
+    const image = link.querySelector('img');
+    const height = tileWidth * Number(image.getAttribute('height')) / Number(image.getAttribute('width'));
+    const column = heights.indexOf(Math.min(...heights));
+    Object.assign(link.style, {
+      left: `${column * (tileWidth + gap)}px`,
+      top: `${heights[column]}px`,
+      width: `${tileWidth}px`,
+      height: `${height}px`,
+    });
+    heights[column] += height + gap;
+  });
+  grid.style.height = `${Math.max(...heights) - gap}px`;
+}
+layoutPhotos();
+new ResizeObserver(layoutPhotos).observe(grid);
 more.hidden = visible >= photos.length;
 more.addEventListener('click', () => {
   const firstNew = visible;
   visible = Math.min(visible + 24, photos.length);
   links.forEach((link, index) => { link.hidden = index >= visible; });
-  document.querySelectorAll('.photo-batch').forEach((batch, index) => { batch.hidden = index * 24 >= visible; });
+  layoutPhotos();
   progress.textContent = `${visible} of ${photos.length} photos`;
   more.hidden = visible === photos.length;
   links[firstNew]?.focus({ preventScroll: true });

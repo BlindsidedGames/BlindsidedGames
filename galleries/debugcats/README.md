@@ -28,7 +28,7 @@ Sharp is pinned at 0.35.3. The pipeline checks archive SHA-256 hashes, applies o
 
 For new photos, append to the archive photo ordering, add corresponding reviewed descriptions, regenerate, and update the displayed total in the template. Keep existing order stable. For removed/replaced sources, prune obsolete hashed variants from `assets/` before publishing; never remove the source archive. Review changes before adding personal photos.
 
-Photos are shown in batches of 24, with separate masonry columns for each batch so loading more does not reshuffle earlier photos. The native dialog supports keyboard arrows, Escape, touch swipes, focus return and bounded previous/next controls. Below-fold previews are lazy-loaded; larger images are fetched when opened. A no-JavaScript stylesheet exposes all photo links. The featured photograph also appears in the collection and is not counted twice.
+Photos are revealed 24 at a time in one continuous masonry surface. New tiles fill the shortest column without moving existing tiles. Layout uses intrinsic image dimensions before downloads complete and recalculates at responsive breakpoints; source/keyboard order stays intact. Separate CSS columns are used only for the no-JavaScript fallback, with explicit spacing between groups. The native dialog supports keyboard arrows, Escape, touch swipes, focus return and bounded previous/next controls. Below-fold previews are lazy-loaded; larger images are fetched when opened. A no-JavaScript stylesheet exposes all photo links. The featured photograph also appears in the collection and is not counted twice.
 
 ## Publication
 
@@ -48,3 +48,7 @@ After reviewing and publishing the gallery, verify HTTPS, headers and photo load
 - Cold mobile load with browser cache disabled and a 100 ms / 200 KB-per-second throttle recorded 313,442 bytes over 15 resources before scrolling. This includes uncompressed HTML from the local server, and is within the 600 KB initial budget. No browser warning/error logs were reported during that check.
 - Median AVIF sizes: 9 KB at 400 px, 28 KB at 800 px, 58 KB at 1280 px and 123 KB at 2048 px. Maximum 2048 px AVIF size: 264 KB.
 - Physical-device Safari and real touch gestures have not yet been tested. Deployed HTML and all 104 small AVIF variants were compared byte-for-byte with the local build; live indexing headers were verified.
+
+### Load-more layout verification
+
+Verified all 104 photos after repeated expansion: zero overlapping tile rectangles, minimum vertical gaps of 12 px at 390 px width and 18 px at 1280 px width, no horizontal overflow, and no browser warning/error logs. Existing tile coordinates stay unchanged when more photos are appended.
