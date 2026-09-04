@@ -17,7 +17,8 @@
     "deploy:pages:preview": "npm run build && wrangler pages deploy ./dist --project-name blindsidedgames --branch preview",
     "gallery:images": "node scripts/build-debugcats-images.mjs",
     "gallery:build": "node scripts/build-debugcats.mjs",
-    "gallery:preview": "npm run gallery:build && node scripts/preview-debugcats.mjs"
+    "gallery:preview": "npm run gallery:build && node scripts/preview-debugcats.mjs",
+    "gallery:deploy": "npm run gallery:build && cd galleries/debugcats && wrangler pages deploy ../../dist-debugcats --project-name debugcats --branch main"
   },
   "dependencies": {
     "astro": "^5.4.1"

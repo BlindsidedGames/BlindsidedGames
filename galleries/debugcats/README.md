@@ -30,13 +30,13 @@ For new photos, append to the archive photo ordering, add corresponding reviewed
 
 Photos are shown in batches of 24, with separate masonry columns for each batch so loading more does not reshuffle earlier photos. The native dialog supports keyboard arrows, Escape, touch swipes, focus return and bounded previous/next controls. Below-fold previews are lazy-loaded; larger images are fetched when opened. A no-JavaScript stylesheet exposes all photo links. The featured photograph also appears in the collection and is not counted twice.
 
-## Publication (pending)
+## Publication
 
-Use a dedicated Cloudflare Pages project, with build command `npm run gallery:build` and output directory `dist-debugcats`. If deploying by CLI, run from `galleries/debugcats/` and pass `../../dist-debugcats` with the explicit gallery project name, so the root website Functions directory is not deployed. Configure the custom domain in Pages, then DNS and TLS. Do not reuse the existing main website deployment command or its output directory.
+The dedicated Cloudflare Pages project is `debugcats`, with production branch `main` and output directory `dist-debugcats`. It uses direct deployment: run `npm run gallery:deploy` from the repository root. Its own `wrangler.jsonc` contains no main-site Functions, bindings or secrets. If deploying by CLI, run from `galleries/debugcats/` and pass `../../dist-debugcats` with the explicit gallery project name, so the root website Functions directory is not deployed. Configure the custom domain in Pages, then DNS and TLS. Do not reuse the existing main website deployment command or its output directory.
 
 The `_headers` file applies `noindex, nofollow, noimageindex` to all routes and assets, including the project's alternate Pages hostname. `robots.txt` permits reading those directives; there is no sitemap. These are indexing preferences, not access control: anyone with the URL may view and share the gallery.
 
-After reviewing and publishing the gallery, verify HTTPS, headers and photo loading on the intended domain before replacing `SUPPORTER_CAT_GALLERY_URL` in the Idle Dyson Swarm repository. Keep the old iCloud album for older installed game versions. No deployment, DNS change, main-site link or game URL change was performed while preparing this preview.
+After reviewing and publishing the gallery, verify HTTPS, headers and photo loading on the intended domain before replacing `SUPPORTER_CAT_GALLERY_URL` in the Idle Dyson Swarm repository. Keep the old iCloud album for older installed game versions. The photos-only gallery was deployed on 4 September 2026 at https://debugcats.pages.dev (deployment https://f1a2cad8.debugcats.pages.dev). The custom domain `debugcats.blindsidedgames.com` is registered with Pages; DNS activation is pending. The game URL has been changed locally as a one-line edit, without a PR or game release.
 
 ## Validation — 4 September 2026
 
@@ -47,4 +47,4 @@ After reviewing and publishing the gallery, verify HTTPS, headers and photo load
 - Load more reached 48, 72, 96 and 104 photos and then hid its control.
 - Cold mobile load with browser cache disabled and a 100 ms / 200 KB-per-second throttle recorded 313,442 bytes over 15 resources before scrolling. This includes uncompressed HTML from the local server, and is within the 600 KB initial budget. No browser warning/error logs were reported during that check.
 - Median AVIF sizes: 9 KB at 400 px, 28 KB at 800 px, 58 KB at 1280 px and 123 KB at 2048 px. Maximum 2048 px AVIF size: 264 KB.
-- Physical-device Safari, real touch gestures and deployed Cloudflare behavior have not yet been tested.
+- Physical-device Safari and real touch gestures have not yet been tested. Deployed HTML and all 104 small AVIF variants were compared byte-for-byte with the local build; live indexing headers were verified.
