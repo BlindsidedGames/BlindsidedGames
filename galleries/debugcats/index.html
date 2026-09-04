@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noimageindex">
+  <meta name="theme-color" content="#101115">
+  <meta name="description" content="Meet the cats behind Blindsided Games. A small collection of very good company.">
+  <title>Debug Cats · Blindsided Games</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="gallery.css">
+  <script src="gallery.js" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#collection">Skip to photos</a>
+  <div class="page">
+    <header class="masthead">
+      <a class="brand" href="https://blindsidedgames.com" aria-label="Blindsided Games home"><svg width="29" height="29" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M5 5h17v17H5zM10 10h17v17H10z" stroke="currentColor" stroke-width="1.5"/></svg><span>BLINDSIDED<span class="brand-second">GAMES</span></span></a>
+      <span class="masthead-note"><span class="dot"></span> A little behind the scenes</span>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="title">
+        <div class="intro-copy">
+          <p class="eyebrow">THE UNOFFICIAL QA TEAM</p>
+          <h1 id="title">Debug <span>Cats.</span></h1>
+          <p class="lead">Excellent company.<br>Questionable debugging skills.</p>
+          <p class="intro-detail">The small faces behind the long days at Blindsided Games. Thanks for being here.</p>
+          <a class="browse" href="#collection">Meet the team <span aria-hidden="true">↘</span></a>
+        </div>
+        <button class="feature" data-photo="16" aria-label="Open featured photo: sleepy tuxedo cat">
+          <span class="feature-image"><!-- FEATURE --></span>
+          <span class="feature-caption"><span><span class="dot"></span> Currently on a break</span><span aria-hidden="true">↗</span></span>
+        </button>
+      </section>
+      <section id="collection" class="collection" aria-labelledby="collection-title">
+        <div class="collection-heading"><div><p class="eyebrow">THE CAMERA ROLL</p><h2 id="collection-title">Life between the bugs<span class="photo-count">104 photos</span></h2></div><span class="collection-hint">A little chaos. A lot of naps.</span></div>
+        <div id="grid" class="grid"><!-- PHOTOS --></div>
+        <div class="more"><p id="progress" aria-live="polite">24 of 104 photos</p><button id="load-more" class="load-more" hidden>More cats <span aria-hidden="true">+</span></button></div>
+        <noscript><link rel="stylesheet" href="noscript.css"><p class="noscript">JavaScript is off. All photos are shown below; select one to open the larger image.</p></noscript>
+      </section>
+    </main>
+    <footer><span>BLINDSIDED GAMES</span><p>Made with care. Supervised by cats.</p><a href="#title">Back to top <span aria-hidden="true">↑</span></a></footer>
+  </div>
+  <dialog id="viewer" aria-label="Photo viewer">
+    <div class="viewer-top"><p id="viewer-count" aria-live="polite"></p><button id="close" class="icon-button" aria-label="Close photo viewer">✕</button></div>
+    <div class="viewer-stage"><button id="previous" class="icon-button arrow" aria-label="Previous photo">←</button><div id="viewer-image"></div><button id="next" class="icon-button arrow" aria-label="Next photo">→</button></div>
+    <div class="viewer-bottom"><p id="viewer-caption"></p><span>← → to explore <span aria-hidden="true">·</span> Esc to close</span></div>
+    <p id="image-error" role="status" hidden>This photo couldn’t load. <button id="retry">Try again</button></p>
+  </dialog>
+</body>
+</html>

@@ -14,7 +14,10 @@
     "sync:genai-prompt": "python3 scripts/sync_genai_prompt.py",
     "check:genai-prompt": "python3 scripts/sync_genai_prompt.py --check",
     "deploy:pages": "npm run build && wrangler pages deploy ./dist --project-name blindsidedgames",
-    "deploy:pages:preview": "npm run build && wrangler pages deploy ./dist --project-name blindsidedgames --branch preview"
+    "deploy:pages:preview": "npm run build && wrangler pages deploy ./dist --project-name blindsidedgames --branch preview",
+    "gallery:images": "node scripts/build-debugcats-images.mjs",
+    "gallery:build": "node scripts/build-debugcats.mjs",
+    "gallery:preview": "npm run gallery:build && node scripts/preview-debugcats.mjs"
   },
   "dependencies": {
     "astro": "^5.4.1"
@@ -22,6 +25,7 @@
   "devDependencies": {
     "@astrojs/sitemap": "^3.5.0",
     "@cloudflare/workers-types": "^4.20260702.1",
+    "sharp": "0.35.3",
     "typescript": "^5.8.2",
     "wrangler": "^4.4.0"
   }
