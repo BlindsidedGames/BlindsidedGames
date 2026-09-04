@@ -36,7 +36,7 @@ The dedicated Cloudflare Pages project is `debugcats`, with production branch `m
 
 The `_headers` file applies `noindex, nofollow, noimageindex` to all routes and assets, including the project's alternate Pages hostname. `robots.txt` permits reading those directives; there is no sitemap. These are indexing preferences, not access control: anyone with the URL may view and share the gallery.
 
-After reviewing and publishing the gallery, verify HTTPS, headers and photo loading on the intended domain before replacing `SUPPORTER_CAT_GALLERY_URL` in the Idle Dyson Swarm repository. Keep the old iCloud album for older installed game versions. The photos-only gallery was deployed on 4 September 2026 at https://debugcats.pages.dev (deployment https://f1a2cad8.debugcats.pages.dev). The custom domain `debugcats.blindsidedgames.com` is registered with Pages; DNS activation is pending. The game URL has been changed locally as a one-line edit, without a PR or game release.
+After reviewing and publishing the gallery, verify HTTPS, headers and photo loading on the intended domain before replacing `SUPPORTER_CAT_GALLERY_URL` in the Idle Dyson Swarm repository. Keep the old iCloud album for older installed game versions. The photos-only gallery is live at https://debugcats.blindsidedgames.com/ as of 4 September 2026 (latest deployment https://19e689a1.debugcats.pages.dev). Cloudflare confirms the custom domain, verification and HTTPS validation are active. A proxied CNAME points `debugcats` to `debugcats.pages.dev`; the gallery was verified in the browser on the custom domain. The game URL has been changed locally as a one-line edit, without a PR or game release.
 
 ## Validation — 4 September 2026
 
