@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "dev:host": "astro dev --host",
-    "build": "astro build && node scripts/postbuild.mjs",
+    "build": "npm run promotions:check && astro build && node scripts/postbuild.mjs",
     "preview": "astro preview",
     "preview:pages": "npm run build && wrangler pages dev ./dist",
     "check": "astro check",
@@ -18,7 +18,9 @@
     "gallery:images": "node scripts/build-debugcats-images.mjs",
     "gallery:build": "node scripts/build-debugcats.mjs",
     "gallery:preview": "npm run gallery:build && node scripts/preview-debugcats.mjs",
-    "gallery:deploy": "npm run gallery:build && cd galleries/debugcats && wrangler pages deploy ../../dist-debugcats --project-name debugcats --branch main"
+    "gallery:deploy": "npm run gallery:build && cd galleries/debugcats && wrangler pages deploy ../../dist-debugcats --project-name debugcats --branch main",
+    "promotions:build": "node scripts/build-promotion-banners.mjs",
+    "promotions:check": "node scripts/check-promotions.mjs"
   },
   "dependencies": {
     "astro": "^5.4.1"

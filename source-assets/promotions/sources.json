@@ -1,0 +1,199 @@
+{
+  "pulse": {
+    "images": [
+      {
+        "file": "originals/pulse-0.png",
+        "source": "/Users/matthewrushworth/Projects/Pulse Citadel/marketing/google-play/screenshots-landscape-1920x1080/04-combat-wave-1920x1080.png"
+      }
+    ],
+    "background": "#10151e",
+    "copySource": "https://apps.apple.com/app/id6779441554",
+    "copyReviewed": "2026-09-20"
+  },
+  "daily-quiz": {
+    "images": [
+      {
+        "file": "originals/daily-quiz-0.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/44/82/c4/4482c44f-5605-3eb5-0f13-537b46735c50/IMG_1669_1242x2688.png/1600x1600bb.jpg"
+      },
+      {
+        "file": "originals/daily-quiz-1.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7f/cb/67/7fcb6753-7150-8fbf-e025-64cbe319b6ad/IMG_1670_1242x2688.png/1600x1600bb.jpg"
+      },
+      {
+        "file": "originals/daily-quiz-2.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9e/2d/45/9e2d450e-40b8-2ef2-6815-1fc0e8a48afa/IMG_1671_1242x2688.png/1600x1600bb.jpg"
+      }
+    ],
+    "background": "#10151e",
+    "copySource": "https://apps.apple.com/app/id6760318282",
+    "copyReviewed": "2026-09-20"
+  },
+  "echoes": {
+    "images": [
+      {
+        "file": "originals/echoes-0.png",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2940000/9ec2a026d86d0154b00288b0ecf2e72378d28413/ss_9ec2a026d86d0154b00288b0ecf2e72378d28413.1920x1080.jpg?t=1763588485"
+      }
+    ],
+    "background": "#10151e",
+    "copySource": "https://apps.apple.com/app/id6749265146",
+    "copyReviewed": "2026-09-20"
+  },
+  "eternum": {
+    "images": [
+      {
+        "file": "originals/eternum-0.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ef/02/7b/ef027bf4-19ca-4b24-654c-3b87d46cce78/Image_Sequence_015_0000.png/1600x1600bb.jpg"
+      },
+      {
+        "file": "originals/eternum-1.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c3/7b/61/c37b61fb-3224-781e-528b-2021d84f5b22/Image_Sequence_012_0000.png/1600x1600bb.jpg"
+      },
+      {
+        "file": "originals/eternum-2.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8d/ad/5a/8dad5aed-4b98-7a68-980e-17baaec5c570/Image_Sequence_013_0000.png/1600x1600bb.jpg"
+      }
+    ],
+    "background": "#10151e",
+    "copySource": "https://apps.apple.com/app/id6741140312",
+    "copyReviewed": "2026-09-20"
+  },
+  "nanite": {
+    "images": [
+      {
+        "file": "originals/nanite-0.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c9/21/84/c92184e8-9049-3089-67ee-f03b0ad5e839/1dadbe35-7ae9-4637-8873-925f84bc5c78_6.9__Iphone_008_0000.png/1600x1600bb.jpg"
+      },
+      {
+        "file": "originals/nanite-1.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b7/f2/12/b7f21212-d7b7-9d0e-a183-5e179886cf15/d3236d70-6a03-4e8f-ab76-cf4c1c18e3d7_6.9__Iphone_009_0000.png/1600x1600bb.jpg"
+      },
+      {
+        "file": "originals/nanite-2.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a8/f8/cc/a8f8cc0e-f97b-fc9f-fa23-3ae17d41c927/692ff75c-d4ad-41b2-8cee-f878d88f9fa4_6.9__Iphone_011_0000.png/1600x1600bb.jpg"
+      }
+    ],
+    "background": "#10151e",
+    "copySource": "https://apps.apple.com/app/id6526468962",
+    "copyReviewed": "2026-09-20"
+  },
+  "nebula": {
+    "images": [
+      {
+        "file": "originals/nebula-0.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/dc/eb/af/dcebaf20-77df-ac35-0ef6-18881f35ce34/6176f54e-fc8a-47f8-8aa0-386ec93327ca_Image_Sequence_019_0000__U0028Custom_U0029.png/1600x1600bb.png"
+      },
+      {
+        "file": "originals/nebula-1.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a9/74/01/a9740111-d339-b8cd-be8d-387ac7b079ec/ec63ddae-bc57-4b53-b37f-2231e25af03c_Image_Sequence_023_0000__U0028Custom_U0029.png/1600x1600bb.png"
+      },
+      {
+        "file": "originals/nebula-2.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/9d/84/c9/9d84c972-6d14-61f7-c81f-d16530afd503/514146b5-9702-4dce-8b0e-0fbed86b6c70_Image_Sequence_006_0000__U0028Custom_U0029.png/1600x1600bb.png"
+      }
+    ],
+    "background": "#10151e",
+    "copySource": "https://apps.apple.com/app/id6477858262",
+    "copyReviewed": "2026-09-20"
+  },
+  "skrimp": {
+    "images": [
+      {
+        "file": "originals/skrimp-0.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/86/15/59/861559b6-d701-ce60-29e4-470127220ecb/f524e4cd-8c3f-44bc-ad50-0a2a7888fa58_IMG_8590.jpeg/1600x1600bb.jpg"
+      },
+      {
+        "file": "originals/skrimp-1.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/a8/0b/d7/a80bd72f-01d7-1513-6153-6686ce2ca3bb/729c5741-95e5-4897-9e46-c85fdc8725c2_IMG_8589.jpeg/1600x1600bb.jpg"
+      },
+      {
+        "file": "originals/skrimp-2.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/01/7b/b5/017bb5d6-a011-bfaa-5533-b27ef6727888/9f02e3cc-bf5b-4e96-a1dd-6f7a90ae42ab_IMG_8591.jpeg/1600x1600bb.jpg"
+      }
+    ],
+    "background": "#10151e",
+    "copySource": "https://apps.apple.com/app/id6447680173",
+    "copyReviewed": "2026-09-20"
+  },
+  "sheep": {
+    "images": [
+      {
+        "file": "originals/sheep-0.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/6b/e4/de/6be4de13-ba22-37a2-c945-0afa2c8bf84a/ae83e10e-38ab-435f-a0d7-d65998292dab_IMG_5347.PNG/1600x1600bb.png"
+      },
+      {
+        "file": "originals/sheep-1.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/86/c5/69/86c569a5-eb16-c990-65b3-4dac50576006/a5768d73-1a40-4567-b892-4d180c0ec5a2_IMG_5348.PNG/1600x1600bb.png"
+      },
+      {
+        "file": "originals/sheep-2.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/2d/bd/0b/2dbd0bde-e440-2791-a82b-a86880a3289c/b064a837-766e-4539-b4be-7fe410aef79a_IMG_5349.PNG/1600x1600bb.png"
+      }
+    ],
+    "background": "#10151e",
+    "copySource": "https://apps.apple.com/app/id1639432790",
+    "copyReviewed": "2026-09-20"
+  },
+  "idle-dyson-swarm": {
+    "images": [
+      {
+        "file": "originals/idle-dyson-swarm-0.png",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4348570/9a373834b0329975492850fbfa57aa714125f830/ss_9a373834b0329975492850fbfa57aa714125f830.1920x1080.jpg?t=1771911600"
+      }
+    ],
+    "background": "#10151e",
+    "copySource": "https://apps.apple.com/app/id1631060225",
+    "copyReviewed": "2026-09-20"
+  },
+  "spaceflight": {
+    "images": [
+      {
+        "file": "originals/spaceflight-0.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/ed/11/e5/ed11e54c-52d8-6e05-2134-dfa545f268f3/f1e0c95a-2698-4dc6-9c69-9f69e3dfffd8_a93FCqs.png/1600x1600bb.png"
+      },
+      {
+        "file": "originals/spaceflight-1.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/c1/00/c4/c100c4fd-1af2-c6fe-447c-5235ecff6196/1b6f5fa5-b183-43c6-a3e5-4ba7c7d601dc_1DcZqnS.png/1600x1600bb.png"
+      },
+      {
+        "file": "originals/spaceflight-2.png",
+        "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/f9/5b/95/f95b9527-299d-585a-ecb2-0d7f869211ae/23ef0e18-e6c5-4cd2-a1b2-788961a7d0e2_OcuJTD2.png/1600x1600bb.png"
+      }
+    ],
+    "background": "#10151e",
+    "copySource": "https://apps.apple.com/app/id1538856127",
+    "copyReviewed": "2026-09-20"
+  },
+  "rocket-mania": {
+    "images": [
+      {
+        "file": "originals/rocket-mania-0.png",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1949810/ss_3044801b0f9ca1afdf6a5941d49e2a8b9e1dd590.1920x1080.jpg?t=1655557253"
+      }
+    ],
+    "background": "#10151e",
+    "copySource": "https://apps.apple.com/app/id1622522530",
+    "copyReviewed": "2026-09-20"
+  },
+  "labs": {
+    "images": [
+      {
+        "file": "originals/labs-0.png",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2113500/926298fd11d0a9cc28ae4412d52ce90a7108154e/ss_926298fd11d0a9cc28ae4412d52ce90a7108154e.1920x1080.jpg?t=1752380596"
+      }
+    ],
+    "background": "#10151e"
+  },
+  "space-shooter": {
+    "images": [
+      {
+        "file": "originals/space-shooter-0.png",
+        "source": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2954150/ss_f6e5d04150b5974ca4065e02fd2e569e962b876b.1920x1080.jpg?t=1715915285"
+      }
+    ],
+    "background": "#10151e",
+    "copySource": "https://store.steampowered.com/app/2954150/",
+    "copyReviewed": "2026-09-20"
+  }
+}
