@@ -10,3 +10,5 @@
 - **Prompt sync rule.** When quiz-generation rules change, update `quizzes/genai_prompt.md` first, then run `npm run sync:genai-prompt` and `npm run check:genai-prompt`.
 - **App mirror path.** The mirrored app copy lives at `/Users/matthewrushworth/Projects/The Quiz/The Quiz/SeedData/genai_prompt.md` and must not be hand-edited independently.
 - **Cross-repo quiz workflow.** Any quiz-content or quiz-prompt edit must review both the app seed corpus and the website daily quiz pool defined in `quizzes/daily_schedule.json`.
+
+- For app promotion catalog or banner changes, read [PROMOTIONS.md](PROMOTIONS.md). Do not confuse public/promotions with IDS build promotion manifests in the root promotions folder.

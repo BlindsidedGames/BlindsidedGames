@@ -4,7 +4,7 @@
 
 # BEGIN IDLE DYSON SWARM WEB
 /play/*
-  Content-Security-Policy: default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; media-src 'self'; upgrade-insecure-requests; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; base-uri 'none'; object-src 'none'; form-action 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://www.blindsidedgames.com/promotions/; worker-src 'self'; manifest-src 'self'; media-src 'self'; upgrade-insecure-requests; frame-ancestors 'none'
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Resource-Policy: same-origin
   Permissions-Policy: camera=(), display-capture=(), geolocation=(), microphone=(), payment=(), publickey-credentials-create=(), usb=()
@@ -12,3 +12,17 @@
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
 # END IDLE DYSON SWARM WEB
+
+# Public app discovery: no cookies or per-player data.
+/promotions/v1/*
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=300, must-revalidate
+  Access-Control-Allow-Origin: *
+  Access-Control-Expose-Headers: ETag
+  X-Content-Type-Options: nosniff
+
+/promotions/images/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+  Cross-Origin-Resource-Policy: cross-origin
+  X-Content-Type-Options: nosniff
